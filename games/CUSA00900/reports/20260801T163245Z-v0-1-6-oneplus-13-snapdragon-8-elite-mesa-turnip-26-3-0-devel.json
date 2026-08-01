@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
+  "cusaId": "CUSA00900",
+  "testedAt": "2026-08-01T16:32:45Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Reaches controllable gameplay in Hunter's Dream at 17-20 FPS on Turnip.",
+  "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite) with custom Turnip gen8 v2 driver. The game successfully starts and loads into Hunter's Dream. 3D graphics render correctly with the on-screen controls, HUD elements, and notes prompts visible. Framerate fluctuates between 17 and 30 FPS. Complete playthrough and later areas were not verified, so status is set to ingame.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Mesa Turnip",
+    "version": "26.3.0-devel",
+    "build": "git-9c51ede50f",
+    "source": "JICA98/bachata-s4-drivers gen8-v2"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 21.03,
+    "minimumFps": 13.23,
+    "maximumFps": 30.51,
+    "framePacing": "stuttery",
+    "testDurationSeconds": 92
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00900/20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/01.webp",
+        "caption": "Player standing in Hunter's Dream"
+      },
+      {
+        "path": "assets/CUSA00900/20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
+        "caption": "Player standing near tombstone showing View Notes prompt"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA00900/20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "4b125cba7c80edc15d4cf7c3724389835bb76b8cf88106dd5ea4a3b3b3c87a43"
+      },
+      {
+        "path": "assets/CUSA00900/20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "7fa8287f1f46dd710b4d1a146f17ef8e159968cd5a58d8bafe3beb49477090ab"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 1
+}
