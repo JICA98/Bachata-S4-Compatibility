@@ -1,0 +1,25 @@
+name: Validate compatibility data
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Enforce immutable reports and evidence
+        if: github.event_name == 'pull_request'
+        run: scripts/check_immutable.sh "origin/${{ github.base_ref }}"
+      - name: Validate source data
+        run: python3 scripts/validate.py
+      - name: Build website indexes
+        run: python3 scripts/build_site_data.py --output generated
+      - name: Verify generated JSON
+        run: python3 -m json.tool generated/site-index.json >/dev/null

@@ -1,0 +1,27 @@
+name: Notify compatibility website
+on:
+  push:
+    branches: [main]
+    paths:
+      - "games/**"
+      - "assets/**"
+      - "data/releases.json"
+      - "scripts/build_site_data.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch main repository when token is configured
+        env:
+          GH_TOKEN: ${{ secrets.BACHATA_SITE_DISPATCH_TOKEN }}
+        run: |
+          if [[ -z "${GH_TOKEN:-}" ]]; then
+            echo "BACHATA_SITE_DISPATCH_TOKEN is not configured; the main repository schedule is the fallback."
+            exit 0
+          fi
+          gh api --method POST repos/JICA98/Bachata-S4/dispatches \
+            -f event_type=compatibility-data-updated \
+            -f 'client_payload[sha]=${{ github.sha }}'

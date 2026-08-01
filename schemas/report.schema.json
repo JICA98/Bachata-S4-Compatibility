@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bachata S4 immutable compatibility report",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "reportId",
+    "cusaId",
+    "testedAt",
+    "status",
+    "release",
+    "device",
+    "driver",
+    "summary",
+    "notes",
+    "evidence",
+    "tester",
+    "issueNumber"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "reportId": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9._-]+$"
+    },
+    "cusaId": {
+      "type": "string",
+      "pattern": "^CUSA[0-9]{5}$"
+    },
+    "testedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "playable",
+        "ingame",
+        "menus",
+        "boots",
+        "nothing"
+      ]
+    },
+    "issueNumber": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "legacyImported": {
+      "type": "boolean"
+    },
+    "release": {
+      "type": "object",
+      "required": [
+        "tag",
+        "commit"
+      ],
+      "properties": {
+        "tag": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{7,40}$"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "device": {
+      "type": "object"
+    },
+    "driver": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    }
+  }
+}

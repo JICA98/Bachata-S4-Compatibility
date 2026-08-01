@@ -1,0 +1,33 @@
+name: Game compatibility
+about: Canonical discussion for one PS4 title / CUSA ID
+labels: [game-report, status:testing]
+body:
+  - type: markdown
+    attributes:
+      value: "One issue is reused for every confirmed report for this CUSA. Do not attach copyrighted game content."
+  - type: input
+    id: cusa
+    attributes:
+      label: CUSA ID
+      placeholder: CUSA07023
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Game title
+      placeholder: Sonic Mania
+    validations:
+      required: true
+  - type: dropdown
+    id: observed
+    attributes:
+      label: Furthest state currently observed
+      options: [Testing, Playable, Ingame, Menus, Boots, Nothing]
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Mention the Bachata release, selected device, selected driver, and blocker. Detailed evidence belongs in a report PR.
