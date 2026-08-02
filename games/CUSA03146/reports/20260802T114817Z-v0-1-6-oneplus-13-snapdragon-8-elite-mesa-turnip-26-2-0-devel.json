@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel",
+  "cusaId": "CUSA03146",
+  "testedAt": "2026-08-02T11:48:17Z",
+  "status": "boots",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Galak-Z boots and renders frames but stays on a dark boot frame; the title screen never appears.",
+  "notes": "Unity title. Started with the game already imported on the device; opened via the Bachata S4 library, selected Galak-Z, and tapped Launch. The shadPS4 backend reached Running and rendered frames (25.5/39.6 fps peaks in the performance log) after an ~4 minute shader-compile warmup, but the visible screen remained a near-black static frame for the entire run and never progressed to the title screen or any menu. Status boots: useful output before menus, no menus reached. Missing FIOS asset open errors for Media/resources assets (e.g. resources.assets.resS) were logged during load; these may relate to the stuck frame.",
+  "issues": [
+    "Game renders frames but stays on a static dark boot frame; title/menu never loads (Unity). FIOS-HLE reports missing resources.assets.resS assets."
+  ],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Mesa Turnip",
+    "version": "26.2.0-devel",
+    "build": "7fdde2f8f8",
+    "source": "JICA98/bachata-s4-drivers gen8-v2"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "testDurationSeconds": 380
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/01.webp",
+        "caption": "Dark boot frame after launch"
+      },
+      {
+        "path": "assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
+        "caption": "Same dark boot frame, no title screen"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "a2c4d8c9db9d4e4675032042ff0be1992a2567abd36dd8c88a157d58b6e6ffe6"
+      },
+      {
+        "path": "assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "c718399d374439a4bba9b8fbf064d6969be89f9319ac3fb388604c1b0aae83f4"
+      },
+      {
+        "path": "assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/logs/03-shadps4-internal.log.gz",
+        "label": "shadPS4 internal log",
+        "sha256": "d2126298ee9f46d97485ca85cca5abe0c1c0c44470d9c9db48a5ab904144aaae"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 7
+}
