@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel",
+  "cusaId": "CUSA13801",
+  "testedAt": "2026-08-02T10:09:12Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Reaches controllable gameplay in the opening Ashina Reservoir area with HUD at a ~30 FPS target on the bundled Turnip gen8 v2 driver.",
+  "notes": "Boots from title screen through the opening cutscene into the controllable prologue. Third-person gameplay renders with HUD (action and item prompts). No crashes during the session. Performance is variable: cutscenes reach 60 FPS, the reservoir gameplay area runs roughly 19-30 FPS with dips to ~12 FPS.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v2",
+    "version": "26.2.0-devel",
+    "build": "git-7fdde2f8f8",
+    "source": "APK-bundled release gen8-v2 (JICA98/bachata-s4-drivers)"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 24.6,
+    "minimumFps": 6.01,
+    "maximumFps": 60.34,
+    "framePacing": "variable",
+    "testDurationSeconds": 270
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/01.webp",
+        "caption": "Controllable gameplay in Ashina Reservoir with HUD"
+      },
+      {
+        "path": "assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
+        "caption": "Third-person gameplay with action prompts"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "ef242e9b9a82324f07df54c7fa7005c168af880efbbd97a73aecfcb9e966afe5"
+      },
+      {
+        "path": "assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "a8d48b562435e3da9d22ca4aaa1b794c1c9c6a784bdec87b273e87be07fe57a9"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 5
+}
