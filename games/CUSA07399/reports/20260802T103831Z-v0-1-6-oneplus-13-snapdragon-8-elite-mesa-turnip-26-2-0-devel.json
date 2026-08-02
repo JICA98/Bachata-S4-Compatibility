@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel",
+  "cusaId": "CUSA07399",
+  "testedAt": "2026-08-02T10:38:31Z",
+  "status": "menus",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Boots into the Crash Bandicoot N. Sane Trilogy title screen (PRESS X to Begin) and holds it at ~30 FPS; could not be advanced to the main menu or gameplay during testing.",
+  "notes": "Game boots, plays intro/loading, and reaches the title screen rendered at 28-30 FPS (60 samples, median 29.9, min 13.9 during load transitions). Background sky shows persistent horizontal scanline/banding corruption on the Turnip gen8 v2 driver. Pressing the on-screen X button did not advance past the title screen. In one longer run the backend exited with SIGTRAP (exitCode 133, shadPS4 'Assertion Failed! ... irq=GfxFlip token=2622 last_registered=2623') after ~144s in the GPU coroutine; in other runs it held the title screen without crashing during the capture window.",
+  "issues": [
+    "GPU coroutine flip assertion causes an intermittent SIGTRAP crash (exitCode 133) during the boot/loading phase, and the title screen does not advance past PRESS X to begin."
+  ],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Mesa Turnip",
+    "version": "26.2.0-devel",
+    "build": "git-7fdde2f8f8",
+    "source": "APK-bundled release gen8-v2 (JICA98/bachata-s4-drivers)"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 26.74,
+    "minimumFps": 13.88,
+    "maximumFps": 30.05,
+    "framePacing": "variable",
+    "testDurationSeconds": 125
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/01.webp",
+        "caption": "Title screen (PRESS X to Begin) at 30 FPS"
+      },
+      {
+        "path": "assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
+        "caption": "Title screen, stable render"
+      },
+      {
+        "path": "assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/03.webp",
+        "caption": "Title screen, stable render"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "9bec6e56633233185e9271ba20d33464bd0516d9c0adc45a6e9231bbb32243ff"
+      },
+      {
+        "path": "assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "07f881809ea38232a7fb3c608752e15079f1b7a0d01aa27948b41e7bd5b7bc78"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 6
+}
