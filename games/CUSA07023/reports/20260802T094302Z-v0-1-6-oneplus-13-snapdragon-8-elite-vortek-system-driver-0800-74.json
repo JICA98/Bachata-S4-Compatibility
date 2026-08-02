@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74",
+  "cusaId": "CUSA07023",
+  "testedAt": "2026-08-02T09:43:02Z",
+  "status": "ingame",
+  "gameVersion": "01.03",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Reaches controllable gameplay in Green Hill Zone Act 1 at ~60 FPS on the experimental Vortek driver, with a continuous Vortek host-loader crash loop.",
+  "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite, Adreno 830, Android 16) with the experimental in-app Vortek driver (System Driver, Vortek, Experimental) which runs the device system Vulkan driver (Qualcomm Adreno 0800.74, Vulkan API 1.4.0) through the Vortek transport (client build ab7329c4b445). Game boots to the title screen, navigates menus, and plays Mania Mode in Green Hill Zone Act 1 with the HUD rendering; performance overlay reported a steady ~60 FPS (avg 59.9, min 51.0, max 60.3 across ~4.5 minutes). Vortek host-loader thread (tid 29112) deterministically crashes with SIGSEGV at pc=0x79ea0f849c (and periodic SIGBUS); the crash reporter catches these so gameplay continues but the session log floods (~12k reports). Full-game completion was not verified, so status is ingame.",
+  "issues": [
+    "Vortek host-loader thread crashes deterministically with SIGSEGV at pc=0x79ea0f849c (plus SIGBUS) throughout the session; the crash reporter recovers each time so the game keeps rendering, but the shadPS4 log floods with repeated crash reports. Present on v0.1.6; the Vortek crash fixes on main post-release are not included in this release."
+  ],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "system",
+    "name": "Vortek (System Driver)",
+    "version": "0800.74",
+    "build": "ab7329c4b445a4abd9b9af91b8148e1ca41464fa",
+    "source": "Bachata S4 bundled experimental Vortek transport over the device system Vulkan driver"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 59.91,
+    "minimumFps": 51.0,
+    "maximumFps": 60.34,
+    "framePacing": "stable",
+    "testDurationSeconds": 269
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/01.webp",
+        "caption": "Controllable gameplay in Green Hill Zone Act 1"
+      },
+      {
+        "path": "assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/02.webp",
+        "caption": "Live rendering — HUD timer and character animation advancing"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "0a1be2304264efaf6d614cf598b136f95dcafa83f45183ad928538447d6d22c6"
+      },
+      {
+        "path": "assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log with Vortek crash loop",
+        "sha256": "8cc8c4246ffef9f57e3e990e4a801d7f6690ffc1eb9e4483bd2add9fdb6a085d"
+      }
+    ]
+  },
+  "tester": "jica98",
+  "issueNumber": 4
+}
