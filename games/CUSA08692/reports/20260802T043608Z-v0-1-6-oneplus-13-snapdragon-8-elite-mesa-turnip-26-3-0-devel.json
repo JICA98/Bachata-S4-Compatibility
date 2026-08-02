@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
+  "cusaId": "CUSA08692",
+  "testedAt": "2026-08-02T04:36:08Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.6",
+    "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.6"
+  },
+  "emulatorVersion": "0.1.6",
+  "guestBackend": "fex",
+  "summary": "Reaches controllable gameplay in Undead Asylum at 24-30 FPS on Turnip.",
+  "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite) with the bundled Turnip gen8 v2 driver (Mesa 26.3.0-devel git-9c51ede50f). Game launches successfully, loads into the Undead Asylum, and character control is fully functional with correct rendering of the environment and player character. Performance is around 60 FPS in intro screen/menus, dropping to ~30 FPS during controllable gameplay.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Mesa Turnip",
+    "version": "26.3.0-devel",
+    "build": "git-9c51ede50f",
+    "source": "JICA98/bachata-s4-drivers gen8-v2"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 35.0,
+    "minimumFps": 24.0,
+    "maximumFps": 60.0,
+    "framePacing": "stuttery",
+    "testDurationSeconds": 90
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/01.webp",
+        "caption": "Intro white screen with 60 FPS performance overlay"
+      },
+      {
+        "path": "assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
+        "caption": "Controllable gameplay rendering the player character in Undead Asylum at 23.8 FPS"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "9fef05d2176cc4afbabc19876b6317ea112c5177ec4369907ab76e2d826e6fff"
+      },
+      {
+        "path": "assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "e4ed6ef29a0493e6d14a8f8739647858e208532d590e185b04b009e01554ba86"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 3
+}
