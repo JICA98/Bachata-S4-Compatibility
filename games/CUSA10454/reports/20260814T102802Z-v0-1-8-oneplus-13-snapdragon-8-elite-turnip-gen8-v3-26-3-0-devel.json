@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel",
+  "cusaId": "CUSA10454",
+  "testedAt": "2026-08-14T10:28:02Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.8",
+    "commit": "ee06523477206fc8b809a76432f53f8cd21c4046",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.8"
+  },
+  "emulatorVersion": "0.1.8",
+  "guestBackend": "fex",
+  "summary": "Dragon's Crown Pro boots to controllable in-game dungeon gameplay at ~60 FPS on the OnePlus 13 with Turnip gen8 v3.",
+  "notes": "Local unreleased 0.1.8 test build (versionCode 26081400, source v0.1.6-78-gee0652347) installed on the OnePlus 13 (CPH2649, SM8750, Adreno 830, Android 16). Game launched from the library tile; release build has no DirectLaunchActivity, so navigation was manual. Session rendered 1280x720; driver reported by shadPS4 as 'turnip Mesa driver (whitebelyash branch) 26.2.99' with Vulkan 1.4.358 (Mesa 26.3.0-devel, build 9c475fc, from JICA98/bachata-s4-drivers gen8-v3). Reached and played in-game dungeon content; no crashes, freezes, or black screens during the session. Single FPS hitch (37 FPS) during boot; otherwise locked ~60 FPS.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v3",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v3"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 59.5,
+    "minimumFps": 37.3,
+    "maximumFps": 60.4,
+    "framePacing": "smooth",
+    "testDurationSeconds": 198
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/01.webp",
+        "caption": "In-game dungeon gameplay, first capture"
+      },
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/02.webp",
+        "caption": "In-game dungeon gameplay, second capture"
+      },
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+        "caption": "In-game dungeon gameplay, third capture"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "617a3b7959280084e0df5a377cd0dbc63ea3e272a80ed2108034764d5411c18a"
+      },
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "af1900e4d2b05ba42366e398350c55584a91cac8d420ad6e41d27c407f50f174"
+      },
+      {
+        "path": "assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/03-logcat.log.gz",
+        "label": "Android logcat capture",
+        "sha256": "db63c59f052cf451a215be92708dc97c48a28261c8fa7db89054a97444d44450"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 11
+}
