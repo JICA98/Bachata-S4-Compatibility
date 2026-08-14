@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel",
+  "cusaId": "CUSA01843",
+  "testedAt": "2026-08-14T10:40:49Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.8",
+    "commit": "ee06523477206fc8b809a76432f53f8cd21c4046",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.8"
+  },
+  "emulatorVersion": "0.1.8",
+  "guestBackend": "fex",
+  "summary": "Teenage Mutant Ninja Turtles: Mutants in Manhattan boots to controllable in-game stage gameplay at a locked 30 FPS on the OnePlus 13 with Turnip gen8 v3.",
+  "notes": "Local unreleased 0.1.8 test build (versionCode 26081400, source v0.1.6-78-gee0652347) on OnePlus 13 (CPH2649, SM8750, Adreno 830, Android 16). Manual launch from the library tile (release build has no DirectLaunchActivity). Session rendered 1280x720; shadPS4 reported 'turnip Mesa driver (whitebelyash branch) 26.2.99', Vulkan 1.4.358 (Mesa 26.3.0-devel, build 9c475fc, JICA98/bachata-s4-drivers gen8-v3). Reached and played in-game stage content at a locked 30 FPS target; 90% of samples at 29.5+ FPS with brief dips (loading/transitions). No crashes, freezes, or black screens. Only benign stubs logged (Net/Ssl2 DUMMY, NP Trophy noise, event-flag warnings). An unrelated game extraction (CUSA17425, 19-39 GB) was running on-device during the session.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v3",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v3"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 29.7,
+    "minimumFps": 21.7,
+    "maximumFps": 30.4,
+    "framePacing": "smooth",
+    "testDurationSeconds": 196
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/01.webp",
+        "caption": "In-game stage gameplay, first capture"
+      },
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/02.webp",
+        "caption": "In-game stage gameplay, second capture"
+      },
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+        "caption": "In-game stage gameplay, third capture"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "671af1c6aceff7144603fb493d33872657330e52cc8dc96c1394a3df88084b58"
+      },
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "666dd3d71d36e41129bfa7dd1e91ad2ddb68993e5de1f423ae219de62fca62dc"
+      },
+      {
+        "path": "assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/03-logcat.log.gz",
+        "label": "Android logcat capture",
+        "sha256": "4b2c2eecbe4ee4af405875cf7cd526af503692847df3c9d219a60e239cdf58b6"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 12
+}
