@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel",
+  "cusaId": "CUSA17425",
+  "testedAt": "2026-08-14T11:07:35Z",
+  "status": "boots",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.1.8",
+    "commit": "ee06523477206fc8b809a76432f53f8cd21c4046",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.8"
+  },
+  "emulatorVersion": "0.1.8",
+  "guestBackend": "fex",
+  "summary": "SnowRunner boots to a rendered title screen at ~15-20 FPS on the OnePlus 13 with Turnip gen8 v3, but the title screen is static and does not respond to input; no menus reached.",
+  "notes": "Local unreleased 0.1.8 test build (versionCode 26081400, source v0.1.6-78-gee0652347) on OnePlus 13 (CPH2649, SM8750, Adreno 830, Android 16). Manual launch from the library tile (release build has no DirectLaunchActivity). First run after extraction: shader/asset cache build, heavy file probing (FIOS/sceKernelStat ENOENT noise, shaders_cache not yet built). Session rendered 1280x720; shadPS4 reported 'turnip Mesa driver (whitebelyash branch) 26.2.99', Vulkan 1.4.358 (Mesa 26.3.0-devel, build 9c475fc, JICA98/bachata-s4-drivers gen8-v3). Title screen rendered (bright, detailed frame, 33k colors) but stayed static: no response to gamepad or touch input, so the game cannot progress past it. Average 20.9 FPS with frequent dips (10% of samples under 15 FPS, 54% in 15-20, 31% at 25+); occasional spikes to 30 FPS. No crash, freeze, or black screen during the 264s session.",
+  "issues": [
+    "Title screen does not respond to gamepad or touch input; the game cannot advance past it. Performance hovers at 15-20 FPS while the first-run shader cache builds."
+  ],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v3",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v3"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 20.9,
+    "minimumFps": 2.1,
+    "maximumFps": 30.0,
+    "framePacing": "stuttery",
+    "testDurationSeconds": 264
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/01.webp",
+        "caption": "Rendered title screen, first capture"
+      },
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/02.webp",
+        "caption": "Rendered title screen, second capture"
+      },
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+        "caption": "Rendered title screen, third capture"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "79793331f33e06a113c53296c87edc6099e452ea7d8d5ae224dbf2bf25d07a5a"
+      },
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "4598e2000941167847e2a0c4e8c228cf9220db36c6e23f1f1b1f4392ae882a6f"
+      },
+      {
+        "path": "assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/logs/03-logcat.log.gz",
+        "label": "Android logcat capture",
+        "sha256": "582eb6e27f9a32282c8f9c71f9545321aa1dff09cbe4032532682c5e143abf8a"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 13
+}
