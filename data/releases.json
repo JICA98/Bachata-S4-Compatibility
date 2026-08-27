@@ -1,16 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T09:59:23Z",
+  "generatedAt": "2026-08-27T22:25:21Z",
   "repository": "JICA98/Bachata-S4",
   "releases": [
-    {
-      "tag": "v0.1.9-issue22-test",
-      "name": "v0.1.9-issue22-test",
-      "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.1.9-issue22-test",
-      "publishedAt": "2026-08-27T05:14:12Z",
-      "prerelease": true,
-      "latest": false
-    },
     {
       "tag": "v0.1.9",
       "name": "BachataS4 v0.1.9",
