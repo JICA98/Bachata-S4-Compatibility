@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA10454",
   "title": "Dragon's Crown Pro",
   "region": "US",
   "publisher": "Atlus",
-  "issueNumber": 11
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 10
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 11
+    }
+  ]
 }

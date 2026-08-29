@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA00900",
   "title": "Bloodborne",
   "region": "US",
   "publisher": "Sony Computer Entertainment",
-  "issueNumber": 1
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 1
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 2
+    }
+  ]
 }

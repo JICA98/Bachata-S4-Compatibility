@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA07023",
   "title": "Sonic Mania",
   "region": "US",
   "publisher": "SEGA",
-  "issueNumber": 4
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 3
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 4
+    }
+  ]
 }

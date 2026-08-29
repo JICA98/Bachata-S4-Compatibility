@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA13801",
   "title": "Sekiro: Shadows Die Twice",
   "region": "EU",
   "publisher": "Activision",
-  "issueNumber": 5
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 4
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 5
+    }
+  ]
 }

@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA08692",
   "title": "Dark Souls: Remastered",
   "region": "US",
   "publisher": "Bandai Namco Entertainment",
-  "issueNumber": 3
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 2
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 3
+    }
+  ]
 }

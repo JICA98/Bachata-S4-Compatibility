@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA03146",
   "title": "Galak-Z",
   "region": "EU",
   "publisher": "Gambitious Digital Entertainment",
-  "issueNumber": 7
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 6
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 7
+    }
+  ]
 }

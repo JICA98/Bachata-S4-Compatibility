@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA17425",
   "title": "SnowRunner",
   "region": "US",
   "publisher": "Focus Home Interactive",
-  "issueNumber": 13
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 12
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 13
+    }
+  ]
 }

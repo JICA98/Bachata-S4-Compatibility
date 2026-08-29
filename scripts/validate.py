@@ -183,7 +183,12 @@ def validate(root: Path) -> list[str]:
             report_legacy = report.get("legacyImported") is True
             report_issue = report.get("issueNumber")
             issue_error = report_issue_reference_error(game, report)
-            if issue_error and (schema_version == 2 or not report_legacy):
+            historical_canonical_without_repository = (
+                report.get("schemaVersion") == 1
+                and report.get("issueRepository") is None
+                and issue_error == "issueRepository is required for a canonical schema-v2 report"
+            )
+            if issue_error and not report_legacy and not historical_canonical_without_repository:
                 fail(errors, report_path, issue_error)
             device = report.get("device") or {}
             for key in ("label", "manufacturer", "model", "soc", "gpu", "androidVersion"):

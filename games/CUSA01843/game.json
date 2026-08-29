@@ -1,8 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "cusaId": "CUSA01843",
   "title": "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
   "region": "US",
   "publisher": "Activision",
-  "issueNumber": 12
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 11
+  },
+  "legacyIssues": [
+    {
+      "repository": "JICA98/Bachata-S4-Fork-Archive",
+      "number": 12
+    }
+  ]
 }
