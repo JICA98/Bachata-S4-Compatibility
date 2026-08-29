@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from validate import allowed_issue_refs, issue_identity_errors, report_issue_reference_error, validate
+from build_site_data import project_issue_identity
 
 
 def load_schema(name: str) -> dict:
@@ -88,6 +89,23 @@ class MixedProvenanceValidationTests(unittest.TestCase):
         before = inventory()
         self.assertEqual(validate(ROOT), [])
         self.assertEqual(inventory(), before)
+
+
+class SiteIssueProjectionTests(unittest.TestCase):
+    def test_site_uses_canonical_issue_and_keeps_archive_provenance(self) -> None:
+        game = MixedProvenanceValidationTests.game(
+            canonical=("JICA98/Bachata-S4", 4),
+            legacy=[("JICA98/Bachata-S4-Fork-Archive", 2)],
+        )
+        projected = project_issue_identity(game)
+        self.assertEqual(projected["issueNumber"], 4)
+        self.assertEqual(projected["issueRepository"], "JICA98/Bachata-S4")
+        self.assertEqual(projected["issueUrl"], "https://github.com/JICA98/Bachata-S4/issues/4")
+        self.assertEqual(projected["canonicalIssue"]["url"], projected["issueUrl"])
+        self.assertEqual(
+            projected["legacyIssues"][0]["url"],
+            "https://github.com/JICA98/Bachata-S4-Fork-Archive/issues/2",
+        )
 
 
 if __name__ == "__main__":

@@ -20,6 +20,35 @@ def log_url(item: dict) -> str:
     return str(item.get("externalUrl") or f"{RAW_BASE}{item['path']}")
 
 
+def _issue_with_url(reference: dict) -> dict:
+    repository = reference["repository"]
+    number = reference["number"]
+    return {**reference, "url": f"https://github.com/{repository}/issues/{number}"}
+
+
+def project_issue_identity(game: dict) -> dict:
+    if game.get("schemaVersion") == 1:
+        number = game.get("issueNumber")
+        repository = "JICA98/Bachata-S4-Compatibility"
+        url = f"https://github.com/{repository}/issues/{number}" if number else ""
+        return {
+            "canonicalIssue": {"repository": repository, "number": number, "url": url} if number else None,
+            "issueNumber": number,
+            "issueRepository": repository if number else None,
+            "issueUrl": url,
+            "legacyIssues": [],
+        }
+    canonical = _issue_with_url(game["canonicalIssue"])
+    legacy = [_issue_with_url(reference) for reference in game.get("legacyIssues", [])]
+    return {
+        "canonicalIssue": canonical,
+        "issueNumber": canonical["number"],
+        "issueRepository": canonical["repository"],
+        "issueUrl": canonical["url"],
+        "legacyIssues": legacy,
+    }
+
+
 def transform_report(report: dict) -> dict:
     value = copy.deepcopy(report)
     evidence = value.setdefault("evidence", {})
@@ -71,10 +100,11 @@ def build(root: Path, output: Path) -> None:
     all_reports = 0
     for game_path in sorted((root / "games").glob("CUSA*/game.json")):
         game = load_json(game_path)
+        projected_game = {**game, **project_issue_identity(game)}
         reports = [load_json(path) for path in sorted((game_path.parent / "reports").glob("*.json"))]
         reports.sort(key=lambda item: item["testedAt"], reverse=True)
         transformed = [transform_report(report) for report in reports]
-        write_json(output / "games" / f"{game['cusaId']}.json", {"schemaVersion": 1, "game": game, "reports": transformed})
+        write_json(output / "games" / f"{game['cusaId']}.json", {"schemaVersion": 1, "game": projected_game, "reports": transformed})
         summaries = [report_summary(report) for report in reports]
         best = min(reports, key=lambda item: STATUS_ORDER[item["status"]]) if reports else None
         latest = reports[0] if reports else None
@@ -83,8 +113,7 @@ def build(root: Path, output: Path) -> None:
         all_reports += len(reports)
         if best: status_counts[best["status"]] += 1
         games_index.append({
-            **game,
-            "issueUrl": f"https://github.com/JICA98/Bachata-S4-Compatibility/issues/{game['issueNumber']}" if game.get("issueNumber") else "",
+            **projected_game,
             "reportCount": len(reports),
             "deviceCount": len(devices),
             "bestStatus": best["status"] if best else "unknown",
