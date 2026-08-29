@@ -137,8 +137,10 @@ class CreationAndMigrationTests(unittest.TestCase):
                 "schemaVersion": 1,
                 "issues": [{
                     "cusaId": "CUSA00900",
-                    "source": {"repository": "JICA98/Bachata-S4-Fork-Archive", "number": 2},
-                    "target": {"repository": "JICA98/Bachata-S4", "number": 4},
+                    "sourceRepository": "JICA98/Bachata-S4-Fork-Archive", "sourceNumber": 2,
+                    "sourceNodeId": "source-node-2",
+                    "targetRepository": "JICA98/Bachata-S4", "targetNumber": 4,
+                    "targetNodeId": "target-node-4", "type": "compatibility",
                 }],
             }
             report_hash = hashlib.sha256(report_path.read_bytes()).hexdigest()
@@ -152,8 +154,8 @@ class CreationAndMigrationTests(unittest.TestCase):
             self.assertEqual(changed, dry_run)
             game = json.loads(game_path.read_text())
             self.assertEqual(game["schemaVersion"], 2)
-            self.assertEqual(game["canonicalIssue"], mapping["issues"][0]["target"])
-            self.assertEqual(game["legacyIssues"], [mapping["issues"][0]["source"]])
+            self.assertEqual(game["canonicalIssue"], {"repository": "JICA98/Bachata-S4", "number": 4})
+            self.assertEqual(game["legacyIssues"], [{"repository": "JICA98/Bachata-S4-Fork-Archive", "number": 2}])
             self.assertNotIn("issueNumber", game)
             self.assertEqual(hashlib.sha256(report_path.read_bytes()).hexdigest(), report_hash)
             self.assertEqual(hashlib.sha256(evidence_path.read_bytes()).hexdigest(), evidence_hash)
@@ -161,12 +163,22 @@ class CreationAndMigrationTests(unittest.TestCase):
     def test_migration_rejects_duplicate_or_conflicting_map_entries(self) -> None:
         entry = {
             "cusaId": "CUSA00900",
-            "source": {"repository": "archive/repo", "number": 2},
-            "target": {"repository": "JICA98/Bachata-S4", "number": 4},
+            "sourceRepository": "archive/repo", "sourceNumber": 2, "sourceNodeId": "source-node",
+            "targetRepository": "JICA98/Bachata-S4", "targetNumber": 4, "targetNodeId": "target-node",
+            "type": "compatibility",
         }
         with tempfile.TemporaryDirectory() as temporary:
             with self.assertRaisesRegex(ValueError, "duplicate mapping"):
                 migrate_games(Path(temporary), {"schemaVersion": 1, "issues": [entry, entry]}, dry_run=True)
+
+    def test_migration_ignores_non_compatibility_issue_map_entries(self) -> None:
+        mapping = {"schemaVersion": 1, "issues": [{
+            "sourceRepository": "archive/repo", "sourceNumber": 8, "sourceNodeId": "feature-source",
+            "targetRepository": "JICA98/Bachata-S4", "targetNumber": 3, "targetNodeId": "feature-target",
+            "type": "feature",
+        }]}
+        with tempfile.TemporaryDirectory() as temporary:
+            self.assertEqual(migrate_games(Path(temporary), mapping, dry_run=True), [])
 
 
 if __name__ == "__main__":

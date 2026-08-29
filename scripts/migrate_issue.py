@@ -31,13 +31,27 @@ def normalized_map(mapping: dict) -> dict[str, dict]:
     sources: set[tuple[str, int]] = set()
     targets: set[tuple[str, int]] = set()
     for index, value in enumerate(mapping["issues"]):
-        if not isinstance(value, dict) or set(value) != {"cusaId", "source", "target"}:
-            raise ValueError(f"issues[{index}] must contain exactly cusaId, source, and target")
+        if not isinstance(value, dict):
+            raise ValueError(f"issues[{index}] must be an object")
+        if value.get("type") != "compatibility":
+            continue
+        required = {
+            "cusaId", "sourceRepository", "sourceNumber", "sourceNodeId",
+            "targetRepository", "targetNumber", "targetNodeId", "type",
+        }
+        if set(value) != required:
+            raise ValueError(f"issues[{index}] must match the compatibility issue-map contract")
         cusa = value.get("cusaId")
         if not isinstance(cusa, str) or not CUSA_RE.fullmatch(cusa):
             raise ValueError(f"issues[{index}].cusaId must match CUSAxxxxx")
-        source = issue_ref(value.get("source"), f"issues[{index}].source")
-        target = issue_ref(value.get("target"), f"issues[{index}].target")
+        source = issue_ref(
+            {"repository": value.get("sourceRepository"), "number": value.get("sourceNumber")},
+            f"issues[{index}].source",
+        )
+        target = issue_ref(
+            {"repository": value.get("targetRepository"), "number": value.get("targetNumber")},
+            f"issues[{index}].target",
+        )
         source_key = (source["repository"], source["number"])
         target_key = (target["repository"], target["number"])
         if cusa in by_cusa or source_key in sources or target_key in targets:
