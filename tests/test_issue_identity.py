@@ -112,6 +112,14 @@ class SiteIssueProjectionTests(unittest.TestCase):
 
 
 class CreationAndMigrationTests(unittest.TestCase):
+    def test_label_setup_uses_only_bounded_public_taxonomy(self) -> None:
+        script = (ROOT / "scripts/setup_labels.sh").read_text(encoding="utf-8")
+        self.assertNotIn("needs-confirmation", script)
+        self.assertNotIn("game-report", script)
+        self.assertNotIn("create regression ", script)
+        self.assertIn("type:compatibility", script)
+        self.assertIn("severity:regression", script)
+
     def test_add_report_requires_exact_canonical_issue(self) -> None:
         game = MixedProvenanceValidationTests.game(canonical=("JICA98/Bachata-S4", 4))
         self.assertIsNone(canonical_issue_error(game, "JICA98/Bachata-S4", 4))
