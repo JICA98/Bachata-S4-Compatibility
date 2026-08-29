@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import gzip
 import json
+import re
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -14,6 +15,86 @@ MAX_SCREENSHOTS = 3
 MAX_SCREENSHOT_BYTES = 3 * 1024 * 1024
 MAX_LOG_BYTES = 25 * 1024 * 1024
 SCREENSHOT_SUFFIXES = {".webp", ".png", ".jpg", ".jpeg"}
+ISSUE_REPOSITORY_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
+SCHEMA_V1_ISSUE_REPOSITORY = "JICA98/Bachata-S4"
+
+
+def _issue_ref(value: object) -> tuple[str, int] | None:
+    if not isinstance(value, dict) or set(value) != {"repository", "number"}:
+        return None
+    repository = value.get("repository")
+    number = value.get("number")
+    if not isinstance(repository, str) or not ISSUE_REPOSITORY_RE.fullmatch(repository):
+        return None
+    if not isinstance(number, int) or isinstance(number, bool) or number < 1:
+        return None
+    return repository, number
+
+
+def issue_identity_errors(game: dict) -> list[str]:
+    if game.get("schemaVersion") != 2:
+        return ["schemaVersion must be 2"]
+    errors: list[str] = []
+    canonical = _issue_ref(game.get("canonicalIssue"))
+    if canonical is None:
+        errors.append("canonicalIssue must contain only a valid repository and number")
+    legacy_value = game.get("legacyIssues")
+    if not isinstance(legacy_value, list):
+        return errors + ["legacyIssues must be an array"]
+    legacy: list[tuple[str, int]] = []
+    for index, value in enumerate(legacy_value):
+        reference = _issue_ref(value)
+        if reference is None:
+            errors.append(f"legacyIssues[{index}] must contain only a valid repository and number")
+        else:
+            legacy.append(reference)
+    if len(legacy) != len(set(legacy)):
+        errors.append("duplicate legacy issue")
+    if canonical is not None and canonical in legacy:
+        errors.append("canonical issue cannot also be legacy")
+    return errors
+
+
+def allowed_issue_refs(game: dict) -> set[tuple[str, int]]:
+    if game.get("schemaVersion") == 1:
+        number = game.get("issueNumber")
+        return {(SCHEMA_V1_ISSUE_REPOSITORY, number)} if isinstance(number, int) and number >= 1 else set()
+    errors = issue_identity_errors(game)
+    if errors:
+        raise ValueError("; ".join(errors))
+    canonical = _issue_ref(game["canonicalIssue"])
+    legacy = {_issue_ref(value) for value in game["legacyIssues"]}
+    return {canonical, *legacy}  # type: ignore[arg-type]
+
+
+def report_issue_reference_error(game: dict, report: dict) -> str | None:
+    number = report.get("issueNumber")
+    if not isinstance(number, int) or isinstance(number, bool) or number < 1:
+        return "issueNumber must be an integer of at least 1"
+    if game.get("schemaVersion") == 1:
+        return None if number == game.get("issueNumber") else "issueNumber must match game.json"
+    try:
+        allowed = allowed_issue_refs(game)
+    except ValueError as exc:
+        return f"invalid game issue identity: {exc}"
+    repository = report.get("issueRepository")
+    if repository is not None:
+        if not isinstance(repository, str) or not ISSUE_REPOSITORY_RE.fullmatch(repository):
+            return "issueRepository must be an owner/repository name"
+        if (repository, number) not in allowed:
+            return "report issue is not canonical or declared legacy issue"
+        return None
+    legacy_matches = [
+        reference for reference in allowed
+        if reference[1] == number and reference != _issue_ref(game.get("canonicalIssue"))
+    ]
+    if len(legacy_matches) == 1:
+        return None
+    if len(legacy_matches) > 1:
+        return "historical issue repository is ambiguous; issueRepository is required"
+    if _issue_ref(game.get("canonicalIssue")) == ("JICA98/Bachata-S4", number):
+        return "issueRepository is required for a canonical schema-v2 report"
+    return "report issue is not canonical or declared legacy issue"
 
 
 def fail(errors: list[str], path: Path | str, message: str) -> None:
@@ -61,10 +142,15 @@ def validate(root: Path) -> list[str]:
         for key in ("title", "region", "publisher"):
             if not isinstance(game.get(key), str) or not game[key].strip():
                 fail(errors, game_path, f"{key} is required")
-        legacy = game.get("legacyImported") is True
+        schema_version = game.get("schemaVersion")
         issue = game.get("issueNumber")
-        if not legacy and (not isinstance(issue, int) or issue < 1):
-            fail(errors, game_path, "issueNumber is required for non-legacy games")
+        if schema_version == 2:
+            for message in issue_identity_errors(game):
+                fail(errors, game_path, message)
+        else:
+            legacy = game.get("legacyImported") is True
+            if not legacy and (not isinstance(issue, int) or issue < 1):
+                fail(errors, game_path, "issueNumber is required for non-legacy games")
 
         reports_dir = game_path.parent / "reports"
         for report_path in sorted(reports_dir.glob("*.json")):
@@ -96,8 +182,9 @@ def validate(root: Path) -> list[str]:
                 fail(errors, report_path, "release.commit must be a 7-40 character hexadecimal SHA")
             report_legacy = report.get("legacyImported") is True
             report_issue = report.get("issueNumber")
-            if not report_legacy and report_issue != issue:
-                fail(errors, report_path, "issueNumber must match game.json")
+            issue_error = report_issue_reference_error(game, report)
+            if issue_error and (schema_version == 2 or not report_legacy):
+                fail(errors, report_path, issue_error)
             device = report.get("device") or {}
             for key in ("label", "manufacturer", "model", "soc", "gpu", "androidVersion"):
                 if not str(device.get(key) or "").strip():
