@@ -2,7 +2,8 @@
 set -euo pipefail
 REPO="${1:-JICA98/Bachata-S4-Compatibility}"
 create() { gh label create "$1" --repo "$REPO" --color "$2" --description "$3" --force; }
-create game-report 1d76db "Canonical game compatibility discussion"
+create type:compatibility 1d76db "Canonical game compatibility discussion"
+create triage:new ededed "Awaiting initial maintainer review"
 create needs-confirmation fbca04 "Waiting for tester confirmation"
 create regression d73a4a "A previously working result regressed"
 create status:testing 6e7781 "A test is currently being prepared"

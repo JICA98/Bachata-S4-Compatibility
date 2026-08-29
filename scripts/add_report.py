@@ -9,6 +9,13 @@ from pathlib import Path
 from common import CUSA_RE, gzip_copy, load_json, sha256, slug, write_json
 
 
+def canonical_issue_error(game: dict, repository: str, number: int) -> str | None:
+    canonical = game.get("canonicalIssue") if game.get("schemaVersion") == 2 else None
+    if canonical != {"repository": repository, "number": number}:
+        return f"issue {repository}#{number} does not match canonicalIssue"
+    return None
+
+
 def parse_number(value: str | None) -> float | None:
     return None if value in (None, "") else float(value)
 
@@ -50,6 +57,7 @@ def parser() -> argparse.ArgumentParser:
     value.add_argument("--region", required=True)
     value.add_argument("--publisher", required=True)
     value.add_argument("--issue-number", required=True, type=int)
+    value.add_argument("--issue-repository", required=True)
     value.add_argument("--status", required=True, choices=["playable", "ingame", "menus", "boots", "nothing"])
     value.add_argument("--tested-at", default=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"))
     value.add_argument("--game-version", default="")
@@ -104,12 +112,9 @@ def main() -> int:
 
     if game_file.exists():
         game = load_json(game_file)
-        if game.get("issueNumber") is None and game.get("legacyImported") is True:
-            game["issueNumber"] = args.issue_number
-            game.pop("legacyImported", None)
-            write_json(game_file, game)
-        elif game.get("issueNumber") != args.issue_number:
-            raise SystemExit("--issue-number does not match the canonical game issue")
+        issue_error = canonical_issue_error(game, args.issue_repository, args.issue_number)
+        if issue_error:
+            raise SystemExit(issue_error)
         for key, expected in (("title", args.title), ("region", args.region), ("publisher", args.publisher)):
             if game.get(key) != expected:
                 raise SystemExit(f"Existing game {key} differs: {game.get(key)!r}")
@@ -117,12 +122,16 @@ def main() -> int:
         write_json(
             game_file,
             {
-                "schemaVersion": 1,
+                "schemaVersion": 2,
                 "cusaId": cusa,
                 "title": args.title,
                 "region": args.region,
                 "publisher": args.publisher,
-                "issueNumber": args.issue_number,
+                "canonicalIssue": {
+                    "repository": args.issue_repository,
+                    "number": args.issue_number,
+                },
+                "legacyIssues": [],
             },
         )
 
@@ -181,6 +190,7 @@ def main() -> int:
         "evidence": {"screenshots": screenshots, "logs": logs},
         "tester": args.tester,
         "issueNumber": args.issue_number,
+        "issueRepository": args.issue_repository,
     }
     write_json(report_file, report)
     print(report_file.relative_to(root))

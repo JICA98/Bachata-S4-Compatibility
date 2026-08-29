@@ -1,10 +1,11 @@
 name: Game compatibility
 about: Canonical discussion for one PS4 title / CUSA ID
-labels: [game-report, status:testing]
+title: "[CUSAxxxxx] Exact Game Title"
+labels: [type:compatibility, triage:new, status:testing]
 body:
   - type: markdown
     attributes:
-      value: "One issue is reused for every confirmed report for this CUSA. Do not attach copyrighted game content."
+      value: "Search open and closed issues for the exact CUSA first. One canonical issue is reused for every confirmed report. Do not attach copyrighted game content."
   - type: input
     id: cusa
     attributes:

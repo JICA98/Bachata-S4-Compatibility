@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import hashlib
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -12,6 +13,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from validate import allowed_issue_refs, issue_identity_errors, report_issue_reference_error, validate
 from build_site_data import project_issue_identity
+from add_report import canonical_issue_error
+from migrate_issue import migrate_games
 
 
 def load_schema(name: str) -> dict:
@@ -106,6 +109,64 @@ class SiteIssueProjectionTests(unittest.TestCase):
             projected["legacyIssues"][0]["url"],
             "https://github.com/JICA98/Bachata-S4-Fork-Archive/issues/2",
         )
+
+
+class CreationAndMigrationTests(unittest.TestCase):
+    def test_add_report_requires_exact_canonical_issue(self) -> None:
+        game = MixedProvenanceValidationTests.game(canonical=("JICA98/Bachata-S4", 4))
+        self.assertIsNone(canonical_issue_error(game, "JICA98/Bachata-S4", 4))
+        self.assertIn("does not match canonicalIssue", canonical_issue_error(game, "JICA98/Bachata-S4", 5))
+        self.assertIn("does not match canonicalIssue", canonical_issue_error(game, "other/repo", 4))
+
+    def test_game_only_migration_preserves_report_and_evidence_bytes(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            game_path = root / "games/CUSA00900/game.json"
+            report_path = root / "games/CUSA00900/reports/report.json"
+            evidence_path = root / "assets/CUSA00900/report/log.gz"
+            game_path.parent.mkdir(parents=True)
+            report_path.parent.mkdir(parents=True)
+            evidence_path.parent.mkdir(parents=True)
+            game_path.write_text(json.dumps({
+                "schemaVersion": 1, "cusaId": "CUSA00900", "title": "Test",
+                "region": "US", "publisher": "Publisher", "issueNumber": 2,
+            }) + "\n", encoding="utf-8")
+            report_path.write_bytes(b'{"schemaVersion":1,"issueNumber":2}\n')
+            evidence_path.write_bytes(b"immutable evidence")
+            mapping = {
+                "schemaVersion": 1,
+                "issues": [{
+                    "cusaId": "CUSA00900",
+                    "source": {"repository": "JICA98/Bachata-S4-Fork-Archive", "number": 2},
+                    "target": {"repository": "JICA98/Bachata-S4", "number": 4},
+                }],
+            }
+            report_hash = hashlib.sha256(report_path.read_bytes()).hexdigest()
+            evidence_hash = hashlib.sha256(evidence_path.read_bytes()).hexdigest()
+
+            dry_run = migrate_games(root, mapping, dry_run=True)
+            self.assertEqual(dry_run[0]["path"], "games/CUSA00900/game.json")
+            self.assertEqual(json.loads(game_path.read_text())["schemaVersion"], 1)
+
+            changed = migrate_games(root, mapping, dry_run=False)
+            self.assertEqual(changed, dry_run)
+            game = json.loads(game_path.read_text())
+            self.assertEqual(game["schemaVersion"], 2)
+            self.assertEqual(game["canonicalIssue"], mapping["issues"][0]["target"])
+            self.assertEqual(game["legacyIssues"], [mapping["issues"][0]["source"]])
+            self.assertNotIn("issueNumber", game)
+            self.assertEqual(hashlib.sha256(report_path.read_bytes()).hexdigest(), report_hash)
+            self.assertEqual(hashlib.sha256(evidence_path.read_bytes()).hexdigest(), evidence_hash)
+
+    def test_migration_rejects_duplicate_or_conflicting_map_entries(self) -> None:
+        entry = {
+            "cusaId": "CUSA00900",
+            "source": {"repository": "archive/repo", "number": 2},
+            "target": {"repository": "JICA98/Bachata-S4", "number": 4},
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            with self.assertRaisesRegex(ValueError, "duplicate mapping"):
+                migrate_games(Path(temporary), {"schemaVersion": 1, "issues": [entry, entry]}, dry_run=True)
 
 
 if __name__ == "__main__":
