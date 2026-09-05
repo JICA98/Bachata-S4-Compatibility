@@ -17,6 +17,8 @@ jobs:
       - name: Enforce immutable reports and evidence
         if: github.event_name == 'pull_request'
         run: scripts/check_immutable.sh "origin/${{ github.base_ref }}"
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
       - name: Validate source data
         run: python3 scripts/validate.py
       - name: Build website indexes
