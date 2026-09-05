@@ -175,8 +175,10 @@ def validate(root: Path) -> list[str]:
             if report.get("status") not in STATUS_LABELS:
                 fail(errors, report_path, "invalid status")
             release = report.get("release") or {}
-            if release.get("tag") not in release_tags:
-                fail(errors, report_path, f"release tag is not in data/releases.json: {release.get('tag')}")
+            # Reports may reference tags not yet (or no longer) present in the
+            # append-only GitHub-synced release index.
+            if not isinstance(release.get("tag"), str) or not str(release.get("tag")).strip():
+                fail(errors, report_path, "release.tag is required")
             commit = str(release.get("commit") or "")
             if not (7 <= len(commit) <= 40 and all(ch in "0123456789abcdefABCDEF" for ch in commit)):
                 fail(errors, report_path, "release.commit must be a 7-40 character hexadecimal SHA")
