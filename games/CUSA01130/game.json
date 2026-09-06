@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA01130",
+  "title": "Gravity Rush™ Remastered",
+  "region": "US",
+  "publisher": "Sony Interactive Entertainment",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 21
+  },
+  "legacyIssues": []
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+  "cusaId": "CUSA01130",
+  "testedAt": "2026-09-06T09:14:51Z",
+  "status": "playable",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.2.1",
+    "commit": "c9263f39394a16bbb9705db5d06faf8cd61ad6e4",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.2.1"
+  },
+  "emulatorVersion": "0.2.1",
+  "guestBackend": "fex",
+  "summary": "Runs smoothly at near 60 FPS in 3D exploration and menus with responsive controls and clean rendering.",
+  "notes": "Tested on OnePlus 13 with Snapdragon 8 Elite and Turnip gen8 v4. Intro comic cutscene, dialogues, title screen, and in-game 3D town exploration rendered cleanly at 56.4 FPS average.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v4",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v4"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 56.4,
+    "minimumFps": 32.0,
+    "maximumFps": 60.0,
+    "framePacing": "smooth",
+    "testDurationSeconds": 197
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+        "caption": "Title screen and main menu running at 60 FPS"
+      },
+      {
+        "path": "assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+        "caption": "Introductory comic cutscene and dialogue running at 60 FPS"
+      },
+      {
+        "path": "assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+        "caption": "In-game 3D exploration and character control in town square running at 57 FPS"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "82097f53f953f43e1368749b107891dff5cb7082f5131cfdd49f0bf776ee5f25"
+      },
+      {
+        "path": "assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "b704e2a445e7d9584335c84a7466d3640f65a371e2e90c5436f02dd3e29d20a2"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 21,
+  "issueRepository": "JICA98/Bachata-S4"
+}
