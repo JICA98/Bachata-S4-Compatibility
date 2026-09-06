@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+  "cusaId": "CUSA00223",
+  "testedAt": "2026-09-06T09:38:23Z",
+  "status": "ingame",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.2.1",
+    "commit": "c9263f39394a16bbb9705db5d06faf8cd61ad6e4",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.2.1"
+  },
+  "emulatorVersion": "0.2.1",
+  "guestBackend": "fex",
+  "summary": "Enters 3D open-world gameplay at Salmon Bay pier with functional character movement, ladder climbing, and camera control at ~24 FPS.",
+  "notes": "Tested on OnePlus 13 with Snapdragon 8 Elite and Turnip gen8 v4. The opening pier area renders 3D environment, dynamic lighting, and character model with controllable movement, ladder climbing to the water tank, and falling respawn prompts. Framerate averages 23.5 FPS in-game. Full playthrough was not verified, so status is set to ingame.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v4",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v4"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 23.5,
+    "minimumFps": 13.4,
+    "maximumFps": 60.0,
+    "framePacing": "playable",
+    "testDurationSeconds": 221
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+        "caption": "Animated red star loading screen at 60 FPS"
+      },
+      {
+        "path": "assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+        "caption": "Salmon Bay pier open-world 3D gameplay and objective marker at 14 FPS"
+      },
+      {
+        "path": "assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+        "caption": "Climbed to top of water tank with dynamic shadows and camera traversal at 26 FPS"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "5e1c23547b0c1dc716a352ce6bd229e0721da5d488038e0f1ceecf8184396b80"
+      },
+      {
+        "path": "assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "8ea9e4ecb3536901431e3a189216f15326001d434d1c36b3190d17717215780c"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 23,
+  "issueRepository": "JICA98/Bachata-S4"
+}
