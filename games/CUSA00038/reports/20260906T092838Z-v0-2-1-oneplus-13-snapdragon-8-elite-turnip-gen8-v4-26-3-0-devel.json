@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+  "cusaId": "CUSA00038",
+  "testedAt": "2026-09-06T09:28:38Z",
+  "status": "playable",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.2.1",
+    "commit": "c9263f39394a16bbb9705db5d06faf8cd61ad6e4",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.2.1"
+  },
+  "emulatorVersion": "0.2.1",
+  "guestBackend": "fex",
+  "summary": "Runs smoothly in full arcade combat and menus with responsive twin-stick controls and solid voxel rendering.",
+  "notes": "Tested on OnePlus 13 with Snapdragon 8 Elite and Turnip gen8 v4. Menu renders at up to 60 FPS, and intense cylindrical voxel combat runs at an average of 41.6 FPS (min 28.5, max 60.2) through complete gameplay to the game over screen.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v4",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v4"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 41.6,
+    "minimumFps": 28.5,
+    "maximumFps": 60.2,
+    "framePacing": "variable",
+    "testDurationSeconds": 145
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+        "caption": "Mode selection menu running at 50 FPS"
+      },
+      {
+        "path": "assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+        "caption": "Active cylindrical voxel combat and shooting enemies at 44 FPS"
+      },
+      {
+        "path": "assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+        "caption": "Game over results screen showing completed 40-second gameplay run at 32 FPS"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "d3ecae74a864fdf669dc428dbc5c635d9d3c73d729fc0c506a825e358a75f33e"
+      },
+      {
+        "path": "assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "9c3c99cd88c508d391044da4813d710bcccccd4d12843e4ff55d6484954b2bec"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 22,
+  "issueRepository": "JICA98/Bachata-S4"
+}
