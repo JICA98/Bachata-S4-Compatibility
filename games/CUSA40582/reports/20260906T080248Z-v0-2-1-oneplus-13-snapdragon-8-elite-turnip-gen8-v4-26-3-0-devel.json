@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reportId": "20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+  "cusaId": "CUSA40582",
+  "testedAt": "2026-09-06T08:02:48Z",
+  "status": "playable",
+  "gameVersion": "01.00",
+  "release": {
+    "tag": "v0.2.1",
+    "commit": "c9263f39394a16bbb9705db5d06faf8cd61ad6e4",
+    "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.2.1"
+  },
+  "emulatorVersion": "0.2.1",
+  "guestBackend": "fex",
+  "summary": "Brotato boots, navigates menus, and runs full interactive arena gameplay at a locked 60 FPS on the OnePlus 13 with Turnip gen8 v4.",
+  "notes": "Tested on OnePlus 13 (CPH2649, Snapdragon 8 Elite SM8750, Adreno 830, Android 16) running Bachata S4 v0.2.1 (official source commit c9263f39394a16bbb9705db5d06faf8cd61ad6e4) with Turnip gen8 v4 (Mesa 26.3.0-devel git-9c475fc from JICA98/bachata-s4-drivers). Navigated main menu, character selection (Well-Rounded), weapon selection (Knife), and difficulty selection (Danger 0). Progressed through Wave 1 combat with responsive on-screen touch and gamepad controls, accurate rendering, smooth frame pacing, and steady 60 FPS throughout the session until run completion.",
+  "issues": [],
+  "device": {
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "soc": "SM8750",
+    "gpu": "Adreno (TM) 830",
+    "androidVersion": "16",
+    "ramGb": 22.5
+  },
+  "driver": {
+    "type": "turnip",
+    "name": "Turnip gen8 v4",
+    "version": "26.3.0-devel",
+    "build": "9c475fc",
+    "source": "JICA98/bachata-s4-drivers gen8-v4"
+  },
+  "settings": {
+    "resolutionScale": 1.0
+  },
+  "performance": {
+    "averageFps": 59.4,
+    "minimumFps": 56.9,
+    "maximumFps": 60.5,
+    "framePacing": "smooth",
+    "testDurationSeconds": 372
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+        "caption": "Title screen and main menu at 60 FPS"
+      },
+      {
+        "path": "assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+        "caption": "Character selection menu (Well-Rounded)"
+      },
+      {
+        "path": "assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+        "caption": "Wave 1 in-game combat gameplay with active HUD and controls"
+      }
+    ],
+    "logs": [
+      {
+        "path": "assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/01-application.log.gz",
+        "label": "Bachata application log",
+        "sha256": "32648ffedf0a458cca35d9a0f61346949b195141d1fccedc1720bf3f49617cff"
+      },
+      {
+        "path": "assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/logs/02-shadps4.log.gz",
+        "label": "shadPS4 session log",
+        "sha256": "5a84f2bb93293d4477c8322e91569115b94468ac96e42b89c00c15852eeedf30"
+      }
+    ]
+  },
+  "tester": "JICA98",
+  "issueNumber": 20,
+  "issueRepository": "JICA98/Bachata-S4"
+}
