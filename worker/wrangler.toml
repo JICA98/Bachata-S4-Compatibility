@@ -1,0 +1,16 @@
+name = "bachata-compatibility-submit"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+GITHUB_OWNER = "JICA98"
+GITHUB_REPO = "Bachata-S4-Compatibility"
+GITHUB_BASE_BRANCH = "main"
+
+# Bind a KV namespace named RATE_LIMIT before production deployment:
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "<namespace id>"
+
+# Secret required at deploy time (never commit it):
+#   npx wrangler secret put GITHUB_TOKEN
