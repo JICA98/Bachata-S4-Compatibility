@@ -1,3 +1,5 @@
+import {duplicateFingerprint, isDuplicate, markAccepted} from "./duplicate";
+
 interface Env {
   GITHUB_TOKEN: string;
   GITHUB_OWNER: string;
@@ -10,7 +12,6 @@ type JsonObject = Record<string, unknown>;
 
 const MAX_BODY_BYTES = 96 * 1024;
 const REPORT_PATH = /^CUSA\d{5}$/;
-const REPORT_ID = /^[A-Za-z0-9._-]{8,160}$/;
 const SOC_ID = /^[a-z0-9._-]{2,80}$/;
 const PRIVATE_PATTERN = /(content:\/\/|file:\/\/|\/storage\/emulated\/|\/data\/user\/|\/sdcard\/|ro\.serialno|android[_ -]?id|adb[_ -]?serial|mac[_ -]?address|BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,})/i;
 const STATUS = new Set(["playable", "ingame", "menus", "boots", "nothing"]);
@@ -112,9 +113,6 @@ function normalizeReport(input: unknown): JsonObject {
     ...(typeof performance.framePacing === "string" ? {framePacing: text(performance.framePacing, 40)} : {}),
   } : undefined;
 
-  // Evidence is intentionally not accepted from arbitrary client URLs. The v2 schema permits
-  // evidence, but the public ingestion endpoint only publishes structured reports until a
-  // separately sanitized object-storage upload path is enabled.
   if (input.evidence != null) throw new Error("Direct evidence submission is not enabled; submit structured compatibility data only");
 
   return {
@@ -203,6 +201,10 @@ async function submit(request: Request, env: Env): Promise<Response> {
   if (bodyText.length > MAX_BODY_BYTES) return json({error: "payload_too_large"}, 413);
   const envelope = JSON.parse(bodyText) as JsonObject;
   const report = normalizeReport(envelope.report);
+  const fingerprint = await duplicateFingerprint(report);
+  if (await isDuplicate(env.RATE_LIMIT, fingerprint)) {
+    return json({error: "duplicate_submission", message: "An identical compatibility result was already accepted recently."}, 409);
+  }
   const gameMetadata = isObject(envelope.game) ? envelope.game : {};
   const cusaId = String(report.cusaId);
   const now = new Date();
@@ -221,7 +223,6 @@ async function submit(request: Request, env: Env): Promise<Response> {
   });
   if (!createRef.ok) throw new Error(`Could not create moderation branch (${createRef.status})`);
 
-  // Ensure game metadata exists. New CUSAs also get one canonical public issue.
   const gamePath = `games/${cusaId}/game.json`;
   const existingGame = await github(env, `${repoBase}/contents/${gamePath}?ref=${encodeURIComponent(env.GITHUB_BASE_BRANCH)}`);
   if (existingGame.status === 404) {
@@ -265,6 +266,7 @@ async function submit(request: Request, env: Env): Promise<Response> {
   });
   if (!pr.ok) throw new Error(`Could not open moderation PR (${pr.status})`);
   const prData = await pr.json() as {number:number; html_url:string};
+  await markAccepted(env.RATE_LIMIT, fingerprint);
   return json({ok: true, submissionId: reportId, pullRequest: prData.number, moderationUrl: prData.html_url}, 202);
 }
 
