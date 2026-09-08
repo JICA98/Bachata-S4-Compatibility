@@ -21,17 +21,18 @@ export async function duplicateFingerprint(report: JsonObject): Promise<string> 
   return Array.from(new Uint8Array(digest)).map(v => v.toString(16).padStart(2, "0")).join("");
 }
 
-export async function claimSubmission(
+export async function isDuplicate(kv: DuplicateKv | undefined, fingerprint: string): Promise<boolean> {
+  if (!kv) return false;
+  return (await kv.get(`duplicate:${fingerprint}`)) != null;
+}
+
+export async function markAccepted(
   kv: DuplicateKv | undefined,
-  report: JsonObject,
+  fingerprint: string,
   ttlSeconds = 7 * 24 * 60 * 60,
-): Promise<{duplicate: boolean; fingerprint: string}> {
-  const fingerprint = await duplicateFingerprint(report);
-  if (!kv) return {duplicate: false, fingerprint};
-  const key = `duplicate:${fingerprint}`;
-  if (await kv.get(key)) return {duplicate: true, fingerprint};
+): Promise<void> {
+  if (!kv) return;
   // KV is eventually consistent, so this is an abuse/accidental-repeat guard rather than a
   // uniqueness primitive. Scoring still independently deduplicates merged reports.
-  await kv.put(key, "1", {expirationTtl: ttlSeconds});
-  return {duplicate: false, fingerprint};
+  await kv.put(`duplicate:${fingerprint}`, "1", {expirationTtl: ttlSeconds});
 }
