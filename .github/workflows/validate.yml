@@ -27,6 +27,8 @@ jobs:
         run: python3 scripts/build_site_data.py --output generated
       - name: Build Android compatibility v2 feed
         run: python3 scripts/build_app_data.py --output generated/app-v2
+      - name: Apply legal and privacy tombstones
+        run: python3 scripts/apply_tombstones.py --site-output generated --app-output generated/app-v2
       - name: Typecheck community submission worker
         run: |
           npm install --prefix worker --ignore-scripts --no-package-lock
