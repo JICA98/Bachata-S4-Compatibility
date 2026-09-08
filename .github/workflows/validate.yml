@@ -28,27 +28,9 @@ jobs:
       - name: Build Android compatibility v2 feed
         run: python3 scripts/build_app_data.py --output generated/app-v2
       - name: Typecheck community submission worker
-        id: worker_typecheck
-        continue-on-error: true
         run: |
           npm install --prefix worker --ignore-scripts --no-package-lock
-          set +e
-          npm run --prefix worker typecheck > worker-typecheck.log 2>&1
-          status=$?
-          echo "status=$status" >> "$GITHUB_OUTPUT"
-          cat worker-typecheck.log
-          exit $status
-      - name: Upload Worker typecheck diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: worker-typecheck-log
-          path: worker-typecheck.log
-          if-no-files-found: error
-          retention-days: 1
-      - name: Fail on Worker typecheck errors
-        if: steps.worker_typecheck.outputs.status != '0'
-        run: exit 1
+          npm run --prefix worker typecheck
       - name: Verify generated JSON
         run: |
           python3 -m json.tool generated/site-index.json >/dev/null
