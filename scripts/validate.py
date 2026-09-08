@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from common import CUSA_RE, STATUS_LABELS, iso_datetime, load_json, sha256
+from validate_v2 import validate_report_v2
 
 MAX_SCREENSHOTS = 3
 MAX_SCREENSHOT_BYTES = 3 * 1024 * 1024
@@ -125,6 +126,14 @@ def validate(root: Path) -> list[str]:
     if not release_tags:
         fail(errors, release_file, "must contain at least one release")
 
+    soc_file = root / "data/socs.json"
+    try:
+        soc_data = load_json(soc_file) if soc_file.is_file() else {"socs": {}}
+        canonical_socs = set((soc_data.get("socs") or {}).keys())
+    except (OSError, json.JSONDecodeError) as exc:
+        fail(errors, soc_file, str(exc))
+        canonical_socs = set()
+
     game_paths = sorted((root / "games").glob("CUSA*/game.json"))
     report_ids: set[str] = set()
     referenced_assets: set[Path] = set()
@@ -168,6 +177,16 @@ def validate(root: Path) -> list[str]:
             report_ids.add(report_id)
             if report.get("cusaId") != cusa:
                 fail(errors, report_path, "cusaId does not match game metadata")
+
+            if report.get("schemaVersion") == 2:
+                errors.extend(validate_report_v2(report_path, report, cusa))
+                soc_id = (report.get("device") or {}).get("socId")
+                if canonical_socs and soc_id not in canonical_socs:
+                    fail(errors, report_path, f"device.socId is not in data/socs.json: {soc_id}")
+                continue
+
+            # Legacy immutable report validation remains unchanged. Community v2 reports are
+            # validated above and deliberately do not require screenshots or raw logs.
             try:
                 iso_datetime(str(report.get("testedAt", "")))
             except (ValueError, TypeError) as exc:
@@ -175,15 +194,12 @@ def validate(root: Path) -> list[str]:
             if report.get("status") not in STATUS_LABELS:
                 fail(errors, report_path, "invalid status")
             release = report.get("release") or {}
-            # Reports may reference tags not yet (or no longer) present in the
-            # append-only GitHub-synced release index.
             if not isinstance(release.get("tag"), str) or not str(release.get("tag")).strip():
                 fail(errors, report_path, "release.tag is required")
             commit = str(release.get("commit") or "")
             if not (7 <= len(commit) <= 40 and all(ch in "0123456789abcdefABCDEF" for ch in commit)):
                 fail(errors, report_path, "release.commit must be a 7-40 character hexadecimal SHA")
             report_legacy = report.get("legacyImported") is True
-            report_issue = report.get("issueNumber")
             issue_error = report_issue_reference_error(game, report)
             historical_canonical_without_repository = (
                 report.get("schemaVersion") == 1
@@ -259,7 +275,6 @@ def validate(root: Path) -> list[str]:
                 else:
                     fail(errors, report_path, "log requires path or legacy externalUrl")
 
-    # Flag accidental unreferenced evidence, except placeholders.
     assets_root = root / "assets"
     if assets_root.exists():
         for asset in assets_root.rglob("*"):

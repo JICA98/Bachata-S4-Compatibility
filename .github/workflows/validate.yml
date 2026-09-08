@@ -14,6 +14,8 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
       - name: Enforce immutable reports and evidence
         if: github.event_name == 'pull_request'
         run: scripts/check_immutable.sh "origin/${{ github.base_ref }}"
@@ -23,5 +25,17 @@ jobs:
         run: python3 scripts/validate.py
       - name: Build website indexes
         run: python3 scripts/build_site_data.py --output generated
+      - name: Build Android compatibility v2 feed
+        run: python3 scripts/build_app_data.py --output generated/app-v2
+      - name: Apply legal and privacy tombstones
+        run: python3 scripts/apply_tombstones.py --site-output generated --app-output generated/app-v2
+      - name: Typecheck community submission worker
+        run: |
+          npm install --prefix worker --ignore-scripts --no-package-lock
+          npm run --prefix worker typecheck
       - name: Verify generated JSON
-        run: python3 -m json.tool generated/site-index.json >/dev/null
+        run: |
+          python3 -m json.tool generated/site-index.json >/dev/null
+          python3 -m json.tool generated/app-v2/index.json >/dev/null
+          python3 -m json.tool generated/app-v2/socs.json >/dev/null
+          find generated/app-v2/games -name '*.json' -print0 | xargs -0 -r -n1 python3 -m json.tool >/dev/null

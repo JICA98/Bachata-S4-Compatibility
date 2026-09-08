@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bachatas4.games/schema/compatibility-report-v2.json",
+  "title": "Bachata S4 community compatibility report v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "reportId", "cusaId", "testedAt", "status", "release", "device", "driver", "config", "result", "contributor", "provenance"],
+  "properties": {
+    "schemaVersion": {"const": 2},
+    "reportId": {"type": "string", "pattern": "^[A-Za-z0-9._-]{8,160}$"},
+    "cusaId": {"type": "string", "pattern": "^CUSA[0-9]{5}$"},
+    "testedAt": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["playable", "ingame", "menus", "boots", "nothing"]},
+    "game": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "version": {"type": "string", "maxLength": 40},
+        "region": {"type": "string", "maxLength": 40}
+      }
+    },
+    "release": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tag", "commit"],
+      "properties": {
+        "tag": {"type": "string", "maxLength": 40},
+        "commit": {"type": "string", "pattern": "^[0-9a-fA-F]{7,40}$"},
+        "runtimeRevision": {"type": "string", "maxLength": 120}
+      }
+    },
+    "device": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manufacturer", "model", "socId", "socName", "gpu", "androidVersion", "ramBucketGb"],
+      "properties": {
+        "manufacturer": {"type": "string", "minLength": 1, "maxLength": 80},
+        "model": {"type": "string", "minLength": 1, "maxLength": 120},
+        "socId": {"type": "string", "pattern": "^[a-z0-9._-]{2,80}$"},
+        "socName": {"type": "string", "minLength": 1, "maxLength": 120},
+        "gpu": {"type": "string", "minLength": 1, "maxLength": 120},
+        "androidVersion": {"type": "string", "minLength": 1, "maxLength": 32},
+        "ramBucketGb": {"type": "integer", "minimum": 1, "maximum": 64}
+      }
+    },
+    "driver": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "name", "version"],
+      "properties": {
+        "id": {"type": "string", "maxLength": 160},
+        "type": {"enum": ["system", "turnip", "custom"]},
+        "name": {"type": "string", "minLength": 1, "maxLength": 160},
+        "version": {"type": "string", "minLength": 1, "maxLength": 120},
+        "build": {"type": "string", "maxLength": 160}
+      }
+    },
+    "config": {
+      "type": "object", "additionalProperties": false,
+      "required": ["settings", "driverId", "guestBackend", "frameGenerationMode", "fexPreset"],
+      "properties": {
+        "settings": {"type": "object", "maxProperties": 128, "additionalProperties": {"type": ["boolean", "number", "string"]}},
+        "requiredOverrides": {"type": "object", "maxProperties": 128, "additionalProperties": {"type": ["boolean", "number", "string"]}},
+        "driverId": {"type": "string", "maxLength": 160},
+        "guestBackend": {"enum": ["FEX"]},
+        "frameGenerationMode": {"type": "string", "maxLength": 40},
+        "fexPreset": {"type": "string", "maxLength": 80},
+        "adrenoTurboMode": {"type": "boolean"},
+        "bigCoreAffinity": {"type": "boolean"},
+        "maliGpuOptimizations": {"type": "boolean"}
+      }
+    },
+    "patches": {
+      "type": "array", "maxItems": 32,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1, "maxLength": 160},
+          "preset": {"type": "string", "maxLength": 160},
+          "revision": {"type": "string", "maxLength": 120}
+        }
+      }
+    },
+    "performance": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "nativeAverageFps": {"type": "number", "minimum": 0, "maximum": 240},
+        "nativeOnePercentLowFps": {"type": "number", "minimum": 0, "maximum": 240},
+        "outputAverageFps": {"type": "number", "minimum": 0, "maximum": 480},
+        "testDurationSeconds": {"type": "integer", "minimum": 1, "maximum": 86400},
+        "framePacing": {"enum": ["smooth", "minor-stutter", "stuttery", "severe-stutter", "unknown"]}
+      }
+    },
+    "result": {
+      "type": "object", "additionalProperties": false,
+      "required": ["summary"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1, "maxLength": 1000},
+        "notes": {"type": "string", "maxLength": 6000},
+        "issues": {"type": "array", "maxItems": 32, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9._-]{2,80}$"}}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "screenshots": {"type": "array", "maxItems": 3, "items": {"type": "object", "additionalProperties": false, "required": ["url", "sha256"], "properties": {"url": {"type": "string", "pattern": "^https://"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "caption": {"type": "string", "maxLength": 300}}}},
+        "diagnostics": {"type": "array", "maxItems": 3, "items": {"type": "object", "additionalProperties": false, "required": ["url", "sha256"], "properties": {"url": {"type": "string", "pattern": "^https://"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "label": {"type": "string", "maxLength": 120}}}}
+      }
+    },
+    "contributor": {
+      "type": "object", "additionalProperties": false,
+      "required": ["publicId"],
+      "properties": {
+        "publicId": {"type": "string", "pattern": "^[A-Za-z0-9._-]{4,80}$"},
+        "displayName": {"type": "string", "maxLength": 80}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["captureType"],
+      "properties": {
+        "captureType": {"enum": ["app-captured", "structured-manual", "maintainer-verified", "legacy-imported"]},
+        "appBuild": {"type": "string", "maxLength": 120}
+      }
+    },
+    "supersedes": {"type": "string", "pattern": "^[A-Za-z0-9._-]{8,160}$"},
+    "withdrawn": {"type": "boolean"},
+    "withdrawalReason": {"enum": ["user-request", "privacy", "legal-removal", "security", "invalid-report"]}
+  }
+}
