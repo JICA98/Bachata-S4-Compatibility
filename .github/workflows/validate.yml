@@ -23,5 +23,11 @@ jobs:
         run: python3 scripts/validate.py
       - name: Build website indexes
         run: python3 scripts/build_site_data.py --output generated
+      - name: Build Android compatibility v2 feed
+        run: python3 scripts/build_app_data.py --output generated/app-v2
       - name: Verify generated JSON
-        run: python3 -m json.tool generated/site-index.json >/dev/null
+        run: |
+          python3 -m json.tool generated/site-index.json >/dev/null
+          python3 -m json.tool generated/app-v2/index.json >/dev/null
+          python3 -m json.tool generated/app-v2/socs.json >/dev/null
+          find generated/app-v2/games -name '*.json' -print0 | xargs -0 -r -n1 python3 -m json.tool >/dev/null
