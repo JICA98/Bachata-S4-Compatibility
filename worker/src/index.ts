@@ -270,11 +270,26 @@ async function submit(request: Request, env: Env): Promise<Response> {
   return json({ok: true, submissionId: reportId, pullRequest: prData.number, moderationUrl: prData.html_url}, 202);
 }
 
+const REPORT_PATHS = new Set([
+  "/v2/reports",
+  "/compat/v2/reports",
+  "/api/compat/v2/reports",
+]);
+
+const HEALTH_PATHS = new Set([
+  "/health",
+  "/v2/health",
+  "/compat/v2/health",
+  "/api/compat/v2/health",
+]);
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    if (request.method === "GET" && url.pathname === "/health") return json({ok: true, service: "bachata-compatibility-submit-v2"});
-    if (request.method !== "POST" || url.pathname !== "/v2/reports") return json({error: "not_found"}, 404);
+    if (request.method === "GET" && HEALTH_PATHS.has(url.pathname)) {
+      return json({ok: true, service: "bachata-compatibility-submit-v2"});
+    }
+    if (request.method !== "POST" || !REPORT_PATHS.has(url.pathname)) return json({error: "not_found"}, 404);
     if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) return json({error: "content_type_must_be_json"}, 415);
     try {
       return await submit(request, env);
