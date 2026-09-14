@@ -293,11 +293,44 @@ const HEALTH_PATHS = new Set([
   "/api/compat/v2/health",
 ]);
 
+const STUB_SOCS: Record<string, {name: string; vendor: string; gpu: string; family: string; aliases: string[]}> = {
+  sm7475: {name: "Snapdragon 7+ Gen 2", vendor: "Qualcomm", gpu: "Adreno 725", family: "adreno-7xx", aliases: ["SM7475", "Snapdragon 7+ Gen 2"]},
+  sm8550: {name: "Snapdragon 8 Gen 2", vendor: "Qualcomm", gpu: "Adreno 740", family: "adreno-7xx", aliases: ["SM8550", "Snapdragon 8 Gen 2"]},
+  sm8650: {name: "Snapdragon 8 Gen 3", vendor: "Qualcomm", gpu: "Adreno 750", family: "adreno-8xx", aliases: ["SM8650", "Snapdragon 8 Gen 3"]},
+  sm8750: {name: "Snapdragon 8 Elite", vendor: "Qualcomm", gpu: "Adreno 830", family: "adreno-8xx", aliases: ["SM8750", "Snapdragon 8 Elite"]},
+  sm8850: {name: "Snapdragon 8 Elite Gen 5", vendor: "Qualcomm", gpu: "Adreno 840", family: "adreno-8xx", aliases: ["SM8850", "Snapdragon 8 Elite Gen 5"]},
+};
+
+function stubFeed(pathname: string): Response | null {
+  if (pathname === "/data/compat/v2/socs.json") {
+    return json({schemaVersion: 1, socs: STUB_SOCS});
+  }
+  if (pathname === "/data/compat/v2/index.json") {
+    return json({schemaVersion: 2, generatedForRelease: "worker-stub", games: []});
+  }
+  const game = pathname.match(/^\/data\/compat\/v2\/games\/(CUSA\d{5})\.json$/);
+  if (!game) return null;
+  const cusaId = game[1];
+  return json({
+    schemaVersion: 2,
+    generatedForRelease: "worker-stub",
+    game: {cusaId, title: cusaId, region: "", publisher: ""},
+    general: {status: "unknown", confidence: "none", reportCount: 0, hasCurrentReports: false},
+    socs: {},
+    families: {},
+    reports: [],
+  });
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     if (request.method === "GET" && HEALTH_PATHS.has(url.pathname)) {
       return json({ok: true, service: "bachata-compatibility-submit-v2"});
+    }
+    if (request.method === "GET") {
+      const feed = stubFeed(url.pathname);
+      if (feed) return feed;
     }
     if (request.method !== "POST" || !REPORT_PATHS.has(url.pathname)) return json({error: "not_found"}, 404);
     if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) return json({error: "content_type_must_be_json"}, 415);
