@@ -17,5 +17,6 @@ enabled = true
 [observability.traces]
 enabled = true
 
-# Secret required at deploy time (never commit it):
+# Secrets required at deploy time (never commit them):
 #   npx wrangler secret put GITHUB_TOKEN
+#   npx wrangler secret put GITHUB_ISSUE_TOKEN

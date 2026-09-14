@@ -2,6 +2,7 @@ import {duplicateFingerprint, isDuplicate, markAccepted} from "./duplicate";
 
 interface Env {
   GITHUB_TOKEN: string;
+  GITHUB_ISSUE_TOKEN: string;
   GITHUB_OWNER: string;
   GITHUB_REPO: string;
   GITHUB_BASE_BRANCH: string;
@@ -152,9 +153,10 @@ function normalizeReport(input: unknown): JsonObject {
   };
 }
 
-async function github(env: Env, path: string, init: RequestInit = {}): Promise<Response> {
+async function github(env: Env, path: string, init: RequestInit = {}, token = env.GITHUB_TOKEN): Promise<Response> {
+  if (!token) throw new Error("GitHub token is not configured");
   const headers = new Headers(init.headers);
-  headers.set("authorization", `Bearer ${env.GITHUB_TOKEN}`);
+  headers.set("authorization", `Bearer ${token}`);
   headers.set("accept", "application/vnd.github+json");
   headers.set("x-github-api-version", "2022-11-28");
   headers.set("user-agent", "bachata-compatibility-submit-worker");
@@ -175,7 +177,12 @@ async function rateLimit(request: Request, env: Env): Promise<void> {
 
 async function ensureCanonicalIssue(env: Env, cusaId: string, title: string): Promise<number> {
   const issueRepo = "Bachata-S4";
-  const search = await github(env, `/search/issues?q=${encodeURIComponent(`repo:${env.GITHUB_OWNER}/${issueRepo} is:issue in:title \"${cusaId}\"`)}`);
+  const search = await github(
+    env,
+    `/search/issues?q=${encodeURIComponent(`repo:${env.GITHUB_OWNER}/${issueRepo} is:issue in:title \"${cusaId}\"`)}`,
+    {},
+    env.GITHUB_ISSUE_TOKEN,
+  );
   if (search.ok) {
     const data = await search.json() as {items?: Array<{number:number; title:string}>};
     const exact = data.items?.find(item => item.title.startsWith(`[${cusaId}]`));
@@ -188,12 +195,15 @@ async function ensureCanonicalIssue(env: Env, cusaId: string, title: string): Pr
       body: `Canonical community compatibility discussion for **${title}** (${cusaId}). Individual device/release results are reviewed as immutable compatibility reports.`,
       labels: ["type:compatibility", "triage:new"],
     }),
-  });
+  }, env.GITHUB_ISSUE_TOKEN);
   if (!created.ok) throw new Error(`Could not create canonical issue (${created.status})`);
   return ((await created.json()) as {number:number}).number;
 }
 
 async function submit(request: Request, env: Env): Promise<Response> {
+  if (!env.GITHUB_TOKEN || !env.GITHUB_ISSUE_TOKEN) {
+    throw new Error("GitHub tokens are not configured");
+  }
   const length = Number(request.headers.get("content-length") || "0");
   if (length > MAX_BODY_BYTES) return json({error: "payload_too_large"}, 413);
   await rateLimit(request, env);
