@@ -9,6 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from common import RAW_BASE, STATUS_ORDER, display_driver, load_json, write_json
+from build_app_data import load_soc_registry, safe_report
+from scoring import aggregate, latest_release_tag
 from validate import validate
 
 
@@ -65,22 +67,30 @@ def report_summary(report: dict) -> dict:
     screenshots = report.get("evidence", {}).get("screenshots", [])
     driver = report.get("driver", {})
     performance = report.get("performance", {})
+    native_average = performance.get("nativeAverageFps")
+    if native_average is None and report.get("schemaVersion") == 1:
+        native_average = performance.get("averageFps")
     return {
         "reportId": report["reportId"],
         "status": report["status"],
         "testedAt": report["testedAt"],
-        "gameVersion": report.get("gameVersion", ""),
+        "gameVersion": (report.get("game") or {}).get("version") or report.get("gameVersion", ""),
         "releaseTag": report["release"]["tag"],
         "releaseCommit": report["release"]["commit"],
-        "summary": report.get("summary", ""),
+        "summary": (report.get("result") or {}).get("summary") or report.get("summary", ""),
         "device": {
             "label": report["device"].get("label", "Unknown device"),
-            "soc": report["device"].get("soc", ""),
+            "soc": report["device"].get("socName") or report["device"].get("soc", ""),
+            "socId": report["device"].get("socId", ""),
             "gpu": report["device"].get("gpu", ""),
             "androidVersion": report["device"].get("androidVersion", "")
         },
         "driver": {**driver, "display": display_driver(driver)},
-        "performance": {"averageFps": performance.get("averageFps")},
+        "performance": {
+            "averageFps": native_average,
+            "nativeAverageFps": native_average,
+            "outputAverageFps": performance.get("outputAverageFps"),
+        },
         "thumbnail": screenshot_url(screenshots[-1]["path"]) if screenshots else "assets/placeholder.svg"
     }
 
@@ -92,6 +102,8 @@ def build(root: Path, output: Path) -> None:
     if output.exists(): shutil.rmtree(output)
     (output / "games").mkdir(parents=True)
     release_data = load_json(root / "data/releases.json")
+    current_release = latest_release_tag(release_data)
+    _, soc_aliases = load_soc_registry(root)
     write_json(output / "releases.json", release_data)
 
     games_index = []
@@ -102,13 +114,26 @@ def build(root: Path, output: Path) -> None:
         game = load_json(game_path)
         projected_game = {**game, **project_issue_identity(game)}
         reports = [load_json(path) for path in sorted((game_path.parent / "reports").glob("*.json"))]
+        reports = [report for report in reports if not report.get("withdrawn")]
         reports.sort(key=lambda item: item["testedAt"], reverse=True)
+        safe_reports = [safe_report(report, soc_aliases) for report in reports]
+        current_compatibility = aggregate(safe_reports, current_release)
         transformed = [transform_report(report) for report in reports]
-        write_json(output / "games" / f"{game['cusaId']}.json", {"schemaVersion": 1, "game": projected_game, "reports": transformed})
+        write_json(
+            output / "games" / f"{game['cusaId']}.json",
+            {
+                "schemaVersion": 2,
+                "game": projected_game,
+                "currentRelease": current_release,
+                "currentCompatibility": current_compatibility,
+                "reports": transformed,
+            },
+        )
         summaries = [report_summary(report) for report in reports]
         best = min(reports, key=lambda item: STATUS_ORDER[item["status"]]) if reports else None
         latest = reports[0] if reports else None
-        devices = {report["device"]["label"] for report in reports}
+        devices = {report["device"].get("label") or f"{report['device'].get('manufacturer','')} {report['device'].get('model','')}".strip() for report in reports}
+        devices.discard("")
         all_devices.update(devices)
         all_reports += len(reports)
         if best: status_counts[best["status"]] += 1
@@ -116,17 +141,22 @@ def build(root: Path, output: Path) -> None:
             **projected_game,
             "reportCount": len(reports),
             "deviceCount": len(devices),
+            # Historical fields remain for backwards compatibility. New clients should use
+            # currentCompatibility so an old playable result cannot mask a current regression.
             "bestStatus": best["status"] if best else "unknown",
             "latestStatus": latest["status"] if latest else "unknown",
             "latestTestedAt": latest["testedAt"] if latest else "",
             "latestRelease": latest["release"]["tag"] if latest else "",
+            "currentRelease": current_release,
+            "currentCompatibility": current_compatibility,
             "thumbnail": summaries[0]["thumbnail"] if summaries else "assets/placeholder.svg",
             "reports": summaries
         })
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     index = {
-        "schemaVersion": 3,
+        "schemaVersion": 4,
         "generatedAt": now,
+        "currentRelease": current_release,
         "project": {
             "name": "Bachata S4",
             "repository": "https://github.com/JICA98/Bachata-S4",

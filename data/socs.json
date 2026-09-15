@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "socs": {
+    "sm7675": {"name":"Snapdragon 7+ Gen 3","vendor":"Qualcomm","gpu":"Adreno 732","family":"adreno7","aliases":["SM7675","Snapdragon 7+ Gen 3"]},
+    "sm7475": {"name":"Snapdragon 7+ Gen 2","vendor":"Qualcomm","gpu":"Adreno 725","family":"adreno7","aliases":["SM7475","Snapdragon 7+ Gen 2"]},
+    "sm7550": {"name":"Snapdragon 7 Gen 3","vendor":"Qualcomm","gpu":"Adreno 720","family":"adreno7","aliases":["SM7550","Snapdragon 7 Gen 3"]},
+    "sm7435": {"name":"Snapdragon 7s Gen 2","vendor":"Qualcomm","gpu":"Adreno 710","family":"adreno7","aliases":["SM7435","Snapdragon 7s Gen 2"]},
+    "sm7635": {"name":"Snapdragon 7s Gen 3","vendor":"Qualcomm","gpu":"Adreno 710","family":"adreno7","aliases":["SM7635","Snapdragon 7s Gen 3"]},
+    "sm8750": {"name":"Snapdragon 8 Elite","vendor":"Qualcomm","gpu":"Adreno 830","family":"adreno8","aliases":["SM8750","Snapdragon 8 Elite"]},
+    "sm8850": {"name":"Snapdragon 8 Elite Gen 5","vendor":"Qualcomm","gpu":"Adreno 840","family":"adreno8","aliases":["SM8850","Snapdragon 8 Elite Gen 5"]},
+    "sm8650": {"name":"Snapdragon 8 Gen 3","vendor":"Qualcomm","gpu":"Adreno 750","family":"adreno7","aliases":["SM8650","Snapdragon 8 Gen 3"]},
+    "sm8550": {"name":"Snapdragon 8 Gen 2","vendor":"Qualcomm","gpu":"Adreno 740","family":"adreno7","aliases":["SM8550","Snapdragon 8 Gen 2"]},
+    "sm8475": {"name":"Snapdragon 8+ Gen 1","vendor":"Qualcomm","gpu":"Adreno 730","family":"adreno7","aliases":["SM8475","Snapdragon 8+ Gen 1"]},
+    "sm8450": {"name":"Snapdragon 8 Gen 1","vendor":"Qualcomm","gpu":"Adreno 730","family":"adreno7","aliases":["SM8450","Snapdragon 8 Gen 1"]},
+    "sm8350": {"name":"Snapdragon 888","vendor":"Qualcomm","gpu":"Adreno 660","family":"adreno6","aliases":["SM8350","Snapdragon 888","Snapdragon 888+"]},
+    "sm8250": {"name":"Snapdragon 865","vendor":"Qualcomm","gpu":"Adreno 650","family":"adreno6","aliases":["SM8250","Snapdragon 865","Snapdragon 865+"]},
+    "sm8150": {"name":"Snapdragon 855","vendor":"Qualcomm","gpu":"Adreno 640","family":"adreno6","aliases":["SM8150","Snapdragon 855","Snapdragon 855+"]},
+    "mt6991": {"name":"Dimensity 9400","vendor":"MediaTek","gpu":"Immortalis-G925","family":"mali-immortalis","aliases":["MT6991","Dimensity 9400"]},
+    "mt6989": {"name":"Dimensity 9300","vendor":"MediaTek","gpu":"Immortalis-G720","family":"mali-immortalis","aliases":["MT6989","Dimensity 9300","Dimensity 9300+"]},
+    "mt6985": {"name":"Dimensity 9200","vendor":"MediaTek","gpu":"Immortalis-G715","family":"mali-immortalis","aliases":["MT6985","Dimensity 9200","Dimensity 9200+"]}
+  }
+}
