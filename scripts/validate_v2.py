@@ -13,6 +13,8 @@ SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 CONTRIBUTOR_RE = re.compile(r"^[A-Za-z0-9._-]{4,80}$")
 SETTING_ID_RE = re.compile(r"^[A-Za-z0-9._-]{2,120}$")
 ISSUE_ID_RE = re.compile(r"^[a-z0-9._-]{2,80}$")
+ASSET_SHOT_RE = re.compile(r"^assets/(CUSA[0-9]{5})/([A-Za-z0-9._-]+)/screenshots/[A-Za-z0-9._-]+\.webp$")
+ASSET_LOG_RE = re.compile(r"^assets/(CUSA[0-9]{5})/([A-Za-z0-9._-]+)/logs/[A-Za-z0-9._-]+\.log\.gz$")
 STATUS = {"playable", "ingame", "menus", "boots", "nothing"}
 DRIVER_TYPES = {"system", "turnip", "custom"}
 CAPTURE_TYPES = {"app-captured", "structured-manual", "maintainer-verified", "legacy-imported"}
@@ -82,6 +84,48 @@ def scalar_map(errors: list[str], path: Path, label: str, value: object) -> None
                 fail(errors, path, f"{label}.{key} contains a private path or identifier")
             continue
         fail(errors, path, f"{label}.{key} must be a boolean, number, or string")
+
+
+def validate_evidence_entry(
+    errors: list[str],
+    report_path: Path,
+    label: str,
+    item: object,
+    kind: str,
+    cusa: str | None,
+    report_id: object,
+) -> None:
+    if not isinstance(item, dict):
+        fail(errors, report_path, f"{label} must be an object")
+        return
+    has_path = "path" in item
+    has_url = "url" in item
+    extra = {"caption"} if kind == "screenshots" else {"label"}
+    allowed = {"path", "url", "sha256"} | extra
+    unknown = set(item) - allowed
+    if unknown:
+        fail(errors, report_path, f"{label} has unknown fields: {', '.join(sorted(unknown))}")
+    if has_path == has_url:
+        fail(errors, report_path, f"{label} must contain exactly one of path or url")
+        return
+    digest = bounded_text(errors, report_path, f"{label}.sha256", item.get("sha256"), 64, True)
+    if digest and not SHA256_RE.fullmatch(digest):
+        fail(errors, report_path, f"{label}.sha256 must be lowercase SHA-256")
+    if has_path:
+        path = bounded_text(errors, report_path, f"{label}.path", item.get("path"), 300, True)
+        regex = ASSET_SHOT_RE if kind == "screenshots" else ASSET_LOG_RE
+        match = regex.fullmatch(path or "")
+        if not match or match.group(1) != cusa or match.group(2) != report_id:
+            fail(errors, report_path, f"{label}.path must be under assets/{cusa}/{report_id}/")
+    else:
+        url = bounded_text(errors, report_path, f"{label}.url", item.get("url"), 2048, True)
+        parsed = urlparse(url)
+        if parsed.scheme != "https" or not parsed.netloc:
+            fail(errors, report_path, f"{label}.url must be HTTPS")
+    if kind == "screenshots":
+        bounded_text(errors, report_path, f"{label}.caption", item.get("caption"), 300)
+    else:
+        bounded_text(errors, report_path, f"{label}.label", item.get("label"), 120)
 
 
 def scan_private(errors: list[str], path: Path, value: object, label: str = "report", depth: int = 0) -> None:
@@ -162,13 +206,14 @@ def validate_report_v2(report_path: Path, report: dict, expected_cusa: str | Non
     if not isinstance(ram, int) or isinstance(ram, bool) or not 1 <= ram <= 64:
         fail(errors, report_path, "device.ramBucketGb must be an integer from 1 to 64")
 
-    driver = closed_object(errors, report_path, "driver", report.get("driver"), {"id", "type", "name", "version", "build"}, {"type", "name", "version"})
+    driver = closed_object(errors, report_path, "driver", report.get("driver"), {"id", "type", "name", "version", "build", "source"}, {"type", "name", "version"})
     if driver.get("type") not in DRIVER_TYPES:
         fail(errors, report_path, "driver.type must be system, turnip, or custom")
     bounded_text(errors, report_path, "driver.id", driver.get("id"), 160)
     bounded_text(errors, report_path, "driver.name", driver.get("name"), 160, True)
     bounded_text(errors, report_path, "driver.version", driver.get("version"), 120, True)
     bounded_text(errors, report_path, "driver.build", driver.get("build"), 160)
+    bounded_text(errors, report_path, "driver.source", driver.get("source"), 160)
 
     config = closed_object(
         errors, report_path, "config", report.get("config"),
@@ -235,7 +280,31 @@ def validate_report_v2(report_path: Path, report: dict, expected_cusa: str | Non
     bounded_text(errors, report_path, "provenance.appBuild", provenance.get("appBuild"), 120)
 
     evidence = report.get("evidence")
-    if evidence is not None:
+    if provenance.get("captureType") == "app-captured":
+        if evidence is None:
+            fail(errors, report_path, "app-captured reports require evidence")
+        else:
+            evidence = closed_object(errors, report_path, "evidence", evidence, {"screenshots", "diagnostics"})
+            screenshots = evidence.get("screenshots", [])
+            diagnostics = evidence.get("diagnostics", [])
+            if not isinstance(screenshots, list) or not 1 <= len(screenshots) <= 3:
+                fail(errors, report_path, "app-captured reports require 1-3 screenshots")
+            else:
+                for index, item in enumerate(screenshots):
+                    validate_evidence_entry(
+                        errors, report_path, f"evidence.screenshots[{index}]", item, "screenshots", cusa, report_id,
+                    )
+            if not isinstance(diagnostics, list) or len(diagnostics) > 3:
+                fail(errors, report_path, "evidence.diagnostics must have at most 3 items")
+            else:
+                for index, item in enumerate(diagnostics):
+                    validate_evidence_entry(
+                        errors, report_path, f"evidence.diagnostics[{index}]", item, "diagnostics", cusa, report_id,
+                    )
+                labels = [item.get("label") for item in diagnostics if isinstance(item, dict)]
+                if "Bachata application log" not in labels:
+                    fail(errors, report_path, "app-captured reports require a Bachata application log")
+    elif evidence is not None:
         evidence = closed_object(errors, report_path, "evidence", evidence, {"screenshots", "diagnostics"})
         for category in ("screenshots", "diagnostics"):
             entries = evidence.get(category, [])
@@ -243,18 +312,9 @@ def validate_report_v2(report_path: Path, report: dict, expected_cusa: str | Non
                 fail(errors, report_path, f"evidence.{category} must have at most 3 items")
                 continue
             for index, item in enumerate(entries):
-                fields = {"url", "sha256", "caption"} if category == "screenshots" else {"url", "sha256", "label"}
-                entry = closed_object(errors, report_path, f"evidence.{category}[{index}]", item, fields, {"url", "sha256"})
-                url = bounded_text(errors, report_path, f"evidence.{category}[{index}].url", entry.get("url"), 2048, True)
-                if url:
-                    parsed = urlparse(url)
-                    if parsed.scheme != "https" or not parsed.netloc:
-                        fail(errors, report_path, f"evidence.{category}[{index}].url must be HTTPS")
-                digest = bounded_text(errors, report_path, f"evidence.{category}[{index}].sha256", entry.get("sha256"), 64, True)
-                if digest and not SHA256_RE.fullmatch(digest):
-                    fail(errors, report_path, f"evidence.{category}[{index}].sha256 must be lowercase SHA-256")
-                bounded_text(errors, report_path, f"evidence.{category}[{index}].caption", entry.get("caption"), 300)
-                bounded_text(errors, report_path, f"evidence.{category}[{index}].label", entry.get("label"), 120)
+                validate_evidence_entry(
+                    errors, report_path, f"evidence.{category}[{index}]", item, category, cusa, report_id,
+                )
 
     if report.get("withdrawn") is not None and not isinstance(report.get("withdrawn"), bool):
         fail(errors, report_path, "withdrawn must be boolean")

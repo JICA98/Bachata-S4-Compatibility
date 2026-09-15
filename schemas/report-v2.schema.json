@@ -48,7 +48,8 @@
         "type": {"enum": ["system", "turnip", "custom"]},
         "name": {"type": "string", "minLength": 1, "maxLength": 160},
         "version": {"type": "string", "minLength": 1, "maxLength": 120},
-        "build": {"type": "string", "maxLength": 160}
+        "build": {"type": "string", "maxLength": 160},
+        "source": {"type": "string", "maxLength": 160}
       }
     },
     "config": {
@@ -100,8 +101,56 @@
     "evidence": {
       "type": "object", "additionalProperties": false,
       "properties": {
-        "screenshots": {"type": "array", "maxItems": 3, "items": {"type": "object", "additionalProperties": false, "required": ["url", "sha256"], "properties": {"url": {"type": "string", "pattern": "^https://"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "caption": {"type": "string", "maxLength": 300}}}},
-        "diagnostics": {"type": "array", "maxItems": 3, "items": {"type": "object", "additionalProperties": false, "required": ["url", "sha256"], "properties": {"url": {"type": "string", "pattern": "^https://"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "label": {"type": "string", "maxLength": 120}}}}
+        "screenshots": {
+          "type": "array", "maxItems": 3,
+          "items": {
+            "oneOf": [
+              {
+                "type": "object", "additionalProperties": false,
+                "required": ["path", "sha256"],
+                "properties": {
+                  "path": {"type": "string", "pattern": "^assets/CUSA[0-9]{5}/[A-Za-z0-9._-]+/screenshots/[A-Za-z0-9._-]+\\.webp$"},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "caption": {"type": "string", "maxLength": 300}
+                }
+              },
+              {
+                "type": "object", "additionalProperties": false,
+                "required": ["url", "sha256"],
+                "properties": {
+                  "url": {"type": "string", "pattern": "^https://"},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "caption": {"type": "string", "maxLength": 300}
+                }
+              }
+            ]
+          }
+        },
+        "diagnostics": {
+          "type": "array", "maxItems": 3,
+          "items": {
+            "oneOf": [
+              {
+                "type": "object", "additionalProperties": false,
+                "required": ["path", "sha256"],
+                "properties": {
+                  "path": {"type": "string", "pattern": "^assets/CUSA[0-9]{5}/[A-Za-z0-9._-]+/logs/[A-Za-z0-9._-]+\\.log\\.gz$"},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "label": {"type": "string", "maxLength": 120}
+                }
+              },
+              {
+                "type": "object", "additionalProperties": false,
+                "required": ["url", "sha256"],
+                "properties": {
+                  "url": {"type": "string", "pattern": "^https://"},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "label": {"type": "string", "maxLength": 120}
+                }
+              }
+            ]
+          }
+        }
       }
     },
     "contributor": {

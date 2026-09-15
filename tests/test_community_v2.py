@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from scoring import aggregate, confidence, dedupe_reports, latest_release_tag, recommended_setup, score_to_status
 from build_app_data import canonical_soc, load_soc_registry, safe_report
+from validate_v2 import validate_report_v2
 
 
 def report(
@@ -60,7 +61,7 @@ def report(
 
 
 class ReportV2SchemaTests(unittest.TestCase):
-    def test_schema_is_closed_and_evidence_is_optional(self) -> None:
+    def test_schema_is_closed_and_evidence_is_not_top_level_required(self) -> None:
         schema = json.loads((ROOT / "schemas/report-v2.schema.json").read_text(encoding="utf-8"))
         self.assertEqual(schema["properties"]["schemaVersion"]["const"], 2)
         self.assertFalse(schema["additionalProperties"])
@@ -68,11 +69,68 @@ class ReportV2SchemaTests(unittest.TestCase):
         self.assertIn("config", schema["required"])
         self.assertFalse(schema["properties"]["device"]["additionalProperties"])
         self.assertFalse(schema["properties"]["config"]["additionalProperties"])
+        shot_items = schema["properties"]["evidence"]["properties"]["screenshots"]["items"]
+        self.assertIn("oneOf", shot_items)
+        path_form = next(option for option in shot_items["oneOf"] if "path" in option.get("properties", {}))
+        self.assertIn("path", path_form["required"])
+        self.assertIn("source", schema["properties"]["driver"]["properties"])
 
     def test_public_config_disallows_nested_or_array_values(self) -> None:
         schema = json.loads((ROOT / "schemas/report-v2.schema.json").read_text(encoding="utf-8"))
         allowed = schema["properties"]["config"]["properties"]["settings"]["additionalProperties"]["type"]
         self.assertEqual(allowed, ["boolean", "number", "string"])
+
+
+class EvidencePathTests(unittest.TestCase):
+    def _app(self, **overrides) -> dict:
+        value = report("20260915T053801455Z-cusa00900-6a87bfd509", capture="app-captured")
+        value["evidence"] = {
+            "screenshots": [{
+                "path": "assets/CUSA00900/20260915T053801455Z-cusa00900-6a87bfd509/screenshots/01.webp",
+                "sha256": "a" * 64,
+                "caption": "Hunter's Dream",
+            }],
+            "diagnostics": [{
+                "path": "assets/CUSA00900/20260915T053801455Z-cusa00900-6a87bfd509/logs/01-application.log.gz",
+                "sha256": "b" * 64,
+                "label": "Bachata application log",
+            }],
+        }
+        value.update(overrides)
+        return value
+
+    def test_app_captured_path_evidence_is_valid(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(self._app()), encoding="utf-8")
+            self.assertEqual(validate_report_v2(path, json.loads(path.read_text()), "CUSA00900"), [])
+
+    def test_app_captured_without_screenshots_fails(self) -> None:
+        payload = self._app()
+        payload["evidence"]["screenshots"] = []
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
+            self.assertTrue(any("screenshot" in e for e in errors))
+
+    def test_path_outside_assets_prefix_fails(self) -> None:
+        payload = self._app()
+        payload["evidence"]["screenshots"][0]["path"] = "games/CUSA00900/evil.webp"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
+            self.assertTrue(any("path" in e for e in errors))
+
+    def test_path_and_url_together_fail(self) -> None:
+        payload = self._app()
+        payload["evidence"]["screenshots"][0]["url"] = "https://example.com/x.webp"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
+            self.assertTrue(any("path" in e and "url" in e for e in errors))
 
 
 class ScoringTests(unittest.TestCase):
