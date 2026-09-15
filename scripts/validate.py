@@ -183,6 +183,15 @@ def validate(root: Path) -> list[str]:
                 soc_id = (report.get("device") or {}).get("socId")
                 if canonical_socs and soc_id not in canonical_socs:
                     fail(errors, report_path, f"device.socId is not in data/socs.json: {soc_id}")
+                evidence = report.get("evidence") or {}
+                for category in ("screenshots", "diagnostics"):
+                    for item in evidence.get(category) or []:
+                        relative = item.get("path") if isinstance(item, dict) else None
+                        if not isinstance(relative, str):
+                            continue
+                        asset = inside_repo(root, relative, errors, report_path)
+                        if asset:
+                            referenced_assets.add(asset)
                 continue
 
             # Legacy immutable report validation remains unchanged. Community v2 reports are

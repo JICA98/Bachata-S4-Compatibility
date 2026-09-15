@@ -123,6 +123,34 @@ class EvidencePathTests(unittest.TestCase):
             errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
             self.assertTrue(any("path" in e for e in errors))
 
+    def test_repo_validate_counts_v2_git_path_assets_as_referenced(self) -> None:
+        from validate import validate
+
+        payload = self._app()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            report_id = payload["reportId"]
+            shot = root / f"assets/CUSA00900/{report_id}/screenshots/01.webp"
+            log = root / f"assets/CUSA00900/{report_id}/logs/01-application.log.gz"
+            shot.parent.mkdir(parents=True)
+            log.parent.mkdir(parents=True)
+            shot.write_bytes(b"RIFF")
+            log.write_bytes(b"\x1f\x8b")
+            game_dir = root / "games/CUSA00900"
+            (game_dir / "reports").mkdir(parents=True)
+            (game_dir / "game.json").write_text(json.dumps({
+                "schemaVersion": 2,
+                "cusaId": "CUSA00900",
+                "title": "Bloodborne",
+                "region": "US",
+                "publisher": "Sony",
+                "canonicalIssue": {"repository": "JICA98/Bachata-S4", "number": 1},
+                "legacyIssues": [],
+            }), encoding="utf-8")
+            (game_dir / "reports" / f"{report_id}.json").write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate(root)
+            self.assertFalse(any("unreferenced evidence file" in error for error in errors), errors)
+
     def test_path_and_url_together_fail(self) -> None:
         payload = self._app()
         payload["evidence"]["screenshots"][0]["url"] = "https://example.com/x.webp"

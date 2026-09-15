@@ -31,7 +31,7 @@ jobs:
         run: python3 scripts/apply_tombstones.py --site-output generated --app-output generated/app-v2
       - name: Typecheck community submission worker
         run: |
-          npm ci --prefix worker --ignore-scripts
+          npm ci --prefix worker --ignore-scripts --legacy-peer-deps
           npm run --prefix worker typecheck
       - name: Verify generated JSON
         run: |
