@@ -1,4 +1,8 @@
 import {duplicateFingerprint, isDuplicate, markAccepted} from "./duplicate";
+import {reencodeScreenshot, sanitizeLogGzip, sha256Hex, type ImagesBinding} from "./evidence";
+import {commitFiles} from "./github-git";
+import {parsePerformanceFromLog} from "./performance";
+import {PRIVATE_PATTERN} from "./privacy";
 
 interface Env {
   GITHUB_TOKEN: string;
@@ -7,14 +11,15 @@ interface Env {
   GITHUB_REPO: string;
   GITHUB_BASE_BRANCH: string;
   RATE_LIMIT?: KVNamespace;
+  IMAGES?: ImagesBinding;
 }
 
 type JsonObject = Record<string, unknown>;
 
-const MAX_BODY_BYTES = 96 * 1024;
+const MAX_ENVELOPE_BYTES = 96 * 1024;
+const MAX_MULTIPART_BYTES = 8 * 1024 * 1024;
 const REPORT_PATH = /^CUSA\d{5}$/;
 const SOC_ID = /^[a-z0-9._-]{2,80}$/;
-const PRIVATE_PATTERN = /(content:\/\/|file:\/\/|\/storage\/emulated\/|\/data\/user\/|\/sdcard\/|ro\.serialno|android[_ -]?id|adb[_ -]?serial|mac[_ -]?address|BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,})/i;
 const STATUS = new Set(["playable", "ingame", "menus", "boots", "nothing"]);
 const CAPTURE = new Set(["app-captured", "structured-manual", "maintainer-verified", "legacy-imported"]);
 const DRIVER_TYPE = new Set(["system", "turnip", "custom"]);
@@ -105,15 +110,6 @@ function normalizeReport(input: unknown): JsonObject {
   const issues = Array.isArray(result.issues)
     ? result.issues.slice(0, 32).map(v => text(v, 80, true).toLowerCase()).filter(v => /^[a-z0-9._-]{2,80}$/.test(v))
     : [];
-  const performance = isObject(input.performance) ? input.performance : undefined;
-  const normalizedPerformance = performance ? {
-    ...(typeof performance.nativeAverageFps === "number" ? {nativeAverageFps: Math.max(0, Math.min(240, performance.nativeAverageFps))} : {}),
-    ...(typeof performance.nativeOnePercentLowFps === "number" ? {nativeOnePercentLowFps: Math.max(0, Math.min(240, performance.nativeOnePercentLowFps))} : {}),
-    ...(typeof performance.outputAverageFps === "number" ? {outputAverageFps: Math.max(0, Math.min(480, performance.outputAverageFps))} : {}),
-    ...(Number.isInteger(performance.testDurationSeconds) ? {testDurationSeconds: Math.max(1, Math.min(86400, Number(performance.testDurationSeconds)))} : {}),
-    ...(typeof performance.framePacing === "string" ? {framePacing: text(performance.framePacing, 40)} : {}),
-  } : undefined;
-
   if (input.evidence != null) throw new Error("Direct evidence submission is not enabled; submit structured compatibility data only");
 
   return {
@@ -133,6 +129,7 @@ function normalizeReport(input: unknown): JsonObject {
       ...(driver.id ? {id: text(driver.id, 160)} : {}), type: driverType,
       name: text(driver.name, 160, true), version: text(driver.version, 120, true),
       ...(driver.build ? {build: text(driver.build, 160)} : {}),
+      ...(driver.source ? {source: text(driver.source, 160)} : {}),
     },
     config: {
       settings: safeScalarMap(config.settings),
@@ -146,7 +143,6 @@ function normalizeReport(input: unknown): JsonObject {
       ...(typeof config.maliGpuOptimizations === "boolean" ? {maliGpuOptimizations: config.maliGpuOptimizations} : {}),
     },
     ...(Array.isArray(input.patches) ? {patches: input.patches.slice(0, 32).filter(isObject).map(p => ({id: text(p.id, 160, true), ...(p.preset ? {preset: text(p.preset, 160)} : {}), ...(p.revision ? {revision: text(p.revision, 120)} : {})}))} : {}),
-    ...(normalizedPerformance ? {performance: normalizedPerformance} : {}),
     result: {summary: text(result.summary, 1000, true), notes: text(result.notes, 6000), issues},
     contributor: {publicId, ...(contributor.displayName ? {displayName: text(contributor.displayName, 80)} : {})},
     provenance: {captureType, ...(provenance.appBuild ? {appBuild: text(provenance.appBuild, 120)} : {})},
@@ -200,18 +196,71 @@ async function ensureCanonicalIssue(env: Env, cusaId: string, title: string): Pr
   return ((await created.json()) as {number:number}).number;
 }
 
+async function readPart(value: unknown): Promise<Uint8Array | undefined> {
+  if (value == null || typeof value === "string") return undefined;
+  if (typeof value === "object" && "arrayBuffer" in value && typeof value.arrayBuffer === "function") {
+    return new Uint8Array(await value.arrayBuffer());
+  }
+  return undefined;
+}
+
+async function gunzipText(bytes: Uint8Array): Promise<string> {
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+  return new Response(stream).text();
+}
+
 async function submit(request: Request, env: Env): Promise<Response> {
   if (!env.GITHUB_TOKEN || !env.GITHUB_ISSUE_TOKEN) {
     throw new Error("GitHub tokens are not configured");
   }
+  if (!env.IMAGES) throw new Error("Images binding is not configured");
   const length = Number(request.headers.get("content-length") || "0");
-  if (length > MAX_BODY_BYTES) return json({error: "payload_too_large"}, 413);
+  if (length > MAX_MULTIPART_BYTES) return json({error: "payload_too_large"}, 413);
   await rateLimit(request, env);
-  const bodyText = await request.text();
-  if (bodyText.length > MAX_BODY_BYTES) return json({error: "payload_too_large"}, 413);
-  const envelope = JSON.parse(bodyText) as JsonObject;
+  const form = await request.formData();
+  const envelopePart = form.get("envelope");
+  if (typeof envelopePart !== "string") throw new Error("Required text field is empty");
+  if (envelopePart.length > MAX_ENVELOPE_BYTES) return json({error: "payload_too_large"}, 413);
+  const envelope = JSON.parse(envelopePart) as JsonObject;
   const report = normalizeReport(envelope.report);
-  const fingerprint = await duplicateFingerprint(report);
+  const screenshots = form.getAll("screenshot").filter(value => typeof value !== "string");
+  const applicationLog = await readPart(form.get("log-application"));
+  if (screenshots.length < 1 || screenshots.length > 3 || !applicationLog) {
+    const error = new Error("A screenshot and application log are required");
+    (error as Error & {code?: string}).code = "evidence_required";
+    throw error;
+  }
+  const captions = screenshots.map((_, index) => text(form.get(`screenshot-caption-${index}`), 300, true));
+  const shotBytes: Array<{bytes: Uint8Array; sha: string; caption: string}> = [];
+  for (const [index, file] of screenshots.entries()) {
+    const encoded = await reencodeScreenshot(env.IMAGES, new Uint8Array(await file.arrayBuffer()));
+    shotBytes.push({bytes: encoded, sha: await sha256Hex(encoded), caption: captions[index]});
+  }
+  const logs: Array<{slug: string; label: string; bytes: Uint8Array; sha: string; text?: string}> = [];
+  const appGzip = await sanitizeLogGzip(applicationLog);
+  logs.push({
+    slug: "application",
+    label: "Bachata application log",
+    bytes: appGzip,
+    sha: await sha256Hex(appGzip),
+    text: await gunzipText(appGzip),
+  });
+  const shad = await readPart(form.get("log-shadps4"));
+  if (shad) {
+    const gzipped = await sanitizeLogGzip(shad);
+    logs.push({slug: "shadps4", label: "shadPS4 session log", bytes: gzipped, sha: await sha256Hex(gzipped)});
+  }
+  const internal = await readPart(form.get("log-shadps4-internal"));
+  if (internal) {
+    const gzipped = await sanitizeLogGzip(internal);
+    logs.push({slug: "shadps4-internal", label: "shadPS4 internal log", bytes: gzipped, sha: await sha256Hex(gzipped)});
+  }
+  const parsed = parsePerformanceFromLog(logs[0].text || "");
+  if (parsed) report.performance = parsed;
+  else delete report.performance;
+
+  const evidenceHashes = [...shotBytes.map(item => item.sha), ...logs.map(item => item.sha)];
+  const fingerprint = await duplicateFingerprint(report, evidenceHashes);
   if (await isDuplicate(env.RATE_LIMIT, fingerprint)) {
     return json({error: "duplicate_submission", message: "An identical compatibility result was already accepted recently."}, 409);
   }
@@ -221,11 +270,26 @@ async function submit(request: Request, env: Env): Promise<Response> {
   const random = crypto.randomUUID().replace(/-/g, "").slice(0, 10);
   const reportId = `${now.toISOString().replace(/[-:.]/g, "").replace("Z", "Z")}-${cusaId.toLowerCase()}-${random}`;
   report.reportId = reportId;
+  report.evidence = {
+    screenshots: shotBytes.map((shot, index) => ({
+      path: `assets/${cusaId}/${reportId}/screenshots/${String(index + 1).padStart(2, "0")}.webp`,
+      sha256: shot.sha,
+      caption: shot.caption,
+    })),
+    diagnostics: logs.map((log, index) => ({
+      path: `assets/${cusaId}/${reportId}/logs/${String(index + 1).padStart(2, "0")}-${log.slug}.log.gz`,
+      sha256: log.sha,
+      label: log.label,
+    })),
+  };
 
   const repoBase = `/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}`;
   const baseRef = await github(env, `${repoBase}/git/ref/heads/${encodeURIComponent(env.GITHUB_BASE_BRANCH)}`);
   if (!baseRef.ok) throw new Error(`Could not resolve base branch (${baseRef.status})`);
   const baseData = await baseRef.json() as {object:{sha:string}};
+  const commitInfo = await github(env, `${repoBase}/git/commits/${baseData.object.sha}`);
+  if (!commitInfo.ok) throw new Error(`Could not resolve base commit (${commitInfo.status})`);
+  const baseCommit = await commitInfo.json() as {sha: string; tree: {sha: string}};
   const branch = `community/${cusaId.toLowerCase()}/${reportId}`;
   const createRef = await github(env, `${repoBase}/git/refs`, {
     method: "POST",
@@ -233,6 +297,7 @@ async function submit(request: Request, env: Env): Promise<Response> {
   });
   if (!createRef.ok) throw new Error(`Could not create moderation branch (${createRef.status})`);
 
+  const files: Array<{path: string; content: Uint8Array}> = [];
   const gamePath = `games/${cusaId}/game.json`;
   const existingGame = await github(env, `${repoBase}/contents/${gamePath}?ref=${encodeURIComponent(env.GITHUB_BASE_BRANCH)}`);
   if (existingGame.status === 404) {
@@ -245,24 +310,37 @@ async function submit(request: Request, env: Env): Promise<Response> {
       canonicalIssue: {repository: `${env.GITHUB_OWNER}/Bachata-S4`, number: issueNumber},
       legacyIssues: [],
     };
-    const createGame = await github(env, `${repoBase}/contents/${gamePath}`, {
-      method: "PUT",
-      body: JSON.stringify({message: `compat(${cusaId}): add game metadata`, branch, content: btoa(unescape(encodeURIComponent(JSON.stringify(game, null, 2) + "\n")))}),
-    });
-    if (!createGame.ok) throw new Error(`Could not create game metadata (${createGame.status})`);
+    files.push({path: gamePath, content: new TextEncoder().encode(JSON.stringify(game, null, 2) + "\n")});
   } else if (!existingGame.ok) {
     throw new Error(`Could not verify game metadata (${existingGame.status})`);
   }
 
-  const reportPath = `games/${cusaId}/reports/${reportId}.json`;
-  const createReport = await github(env, `${repoBase}/contents/${reportPath}`, {
-    method: "PUT",
-    body: JSON.stringify({
-      message: `compat(${cusaId}): submit community report`, branch,
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(report, null, 2) + "\n"))),
-    }),
+  for (const [index, shot] of shotBytes.entries()) {
+    files.push({
+      path: `assets/${cusaId}/${reportId}/screenshots/${String(index + 1).padStart(2, "0")}.webp`,
+      content: shot.bytes,
+    });
+  }
+  for (const [index, log] of logs.entries()) {
+    files.push({
+      path: `assets/${cusaId}/${reportId}/logs/${String(index + 1).padStart(2, "0")}-${log.slug}.log.gz`,
+      content: log.bytes,
+    });
+  }
+  files.push({
+    path: `games/${cusaId}/reports/${reportId}.json`,
+    content: new TextEncoder().encode(JSON.stringify(report, null, 2) + "\n"),
   });
-  if (!createReport.ok) throw new Error(`Could not stage report (${createReport.status})`);
+
+  await commitFiles((path, init) => github(env, path, init), {
+    owner: env.GITHUB_OWNER,
+    repo: env.GITHUB_REPO,
+    branch,
+    baseCommitSha: baseCommit.sha,
+    baseTreeSha: baseCommit.tree.sha,
+    message: `compat(${cusaId}): submit community report`,
+    files,
+  });
 
   const pr = await github(env, `${repoBase}/pulls`, {
     method: "POST",
@@ -271,7 +349,7 @@ async function submit(request: Request, env: Env): Promise<Response> {
       head: branch,
       base: env.GITHUB_BASE_BRANCH,
       draft: true,
-      body: `Community compatibility report submitted through the Bachata S4 app.\n\n- CUSA: ${cusaId}\n- Status: ${report.status}\n- Release: ${(report.release as JsonObject).tag}\n- SoC: ${(report.device as JsonObject).socName}\n- Contributor: ${(report.contributor as JsonObject).publicId}\n\nStructured report only; no game files, firmware, keys, licenses, local paths, or raw logs are accepted by this endpoint.`,
+      body: `Community compatibility report submitted through the Bachata S4 app.\n\n- CUSA: ${cusaId}\n- Status: ${report.status}\n- Release: ${(report.release as JsonObject).tag}\n- SoC: ${(report.device as JsonObject).socName}\n- Contributor: ${(report.contributor as JsonObject).publicId}\n- Screenshots: ${shotBytes.length}\n- Logs: ${logs.map(item => item.label).join(", ")}\n`,
     }),
   });
   if (!pr.ok) throw new Error(`Could not open moderation PR (${pr.status})`);
@@ -333,12 +411,16 @@ export default {
       if (feed) return feed;
     }
     if (request.method !== "POST" || !REPORT_PATHS.has(url.pathname)) return json({error: "not_found"}, 404);
-    if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) return json({error: "content_type_must_be_json"}, 415);
+    if (!request.headers.get("content-type")?.toLowerCase().includes("multipart/form-data")) {
+      return json({error: "content_type_must_be_multipart"}, 415);
+    }
     try {
       return await submit(request, env);
     } catch (error) {
       const message = error instanceof Error ? error.message : "Submission failed";
-      const clientError = /Invalid|Expected|Required|private|Unsafe|Too many|Unsupported|not enabled|limit/i.test(message);
+      const coded = (error as Error & {code?: string}).code;
+      if (coded === "evidence_required") return json({error: "evidence_required", message}, 400);
+      const clientError = /Invalid|Expected|Required|private|Unsafe|Too many|Unsupported|not enabled|limit|screenshot|Images binding/i.test(message);
       return json({error: clientError ? "invalid_submission" : "submission_failed", message}, clientError ? 400 : 502);
     }
   },

@@ -4,13 +4,15 @@ This Cloudflare Worker is the only public write gateway for in-app compatibility
 
 ## Responsibilities
 
-- Accept only structured compatibility report schema v2 payloads.
+- Accept multipart compatibility report schema v2 payloads (`envelope` JSON + screenshots + gzipped logs).
 - Reject local filesystem/content URIs, device identifiers, credentials, and unsupported nested configuration values.
+- Re-encode screenshots through the Cloudflare Images binding to WebP; rescan and re-gzip logs.
+- Overwrite `performance` from `application.log` Performance lines. Ignore client-supplied FPS.
 - Keep native FPS separate from frame-generated output FPS.
 - Rate-limit public submission traffic when the `RATE_LIMIT` KV binding is configured.
-- Create a moderation branch and **draft pull request** in `JICA98/Bachata-S4-Compatibility` instead of publishing directly to `main`.
+- Create a moderation branch and **draft pull request** in `JICA98/Bachata-S4-Compatibility` against `feat/community-compatibility-v2`.
 - Create/reuse canonical CUSA discussion identity through the configured GitHub repositories.
-- Do not accept game files, firmware, keys, licenses, passcodes, save archives, PKGs, raw logs, or arbitrary evidence URLs.
+- Do not accept game files, firmware, keys, licenses, passcodes, save archives, PKGs, raw unsanitized logs, or client-supplied `evidence` fields.
 
 ## Required environment
 
@@ -19,7 +21,8 @@ This Cloudflare Worker is the only public write gateway for in-app compatibility
 - `GITHUB_TOKEN` — secret. Prefer a GitHub App installation token or narrowly scoped fine-grained token. Required permissions: contents write + pull requests write on `Bachata-S4-Compatibility`, and issues write on the canonical public Bachata repository if automatic issue creation remains enabled.
 - `GITHUB_OWNER` — normally `JICA98`.
 - `GITHUB_REPO` — normally `Bachata-S4-Compatibility`.
-- `GITHUB_BASE_BRANCH` — normally `main`.
+- `GITHUB_BASE_BRANCH` — `feat/community-compatibility-v2` until v2 validation is on `main`.
+- `IMAGES` — Cloudflare Images binding. Image transformations must be enabled on the same account.
 - `RATE_LIMIT` — KV namespace used only for hashed/day-scoped rate-limit counters. Raw IP addresses are not stored.
 
 Never commit production tokens, KV IDs, account IDs, or private Cloudflare credentials.
@@ -39,20 +42,17 @@ Production routing should expose only the compatibility API path intended by the
 
 ## Evidence upload security contract
 
-Binary evidence submission is intentionally **disabled** in the current Worker. A later evidence endpoint must not be enabled until all of the following are implemented and covered by tests:
+`POST /api/compat/v2/reports` is `multipart/form-data`. The client must not send `report.evidence`. The Worker:
 
-1. allow only PNG/JPEG/WebP based on decoded file contents, not filename/MIME alone;
-2. reject SVG, archives, executable/polyglot payloads and unknown formats;
-3. cap request size, decoded dimensions and pixel count before persistent storage;
-4. fully decode and re-encode server-side to a fresh WebP/JPEG object;
-5. strip EXIF/XMP/ICC and other metadata, including location/device metadata;
-6. assign content-addressed server-side object names; never trust client paths;
-7. store evidence separately from immutable Git history so legal/privacy takedowns remain possible;
-8. never accept raw diagnostic logs through the image endpoint;
-9. run privacy scanning/redaction on any future diagnostic extract before upload;
-10. require the same contributor consent and report association as the structured submission.
+1. accepts PNG/JPEG/WebP screenshot parts and rejects anything `IMAGES.info` cannot decode (SVG, archives, executables);
+2. caps multipart size at 8 MiB, each image at 1.5 MiB and 4 megapixels;
+3. fully decodes and re-encodes screenshots with `env.IMAGES` to WebP (quality 80, long edge 1920, `anim: false`), which strips EXIF/XMP/ICC;
+4. names committed files `01.webp` / `01-application.log.gz` under `assets/<CUSA>/<reportId>/`;
+5. gunzips logs, scans them with the same private-path/token regex as JSON, and re-gzips — raw `.log` files are never committed;
+6. stamps repo-relative `path` + sha256 onto the report JSON in the same git commit;
+7. opens a **draft** pull request. Evidence is not public until merge.
 
-Until every requirement above exists, the Worker must continue returning an error whenever a public submission contains `evidence`.
+Legal/privacy takedowns still use the tombstone mechanism after merge; this iteration stores sanitized bytes in git like v1 maintainer reports.
 
 ## Moderation and takedowns
 

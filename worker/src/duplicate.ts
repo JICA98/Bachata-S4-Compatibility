@@ -15,8 +15,8 @@ function stable(value: unknown): unknown {
   return value;
 }
 
-export async function duplicateFingerprint(report: JsonObject): Promise<string> {
-  const canonical = JSON.stringify(stable(report));
+export async function duplicateFingerprint(report: JsonObject, evidenceSha256s: string[] = []): Promise<string> {
+  const canonical = JSON.stringify({report: stable(report), evidenceSha256s: [...evidenceSha256s].sort()});
   const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
   return Array.from(new Uint8Array(digest)).map(v => v.toString(16).padStart(2, "0")).join("");
 }

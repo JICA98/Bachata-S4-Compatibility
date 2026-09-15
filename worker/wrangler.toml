@@ -5,11 +5,14 @@ compatibility_date = "2026-09-01"
 [vars]
 GITHUB_OWNER = "JICA98"
 GITHUB_REPO = "Bachata-S4-Compatibility"
-GITHUB_BASE_BRANCH = "main"
+GITHUB_BASE_BRANCH = "feat/community-compatibility-v2"
 
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
 id = "d174f75cb8774e3fa945b20d05274a3c"
+
+[images]
+binding = "IMAGES"
 
 [observability]
 enabled = true
