@@ -48,6 +48,10 @@ function mean(values: number[]): number {
   return values.reduce((a, b) => a + b, 0) / values.length;
 }
 
+function round2(value: number): number {
+  return Math.round(value * 100) / 100;
+}
+
 function percentile(values: number[], p: number): number {
   const sorted = [...values].sort((a, b) => a - b);
   const index = Math.min(sorted.length - 1, Math.max(0, Math.floor((p / 100) * (sorted.length - 1))));
@@ -72,17 +76,17 @@ export function parsePerformanceFromLog(text: string): PerformanceStats | undefi
   const span = samples[samples.length - 1].elapsedMs - samples[0].elapsedMs;
   if (span < 10000) return undefined;
   const native = samples.map(s => s.sourceFps);
-  const nativeAverageFps = Math.round(mean(native) * 100) / 100;
+  const nativeAverageFps = round2(mean(native));
   const stats: PerformanceStats = {
     nativeAverageFps,
-    testDurationSeconds: Math.max(1, Math.round(samples[samples.length - 1].elapsedMs / 1000)),
+    testDurationSeconds: Math.max(1, Math.floor(samples[samples.length - 1].elapsedMs / 1000)),
     framePacing: pacing(samples.map(s => s.frameTimeMs)),
   };
-  if (samples.length >= 20) stats.nativeOnePercentLowFps = Math.round(percentile(native, 1) * 100) / 100;
+  if (samples.length >= 20) stats.nativeOnePercentLowFps = round2(percentile(native, 1));
   const fgOn = samples.some(s => s.fgOn);
   const outputMean = mean(samples.map(s => s.outputFps));
   if (fgOn && Math.abs(outputMean - nativeAverageFps) > 0.5) {
-    stats.outputAverageFps = Math.round(outputMean * 100) / 100;
+    stats.outputAverageFps = round2(outputMean);
   }
   return stats;
 }

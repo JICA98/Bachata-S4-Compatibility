@@ -43,6 +43,15 @@ describe("sanitizeLogGzip", () => {
     const input = await gzip("hello /data/user/0/secret\n");
     await expect(sanitizeLogGzip(input)).rejects.toThrow(/private identifier/i);
   });
+
+  it("rescanned gzip text still parses FPS", async () => {
+    const {parsePerformanceFromLog} = await import("./performance");
+    const line = (elapsed: number) =>
+      `[t] [App.Performance] <Info> elapsedMs=${elapsed} sourceFps=30.00 outputFps=30.00 frameTimeMs=33.30 fg=off`;
+    const text = Array.from({length: 6}, (_, i) => line(12000 + i * 2000)).join("\n");
+    const scanned = await gunzip(await sanitizeLogGzip(await gzip(text)));
+    expect(parsePerformanceFromLog(scanned)?.nativeAverageFps).toBe(30);
+  });
 });
 
 describe("reencodeScreenshot", () => {
