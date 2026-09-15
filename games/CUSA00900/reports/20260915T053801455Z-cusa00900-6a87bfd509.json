@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "reportId": "20260915T053801455Z-cusa00900-6a87bfd509",
+  "cusaId": "CUSA00900",
+  "testedAt": "2026-09-15T05:38:03.217645Z",
+  "status": "ingame",
+  "release": {
+    "tag": "v0.2.1",
+    "commit": "28d2a1628ed533e3e52dda87287edbae0dcb9088"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "OPD2403",
+    "socId": "sm8650",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "ee5dda7a5c67966f"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false
+    },
+    "requiredOverrides": {},
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "performance": {
+    "nativeAverageFps": 15,
+    "framePacing": "minor-stutter"
+  },
+  "result": {
+    "summary": "I'm in game and the game is playable with good graphics",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-cc929a063ee6"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.1"
+  }
+}
