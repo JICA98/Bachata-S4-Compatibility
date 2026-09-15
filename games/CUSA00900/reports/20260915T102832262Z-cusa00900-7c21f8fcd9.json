@@ -22,21 +22,27 @@
     "ramBucketGb": 12
   },
   "driver": {
-    "id": "system-vortek",
-    "type": "system",
-    "name": "System Vulkan",
-    "version": "cb4c01d297",
-    "build": "BP4A.251205.006"
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
   },
   "config": {
     "settings": {
       "general.big_core_affinity": false,
       "general.neo_mode": false,
       "gpu.copy_gpu_buffers": false,
-      "gpu.dump_shaders": false
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "vulkan.vkcrash_diagnostic_enabled": false
     },
     "requiredOverrides": {},
-    "driverId": "system",
+    "driverId": "turnip-ee5dda7a5c67966f",
     "guestBackend": "FEX",
     "frameGenerationMode": "OFF",
     "fexPreset": "DEFAULT",
