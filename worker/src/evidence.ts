@@ -5,16 +5,7 @@ export const MAX_PIXELS = 4_000_000;
 export const MAX_GZIP_BYTES = 1.5 * 1024 * 1024;
 export const MAX_UNCOMPRESSED_BYTES = 4 * 1024 * 1024;
 
-export interface ImagesBinding {
-  info(bytes: ArrayBuffer | Uint8Array): Promise<{width: number; height: number; format?: string}>;
-  input(bytes: ArrayBuffer | Uint8Array): {
-    transform(options: {width: number; height: number; fit: string}): {
-      output(options: {format: string; quality: number; anim: boolean}): Promise<{
-        response(): Response;
-      }>;
-    };
-  };
-}
+export type ScreenshotImagesBinding = Pick<ImagesBinding, "info" | "input">;
 
 async function pipeBytes(bytes: Uint8Array, transform: CompressionStream | DecompressionStream): Promise<Uint8Array> {
   const stream = new Blob([bytes]).stream().pipeThrough(transform);
@@ -35,18 +26,20 @@ export async function sanitizeLogGzip(bytes: Uint8Array): Promise<Uint8Array> {
   return pipeBytes(uncompressed, new CompressionStream("gzip"));
 }
 
-export async function reencodeScreenshot(images: ImagesBinding, bytes: Uint8Array): Promise<Uint8Array> {
+export async function reencodeScreenshot(images: ScreenshotImagesBinding, bytes: Uint8Array): Promise<Uint8Array> {
   if (bytes.byteLength === 0 || bytes.byteLength > MAX_IMAGE_BYTES) throw new Error("Screenshot exceeds size limit");
   let info: {width: number; height: number};
   try {
-    info = await images.info(bytes);
+    const metadata = await images.info(new Blob([bytes]).stream());
+    if (!("width" in metadata) || !("height" in metadata)) throw new Error("Unsupported screenshot");
+    info = metadata;
   } catch {
     throw new Error("Invalid screenshot");
   }
   if (!info.width || !info.height || info.width * info.height > MAX_PIXELS) {
     throw new Error("Screenshot exceeds pixel limit");
   }
-  const out = await images.input(bytes)
+  const out = await images.input(new Blob([bytes]).stream())
     .transform({width: 1920, height: 1920, fit: "scale-down"})
     .output({format: "image/webp", quality: 80, anim: false});
   return new Uint8Array(await out.response().arrayBuffer());

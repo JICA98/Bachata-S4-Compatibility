@@ -1,5 +1,5 @@
 import {duplicateFingerprint, isDuplicate, markAccepted} from "./duplicate";
-import {reencodeScreenshot, sanitizeLogGzip, sha256Hex, type ImagesBinding} from "./evidence";
+import {reencodeScreenshot, sanitizeLogGzip, sha256Hex, type ScreenshotImagesBinding} from "./evidence";
 import {commitFiles} from "./github-git";
 import {parsePerformanceFromLog} from "./performance";
 import {PRIVATE_PATTERN} from "./privacy";
@@ -11,7 +11,7 @@ interface Env {
   GITHUB_REPO: string;
   GITHUB_BASE_BRANCH: string;
   RATE_LIMIT?: KVNamespace;
-  IMAGES?: ImagesBinding;
+  IMAGES?: ScreenshotImagesBinding;
 }
 
 type JsonObject = Record<string, unknown>;

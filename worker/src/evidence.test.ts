@@ -14,18 +14,23 @@ async function gunzip(bytes: Uint8Array): Promise<string> {
 }
 
 const images = {
-  async info(bytes: ArrayBuffer | Uint8Array) {
-    const u8 = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
+  async info(stream: ReadableStream<Uint8Array>) {
+    expect(stream).toBeInstanceOf(ReadableStream);
+    const u8 = new Uint8Array(await new Response(stream).arrayBuffer());
     if (u8[0] === 0x3c) throw new Error("unsupported");
-    return {width: 1920, height: 1080, format: "image/jpeg"};
+    return {width: 1920, height: 1080, format: "image/jpeg", fileSize: u8.length};
   },
-  input() {
+  input(stream: ReadableStream<Uint8Array>) {
+    expect(stream).toBeInstanceOf(ReadableStream);
     return {
-      transform() {
+      transform() { return this; },
+      draw() { return this; },
+      async output() {
+        expect((await new Response(stream).arrayBuffer()).byteLength).toBeGreaterThan(0);
         return {
-          async output() {
-            return {response: () => new Response(WEBP, {headers: {"content-type": "image/webp"}})};
-          },
+          response: () => new Response(WEBP, {headers: {"content-type": "image/webp"}}),
+          contentType: () => "image/webp",
+          image: () => new Blob([WEBP]).stream(),
         };
       },
     };
@@ -75,7 +80,7 @@ describe("reencodeScreenshot", () => {
     const huge = {
       ...images,
       async info() {
-        return {width: 4001, height: 1001, format: "image/jpeg"};
+        return {width: 4001, height: 1001, format: "image/jpeg", fileSize: 2};
       },
     };
     await expect(reencodeScreenshot(huge, new Uint8Array([0xff, 0xd8]))).rejects.toThrow(/pixel/i);

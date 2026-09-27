@@ -48,16 +48,22 @@ function envelope(overrides: Record<string, unknown> = {}) {
 }
 
 const images = {
-  async info() {
-    return {width: 1280, height: 720, format: "image/jpeg"};
+  async info(stream: ReadableStream<Uint8Array>) {
+    expect(stream).toBeInstanceOf(ReadableStream);
+    const bytes = await new Response(stream).arrayBuffer();
+    return {width: 1280, height: 720, format: "image/jpeg", fileSize: bytes.byteLength};
   },
-  input() {
+  input(stream: ReadableStream<Uint8Array>) {
+    expect(stream).toBeInstanceOf(ReadableStream);
     return {
-      transform() {
+      transform() { return this; },
+      draw() { return this; },
+      async output() {
+        expect((await new Response(stream).arrayBuffer()).byteLength).toBeGreaterThan(0);
         return {
-          async output() {
-            return {response: () => new Response(WEBP, {headers: {"content-type": "image/webp"}})};
-          },
+          response: () => new Response(WEBP, {headers: {"content-type": "image/webp"}}),
+          contentType: () => "image/webp",
+          image: () => new Blob([WEBP]).stream(),
         };
       },
     };
@@ -209,8 +215,8 @@ describe("multipart submit", () => {
       async info() {
         throw new Error("unsupported");
       },
-      input() {
-        return images.input();
+      input(stream: ReadableStream<Uint8Array>) {
+        return images.input(stream);
       },
     };
     const form = new FormData();
