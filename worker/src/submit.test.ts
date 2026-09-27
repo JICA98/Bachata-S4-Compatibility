@@ -70,7 +70,9 @@ const images = {
   },
 };
 
-function env() {
+type TestEnv = Omit<ReturnType<typeof makeEnv>, "IMAGES"> & {IMAGES?: typeof images};
+
+function makeEnv() {
   const store = new Map<string, string>();
   return {
     GITHUB_TOKEN: "token",
@@ -88,6 +90,10 @@ function env() {
       },
     },
   };
+}
+
+function env(): TestEnv {
+  return makeEnv();
 }
 
 let blobBodies: string[] = [];
@@ -140,12 +146,14 @@ describe("multipart submit", () => {
     expect(response.status).toBe(415);
   });
 
-  it("commits screenshots, logs, stamped paths, and parsed performance", async () => {
+  it("commits three screenshots, logs, stamped paths, and parsed performance", async () => {
     installGithubMock();
     const form = new FormData();
     form.set("envelope", JSON.stringify(envelope()));
-    form.append("screenshot", new Blob([JPEG]), "01.jpg");
-    form.set("screenshot-caption-0", "Hunter's Dream");
+    for (const [index, caption] of ["Hunter's Dream", "Nightmare Frontier", "Yharnam"].entries()) {
+      form.append("screenshot", new Blob([JPEG]), `0${index + 1}.jpg`);
+      form.set(`screenshot-caption-${index}`, caption);
+    }
     form.set("log-application", new Blob([await gzip(performanceLog())]), "01-application.log.gz");
     form.set("log-shadps4", new Blob([await gzip("shadps4 ok\n")]), "02-shadps4.log.gz");
     const response = await post(form);
@@ -164,6 +172,7 @@ describe("multipart submit", () => {
       .find(parsed => parsed?.schemaVersion === 2);
     expect(reportBlob).toBeTruthy();
     const evidence = reportBlob!.evidence as {screenshots: Array<{path: string}>; diagnostics: Array<{label: string}>};
+    expect(evidence.screenshots).toHaveLength(3);
     expect(evidence.screenshots[0].path).toMatch(/^assets\/CUSA00900\/.+\/screenshots\/01\.webp$/);
     expect(evidence.diagnostics.some(item => item.label === "Bachata application log")).toBe(true);
     const performance = reportBlob!.performance as {nativeAverageFps: number};
@@ -185,12 +194,41 @@ describe("multipart submit", () => {
     expect(githubCalls.some(call => call.url.includes("/git/refs"))).toBe(false);
   });
 
-  it("requires a screenshot", async () => {
+  it("accepts an early failure with only the application log and without Images", async () => {
     installGithubMock();
     const form = new FormData();
-    form.set("envelope", JSON.stringify(envelope()));
+    form.set("envelope", JSON.stringify(envelope({status: "nothing"})));
     form.set("log-application", new Blob([await gzip(performanceLog())]), "app.log.gz");
-    const response = await post(form);
+    const response = await post(form, {...env(), IMAGES: undefined});
+    expect(response.status).toBe(202);
+    const reportBlob = blobBodies.map(raw => JSON.parse(raw) as {content: string})
+      .map(entry => atob(entry.content))
+      .filter(decoded => decoded.startsWith("{"))
+      .map(decoded => JSON.parse(decoded) as Record<string, unknown>)
+      .find(parsed => parsed?.schemaVersion === 2);
+    expect(reportBlob?.evidence).toMatchObject({screenshots: []});
+  });
+
+  it.each(["menus", "ingame", "playable"]) (
+    "requires screenshots for %s reports",
+    async (status) => {
+      installGithubMock();
+      const form = new FormData();
+      form.set("envelope", JSON.stringify(envelope({status})));
+      form.set("log-application", new Blob([await gzip(performanceLog())]), "app.log.gz");
+      const response = await post(form, {...env(), IMAGES: undefined});
+      const body = await response.json() as {error: string};
+      expect(response.status).toBe(400);
+      expect(body.error).toBe("evidence_required");
+      expect(githubCalls.some(call => call.url.includes("/git/refs"))).toBe(false);
+    },
+  );
+
+  it("requires the application log for a screenshotless early failure", async () => {
+    installGithubMock();
+    const form = new FormData();
+    form.set("envelope", JSON.stringify(envelope({status: "boots"})));
+    const response = await post(form, {...env(), IMAGES: undefined});
     const body = await response.json() as {error: string};
     expect(response.status).toBe(400);
     expect(body.error).toBe("evidence_required");

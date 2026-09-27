@@ -83,7 +83,7 @@ class ReportV2SchemaTests(unittest.TestCase):
 
 class EvidencePathTests(unittest.TestCase):
     def _app(self, **overrides) -> dict:
-        value = report("20260915T053801455Z-cusa00900-6a87bfd509", capture="app-captured")
+        value = report("20260915T053801455Z-cusa00900-6a87bfd509", capture="app-captured", status="menus")
         value["evidence"] = {
             "screenshots": [{
                 "path": "assets/CUSA00900/20260915T053801455Z-cusa00900-6a87bfd509/screenshots/01.webp",
@@ -113,6 +113,32 @@ class EvidencePathTests(unittest.TestCase):
             path.write_text(json.dumps(payload), encoding="utf-8")
             errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
             self.assertTrue(any("screenshot" in e for e in errors))
+
+    def test_early_failure_without_screenshots_is_valid_with_application_log(self) -> None:
+        for status in ("nothing", "boots"):
+            payload = self._app(status=status)
+            payload["evidence"]["screenshots"] = []
+            with tempfile.TemporaryDirectory() as tmp:
+                path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+                path.write_text(json.dumps(payload), encoding="utf-8")
+                self.assertEqual(validate_report_v2(path, json.loads(path.read_text()), "CUSA00900"), [])
+
+    def test_menus_requires_at_least_one_screenshot(self) -> None:
+        payload = self._app(status="menus")
+        payload["evidence"]["screenshots"] = []
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
+            self.assertTrue(any("screenshot" in e for e in errors))
+
+    def test_gameplay_requires_three_screenshots(self) -> None:
+        payload = self._app(status="playable")
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "20260915T053801455Z-cusa00900-6a87bfd509.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            errors = validate_report_v2(path, json.loads(path.read_text()), "CUSA00900")
+            self.assertTrue(any("3 screenshots" in e for e in errors))
 
     def test_path_outside_assets_prefix_fails(self) -> None:
         payload = self._app()
