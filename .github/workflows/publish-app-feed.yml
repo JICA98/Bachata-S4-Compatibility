@@ -35,15 +35,19 @@ jobs:
             --site-output "$RUNNER_TEMP/generated" \
             --app-output "$RUNNER_TEMP/generated/app-v2"
       - name: Verify feed contents
+        shell: python
         run: |
-          feed="$RUNNER_TEMP/generated/app-v2"
-          test -f "$feed/index.json" && test -f "$feed/socs.json"
+          import json, os, pathlib, re, sys
+          feed = pathlib.Path(os.environ["RUNNER_TEMP"]) / "generated" / "app-v2"
           # Publish only the paths the Worker is allowed to serve.
-          unexpected="$(cd "$feed" && find . -type f ! -regex '\./\(index\|socs\)\.json' ! -regex '\./games/CUSA[0-9]\{5\}\.json')"
-          if [[ -n "$unexpected" ]]; then
-            echo "Unexpected feed files:" >&2; echo "$unexpected" >&2; exit 1
-          fi
-          find "$feed" -name '*.json' -print0 | xargs -0 -n1 python3 -m json.tool >/dev/null
+          allowed = re.compile(r"(?:index|socs)\.json|games/CUSA[0-9]{5}\.json")
+          files = sorted(p.relative_to(feed).as_posix() for p in feed.rglob("*") if p.is_file())
+          unexpected = [name for name in files if not allowed.fullmatch(name)]
+          if unexpected or "index.json" not in files or "socs.json" not in files:
+              sys.exit(f"Unexpected or missing feed files: {unexpected}")
+          for name in files:
+              json.loads((feed / name).read_text(encoding="utf-8"))
+          print(f"Verified {len(files)} feed file(s)")
       - name: Publish to app-feed branch
         env:
           SOURCE_SHA: ${{ github.sha }}
