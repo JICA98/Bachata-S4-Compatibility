@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T14:26:42Z",
+  "generatedAt": "2026-09-28T15:21:23Z",
   "currentRelease": "0.2.3",
-  "gameCount": 15,
+  "gameCount": 16,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -153,6 +153,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:40:49Z"
+    },
+    {
+      "cusaId": "CUSA02320",
+      "title": "Uncharted: The Nathan Drake Collection™",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "0.2.3",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 31.55,
+          "max": 31.55,
+          "average": 31.55,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_e379c0359c834fb7a37a829202aea94b/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-28T15:15:40.027754Z"
     },
     {
       "cusaId": "CUSA03146",
