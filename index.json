@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T13:39:59Z",
+  "generatedAt": "2026-09-28T14:26:42Z",
   "currentRelease": "0.2.3",
-  "gameCount": 14,
+  "gameCount": 15,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -178,6 +178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-02T11:48:17Z"
+    },
+    {
+      "cusaId": "CUSA03694",
+      "title": "GRAVITY RUSH™ 2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "0.2.3",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.9,
+          "max": 29.9,
+          "average": 29.9,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-28T14:18:01.687061Z"
     },
     {
       "cusaId": "CUSA07023",

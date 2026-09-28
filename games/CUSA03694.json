@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "0.2.3",
+  "game": {
+    "cusaId": "CUSA03694",
+    "title": "GRAVITY RUSH™ 2",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "0.2.3",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.9,
+      "max": 29.9,
+      "average": 29.9,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "0.2.3",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.9,
+        "max": 29.9,
+        "average": 29.9,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_571141db0d9448038a459c969d26f55f",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "fix-movie-readiness-callback-ordering",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "gnf-readiness-check-random-crash-fix",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-disable-background-water-surfaces",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-disable-dynamic-shadows",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-disable-heat-haze-distortion",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-halve-fx-capacity-budget",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-no-ambient-crowds-at-all",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-quarter-particle-density",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-quarter-pedestrian-density",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "performance-sparse-pedestrians-crowd-points-only",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "resolution-540p-diagnostic",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "skip-photo-capture-prevent-shutter-crash",
+            "preset": "mobile-540p-diagnostic",
+            "revision": "2026.09.28.4791735114661653009"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_571141db0d9448038a459c969d26f55f",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-28T14:18:01.687061Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "0f819df9a29c5478eeafbef9dfc916c0999b19cc"
+      },
+      "gameVersion": "01.11",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 24
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "fix-movie-readiness-callback-ordering",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "gnf-readiness-check-random-crash-fix",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-disable-background-water-surfaces",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-disable-dynamic-shadows",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-disable-heat-haze-distortion",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-halve-fx-capacity-budget",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-no-ambient-crowds-at-all",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-quarter-particle-density",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-quarter-pedestrian-density",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "performance-sparse-pedestrians-crowd-points-only",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "resolution-540p-diagnostic",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "skip-photo-capture-prevent-shutter-crash",
+          "preset": "mobile-540p-diagnostic",
+          "revision": "2026.09.28.4791735114661653009"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 29.9,
+        "nativeOnePercentLowFps": 23.79,
+        "outputAverageFps": null,
+        "testDurationSeconds": 186,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "GRAVITY RUSH™ 2: observed ingame during this test session. Measured native FPS: 29.9. Recorded duration: 186s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-921f88388623",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.3"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/01.webp",
+          "caption": "GRAVITY RUSH™ 2 — capture 1 · 2026-09-28T14:18:01.319Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/02.webp",
+          "caption": "GRAVITY RUSH™ 2 — capture 2 · 2026-09-28T14:19:04.231Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
+          "caption": "GRAVITY RUSH™ 2 — capture 3 · 2026-09-28T14:20:17.131Z"
+        }
+      ]
+    }
+  ]
+}
