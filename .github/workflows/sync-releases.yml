@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -16,6 +17,7 @@ jobs:
         env: {GITHUB_TOKEN: "${{ github.token }}"}
         run: python3 scripts/sync_releases.py
       - name: Commit changes
+        id: commit
         run: |
           if git diff --quiet -- data/releases.json; then exit 0; fi
           git config user.name "github-actions[bot]"
@@ -23,3 +25,9 @@ jobs:
           git add data/releases.json
           git commit -m "chore: sync Bachata S4 releases"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild the app compatibility feed
+        # The feed is scored against main's release index; rebuild it when a release changes.
+        if: steps.commit.outputs.changed == 'true'
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: gh workflow run publish-app-feed.yml --repo "${{ github.repository }}" --ref feat/community-compatibility-v2
