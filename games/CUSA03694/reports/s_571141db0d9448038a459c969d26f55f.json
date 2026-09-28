@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_571141db0d9448038a459c969d26f55f",
+  "cusaId": "CUSA03694",
+  "testedAt": "2026-09-28T14:18:01.687061Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.11",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "0f819df9a29c5478eeafbef9dfc916c0999b19cc"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 24
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "fix-movie-readiness-callback-ordering",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "gnf-readiness-check-random-crash-fix",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-disable-background-water-surfaces",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-disable-dynamic-shadows",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-disable-heat-haze-distortion",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-halve-fx-capacity-budget",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-no-ambient-crowds-at-all",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-quarter-particle-density",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-quarter-pedestrian-density",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "performance-sparse-pedestrians-crowd-points-only",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "resolution-540p-diagnostic",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    },
+    {
+      "id": "skip-photo-capture-prevent-shutter-crash",
+      "preset": "mobile-540p-diagnostic",
+      "revision": "2026.09.28.4791735114661653009"
+    }
+  ],
+  "result": {
+    "summary": "GRAVITY RUSH™ 2: observed ingame during this test session. Measured native FPS: 29.9. Recorded duration: 186s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-921f88388623"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.3"
+  },
+  "performance": {
+    "nativeAverageFps": 29.9,
+    "testDurationSeconds": 186,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 23.79
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/01.webp",
+        "sha256": "6bf18719459983ba6a202d182772ca3b860d1b83d675973932800c54dd64f1f4",
+        "caption": "GRAVITY RUSH™ 2 — capture 1 · 2026-09-28T14:18:01.319Z"
+      },
+      {
+        "path": "assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/02.webp",
+        "sha256": "e8706e08c145c79f4f0b2b1eb09184f5ed0902f44292f1f9e81bbdded69c71cc",
+        "caption": "GRAVITY RUSH™ 2 — capture 2 · 2026-09-28T14:19:04.231Z"
+      },
+      {
+        "path": "assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
+        "sha256": "4e31eb8a688a78bd5bacc5d49dd181c309c149208b3769945d70c43c6a960ce3",
+        "caption": "GRAVITY RUSH™ 2 — capture 3 · 2026-09-28T14:20:17.131Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/logs/01-application.log.gz",
+        "sha256": "d767e458569495b135539ec0897c9c99cc92db32871fda66f1ec5eeafd64146a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/logs/02-shadps4.log.gz",
+        "sha256": "86896386e864b04b0cf190e2686fba7d08812516010c40920f06735da18ea9bb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
