@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7ed6fadd4ebe4920b373848d9a11e032",
+  "cusaId": "CUSA40582",
+  "testedAt": "2026-09-28T08:12:11.491515Z",
+  "status": "boots",
+  "game": {
+    "version": "Unknown",
+    "region": "Unknown"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "32b069cac7bd1527ec89b5b6d5fde73d9fd9a6bf"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2649",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 24
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Brotato: observed boots during this test session. Measured native FPS: 57.9. Recorded duration: 198s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-921f88388623"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.3"
+  },
+  "performance": {
+    "nativeAverageFps": 57.88,
+    "testDurationSeconds": 198,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.05
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/01.webp",
+        "sha256": "97da9d4114bb1e5e3740035ad95e98e1dae4fea9dd6238f81e16cb202ed4a89d",
+        "caption": "Brotato — capture 1 · 2026-09-28T08:12:11.312Z"
+      },
+      {
+        "path": "assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/02.webp",
+        "sha256": "31e81b3ec268cf2e0ebf0d711303e62abe6efb5c75d8adb921ff6582f3b0f8a1",
+        "caption": "Brotato — capture 2 · 2026-09-28T08:13:37.520Z"
+      },
+      {
+        "path": "assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
+        "sha256": "6d52dfed39f7617f5a8ec71cbf9be50523e5ac6035e5aef82b2c3d1c75149db5",
+        "caption": "Brotato — capture 3 · 2026-09-28T08:15:14.384Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/logs/01-application.log.gz",
+        "sha256": "065029ec1a38f093121f36061416d831a4f5305702409b37625013a972e88b14",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/logs/02-shadps4.log.gz",
+        "sha256": "d5dc2c42f0f0559c8b50f439fd06e2a45e21a3e2ca199471c3511ea55110a216",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
