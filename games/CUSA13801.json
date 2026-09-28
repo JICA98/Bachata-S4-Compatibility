@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.0",
+  "generatedForRelease": "0.2.3",
   "game": {
     "cusaId": "CUSA13801",
     "title": "Sekiro: Shadows Die Twice",
@@ -8,38 +8,62 @@
     "publisher": "Activision"
   },
   "general": {
-    "score": null,
-    "status": "unknown",
-    "confidence": "none",
-    "reportCount": 0,
-    "testerCount": 0,
-    "deviceCount": 0,
-    "releaseTag": "v0.2.0",
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.1.6",
     "hasCurrentReports": false,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 24.6,
+      "max": 24.6,
+      "average": 24.6,
+      "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": null,
-      "status": "unknown",
-      "confidence": "none",
-      "reportCount": 0,
-      "testerCount": 0,
-      "deviceCount": 0,
-      "releaseTag": "v0.2.0",
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.1.6",
       "hasCurrentReports": false,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 24.6,
+        "max": 24.6,
+        "average": 24.6,
+        "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "type": "turnip",
+          "name": "Turnip gen8 v2",
+          "version": "26.2.0-devel",
+          "build": "git-7fdde2f8f8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "graphics.resolutionScale": 1.0
+          },
+          "driverId": null,
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": null,
+          "bigCoreAffinity": null,
+          "maliGpuOptimizations": null
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,6 +71,7 @@
       "sm8750"
     ]
   },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
   "reports": [
     {
       "reportId": "20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel",
@@ -104,7 +129,17 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/01.webp",
+          "caption": "Controllable gameplay in Ashina Reservoir with HUD"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
+          "caption": "Third-person gameplay with action prompts"
+        }
+      ]
     }
   ]
 }

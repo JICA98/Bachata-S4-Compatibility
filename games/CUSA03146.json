@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.0",
+  "generatedForRelease": "0.2.3",
   "game": {
     "cusaId": "CUSA03146",
     "title": "Galak-Z",
@@ -8,13 +8,13 @@
     "publisher": "Gambitious Digital Entertainment"
   },
   "general": {
-    "score": null,
-    "status": "unknown",
-    "confidence": "none",
-    "reportCount": 0,
-    "testerCount": 0,
-    "deviceCount": 0,
-    "releaseTag": "v0.2.0",
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.1.6",
     "hasCurrentReports": false,
     "performance": {
       "min": null,
@@ -25,13 +25,13 @@
   },
   "socs": {
     "sm8750": {
-      "score": null,
-      "status": "unknown",
-      "confidence": "none",
-      "reportCount": 0,
-      "testerCount": 0,
-      "deviceCount": 0,
-      "releaseTag": "v0.2.0",
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.1.6",
       "hasCurrentReports": false,
       "performance": {
         "min": null,
@@ -47,6 +47,7 @@
       "sm8750"
     ]
   },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
   "reports": [
     {
       "reportId": "20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel",
@@ -106,7 +107,17 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/01.webp",
+          "caption": "Dark boot frame after launch"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
+          "caption": "Same dark boot frame, no title screen"
+        }
+      ]
     }
   ]
 }

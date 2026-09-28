@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.0",
+  "generatedForRelease": "0.2.3",
   "game": {
     "cusaId": "CUSA40582",
     "title": "Brotato",
@@ -8,36 +8,36 @@
     "publisher": "Seaven Studio"
   },
   "general": {
-    "score": null,
-    "status": "unknown",
-    "confidence": "none",
-    "reportCount": 0,
-    "testerCount": 0,
-    "deviceCount": 0,
-    "releaseTag": "v0.2.0",
-    "hasCurrentReports": false,
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "0.2.3",
+    "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 57.88,
+      "max": 57.88,
+      "average": 57.88,
+      "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": null,
-      "status": "unknown",
-      "confidence": "none",
-      "reportCount": 0,
-      "testerCount": 0,
-      "deviceCount": 0,
-      "releaseTag": "v0.2.0",
-      "hasCurrentReports": false,
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "0.2.3",
+      "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 57.88,
+        "max": 57.88,
+        "average": 57.88,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     }
@@ -47,6 +47,7 @@
       "sm8750"
     ]
   },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
   "reports": [
     {
       "reportId": "s_7ed6fadd4ebe4920b373848d9a11e032",
@@ -106,7 +107,21 @@
       "provenance": {
         "captureType": "app-captured",
         "appBuild": "0.2.3"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/01.webp",
+          "caption": "Brotato — capture 1 · 2026-09-28T08:12:11.312Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/02.webp",
+          "caption": "Brotato — capture 2 · 2026-09-28T08:13:37.520Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
+          "caption": "Brotato — capture 3 · 2026-09-28T08:15:14.384Z"
+        }
+      ]
     },
     {
       "reportId": "20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
@@ -164,7 +179,21 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+          "caption": "Title screen and main menu at 60 FPS"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+          "caption": "Character selection menu (Well-Rounded)"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+          "caption": "Wave 1 in-game combat gameplay with active HUD and controls"
+        }
+      ]
     }
   ]
 }

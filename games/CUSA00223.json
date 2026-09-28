@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.0",
+  "generatedForRelease": "0.2.3",
   "game": {
     "cusaId": "CUSA00223",
     "title": "inFAMOUS Second Son™",
@@ -8,38 +8,62 @@
     "publisher": "Sony Interactive Entertainment"
   },
   "general": {
-    "score": null,
-    "status": "unknown",
-    "confidence": "none",
-    "reportCount": 0,
-    "testerCount": 0,
-    "deviceCount": 0,
-    "releaseTag": "v0.2.0",
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.1",
     "hasCurrentReports": false,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 23.5,
+      "max": 23.5,
+      "average": 23.5,
+      "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": null,
-      "status": "unknown",
-      "confidence": "none",
-      "reportCount": 0,
-      "testerCount": 0,
-      "deviceCount": 0,
-      "releaseTag": "v0.2.0",
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.1",
       "hasCurrentReports": false,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 23.5,
+        "max": 23.5,
+        "average": 23.5,
+        "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "type": "turnip",
+          "name": "Turnip gen8 v4",
+          "version": "26.3.0-devel",
+          "build": "9c475fc"
+        },
+        "config": {
+          "requiredOverrides": {
+            "graphics.resolutionScale": 1.0
+          },
+          "driverId": null,
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": null,
+          "bigCoreAffinity": null,
+          "maliGpuOptimizations": null
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,6 +71,7 @@
       "sm8750"
     ]
   },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
   "reports": [
     {
       "reportId": "20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
@@ -104,7 +129,21 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+          "caption": "Salmon Bay pier open-world 3D gameplay and objective marker at 14 FPS"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+          "caption": "Climbed to top of water tank with dynamic shadows and camera traversal at 26 FPS"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+          "caption": "Animated red star loading screen at 60 FPS"
+        }
+      ]
     },
     {
       "reportId": "20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
@@ -162,7 +201,21 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/01.webp",
+          "caption": "Animated red star loading screen at 60 FPS"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/02.webp",
+          "caption": "Salmon Bay pier open-world 3D gameplay and objective marker at 14 FPS"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T093823Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+          "caption": "Climbed to top of water tank with dynamic shadows and camera traversal at 26 FPS"
+        }
+      ]
     }
   ]
 }

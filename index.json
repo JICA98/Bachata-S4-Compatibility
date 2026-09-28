@@ -1,130 +1,145 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T10:36:51Z",
-  "currentRelease": "v0.2.0",
+  "generatedAt": "2026-09-28T12:28:59Z",
+  "currentRelease": "0.2.3",
   "gameCount": 13,
   "games": [
     {
       "cusaId": "CUSA00038",
       "title": "RESOGUN™",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.1",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 41.6,
+          "max": 41.6,
+          "average": 41.6,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-09-06T09:28:38Z"
     },
     {
       "cusaId": "CUSA00223",
       "title": "inFAMOUS Second Son™",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.1",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 23.5,
+          "max": 23.5,
+          "average": 23.5,
+          "sampleCount": 1
         }
       },
       "reportCount": 2,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-06T11:17:20Z"
     },
     {
       "cusaId": "CUSA00900",
       "title": "Bloodborne",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.1",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 27.17,
+          "max": 27.17,
+          "average": 27.17,
+          "sampleCount": 1
         }
       },
       "reportCount": 2,
-      "socCount": 2
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260915T121412416Z-cusa00900-c1a943f025/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-15T12:14:13.802115Z"
     },
     {
       "cusaId": "CUSA01130",
       "title": "Gravity Rush™ Remastered",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.1",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 56.4,
+          "max": 56.4,
+          "average": 56.4,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-09-06T09:14:51Z"
     },
     {
       "cusaId": "CUSA01843",
       "title": "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.8",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 29.7,
+          "max": 29.7,
+          "average": 29.7,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-08-14T10:40:49Z"
     },
     {
       "cusaId": "CUSA03146",
       "title": "Galak-Z",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.6",
         "hasCurrentReports": false,
         "performance": {
           "min": null,
@@ -134,161 +149,185 @@
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-08-02T11:48:17Z"
     },
     {
       "cusaId": "CUSA07023",
       "title": "Sonic Mania",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.6",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 59.91,
+          "max": 59.91,
+          "average": 59.91,
+          "sampleCount": 1
         }
       },
       "reportCount": 2,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/02.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-08-02T09:43:02Z"
     },
     {
       "cusaId": "CUSA07399",
       "title": "Crash Bandicoot N. Sane Trilogy",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.6",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 26.74,
+          "max": 26.74,
+          "average": 26.74,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-08-02T10:38:31Z"
     },
     {
       "cusaId": "CUSA08692",
       "title": "Dark Souls: Remastered",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.6",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 35.0,
+          "max": 35.0,
+          "average": 35.0,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-08-02T04:36:08Z"
     },
     {
       "cusaId": "CUSA10454",
       "title": "Dragon's Crown Pro",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.8",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 59.5,
+          "max": 59.5,
+          "average": 59.5,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-08-14T10:28:02Z"
     },
     {
       "cusaId": "CUSA13801",
       "title": "Sekiro: Shadows Die Twice",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.6",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 24.6,
+          "max": 24.6,
+          "average": 24.6,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-08-02T10:09:12Z"
     },
     {
       "cusaId": "CUSA17425",
       "title": "SnowRunner",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.1.8",
         "hasCurrentReports": false,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 20.9,
+          "max": 20.9,
+          "average": 20.9,
+          "sampleCount": 1
         }
       },
       "reportCount": 1,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-08-14T11:07:35Z"
     },
     {
       "cusaId": "CUSA40582",
       "title": "Brotato",
       "general": {
-        "score": null,
-        "status": "unknown",
-        "confidence": "none",
-        "reportCount": 0,
-        "testerCount": 0,
-        "deviceCount": 0,
-        "releaseTag": "v0.2.0",
-        "hasCurrentReports": false,
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "0.2.3",
+        "hasCurrentReports": true,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 57.88,
+          "max": 57.88,
+          "average": 57.88,
+          "sampleCount": 1
         }
       },
       "reportCount": 2,
-      "socCount": 1
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-09-28T08:12:11.491515Z"
     }
   ]
 }

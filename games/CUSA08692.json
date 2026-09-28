@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.0",
+  "generatedForRelease": "0.2.3",
   "game": {
     "cusaId": "CUSA08692",
     "title": "Dark Souls: Remastered",
@@ -8,38 +8,62 @@
     "publisher": "Bandai Namco Entertainment"
   },
   "general": {
-    "score": null,
-    "status": "unknown",
-    "confidence": "none",
-    "reportCount": 0,
-    "testerCount": 0,
-    "deviceCount": 0,
-    "releaseTag": "v0.2.0",
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.1.6",
     "hasCurrentReports": false,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 35.0,
+      "max": 35.0,
+      "average": 35.0,
+      "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": null,
-      "status": "unknown",
-      "confidence": "none",
-      "reportCount": 0,
-      "testerCount": 0,
-      "deviceCount": 0,
-      "releaseTag": "v0.2.0",
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.1.6",
       "hasCurrentReports": false,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 35.0,
+        "max": 35.0,
+        "average": 35.0,
+        "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "type": "turnip",
+          "name": "Mesa Turnip",
+          "version": "26.3.0-devel",
+          "build": "git-9c51ede50f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "graphics.resolutionScale": 1.0
+          },
+          "driverId": null,
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": null,
+          "bigCoreAffinity": null,
+          "maliGpuOptimizations": null
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,6 +71,7 @@
       "sm8750"
     ]
   },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
   "reports": [
     {
       "reportId": "20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
@@ -104,7 +129,17 @@
       },
       "provenance": {
         "captureType": "structured-manual"
-      }
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/01.webp",
+          "caption": "Intro white screen with 60 FPS performance overlay"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
+          "caption": "Controllable gameplay rendering the player character in Undead Asylum at 23.8 FPS"
+        }
+      ]
     }
   ]
 }
