@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "0.2.3",
+  "game": {
+    "cusaId": "CUSA01623",
+    "title": "God of War® III Remastered",
+    "region": "Unknown",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "0.2.3",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 40.09,
+      "max": 40.09,
+      "average": 40.09,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "0.2.3",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 40.09,
+        "max": 40.09,
+        "average": 40.09,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_71d1863bc19240268c600d676f78ae36",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "disable-dynamic-shadows",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "disable-motion-blur",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "disable-soft-particles",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "disable-ssao",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "resolution-patch-1280x720",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          },
+          {
+            "id": "skip-intro",
+            "preset": "mobile-performance-720p",
+            "revision": "2026.09.28.4791735114661653009"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_71d1863bc19240268c600d676f78ae36/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_71d1863bc19240268c600d676f78ae36",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-28T13:31:50.675723Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "99521d00f6b16f29075a6bf3b90c559793a39764"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 24
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "disable-motion-blur",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "disable-soft-particles",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "disable-ssao",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "resolution-patch-1280x720",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        },
+        {
+          "id": "skip-intro",
+          "preset": "mobile-performance-720p",
+          "revision": "2026.09.28.4791735114661653009"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 40.09,
+        "nativeOnePercentLowFps": 17.89,
+        "outputAverageFps": null,
+        "testDurationSeconds": 194,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed ingame during this test session. Measured native FPS: 40.1. Recorded duration: 194s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-921f88388623",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.3"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_71d1863bc19240268c600d676f78ae36/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-09-28T13:31:50.388Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_71d1863bc19240268c600d676f78ae36/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-09-28T13:33:22.328Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_71d1863bc19240268c600d676f78ae36/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-09-28T13:34:26.476Z"
+        }
+      ]
+    }
+  ]
+}

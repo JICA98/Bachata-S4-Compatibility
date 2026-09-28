@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-28T12:28:59Z",
+  "generatedAt": "2026-09-28T13:39:59Z",
   "currentRelease": "0.2.3",
-  "gameCount": 13,
+  "gameCount": 14,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -103,6 +103,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-09-06T09:14:51Z"
+    },
+    {
+      "cusaId": "CUSA01623",
+      "title": "God of War® III Remastered",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "0.2.3",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 40.09,
+          "max": 40.09,
+          "average": 40.09,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_71d1863bc19240268c600d676f78ae36/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-28T13:31:50.675723Z"
     },
     {
       "cusaId": "CUSA01843",
