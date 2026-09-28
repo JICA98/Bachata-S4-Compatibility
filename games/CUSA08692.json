@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA08692",
+    "title": "Dark Souls: Remastered",
+    "region": "US",
+    "publisher": "Bandai Namco Entertainment"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-02T04:36:08Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Mesa Turnip",
+        "version": "26.3.0-devel",
+        "build": "git-9c51ede50f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 35.0,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 90,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Reaches controllable gameplay in Undead Asylum at 24-30 FPS on Turnip.",
+        "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite) with the bundled Turnip gen8 v2 driver (Mesa 26.3.0-devel git-9c51ede50f). Game launches successfully, loads into the Undead Asylum, and character control is fully functional with correct rendering of the environment and player character. Performance is around 60 FPS in intro screen/menus, dropping to ~30 FPS during controllable gameplay.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA00900",
+    "title": "Bloodborne",
+    "region": "US",
+    "publisher": "Sony Computer Entertainment"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ],
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260915T121412416Z-cusa00900-c1a943f025",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-15T12:14:13.802115Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "be6db3cee00880b530a1a4291c2d0dc53024f426"
+      },
+      "gameVersion": "01.09",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "OPD2403",
+        "socId": "sm8650",
+        "socName": "Snapdragon 8 Gen 3",
+        "gpu": "Adreno 750",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "bloodborne-30fps",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-disable-http",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-light-grid-1080p",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-lod-lowest",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-lower-corpse-physics",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-aa",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-chromatic-aberration",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-dof",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-dynamic-shadows",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-motion-blur",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-no-ssao",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-performance",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-resolution-960x540",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        },
+        {
+          "id": "bloodborne-skip-intro",
+          "preset": "extreme-30fps-540p",
+          "revision": "2026.09.15.5785114210879635493"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 27.17,
+        "nativeOnePercentLowFps": 12.64,
+        "outputAverageFps": null,
+        "testDurationSeconds": 74,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "in game and looks good",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-880f949b4c6e",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.1"
+      }
+    },
+    {
+      "reportId": "20260801T163245Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-01T16:32:45Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Mesa Turnip",
+        "version": "26.3.0-devel",
+        "build": "git-9c51ede50f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 21.03,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 92,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Reaches controllable gameplay in Hunter's Dream at 17-20 FPS on Turnip.",
+        "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite) with custom Turnip gen8 v2 driver. The game successfully starts and loads into Hunter's Dream. 3D graphics render correctly with the on-screen controls, HUD elements, and notes prompts visible. Framerate fluctuates between 17 and 30 FPS. Complete playthrough and later areas were not verified, so status is set to ingame.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

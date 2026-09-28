@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA07399",
+    "title": "Crash Bandicoot N. Sane Trilogy",
+    "region": "EU",
+    "publisher": "Activision"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-02T10:38:31Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Mesa Turnip",
+        "version": "26.2.0-devel",
+        "build": "git-7fdde2f8f8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 26.74,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 125,
+        "framePacing": "variable"
+      },
+      "result": {
+        "summary": "Boots into the Crash Bandicoot N. Sane Trilogy title screen (PRESS X to Begin) and holds it at ~30 FPS; could not be advanced to the main menu or gameplay during testing.",
+        "notes": "Game boots, plays intro/loading, and reaches the title screen rendered at 28-30 FPS (60 samples, median 29.9, min 13.9 during load transitions). Background sky shows persistent horizontal scanline/banding corruption on the Turnip gen8 v2 driver. Pressing the on-screen X button did not advance past the title screen. In one longer run the backend exited with SIGTRAP (exitCode 133, shadPS4 'Assertion Failed! ... irq=GfxFlip token=2622 last_registered=2623') after ~144s in the GPU coroutine; in other runs it held the title screen without crashing during the capture window.",
+        "issues": [
+          "GPU coroutine flip assertion causes an intermittent SIGTRAP crash (exitCode 133) during the boot/loading phase, and the title screen does not advance past PRESS X to begin."
+        ]
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

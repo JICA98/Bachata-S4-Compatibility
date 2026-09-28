@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T10:36:51Z",
+  "currentRelease": "v0.2.0",
+  "gameCount": 13,
+  "games": [
+    {
+      "cusaId": "CUSA00038",
+      "title": "RESOGUN™",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA00223",
+      "title": "inFAMOUS Second Son™",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA00900",
+      "title": "Bloodborne",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 2
+    },
+    {
+      "cusaId": "CUSA01130",
+      "title": "Gravity Rush™ Remastered",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA01843",
+      "title": "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA03146",
+      "title": "Galak-Z",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA07023",
+      "title": "Sonic Mania",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA07399",
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA08692",
+      "title": "Dark Souls: Remastered",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA10454",
+      "title": "Dragon's Crown Pro",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA13801",
+      "title": "Sekiro: Shadows Die Twice",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA17425",
+      "title": "SnowRunner",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1
+    },
+    {
+      "cusaId": "CUSA40582",
+      "title": "Brotato",
+      "general": {
+        "score": null,
+        "status": "unknown",
+        "confidence": "none",
+        "reportCount": 0,
+        "testerCount": 0,
+        "deviceCount": 0,
+        "releaseTag": "v0.2.0",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1
+    }
+  ]
+}

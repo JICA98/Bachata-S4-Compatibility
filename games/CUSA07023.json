@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA07023",
+    "title": "Sonic Mania",
+    "region": "US",
+    "publisher": "SEGA"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-02T09:43:02Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "system",
+        "name": "Vortek (System Driver)",
+        "version": "0800.74",
+        "build": "ab7329c4b445a4abd9b9af91b8148e1ca41464fa"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.91,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 269,
+        "framePacing": "stable"
+      },
+      "result": {
+        "summary": "Reaches controllable gameplay in Green Hill Zone Act 1 at ~60 FPS on the experimental Vortek driver, with a continuous Vortek host-loader crash loop.",
+        "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite, Adreno 830, Android 16) with the experimental in-app Vortek driver (System Driver, Vortek, Experimental) which runs the device system Vulkan driver (Qualcomm Adreno 0800.74, Vulkan API 1.4.0) through the Vortek transport (client build ab7329c4b445). Game boots to the title screen, navigates menus, and plays Mania Mode in Green Hill Zone Act 1 with the HUD rendering; performance overlay reported a steady ~60 FPS (avg 59.9, min 51.0, max 60.3 across ~4.5 minutes). Vortek host-loader thread (tid 29112) deterministically crashes with SIGSEGV at pc=0x79ea0f849c (and periodic SIGBUS); the crash reporter catches these so gameplay continues but the session log floods (~12k reports). Full-game completion was not verified, so status is ingame.",
+        "issues": [
+          "Vortek host-loader thread crashes deterministically with SIGSEGV at pc=0x79ea0f849c (plus SIGBUS) throughout the session; the crash reporter recovers each time so the game keeps rendering, but the shadPS4 log floods with repeated crash reports. Present on v0.1.6; the Vortek crash fixes on main post-release are not included in this release."
+        ]
+      },
+      "contributor": {
+        "publicId": "jica98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    },
+    {
+      "reportId": "20260731T181457Z-v0.1.6-oneplus13-turnip-26.3.0",
+      "schemaVersion": 1,
+      "testedAt": "2026-07-31T18:14:57Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Mesa Turnip",
+        "version": "26.3.0-devel",
+        "build": "git-9c51ede50f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.83,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 92,
+        "framePacing": "stable"
+      },
+      "result": {
+        "summary": "Reaches controllable gameplay in Green Hill Zone Act 1 at a steady 60 FPS on Turnip.",
+        "notes": "Tested on release v0.1.6 on OnePlus 13 (Snapdragon 8 Elite) with the bundled Turnip gen8 v2 driver (Mesa 26.3.0-devel git-9c51ede50f). Game launches to the title screen, menus navigate correctly, and Mania Mode gameplay is controllable in Green Hill Zone Act 1 with the HUD rendering. Performance overlay reported approximately 60 FPS for the tested session; no crash or hang was observed. Full-game completion was not verified, so status is ingame.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "jica98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "legacy-imported"
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA13801",
+    "title": "Sekiro: Shadows Die Twice",
+    "region": "EU",
+    "publisher": "Activision"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-02T10:09:12Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Turnip gen8 v2",
+        "version": "26.2.0-devel",
+        "build": "git-7fdde2f8f8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 24.6,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 270,
+        "framePacing": "variable"
+      },
+      "result": {
+        "summary": "Reaches controllable gameplay in the opening Ashina Reservoir area with HUD at a ~30 FPS target on the bundled Turnip gen8 v2 driver.",
+        "notes": "Boots from title screen through the opening cutscene into the controllable prologue. Third-person gameplay renders with HUD (action and item prompts). No crashes during the session. Performance is variable: cutscenes reach 60 FPS, the reservoir gameplay area runs roughly 19-30 FPS with dips to ~12 FPS.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

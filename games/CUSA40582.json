@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA40582",
+    "title": "Brotato",
+    "region": "US",
+    "publisher": "Seaven Studio"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "s_7ed6fadd4ebe4920b373848d9a11e032",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-28T08:12:11.491515Z",
+      "status": "boots",
+      "release": {
+        "tag": "unreleased",
+        "commit": "32b069cac7bd1527ec89b5b6d5fde73d9fd9a6bf"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 24
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 57.88,
+        "nativeOnePercentLowFps": 4.05,
+        "outputAverageFps": null,
+        "testDurationSeconds": 198,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Brotato: observed boots during this test session. Measured native FPS: 57.9. Recorded duration: 198s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-921f88388623",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.3"
+      }
+    },
+    {
+      "reportId": "20260906T080248Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-09-06T08:02:48Z",
+      "status": "playable",
+      "release": {
+        "tag": "v0.2.1",
+        "commit": "c9263f39394a16bbb9705db5d06faf8cd61ad6e4"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Turnip gen8 v4",
+        "version": "26.3.0-devel",
+        "build": "9c475fc"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.4,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 372,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Brotato boots, navigates menus, and runs full interactive arena gameplay at a locked 60 FPS on the OnePlus 13 with Turnip gen8 v4.",
+        "notes": "Tested on OnePlus 13 (CPH2649, Snapdragon 8 Elite SM8750, Adreno 830, Android 16) running Bachata S4 v0.2.1 (official source commit c9263f39394a16bbb9705db5d06faf8cd61ad6e4) with Turnip gen8 v4 (Mesa 26.3.0-devel git-9c475fc from JICA98/bachata-s4-drivers). Navigated main menu, character selection (Well-Rounded), weapon selection (Knife), and difficulty selection (Danger 0). Progressed through Wave 1 combat with responsive on-screen touch and gamepad controls, accurate rendering, smooth frame pacing, and steady 60 FPS throughout the session until run completion.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA01843",
+    "title": "Teenage Mutant Ninja Turtles: Mutants in Manhattan",
+    "region": "US",
+    "publisher": "Activision"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-14T10:40:49Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.8",
+        "commit": "ee06523477206fc8b809a76432f53f8cd21c4046"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Turnip gen8 v3",
+        "version": "26.3.0-devel",
+        "build": "9c475fc"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.7,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 196,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Teenage Mutant Ninja Turtles: Mutants in Manhattan boots to controllable in-game stage gameplay at a locked 30 FPS on the OnePlus 13 with Turnip gen8 v3.",
+        "notes": "Local unreleased 0.1.8 test build (versionCode 26081400, source v0.1.6-78-gee0652347) on OnePlus 13 (CPH2649, SM8750, Adreno 830, Android 16). Manual launch from the library tile (release build has no DirectLaunchActivity). Session rendered 1280x720; shadPS4 reported 'turnip Mesa driver (whitebelyash branch) 26.2.99', Vulkan 1.4.358 (Mesa 26.3.0-devel, build 9c475fc, JICA98/bachata-s4-drivers gen8-v3). Reached and played in-game stage content at a locked 30 FPS target; 90% of samples at 29.5+ FPS with brief dips (loading/transitions). No crashes, freezes, or black screens. Only benign stubs logged (Net/Ssl2 DUMMY, NP Trophy noise, event-flag warnings). An unrelated game extraction (CUSA17425, 19-39 GB) was running on-device during the session.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

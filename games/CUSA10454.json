@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA10454",
+    "title": "Dragon's Crown Pro",
+    "region": "US",
+    "publisher": "Atlus"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-14T10:28:02Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.1.8",
+        "commit": "ee06523477206fc8b809a76432f53f8cd21c4046"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Turnip gen8 v3",
+        "version": "26.3.0-devel",
+        "build": "9c475fc"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.5,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 198,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Dragon's Crown Pro boots to controllable in-game dungeon gameplay at ~60 FPS on the OnePlus 13 with Turnip gen8 v3.",
+        "notes": "Local unreleased 0.1.8 test build (versionCode 26081400, source v0.1.6-78-gee0652347) installed on the OnePlus 13 (CPH2649, SM8750, Adreno 830, Android 16). Game launched from the library tile; release build has no DirectLaunchActivity, so navigation was manual. Session rendered 1280x720; driver reported by shadPS4 as 'turnip Mesa driver (whitebelyash branch) 26.2.99' with Vulkan 1.4.358 (Mesa 26.3.0-devel, build 9c475fc, from JICA98/bachata-s4-drivers gen8-v3). Reached and played in-game dungeon content; no crashes, freezes, or black screens during the session. Single FPS hitch (37 FPS) during boot; otherwise locked ~60 FPS.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.0",
+  "game": {
+    "cusaId": "CUSA03146",
+    "title": "Galak-Z",
+    "region": "EU",
+    "publisher": "Gambitious Digital Entertainment"
+  },
+  "general": {
+    "score": null,
+    "status": "unknown",
+    "confidence": "none",
+    "reportCount": 0,
+    "testerCount": 0,
+    "deviceCount": 0,
+    "releaseTag": "v0.2.0",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": null,
+      "status": "unknown",
+      "confidence": "none",
+      "reportCount": 0,
+      "testerCount": 0,
+      "deviceCount": 0,
+      "releaseTag": "v0.2.0",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "reports": [
+    {
+      "reportId": "20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel",
+      "schemaVersion": 1,
+      "testedAt": "2026-08-02T11:48:17Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.1.6",
+        "commit": "365a0dfbc50844720b545c38a2eb3dda8ab10231"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2649",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Adreno (TM) 830",
+        "androidVersion": "16",
+        "ramBucketGb": 22
+      },
+      "driver": {
+        "type": "turnip",
+        "name": "Mesa Turnip",
+        "version": "26.2.0-devel",
+        "build": "7fdde2f8f8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "graphics.resolutionScale": 1.0
+        },
+        "driverId": null,
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": null,
+        "bigCoreAffinity": null,
+        "maliGpuOptimizations": null
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 380,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "Galak-Z boots and renders frames but stays on a dark boot frame; the title screen never appears.",
+        "notes": "Unity title. Started with the game already imported on the device; opened via the Bachata S4 library, selected Galak-Z, and tapped Launch. The shadPS4 backend reached Running and rendered frames (25.5/39.6 fps peaks in the performance log) after an ~4 minute shader-compile warmup, but the visible screen remained a near-black static frame for the entire run and never progressed to the title screen or any menu. Status boots: useful output before menus, no menus reached. Missing FIOS asset open errors for Media/resources assets (e.g. resources.assets.resS) were logged during load; these may relate to the stuck frame.",
+        "issues": [
+          "Game renders frames but stays on a static dark boot frame; title/menu never loads (Unity). FIOS-HLE reports missing resources.assets.resS assets."
+        ]
+      },
+      "contributor": {
+        "publicId": "JICA98",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "structured-manual"
+      }
+    }
+  ]
+}
