@@ -31,6 +31,16 @@
         "Snapdragon 7 Gen 3"
       ]
     },
+    "sm6450": {
+      "name": "Snapdragon 6 Gen 1",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 710",
+      "family": "adreno7",
+      "aliases": [
+        "SM6450",
+        "Snapdragon 6 Gen 1"
+      ]
+    },
     "sm7435": {
       "name": "Snapdragon 7s Gen 2",
       "vendor": "Qualcomm",
