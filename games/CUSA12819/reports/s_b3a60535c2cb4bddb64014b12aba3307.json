@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b3a60535c2cb4bddb64014b12aba3307",
+  "cusaId": "CUSA12819",
+  "testedAt": "2026-09-30T23:52:24.533334Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA12819: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e09310460f43"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/screenshots/01.webp",
+        "sha256": "b7af2ac49ce274b367ca54cd1ed3b1c38da0ba32afb874651d81dde05ecdf1bd",
+        "caption": "DiRT Rally 2.0 — capture 1 · 2026-09-30T23:52:19.200Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/logs/01-application.log.gz",
+        "sha256": "7caee82bc03045ecfc2e332d58a41797fe7d98f1878b67d3480659c569684ead",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/logs/02-shadps4.log.gz",
+        "sha256": "9450c6078ac35db91771ad5817d3092c07f6d86878d1a97b7a7634783d72eac5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
