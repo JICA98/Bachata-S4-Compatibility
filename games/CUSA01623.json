@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "0.2.3",
+  "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA01623",
     "title": "God of War® III Remastered",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "0.2.3",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 40.09,
       "max": 40.09,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "0.2.3",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 40.09,
         "max": 40.09,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "0.2.3",
+  "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA40582",
     "title": "Brotato",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "0.2.3",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 57.88,
       "max": 57.88,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "0.2.3",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 57.88,
         "max": 57.88,

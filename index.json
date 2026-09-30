@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-30T19:54:47Z",
-  "currentRelease": "0.2.3",
+  "generatedAt": "2026-09-30T22:22:55Z",
+  "currentRelease": "v0.2.4",
   "gameCount": 16,
   "games": [
     {
@@ -115,7 +115,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "0.2.3",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 40.09,
           "max": 40.09,
@@ -165,7 +165,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "0.2.3",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 31.55,
           "max": 31.55,
@@ -215,7 +215,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "0.2.3",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 29.9,
           "max": 29.9,
@@ -390,7 +390,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "0.2.3",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 57.88,
           "max": 57.88,
