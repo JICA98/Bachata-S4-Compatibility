@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA20499",
+  "title": "Cuphead",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 60
+  },
+  "legacyIssues": []
+}
