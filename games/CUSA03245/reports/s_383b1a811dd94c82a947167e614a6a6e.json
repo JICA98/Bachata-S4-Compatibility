@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_383b1a811dd94c82a947167e614a6a6e",
+  "cusaId": "CUSA03245",
+  "testedAt": "2026-09-30T21:14:03.028636Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2217",
+    "socId": "sm8475",
+    "socName": "SM8475",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Deadpool: observed ingame during this test session. Measured native FPS: 25.8. Recorded duration: 866s.",
+    "notes": "The game still has significant graphics-related issues (such as washed-out colors), and the frame rate is very low. The developers creating the emulator are doing a great job; my mobile has a Snapdragon 8 Gen+ processor, so please optimize the emulator for this processor.",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-a24b6c318bc5"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 25.78,
+    "testDurationSeconds": 866,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 15.51
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/01.webp",
+        "sha256": "b126f7e71ce724f2c760f9c47f6d18d5f5e3be3a26d1ccb9f1719a043b3a92f2",
+        "caption": "Deadpool — capture 1 · 2026-09-30T21:14:02.860Z"
+      },
+      {
+        "path": "assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/02.webp",
+        "sha256": "4d3c808d03ce46f6f7ff642fd46a10c486b021923b0b54c9307911cf074c6fd3",
+        "caption": "Deadpool — capture 2 · 2026-09-30T21:16:44.348Z"
+      },
+      {
+        "path": "assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/03.webp",
+        "sha256": "780402efe807648ab0e5b478cefbc82fd069b2bdb18949be1584559e010cc25a",
+        "caption": "Deadpool — capture 3 · 2026-09-30T21:18:18.596Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/logs/01-application.log.gz",
+        "sha256": "536cb9c2a10720ba33c3d4aef451c1a7f34af9bded5cd1ca478f5223edb1b5b0",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/logs/02-shadps4.log.gz",
+        "sha256": "0d31a4c7646883eb677f196ff4993521706e8cc087c7c661241ec97ca44c9b6c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
