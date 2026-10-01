@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA15250",
+    "title": "DELTARUNE Chapter 1&2",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.19,
+      "max": 29.19,
+      "average": 29.19,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6450": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.19,
+        "max": 29.19,
+        "average": 29.19,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_1b99cf99e3d34ff4a06a701a887e46fa",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 720,
+            "gpu.internal_screen_height": 480
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm6450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_1b99cf99e3d34ff4a06a701a887e46fa",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T19:47:53.175684Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "SM6450",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 720,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.19,
+        "nativeOnePercentLowFps": 1.02,
+        "outputAverageFps": null,
+        "testDurationSeconds": 162,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "DELTARUNE Chapter 1&2: observed ingame during this test session. Measured native FPS: 29.2. Recorded duration: 162s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9607d8c1d90f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/01.webp",
+          "caption": "DELTARUNE Chapter 1&2 — capture 1 · 2026-09-30T19:47:52.963Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/02.webp",
+          "caption": "DELTARUNE Chapter 1&2 — capture 2 · 2026-09-30T19:48:57.711Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
+          "caption": "DELTARUNE Chapter 1&2 — capture 3 · 2026-09-30T19:50:07.075Z"
+        }
+      ]
+    }
+  ]
+}

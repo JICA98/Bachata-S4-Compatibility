@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T03:08:25Z",
+  "generatedAt": "2026-10-01T03:08:38Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 24,
+  "gameCount": 25,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -528,6 +528,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T10:09:12Z"
+    },
+    {
+      "cusaId": "CUSA15250",
+      "title": "DELTARUNE Chapter 1&2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.19,
+          "max": 29.19,
+          "average": 29.19,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-30T19:47:53.175684Z"
     },
     {
       "cusaId": "CUSA17425",
