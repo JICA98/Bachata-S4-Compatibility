@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T15:28:32Z",
+  "generatedAt": "2026-10-01T15:28:49Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 29,
+  "gameCount": 32,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -128,6 +128,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-09-30T23:42:19.909411Z"
+    },
+    {
+      "cusaId": "CUSA01073",
+      "title": "Ratchet & Clank™: The Bouncer Weapon",
+      "general": {
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 18.46,
+          "max": 18.46,
+          "average": 18.46,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-01T12:00:41.372101Z"
     },
     {
       "cusaId": "CUSA01127",
@@ -455,6 +480,31 @@
       "latestTestedAt": "2026-09-30T22:40:51.611476Z"
     },
     {
+      "cusaId": "CUSA06638",
+      "title": "Persona 5",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 16.52,
+          "max": 16.52,
+          "average": 16.52,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-01T11:49:24.599451Z"
+    },
+    {
       "cusaId": "CUSA07023",
       "title": "Sonic Mania",
       "general": {
@@ -678,6 +728,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-14T11:07:35Z"
+    },
+    {
+      "cusaId": "CUSA18093",
+      "title": "十三機兵防衛圈",
+      "general": {
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 24.13,
+          "max": 24.13,
+          "average": 24.13,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-01T10:58:58.150664Z"
     },
     {
       "cusaId": "CUSA20499",
