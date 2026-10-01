@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T08:36:18Z",
+  "generatedAt": "2026-10-01T15:28:32Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 28,
+  "gameCount": 29,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -178,6 +178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-09-06T09:14:51Z"
+    },
+    {
+      "cusaId": "CUSA01410",
+      "title": "Red Alert costume pack",
+      "general": {
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 50.82,
+          "max": 50.82,
+          "average": 50.82,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-01T14:55:48.838546Z"
     },
     {
       "cusaId": "CUSA01623",
