@@ -195,6 +195,28 @@
         "Dimensity 9200",
         "Dimensity 9200+"
       ]
+    },
+    "mt6878": {
+      "name": "Dimensity 7300",
+      "vendor": "MediaTek",
+      "gpu": "Mali-G615 MC2",
+      "family": "mali-g",
+      "aliases": [
+        "MT6878",
+        "Dimensity 7300"
+      ]
+    },
+    "mt6897": {
+      "name": "Dimensity 8300",
+      "vendor": "MediaTek",
+      "gpu": "Mali-G615 MC6",
+      "family": "mali-g",
+      "aliases": [
+        "MT6897",
+        "Dimensity 8300",
+        "Dimensity 8300-Ultra",
+        "Dimensity 8350"
+      ]
     }
   }
 }
