@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:57:12Z",
+  "generatedAt": "2026-10-01T03:08:25Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 23,
+  "gameCount": 24,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -553,6 +553,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-14T11:07:35Z"
+    },
+    {
+      "cusaId": "CUSA20499",
+      "title": "Cuphead",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-09-30T19:46:44.284512Z"
     },
     {
       "cusaId": "CUSA40582",
