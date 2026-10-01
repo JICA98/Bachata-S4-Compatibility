@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA00004",
+    "title": "inFAMOUS™ Second Son",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 10.15,
+      "max": 10.15,
+      "average": 10.15,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 10.15,
+        "max": 10.15,
+        "average": 10.15,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_6d7b42ea99ac4779a3a9c6bdba216db5",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 2
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-depth-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "render-resolution-1280x720",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-intro-movie",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-depth-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-depth-of-field",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-motion-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "unverified-render-resolution-1280x720",
+            "revision": "2026.09.30.13399220021802570842"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_6d7b42ea99ac4779a3a9c6bdba216db5",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T03:26:14.624490Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23117RK66C",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 2
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-depth-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "render-resolution-1280x720",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro-movie",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-depth-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "unverified-render-resolution-1280x720",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 10.15,
+        "nativeOnePercentLowFps": 2.88,
+        "outputAverageFps": null,
+        "testDurationSeconds": 208,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "inFAMOUS™ Second Son: observed ingame during this test session. Measured native FPS: 10.2. Recorded duration: 208s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-110086357361",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/01.webp",
+          "caption": "inFAMOUS™ Second Son — capture 1 · 2026-10-01T03:26:14.482Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/02.webp",
+          "caption": "inFAMOUS™ Second Son — capture 2 · 2026-10-01T03:27:50.930Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/03.webp",
+          "caption": "inFAMOUS™ Second Son — capture 3 · 2026-10-01T03:28:59.278Z"
+        }
+      ]
+    }
+  ]
+}

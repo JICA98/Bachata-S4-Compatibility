@@ -1,9 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T08:31:49Z",
+  "generatedAt": "2026-10-01T08:32:02Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 26,
+  "gameCount": 28,
   "games": [
+    {
+      "cusaId": "CUSA00004",
+      "title": "inFAMOUS™ Second Son",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 10.15,
+          "max": 10.15,
+          "average": 10.15,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-01T03:26:14.624490Z"
+    },
     {
       "cusaId": "CUSA00038",
       "title": "RESOGUN™",
@@ -303,6 +328,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-02T11:48:17Z"
+    },
+    {
+      "cusaId": "CUSA03219",
+      "title": "STAR OCEAN: Integrity and Faithlessness",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 41.66,
+          "max": 41.66,
+          "average": 41.66,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T03:36:37.247133Z"
     },
     {
       "cusaId": "CUSA03245",
