@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:56:30Z",
+  "generatedAt": "2026-10-01T02:56:41Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 19,
+  "gameCount": 20,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -228,6 +228,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-30T21:14:26.288085Z"
+    },
+    {
+      "cusaId": "CUSA02509",
+      "title": "Saint Seiya: Soldiers' Soul",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 12.06,
+          "max": 12.06,
+          "average": 12.06,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-09-30T21:29:54.895630Z"
     },
     {
       "cusaId": "CUSA03146",

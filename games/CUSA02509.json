@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA02509",
+    "title": "Saint Seiya: Soldiers' Soul",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 12.06,
+      "max": 12.06,
+      "average": 12.06,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6450": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 12.06,
+        "max": 12.06,
+        "average": 12.06,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm6450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_9a7469ee0f4740c982743484cba1e468",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T21:29:54.895630Z",
+      "status": "boots",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "realme",
+        "model": "RMX3842",
+        "socId": "sm6450",
+        "socName": "SM6450",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 12.06,
+        "nativeOnePercentLowFps": 9.07,
+        "outputAverageFps": null,
+        "testDurationSeconds": 566,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Saint Seiya: Soldiers' Soul: observed boots during this test session. Measured native FPS: 12.1. Recorded duration: 566s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-f4e77d1d99f7",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/01.webp",
+          "caption": "Saint Seiya: Soldiers' Soul — capture 1 · 2026-09-30T21:29:54.344Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/02.webp",
+          "caption": "Saint Seiya: Soldiers' Soul — capture 2 · 2026-09-30T21:31:24.504Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/03.webp",
+          "caption": "Saint Seiya: Soldiers' Soul — capture 3 · 2026-09-30T21:32:34.752Z"
+        }
+      ]
+    }
+  ]
+}
