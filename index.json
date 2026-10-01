@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:55:57Z",
+  "generatedAt": "2026-10-01T02:56:08Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 17,
+  "gameCount": 18,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -78,6 +78,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260915T121412416Z-cusa00900-c1a943f025/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-15T12:14:13.802115Z"
+    },
+    {
+      "cusaId": "CUSA01127",
+      "title": "P.T.",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.75,
+          "max": 21.75,
+          "average": 21.75,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-30T20:53:11.690141Z"
     },
     {
       "cusaId": "CUSA01130",

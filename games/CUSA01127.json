@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA01127",
+    "title": "P.T.",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 21.75,
+      "max": 21.75,
+      "average": 21.75,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 21.75,
+        "max": 21.75,
+        "average": 21.75,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_02dfcb889b534e7bba97264ffc9dd887",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 1
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "60-fps",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-camera-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-film-grain",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-screen-space-reflections",
+            "revision": "2026.09.30.13399220021802570842"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_02dfcb889b534e7bba97264ffc9dd887",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T20:53:11.690141Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NP05J",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 24
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 1
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "60-fps",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-camera-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-film-grain",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-screen-space-reflections",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 21.75,
+        "nativeOnePercentLowFps": 13.56,
+        "outputAverageFps": null,
+        "testDurationSeconds": 388,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "P.T.: observed boots during this test session. Measured native FPS: 21.6. Recorded duration: 313s. There are graphical distortions, and I tried entering values 1 and 2 in the Readback section, but the problem persists.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-abe5b7c9b721",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/01.webp",
+          "caption": "P.T. — capture 1 · 2026-09-30T20:53:11.481Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/02.webp",
+          "caption": "P.T. — capture 2 · 2026-09-30T20:55:07.193Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/03.webp",
+          "caption": "P.T. — capture 3 · 2026-09-30T20:56:17.949Z"
+        }
+      ]
+    }
+  ]
+}
