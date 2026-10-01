@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T04:05:09Z",
+  "generatedAt": "2026-10-01T04:06:17Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 25,
+  "gameCount": 26,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -353,6 +353,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-28T14:18:01.687061Z"
+    },
+    {
+      "cusaId": "CUSA05794",
+      "title": "Rise of the Tomb Raider",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 8.61,
+          "max": 8.61,
+          "average": 8.61,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-09-30T22:40:51.611476Z"
     },
     {
       "cusaId": "CUSA07023",

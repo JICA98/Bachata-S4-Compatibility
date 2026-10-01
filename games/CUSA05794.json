@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA05794",
+    "title": "Rise of the Tomb Raider",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 8.61,
+      "max": 8.61,
+      "average": 8.61,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8735": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 8.61,
+        "max": 8.61,
+        "average": 8.61,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8735"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_9bb48a8d8b784eb68eeb3ebdf5d9e220",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T22:40:51.611476Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "I2405",
+        "socId": "sm8735",
+        "socName": "SM8735",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.present_rb_swap": true
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 8.61,
+        "nativeOnePercentLowFps": 6.42,
+        "outputAverageFps": null,
+        "testDurationSeconds": 657,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Rise of the Tomb Raider: observed boots during this test session. Measured native FPS: 8.6. Recorded duration: 657s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e2e83a16db57",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/01.webp",
+          "caption": "Rise of the Tomb Raider — capture 1 · 2026-09-30T22:40:50.999Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/02.webp",
+          "caption": "Rise of the Tomb Raider — capture 2 · 2026-09-30T22:46:14.827Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/03.webp",
+          "caption": "Rise of the Tomb Raider — capture 3 · 2026-09-30T22:47:19.127Z"
+        }
+      ]
+    }
+  ]
+}
