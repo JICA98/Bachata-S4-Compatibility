@@ -10,20 +10,111 @@
   "general": {
     "score": 75,
     "status": "ingame",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
-    "deviceCount": 1,
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 2,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 27.51,
+      "min": 15.77,
       "max": 27.51,
-      "average": 27.51,
-      "sampleCount": 1
+      "average": 21.64,
+      "sampleCount": 2
     }
   },
   "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 15.77,
+        "max": 15.77,
+        "average": 15.77,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_04609e75b10c4d989421c22af474d221",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-dynamic-lights",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-fog",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-ssao",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-volumetric-lights",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-water-reflections",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "draw-distance-40m",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "resolution-540p-extreme-performance",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "shadows-1-cascade-extreme-performance",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "shadows-2-cascades-performance",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-startup-logos",
+            "revision": "2026.09.30.13399220021802570842"
+          }
+        ]
+      }
+    },
     "sm8750": {
       "score": 75,
       "status": "ingame",
@@ -130,12 +221,138 @@
     }
   },
   "families": {
+    "adreno7": [
+      "sm8650"
+    ],
     "adreno8": [
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_04609e75b10c4d989421c22af474d221/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_04609e75b10c4d989421c22af474d221",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T02:54:02.127843Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23117RK66C",
+        "socId": "sm8650",
+        "socName": "Snapdragon 8 Gen 3",
+        "gpu": "Adreno 750",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-lights",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-fog",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-volumetric-lights",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-water-reflections",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "draw-distance-40m",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-540p-extreme-performance",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "shadows-1-cascade-extreme-performance",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "shadows-2-cascades-performance",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-startup-logos",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 15.77,
+        "nativeOnePercentLowFps": 7.23,
+        "outputAverageFps": null,
+        "testDurationSeconds": 243,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Uncharted: The Nathan Drake Collection™: observed ingame during this test session. Measured native FPS: 15.8. Recorded duration: 243s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-110086357361",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_04609e75b10c4d989421c22af474d221/screenshots/01.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 1 · 2026-10-01T02:54:01.835Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_04609e75b10c4d989421c22af474d221/screenshots/02.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 2 · 2026-10-01T02:55:13.415Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_04609e75b10c4d989421c22af474d221/screenshots/03.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 3 · 2026-10-01T02:56:57.919Z"
+        }
+      ]
+    },
     {
       "reportId": "s_bea8710fa9f84f888b9ccdce204525ff",
       "schemaVersion": 2,
