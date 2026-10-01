@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:56:41Z",
+  "generatedAt": "2026-10-01T02:56:51Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 20,
+  "gameCount": 21,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -378,6 +378,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/03.webp",
       "latestStatus": "menus",
       "latestTestedAt": "2026-08-02T10:38:31Z"
+    },
+    {
+      "cusaId": "CUSA08279",
+      "title": "銀魂亂舞",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.38,
+          "max": 59.38,
+          "average": 59.38,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-09-30T22:19:20.983743Z"
     },
     {
       "cusaId": "CUSA08692",

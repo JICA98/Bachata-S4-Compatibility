@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA08279",
+    "title": "銀魂亂舞",
+    "region": "Asia",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 0,
+    "status": "nothing",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.38,
+      "max": 59.38,
+      "average": 59.38,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.38,
+        "max": 59.38,
+        "average": 59.38,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_fe1a9fbd40104fbd9c0883228f84f068",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T22:19:20.983743Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.38,
+        "nativeOnePercentLowFps": 54.15,
+        "outputAverageFps": null,
+        "testDurationSeconds": 223,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "銀魂亂舞: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9c1af01eba3a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/01.webp",
+          "caption": "銀魂亂舞 — capture 1 · 2026-09-30T22:19:20.919Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/02.webp",
+          "caption": "銀魂亂舞 — capture 2 · 2026-09-30T22:20:25.655Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
+          "caption": "銀魂亂舞 — capture 3 · 2026-09-30T22:21:29.279Z"
+        }
+      ]
+    }
+  ]
+}
