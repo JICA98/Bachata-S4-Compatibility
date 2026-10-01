@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5443af1fe38c45eb843053fce2125b18",
+  "cusaId": "CUSA26813",
+  "testedAt": "2026-10-01T11:19:41.708890Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-6112f1820acedff2",
+    "type": "turnip",
+    "name": "Turnip驱动 Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-6112f1820acedff2",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "魔界戦記ディスガイア６: observed boots during this test session. Measured native FPS: 51.8. Recorded duration: 162s.No sound",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 51.95,
+    "testDurationSeconds": 191,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 37.53
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/01.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "魔界戦記ディスガイア６ — capture 1 · 2026-10-01T11:19:41.559Z"
+      },
+      {
+        "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/02.webp",
+        "sha256": "42fa91416ddc02fae76d4a952ae4e4736d7a6892927d23efd242bcb0e1c0c695",
+        "caption": "魔界戦記ディスガイア６ — capture 2 · 2026-10-01T11:20:43.215Z"
+      },
+      {
+        "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
+        "sha256": "a967bbc36b668327ee1842ba5e961e8edd3dd7ed09596726ca1efeb96530d823",
+        "caption": "魔界戦記ディスガイア６ — capture 3 · 2026-10-01T11:22:02.263Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/logs/01-application.log.gz",
+        "sha256": "35233a8eaa32f3034686d1f796f1ef7e2da151a979b7dd88db6376569e654f85",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/logs/02-shadps4.log.gz",
+        "sha256": "d2d1368bbf945e044bff9927a8ddf0eea4a8848a84e94ff73a86b687cb4bab51",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
