@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA01715",
+    "title": "God of War® III Remastered",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 26.45,
+      "max": 26.45,
+      "average": 26.45,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm7475": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 26.45,
+        "max": 26.45,
+        "average": 26.45,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_9658e468d2644971820dc34ec9b28135",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-dynamic-shadows",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-soft-particles",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-ssao",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "resolution-patch-960x540",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-intro",
+            "revision": "2026.09.30.13399220021802570842"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm7475"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_9658e468d2644971820dc34ec9b28135/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_9658e468d2644971820dc34ec9b28135",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T20:44:55.519920Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23049PCD8G",
+        "socId": "sm7475",
+        "socName": "SM7475",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 26.45,
+        "nativeOnePercentLowFps": 11.6,
+        "outputAverageFps": null,
+        "testDurationSeconds": 323,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-48683d650386",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_9658e468d2644971820dc34ec9b28135/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-09-30T20:44:55.127Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_9658e468d2644971820dc34ec9b28135/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-09-30T20:47:11.519Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_9658e468d2644971820dc34ec9b28135/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-09-30T20:48:41.599Z"
+        }
+      ]
+    }
+  ]
+}
