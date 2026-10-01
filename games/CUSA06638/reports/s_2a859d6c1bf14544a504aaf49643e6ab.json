@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2a859d6c1bf14544a504aaf49643e6ab",
+  "cusaId": "CUSA06638",
+  "testedAt": "2026-10-01T11:49:24.599451Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Persona 5: observed ingame during this test session. Measured native FPS: 16.5. Recorded duration: 1501s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 16.52,
+    "testDurationSeconds": 1501,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 9.5
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/01.webp",
+        "sha256": "125139aa77db7fc9fd4a0e5435152ac5e54d1af638fded50257dc244e88a7617",
+        "caption": "Persona 5 — capture 1 · 2026-10-01T11:49:24.166Z"
+      },
+      {
+        "path": "assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/02.webp",
+        "sha256": "2268c9f22c1abca8c9282713a92049edda4e22f474584a90596fe47d6540f2bc",
+        "caption": "Persona 5 — capture 2 · 2026-10-01T11:51:01.534Z"
+      },
+      {
+        "path": "assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
+        "sha256": "0162c05c8a613de8a240b3863e93fa06403c41cdd58ac5aefb4fb7dc580bcacd",
+        "caption": "Persona 5 — capture 3 · 2026-10-01T12:13:28.398Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/logs/01-application.log.gz",
+        "sha256": "a8cdd8f4bcfd37a5085bc1da8e8e451289c87866d99eb5cf3b1e9fc9657663b4",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/logs/02-shadps4.log.gz",
+        "sha256": "850925003ad305f03d9c0df4dc656b71851081db41cecfd0fbb619c88cc872a7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
