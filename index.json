@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T15:28:49Z",
+  "generatedAt": "2026-10-01T15:29:05Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 32,
+  "gameCount": 33,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -128,6 +128,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-09-30T23:42:19.909411Z"
+    },
+    {
+      "cusaId": "CUSA01038",
+      "title": "AKIBA'S TRIP 2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.46,
+          "max": 29.46,
+          "average": 29.46,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-01T10:53:18.592687Z"
     },
     {
       "cusaId": "CUSA01073",
