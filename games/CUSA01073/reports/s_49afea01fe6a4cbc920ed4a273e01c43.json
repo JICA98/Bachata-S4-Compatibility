@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_49afea01fe6a4cbc920ed4a273e01c43",
+  "cusaId": "CUSA01073",
+  "testedAt": "2026-10-01T12:00:41.372101Z",
+  "status": "playable",
+  "game": {
+    "version": "Unknown",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 24
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Ratchet & Clank™: The Bouncer Weapon: observed playable during this test session. Measured native FPS: 19.9. Recorded duration: 224s. The game is fully playable. Ersin Çakı",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7253135cda3c"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 18.46,
+    "testDurationSeconds": 293,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 10
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/screenshots/01.webp",
+        "sha256": "249b7aaf993ecd4600b57a6b7d948622f0d7d6717fe9dd74d4f47c1daa7f2d7b",
+        "caption": "Ratchet & Clank™: The Bouncer Weapon — capture 1 · 2026-10-01T12:00:39.304Z"
+      },
+      {
+        "path": "assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/screenshots/02.webp",
+        "sha256": "caaad08f46bdd41b483d234bf6d6e53d3776026c0ef40923ec2e41629cce48b8",
+        "caption": "Ratchet & Clank™: The Bouncer Weapon — capture 2 · 2026-10-01T12:01:53.036Z"
+      },
+      {
+        "path": "assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/screenshots/03.webp",
+        "sha256": "9e3e6f020fada31979163c9628c957323550c9ab73978f03ea59dccd4a4cbeb3",
+        "caption": "Ratchet & Clank™: The Bouncer Weapon — capture 3 · 2026-10-01T12:03:12.840Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/logs/01-application.log.gz",
+        "sha256": "481d2abec94c09019c307381054659bf6aee425f47d370c7cc6f4fd177a72036",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01073/s_49afea01fe6a4cbc920ed4a273e01c43/logs/02-shadps4.log.gz",
+        "sha256": "99ed741db0fc1d6ddbdf707c52d57988985d46dee53e8be9780073d537b0b52b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
