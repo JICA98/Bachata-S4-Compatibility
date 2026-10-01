@@ -19,6 +19,8 @@
     "sm8150": {"name":"Snapdragon 855","vendor":"Qualcomm","gpu":"Adreno 640","family":"adreno6","aliases":["SM8150","Snapdragon 855","Snapdragon 855+"]},
     "mt6991": {"name":"Dimensity 9400","vendor":"MediaTek","gpu":"Immortalis-G925","family":"mali-immortalis","aliases":["MT6991","Dimensity 9400"]},
     "mt6989": {"name":"Dimensity 9300","vendor":"MediaTek","gpu":"Immortalis-G720","family":"mali-immortalis","aliases":["MT6989","Dimensity 9300","Dimensity 9300+"]},
-    "mt6985": {"name":"Dimensity 9200","vendor":"MediaTek","gpu":"Immortalis-G715","family":"mali-immortalis","aliases":["MT6985","Dimensity 9200","Dimensity 9200+"]}
+    "mt6985": {"name":"Dimensity 9200","vendor":"MediaTek","gpu":"Immortalis-G715","family":"mali-immortalis","aliases":["MT6985","Dimensity 9200","Dimensity 9200+"]},
+    "mt6878": {"name":"Dimensity 7300","vendor":"MediaTek","gpu":"Mali-G615 MC2","family":"mali-g","aliases":["MT6878","Dimensity 7300"]},
+    "mt6897": {"name":"Dimensity 8300","vendor":"MediaTek","gpu":"Mali-G615 MC6","family":"mali-g","aliases":["MT6897","Dimensity 8300","Dimensity 8300-Ultra","Dimensity 8350"]}
   }
 }
