@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f5a231c8f0ca49659b62aac0066e8529",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-01T09:10:22.716438Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24116PCC1I",
+    "socId": "sm4635",
+    "socName": "SM4635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 4
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-1280x720",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-34e6c7e0c2d0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_f5a231c8f0ca49659b62aac0066e8529/logs/01-application.log.gz",
+        "sha256": "8190ffa06a1468cca67d548d8a776142a476ac8bb846fbdb4d237971d81c554d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_f5a231c8f0ca49659b62aac0066e8529/logs/02-shadps4.log.gz",
+        "sha256": "c0701ad5b2d1f24a9db3498b504e356f29573624847e86dd8ac45357f21aaee5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
