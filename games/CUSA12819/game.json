@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA12819",
+  "title": "DiRT Rally 2.0",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 70
+  },
+  "legacyIssues": []
+}
