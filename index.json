@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:56:51Z",
+  "generatedAt": "2026-10-01T02:57:01Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 21,
+  "gameCount": 23,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -78,6 +78,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260915T121412416Z-cusa00900-c1a943f025/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-15T12:14:13.802115Z"
+    },
+    {
+      "cusaId": "CUSA01022",
+      "title": "DmC Devil May Cry™: Definitive Edition",
+      "general": {
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 49.27,
+          "max": 49.27,
+          "average": 49.27,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-09-30T23:42:19.909411Z"
     },
     {
       "cusaId": "CUSA01127",
@@ -453,6 +478,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:28:02Z"
+    },
+    {
+      "cusaId": "CUSA12819",
+      "title": "DiRT Rally 2.0",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-09-30T23:52:24.533334Z"
     },
     {
       "cusaId": "CUSA13801",

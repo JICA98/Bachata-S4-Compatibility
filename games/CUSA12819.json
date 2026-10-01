@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA12819",
+    "title": "DiRT Rally 2.0",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 0,
+    "status": "nothing",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/screenshots/01.webp",
+  "reports": [
+    {
+      "reportId": "s_b3a60535c2cb4bddb64014b12aba3307",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T23:52:24.533334Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S928B",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA12819: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e09310460f43",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/screenshots/01.webp",
+          "caption": "DiRT Rally 2.0 — capture 1 · 2026-09-30T23:52:19.200Z"
+        }
+      ]
+    }
+  ]
+}
