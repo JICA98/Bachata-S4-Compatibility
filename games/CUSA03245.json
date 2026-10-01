@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA03245",
+    "title": "Deadpool",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 25.78,
+      "max": 25.78,
+      "average": 25.78,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8475": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 25.78,
+        "max": 25.78,
+        "average": 25.78,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_383b1a811dd94c82a947167e614a6a6e",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8475"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_383b1a811dd94c82a947167e614a6a6e",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T21:14:03.028636Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "I2217",
+        "socId": "sm8475",
+        "socName": "SM8475",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 25.78,
+        "nativeOnePercentLowFps": 15.51,
+        "outputAverageFps": null,
+        "testDurationSeconds": 866,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Deadpool: observed ingame during this test session. Measured native FPS: 25.8. Recorded duration: 866s.",
+        "notes": "The game still has significant graphics-related issues (such as washed-out colors), and the frame rate is very low. The developers creating the emulator are doing a great job; my mobile has a Snapdragon 8 Gen+ processor, so please optimize the emulator for this processor.",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-a24b6c318bc5",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/01.webp",
+          "caption": "Deadpool — capture 1 · 2026-09-30T21:14:02.860Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/02.webp",
+          "caption": "Deadpool — capture 2 · 2026-09-30T21:16:44.348Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/03.webp",
+          "caption": "Deadpool — capture 3 · 2026-09-30T21:18:18.596Z"
+        }
+      ]
+    }
+  ]
+}

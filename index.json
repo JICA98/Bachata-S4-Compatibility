@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-01T02:56:19Z",
+  "generatedAt": "2026-10-01T02:56:30Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 18,
+  "gameCount": 19,
   "games": [
     {
       "cusaId": "CUSA00038",
@@ -253,6 +253,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-02T11:48:17Z"
+    },
+    {
+      "cusaId": "CUSA03245",
+      "title": "Deadpool",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 25.78,
+          "max": 25.78,
+          "average": 25.78,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-09-30T21:14:03.028636Z"
     },
     {
       "cusaId": "CUSA03694",
