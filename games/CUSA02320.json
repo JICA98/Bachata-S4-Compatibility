@@ -14,12 +14,12 @@
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "0.2.3",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 31.55,
-      "max": 31.55,
-      "average": 31.55,
+      "min": 27.51,
+      "max": 27.51,
+      "average": 27.51,
       "sampleCount": 1
     }
   },
@@ -31,17 +31,17 @@
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "0.2.3",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
       "performance": {
-        "min": 31.55,
-        "max": 31.55,
-        "average": 31.55,
+        "min": 27.51,
+        "max": 27.51,
+        "average": 27.51,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_e379c0359c834fb7a37a829202aea94b",
+        "reportId": "s_bea8710fa9f84f888b9ccdce204525ff",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -53,91 +53,77 @@
         },
         "config": {
           "requiredOverrides": {
+            "general.big_core_affinity": true,
             "gpu.readbacks_mode": 0
           },
           "driverId": "turnip-77f4435ceb1944c3",
           "guestBackend": "FEX",
           "frameGenerationMode": "OFF",
-          "fexPreset": "DEFAULT",
-          "adrenoTurboMode": false,
-          "bigCoreAffinity": false,
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
           "maliGpuOptimizations": false
         },
         "patches": [
           {
             "id": "disable-anisotropic-filtering",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-anti-aliasing",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-bloom",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-depth-of-field",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-dynamic-lights",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-fog",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-motion-blur",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-ssao",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-sunlight-ambient-occlusion",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-volumetric-lights",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "disable-water-reflections",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "draw-distance-40m",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
-            "id": "resolution-540p-extreme-performance",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "id": "resolution-360p-maximum-performance",
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
-            "id": "shadows-2-cascades-performance",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "id": "shadows-1-cascade-extreme-performance",
+            "revision": "2026.09.30.13399220021802570842"
           },
           {
             "id": "skip-startup-logos",
-            "preset": "mobile-540p-low-graphics",
-            "revision": "2026.09.28.4791735114661653009"
+            "revision": "2026.09.30.13399220021802570842"
           }
         ]
       }
@@ -148,8 +134,144 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_e379c0359c834fb7a37a829202aea94b/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_bea8710fa9f84f888b9ccdce204525ff",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T21:14:26.288085Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S938U1",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-anisotropic-filtering",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-anti-aliasing",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-lights",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-fog",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-sunlight-ambient-occlusion",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-volumetric-lights",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-water-reflections",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "draw-distance-40m",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-360p-maximum-performance",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "shadows-1-cascade-extreme-performance",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-startup-logos",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 27.51,
+        "nativeOnePercentLowFps": 3.83,
+        "outputAverageFps": null,
+        "testDurationSeconds": 645,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Uncharted: The Nathan Drake Collection™: observed ingame during this test session. Measured native FPS: 27.5. Recorded duration: 645s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-f97cfdbe3f9e",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/01.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 1 · 2026-09-30T21:14:25.912Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/02.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 2 · 2026-09-30T21:15:54.376Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/03.webp",
+          "caption": "Uncharted: The Nathan Drake Collection™ — capture 3 · 2026-09-30T21:20:48.224Z"
+        }
+      ]
+    },
     {
       "reportId": "s_e379c0359c834fb7a37a829202aea94b",
       "schemaVersion": 2,
