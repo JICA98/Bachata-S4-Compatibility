@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 38,
-    "status": "menus",
+    "score": 25,
+    "status": "boots",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -24,6 +24,23 @@
     }
   },
   "socs": {
+    "mt6878": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
     "sm7475": {
       "score": 75,
       "status": "ingame",
@@ -122,6 +139,9 @@
     }
   },
   "families": {
+    "mali-g": [
+      "mt6878"
+    ],
     "adreno7": [
       "sm7475",
       "sm8475"
@@ -129,6 +149,67 @@
   },
   "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_9658e468d2644971820dc34ec9b28135/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_c87ad004515447c2992509e6381f64bd",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T05:48:32.645550Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Nothing",
+        "model": "A001",
+        "socId": "mt6878",
+        "socName": "MT6878",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-217ccfd30af6",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
     {
       "reportId": "s_3f8c214511ac4515b7100f3a6452e349",
       "schemaVersion": 2,
