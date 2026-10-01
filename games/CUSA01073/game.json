@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA01073",
+  "title": "Ratchet & Clank™: The Bouncer Weapon",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 83
+  },
+  "legacyIssues": []
+}
