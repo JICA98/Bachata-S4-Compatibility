@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 44,
+    "score": 40,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 4,
-    "testerCount": 4,
-    "deviceCount": 4,
+    "reportCount": 5,
+    "testerCount": 5,
+    "deviceCount": 5,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -42,12 +42,12 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 100,
-      "status": "playable",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "score": 62,
+      "status": "ingame",
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
@@ -226,6 +226,67 @@
   },
   "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_4253d696d8e74374b84eb8d99da0d0b1/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_848d5b0e48bc43e1946f6cdcca86cb25",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T07:51:40.044795Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2311DRK48G",
+        "socId": "mt6897",
+        "socName": "MT6897",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-88e77637027d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
     {
       "reportId": "s_4253d696d8e74374b84eb8d99da0d0b1",
       "schemaVersion": 2,
