@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ed490b36feda4e319f27a13ba310e71f",
+  "cusaId": "CUSA01410",
+  "testedAt": "2026-10-01T14:55:48.838546Z",
+  "status": "playable",
+  "game": {
+    "version": "Unknown",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB321FU",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Red Alert costume pack: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-590bc974f3b3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 50.82,
+    "testDurationSeconds": 621,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 38.62
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/01.webp",
+        "sha256": "c6c7151a2af2259a6823d605e347d2679c280973d766c57c147477ae97a31004",
+        "caption": "Red Alert costume pack — capture 1 · 2026-10-01T14:55:48.737Z"
+      },
+      {
+        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/02.webp",
+        "sha256": "402ab83808cd62541aaed7d50ced5d64c853fe012d4acf5eb809d8fcb87ddc88",
+        "caption": "Red Alert costume pack — capture 2 · 2026-10-01T14:57:01.877Z"
+      },
+      {
+        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
+        "sha256": "32f14068ab051653030b13dcc0e557f30880d30d084ac2855effd80d74c3b10e",
+        "caption": "Red Alert costume pack — capture 3 · 2026-10-01T14:59:43.617Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/logs/01-application.log.gz",
+        "sha256": "052e246b8956b20e868f4452b498052988fb5fe8f0f36e5f33d0ffc6dcd18bb1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/logs/02-shadps4.log.gz",
+        "sha256": "7cdafc71c68b05e97bc3e6342e3b63789374cdd01fd90d4e0249967c1b225bbe",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
