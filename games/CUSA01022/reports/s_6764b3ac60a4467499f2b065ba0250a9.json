@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_6764b3ac60a4467499f2b065ba0250a9",
+  "cusaId": "CUSA01022",
+  "testedAt": "2026-09-30T23:42:19.909411Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2220",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "DmC Devil May Cry™: Definitive Edition: observed playable during this test session. Measured native FPS: 49.3. Recorded duration: 839s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-07f99756cce8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 49.27,
+    "testDurationSeconds": 839,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 26.53
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/01.webp",
+        "sha256": "f5cebda4ff9918598d5f01fb0a469e23b0dfea3980c34d080e1038172e86d745",
+        "caption": "DmC Devil May Cry™: Definitive Edition — capture 1 · 2026-09-30T23:42:19.475Z"
+      },
+      {
+        "path": "assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/02.webp",
+        "sha256": "6a5e67773a975dad4200e090e2ce559aa0d704aa64ac0596cc04cac04ace4073",
+        "caption": "DmC Devil May Cry™: Definitive Edition — capture 2 · 2026-09-30T23:44:25.023Z"
+      },
+      {
+        "path": "assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/screenshots/03.webp",
+        "sha256": "0cdb1b5ee02ad0f11e192e748231822b4cd857355bb0d6c6ddede746c57b0d0e",
+        "caption": "DmC Devil May Cry™: Definitive Edition — capture 3 · 2026-09-30T23:46:13.047Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/logs/01-application.log.gz",
+        "sha256": "4110472a390cdce93ddedb1a1c455c83920015e97725116774d909aaf4189449",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01022/s_6764b3ac60a4467499f2b065ba0250a9/logs/02-shadps4.log.gz",
+        "sha256": "0a40a764e71785c9281d5469ab44a08c865c595194dfe11bd52173c037ce9e3e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
