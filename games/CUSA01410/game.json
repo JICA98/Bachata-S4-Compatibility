@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA01410",
+  "title": "Red Alert costume pack",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 88
+  },
+  "legacyIssues": []
+}
