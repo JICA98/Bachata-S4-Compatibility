@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_decabe4038584b10ba32a56489afd21a",
+  "cusaId": "CUSA00265",
+  "testedAt": "2026-10-02T02:37:57.363740Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Minecraft: PlayStation®4 Edition: observed ingame during this test session. Measured native FPS: 27.4. Recorded duration: 238s.",
+    "notes": "tuve que poner mundo plano por qué el juego se cerraba solo",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 27.44,
+    "testDurationSeconds": 238,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 19.97
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/01.webp",
+        "sha256": "c71269fee692108a0c871bcd8a3feddafac36dc000bad827809dbf8df76369f9",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 1 · 2026-10-02T02:37:57.014Z"
+      },
+      {
+        "path": "assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/02.webp",
+        "sha256": "ad1411a61b6ecdae492eb843908869fa6e0bed11849b98f5fde3fe3166c5db4d",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 2 · 2026-10-02T02:39:07.686Z"
+      },
+      {
+        "path": "assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/03.webp",
+        "sha256": "bd6c2c583328d1c476a4f1d6eedea7f35f0a3a1e5aa57af5c40b43b25cc13b15",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 3 · 2026-10-02T02:40:21.214Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/logs/01-application.log.gz",
+        "sha256": "c997fb28966c0404cb985ac9383af58327d4ef23aa94a6f1dca0a3ee9b685f2f",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/logs/02-shadps4.log.gz",
+        "sha256": "c860018bdcec55db69d803c70e016ab7ee23ee3d6a800d3f315fbfa02f98a568",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
