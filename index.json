@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T03:50:43Z",
+  "generatedAt": "2026-10-02T03:50:57Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 34,
+  "gameCount": 35,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -78,6 +78,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-06T11:17:20Z"
+    },
+    {
+      "cusaId": "CUSA00265",
+      "title": "Minecraft: PlayStation®4 Edition",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 27.44,
+          "max": 27.44,
+          "average": 27.44,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-02T02:37:57.363740Z"
     },
     {
       "cusaId": "CUSA00900",
@@ -283,26 +308,26 @@
       "cusaId": "CUSA01715",
       "title": "God of War® III Remastered",
       "general": {
-        "score": 54,
+        "score": 59,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 7,
-        "testerCount": 7,
-        "deviceCount": 6,
+        "reportCount": 8,
+        "testerCount": 8,
+        "deviceCount": 7,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 22.45,
-          "max": 38.7,
-          "average": 28.06,
-          "sampleCount": 4
+          "max": 44.31,
+          "average": 31.31,
+          "sampleCount": 5
         }
       },
-      "reportCount": 7,
-      "socCount": 5,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/03.webp",
+      "reportCount": 8,
+      "socCount": 6,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/03.webp",
       "latestStatus": "playable",
-      "latestTestedAt": "2026-10-01T16:03:58.643797Z"
+      "latestTestedAt": "2026-10-01T20:29:00.286990Z"
     },
     {
       "cusaId": "CUSA01843",

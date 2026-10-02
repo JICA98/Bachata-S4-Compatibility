@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 54,
+    "score": 59,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 7,
-    "testerCount": 7,
-    "deviceCount": 6,
+    "reportCount": 8,
+    "testerCount": 8,
+    "deviceCount": 7,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 22.45,
-      "max": 38.7,
-      "average": 28.06,
-      "sampleCount": 4
+      "max": 44.31,
+      "average": 31.31,
+      "sampleCount": 5
     }
   },
   "socs": {
@@ -270,6 +270,90 @@
           }
         ]
       }
+    },
+    "sm8850": {
+      "score": 100,
+      "status": "playable",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 44.31,
+        "max": 44.31,
+        "average": 44.31,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_ad66813a091341d1abe5088a3f0e485b",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-dynamic-shadows",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-soft-particles",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "disable-ssao",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "resolution-patch-1280x720",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "resolution-patch-960x540",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
+            "revision": "2026.09.30.13399220021802570842"
+          },
+          {
+            "id": "skip-intro",
+            "revision": "2026.09.30.13399220021802570842"
+          }
+        ]
+      }
     }
   },
   "families": {
@@ -282,11 +366,128 @@
       "sm8475"
     ],
     "adreno8": [
-      "sm8735"
+      "sm8735",
+      "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_ad66813a091341d1abe5088a3f0e485b",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T20:29:00.286990Z",
+      "status": "playable",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX809J",
+        "socId": "sm8850",
+        "socName": "Snapdragon 8 Elite Gen 5",
+        "gpu": "Adreno 840",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-1280x720",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 44.31,
+        "nativeOnePercentLowFps": 23.41,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1048,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-47ec8f290e8f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-01T20:29:00.117Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-10-01T20:34:41.529Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-10-01T20:38:08.073Z"
+        }
+      ]
+    },
     {
       "reportId": "s_21ccf528996740a4bcc98e464304e22f",
       "schemaVersion": 2,
