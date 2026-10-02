@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA19345",
+  "title": "Sonic Colors: Ultimate",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4",
+    "number": 96
+  },
+  "legacyIssues": []
+}
