@@ -3,7 +3,7 @@
   "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA01410",
-    "title": "Red Alert costume pack",
+    "title": "Transformers: Devastation",
     "region": "North America",
     "publisher": "Unknown"
   },
@@ -17,9 +17,9 @@
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 50.82,
-      "max": 50.82,
-      "average": 50.82,
+      "min": 50.33,
+      "max": 50.33,
+      "average": 50.33,
       "sampleCount": 1
     }
   },
@@ -34,14 +34,14 @@
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": 50.82,
-        "max": 50.82,
-        "average": 50.82,
+        "min": 50.33,
+        "max": 50.33,
+        "average": 50.33,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_ed490b36feda4e319f27a13ba310e71f",
+        "reportId": "s_cb5dd3e87a2e4f12a39d2647ca073c36",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -72,8 +72,82 @@
       "sm8650"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_cb5dd3e87a2e4f12a39d2647ca073c36",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T16:06:23.991312Z",
+      "status": "playable",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "LENOVO",
+        "model": "TB321FU",
+        "socId": "sm8650",
+        "socName": "Snapdragon 8 Gen 3",
+        "gpu": "Adreno 750",
+        "androidVersion": "15",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 50.33,
+        "nativeOnePercentLowFps": 31.52,
+        "outputAverageFps": null,
+        "testDurationSeconds": 383,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Transformers: Devastation: observed boots during this test session. Measured native FPS: 45.9. Recorded duration: 265s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-590bc974f3b3",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/01.webp",
+          "caption": "Transformers: Devastation — capture 1 · 2026-10-01T16:06:23.857Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/02.webp",
+          "caption": "Transformers: Devastation — capture 2 · 2026-10-01T16:07:30.557Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/03.webp",
+          "caption": "Transformers: Devastation — capture 3 · 2026-10-01T16:08:35.213Z"
+        }
+      ]
+    },
     {
       "reportId": "s_ed490b36feda4e319f27a13ba310e71f",
       "schemaVersion": 2,
@@ -121,7 +195,7 @@
         "framePacing": "stuttery"
       },
       "result": {
-        "summary": "Red Alert costume pack: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
+        "summary": "Transformers: Devastation: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
         "notes": "",
         "issues": []
       },
@@ -136,15 +210,15 @@
       "screenshots": [
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/01.webp",
-          "caption": "Red Alert costume pack — capture 1 · 2026-10-01T14:55:48.737Z"
+          "caption": "Transformers: Devastation — capture 1 · 2026-10-01T14:55:48.737Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/02.webp",
-          "caption": "Red Alert costume pack — capture 2 · 2026-10-01T14:57:01.877Z"
+          "caption": "Transformers: Devastation — capture 2 · 2026-10-01T14:57:01.877Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
-          "caption": "Red Alert costume pack — capture 3 · 2026-10-01T14:59:43.617Z"
+          "caption": "Transformers: Devastation — capture 3 · 2026-10-01T14:59:43.617Z"
         }
       ]
     }

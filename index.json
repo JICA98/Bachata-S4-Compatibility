@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T08:20:02Z",
+  "generatedAt": "2026-10-02T10:54:49Z",
   "currentRelease": "v0.2.4",
   "gameCount": 36,
   "games": [
@@ -256,7 +256,7 @@
     },
     {
       "cusaId": "CUSA01410",
-      "title": "Red Alert costume pack",
+      "title": "Transformers: Devastation",
       "general": {
         "score": 100,
         "status": "playable",
@@ -267,17 +267,17 @@
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 50.82,
-          "max": 50.82,
-          "average": 50.82,
+          "min": 50.33,
+          "max": 50.33,
+          "average": 50.33,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/03.webp",
       "latestStatus": "playable",
-      "latestTestedAt": "2026-10-01T14:55:48.838546Z"
+      "latestTestedAt": "2026-10-01T16:06:23.991312Z"
     },
     {
       "cusaId": "CUSA01623",
