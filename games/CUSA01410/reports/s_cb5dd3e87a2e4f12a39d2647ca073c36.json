@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Transformer Devastation: observed boots during this test session. Measured native FPS: 45.9. Recorded duration: 265s.",
+    "summary": "Transformers: Devastation: observed boots during this test session. Measured native FPS: 45.9. Recorded duration: 265s.",
     "notes": "",
     "issues": []
   },
