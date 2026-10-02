@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_0144acd3a5fe466f827b2252fc15341d",
+  "cusaId": "CUSA07010",
+  "testedAt": "2026-10-02T06:31:25.321532Z",
+  "status": "playable",
+  "game": {
+    "version": "Unknown",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2717",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Sonic Mania Encore DLC: observed playable during this test session. Measured native FPS: 60.0. Recorded duration: 319s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-70e208385319"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.96,
+    "testDurationSeconds": 319,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 54.89
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/01.webp",
+        "sha256": "422407e4151b4293d9157aadf1169aa04162d5362b219cfb3c3c3fabff94dcb4",
+        "caption": "Sonic Mania Encore DLC — capture 1 · 2026-10-02T06:31:24.719Z"
+      },
+      {
+        "path": "assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/02.webp",
+        "sha256": "e6218a8d8bfe8e8c07031f2bb8ff88045b73113377a17fe4a03fcba243a587e1",
+        "caption": "Sonic Mania Encore DLC — capture 2 · 2026-10-02T06:32:48.499Z"
+      },
+      {
+        "path": "assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
+        "sha256": "f0d92987fe2ddd4dc438a1aaa2c8c3ea4f4fca9706c812f49c6e86b270987768",
+        "caption": "Sonic Mania Encore DLC — capture 3 · 2026-10-02T06:33:54.391Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/logs/01-application.log.gz",
+        "sha256": "a04fe8e0ec0811a3de50b2532e9a72830455031b8eaa096a8e1494496c4ea6a5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/logs/02-shadps4.log.gz",
+        "sha256": "16d4a2c31551b6945cb0effa1d8ff81a7a6a8dc77c75665b5099f5d2ce1dc11f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
