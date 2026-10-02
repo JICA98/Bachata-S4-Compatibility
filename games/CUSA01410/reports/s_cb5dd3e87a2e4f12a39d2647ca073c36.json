@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "reportId": "s_ed490b36feda4e319f27a13ba310e71f",
+  "reportId": "s_cb5dd3e87a2e4f12a39d2647ca073c36",
   "cusaId": "CUSA01410",
-  "testedAt": "2026-10-01T14:55:48.838546Z",
+  "testedAt": "2026-10-01T16:06:23.991312Z",
   "status": "playable",
   "game": {
     "version": "Unknown",
@@ -16,8 +16,8 @@
     "manufacturer": "LENOVO",
     "model": "TB321FU",
     "socId": "sm8650",
-    "socName": "SM8650",
-    "gpu": "Unknown",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
     "androidVersion": "15",
     "ramBucketGb": 16
   },
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Transformers: Devastation: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
+    "summary": "Transformers: Devastation: observed boots during this test session. Measured native FPS: 45.9. Recorded duration: 265s.",
     "notes": "",
     "issues": []
   },
@@ -67,38 +67,38 @@
     "appBuild": "0.2.4"
   },
   "performance": {
-    "nativeAverageFps": 50.82,
-    "testDurationSeconds": 621,
+    "nativeAverageFps": 50.33,
+    "testDurationSeconds": 383,
     "framePacing": "stuttery",
-    "nativeOnePercentLowFps": 38.62
+    "nativeOnePercentLowFps": 31.52
   },
   "evidence": {
     "screenshots": [
       {
-        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/01.webp",
-        "sha256": "c6c7151a2af2259a6823d605e347d2679c280973d766c57c147477ae97a31004",
-        "caption": "Transformers: Devastation — capture 1 · 2026-10-01T14:55:48.737Z"
+        "path": "assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/01.webp",
+        "sha256": "dbc057d9cef15b734388dc8eb0badbf1b411b532b068515df77e8513f59d5933",
+        "caption": "Transformers: Devastation — capture 1 · 2026-10-01T16:06:23.857Z"
       },
       {
-        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/02.webp",
-        "sha256": "402ab83808cd62541aaed7d50ced5d64c853fe012d4acf5eb809d8fcb87ddc88",
-        "caption": "Transformers: Devastation — capture 2 · 2026-10-01T14:57:01.877Z"
+        "path": "assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/02.webp",
+        "sha256": "02b2b825a3cb85cc763bd24a3a3a18a3d406d1ee1053846e215edc5d0a3d7b52",
+        "caption": "Transformers: Devastation — capture 2 · 2026-10-01T16:07:30.557Z"
       },
       {
-        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
-        "sha256": "32f14068ab051653030b13dcc0e557f30880d30d084ac2855effd80d74c3b10e",
-        "caption": "Transformers: Devastation — capture 3 · 2026-10-01T14:59:43.617Z"
+        "path": "assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/screenshots/03.webp",
+        "sha256": "13affa2ac3f11b60a88b35ea7856c782071f2203fe48a0fcd30933de03a7392b",
+        "caption": "Transformers: Devastation — capture 3 · 2026-10-01T16:08:35.213Z"
       }
     ],
     "diagnostics": [
       {
-        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/logs/01-application.log.gz",
-        "sha256": "052e246b8956b20e868f4452b498052988fb5fe8f0f36e5f33d0ffc6dcd18bb1",
+        "path": "assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/logs/01-application.log.gz",
+        "sha256": "d550ac8d75f4d505ef77b37b60a2a9499d3b9a0b6ea4a4a99b43fe77e0de8883",
         "label": "Bachata application log"
       },
       {
-        "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/logs/02-shadps4.log.gz",
-        "sha256": "7cdafc71c68b05e97bc3e6342e3b63789374cdd01fd90d4e0249967c1b225bbe",
+        "path": "assets/CUSA01410/s_cb5dd3e87a2e4f12a39d2647ca073c36/logs/02-shadps4.log.gz",
+        "sha256": "91a26c91ac0277385bfe25435a122076c115ae3987eba8c28c5297b9394ae7aa",
         "label": "shadPS4 session log"
       }
     ]
