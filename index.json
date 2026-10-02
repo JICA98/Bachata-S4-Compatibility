@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T03:50:30Z",
+  "generatedAt": "2026-10-02T03:50:43Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 33,
+  "gameCount": 34,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -283,26 +283,26 @@
       "cusaId": "CUSA01715",
       "title": "God of War® III Remastered",
       "general": {
-        "score": 46,
+        "score": 54,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 6,
-        "testerCount": 6,
+        "reportCount": 7,
+        "testerCount": 7,
         "deviceCount": 6,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 22.45,
-          "max": 26.45,
-          "average": 24.51,
-          "sampleCount": 3
+          "max": 38.7,
+          "average": 28.06,
+          "sampleCount": 4
         }
       },
-      "reportCount": 6,
+      "reportCount": 7,
       "socCount": 5,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_ddf60bc29a0a435882ebb86d5c2b8ee3/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-01T15:42:32.658179Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-01T16:03:58.643797Z"
     },
     {
       "cusaId": "CUSA01843",
@@ -653,6 +653,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:28:02Z"
+    },
+    {
+      "cusaId": "CUSA12781",
+      "title": "Fist of the North Star: Lost Paradise",
+      "general": {
+        "score": 100,
+        "status": "playable",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 33.9,
+          "max": 33.9,
+          "average": 33.9,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-01T15:59:19.969820Z"
     },
     {
       "cusaId": "CUSA12819",
