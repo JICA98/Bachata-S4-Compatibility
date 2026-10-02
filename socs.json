@@ -101,16 +101,6 @@
         "Snapdragon 8 Gen 3"
       ]
     },
-    "sm8635": {
-      "name": "Snapdragon 8s Gen 3",
-      "vendor": "Qualcomm",
-      "gpu": "Adreno 735",
-      "family": "adreno7",
-      "aliases": [
-        "SM8635",
-        "Snapdragon 8s Gen 3"
-      ]
-    },
     "sm8550": {
       "name": "Snapdragon 8 Gen 2",
       "vendor": "Qualcomm",
@@ -172,16 +162,6 @@
         "SM8150",
         "Snapdragon 855",
         "Snapdragon 855+"
-      ]
-    },
-    "sm4635": {
-      "name": "Snapdragon 4s Gen 2",
-      "vendor": "Qualcomm",
-      "gpu": "Adreno 611",
-      "family": "adreno6",
-      "aliases": [
-        "SM4635",
-        "Snapdragon 4s Gen 2"
       ]
     },
     "mt6991": {
