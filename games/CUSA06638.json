@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA06638",
+    "title": "Persona 5",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 16.52,
+      "max": 16.52,
+      "average": 16.52,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6450": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 16.52,
+        "max": 16.52,
+        "average": 16.52,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_2a859d6c1bf14544a504aaf49643e6ab",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 720,
+            "gpu.internal_screen_height": 480
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm6450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_2a859d6c1bf14544a504aaf49643e6ab",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T11:49:24.599451Z",
+      "status": "ingame",
+      "release": {
+        "tag": "unreleased",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "SM6450",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 720,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 16.52,
+        "nativeOnePercentLowFps": 9.5,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1501,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Persona 5: observed ingame during this test session. Measured native FPS: 16.5. Recorded duration: 1501s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9607d8c1d90f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/01.webp",
+          "caption": "Persona 5 — capture 1 · 2026-10-01T11:49:24.166Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/02.webp",
+          "caption": "Persona 5 — capture 2 · 2026-10-01T11:51:01.534Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
+          "caption": "Persona 5 — capture 3 · 2026-10-01T12:13:28.398Z"
+        }
+      ]
+    }
+  ]
+}
