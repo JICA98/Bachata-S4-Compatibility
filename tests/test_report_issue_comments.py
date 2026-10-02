@@ -62,6 +62,7 @@ class ReportIssueCommentTest(unittest.TestCase):
         self.assertEqual(emulator_version({"emulatorVersion": "0.2.1"}), "v0.2.1")
         self.assertEqual(emulator_version({"provenance": {"appBuild": "0.2.4"}}), "v0.2.4")
         self.assertEqual(emulator_version({}), "unreleased")
+        self.assertEqual(emulator_version({"release": {"tag": "unreleased", "commit": "6f7e87b6417e"}, "provenance": {"appBuild": "0.2.4"}}), "v0.2.4 (6f7e87b)")
 
     def test_user_text_cannot_break_table_or_inject_html(self):
         body = build_comment(v2_report(device={"label": "A|B <img src=x>"}), "games/CUSA01410/reports/s_abc.json", SHA)

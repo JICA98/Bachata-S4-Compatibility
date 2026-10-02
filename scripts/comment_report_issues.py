@@ -74,11 +74,16 @@ def fps_label(report: dict) -> str | None:
 
 
 def emulator_version(report: dict) -> str:
-    tag = (report.get("release") or {}).get("tag")
-    if tag:
+    release = report.get("release") or {}
+    tag = release.get("tag")
+    if tag and tag != "unreleased":
         return tag
+    # Builds before the release-tag fix reported "unreleased"; the app build still names the version.
     build = report.get("emulatorVersion") or (report.get("provenance") or {}).get("appBuild")
-    return f"v{build}" if build and not str(build).startswith("v") else str(build or "unreleased")
+    if not build:
+        return "unreleased"
+    version = build if str(build).startswith("v") else f"v{build}"
+    return f"{version} ({release['commit'][:7]})" if release.get("commit") else version
 
 
 def build_comment(report: dict, path: str, sha: str) -> str:
