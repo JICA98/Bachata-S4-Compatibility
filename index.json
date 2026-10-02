@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T03:50:57Z",
+  "generatedAt": "2026-10-02T03:51:10Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 35,
+  "gameCount": 36,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -578,6 +578,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T09:43:02Z"
+    },
+    {
+      "cusaId": "CUSA07340",
+      "title": "Dragon's Dogma: Dark Arisen",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.27,
+          "max": 21.27,
+          "average": 21.27,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-02T02:41:13.900253Z"
     },
     {
       "cusaId": "CUSA07399",

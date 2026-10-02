@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA07340",
+    "title": "Dragon's Dogma: Dark Arisen",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 21.27,
+      "max": 21.27,
+      "average": 21.27,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 21.27,
+        "max": 21.27,
+        "average": 21.27,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_d3b44da707364489a69b371fe5b31e68",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "CUSTOM",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_d3b44da707364489a69b371fe5b31e68",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T02:41:13.900253Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23117RK66C",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 21.27,
+        "nativeOnePercentLowFps": 15.49,
+        "outputAverageFps": null,
+        "testDurationSeconds": 255,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Dragon's Dogma: Dark Arisen: observed ingame during this test session. Measured native FPS: 21.8. Recorded duration: 220s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-ccce122e2bfd",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/01.webp",
+          "caption": "Dragon's Dogma: Dark Arisen — capture 1 · 2026-10-02T02:41:13.665Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/02.webp",
+          "caption": "Dragon's Dogma: Dark Arisen — capture 2 · 2026-10-02T02:42:35.913Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/03.webp",
+          "caption": "Dragon's Dogma: Dark Arisen — capture 3 · 2026-10-02T02:44:18.025Z"
+        }
+      ]
+    }
+  ]
+}
