@@ -19,8 +19,11 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
+      # Manual runs start from main (the default branch); the script and reports live on the data branch.
       - uses: actions/checkout@v4
-        with: {fetch-depth: 0}
+        with:
+          ref: ${{ github.event_name == 'push' && github.sha || 'feat/community-compatibility-v2' }}
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - name: Comment new reports on their canonical issues
