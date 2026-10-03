@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA52139",
+    "title": "Islets",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.55,
+      "max": 59.55,
+      "average": 59.55,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.55,
+        "max": 59.55,
+        "average": 59.55,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_7e08ce57c3b14833918b2b62fa40d362",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-092fc29be51c9088",
+          "type": "turnip",
+          "name": "Turnip vauzi-7xx v1",
+          "version": "vauzi-7xx-v1",
+          "build": "26.0.99"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-092fc29be51c9088",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_7e08ce57c3b14833918b2b62fa40d362",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T05:05:50.085972Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S928B",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-092fc29be51c9088",
+        "type": "turnip",
+        "name": "Turnip vauzi-7xx v1",
+        "version": "vauzi-7xx-v1",
+        "build": "26.0.99"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-092fc29be51c9088",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.55,
+        "nativeOnePercentLowFps": 25,
+        "outputAverageFps": null,
+        "testDurationSeconds": 207,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Islets: observed playable during this test session. Measured native FPS: 59.6. Recorded duration: 207s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-455693e72f39",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/01.webp",
+          "caption": "Islets — capture 1"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/02.webp",
+          "caption": "Islets"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
+          "caption": "Islets — capture 3"
+        }
+      ]
+    }
+  ]
+}

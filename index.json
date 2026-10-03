@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-02T11:06:52Z",
+  "generatedAt": "2026-10-03T10:39:36Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 36,
+  "gameCount": 37,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -903,6 +903,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-09-28T08:12:11.491515Z"
+    },
+    {
+      "cusaId": "CUSA52139",
+      "title": "Islets",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.55,
+          "max": 59.55,
+          "average": 59.55,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-03T05:05:50.085972Z"
     }
   ]
 }
