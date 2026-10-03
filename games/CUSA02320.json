@@ -11,16 +11,16 @@
     "score": 75,
     "status": "ingame",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 15.77,
-      "max": 27.51,
-      "average": 21.64,
-      "sampleCount": 2
+      "max": 31.55,
+      "average": 24.94,
+      "sampleCount": 3
     }
   },
   "socs": {
@@ -118,17 +118,17 @@
     "sm8750": {
       "score": 75,
       "status": "ingame",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
         "min": 27.51,
-        "max": 27.51,
-        "average": 27.51,
-        "sampleCount": 1
+        "max": 31.55,
+        "average": 29.53,
+        "sampleCount": 2
       },
       "recommendedSetup": {
         "label": "known-working",
@@ -359,7 +359,7 @@
       "testedAt": "2026-09-30T21:14:26.288085Z",
       "status": "ingame",
       "release": {
-        "tag": "unreleased",
+        "tag": "v0.2.4",
         "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
       },
       "gameVersion": "01.02",
@@ -495,7 +495,7 @@
       "testedAt": "2026-09-28T15:15:40.027754Z",
       "status": "ingame",
       "release": {
-        "tag": "unreleased",
+        "tag": "v0.2.4",
         "commit": "5a07db7c236d8e492efa9f2faa2fdae76b182171"
       },
       "gameVersion": "01.02",

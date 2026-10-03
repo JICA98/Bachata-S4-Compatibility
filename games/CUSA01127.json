@@ -97,7 +97,7 @@
       "testedAt": "2026-09-30T20:53:11.690141Z",
       "status": "ingame",
       "release": {
-        "tag": "unreleased",
+        "tag": "v0.2.4",
         "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
       },
       "gameVersion": "01.00",

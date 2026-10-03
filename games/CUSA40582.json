@@ -14,8 +14,8 @@
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "0.2.3",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
     "performance": {
       "min": 57.88,
       "max": 57.88,
@@ -31,8 +31,8 @@
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "0.2.3",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
       "performance": {
         "min": 57.88,
         "max": 57.88,
@@ -55,7 +55,7 @@
       "testedAt": "2026-09-28T08:12:11.491515Z",
       "status": "boots",
       "release": {
-        "tag": "unreleased",
+        "tag": "v0.2.4",
         "commit": "32b069cac7bd1527ec89b5b6d5fde73d9fd9a6bf"
       },
       "gameVersion": "Unknown",
