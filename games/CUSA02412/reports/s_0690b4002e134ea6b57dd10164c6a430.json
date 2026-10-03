@@ -3,7 +3,7 @@
   "reportId": "s_0690b4002e134ea6b57dd10164c6a430",
   "cusaId": "CUSA02412",
   "testedAt": "2026-10-03T11:04:01.562006Z",
-  "status": "boots",
+  "status": "nothing",
   "game": {
     "version": "01.00",
     "region": "North America"
@@ -58,7 +58,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4: observed boots during this test session. Measured native FPS: 14.3. Recorded duration: 460s.",
+    "summary": "NARUTO SHIPPUDEN\u2122: Ultimate Ninja\u00ae STORM 4: observed boots during this test session. Measured native FPS: 14.3. Recorded duration: 460s.",
     "notes": "",
     "issues": []
   },
