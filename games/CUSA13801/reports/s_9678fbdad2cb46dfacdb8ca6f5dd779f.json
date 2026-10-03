@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9678fbdad2cb46dfacdb8ca6f5dd779f",
+  "cusaId": "CUSA13801",
+  "testedAt": "2026-10-01T18:54:03.129550Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-X920",
+    "socId": "mt6989",
+    "socName": "Dimensity 9300",
+    "gpu": "Immortalis-G720",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA13801: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02e004b0e0f8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 32.79,
+    "testDurationSeconds": 83,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 27.94
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13801/s_9678fbdad2cb46dfacdb8ca6f5dd779f/logs/01-application.log.gz",
+        "sha256": "f76dd916d48d2d21753f5183b823058f0b64679e87a2831d3817278abf3bd511",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13801/s_9678fbdad2cb46dfacdb8ca6f5dd779f/logs/02-shadps4.log.gz",
+        "sha256": "5424ff17aca70d844724d96d875373272b3573b626e9917638509a1cbaac73d1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
