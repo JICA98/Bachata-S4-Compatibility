@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 40,
+    "score": 38,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 17,
-    "testerCount": 17,
-    "deviceCount": 15,
+    "reportCount": 18,
+    "testerCount": 18,
+    "deviceCount": 16,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 9.9,
       "max": 44.31,
-      "average": 25.14,
-      "sampleCount": 8
+      "average": 24.55,
+      "sampleCount": 9
     }
   },
   "socs": {
@@ -118,19 +118,19 @@
       }
     },
     "mt6899": {
-      "score": 25,
-      "status": "boots",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "score": 12,
+      "status": "nothing",
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 19.8,
+        "max": 19.8,
+        "average": 19.8,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     },
@@ -448,6 +448,107 @@
   },
   "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_d5b547e4ebc64c4f9646745e850db0cb",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T07:57:14.631576Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 70 pro",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 960,
+          "gpu.internal_screen_height": 540
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 19.8,
+        "nativeOnePercentLowFps": 4.2,
+        "outputAverageFps": null,
+        "testDurationSeconds": 199,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-c1bb6387ca66",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
     {
       "reportId": "s_321d9ca2b67d41c59cd6be792e34d0e8",
       "schemaVersion": 2,
