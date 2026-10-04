@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA07010",
+    "title": "Sonic Mania",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.91,
+      "max": 59.91,
+      "average": 59.91,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "mt6878": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.91,
+        "max": 59.91,
+        "average": 59.91,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6878"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_179200e43b6b4b7897ef4678860d7c70",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T17:06:56.064938Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24095PCADG",
+        "socId": "mt6878",
+        "socName": "MT6878",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.91,
+        "nativeOnePercentLowFps": 56.79,
+        "outputAverageFps": null,
+        "testDurationSeconds": 222,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Sonic Mania: observed boots during this test session. Measured native FPS: 59.9. Recorded duration: 222s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e52706b7b170",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/01.webp",
+          "caption": "Sonic Mania — capture 1 · 2026-10-01T17:06:55.800Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/02.webp",
+          "caption": "Sonic Mania — capture 2 · 2026-10-01T17:07:59.004Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/03.webp",
+          "caption": "Sonic Mania — capture 3 · 2026-10-01T17:09:26.032Z"
+        }
+      ]
+    }
+  ]
+}
