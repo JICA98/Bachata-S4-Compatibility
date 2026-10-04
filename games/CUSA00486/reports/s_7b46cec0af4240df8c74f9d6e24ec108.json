@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7b46cec0af4240df8c74f9d6e24ec108",
+  "cusaId": "CUSA00486",
+  "testedAt": "2026-10-04T23:44:35.192284Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.01",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Hotline Miami: observed ingame during this test session. Measured native FPS: 40.3. Recorded duration: 839s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 40.26,
+    "testDurationSeconds": 839,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 32.56
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/screenshots/01.webp",
+        "sha256": "73b9d83df04e9744196ba99aa5bae40db5e0df3dcdf6b2dca360b5f90426f0b8",
+        "caption": "Hotline Miami — capture 1 · 2026-10-04T23:44:34.399Z"
+      },
+      {
+        "path": "assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/screenshots/02.webp",
+        "sha256": "45da96f661d3e0961267d183dee81bcbc47b579e9b2c6b40987e5db8beba2a2e",
+        "caption": "Hotline Miami — capture 2 · 2026-10-04T23:45:50.327Z"
+      },
+      {
+        "path": "assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/screenshots/03.webp",
+        "sha256": "4b5a3aeb642c25e2469f82a5d7a66afc47605f3e0f17e5aff34e6231b5354e33",
+        "caption": "Hotline Miami — capture 3 · 2026-10-04T23:50:19.535Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/logs/01-application.log.gz",
+        "sha256": "91a6fa20d564cc4fdf4d61ab8a0da7177e4750cb84ed7795bfb94df080b33f76",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/logs/02-shadps4.log.gz",
+        "sha256": "6d98146a828dc681fc0f9461b87a0b5391a03aa79a8f9e9ebe752e10561ea92e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
