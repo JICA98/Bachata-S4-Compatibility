@@ -8,11 +8,11 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 29,
+    "score": 28,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 23,
-    "testerCount": 23,
+    "reportCount": 24,
+    "testerCount": 24,
     "deviceCount": 19,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -59,11 +59,11 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 29,
+      "score": 25,
       "status": "boots",
       "confidence": "medium",
-      "reportCount": 7,
-      "testerCount": 7,
+      "reportCount": 8,
+      "testerCount": 8,
       "deviceCount": 5,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -1484,6 +1484,105 @@
           "caption": "God of War® III Remastered — capture 1 · 2026-10-02T16:59:10.740Z"
         }
       ]
+    },
+    {
+      "reportId": "s_61725b32439146cbb700e204cebeb64d",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T16:19:01.133313Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2737",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-b1143b5fd655",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_597855e087984e428600204e83dac812",
