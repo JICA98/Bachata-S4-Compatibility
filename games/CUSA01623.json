@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 50,
+    "score": 42,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -24,6 +24,23 @@
     }
   },
   "socs": {
+    "mt6985": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
     "sm7675": {
       "score": 25,
       "status": "boots",
@@ -131,6 +148,9 @@
     }
   },
   "families": {
+    "mali-immortalis": [
+      "mt6985"
+    ],
     "adreno7": [
       "sm7675"
     ],
@@ -248,6 +268,72 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_f0aca83cabc443f083ec5cc6fd12b3cd/screenshots/03.webp",
           "caption": "God of War® III Remastered — capture 3 · 2026-10-04T14:13:59.516Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_15066197ead64f679a067f76dae0c068",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T13:47:23.321355Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2218",
+        "socId": "mt6985",
+        "socName": "Dimensity 9200",
+        "gpu": "Immortalis-G715",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code unavailable. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-0ba5526cad80",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_15066197ead64f679a067f76dae0c068/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-04T13:47:23.153Z"
         }
       ]
     },
