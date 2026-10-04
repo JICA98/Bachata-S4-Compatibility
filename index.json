@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:19:20Z",
+  "generatedAt": "2026-10-04T16:20:05Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 61,
+  "gameCount": 62,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1428,6 +1428,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-04T09:45:11.451278Z"
+    },
+    {
+      "cusaId": "CUSA34963",
+      "title": "Cocoon",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T08:38:48.776433Z"
     },
     {
       "cusaId": "CUSA40582",
