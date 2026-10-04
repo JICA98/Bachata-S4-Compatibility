@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c42eba0093534b818a3682e3e6a8da55",
+  "cusaId": "CUSA10484",
+  "testedAt": "2026-10-03T15:23:48.307491Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AI",
+    "socId": "mt6899",
+    "socName": "MT6899",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Dead Cells: observed ingame during this test session. Measured native FPS: 58.7. Recorded duration: 241s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5b416f6666c9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 58.67,
+    "testDurationSeconds": 241,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 12.45
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/01.webp",
+        "sha256": "a392fb6a1280bd79277d9d743ff6fdb8709eb2cd2cbb9d991770130e567fdf7b",
+        "caption": "Dead Cells — capture 1 · 2026-10-03T15:23:47.450Z"
+      },
+      {
+        "path": "assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/02.webp",
+        "sha256": "1abf03e5746b7b3c77bcddf85f10f2735e1832fb3c96ddc082e8eca7979250e0",
+        "caption": "Dead Cells — capture 2 · 2026-10-03T15:24:52.078Z"
+      },
+      {
+        "path": "assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/03.webp",
+        "sha256": "f26b4bddd72f102d31a9ebdf656ab509864ccec47020ffba65a2d703ec730325",
+        "caption": "Dead Cells — capture 3 · 2026-10-03T15:25:53.246Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/logs/01-application.log.gz",
+        "sha256": "8ffd652b5cdec9d45391ef2ae0fc016c32d62c03305d1f8264f2649d498d113a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/logs/02-shadps4.log.gz",
+        "sha256": "ad1c41d2f9508cf786ce72ae95b06db9e5d6a7c05318ef87a3ded1bf5cbf9793",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
