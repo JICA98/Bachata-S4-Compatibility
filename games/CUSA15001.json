@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA15001",
+    "title": "MOBILE SUIT GUNDAM EXTREME VS. MAXIBOOST ON PREMIUM SOUND EDITION",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 0,
+    "status": "nothing",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "mt6899": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6899"
+    ]
+  },
+  "thumbnail": null,
+  "reports": [
+    {
+      "reportId": "s_3010e6c139164f8b9bd19a13e5334c9c",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T09:46:26.295720Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "INFINIX",
+        "model": "Infinix X6891",
+        "socId": "mt6899",
+        "socName": "MT6899",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA15001: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-3ebae88a245b",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:10:07Z",
+  "generatedAt": "2026-10-04T16:10:44Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 54,
+  "gameCount": 55,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1078,6 +1078,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T10:09:12Z"
+    },
+    {
+      "cusaId": "CUSA15001",
+      "title": "MOBILE SUIT GUNDAM EXTREME VS. MAXIBOOST ON PREMIUM SOUND EDITION",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T09:46:26.295720Z"
     },
     {
       "cusaId": "CUSA15250",
