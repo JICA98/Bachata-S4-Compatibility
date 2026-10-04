@@ -188,8 +188,9 @@ async function rateLimit(request: Request, env: Env): Promise<void> {
   await env.RATE_LIMIT.put(key, String(count + 1), {expirationTtl: 172800});
 }
 
+// Canonical compatibility issues live in the compatibility data repository, next to the reports.
 async function ensureCanonicalIssue(env: Env, cusaId: string, title: string): Promise<number> {
-  const issueRepo = "Bachata-S4";
+  const issueRepo = env.GITHUB_REPO;
   const search = await github(
     env,
     `/search/issues?q=${encodeURIComponent(`repo:${env.GITHUB_OWNER}/${issueRepo} is:issue in:title \"${cusaId}\"`)}`,
@@ -331,7 +332,7 @@ async function submit(request: Request, env: Env): Promise<Response> {
     const issueNumber = await ensureCanonicalIssue(env, cusaId, title);
     const game = {
       schemaVersion: 2, cusaId, title, region, publisher,
-      canonicalIssue: {repository: `${env.GITHUB_OWNER}/Bachata-S4`, number: issueNumber},
+      canonicalIssue: {repository: `${env.GITHUB_OWNER}/${env.GITHUB_REPO}`, number: issueNumber},
       legacyIssues: [],
     };
     files.push({path: gamePath, content: new TextEncoder().encode(JSON.stringify(game, null, 2) + "\n")});
