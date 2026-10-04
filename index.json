@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:04:58Z",
+  "generatedAt": "2026-10-04T16:05:58Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 52,
+  "gameCount": 53,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -603,6 +603,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03245/s_383b1a811dd94c82a947167e614a6a6e/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-30T21:14:03.028636Z"
+    },
+    {
+      "cusaId": "CUSA03280",
+      "title": "Uncharted™: Drake's Fortune Remastered",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 3.87,
+          "max": 3.87,
+          "average": 3.87,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-03T16:57:31.466882Z"
     },
     {
       "cusaId": "CUSA03694",
