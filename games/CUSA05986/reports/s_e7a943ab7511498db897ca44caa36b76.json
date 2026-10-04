@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e7a943ab7511498db897ca44caa36b76",
+  "cusaId": "CUSA05986",
+  "testedAt": "2026-10-02T01:47:04.077901Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.10",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23117RK66C",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA05986: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-ccce122e2bfd"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05986/s_e7a943ab7511498db897ca44caa36b76/logs/01-application.log.gz",
+        "sha256": "77ca082b842273adc1e7a41abf42bae6772eb9cd8f6a1889df307e215d4d1379",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05986/s_e7a943ab7511498db897ca44caa36b76/logs/02-shadps4.log.gz",
+        "sha256": "b557d2edd4da757790f30b4c6cfa5677d3714d47cf9075974274e56e051cf372",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
