@@ -54,7 +54,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "魔界戦記ディスガイア６: observed boots during this test session. Measured native FPS: 51.8. Recorded duration: 162s.No sound",
+    "summary": "Disgaea 6: observed boots during this test session. Measured native FPS: 51.8. Recorded duration: 162s.No sound",
     "notes": "",
     "issues": []
   },
@@ -76,17 +76,17 @@
       {
         "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/01.webp",
         "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
-        "caption": "魔界戦記ディスガイア６ — capture 1 · 2026-10-01T11:19:41.559Z"
+        "caption": "Disgaea 6 — capture 1 · 2026-10-01T11:19:41.559Z"
       },
       {
         "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/02.webp",
         "sha256": "42fa91416ddc02fae76d4a952ae4e4736d7a6892927d23efd242bcb0e1c0c695",
-        "caption": "魔界戦記ディスガイア６ — capture 2 · 2026-10-01T11:20:43.215Z"
+        "caption": "Disgaea 6 — capture 2 · 2026-10-01T11:20:43.215Z"
       },
       {
         "path": "assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
         "sha256": "a967bbc36b668327ee1842ba5e961e8edd3dd7ed09596726ca1efeb96530d823",
-        "caption": "魔界戦記ディスガイア６ — capture 3 · 2026-10-01T11:22:02.263Z"
+        "caption": "Disgaea 6 — capture 3 · 2026-10-01T11:22:02.263Z"
       }
     ],
     "diagnostics": [
