@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_1b99cf99e3d34ff4a06a701a887e46fa",
+  "cusaId": "CUSA15250",
+  "testedAt": "2026-09-30T19:47:53.175684Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.03",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "DELTARUNE Chapter 1&2: observed ingame during this test session. Measured native FPS: 29.2. Recorded duration: 162s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 29.19,
+    "testDurationSeconds": 162,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.02
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/01.webp",
+        "sha256": "bdd851796882051ac34d8a57772a02d5aa740dfa52571743b0d9f3d23330d0e4",
+        "caption": "DELTARUNE Chapter 1&2 — capture 1 · 2026-09-30T19:47:52.963Z"
+      },
+      {
+        "path": "assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/02.webp",
+        "sha256": "03b996bbac6d4ec76f507e33bc6e098c5df184ac9476df1a56df9454c2e84b74",
+        "caption": "DELTARUNE Chapter 1&2 — capture 2 · 2026-09-30T19:48:57.711Z"
+      },
+      {
+        "path": "assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
+        "sha256": "6ed0974eeb918aaae9a6985716c78d261971f538e1a792032836ff4d390261a0",
+        "caption": "DELTARUNE Chapter 1&2 — capture 3 · 2026-09-30T19:50:07.075Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/logs/01-application.log.gz",
+        "sha256": "6c4b00a586a30a1b47d91e66ef051835ea6ae03ca9dd121f124c6839380df070",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/logs/02-shadps4.log.gz",
+        "sha256": "1138934e2fda43b7dd452f3c78cf850d1eb677c4cf9b4721356b05bdfb659133",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

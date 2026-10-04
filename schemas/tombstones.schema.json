@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bachata S4 compatibility report tombstones",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "tombstones"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "tombstones": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reportId", "reason", "removedAt"],
+        "properties": {
+          "reportId": {"type": "string", "pattern": "^[A-Za-z0-9._-]+$"},
+          "reason": {"enum": ["legal", "privacy", "security", "abuse", "duplicate", "contributor-withdrawal"]},
+          "removedAt": {"type": "string", "format": "date-time"},
+          "publicNote": {"type": "string", "maxLength": 500}
+        }
+      }
+    }
+  }
+}

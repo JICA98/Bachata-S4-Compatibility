@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA05794",
+  "title": "Rise of the Tomb Raider",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 131
+  },
+  "legacyIssues": []
+}

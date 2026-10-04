@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+worker/node_modules/
+worker/public/

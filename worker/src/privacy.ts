@@ -1,0 +1,1 @@
+export const PRIVATE_PATTERN = /(content:\/\/|file:\/\/|\/storage\/emulated\/|\/data\/user\/|\/sdcard\/|ro\.serialno|android[_ -]?id|adb[_ -]?serial|mac[_ -]?address|BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|gh[pousr]_[A-Za-z0-9]{20,})/i;

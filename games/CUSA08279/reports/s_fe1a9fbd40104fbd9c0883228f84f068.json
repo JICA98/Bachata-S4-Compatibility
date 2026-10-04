@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_fe1a9fbd40104fbd9c0883228f84f068",
+  "cusaId": "CUSA08279",
+  "testedAt": "2026-09-30T22:19:20.983743Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "銀魂亂舞: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.38,
+    "testDurationSeconds": 223,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 54.15
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/01.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "銀魂亂舞 — capture 1 · 2026-09-30T22:19:20.919Z"
+      },
+      {
+        "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/02.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "銀魂亂舞 — capture 2 · 2026-09-30T22:20:25.655Z"
+      },
+      {
+        "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "銀魂亂舞 — capture 3 · 2026-09-30T22:21:29.279Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/logs/01-application.log.gz",
+        "sha256": "3a060f4a66763be47eeac418b125ad78d2071ee61dc2d427cd6e8da9515442e8",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/logs/02-shadps4.log.gz",
+        "sha256": "41d7f8c37412edb880b697c336e0013ab0d5d9286aee039c6561228c509f42bb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
