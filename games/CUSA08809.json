@@ -17,10 +17,10 @@
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 3.56,
+      "max": 3.56,
+      "average": 3.56,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -34,10 +34,10 @@
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 3.56,
+        "max": 3.56,
+        "average": 3.56,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     }
@@ -47,8 +47,79 @@
       "sm8735"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08809/s_4f74764c2bda45e8916cec8ba8cec1c5/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/02.webp",
   "reports": [
+    {
+      "reportId": "s_05a6d9cc4ceb460fb58a1215f6309ff4",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T10:42:18.780363Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.01",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47I",
+        "socId": "sm8735",
+        "socName": "SM8735",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 3.56,
+        "nativeOnePercentLowFps": 1.36,
+        "outputAverageFps": null,
+        "testDurationSeconds": 85,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA08809: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-6faed9b297a3",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/01.webp",
+          "caption": "SHADOW OF THE COLOSSUS™ — capture 1 · 2026-10-01T10:42:18.616Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/02.webp",
+          "caption": "SHADOW OF THE COLOSSUS™ — capture 2 · 2026-10-01T10:43:24.452Z"
+        }
+      ]
+    },
     {
       "reportId": "s_4f74764c2bda45e8916cec8ba8cec1c5",
       "schemaVersion": 2,
