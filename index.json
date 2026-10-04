@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:28:08Z",
+  "generatedAt": "2026-10-04T16:29:17Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 66,
+  "gameCount": 67,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1378,6 +1378,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-10-01T10:58:58.150664Z"
+    },
+    {
+      "cusaId": "CUSA19345",
+      "title": "Sonic Colors: Ultimate",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T01:07:14.540623Z"
     },
     {
       "cusaId": "CUSA20499",
