@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d48c9e8fcf024959b8b54edb02eb0c54",
+  "cusaId": "CUSA11909",
+  "testedAt": "2026-10-01T12:57:42.303117Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-6112f1820acedff2",
+    "type": "turnip",
+    "name": "Turnip驱动 Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-6112f1820acedff2",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA11909: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.43,
+    "testDurationSeconds": 68,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 53.98
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/01.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 1 · 2026-10-01T12:57:42.187Z"
+      },
+      {
+        "path": "assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+        "sha256": "740675020b6e9aca474713c1cf84bc7ee72c200d428e7bac9df32e7163b0b5f4",
+        "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 2 · 2026-10-01T12:58:46.071Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/logs/01-application.log.gz",
+        "sha256": "20f34bcc54a5da589167c5a3f47d747d00d2881ea84ff048646b4e78b06f66c2",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/logs/02-shadps4.log.gz",
+        "sha256": "e756425687ecc4604352a7efcc84662451b157285076a8f211739ef0f22182a0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

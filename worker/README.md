@@ -18,7 +18,7 @@ This Cloudflare Worker is the only public write gateway for in-app compatibility
 
 `wrangler.toml` contains non-secret defaults only. Configure these bindings/secrets in Cloudflare before production deployment:
 
-- `GITHUB_TOKEN` — secret. Prefer a GitHub App installation token or narrowly scoped fine-grained token. Required permissions: contents write + pull requests write on `Bachata-S4-Compatibility`, and issues write on the canonical public Bachata repository if automatic issue creation remains enabled.
+- `GITHUB_TOKEN` — secret. Prefer a GitHub App installation token or narrowly scoped fine-grained token. Required permissions: contents write + pull requests write on `Bachata-S4-Compatibility`, and issues write on the same repository for automatic canonical issue creation (`GITHUB_ISSUE_TOKEN`).
 - `GITHUB_OWNER` — normally `JICA98`.
 - `GITHUB_REPO` — normally `Bachata-S4-Compatibility`.
 - `GITHUB_BASE_BRANCH` — `feat/community-compatibility-v2` until v2 validation is on `main`.
