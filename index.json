@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:31:14Z",
+  "generatedAt": "2026-10-04T16:32:01Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 70,
+  "gameCount": 71,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -728,6 +728,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-03T16:57:31.466882Z"
+    },
+    {
+      "cusaId": "CUSA03282",
+      "title": "Uncharted 3: Drake's Deception™ Remastered",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.81,
+          "max": 21.81,
+          "average": 21.81,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T02:31:59.603602Z"
     },
     {
       "cusaId": "CUSA03694",
