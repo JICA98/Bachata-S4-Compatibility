@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b794e5f2ec1242d3a024607a32da0c24",
+  "cusaId": "CUSA03282",
+  "testedAt": "2026-10-02T02:31:59.603602Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2723",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Uncharted 3: Drake's Deception™ Remastered: observed boots during this test session. Measured native FPS: 21.8. Recorded duration: 20s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-fbac08647eb4"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 21.81,
+    "testDurationSeconds": 20,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03282/s_b794e5f2ec1242d3a024607a32da0c24/logs/01-application.log.gz",
+        "sha256": "4bf068c86cc780055c64d8ec1d83b2d8b271178bbc3fd288cb311449d9dd352d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03282/s_b794e5f2ec1242d3a024607a32da0c24/logs/02-shadps4.log.gz",
+        "sha256": "d86ca2168483380211eec29176c7e8d4526a35b291fdf06a5d920917a09c5e0d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
