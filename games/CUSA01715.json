@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 34,
+    "score": 32,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 20,
-    "testerCount": 20,
-    "deviceCount": 16,
+    "reportCount": 21,
+    "testerCount": 21,
+    "deviceCount": 17,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -24,6 +24,23 @@
     }
   },
   "socs": {
+    "mt6835": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
     "mt6878": {
       "score": 12,
       "status": "nothing",
@@ -426,6 +443,7 @@
   },
   "families": {
     "mali-g": [
+      "mt6835",
       "mt6878",
       "mt6897",
       "mt6899"
@@ -985,6 +1003,67 @@
           "caption": "God of War® III Remastered — capture 1 · 2026-10-03T11:58:08.239Z"
         }
       ]
+    },
+    {
+      "reportId": "s_2f25021faac444dfacb08349aa732033",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T11:25:32.557711Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2356",
+        "socId": "mt6835",
+        "socName": "MT6835",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 6
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-329b10ed6703",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_7d19dfa9f9f842c48cfe52c2b5c5ce75",
