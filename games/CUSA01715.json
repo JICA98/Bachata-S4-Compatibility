@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 45,
+    "score": 43,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 14,
-    "testerCount": 14,
-    "deviceCount": 12,
+    "reportCount": 15,
+    "testerCount": 15,
+    "deviceCount": 13,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -42,12 +42,12 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 44,
+      "score": 40,
       "status": "menus",
       "confidence": "medium",
-      "reportCount": 4,
-      "testerCount": 4,
-      "deviceCount": 3,
+      "reportCount": 5,
+      "testerCount": 5,
+      "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
@@ -406,8 +406,80 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_c62a7ad945f5476990a0670603e58d51/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_0e693a8c4b064052b78e523d834df9e2/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_0e693a8c4b064052b78e523d834df9e2",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T07:20:59.021139Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2737",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+        "notes": "not stating game",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-6379b5d07e57",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_0e693a8c4b064052b78e523d834df9e2/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-03T07:20:58.655Z"
+        }
+      ]
+    },
     {
       "reportId": "s_c62a7ad945f5476990a0670603e58d51",
       "schemaVersion": 2,
