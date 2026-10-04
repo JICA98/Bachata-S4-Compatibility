@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_176cab6164ec47f0b071154b873e21f9",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-02T06:05:50.155988Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47I",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-1280x720",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-66709964939d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 29.82,
+    "testDurationSeconds": 73,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.82
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_176cab6164ec47f0b071154b873e21f9/screenshots/01.webp",
+        "sha256": "793633da7c07d180a2a5d9a29aca228ced31b9bf0922e110cbd7363299ccb0e7",
+        "caption": "God of War® III Remastered — capture 1 · 2026-10-02T06:05:49.890Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_176cab6164ec47f0b071154b873e21f9/logs/01-application.log.gz",
+        "sha256": "c63a354376a54094f25376962b393d8dd4833b32be3f496d0722bce8504fad6d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_176cab6164ec47f0b071154b873e21f9/logs/02-shadps4.log.gz",
+        "sha256": "40b404e78a316315a46d4db972c280e82fd7df4144ab37f197887559da8fddeb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
