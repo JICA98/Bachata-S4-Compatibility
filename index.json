@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:47:00Z",
+  "generatedAt": "2026-10-04T15:47:43Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 43,
+  "gameCount": 44,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -803,6 +803,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:28:02Z"
+    },
+    {
+      "cusaId": "CUSA11909",
+      "title": "The Legend of Heroes: Trails of Cold Steel III",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.43,
+          "max": 59.43,
+          "average": 59.43,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T12:57:42.303117Z"
     },
     {
       "cusaId": "CUSA12781",
