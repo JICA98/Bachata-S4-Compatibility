@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_05a6d9cc4ceb460fb58a1215f6309ff4",
+  "cusaId": "CUSA08809",
+  "testedAt": "2026-10-01T10:42:18.780363Z",
+  "status": "boots",
+  "game": {
+    "version": "01.01",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47I",
+    "socId": "sm8735",
+    "socName": "SM8735",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA08809: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6faed9b297a3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 3.56,
+    "testDurationSeconds": 85,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.36
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "SHADOW OF THE COLOSSUS™ — capture 1 · 2026-10-01T10:42:18.616Z"
+      },
+      {
+        "path": "assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/02.webp",
+        "sha256": "7666c90a8cb1f06f4fc1a5ac4e879627525dda497ba04ba9ad5ba569188d0ad3",
+        "caption": "SHADOW OF THE COLOSSUS™ — capture 2 · 2026-10-01T10:43:24.452Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/logs/01-application.log.gz",
+        "sha256": "7d915174912d680df5adf79cb0371131fa4cdf6594a5011e2629b80c1478b8e6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/logs/02-shadps4.log.gz",
+        "sha256": "bd6664fb1576915b7e584f3e610f48420a84df15792a4423a5d9ea14baa784d5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
