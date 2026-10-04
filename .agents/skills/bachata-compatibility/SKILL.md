@@ -1,6 +1,6 @@
 ---
 name: bachata-compatibility
-description: Prepare, verify, and submit an evidence-backed Bachata S4 compatibility report for one intended Bachata version/source commit, one physical Android device, and one selected Vulkan driver. Reuse one canonical JICA98/Bachata-S4 issue per CUSA, store immutable report/evidence only in JICA98/Bachata-S4-Compatibility, and publish only after explicit user confirmation. The tested version may be released on GitHub later; never query GitHub Releases to choose or verify the latest release.
+description: Prepare, verify, and submit an evidence-backed Bachata S4 compatibility report for one intended Bachata version/source commit, one physical Android device, and one selected Vulkan driver. Reuse one canonical JICA98/Bachata-S4-Compatibility issue per CUSA, store immutable report/evidence in the same repository, and publish only after explicit user confirmation. The tested version may be released on GitHub later; never query GitHub Releases to choose or verify the latest release.
 ---
 
 # Bachata S4 compatibility report workflow
@@ -9,9 +9,9 @@ description: Prepare, verify, and submit an evidence-backed Bachata S4 compatibi
 
 Use the repositories according to their current roles:
 
-- `JICA98/Bachata-S4` `main`: release/community metadata and canonical compatibility issues. It is **not** the maintained emulator-core source checkout.
+- `JICA98/Bachata-S4` `main`: releases plus app bug and feature issues. Compatibility issues no longer live here. It is **not** the maintained emulator-core source checkout.
 - `JICA98/Bachata-S4` `gh-pages`: compatibility website/frontend and site/capture helper scripts. Its current Pages build reads `JICA98/Bachata-S4-Compatibility` directly and generates a real static page at `/games/CUSAxxxxx/` for each game.
-- `JICA98/Bachata-S4-Compatibility`: append-only compatibility metadata, immutable per-test JSON reports, screenshots, and logs.
+- `JICA98/Bachata-S4-Compatibility`: canonical compatibility issues (one per CUSA), compatibility metadata, immutable per-test JSON reports, screenshots, and logs.
 - The emulator source/build being tested comes from the development checkout supplied to the agent. Do not assume that checkout is `JICA98/Bachata-S4`, and do not clone the public release repository as a substitute for the tested source tree.
 
 The website is derived directly from compatibility data. Agents do **not** hand-create game pages, permalink files, archived-discussion pages, or site-specific compatibility records. A game report belongs in the compatibility repository; the Pages build generates the public per-game page. The website builder does not require agents to maintain `generated/` indexes.
@@ -23,7 +23,7 @@ The website is derived directly from compatibility data. Agents do **not** hand-
 3. Every report must identify the exact source commit used by the tested build. The report's `release.tag` is the intended Bachata version; its `release.commit` is the exact tested source/build commit.
 4. Do not fabricate or modify `data/releases.json` merely to make a pre-release report validate. Do not run release-sync logic on the user's behalf unless explicitly asked.
 5. Create the compatibility Git worktree **before** creating or changing report files.
-6. Search for or create exactly one canonical GitHub issue in `JICA98/Bachata-S4` per CUSA. The issue is for coordination; the website's generated game page is the public game page.
+6. Search for or create exactly one canonical GitHub issue in `JICA98/Bachata-S4-Compatibility` per CUSA. The issue is for coordination; the website's generated game page is the public game page.
 7. Existing report JSON and evidence are immutable. Never rewrite or delete an old test to represent a new run; add a new superseding report.
 8. Do not commit, push, open a pull request, change the final issue status, or comment the result until the user explicitly confirms the prepared report.
 9. Status is the furthest state actually observed: `playable`, `ingame`, `menus`, `boots`, or `nothing`. When uncertain, choose the lower status.
@@ -98,13 +98,13 @@ All compatibility-repository scripts after this point run from `$COMPAT_WORKTREE
 Ensure the shared label taxonomy exists:
 
 ```bash
-"$COMPAT_WORKTREE/scripts/setup_labels.sh" JICA98/Bachata-S4
+"$COMPAT_WORKTREE/scripts/setup_labels.sh" JICA98/Bachata-S4-Compatibility
 ```
 
 Search open and closed issues by exact CUSA. Match the `[CUSAxxxxx]` title prefix exactly; never accept a substring match or create a second issue for the same CUSA.
 
 ```bash
-ISSUE_NUMBER="$(gh issue list --repo JICA98/Bachata-S4 \
+ISSUE_NUMBER="$(gh issue list --repo JICA98/Bachata-S4-Compatibility \
   --state all --search "\"$CUSA\" in:title" --json number,title \
   --jq ".[] | select(.title | test(\"^\\\\[$CUSA\\\\]( |$)\")) | .number" | head -n1)"
 ```
@@ -113,14 +113,14 @@ Create an issue only when no exact match exists:
 
 ```bash
 if [[ -z "$ISSUE_NUMBER" ]]; then
-  ISSUE_URL="$(gh issue create --repo JICA98/Bachata-S4 \
+  ISSUE_URL="$(gh issue create --repo JICA98/Bachata-S4-Compatibility \
     --title "[$CUSA] $GAME_TITLE" \
     --label "type:compatibility,triage:new,status:testing" \
-    --body "Compatibility tracking for **$GAME_TITLE** ($CUSA). Confirmed device/driver/version tests are stored as immutable reports in JICA98/Bachata-S4-Compatibility.")"
+    --body "Compatibility tracking for **$GAME_TITLE** ($CUSA). Confirmed device/driver/version tests are stored as immutable reports in this repository.")"
   ISSUE_NUMBER="${ISSUE_URL##*/}"
 else
   # Keep the existing best confirmed status label while a new run is in progress.
-  gh issue edit "$ISSUE_NUMBER" --repo JICA98/Bachata-S4 \
+  gh issue edit "$ISSUE_NUMBER" --repo JICA98/Bachata-S4-Compatibility \
     --add-label "type:compatibility"
 fi
 ```
@@ -128,7 +128,7 @@ fi
 Read the issue and existing reports before testing so the new run addresses known blockers:
 
 ```bash
-gh issue view "$ISSUE_NUMBER" --repo JICA98/Bachata-S4 --comments
+gh issue view "$ISSUE_NUMBER" --repo JICA98/Bachata-S4-Compatibility --comments
 find "$COMPAT_WORKTREE/games/$CUSA/reports" -maxdepth 1 -name '*.json' -print 2>/dev/null | sort
 ```
 
@@ -215,7 +215,7 @@ python3 scripts/add_report.py \
   --region US \
   --publisher "Publisher" \
   --issue-number "$ISSUE_NUMBER" \
-  --issue-repository JICA98/Bachata-S4 \
+  --issue-repository JICA98/Bachata-S4-Compatibility \
   --status ingame \
   --game-version "01.00" \
   --release-tag "$BACHATA_RELEASE" \
@@ -293,7 +293,7 @@ assert r['cusaId'] == cusa
 assert r['release']['tag'] == tag
 assert r['release']['commit'].lower() == commit.lower()
 assert str(r['issueNumber']) == str(issue)
-assert r.get('issueRepository', 'JICA98/Bachata-S4') == 'JICA98/Bachata-S4'
+assert r.get('issueRepository') == 'JICA98/Bachata-S4-Compatibility'
 shots = r['evidence']['screenshots']
 logs = r['evidence']['logs']
 assert 1 <= len(shots) <= 3
@@ -401,7 +401,7 @@ Open the PR only after the local compatibility index contains the intended tag a
 PR_URL="$(gh pr create --repo JICA98/Bachata-S4-Compatibility \
   --base main --head "$REPORT_BRANCH" \
   --title "compat($CUSA): $GAME_TITLE on $BACHATA_RELEASE" \
-  --body "Canonical issue: https://github.com/JICA98/Bachata-S4/issues/$ISSUE_NUMBER
+  --body "Canonical issue: https://github.com/JICA98/Bachata-S4-Compatibility/issues/$ISSUE_NUMBER
 
 - Status: <status>
 - Device: $DEVICE_LABEL
@@ -441,7 +441,7 @@ for screenshot_path in "${ISSUE_SCREENSHOTS[@]}"; do
     "$REPORT_COMMIT" "$encoded_path" >> "$ISSUE_COMMENT"
 done
 
-gh issue comment "$ISSUE_NUMBER" --repo JICA98/Bachata-S4 \
+gh issue comment "$ISSUE_NUMBER" --repo JICA98/Bachata-S4-Compatibility \
   --body-file "$ISSUE_COMMENT"
 rm -f "$ISSUE_COMMENT"
 ```
