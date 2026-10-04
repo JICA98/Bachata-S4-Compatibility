@@ -247,6 +247,39 @@
         "MT6899",
         "Dimensity 8400"
       ]
+    },
+    "mt6835": {
+      "name": "Dimensity 6100+",
+      "vendor": "MediaTek",
+      "gpu": "Mali-G57 MC2",
+      "family": "mali-g",
+      "aliases": [
+        "MT6835",
+        "Dimensity 6100+",
+        "Dimensity 6100 Plus",
+        "Dimensity 6300",
+        "Dimensity 6400"
+      ]
+    },
+    "sm6375": {
+      "name": "Snapdragon 695",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 619",
+      "family": "adreno6",
+      "aliases": [
+        "SM6375",
+        "Snapdragon 695"
+      ]
+    },
+    "s5e9945": {
+      "name": "Exynos 2400",
+      "vendor": "Samsung",
+      "gpu": "Xclipse 940",
+      "family": "xclipse",
+      "aliases": [
+        "S5E9945",
+        "Exynos 2400"
+      ]
     }
   }
 }
