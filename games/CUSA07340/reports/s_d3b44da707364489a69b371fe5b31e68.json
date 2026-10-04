@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d3b44da707364489a69b371fe5b31e68",
+  "cusaId": "CUSA07340",
+  "testedAt": "2026-10-02T02:41:13.900253Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23117RK66C",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Dragon's Dogma: Dark Arisen: observed ingame during this test session. Measured native FPS: 21.8. Recorded duration: 220s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-ccce122e2bfd"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 21.27,
+    "testDurationSeconds": 255,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 15.49
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/01.webp",
+        "sha256": "67b7d1130750120ff97a3c1a5c19f22d76bff07eab0404414a452b0ef0d6de4f",
+        "caption": "Dragon's Dogma: Dark Arisen — capture 1 · 2026-10-02T02:41:13.665Z"
+      },
+      {
+        "path": "assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/02.webp",
+        "sha256": "640a3241e6aaec10ae9201fbff5e2cf96648f50e6dac5b353911a9f3a6374b6c",
+        "caption": "Dragon's Dogma: Dark Arisen — capture 2 · 2026-10-02T02:42:35.913Z"
+      },
+      {
+        "path": "assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/screenshots/03.webp",
+        "sha256": "131a93d3edce291c1a999dd3e1b715760993be5b3db0c64c9a441adae4d461d8",
+        "caption": "Dragon's Dogma: Dark Arisen — capture 3 · 2026-10-02T02:44:18.025Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/logs/01-application.log.gz",
+        "sha256": "ac773e0bd052ac53b4aa652abb6ef8de5f97f1ca9c295098419ff6c36d80f2fe",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07340/s_d3b44da707364489a69b371fe5b31e68/logs/02-shadps4.log.gz",
+        "sha256": "8978f1df8354e9de65a85413fa3f81a4f0e8d4b9173ccebe7e430e86c26f9c32",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
