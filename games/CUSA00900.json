@@ -8,19 +8,19 @@
     "publisher": "Sony Computer Entertainment"
   },
   "general": {
-    "score": 58,
-    "status": "menus",
+    "score": 75,
+    "status": "ingame",
     "confidence": "medium",
-    "reportCount": 3,
-    "testerCount": 3,
-    "deviceCount": 2,
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 1,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 14.19,
+      "min": 27.17,
       "max": 28.83,
-      "average": 23.4,
-      "sampleCount": 3
+      "average": 28.0,
+      "sampleCount": 2
     }
   },
   "socs": {
@@ -177,23 +177,6 @@
         },
         "patches": []
       }
-    },
-    "sm8850": {
-      "score": 25,
-      "status": "boots",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
-      "performance": {
-        "min": 14.19,
-        "max": 14.19,
-        "average": 14.19,
-        "sampleCount": 1
-      },
-      "recommendedSetup": null
     }
   },
   "families": {
@@ -201,86 +184,11 @@
       "sm8650"
     ],
     "adreno8": [
-      "sm8750",
-      "sm8850"
+      "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260928T035042005Z-cusa00900-65dca6ab39/screenshots/03.webp",
   "reports": [
-    {
-      "reportId": "s_8b84f8655c304ceb803e6e06ee0cda9e",
-      "schemaVersion": 2,
-      "testedAt": "2026-10-01T20:55:54.796587Z",
-      "status": "boots",
-      "release": {
-        "tag": "v0.2.4",
-        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
-      },
-      "gameVersion": "01.00",
-      "device": {
-        "manufacturer": "nubia",
-        "model": "NX809J",
-        "socId": "sm8850",
-        "socName": "Snapdragon 8 Elite Gen 5",
-        "gpu": "Adreno 840",
-        "androidVersion": "16",
-        "ramBucketGb": 16
-      },
-      "driver": {
-        "id": "turnip-77f4435ceb1944c3",
-        "type": "turnip",
-        "name": "Turnip gen8 v5",
-        "version": "gen8-v5",
-        "build": "77f4435ceb1944c3"
-      },
-      "config": {
-        "requiredOverrides": {
-          "gpu.readbacks_mode": 0
-        },
-        "driverId": "turnip-77f4435ceb1944c3",
-        "guestBackend": "FEX",
-        "frameGenerationMode": "OFF",
-        "fexPreset": "PERFORMANCE",
-        "adrenoTurboMode": true,
-        "bigCoreAffinity": false,
-        "maliGpuOptimizations": false
-      },
-      "patches": [],
-      "performance": {
-        "nativeAverageFps": 14.19,
-        "nativeOnePercentLowFps": 9.53,
-        "outputAverageFps": null,
-        "testDurationSeconds": 297,
-        "framePacing": "stuttery"
-      },
-      "result": {
-        "summary": "Bloodborne: observed boots during this test session. Measured native FPS: 14.2. Recorded duration: 297s.",
-        "notes": "",
-        "issues": []
-      },
-      "contributor": {
-        "publicId": "tester-47ec8f290e8f",
-        "displayName": null
-      },
-      "provenance": {
-        "captureType": "app-captured",
-        "appBuild": "0.2.4"
-      },
-      "screenshots": [
-        {
-          "url": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/01.webp",
-          "caption": "Bloodborne — capture 1 · 2026-10-01T20:55:54.337Z"
-        },
-        {
-          "url": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/02.webp",
-          "caption": "Bloodborne — capture 2 · 2026-10-01T20:57:20.009Z"
-        },
-        {
-          "url": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/03.webp",
-          "caption": "Bloodborne — capture 3 · 2026-10-01T20:58:23.525Z"
-        }
-      ]
-    },
     {
       "reportId": "20260928T035042005Z-cusa00900-65dca6ab39",
       "schemaVersion": 2,
