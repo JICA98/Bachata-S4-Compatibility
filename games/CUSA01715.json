@@ -822,6 +822,73 @@
       "screenshots": []
     },
     {
+      "reportId": "s_140aa165c37141b2bf637738c048331a",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T02:59:45.881503Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2410CRP4CG",
+        "socId": "sm7675",
+        "socName": "Snapdragon 7+ Gen 3",
+        "gpu": "Adreno 732",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d7528180d915",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
+    {
       "reportId": "s_ca389e91c2014cd098f707a0b2c9ee7a",
       "schemaVersion": 2,
       "testedAt": "2026-10-04T00:50:50.613338Z",
