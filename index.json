@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:47:43Z",
+  "generatedAt": "2026-10-04T15:48:26Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 44,
+  "gameCount": 45,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1103,6 +1103,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-03T05:05:50.085972Z"
+    },
+    {
+      "cusaId": "CUSA57220",
+      "title": "EA SPORTS FC 27",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA57220/s_c9dadf1feb214f998e1bbd9e22152bfa/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T15:01:45.846184Z"
     }
   ]
 }
