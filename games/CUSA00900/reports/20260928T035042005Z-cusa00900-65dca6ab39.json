@@ -9,7 +9,7 @@
     "region": "Unknown"
   },
   "release": {
-    "tag": "unreleased",
+    "tag": "v0.2.4",
     "commit": "9bb192859a6996b576584ed591526c4121ebb20f"
   },
   "device": {
