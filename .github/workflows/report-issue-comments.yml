@@ -1,0 +1,37 @@
+name: Post reports to game issues
+on:
+  push:
+    branches: [feat/community-compatibility-v2]
+    paths: ["games/*/reports/*.json"]
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: Post every report that is not on its issue yet
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: report-issue-comments
+  cancel-in-progress: false
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      # Manual runs start from main (the default branch); the script and reports live on the data branch.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.sha || 'feat/community-compatibility-v2' }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Comment new reports on their canonical issues
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.backfill }}" = "true" ]; then
+            python3 scripts/comment_report_issues.py --all
+          else
+            python3 scripts/comment_report_issues.py --before "${{ github.event.before }}" --after "${{ github.sha }}"
+          fi
