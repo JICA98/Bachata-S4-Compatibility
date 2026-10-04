@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 32,
+    "score": 29,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 11,
-    "testerCount": 11,
-    "deviceCount": 10,
+    "reportCount": 12,
+    "testerCount": 12,
+    "deviceCount": 11,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -61,6 +61,23 @@
     "mt6985": {
       "score": 25,
       "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
+    "mt6991": {
+      "score": 0,
+      "status": "nothing",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
@@ -318,7 +335,8 @@
       "mt6899"
     ],
     "mali-immortalis": [
-      "mt6985"
+      "mt6985",
+      "mt6991"
     ],
     "xclipse": [
       "s5e9945"
@@ -942,6 +960,69 @@
           "caption": "God of War® III Remastered — capture 3 · 2026-10-02T10:36:46.776Z"
         }
       ]
+    },
+    {
+      "reportId": "s_103cdfee455a4a4c83138d6aa4511cd5",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T07:45:40.246285Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2413",
+        "socId": "mt6991",
+        "socName": "Dimensity 9400",
+        "gpu": "Immortalis-G925",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "vulkan.vkcrash_diagnostic_enabled": true
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-4ae0512b15b7",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_176cab6164ec47f0b071154b873e21f9",

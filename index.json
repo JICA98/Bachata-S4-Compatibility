@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:32:01Z",
+  "generatedAt": "2026-10-04T16:32:40Z",
   "currentRelease": "v0.2.4",
   "gameCount": 71,
   "games": [
@@ -433,12 +433,12 @@
       "cusaId": "CUSA01623",
       "title": "God of War® III Remastered",
       "general": {
-        "score": 32,
+        "score": 29,
         "status": "boots",
         "confidence": "medium",
-        "reportCount": 11,
-        "testerCount": 11,
-        "deviceCount": 10,
+        "reportCount": 12,
+        "testerCount": 12,
+        "deviceCount": 11,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
@@ -448,8 +448,8 @@
           "sampleCount": 8
         }
       },
-      "reportCount": 11,
-      "socCount": 9,
+      "reportCount": 12,
+      "socCount": 10,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_f0aca83cabc443f083ec5cc6fd12b3cd/screenshots/03.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-04T15:35:11.545920Z"
