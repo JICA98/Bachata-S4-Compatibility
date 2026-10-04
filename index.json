@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:42:34Z",
+  "generatedAt": "2026-10-04T15:43:24Z",
   "currentRelease": "v0.2.4",
   "gameCount": 41,
   "games": [
@@ -183,26 +183,26 @@
       "cusaId": "CUSA00900",
       "title": "Bloodborne",
       "general": {
-        "score": 75,
-        "status": "ingame",
+        "score": 58,
+        "status": "menus",
         "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
-        "deviceCount": 1,
+        "reportCount": 3,
+        "testerCount": 3,
+        "deviceCount": 2,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 27.17,
+          "min": 14.19,
           "max": 28.83,
-          "average": 28.0,
-          "sampleCount": 2
+          "average": 23.4,
+          "sampleCount": 3
         }
       },
-      "reportCount": 5,
-      "socCount": 2,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260928T035042005Z-cusa00900-65dca6ab39/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-09-28T03:45:37.470822Z"
+      "reportCount": 6,
+      "socCount": 3,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T20:55:54.796587Z"
     },
     {
       "cusaId": "CUSA01022",
