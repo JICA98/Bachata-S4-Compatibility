@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 50,
+    "score": 48,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 11,
-    "testerCount": 11,
-    "deviceCount": 10,
+    "reportCount": 12,
+    "testerCount": 12,
+    "deviceCount": 11,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -25,12 +25,12 @@
   },
   "socs": {
     "mt6878": {
-      "score": 0,
+      "score": 12,
       "status": "nothing",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
@@ -388,8 +388,105 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_4c3c5c8b0067478cb2343eeb9a2b9936/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_4c3c5c8b0067478cb2343eeb9a2b9936",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T16:59:11.048405Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Nothing",
+        "model": "A015",
+        "socId": "mt6878",
+        "socName": "Dimensity 7300",
+        "gpu": "Mali-G615 MC2",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "game screen shot only 15 sec then exite",
+        "issues": [
+          "game-settings-exit-me"
+        ]
+      },
+      "contributor": {
+        "publicId": "tester-9d04cfe6cc2d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_4c3c5c8b0067478cb2343eeb9a2b9936/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-02T16:59:10.740Z"
+        }
+      ]
+    },
     {
       "reportId": "s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5",
       "schemaVersion": 2,
