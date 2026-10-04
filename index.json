@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:12:52Z",
+  "generatedAt": "2026-10-04T16:13:36Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 57,
+  "gameCount": 58,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -128,6 +128,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-06T11:17:20Z"
+    },
+    {
+      "cusaId": "CUSA00239",
+      "title": "The Amazing Spider-Man 2™",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T13:12:03.138256Z"
     },
     {
       "cusaId": "CUSA00265",
