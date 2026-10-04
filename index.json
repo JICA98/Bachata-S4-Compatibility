@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:36:27Z",
+  "generatedAt": "2026-10-04T15:37:11Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 39,
+  "gameCount": 40,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -928,6 +928,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-09-30T19:46:44.284512Z"
+    },
+    {
+      "cusaId": "CUSA24100",
+      "title": "SAMURAI WARRIORS 5",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA24100/s_47711488f77042b9b465850f4f3a555e/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T07:09:52.584593Z"
     },
     {
       "cusaId": "CUSA40582",
