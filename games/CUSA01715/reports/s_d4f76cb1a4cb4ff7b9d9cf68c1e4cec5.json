@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-02T07:36:04.570024Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2501",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "God of War® III Remastered: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-53c5a66a2b87"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/screenshots/01.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "God of War® III Remastered — capture 1 · 2026-10-02T07:36:04.350Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/logs/01-application.log.gz",
+        "sha256": "e0e074851ada7152cc3a53ea83b51f127a93553e109e2c2eb0a0b0a625dee5a8",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/logs/02-shadps4.log.gz",
+        "sha256": "0318726b9b2e980ea6508a87d262900d9a8c2499231f26ebe5dda355a6088a1d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
