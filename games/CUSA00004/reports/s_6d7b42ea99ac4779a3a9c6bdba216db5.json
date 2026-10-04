@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_6d7b42ea99ac4779a3a9c6bdba216db5",
+  "cusaId": "CUSA00004",
+  "testedAt": "2026-10-01T03:26:14.624490Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23117RK66C",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 2,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 2
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-depth-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "render-resolution-1280x720",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-intro-movie",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-depth-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "unverified-render-resolution-1280x720",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "inFAMOUS™ Second Son: observed ingame during this test session. Measured native FPS: 10.2. Recorded duration: 208s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-110086357361"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 10.15,
+    "testDurationSeconds": 208,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 2.88
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/01.webp",
+        "sha256": "1e2bd2a4b67c64e1d85605e051311651092b94b3332538060f6037bd8caeed9c",
+        "caption": "inFAMOUS™ Second Son — capture 1 · 2026-10-01T03:26:14.482Z"
+      },
+      {
+        "path": "assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/02.webp",
+        "sha256": "bae9964ac0a43eb850e600bf1889ae46414d6ff0c8c2cb254c425794c2c141c6",
+        "caption": "inFAMOUS™ Second Son — capture 2 · 2026-10-01T03:27:50.930Z"
+      },
+      {
+        "path": "assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/screenshots/03.webp",
+        "sha256": "f0116db0def15bcfea1d73bc1abcedc9d48e8a47f21a5dbd915b315e2cd5e1b0",
+        "caption": "inFAMOUS™ Second Son — capture 3 · 2026-10-01T03:28:59.278Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/logs/01-application.log.gz",
+        "sha256": "4341af2cc733760f68b5f9f61e10a8363343d74c945633c1ba69dd770360434b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00004/s_6d7b42ea99ac4779a3a9c6bdba216db5/logs/02-shadps4.log.gz",
+        "sha256": "dc16d129e606bffff1a8e76fe296c1458845999188a7297fa679e7e2a06e62df",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

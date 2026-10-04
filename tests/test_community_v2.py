@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from scoring import aggregate, confidence, dedupe_reports, latest_release_tag, recommended_setup, score_to_status
-from build_app_data import canonical_soc, load_soc_registry, safe_report
+from scoring import aggregate, aggregate_latest, confidence, dedupe_reports, latest_release_tag, recommended_setup, score_to_status
+from build_app_data import canonical_soc, load_soc_registry, safe_report, safe_screenshots
 from validate_v2 import validate_report_v2
 
 
@@ -240,6 +240,61 @@ class ScoringTests(unittest.TestCase):
         setup = recommended_setup(reports, "v0.2.0", "sm7475")
         self.assertIsNotNone(setup)
         self.assertEqual(setup["label"], "community-recommended")
+
+
+class LatestScoreTests(unittest.TestCase):
+    INDEX = {"releases": [
+        {"tag": "0.2.3", "publishedAt": "2026-09-21T00:00:00Z", "latest": True, "prerelease": False},
+        {"tag": "v0.2.0", "publishedAt": "2026-09-07T00:00:00Z", "prerelease": False},
+    ]}
+
+    def test_v_prefix_does_not_hide_current_reports(self) -> None:
+        result = aggregate_latest([report("cur", release="v0.2.3", status="playable")], "0.2.3", self.INDEX)
+        self.assertTrue(result["hasCurrentReports"])
+        self.assertEqual(result["score"], 100)
+
+    def test_unreleased_app_capture_counts_for_its_app_build(self) -> None:
+        value = report("dev", release="unreleased", status="boots")
+        value["provenance"]["appBuild"] = "0.2.3"
+        result = aggregate_latest([value], "0.2.3", self.INDEX)
+        self.assertTrue(result["hasCurrentReports"])
+        self.assertEqual(result["score"], 25)
+
+    def test_unreleased_manual_report_is_not_counted(self) -> None:
+        value = report("manual", release="unreleased", capture="structured-manual")
+        value["provenance"]["appBuild"] = "0.2.3"
+        self.assertIsNone(aggregate_latest([value], "0.2.3", self.INDEX)["score"])
+
+    def test_previous_release_score_is_labelled_not_current(self) -> None:
+        result = aggregate_latest([report("old", release="v0.2.0", status="ingame")], "0.2.3", self.INDEX)
+        self.assertFalse(result["hasCurrentReports"])
+        self.assertEqual(result["score"], 75)
+        self.assertEqual(result["releaseTag"], "v0.2.0")
+
+    def test_current_reports_win_over_older_releases(self) -> None:
+        reports = [report("old", release="v0.2.0", status="playable", tester="a"),
+                   report("new", release="0.2.3", status="nothing", tester="b")]
+        result = aggregate_latest(reports, "0.2.3", self.INDEX)
+        self.assertEqual((result["score"], result["releaseTag"]), (0, "0.2.3"))
+
+    def test_release_outside_index_uses_newest_tagged_report(self) -> None:
+        reports = [report("a", release="v0.1.5", tested_at="2026-07-01T00:00:00Z", status="boots"),
+                   report("b", release="v0.1.6", tested_at="2026-08-01T00:00:00Z", status="ingame", tester="b")]
+        result = aggregate_latest(reports, "0.2.3", self.INDEX)
+        self.assertEqual((result["releaseTag"], result["score"]), ("v0.1.6", 75))
+
+
+class ScreenshotTests(unittest.TestCase):
+    def test_only_committed_screenshot_paths_are_published(self) -> None:
+        value = {"evidence": {"screenshots": [
+            {"path": "assets/CUSA00900/r1/screenshots/01.webp", "caption": "Menu"},
+            {"path": "assets/CUSA00900/r1/logs/01.log.gz"},
+            {"path": "assets/CUSA00900/../x/screenshots/02.webp"},
+            {"url": "https://example.com/evil.webp"},
+        ]}}
+        self.assertEqual(safe_screenshots(value), [
+            {"url": "https://bachatas4.games/evidence/assets/CUSA00900/r1/screenshots/01.webp", "caption": "Menu"},
+        ])
 
 
 class SocTests(unittest.TestCase):
