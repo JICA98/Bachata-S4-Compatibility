@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4e49dd5279b54e6191189c5e8d6f236e",
+  "cusaId": "CUSA12781",
+  "testedAt": "2026-10-01T15:59:19.969820Z",
+  "status": "playable",
+  "game": {
+    "version": "01.09",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB321FU",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Fist of the North Star: Lost Paradise: observed playable during this test session. Measured native FPS: 33.9. Recorded duration: 428s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-590bc974f3b3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 33.9,
+    "testDurationSeconds": 428,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 2.12
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/screenshots/01.webp",
+        "sha256": "b822eeaa8682e10513605d8f6004ff70b2e690eb9bbc70ba7cb46e911ab23cac",
+        "caption": "Fist of the North Star: Lost Paradise — capture 1 · 2026-10-01T15:59:19.733Z"
+      },
+      {
+        "path": "assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/screenshots/02.webp",
+        "sha256": "0933195035304e1eed9fa692bf7d9707c07eaab5e9f20558a0842134a908f034",
+        "caption": "Fist of the North Star: Lost Paradise — capture 2 · 2026-10-01T16:01:12.505Z"
+      },
+      {
+        "path": "assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/screenshots/03.webp",
+        "sha256": "fc75813f76d05b3b69396078a81113d4fc7f8789b87c2730476ae2cd7102a40e",
+        "caption": "Fist of the North Star: Lost Paradise — capture 3 · 2026-10-01T16:02:14.769Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/logs/01-application.log.gz",
+        "sha256": "ad0949c02cfc5dfe8f4513b8f15f40ed1157effde0c7c3dedaa85c715645cf33",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12781/s_4e49dd5279b54e6191189c5e8d6f236e/logs/02-shadps4.log.gz",
+        "sha256": "b03371d89c8f7450c765d0309ef0b937cf7461e3f9dcab1b8b6cdcd8edeb598b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
