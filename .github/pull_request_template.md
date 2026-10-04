@@ -1,7 +1,7 @@
 ## Compatibility report
 
 - CUSA:
-- Canonical issue repository: JICA98/Bachata-S4
+- Canonical issue repository: JICA98/Bachata-S4-Compatibility
 - Canonical issue number: Closes/Updates #
 - Bachata release:
 - Selected device:

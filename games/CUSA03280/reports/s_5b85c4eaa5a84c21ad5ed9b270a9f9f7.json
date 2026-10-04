@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5b85c4eaa5a84c21ad5ed9b270a9f9f7",
+  "cusaId": "CUSA03280",
+  "testedAt": "2026-10-03T16:57:31.466882Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "22021211RI",
+    "socId": "sm8250",
+    "socName": "SM8250",
+    "gpu": "Unknown",
+    "androidVersion": "14",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-3d143841fb3ddd09",
+    "type": "turnip",
+    "name": "Turnip mojo-25.0 v2",
+    "version": "mojo-25.0-v2",
+    "build": "25.0.7",
+    "source": "JICA98/bachata-s4-drivers mojo-25.0-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-3d143841fb3ddd09",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Uncharted™: Drake's Fortune Remastered: observed boots during this test session. Measured native FPS: 3.9. Recorded duration: 449s.",
+    "notes": "game full lag not play game fix and playble game my poco F4 device",
+    "issues": [
+      "fps-6-around"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-d839c1c5781e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 3.87,
+    "testDurationSeconds": 449,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.25
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/01.webp",
+        "sha256": "c61f8fd060ca2a98f95652ff8e6546d4d91efb2b45c65280c44af32b0deb5eb2",
+        "caption": "Uncharted™: Drake's Fortune Remastered — capture 1 · 2026-10-03T16:57:31.190Z"
+      },
+      {
+        "path": "assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/02.webp",
+        "sha256": "f22e1a93eba91832378b1e3abb22768fa21f0ab93b90cfdf844a41c6a13a41a8",
+        "caption": "Uncharted™: Drake's Fortune Remastered — capture 2 · 2026-10-03T16:58:43.138Z"
+      },
+      {
+        "path": "assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/03.webp",
+        "sha256": "0b341829f8118ef0529ad20e29d05ed4e6f8120006fa7d110c755f226ab6dd4c",
+        "caption": "Uncharted™: Drake's Fortune Remastered — capture 3 · 2026-10-03T17:00:52.362Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/logs/01-application.log.gz",
+        "sha256": "6d22cf4ef1c92349ee6dfbbc458288ed918f3bdc9db2f2e806ea9fac3deac789",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/logs/02-shadps4.log.gz",
+        "sha256": "6d948bef5de757da32653e1f369d95cd946eaed10fbf6a43c0649a65dd72a2f0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
