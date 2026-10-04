@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Red Alert costume pack: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
+    "summary": "Transformers: Devastation: observed playable during this test session. Measured native FPS: 50.8. Recorded duration: 621s.",
     "notes": "",
     "issues": []
   },
@@ -77,17 +77,17 @@
       {
         "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/01.webp",
         "sha256": "c6c7151a2af2259a6823d605e347d2679c280973d766c57c147477ae97a31004",
-        "caption": "Red Alert costume pack — capture 1 · 2026-10-01T14:55:48.737Z"
+        "caption": "Transformers: Devastation — capture 1 · 2026-10-01T14:55:48.737Z"
       },
       {
         "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/02.webp",
         "sha256": "402ab83808cd62541aaed7d50ced5d64c853fe012d4acf5eb809d8fcb87ddc88",
-        "caption": "Red Alert costume pack — capture 2 · 2026-10-01T14:57:01.877Z"
+        "caption": "Transformers: Devastation — capture 2 · 2026-10-01T14:57:01.877Z"
       },
       {
         "path": "assets/CUSA01410/s_ed490b36feda4e319f27a13ba310e71f/screenshots/03.webp",
         "sha256": "32f14068ab051653030b13dcc0e557f30880d30d084ac2855effd80d74c3b10e",
-        "caption": "Red Alert costume pack — capture 3 · 2026-10-01T14:59:43.617Z"
+        "caption": "Transformers: Devastation — capture 3 · 2026-10-01T14:59:43.617Z"
       }
     ],
     "diagnostics": [
