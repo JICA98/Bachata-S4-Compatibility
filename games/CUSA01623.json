@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 45,
+    "score": 42,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 5,
-    "testerCount": 5,
-    "deviceCount": 5,
+    "reportCount": 6,
+    "testerCount": 6,
+    "deviceCount": 6,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 11.27,
       "max": 40.09,
-      "average": 25.95,
-      "sampleCount": 4
+      "average": 26.72,
+      "sampleCount": 5
     }
   },
   "socs": {
@@ -133,6 +133,23 @@
         ]
       }
     },
+    "sm8735": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.82,
+        "max": 29.82,
+        "average": 29.82,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    },
     "sm8750": {
       "score": 75,
       "status": "ingame",
@@ -231,6 +248,7 @@
       "sm8635"
     ],
     "adreno8": [
+      "sm8735",
       "sm8750"
     ]
   },
@@ -410,6 +428,110 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_15066197ead64f679a067f76dae0c068/screenshots/01.webp",
           "caption": "God of War® III Remastered — capture 1 · 2026-10-04T13:47:23.153Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_176cab6164ec47f0b071154b873e21f9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T06:05:50.155988Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47I",
+        "socId": "sm8735",
+        "socName": "Snapdragon 8s Gen 4",
+        "gpu": "Adreno 825",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-1280x720",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 29.82,
+        "nativeOnePercentLowFps": 4.82,
+        "outputAverageFps": null,
+        "testDurationSeconds": 73,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-66709964939d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_176cab6164ec47f0b071154b873e21f9/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-02T06:05:49.890Z"
         }
       ]
     },
