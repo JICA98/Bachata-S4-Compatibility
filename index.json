@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:37:11Z",
+  "generatedAt": "2026-10-04T15:37:56Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 40,
+  "gameCount": 41,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -153,6 +153,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-02T02:37:57.363740Z"
+    },
+    {
+      "cusaId": "CUSA00897",
+      "title": "inFAMOUS™ First Light",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 44.33,
+          "max": 44.33,
+          "average": 44.33,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T08:59:48.982871Z"
     },
     {
       "cusaId": "CUSA00900",
