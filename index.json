@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:43:24Z",
+  "generatedAt": "2026-10-04T15:45:42Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 41,
+  "gameCount": 42,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -753,6 +753,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T04:36:08Z"
+    },
+    {
+      "cusaId": "CUSA08809",
+      "title": "SHADOW OF THE COLOSSUS™",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08809/s_4f74764c2bda45e8916cec8ba8cec1c5/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T10:40:22.252212Z"
     },
     {
       "cusaId": "CUSA10454",
