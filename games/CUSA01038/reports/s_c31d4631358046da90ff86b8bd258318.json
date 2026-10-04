@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c31d4631358046da90ff86b8bd258318",
+  "cusaId": "CUSA01038",
+  "testedAt": "2026-10-01T10:53:18.592687Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-6112f1820acedff2",
+    "type": "turnip",
+    "name": "Turnip驱动 Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-6112f1820acedff2",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "AKIBA'S TRIP 2: observed ingame during this test session. Measured native FPS: 29.6. Recorded duration: 341s. But no sound in game.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 29.46,
+    "testDurationSeconds": 384,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 24.7
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/screenshots/01.webp",
+        "sha256": "e8b6126f7e3fa28259188086bd4771c126a11535b33c51cd6b64d2843411ca60",
+        "caption": "AKIBA'S TRIP 2 — capture 1 · 2026-10-01T10:53:18.443Z"
+      },
+      {
+        "path": "assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/screenshots/02.webp",
+        "sha256": "7865c144edca4cf83372965537d6e8a713a4c2846b9fb762d2a372bd3e811c31",
+        "caption": "AKIBA'S TRIP 2 — capture 2 · 2026-10-01T10:54:21.591Z"
+      },
+      {
+        "path": "assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/screenshots/03.webp",
+        "sha256": "f1c84b5af8c909991b33e2bc6865649babdadc8a7e1081ad58314b068bf552b4",
+        "caption": "AKIBA'S TRIP 2 — capture 3 · 2026-10-01T10:55:23.915Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/logs/01-application.log.gz",
+        "sha256": "b9234597372dbfae17a950f976578480fe13cedd82636f8b5b4992e2205a6310",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01038/s_c31d4631358046da90ff86b8bd258318/logs/02-shadps4.log.gz",
+        "sha256": "7374d6fa0fdb2974fa24f420435fc60d42b9ac0b38ff3967ba4e95f878eb5736",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
