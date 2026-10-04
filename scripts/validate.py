@@ -93,7 +93,8 @@ def report_issue_reference_error(game: dict, report: dict) -> str | None:
         return None
     if len(legacy_matches) > 1:
         return "historical issue repository is ambiguous; issueRepository is required"
-    if _issue_ref(game.get("canonicalIssue")) == ("JICA98/Bachata-S4", number):
+    canonical = _issue_ref(game.get("canonicalIssue"))
+    if canonical is not None and canonical[1] == number:
         return "issueRepository is required for a canonical schema-v2 report"
     return "report issue is not canonical or declared legacy issue"
 
