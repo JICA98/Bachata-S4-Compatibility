@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_eabac7ed0894484d900aa4cdd23e8709",
+  "cusaId": "CUSA26967",
+  "testedAt": "2026-10-03T08:40:24.351402Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.01",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-d0335542ec996fe3",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-d0335542ec996fe3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Tunic: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c6946f06eb6e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "Tunic — capture 1 · 2026-10-03T08:40:24.240Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/logs/01-application.log.gz",
+        "sha256": "012af6bdfb1e20421984c0785508fb2521c86c52599b6f354556b913de0d4c4a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/logs/02-shadps4.log.gz",
+        "sha256": "30de8b2b946b674e0ca6b18de90ab2c1ac6c8faf93339dc7499a58ee46a66137",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
