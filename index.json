@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:32:40Z",
+  "generatedAt": "2026-10-04T16:33:27Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 71,
+  "gameCount": 72,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1653,6 +1653,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T08:38:48.776433Z"
+    },
+    {
+      "cusaId": "CUSA36582",
+      "title": "Prince Of Persia: The Lost Crown",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T08:05:18.355013Z"
     },
     {
       "cusaId": "CUSA37522",
