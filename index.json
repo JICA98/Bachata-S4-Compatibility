@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:34:57Z",
+  "generatedAt": "2026-10-04T16:35:31Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 73,
+  "gameCount": 74,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1103,6 +1103,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T13:03:19.147889Z"
+    },
+    {
+      "cusaId": "CUSA09919",
+      "title": "Outer Wilds",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T11:27:43.572980Z"
     },
     {
       "cusaId": "CUSA10135",
