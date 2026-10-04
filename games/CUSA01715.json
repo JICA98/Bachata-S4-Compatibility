@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 26,
+    "score": 25,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 26,
-    "testerCount": 26,
-    "deviceCount": 20,
+    "reportCount": 27,
+    "testerCount": 27,
+    "deviceCount": 21,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -152,6 +152,23 @@
       "recommendedSetup": null
     },
     "mt6991": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
+    "sm4635": {
       "score": 0,
       "status": "nothing",
       "confidence": "low",
@@ -485,15 +502,16 @@
     "mali-immortalis": [
       "mt6991"
     ],
+    "adreno6": [
+      "sm4635",
+      "sm8350"
+    ],
     "adreno7": [
       "sm7475",
       "sm7635",
       "sm7675",
       "sm8450",
       "sm8475"
-    ],
-    "adreno6": [
-      "sm8350"
     ],
     "adreno8": [
       "sm8735",
@@ -2603,6 +2621,104 @@
           "caption": "God of War® III Remastered — capture 3 · 2026-10-01T15:46:14.977Z"
         }
       ]
+    },
+    {
+      "reportId": "s_f5a231c8f0ca49659b62aac0066e8529",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T09:10:22.716438Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24116PCC1I",
+        "socId": "sm4635",
+        "socName": "SM4635",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 4
+      },
+      "driver": {
+        "id": "turnip-2a619419c8c968f5",
+        "type": "turnip",
+        "name": "Turnip v26.3.0-R5",
+        "version": "v26.3.0-R5",
+        "build": "2a619419c8c968f5"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-2a619419c8c968f5",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-1280x720",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-34e6c7e0c2d0",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_848d5b0e48bc43e1946f6cdcca86cb25",
