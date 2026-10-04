@@ -3,7 +3,7 @@
 Compatibility reports must be reproducible, evidence-backed, and tied to one published
 Bachata S4 release, one physical Android device, and one selected Vulkan driver.
 
-1. Search Issues for the CUSA ID. Reuse the existing canonical issue or create one with
+1. Search this repository's Issues for the CUSA ID. Reuse the existing canonical issue or create one with
    the `game:CUSAxxxxx`, `game-report`, and `status:testing` labels.
 2. Create a branch and a Git worktree from this repository's `main` branch.
 3. Capture screenshots and unmodified logs using the skill in
