@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_3bafecefc6644c56b4fb3e7e3b9b6143",
+  "cusaId": "CUSA18008",
+  "testedAt": "2026-10-04T17:38:46.462884Z",
+  "status": "menus",
+  "game": {
+    "version": "Unknown",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA18008: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-cd9236f20c91"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 58.63,
+    "testDurationSeconds": 24,
+    "framePacing": "smooth"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/screenshots/01.webp",
+        "sha256": "389aa437b3e41deed59cd73f58fb833b871669843b7fb48df61c8ac479f0ff97",
+        "caption": "Winters' Expansion — capture 1 · 2026-10-04T17:38:44.716Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/logs/01-application.log.gz",
+        "sha256": "4b150d12bfaa792a4871463cdfde00072ff07728d3b7adb5f77746906efeb018",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/logs/02-shadps4.log.gz",
+        "sha256": "4a0797e8cc11db46669eac9e2736682e8e3b2939887515cac08703b89d971937",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
