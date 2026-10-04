@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_3ea81530cff94a009eb5b83d20d96940",
+  "cusaId": "CUSA02046",
+  "testedAt": "2026-10-02T04:04:38.290473Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.01",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "GODZILLA: observed ingame during this test session. Measured native FPS: 57.2. Recorded duration: 174s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-89909fea893f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 57.22,
+    "testDurationSeconds": 174,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 46.14
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/screenshots/01.webp",
+        "sha256": "6b346cb057c42aac839e0943cd9ac00f93a3a90218706079e9f3d111cbbfdfc8",
+        "caption": "GODZILLA — capture 1 · 2026-10-02T04:04:38.205Z"
+      },
+      {
+        "path": "assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/screenshots/02.webp",
+        "sha256": "b4ec1aca0d61fb8fdbb2b87f85aa5e13158c36f2d4ce69f43ce98cf4e4bfe1d8",
+        "caption": "GODZILLA — capture 2 · 2026-10-02T04:05:42.769Z"
+      },
+      {
+        "path": "assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/screenshots/03.webp",
+        "sha256": "df474f18a0c9cf92c82e9cc805e1b968967e809d29aae679d40824b94554f5b7",
+        "caption": "GODZILLA — capture 3 · 2026-10-02T04:06:44.417Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/logs/01-application.log.gz",
+        "sha256": "72e040a1454ab75f410fd90f7b3d4c634e77d0a07d6831df37740dd2127ce6b3",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/logs/02-shadps4.log.gz",
+        "sha256": "5eae40c9ffe3943090bf410a7c1e21ee9ecc4f95da515e93f0f982fcd5cb64e7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
