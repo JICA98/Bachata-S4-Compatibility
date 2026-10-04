@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA00239",
+  "title": "The Amazing Spider-Man 2™",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 205
+  },
+  "legacyIssues": []
+}
