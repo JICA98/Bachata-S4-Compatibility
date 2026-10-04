@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 52,
+    "score": 50,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 10,
-    "testerCount": 10,
-    "deviceCount": 9,
+    "reportCount": 11,
+    "testerCount": 11,
+    "deviceCount": 10,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -289,12 +289,12 @@
       }
     },
     "sm8850": {
-      "score": 100,
-      "status": "playable",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "score": 62,
+      "status": "ingame",
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
@@ -388,8 +388,74 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_63bae8e0bbf04c9e8a0652e81789cf5c/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T07:36:04.570024Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "I2501",
+        "socId": "sm8850",
+        "socName": "Snapdragon 8 Elite Gen 5",
+        "gpu": "Adreno 840",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed boots during this test session.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-53c5a66a2b87",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-02T07:36:04.350Z"
+        }
+      ]
+    },
     {
       "reportId": "s_63bae8e0bbf04c9e8a0652e81789cf5c",
       "schemaVersion": 2,
