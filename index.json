@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:14:12Z",
+  "generatedAt": "2026-10-04T16:14:47Z",
   "currentRelease": "v0.2.4",
   "gameCount": 59,
   "games": [
@@ -198,11 +198,11 @@
           "sampleCount": 0
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
       "thumbnail": null,
       "latestStatus": "nothing",
-      "latestTestedAt": "2026-10-03T14:57:03.057819Z"
+      "latestTestedAt": "2026-10-03T15:04:51.638391Z"
     },
     {
       "cusaId": "CUSA00552",
