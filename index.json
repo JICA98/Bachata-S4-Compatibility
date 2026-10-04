@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:02:17Z",
+  "generatedAt": "2026-10-04T16:02:57Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 50,
+  "gameCount": 51,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1178,6 +1178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T11:19:41.708890Z"
+    },
+    {
+      "cusaId": "CUSA26967",
+      "title": "Tunic",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T08:40:24.351402Z"
     },
     {
       "cusaId": "CUSA40582",
