@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA00897",
+    "title": "inFAMOUS™ First Light",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 44.33,
+      "max": 44.33,
+      "average": 44.33,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 44.33,
+        "max": 44.33,
+        "average": 44.33,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_822272e810834161994dfbb5404df251",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T08:59:48.982871Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX809J",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-depth-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "render-resolution-1280x720",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro-movie",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 44.33,
+        "nativeOnePercentLowFps": 30,
+        "outputAverageFps": null,
+        "testDurationSeconds": 313,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "CUSA00897: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-b48954751779",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/01.webp",
+          "caption": "inFAMOUS™ First Light — capture 1 · 2026-10-04T08:59:48.882Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/02.webp",
+          "caption": "inFAMOUS™ First Light — capture 2 · 2026-10-04T09:01:29.110Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/03.webp",
+          "caption": "inFAMOUS™ First Light — capture 3 · 2026-10-04T09:02:39.642Z"
+        }
+      ]
+    }
+  ]
+}

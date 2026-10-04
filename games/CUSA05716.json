@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA05716",
+    "title": "Rise of the Tomb Raider",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 0,
+    "status": "nothing",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": null,
+      "max": null,
+      "average": null,
+      "sampleCount": 0
+    }
+  },
+  "socs": {
+    "sm7475": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm7475"
+    ]
+  },
+  "thumbnail": null,
+  "reports": [
+    {
+      "reportId": "s_23076641c03c4b2eac217d018a112514",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T19:10:52.808706Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.06",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23049PCD8I",
+        "socId": "sm7475",
+        "socName": "SM7475",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-e634db0f929e2205",
+        "type": "turnip",
+        "name": "Mesa Turnip driver v26.0.0 - R8",
+        "version": "25.99.99",
+        "build": "25.99.99"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "general.neo_mode": true,
+          "gpu.copy_gpu_buffers": true,
+          "gpu.dump_shaders": true,
+          "gpu.readbacks_mode": 2,
+          "gpu.vblank_frequency": 120
+        },
+        "driverId": "turnip-e634db0f929e2205",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA05716: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d56463ecec46",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    }
+  ]
+}

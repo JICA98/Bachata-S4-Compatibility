@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:47:49Z",
+  "generatedAt": "2026-10-04T16:49:51Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 40,
+  "gameCount": 76,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -55,6 +55,56 @@
       "latestTestedAt": "2026-09-06T09:28:38Z"
     },
     {
+      "cusaId": "CUSA00069",
+      "title": "Rayman® Legends",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00069/s_ce541a775d7241feb4159327bdd8079f/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-03T17:23:50.843304Z"
+    },
+    {
+      "cusaId": "CUSA00076",
+      "title": "The Order: 1886",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.44,
+          "max": 29.44,
+          "average": 29.44,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00076/s_fe231d3e5da9456d9974d426b7532a71/screenshots/02.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-03T19:34:54.084547Z"
+    },
+    {
       "cusaId": "CUSA00223",
       "title": "inFAMOUS Second Son™",
       "general": {
@@ -78,6 +128,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-06T11:17:20Z"
+    },
+    {
+      "cusaId": "CUSA00239",
+      "title": "The Amazing Spider-Man 2™",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T13:12:03.138256Z"
     },
     {
       "cusaId": "CUSA00265",
@@ -105,29 +180,104 @@
       "latestTestedAt": "2026-10-02T02:37:57.363740Z"
     },
     {
-      "cusaId": "CUSA00900",
-      "title": "Bloodborne",
+      "cusaId": "CUSA00341",
+      "title": "Uncharted 4: A Thief’s End™",
       "general": {
-        "score": 75,
-        "status": "ingame",
-        "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 27.17,
-          "max": 28.83,
-          "average": 28.0,
-          "sampleCount": 2
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
         }
       },
-      "reportCount": 6,
-      "socCount": 2,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/20260928T035042005Z-cusa00900-65dca6ab39/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-09-28T03:45:37.470822Z"
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T15:04:51.638391Z"
+    },
+    {
+      "cusaId": "CUSA00552",
+      "title": "The Last of Us™ Remastered",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 43.78,
+          "max": 43.78,
+          "average": 43.78,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_95a0054acefc488882d3bc3e2ad41e68/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T21:06:56.849309Z"
+    },
+    {
+      "cusaId": "CUSA00897",
+      "title": "inFAMOUS™ First Light",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 44.33,
+          "max": 44.33,
+          "average": 44.33,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00897/s_822272e810834161994dfbb5404df251/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T08:59:48.982871Z"
+    },
+    {
+      "cusaId": "CUSA00900",
+      "title": "Bloodborne",
+      "general": {
+        "score": 58,
+        "status": "menus",
+        "confidence": "medium",
+        "reportCount": 3,
+        "testerCount": 3,
+        "deviceCount": 2,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 14.19,
+          "max": 28.83,
+          "average": 23.4,
+          "sampleCount": 3
+        }
+      },
+      "reportCount": 7,
+      "socCount": 3,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/s_8b84f8655c304ceb803e6e06ee0cda9e/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T20:55:54.796587Z"
     },
     {
       "cusaId": "CUSA01022",
@@ -283,51 +433,51 @@
       "cusaId": "CUSA01623",
       "title": "God of War® III Remastered",
       "general": {
-        "score": 75,
-        "status": "ingame",
+        "score": 27,
+        "status": "boots",
         "confidence": "medium",
-        "reportCount": 3,
-        "testerCount": 3,
-        "deviceCount": 3,
+        "reportCount": 13,
+        "testerCount": 13,
+        "deviceCount": 12,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 11.27,
-          "max": 40.09,
-          "average": 29.03,
-          "sampleCount": 3
+          "min": 6.78,
+          "max": 40.28,
+          "average": 27.05,
+          "sampleCount": 8
         }
       },
-      "reportCount": 3,
-      "socCount": 2,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_0d2e2d7f516c4b3cb2fd3a24dbc8028b/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-02T10:34:02.451883Z"
+      "reportCount": 13,
+      "socCount": 11,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_f0aca83cabc443f083ec5cc6fd12b3cd/screenshots/03.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T15:35:11.545920Z"
     },
     {
       "cusaId": "CUSA01715",
       "title": "God of War® III Remastered",
       "general": {
-        "score": 59,
-        "status": "menus",
+        "score": 25,
+        "status": "boots",
         "confidence": "medium",
-        "reportCount": 8,
-        "testerCount": 8,
-        "deviceCount": 7,
+        "reportCount": 28,
+        "testerCount": 28,
+        "deviceCount": 22,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 22.45,
+          "min": 9.9,
           "max": 44.31,
-          "average": 31.31,
-          "sampleCount": 5
+          "average": 24.25,
+          "sampleCount": 12
         }
       },
-      "reportCount": 8,
-      "socCount": 6,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_ad66813a091341d1abe5088a3f0e485b/screenshots/03.webp",
-      "latestStatus": "playable",
-      "latestTestedAt": "2026-10-01T20:29:00.286990Z"
+      "reportCount": 32,
+      "socCount": 14,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_653f4263cebb40eeb5cad036c9d76552/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T16:14:49.481539Z"
     },
     {
       "cusaId": "CUSA01843",
@@ -405,6 +555,31 @@
       "latestTestedAt": "2026-10-01T02:54:02.127843Z"
     },
     {
+      "cusaId": "CUSA02412",
+      "title": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 14.31,
+          "max": 14.31,
+          "average": 14.31,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T11:04:01.562006Z"
+    },
+    {
       "cusaId": "CUSA02509",
       "title": "Saint Seiya: Soldiers' Soul",
       "general": {
@@ -430,17 +605,17 @@
       "latestTestedAt": "2026-09-30T21:29:54.895630Z"
     },
     {
-      "cusaId": "CUSA03146",
-      "title": "Galak-Z",
+      "cusaId": "CUSA02762",
+      "title": "Divinity : Original Sin Enhanced Edition",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 0,
+        "status": "nothing",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.1.6",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
         "performance": {
           "min": null,
           "max": null,
@@ -450,9 +625,34 @@
       },
       "reportCount": 1,
       "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T01:46:33.111848Z"
+    },
+    {
+      "cusaId": "CUSA03146",
+      "title": "Galak-Z",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-08-02T11:48:17Z"
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T06:01:47.051898Z"
     },
     {
       "cusaId": "CUSA03219",
@@ -505,6 +705,56 @@
       "latestTestedAt": "2026-09-30T21:14:03.028636Z"
     },
     {
+      "cusaId": "CUSA03280",
+      "title": "Uncharted™: Drake's Fortune Remastered",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 3.87,
+          "max": 3.87,
+          "average": 3.87,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03280/s_5b85c4eaa5a84c21ad5ed9b270a9f9f7/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-03T16:57:31.466882Z"
+    },
+    {
+      "cusaId": "CUSA03282",
+      "title": "Uncharted 3: Drake's Deception™ Remastered",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.81,
+          "max": 21.81,
+          "average": 21.81,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T02:31:59.603602Z"
+    },
+    {
       "cusaId": "CUSA03694",
       "title": "GRAVITY RUSH™ 2",
       "general": {
@@ -530,6 +780,56 @@
       "latestTestedAt": "2026-09-28T14:18:01.687061Z"
     },
     {
+      "cusaId": "CUSA03840",
+      "title": "RESIDENT EVIL 6",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 32.84,
+          "max": 32.84,
+          "average": 32.84,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03840/s_1e938ce438a24913ba8471b4c01e11bc/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T16:36:14.299310Z"
+    },
+    {
+      "cusaId": "CUSA05716",
+      "title": "Rise of the Tomb Raider",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T19:10:52.808706Z"
+    },
+    {
       "cusaId": "CUSA05794",
       "title": "Rise of the Tomb Raider",
       "general": {
@@ -553,6 +853,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-09-30T22:40:51.611476Z"
+    },
+    {
+      "cusaId": "CUSA05986",
+      "title": "Need for Speed™ Payback",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T01:47:04.077901Z"
     },
     {
       "cusaId": "CUSA06638",
@@ -583,23 +908,23 @@
       "cusaId": "CUSA07010",
       "title": "Sonic Mania Encore DLC",
       "general": {
-        "score": 75,
-        "status": "ingame",
+        "score": 58,
+        "status": "menus",
         "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
-        "deviceCount": 2,
+        "reportCount": 3,
+        "testerCount": 3,
+        "deviceCount": 3,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 50.94,
           "max": 59.96,
-          "average": 55.45,
-          "sampleCount": 2
+          "average": 56.94,
+          "sampleCount": 3
         }
       },
-      "reportCount": 2,
-      "socCount": 2,
+      "reportCount": 3,
+      "socCount": 3,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-02T06:31:25.321532Z"
@@ -680,6 +1005,31 @@
       "latestTestedAt": "2026-08-02T10:38:31Z"
     },
     {
+      "cusaId": "CUSA08252",
+      "title": "PRO EVOLUTION SOCCER 2018",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08252/s_74a85a6d725d4564a30842939ecd88cc/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T05:41:28.584438Z"
+    },
+    {
       "cusaId": "CUSA08279",
       "title": "銀魂亂舞",
       "general": {
@@ -728,6 +1078,131 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T04:36:08Z"
+    },
+    {
+      "cusaId": "CUSA08809",
+      "title": "SHADOW OF THE COLOSSUS™",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 3.56,
+          "max": 3.56,
+          "average": 3.56,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08809/s_05a6d9cc4ceb460fb58a1215f6309ff4/screenshots/02.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T10:42:18.780363Z"
+    },
+    {
+      "cusaId": "CUSA09147",
+      "title": "The Mummy Demastered",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T13:03:19.147889Z"
+    },
+    {
+      "cusaId": "CUSA09919",
+      "title": "Outer Wilds",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T11:27:43.572980Z"
+    },
+    {
+      "cusaId": "CUSA10135",
+      "title": "The Witch and the Hundred Knight 2",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T07:04:49.525772Z"
+    },
+    {
+      "cusaId": "CUSA10357",
+      "title": "Far Cry® 3 Classic Edition",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T11:19:12.629109Z"
     },
     {
       "cusaId": "CUSA10454",
@@ -780,6 +1255,56 @@
       "latestTestedAt": "2026-10-03T15:23:48.307491Z"
     },
     {
+      "cusaId": "CUSA11909",
+      "title": "The Legend of Heroes: Trails of Cold Steel III",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.43,
+          "max": 59.43,
+          "average": 59.43,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T12:57:42.303117Z"
+    },
+    {
+      "cusaId": "CUSA12779",
+      "title": "Little Nightmares II",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T21:46:11.996118Z"
+    },
+    {
       "cusaId": "CUSA12781",
       "title": "Fist of the North Star: Lost Paradise",
       "general": {
@@ -830,29 +1355,79 @@
       "latestTestedAt": "2026-09-30T23:52:24.533334Z"
     },
     {
-      "cusaId": "CUSA13801",
-      "title": "Sekiro: Shadows Die Twice",
+      "cusaId": "CUSA13323",
+      "title": "Ghost of Tsushima - Special Armor",
       "general": {
-        "score": 75,
-        "status": "ingame",
+        "score": 0,
+        "status": "nothing",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.1.6",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 24.6,
-          "max": 24.6,
-          "average": 24.6,
-          "sampleCount": 1
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
         }
       },
       "reportCount": 1,
       "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T09:10:45.890518Z"
+    },
+    {
+      "cusaId": "CUSA13801",
+      "title": "Sekiro: Shadows Die Twice",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 32.79,
+          "max": 32.79,
+          "average": 32.79,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 2,
+      "socCount": 2,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-08-02T10:09:12Z"
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T18:54:03.129550Z"
+    },
+    {
+      "cusaId": "CUSA15001",
+      "title": "MOBILE SUIT GUNDAM EXTREME VS. MAXIBOOST ON PREMIUM SOUND EDITION",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T09:46:26.295720Z"
     },
     {
       "cusaId": "CUSA15250",
@@ -930,6 +1505,31 @@
       "latestTestedAt": "2026-10-01T10:58:58.150664Z"
     },
     {
+      "cusaId": "CUSA19345",
+      "title": "Sonic Colors: Ultimate",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T01:07:14.540623Z"
+    },
+    {
       "cusaId": "CUSA20499",
       "title": "Cuphead",
       "general": {
@@ -953,6 +1553,231 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-09-30T19:46:44.284512Z"
+    },
+    {
+      "cusaId": "CUSA24100",
+      "title": "SAMURAI WARRIORS 5",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA24100/s_47711488f77042b9b465850f4f3a555e/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T07:09:52.584593Z"
+    },
+    {
+      "cusaId": "CUSA24899",
+      "title": "Stray",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T02:30:23.058308Z"
+    },
+    {
+      "cusaId": "CUSA26813",
+      "title": "Disgaea 6",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 51.95,
+          "max": 51.95,
+          "average": 51.95,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T11:19:41.708890Z"
+    },
+    {
+      "cusaId": "CUSA26967",
+      "title": "Tunic",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T08:40:24.351402Z"
+    },
+    {
+      "cusaId": "CUSA29952",
+      "title": "Totally Accurate Battle Simulator",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T11:24:05.339532Z"
+    },
+    {
+      "cusaId": "CUSA34133",
+      "title": "Gundam Breaker 4",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T09:45:11.451278Z"
+    },
+    {
+      "cusaId": "CUSA34963",
+      "title": "Cocoon",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T08:38:48.776433Z"
+    },
+    {
+      "cusaId": "CUSA36582",
+      "title": "Prince Of Persia: The Lost Crown",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T08:05:18.355013Z"
+    },
+    {
+      "cusaId": "CUSA37522",
+      "title": "Persona 3 Reload",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T00:49:41.047249Z"
     },
     {
       "cusaId": "CUSA40582",
@@ -1003,6 +1828,81 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-03T05:05:50.085972Z"
+    },
+    {
+      "cusaId": "CUSA57220",
+      "title": "EA SPORTS FC 27",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA57220/s_c9dadf1feb214f998e1bbd9e22152bfa/screenshots/01.webp",
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T15:01:45.846184Z"
+    },
+    {
+      "cusaId": "CUSA57547",
+      "title": "Call of Duty®: Black Ops",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 2,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T18:52:20.055778Z"
+    },
+    {
+      "cusaId": "CUSA57548",
+      "title": "Call of Duty®: Black Ops II",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-04T02:31:25.496480Z"
     }
   ]
 }

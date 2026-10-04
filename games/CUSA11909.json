@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA11909",
+    "title": "The Legend of Heroes: Trails of Cold Steel III",
+    "region": "Asia",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.43,
+      "max": 59.43,
+      "average": 59.43,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.43,
+        "max": 59.43,
+        "average": 59.43,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+  "reports": [
+    {
+      "reportId": "s_d48c9e8fcf024959b8b54edb02eb0c54",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T12:57:42.303117Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-6112f1820acedff2",
+        "type": "turnip",
+        "name": "Turnip驱动 Gen8 V37",
+        "version": "26.2.99",
+        "build": "26.2.99"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-6112f1820acedff2",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.43,
+        "nativeOnePercentLowFps": 53.98,
+        "outputAverageFps": null,
+        "testDurationSeconds": 68,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "CUSA11909: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9c1af01eba3a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/01.webp",
+          "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 1 · 2026-10-01T12:57:42.187Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+          "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 2 · 2026-10-01T12:58:46.071Z"
+        }
+      ]
+    }
+  ]
+}
