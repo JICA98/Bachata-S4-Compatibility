@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 29,
+    "score": 27,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 12,
-    "testerCount": 12,
-    "deviceCount": 11,
+    "reportCount": 13,
+    "testerCount": 13,
+    "deviceCount": 12,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -106,6 +106,23 @@
         "max": 6.78,
         "average": 6.78,
         "sampleCount": 1
+      },
+      "recommendedSetup": null
+    },
+    "sm7475": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
       },
       "recommendedSetup": null
     },
@@ -342,6 +359,7 @@
       "s5e9945"
     ],
     "adreno7": [
+      "sm7475",
       "sm7635",
       "sm7675",
       "sm8635"
@@ -1127,6 +1145,106 @@
           "caption": "God of War® III Remastered — capture 1 · 2026-10-02T06:05:49.890Z"
         }
       ]
+    },
+    {
+      "reportId": "s_7bbb253b361d432ca6969d7cd8727f18",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T00:52:48.821329Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23049PCD8G",
+        "socId": "sm7475",
+        "socName": "Snapdragon 7+ Gen 2",
+        "gpu": "Adreno 725",
+        "androidVersion": "15",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0,
+          "gpu.vblank_frequency": 120,
+          "gpu.internal_screen_height": 600
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-0bb8e24daf0e",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_22e5e5f0ec934827b93a791ec6c35b38",
