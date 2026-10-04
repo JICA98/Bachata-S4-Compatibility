@@ -9,7 +9,7 @@
     "region": "North America"
   },
   "release": {
-    "tag": "unreleased",
+    "tag": "v0.2.4",
     "commit": "5a07db7c236d8e492efa9f2faa2fdae76b182171"
   },
   "device": {
