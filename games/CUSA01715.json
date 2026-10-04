@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 42,
+    "score": 40,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 16,
-    "testerCount": 16,
-    "deviceCount": 14,
+    "reportCount": 17,
+    "testerCount": 17,
+    "deviceCount": 15,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -120,6 +120,23 @@
     "mt6899": {
       "score": 25,
       "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": null,
+        "max": null,
+        "average": null,
+        "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
+    "mt6991": {
+      "score": 0,
+      "status": "nothing",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
@@ -413,6 +430,9 @@
       "mt6897",
       "mt6899"
     ],
+    "mali-immortalis": [
+      "mt6991"
+    ],
     "adreno7": [
       "sm7475",
       "sm8450",
@@ -428,6 +448,105 @@
   },
   "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_321d9ca2b67d41c59cd6be792e34d0e8",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T03:54:08.802710Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2602BPC18G",
+        "socId": "mt6991",
+        "socName": "Dimensity 9400",
+        "gpu": "Immortalis-G925",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0,
+          "gpu.present_rb_swap": true
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-64ba5f2ad63c",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
     {
       "reportId": "s_e428f03e53384cd4906501f12e5ad1c7",
       "schemaVersion": 2,
