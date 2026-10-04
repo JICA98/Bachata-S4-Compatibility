@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 41,
+    "score": 39,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 8,
-    "testerCount": 8,
-    "deviceCount": 7,
+    "reportCount": 9,
+    "testerCount": 9,
+    "deviceCount": 8,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 11.27,
+      "min": 6.78,
       "max": 40.28,
-      "average": 29.94,
-      "sampleCount": 7
+      "average": 27.05,
+      "sampleCount": 8
     }
   },
   "socs": {
@@ -38,6 +38,23 @@
         "max": null,
         "average": null,
         "sampleCount": 0
+      },
+      "recommendedSetup": null
+    },
+    "s5e9945": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 6.78,
+        "max": 6.78,
+        "average": 6.78,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     },
@@ -265,6 +282,9 @@
     "mali-immortalis": [
       "mt6985"
     ],
+    "xclipse": [
+      "s5e9945"
+    ],
     "adreno7": [
       "sm7635",
       "sm7675",
@@ -451,6 +471,118 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_15066197ead64f679a067f76dae0c068/screenshots/01.webp",
           "caption": "God of War® III Remastered — capture 1 · 2026-10-04T13:47:23.153Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_35f76ebd8a4d405f9e42ae346adcfd7b",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T20:07:13.624917Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S731B",
+        "socId": "s5e9945",
+        "socName": "s5e9945",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "system-vortek",
+        "type": "system",
+        "name": "System Vulkan",
+        "version": "S731BXXS9BZH1",
+        "build": "BP4A.251205.006.S731BXXS9BZH1"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "system-vortek",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 6.78,
+        "nativeOnePercentLowFps": 2.23,
+        "outputAverageFps": null,
+        "testDurationSeconds": 728,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed boots during this test session. Measured native FPS: 6.8. Recorded duration: 728s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d3a1255d5ce5",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_35f76ebd8a4d405f9e42ae346adcfd7b/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-02T20:07:13.419Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_35f76ebd8a4d405f9e42ae346adcfd7b/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-10-02T20:15:44.471Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_35f76ebd8a4d405f9e42ae346adcfd7b/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-10-02T20:17:01.579Z"
         }
       ]
     },
