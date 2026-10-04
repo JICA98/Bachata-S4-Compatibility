@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:20:05Z",
+  "generatedAt": "2026-10-04T16:20:50Z",
   "currentRelease": "v0.2.4",
   "gameCount": 62,
   "games": [
@@ -1183,26 +1183,26 @@
       "cusaId": "CUSA13801",
       "title": "Sekiro: Shadows Die Twice",
       "general": {
-        "score": 75,
-        "status": "ingame",
+        "score": 0,
+        "status": "nothing",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.1.6",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 24.6,
-          "max": 24.6,
-          "average": 24.6,
+          "min": 32.79,
+          "max": 32.79,
+          "average": 32.79,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
+      "reportCount": 2,
+      "socCount": 2,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-08-02T10:09:12Z"
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T18:54:03.129550Z"
     },
     {
       "cusaId": "CUSA15001",

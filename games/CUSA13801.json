@@ -8,22 +8,39 @@
     "publisher": "Activision"
   },
   "general": {
-    "score": 75,
-    "status": "ingame",
+    "score": 0,
+    "status": "nothing",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.1.6",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 24.6,
-      "max": 24.6,
-      "average": 24.6,
+      "min": 32.79,
+      "max": 32.79,
+      "average": 32.79,
       "sampleCount": 1
     }
   },
   "socs": {
+    "mt6989": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 32.79,
+        "max": 32.79,
+        "average": 32.79,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    },
     "sm8750": {
       "score": 75,
       "status": "ingame",
@@ -67,12 +84,76 @@
     }
   },
   "families": {
+    "mali-immortalis": [
+      "mt6989"
+    ],
     "adreno8": [
       "sm8750"
     ]
   },
   "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
   "reports": [
+    {
+      "reportId": "s_9678fbdad2cb46dfacdb8ca6f5dd779f",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T18:54:03.129550Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-X920",
+        "socId": "mt6989",
+        "socName": "Dimensity 9300",
+        "gpu": "Immortalis-G720",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 32.79,
+        "nativeOnePercentLowFps": 27.94,
+        "outputAverageFps": null,
+        "testDurationSeconds": 83,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "CUSA13801: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-02e004b0e0f8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
     {
       "reportId": "20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel",
       "schemaVersion": 1,
