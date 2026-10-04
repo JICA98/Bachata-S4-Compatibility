@@ -10,9 +10,9 @@
   "general": {
     "score": 0,
     "status": "nothing",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
     "deviceCount": 1,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -27,9 +27,9 @@
     "mt6897": {
       "score": 0,
       "status": "nothing",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -102,6 +102,67 @@
       },
       "contributor": {
         "publicId": "tester-ea8163a8054a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
+    {
+      "reportId": "s_f659c89fe05a4c2696ab82c8810861b1",
+      "schemaVersion": 2,
+      "testedAt": "2026-09-30T21:31:44.155559Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "INFINIX",
+        "model": "Infinix X6873",
+        "socId": "mt6897",
+        "socName": "MT6897",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "system-vortek",
+        "type": "system",
+        "name": "System Vulkan",
+        "version": "301500018",
+        "build": "X6873-16.3.0.150SP09(OP006PF001AZ)"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "system-vortek",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA57547: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-ebc8c444b1cc",
         "displayName": null
       },
       "provenance": {
