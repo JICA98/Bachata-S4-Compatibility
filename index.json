@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:35:31Z",
+  "generatedAt": "2026-10-04T16:36:17Z",
   "currentRelease": "v0.2.4",
   "gameCount": 74,
   "games": [
@@ -1573,7 +1573,7 @@
           "sampleCount": 0
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
       "thumbnail": null,
       "latestStatus": "nothing",
