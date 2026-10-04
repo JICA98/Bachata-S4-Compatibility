@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:26:10Z",
+  "generatedAt": "2026-10-04T16:26:53Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 64,
+  "gameCount": 65,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1153,6 +1153,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T12:57:42.303117Z"
+    },
+    {
+      "cusaId": "CUSA12779",
+      "title": "Little Nightmares II",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T21:42:19.104677Z"
     },
     {
       "cusaId": "CUSA12781",
