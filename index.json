@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:17:21Z",
+  "generatedAt": "2026-10-04T16:17:59Z",
   "currentRelease": "v0.2.4",
   "gameCount": 60,
   "games": [
@@ -583,14 +583,14 @@
       "cusaId": "CUSA03146",
       "title": "Galak-Z",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 0,
+        "status": "nothing",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.1.6",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
         "performance": {
           "min": null,
           "max": null,
@@ -598,11 +598,11 @@
           "sampleCount": 0
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-08-02T11:48:17Z"
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T06:01:47.051898Z"
     },
     {
       "cusaId": "CUSA03219",
