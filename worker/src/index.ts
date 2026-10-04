@@ -1,5 +1,5 @@
 import {duplicateFingerprint, isDuplicate, markAccepted} from "./duplicate";
-import {reencodeScreenshot, sanitizeLogGzip, sha256Hex, type ImagesBinding} from "./evidence";
+import {reencodeScreenshot, sanitizeLogGzip, sha256Hex, type ScreenshotImagesBinding} from "./evidence";
 import {commitFiles} from "./github-git";
 import {parsePerformanceFromLog} from "./performance";
 import {PRIVATE_PATTERN} from "./privacy";
@@ -11,7 +11,8 @@ interface Env {
   GITHUB_REPO: string;
   GITHUB_BASE_BRANCH: string;
   RATE_LIMIT?: KVNamespace;
-  IMAGES?: ImagesBinding;
+  IMAGES?: ScreenshotImagesBinding;
+  ASSETS?: Fetcher;
 }
 
 type JsonObject = Record<string, unknown>;
@@ -19,10 +20,26 @@ type JsonObject = Record<string, unknown>;
 const MAX_ENVELOPE_BYTES = 96 * 1024;
 const MAX_MULTIPART_BYTES = 8 * 1024 * 1024;
 const REPORT_PATH = /^CUSA\d{5}$/;
+const COMPAT_FEED_PATH = /^\/data\/compat\/v2\/(?:index|socs)\.json$|^\/data\/compat\/v2\/games\/CUSA\d{5}\.json$/;
 const SOC_ID = /^[a-z0-9._-]{2,80}$/;
 const STATUS = new Set(["playable", "ingame", "menus", "boots", "nothing"]);
 const CAPTURE = new Set(["app-captured", "structured-manual", "maintainer-verified", "legacy-imported"]);
 const DRIVER_TYPE = new Set(["system", "turnip", "custom"]);
+
+function screenshotRange(status: string): {min: number; max: number} {
+  switch (status) {
+    case "nothing":
+    case "boots":
+      return {min: 0, max: 3};
+    case "menus":
+      return {min: 1, max: 3};
+    case "ingame":
+    case "playable":
+      return {min: 3, max: 3};
+    default:
+      throw new Error("Invalid compatibility status");
+  }
+}
 
 function json(data: unknown, status = 200, extra: HeadersInit = {}): Response {
   return new Response(JSON.stringify(data), {
@@ -171,8 +188,9 @@ async function rateLimit(request: Request, env: Env): Promise<void> {
   await env.RATE_LIMIT.put(key, String(count + 1), {expirationTtl: 172800});
 }
 
+// Canonical compatibility issues live in the compatibility data repository, next to the reports.
 async function ensureCanonicalIssue(env: Env, cusaId: string, title: string): Promise<number> {
-  const issueRepo = "Bachata-S4";
+  const issueRepo = env.GITHUB_REPO;
   const search = await github(
     env,
     `/search/issues?q=${encodeURIComponent(`repo:${env.GITHUB_OWNER}/${issueRepo} is:issue in:title \"${cusaId}\"`)}`,
@@ -213,7 +231,6 @@ async function submit(request: Request, env: Env): Promise<Response> {
   if (!env.GITHUB_TOKEN || !env.GITHUB_ISSUE_TOKEN) {
     throw new Error("GitHub tokens are not configured");
   }
-  if (!env.IMAGES) throw new Error("Images binding is not configured");
   const length = Number(request.headers.get("content-length") || "0");
   if (length > MAX_MULTIPART_BYTES) return json({error: "payload_too_large"}, 413);
   await rateLimit(request, env);
@@ -225,15 +242,23 @@ async function submit(request: Request, env: Env): Promise<Response> {
   const report = normalizeReport(envelope.report);
   const screenshots = form.getAll("screenshot").filter(value => typeof value !== "string");
   const applicationLog = await readPart(form.get("log-application"));
-  if (screenshots.length < 1 || screenshots.length > 3 || !applicationLog) {
-    const error = new Error("A screenshot and application log are required");
+  const requiredScreenshots = screenshotRange(String(report.status));
+  if (screenshots.length < requiredScreenshots.min || screenshots.length > requiredScreenshots.max || !applicationLog) {
+    const error = new Error(
+      requiredScreenshots.min === 0
+        ? "An application log is required; screenshots are optional for early failures"
+        : requiredScreenshots.min === requiredScreenshots.max
+          ? `This status requires exactly ${requiredScreenshots.min} screenshots and an application log`
+          : "At least one screenshot and an application log are required",
+    );
     (error as Error & {code?: string}).code = "evidence_required";
     throw error;
   }
+  if (screenshots.length > 0 && !env.IMAGES) throw new Error("Images binding is not configured");
   const captions = screenshots.map((_, index) => text(form.get(`screenshot-caption-${index}`), 300, true));
   const shotBytes: Array<{bytes: Uint8Array; sha: string; caption: string}> = [];
   for (const [index, file] of screenshots.entries()) {
-    const encoded = await reencodeScreenshot(env.IMAGES, new Uint8Array(await file.arrayBuffer()));
+    const encoded = await reencodeScreenshot(env.IMAGES!, new Uint8Array(await file.arrayBuffer()));
     shotBytes.push({bytes: encoded, sha: await sha256Hex(encoded), caption: captions[index]});
   }
   const logs: Array<{slug: string; label: string; bytes: Uint8Array; sha: string; text?: string}> = [];
@@ -307,7 +332,7 @@ async function submit(request: Request, env: Env): Promise<Response> {
     const issueNumber = await ensureCanonicalIssue(env, cusaId, title);
     const game = {
       schemaVersion: 2, cusaId, title, region, publisher,
-      canonicalIssue: {repository: `${env.GITHUB_OWNER}/Bachata-S4`, number: issueNumber},
+      canonicalIssue: {repository: `${env.GITHUB_OWNER}/${env.GITHUB_REPO}`, number: issueNumber},
       legacyIssues: [],
     };
     files.push({path: gamePath, content: new TextEncoder().encode(JSON.stringify(game, null, 2) + "\n")});
@@ -371,44 +396,15 @@ const HEALTH_PATHS = new Set([
   "/api/compat/v2/health",
 ]);
 
-const STUB_SOCS: Record<string, {name: string; vendor: string; gpu: string; family: string; aliases: string[]}> = {
-  sm7475: {name: "Snapdragon 7+ Gen 2", vendor: "Qualcomm", gpu: "Adreno 725", family: "adreno-7xx", aliases: ["SM7475", "Snapdragon 7+ Gen 2"]},
-  sm8550: {name: "Snapdragon 8 Gen 2", vendor: "Qualcomm", gpu: "Adreno 740", family: "adreno-7xx", aliases: ["SM8550", "Snapdragon 8 Gen 2"]},
-  sm8650: {name: "Snapdragon 8 Gen 3", vendor: "Qualcomm", gpu: "Adreno 750", family: "adreno-8xx", aliases: ["SM8650", "Snapdragon 8 Gen 3"]},
-  sm8750: {name: "Snapdragon 8 Elite", vendor: "Qualcomm", gpu: "Adreno 830", family: "adreno-8xx", aliases: ["SM8750", "Snapdragon 8 Elite"]},
-  sm8850: {name: "Snapdragon 8 Elite Gen 5", vendor: "Qualcomm", gpu: "Adreno 840", family: "adreno-8xx", aliases: ["SM8850", "Snapdragon 8 Elite Gen 5"]},
-};
-
-function stubFeed(pathname: string): Response | null {
-  if (pathname === "/data/compat/v2/socs.json") {
-    return json({schemaVersion: 1, socs: STUB_SOCS});
-  }
-  if (pathname === "/data/compat/v2/index.json") {
-    return json({schemaVersion: 2, generatedForRelease: "worker-stub", games: []});
-  }
-  const game = pathname.match(/^\/data\/compat\/v2\/games\/(CUSA\d{5})\.json$/);
-  if (!game) return null;
-  const cusaId = game[1];
-  return json({
-    schemaVersion: 2,
-    generatedForRelease: "worker-stub",
-    game: {cusaId, title: cusaId, region: "", publisher: ""},
-    general: {status: "unknown", confidence: "none", reportCount: 0, hasCurrentReports: false},
-    socs: {},
-    families: {},
-    reports: [],
-  });
-}
-
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     if (request.method === "GET" && HEALTH_PATHS.has(url.pathname)) {
       return json({ok: true, service: "bachata-compatibility-submit-v2"});
     }
-    if (request.method === "GET") {
-      const feed = stubFeed(url.pathname);
-      if (feed) return feed;
+    if ((request.method === "GET" || request.method === "HEAD") && COMPAT_FEED_PATH.test(url.pathname)) {
+      if (!env.ASSETS) return json({error: "assets_not_configured"}, 502);
+      return env.ASSETS.fetch(request);
     }
     if (request.method !== "POST" || !REPORT_PATHS.has(url.pathname)) return json({error: "not_found"}, 404);
     if (!request.headers.get("content-type")?.toLowerCase().includes("multipart/form-data")) {

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9a7469ee0f4740c982743484cba1e468",
+  "cusaId": "CUSA02509",
+  "testedAt": "2026-09-30T21:29:54.895630Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "realme",
+    "model": "RMX3842",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Saint Seiya: Soldiers' Soul: observed boots during this test session. Measured native FPS: 12.1. Recorded duration: 566s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f4e77d1d99f7"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 12.06,
+    "testDurationSeconds": 566,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 9.07
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/01.webp",
+        "sha256": "a08cfc203d0b3ea6bb7097460ce140d3a4ac6f8b10ce6da03c26fe97e3248242",
+        "caption": "Saint Seiya: Soldiers' Soul — capture 1 · 2026-09-30T21:29:54.344Z"
+      },
+      {
+        "path": "assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/02.webp",
+        "sha256": "88de02b7919b9c9ace2708badab0784c6cb32ee5454de0923af1d95f5f3e5ab3",
+        "caption": "Saint Seiya: Soldiers' Soul — capture 2 · 2026-09-30T21:31:24.504Z"
+      },
+      {
+        "path": "assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/03.webp",
+        "sha256": "38e150cab15c528a10199b09fde9f77946153e2f1dc6251533ad9cd279982fe6",
+        "caption": "Saint Seiya: Soldiers' Soul — capture 3 · 2026-09-30T21:32:34.752Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/logs/01-application.log.gz",
+        "sha256": "87b9b02c653bab6dfa9861f17a90cc86a1b4242ec59874af9f52e955b46a0015",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/logs/02-shadps4.log.gz",
+        "sha256": "3916dfe2bd0171f70808c4e1af50e86881a8a30c8804d172443ee10c72f2d02b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

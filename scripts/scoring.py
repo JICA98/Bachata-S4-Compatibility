@@ -55,8 +55,44 @@ def device_key(report: dict) -> str:
     ])
 
 
+def normalize_tag(tag: str) -> str:
+    """Release tags are published both as "v0.2.3" and "0.2.3"; compare them without the prefix."""
+    tag = str(tag or "").strip()
+    return tag[1:] if tag[:1] in {"v", "V"} and tag[1:2].isdigit() else tag
+
+
 def release_tag(report: dict) -> str:
-    return str((report.get("release") or {}).get("tag") or "")
+    tag = str((report.get("release") or {}).get("tag") or "")
+    if tag in {"", "unreleased"}:
+        # Attested app captures from a non-tagged build still name the app version they were built as.
+        provenance = report.get("provenance") or {}
+        build = str(provenance.get("appBuild") or "").strip()
+        if provenance.get("captureType") == "app-captured" and build:
+            return normalize_tag(build)
+    return normalize_tag(tag)
+
+
+def release_order(release_index: dict) -> list[str]:
+    """Every indexed release, newest first, including archived ones that still carry reports."""
+    releases = sorted(release_index.get("releases", []), key=lambda r: r.get("publishedAt", ""), reverse=True)
+    return [normalize_tag(str(r.get("tag", ""))) for r in releases if r.get("tag")]
+
+
+def scored_release(reports: Iterable[dict], current_release: str, release_index: dict) -> str:
+    """The current release when it has reports, otherwise the newest indexed release that does."""
+    live = [r for r in reports if not r.get("withdrawn")]
+    present = {release_tag(r) for r in live}
+    current = normalize_tag(current_release)
+    if current in present:
+        return current_release
+    for tag in release_order(release_index):
+        if tag in present:
+            return next(str(r["tag"]) for r in release_index["releases"] if normalize_tag(str(r.get("tag", ""))) == tag)
+    # Releases older than the index window: use the most recently tested tagged release.
+    tagged = [r for r in live if release_tag(r) not in {"", "unreleased"}]
+    if tagged:
+        return str((max(tagged, key=lambda r: str(r.get("testedAt", ""))).get("release") or {}).get("tag"))
+    return current_release
 
 
 def soc_id(report: dict) -> str:
@@ -112,7 +148,7 @@ def aggregate(reports: Iterable[dict], current_release: str, exact_soc: str | No
     reports = dedupe_reports(reports)
     if exact_soc:
         reports = [r for r in reports if soc_id(r) == exact_soc.casefold()]
-    current = [r for r in reports if release_tag(r) == current_release]
+    current = [r for r in reports if release_tag(r) == normalize_tag(current_release)]
     if not current:
         return {
             "score": None,
@@ -142,7 +178,7 @@ def aggregate(reports: Iterable[dict], current_release: str, exact_soc: str | No
 def native_fps_summary(reports: Iterable[dict], current_release: str) -> dict:
     values: list[float] = []
     for report in dedupe_reports(reports):
-        if release_tag(report) != current_release:
+        if release_tag(report) != normalize_tag(current_release):
             continue
         perf = report.get("performance") or {}
         value = perf.get("nativeAverageFps")
@@ -163,7 +199,7 @@ def native_fps_summary(reports: Iterable[dict], current_release: str) -> dict:
 def recommended_setup(reports: Iterable[dict], current_release: str, exact_soc: str) -> dict | None:
     candidates = [
         r for r in dedupe_reports(reports)
-        if release_tag(r) == current_release and soc_id(r) == exact_soc.casefold() and r.get("status") in {"ingame", "playable"}
+        if release_tag(r) == normalize_tag(current_release) and soc_id(r) == exact_soc.casefold() and r.get("status") in {"ingame", "playable"}
     ]
     if not candidates:
         return None
@@ -205,14 +241,27 @@ def recommended_setup(reports: Iterable[dict], current_release: str, exact_soc: 
     }
 
 
-def group_by_soc(reports: Iterable[dict], current_release: str) -> dict[str, dict]:
+def aggregate_latest(reports: list[dict], current_release: str, release_index: dict, exact_soc: str | None = None) -> dict:
+    """Score the current release, or label the newest earlier release that has reports.
+
+    `hasCurrentReports` stays true only for the current release, so a fallback score is never
+    presented as evidence for the current build; `releaseTag` names the release that was scored.
+    """
+    scoped = [r for r in reports if soc_id(r) == exact_soc.casefold()] if exact_soc else reports
+    tag = scored_release(scoped, current_release, release_index)
+    summary = aggregate(reports, tag, exact_soc=exact_soc)
+    summary["hasCurrentReports"] = summary["hasCurrentReports"] and normalize_tag(tag) == normalize_tag(current_release)
+    summary["performance"] = native_fps_summary(scoped, tag)
+    return summary
+
+
+def group_by_soc(reports: Iterable[dict], current_release: str, release_index: dict | None = None) -> dict[str, dict]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for report in reports:
         grouped[soc_id(report)].append(report)
     result = {}
     for soc, items in sorted(grouped.items()):
-        summary = aggregate(items, current_release, exact_soc=soc)
-        summary["performance"] = native_fps_summary([r for r in items if soc_id(r) == soc], current_release)
-        summary["recommendedSetup"] = recommended_setup(items, current_release, soc)
+        summary = aggregate_latest(items, current_release, release_index or {}, exact_soc=soc)
+        summary["recommendedSetup"] = recommended_setup(items, summary["releaseTag"], soc)
         result[soc] = summary
     return result

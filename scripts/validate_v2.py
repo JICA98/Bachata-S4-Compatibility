@@ -287,8 +287,19 @@ def validate_report_v2(report_path: Path, report: dict, expected_cusa: str | Non
             evidence = closed_object(errors, report_path, "evidence", evidence, {"screenshots", "diagnostics"})
             screenshots = evidence.get("screenshots", [])
             diagnostics = evidence.get("diagnostics", [])
-            if not isinstance(screenshots, list) or not 1 <= len(screenshots) <= 3:
-                fail(errors, report_path, "app-captured reports require 1-3 screenshots")
+            screenshot_count = len(screenshots) if isinstance(screenshots, list) else -1
+            if report.get("status") in {"nothing", "boots"}:
+                screenshot_min, screenshot_max = 0, 3
+            elif report.get("status") == "menus":
+                screenshot_min, screenshot_max = 1, 3
+            else:
+                screenshot_min, screenshot_max = 3, 3
+            if not isinstance(screenshots, list) or not screenshot_min <= screenshot_count <= screenshot_max:
+                if screenshot_min == screenshot_max:
+                    requirement = f"exactly {screenshot_min} screenshots"
+                else:
+                    requirement = f"{screenshot_min}-{screenshot_max} screenshots"
+                fail(errors, report_path, f"app-captured reports require {requirement}")
             else:
                 for index, item in enumerate(screenshots):
                     validate_evidence_entry(

@@ -2,6 +2,13 @@ name = "bachata-compatibility-submit"
 main = "src/index.ts"
 compatibility_date = "2026-09-01"
 
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+html_handling = "none"
+not_found_handling = "none"
+
 [vars]
 GITHUB_OWNER = "JICA98"
 GITHUB_REPO = "Bachata-S4-Compatibility"

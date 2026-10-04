@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bea8710fa9f84f888b9ccdce204525ff",
+  "cusaId": "CUSA02320",
+  "testedAt": "2026-09-30T21:14:26.288085Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938U1",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-anisotropic-filtering",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-anti-aliasing",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-bloom",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-lights",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-fog",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-sunlight-ambient-occlusion",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-volumetric-lights",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-water-reflections",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "draw-distance-40m",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "resolution-360p-maximum-performance",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "shadows-1-cascade-extreme-performance",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-startup-logos",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "Uncharted: The Nathan Drake Collection™: observed ingame during this test session. Measured native FPS: 27.5. Recorded duration: 645s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f97cfdbe3f9e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 27.51,
+    "testDurationSeconds": 645,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.83
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/01.webp",
+        "sha256": "e31230b8e64fdf380eb944ec637a2e92ff8fc56f8e32c56abe716cce675bfc4a",
+        "caption": "Uncharted: The Nathan Drake Collection™ — capture 1 · 2026-09-30T21:14:25.912Z"
+      },
+      {
+        "path": "assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/02.webp",
+        "sha256": "73055a31c80e3bb82ee4e26a5fa9a7e672a88e08f8ff957b1c2041574434fec0",
+        "caption": "Uncharted: The Nathan Drake Collection™ — capture 2 · 2026-09-30T21:15:54.376Z"
+      },
+      {
+        "path": "assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/screenshots/03.webp",
+        "sha256": "603fd81fdc6d8d8bc78b3f5b32612d3c690fae8569fa4d2f237d3f44e3b66072",
+        "caption": "Uncharted: The Nathan Drake Collection™ — capture 3 · 2026-09-30T21:20:48.224Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/logs/01-application.log.gz",
+        "sha256": "ccaaa9fd332d545cd33bda8fdb3cbb40e07806d40e1c4c6eacddeb1e6bcfe768",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02320/s_bea8710fa9f84f888b9ccdce204525ff/logs/02-shadps4.log.gz",
+        "sha256": "d6a4e8d6da39486261cbbddfae81bb6a486fa6f1e6fefd9a84557d85c96f460d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA01038",
+  "title": "AKIBA'S TRIP 2",
+  "region": "Asia",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 137
+  },
+  "legacyIssues": []
+}
