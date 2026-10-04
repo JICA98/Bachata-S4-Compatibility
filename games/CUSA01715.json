@@ -8,11 +8,11 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 38,
+    "score": 36,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 18,
-    "testerCount": 18,
+    "reportCount": 19,
+    "testerCount": 19,
     "deviceCount": 16,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -118,11 +118,11 @@
       }
     },
     "mt6899": {
-      "score": 12,
+      "score": 8,
       "status": "nothing",
       "confidence": "medium",
-      "reportCount": 2,
-      "testerCount": 2,
+      "reportCount": 3,
+      "testerCount": 3,
       "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -741,6 +741,67 @@
       },
       "contributor": {
         "publicId": "tester-64ba5f2ad63c",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
+    {
+      "reportId": "s_ca389e91c2014cd098f707a0b2c9ee7a",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T00:50:50.613338Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AG",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e14cc771e8ef",
         "displayName": null
       },
       "provenance": {
