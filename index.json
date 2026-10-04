@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:33:27Z",
+  "generatedAt": "2026-10-04T16:34:11Z",
   "currentRelease": "v0.2.4",
   "gameCount": 72,
   "games": [
@@ -1685,10 +1685,10 @@
       "general": {
         "score": 0,
         "status": "nothing",
-        "confidence": "low",
-        "reportCount": 1,
-        "testerCount": 1,
-        "deviceCount": 1,
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
@@ -1698,8 +1698,8 @@
           "sampleCount": 0
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
+      "reportCount": 2,
+      "socCount": 2,
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T00:49:41.047249Z"
