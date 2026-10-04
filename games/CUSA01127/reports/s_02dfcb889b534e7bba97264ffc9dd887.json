@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_02dfcb889b534e7bba97264ffc9dd887",
+  "cusaId": "CUSA01127",
+  "testedAt": "2026-09-30T20:53:11.690141Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 24
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 1,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 1
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "60-fps",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-camera-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-film-grain",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-screen-space-reflections",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "P.T.: observed boots during this test session. Measured native FPS: 21.6. Recorded duration: 313s. There are graphical distortions, and I tried entering values 1 and 2 in the Readback section, but the problem persists.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-abe5b7c9b721"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 21.75,
+    "testDurationSeconds": 388,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 13.56
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/01.webp",
+        "sha256": "abe1c5ef9b6a2391e6964adcfefe48cf04c4520b286f3515acd47d21cd9ce261",
+        "caption": "P.T. — capture 1 · 2026-09-30T20:53:11.481Z"
+      },
+      {
+        "path": "assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/02.webp",
+        "sha256": "acc8cd9873ec394d4d249ad07c3d627d38563d08355ea0cda56da561244a707f",
+        "caption": "P.T. — capture 2 · 2026-09-30T20:55:07.193Z"
+      },
+      {
+        "path": "assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/screenshots/03.webp",
+        "sha256": "60c087d3bea59c0ccdcb43fcb9c98302fbdc7f2e22afae449e4c5d9559f55057",
+        "caption": "P.T. — capture 3 · 2026-09-30T20:56:17.949Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/logs/01-application.log.gz",
+        "sha256": "a7534b2b37ce23116d3ab1f9e1a27bffa958525ad639ae03b95bbc6e0005711d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01127/s_02dfcb889b534e7bba97264ffc9dd887/logs/02-shadps4.log.gz",
+        "sha256": "c5e59d592f3843ec39b255fab105a4a1543d07b56e48d096ad9714e8972cfe1a",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

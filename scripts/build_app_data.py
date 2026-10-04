@@ -3,12 +3,30 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
 from common import load_json, write_json
-from scoring import aggregate, group_by_soc, latest_release_tag, native_fps_summary, soc_id
+from scoring import aggregate_latest, group_by_soc, latest_release_tag, soc_id
+
+
+# Screenshots are served by the public compatibility site, which copies each report's
+# repository asset to /evidence/<path>. Only committed screenshot paths are exposed.
+EVIDENCE_BASE_URL = "https://bachatas4.games/evidence/"
+SCREENSHOT_PATH = re.compile(r"assets/CUSA[0-9]{5}/[A-Za-z0-9._-]+/screenshots/[A-Za-z0-9._-]+\.(?:webp|png|jpe?g)")
+MAX_SCREENSHOTS = 8
+
+
+def safe_screenshots(report: dict) -> list[dict]:
+    shots = []
+    for item in (report.get("evidence") or {}).get("screenshots", []):
+        path = item.get("path") if isinstance(item, dict) else None
+        if not isinstance(path, str) or not SCREENSHOT_PATH.fullmatch(path) or ".." in path:
+            continue
+        shots.append({"url": EVIDENCE_BASE_URL + path, "caption": str(item.get("caption") or "")[:300]})
+    return shots[:MAX_SCREENSHOTS]
 
 
 def load_soc_registry(root: Path) -> tuple[dict, dict[str, str]]:
@@ -93,6 +111,7 @@ def safe_report(report: dict, aliases: dict[str, str]) -> dict:
             "displayName": contributor.get("displayName"),
         },
         "provenance": report.get("provenance") or {"captureType": "legacy-imported" if report.get("legacyImported") else "structured-manual"},
+        "screenshots": safe_screenshots(report),
     }
 
 
@@ -110,9 +129,10 @@ def build(root: Path, output: Path) -> None:
         raw_reports = [load_json(path) for path in sorted((game_path.parent / "reports").glob("*.json"))]
         reports = [safe_report(r, aliases) for r in raw_reports if not r.get("withdrawn")]
         # Scoring operates on canonicalized safe reports to guarantee exact-SoC joins.
-        general = aggregate(reports, current_release)
-        general["performance"] = native_fps_summary(reports, current_release)
-        by_soc = group_by_soc(reports, current_release)
+        general = aggregate_latest(reports, current_release, release_index)
+        by_soc = group_by_soc(reports, current_release, release_index)
+        newest_first = sorted(reports, key=lambda r: r.get("testedAt") or "", reverse=True)
+        thumbnail = next((r["screenshots"][-1]["url"] for r in newest_first if r["screenshots"]), None)
         used_families = {}
         for key in by_soc:
             registry = socs.get(key, {})
@@ -131,7 +151,8 @@ def build(root: Path, output: Path) -> None:
             "general": general,
             "socs": by_soc,
             "families": used_families,
-            "reports": sorted(reports, key=lambda r: r.get("testedAt") or "", reverse=True),
+            "thumbnail": thumbnail,
+            "reports": newest_first,
         }
         write_json(output / "games" / f"{game['cusaId']}.json", payload)
         games_index.append({
@@ -140,6 +161,9 @@ def build(root: Path, output: Path) -> None:
             "general": general,
             "reportCount": len(reports),
             "socCount": len(by_soc),
+            "thumbnail": thumbnail,
+            "latestStatus": newest_first[0].get("status") if newest_first else None,
+            "latestTestedAt": newest_first[0].get("testedAt") if newest_first else None,
         })
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")

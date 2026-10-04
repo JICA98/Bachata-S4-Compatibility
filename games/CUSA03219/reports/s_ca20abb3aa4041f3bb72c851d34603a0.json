@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ca20abb3aa4041f3bb72c851d34603a0",
+  "cusaId": "CUSA03219",
+  "testedAt": "2026-10-01T03:36:37.247133Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA03219: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-71eff24fadd8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 41.66,
+    "testDurationSeconds": 689,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 20.34
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/screenshots/01.webp",
+        "sha256": "64fd72b2ab095871beb3343cda5f097d727b55b0211789237e7779428dafdc9e",
+        "caption": "STAR OCEAN: Integrity and Faithlessness — capture 1 · 2026-10-01T03:36:36.988Z"
+      },
+      {
+        "path": "assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/screenshots/02.webp",
+        "sha256": "73b703663adca2d5d9136782add14aaced89c861c53403a89326f330ef2a98f3",
+        "caption": "STAR OCEAN: Integrity and Faithlessness — capture 2 · 2026-10-01T03:37:43.576Z"
+      },
+      {
+        "path": "assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/screenshots/03.webp",
+        "sha256": "475de3d7e4526bbeaa0fec0a188c1dbdafa2115adb2f121c3ec0f4a684131c3d",
+        "caption": "STAR OCEAN: Integrity and Faithlessness — capture 3 · 2026-10-01T03:43:06.340Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/logs/01-application.log.gz",
+        "sha256": "bd6f4187dba0890595baedc365b58368e5e973c6651d26f5f2c655b9f1965eb7",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03219/s_ca20abb3aa4041f3bb72c851d34603a0/logs/02-shadps4.log.gz",
+        "sha256": "783c67c5c440fe627bf726d2e6e8f42c9e7e604cf81c4ae0e9f941c84776a4b7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
