@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:22:45Z",
+  "generatedAt": "2026-10-04T16:23:27Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 63,
+  "gameCount": 64,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1203,6 +1203,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12819/s_b3a60535c2cb4bddb64014b12aba3307/screenshots/01.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-09-30T23:52:24.533334Z"
+    },
+    {
+      "cusaId": "CUSA13323",
+      "title": "Ghost of Tsushima - Special Armor",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-02T09:10:45.890518Z"
     },
     {
       "cusaId": "CUSA13801",
