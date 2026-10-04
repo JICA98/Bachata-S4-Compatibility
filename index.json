@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:34:11Z",
+  "generatedAt": "2026-10-04T16:34:57Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 72,
+  "gameCount": 73,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1603,6 +1603,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/screenshots/01.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T08:40:24.351402Z"
+    },
+    {
+      "cusaId": "CUSA29952",
+      "title": "Totally Accurate Battle Simulator",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-01T11:24:05.339532Z"
     },
     {
       "cusaId": "CUSA34133",
