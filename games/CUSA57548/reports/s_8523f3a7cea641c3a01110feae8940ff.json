@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_8523f3a7cea641c3a01110feae8940ff",
+  "cusaId": "CUSA57548",
+  "testedAt": "2026-10-04T02:31:25.496480Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6873",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "301500018",
+    "build": "X6873-16.3.0.150SP09(OP006PF001AZ)"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA57548: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8a64b738281c"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA57548/s_8523f3a7cea641c3a01110feae8940ff/logs/01-application.log.gz",
+        "sha256": "23e171e39f33e775d450dd1c0b00aee5fb03a1a800f7644dea8a72795f5d736d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA57548/s_8523f3a7cea641c3a01110feae8940ff/logs/02-shadps4.log.gz",
+        "sha256": "68135853588f5653a14bfc0ce173cc360ce72c2cf481a272502355288c8dba01",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

@@ -16,7 +16,7 @@
   "notes": "Tested on OnePlus 13 with Snapdragon 8 Elite and Turnip gen8 v4. The opening pier area renders 3D environment, dynamic lighting, and character model with controllable movement, ladder climbing to the water tank, and falling respawn prompts. Framerate averages 23.5 FPS in-game. Full playthrough was not verified, so status is set to ingame.",
   "issues": [],
   "device": {
-    "label": "OnePlus 13 \u00b7 Snapdragon 8 Elite",
+    "label": "OnePlus 13 · Snapdragon 8 Elite",
     "manufacturer": "OnePlus",
     "model": "CPH2649",
     "soc": "SM8750",
@@ -70,6 +70,6 @@
     ]
   },
   "tester": "JICA98",
-  "issueNumber": 23,
-  "issueRepository": "JICA98/Bachata-S4"
+  "issueNumber": 114,
+  "issueRepository": "JICA98/Bachata-S4-Compatibility"
 }
