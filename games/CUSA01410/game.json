@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
   "cusaId": "CUSA01410",
-  "title": "Red Alert costume pack",
+  "title": "Transformers: Devastation",
   "region": "North America",
   "publisher": "Unknown",
   "canonicalIssue": {
-    "repository": "JICA98/Bachata-S4",
-    "number": 88
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 148
   },
   "legacyIssues": []
 }
