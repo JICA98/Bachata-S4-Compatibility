@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4c3c5c8b0067478cb2343eeb9a2b9936",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-02T16:59:11.048405Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Nothing",
+    "model": "A015",
+    "socId": "mt6878",
+    "socName": "Dimensity 7300",
+    "gpu": "Mali-G615 MC2",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "game screen shot only 15 sec then exite",
+    "issues": [
+      "game-settings-exit-me"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-9d04cfe6cc2d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_4c3c5c8b0067478cb2343eeb9a2b9936/screenshots/01.webp",
+        "sha256": "62ed6d01c4e5359ce2e6dee2668b6272a9552ccc5def18beabe637028054f048",
+        "caption": "God of War® III Remastered — capture 1 · 2026-10-02T16:59:10.740Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_4c3c5c8b0067478cb2343eeb9a2b9936/logs/01-application.log.gz",
+        "sha256": "a8fdab0bf06d7003fb40d8db4d3fd85aa5bd45320c6d97a2346ce38253cc5d9f",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_4c3c5c8b0067478cb2343eeb9a2b9936/logs/02-shadps4.log.gz",
+        "sha256": "cd6c394930adb393eb44261e83d361ba0807a56b7b766ca3167fcc08083379fd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

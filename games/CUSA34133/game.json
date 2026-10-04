@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA34133",
+  "title": "Gundam Breaker 4",
+  "region": "Japan",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 230
+  },
+  "legacyIssues": []
+}
