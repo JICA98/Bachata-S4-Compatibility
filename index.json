@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:48:26Z",
+  "generatedAt": "2026-10-04T15:49:09Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 45,
+  "gameCount": 46,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -578,6 +578,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03694/s_571141db0d9448038a459c969d26f55f/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-28T14:18:01.687061Z"
+    },
+    {
+      "cusaId": "CUSA03840",
+      "title": "RESIDENT EVIL 6",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 32.84,
+          "max": 32.84,
+          "average": 32.84,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03840/s_1e938ce438a24913ba8471b4c01e11bc/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-01T16:36:14.299310Z"
     },
     {
       "cusaId": "CUSA05794",
