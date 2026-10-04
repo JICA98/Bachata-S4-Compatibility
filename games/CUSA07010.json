@@ -3,24 +3,24 @@
   "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA07010",
-    "title": "Sonic Mania",
+    "title": "Sonic Mania Encore DLC",
     "region": "Europe",
     "publisher": "Unknown"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
-    "deviceCount": 1,
+    "score": 50,
+    "status": "menus",
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 2,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 59.91,
+      "min": 50.94,
       "max": 59.91,
-      "average": 59.91,
-      "sampleCount": 1
+      "average": 55.42,
+      "sampleCount": 2
     }
   },
   "socs": {
@@ -40,15 +40,134 @@
         "sampleCount": 1
       },
       "recommendedSetup": null
+    },
+    "sm7550": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 50.94,
+        "max": 50.94,
+        "average": 50.94,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_1443646d336340de9b4b7b1dacf343b7",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
     "mali-g": [
       "mt6878"
+    ],
+    "adreno7": [
+      "sm7550"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_1443646d336340de9b4b7b1dacf343b7",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T05:18:42.075225Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "HONOR",
+        "model": "HEY3-W00",
+        "socId": "sm7550",
+        "socName": "SM7550",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 50.94,
+        "nativeOnePercentLowFps": 39.86,
+        "outputAverageFps": null,
+        "testDurationSeconds": 448,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Sonic Mania Encore DLC: observed playable during this test session. Measured native FPS: 50.9. Recorded duration: 448s.",
+        "notes": "Snapdragon 7 Gen 3 There Is No Glitches Or Any Bugs",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-92c08f4866fe",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/01.webp",
+          "caption": "Sonic Mania Encore DLC — capture 1 · 2026-10-02T05:18:41.835Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/02.webp",
+          "caption": "Sonic Mania Encore DLC — capture 2 · 2026-10-02T05:20:05.003Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/03.webp",
+          "caption": "Sonic Mania Encore DLC — capture 3 · 2026-10-02T05:21:08.671Z"
+        }
+      ]
+    },
     {
       "reportId": "s_179200e43b6b4b7897ef4678860d7c70",
       "schemaVersion": 2,

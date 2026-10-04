@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:53:43Z",
+  "generatedAt": "2026-10-04T15:54:24Z",
   "currentRelease": "v0.2.4",
   "gameCount": 49,
   "games": [
@@ -706,28 +706,28 @@
     },
     {
       "cusaId": "CUSA07010",
-      "title": "Sonic Mania",
+      "title": "Sonic Mania Encore DLC",
       "general": {
-        "score": 25,
-        "status": "boots",
-        "confidence": "low",
-        "reportCount": 1,
-        "testerCount": 1,
-        "deviceCount": 1,
+        "score": 50,
+        "status": "menus",
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": 59.91,
+          "min": 50.94,
           "max": 59.91,
-          "average": 59.91,
-          "sampleCount": 1
+          "average": 55.42,
+          "sampleCount": 2
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_179200e43b6b4b7897ef4678860d7c70/screenshots/03.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-10-01T17:06:56.064938Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-02T05:18:42.075225Z"
     },
     {
       "cusaId": "CUSA07023",
