@@ -8,11 +8,11 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 36,
-    "status": "menus",
+    "score": 34,
+    "status": "boots",
     "confidence": "medium",
-    "reportCount": 19,
-    "testerCount": 19,
+    "reportCount": 20,
+    "testerCount": 20,
     "deviceCount": 16,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -42,11 +42,11 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 40,
-      "status": "menus",
+      "score": 33,
+      "status": "boots",
       "confidence": "medium",
-      "reportCount": 5,
-      "testerCount": 5,
+      "reportCount": 6,
+      "testerCount": 6,
       "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -985,6 +985,69 @@
           "caption": "God of War® III Remastered — capture 1 · 2026-10-03T11:58:08.239Z"
         }
       ]
+    },
+    {
+      "reportId": "s_7d19dfa9f9f842c48cfe52c2b5c5ce75",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T07:23:16.942209Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2311DRK48G",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "system-vortek",
+        "type": "system",
+        "name": "System Vulkan",
+        "version": "OS3.0.8.0.WNLMIXM",
+        "build": "BP2A.250605.031.A3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.vblank_frequency": 30
+        },
+        "driverId": "system-vortek",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-ed1829e0d70d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_0e693a8c4b064052b78e523d834df9e2",
