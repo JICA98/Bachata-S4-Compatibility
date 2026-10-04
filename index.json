@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:17:59Z",
+  "generatedAt": "2026-10-04T16:18:44Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 60,
+  "gameCount": 61,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1003,6 +1003,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T13:03:19.147889Z"
+    },
+    {
+      "cusaId": "CUSA10135",
+      "title": "The Witch and the Hundred Knight 2",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T07:04:49.525772Z"
     },
     {
       "cusaId": "CUSA10357",
