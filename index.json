@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:20:50Z",
+  "generatedAt": "2026-10-04T16:22:08Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 62,
+  "gameCount": 63,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -553,6 +553,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02320/s_04609e75b10c4d989421c22af474d221/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-01T02:54:02.127843Z"
+    },
+    {
+      "cusaId": "CUSA02412",
+      "title": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 14.31,
+          "max": 14.31,
+          "average": 14.31,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T11:04:01.562006Z"
     },
     {
       "cusaId": "CUSA02509",
