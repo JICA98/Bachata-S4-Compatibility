@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:53:06Z",
+  "generatedAt": "2026-10-04T15:53:43Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 48,
+  "gameCount": 49,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -453,6 +453,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:40:49Z"
+    },
+    {
+      "cusaId": "CUSA02046",
+      "title": "GODZILLA",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 57.22,
+          "max": 57.22,
+          "average": 57.22,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02046/s_3ea81530cff94a009eb5b83d20d96940/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-02T04:04:38.290473Z"
     },
     {
       "cusaId": "CUSA02320",
