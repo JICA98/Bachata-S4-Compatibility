@@ -15,7 +15,7 @@ assets/CUSAxxxxx/<report-id>/logs/*.log.gz
 data/releases.json
 ```
 
-Each CUSA has one canonical GitHub issue. Every confirmed test is a new immutable report
+Each CUSA has one canonical GitHub issue in this repository. Every confirmed test is a new immutable report
 file. Generated files are never edited by hand.
 
 ## Validate and build

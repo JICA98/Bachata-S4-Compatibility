@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_21ccf528996740a4bcc98e464304e22f",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-01T16:03:58.643797Z",
+  "status": "playable",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "God of War® III Remastered: observed playable during this test session. Measured native FPS: 38.7. Recorded duration: 169s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8131a686a54d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 38.7,
+    "testDurationSeconds": 169,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 14.23
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/01.webp",
+        "sha256": "376ec758457db00c55cae4064f8bd20877d3950565ba01834936c8d02c3324bc",
+        "caption": "God of War® III Remastered — capture 1 · 2026-10-01T16:03:58.465Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/02.webp",
+        "sha256": "911681b419c8e530f8acc7ab1ee44d49d7e29f2fcba78f5b599abbae4bff0ce4",
+        "caption": "God of War® III Remastered — capture 2 · 2026-10-01T16:05:12.153Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/screenshots/03.webp",
+        "sha256": "6762d68231be7318b26261ffc4132ff79193ae8c8e78a02ae5e516e9c81f7bdb",
+        "caption": "God of War® III Remastered — capture 3 · 2026-10-01T16:06:15.053Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/logs/01-application.log.gz",
+        "sha256": "7965e48e8380437509cf9780cb8db63edbedfe06e98f0bad5f24e4c625995df9",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_21ccf528996740a4bcc98e464304e22f/logs/02-shadps4.log.gz",
+        "sha256": "b87d137ecc38281936d207f01d635c5096c5d7f2c276da7aa5bc51f7db07e4a8",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
