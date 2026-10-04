@@ -1,0 +1,83 @@
+name: Publish app compatibility feed
+# Rebuilds the in-app compatibility feed whenever moderated reports are merged
+# and publishes only the generated JSON to the orphan `app-feed` branch. The
+# submission Worker serves /data/compat/v2/* from that branch, so new reports
+# reach the app without a local build or Worker deploy.
+on:
+  push:
+    branches: [feat/community-compatibility-v2]
+    paths:
+      - "games/**"
+      - "assets/**"
+      - "data/**"
+      - "scripts/**"
+      - ".github/workflows/publish-app-feed.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-app-feed
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Use the release index from main
+        # sync-releases.yml keeps data/releases.json current on main only; scoring
+        # against a stale copy would leave every new report outside the current release.
+        run: |
+          git fetch --quiet --depth=1 origin main
+          git show FETCH_HEAD:data/releases.json > data/releases.json
+          python3 -c "import json; json.load(open('data/releases.json'))"
+      - name: Validate reports
+        run: python3 scripts/validate.py
+      - name: Build app feed
+        run: |
+          python3 scripts/build_site_data.py --output "$RUNNER_TEMP/generated"
+          python3 scripts/build_app_data.py --output "$RUNNER_TEMP/generated/app-v2"
+          python3 scripts/apply_tombstones.py \
+            --site-output "$RUNNER_TEMP/generated" \
+            --app-output "$RUNNER_TEMP/generated/app-v2"
+      - name: Verify feed contents
+        shell: python
+        run: |
+          import json, os, pathlib, re, sys
+          feed = pathlib.Path(os.environ["RUNNER_TEMP"]) / "generated" / "app-v2"
+          # Publish only the paths the Worker is allowed to serve.
+          allowed = re.compile(r"(?:index|socs)\.json|games/CUSA[0-9]{5}\.json")
+          files = sorted(p.relative_to(feed).as_posix() for p in feed.rglob("*") if p.is_file())
+          unexpected = [name for name in files if not allowed.fullmatch(name)]
+          if unexpected or "index.json" not in files or "socs.json" not in files:
+              sys.exit(f"Unexpected or missing feed files: {unexpected}")
+          for name in files:
+              json.loads((feed / name).read_text(encoding="utf-8"))
+          print(f"Verified {len(files)} feed file(s)")
+      - name: Publish to app-feed branch
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          feed="$RUNNER_TEMP/generated/app-v2"
+          publish="$RUNNER_TEMP/app-feed"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin app-feed >/dev/null; then
+            git clone --quiet --single-branch --branch app-feed \
+              "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" "$publish"
+          else
+            git init --quiet "$publish"
+            git -C "$publish" checkout --quiet --orphan app-feed
+            git -C "$publish" remote add origin \
+              "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          fi
+          find "$publish" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "$feed/." "$publish/"
+          git -C "$publish" add -A
+          if git -C "$publish" diff --cached --quiet; then
+            echo "App feed unchanged."
+            exit 0
+          fi
+          git -C "$publish" commit --quiet -m "feed: rebuild from ${SOURCE_SHA}"
+          git -C "$publish" push --quiet origin app-feed

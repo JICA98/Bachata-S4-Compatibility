@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9bb48a8d8b784eb68eeb3ebdf5d9e220",
+  "cusaId": "CUSA05794",
+  "testedAt": "2026-09-30T22:40:51.611476Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2405",
+    "socId": "sm8735",
+    "socName": "SM8735",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Rise of the Tomb Raider: observed boots during this test session. Measured native FPS: 8.6. Recorded duration: 657s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e2e83a16db57"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 8.61,
+    "testDurationSeconds": 657,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 6.42
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/01.webp",
+        "sha256": "879dfb9d88faff855a654704ac03b1d222d3c9a232c2d4192af6f5dc03e3d7c6",
+        "caption": "Rise of the Tomb Raider — capture 1 · 2026-09-30T22:40:50.999Z"
+      },
+      {
+        "path": "assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/02.webp",
+        "sha256": "420c2c16a09ccce4c1defce0f696856f6c8c0caac043a8832c0485ec610452a6",
+        "caption": "Rise of the Tomb Raider — capture 2 · 2026-09-30T22:46:14.827Z"
+      },
+      {
+        "path": "assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/screenshots/03.webp",
+        "sha256": "4f97a2dfc1db41b11100761e585d8d0e065f47a12a65e1970085b71d51703822",
+        "caption": "Rise of the Tomb Raider — capture 3 · 2026-09-30T22:47:19.127Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/logs/01-application.log.gz",
+        "sha256": "1c2a55ff80fa98239185cf787651c1f418f2d3b68f97e127c1c313c02d6000f6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05794/s_9bb48a8d8b784eb68eeb3ebdf5d9e220/logs/02-shadps4.log.gz",
+        "sha256": "c63655842abe16133d3d981da94dc70dbdbb30b39dd56776973f3897993e7277",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
