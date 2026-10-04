@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:13:36Z",
+  "generatedAt": "2026-10-04T16:14:12Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 58,
+  "gameCount": 59,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -178,6 +178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00265/s_decabe4038584b10ba32a56489afd21a/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-02T02:37:57.363740Z"
+    },
+    {
+      "cusaId": "CUSA00341",
+      "title": "Uncharted 4: A Thief’s End™",
+      "general": {
+        "score": 0,
+        "status": "nothing",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": null,
+      "latestStatus": "nothing",
+      "latestTestedAt": "2026-10-03T14:57:03.057819Z"
     },
     {
       "cusaId": "CUSA00552",
