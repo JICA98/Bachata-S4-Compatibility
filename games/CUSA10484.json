@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA10484",
+    "title": "Dead Cells",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 58.67,
+      "max": 58.67,
+      "average": 58.67,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "mt6899": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 58.67,
+        "max": 58.67,
+        "average": 58.67,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c42eba0093534b818a3682e3e6a8da55",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6899"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_c42eba0093534b818a3682e3e6a8da55",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T15:23:48.307491Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AI",
+        "socId": "mt6899",
+        "socName": "MT6899",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.67,
+        "nativeOnePercentLowFps": 12.45,
+        "outputAverageFps": null,
+        "testDurationSeconds": 241,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Dead Cells: observed ingame during this test session. Measured native FPS: 58.7. Recorded duration: 241s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-5b416f6666c9",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/01.webp",
+          "caption": "Dead Cells — capture 1 · 2026-10-03T15:23:47.450Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/02.webp",
+          "caption": "Dead Cells — capture 2 · 2026-10-03T15:24:52.078Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/03.webp",
+          "caption": "Dead Cells — capture 3 · 2026-10-03T15:25:53.246Z"
+        }
+      ]
+    }
+  ]
+}

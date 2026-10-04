@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T16:04:21Z",
+  "generatedAt": "2026-10-04T16:04:58Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 51,
+  "gameCount": 52,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -928,6 +928,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10454/20260814T102802Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:28:02Z"
+    },
+    {
+      "cusaId": "CUSA10484",
+      "title": "Dead Cells",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.67,
+          "max": 58.67,
+          "average": 58.67,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA10484/s_c42eba0093534b818a3682e3e6a8da55/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-03T15:23:48.307491Z"
     },
     {
       "cusaId": "CUSA11909",
