@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 28,
+    "score": 27,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 24,
-    "testerCount": 24,
-    "deviceCount": 19,
+    "reportCount": 25,
+    "testerCount": 25,
+    "deviceCount": 20,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 9.9,
       "max": 44.31,
-      "average": 24.04,
-      "sampleCount": 10
+      "average": 24.35,
+      "sampleCount": 11
     }
   },
   "socs": {
@@ -247,6 +247,23 @@
         ]
       }
     },
+    "sm7635": {
+      "score": 0,
+      "status": "nothing",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 27.39,
+        "max": 27.39,
+        "average": 27.39,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    },
     "sm7675": {
       "score": 0,
       "status": "nothing",
@@ -470,6 +487,7 @@
     ],
     "adreno7": [
       "sm7475",
+      "sm7635",
       "sm7675",
       "sm8450",
       "sm8475"
@@ -2098,6 +2116,81 @@
           "caption": "God of War® III Remastered — capture 3 · 2026-10-02T03:03:52.720Z"
         }
       ]
+    },
+    {
+      "reportId": "s_837437806cab462c84a8db248969d78e",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T01:17:04.777042Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2502",
+        "socId": "sm7635",
+        "socName": "Snapdragon 7s Gen 3",
+        "gpu": "Adreno 710",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 27.39,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 44,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed boots during this test session. Measured native FPS: 27.4. Recorded duration: 44s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-0815ce0c3b56",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
     },
     {
       "reportId": "s_ad66813a091341d1abe5088a3f0e485b",
