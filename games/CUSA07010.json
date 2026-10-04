@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 50,
+    "score": 58,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 50.94,
-      "max": 59.91,
-      "average": 55.42,
-      "sampleCount": 2
+      "max": 59.96,
+      "average": 56.94,
+      "sampleCount": 3
     }
   },
   "socs": {
@@ -40,6 +40,48 @@
         "sampleCount": 1
       },
       "recommendedSetup": null
+    },
+    "mt6897": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.96,
+        "max": 59.96,
+        "average": 59.96,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_0144acd3a5fe466f827b2252fc15341d",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
+      }
     },
     "sm7550": {
       "score": 75,
@@ -86,14 +128,89 @@
   },
   "families": {
     "mali-g": [
-      "mt6878"
+      "mt6878",
+      "mt6897"
     ],
     "adreno7": [
       "sm7550"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_1443646d336340de9b4b7b1dacf343b7/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_0144acd3a5fe466f827b2252fc15341d",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T06:31:25.321532Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2717",
+        "socId": "mt6897",
+        "socName": "MT6897",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.96,
+        "nativeOnePercentLowFps": 54.89,
+        "outputAverageFps": null,
+        "testDurationSeconds": 319,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Sonic Mania Encore DLC: observed playable during this test session. Measured native FPS: 60.0. Recorded duration: 319s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-70e208385319",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/01.webp",
+          "caption": "Sonic Mania Encore DLC — capture 1 · 2026-10-02T06:31:24.719Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/02.webp",
+          "caption": "Sonic Mania Encore DLC — capture 2 · 2026-10-02T06:32:48.499Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
+          "caption": "Sonic Mania Encore DLC — capture 3 · 2026-10-02T06:33:54.391Z"
+        }
+      ]
+    },
     {
       "reportId": "s_1443646d336340de9b4b7b1dacf343b7",
       "schemaVersion": 2,
