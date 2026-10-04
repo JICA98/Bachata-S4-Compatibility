@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 50,
+    "score": 45,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 4,
-    "testerCount": 4,
-    "deviceCount": 4,
+    "reportCount": 5,
+    "testerCount": 5,
+    "deviceCount": 5,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 11.27,
       "max": 40.09,
-      "average": 21.89,
-      "sampleCount": 3
+      "average": 25.95,
+      "sampleCount": 4
     }
   },
   "socs": {
@@ -59,19 +59,19 @@
       "recommendedSetup": null
     },
     "sm8635": {
-      "score": 75,
-      "status": "ingame",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "score": 50,
+      "status": "menus",
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
         "min": 11.27,
-        "max": 11.27,
-        "average": 11.27,
-        "sampleCount": 1
+        "max": 38.11,
+        "average": 24.69,
+        "sampleCount": 2
       },
       "recommendedSetup": {
         "label": "known-working",
@@ -410,6 +410,114 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_15066197ead64f679a067f76dae0c068/screenshots/01.webp",
           "caption": "God of War® III Remastered — capture 1 · 2026-10-04T13:47:23.153Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_22e5e5f0ec934827b93a791ec6c35b38",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-01T17:06:17.479175Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21I",
+        "socId": "sm8635",
+        "socName": "Snapdragon 8s Gen 3",
+        "gpu": "Adreno 735",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-3d143841fb3ddd09",
+        "type": "turnip",
+        "name": "Turnip mojo-25.0 v2",
+        "version": "mojo-25.0-v2",
+        "build": "25.0.7"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.copy_gpu_buffers": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-3d143841fb3ddd09",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-1280x720",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 38.11,
+        "nativeOnePercentLowFps": 22.76,
+        "outputAverageFps": null,
+        "testDurationSeconds": 78,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-88cba4a4cef2",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_22e5e5f0ec934827b93a791ec6c35b38/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-01T17:06:17.024Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_22e5e5f0ec934827b93a791ec6c35b38/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-10-01T17:06:17.224Z"
         }
       ]
     },
