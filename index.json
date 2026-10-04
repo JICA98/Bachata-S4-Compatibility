@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-04T15:35:08Z",
+  "generatedAt": "2026-10-04T15:35:53Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 37,
+  "gameCount": 38,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -53,6 +53,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00038/20260906T092838Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "playable",
       "latestTestedAt": "2026-09-06T09:28:38Z"
+    },
+    {
+      "cusaId": "CUSA00069",
+      "title": "Rayman® Legends",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00069/s_ce541a775d7241feb4159327bdd8079f/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-03T17:23:50.843304Z"
     },
     {
       "cusaId": "CUSA00223",
