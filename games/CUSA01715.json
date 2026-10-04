@@ -17,9 +17,9 @@
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": 11.93,
+      "min": 9.9,
       "max": 44.31,
-      "average": 25.39,
+      "average": 25.14,
       "sampleCount": 8
     }
   },
@@ -223,9 +223,9 @@
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": 11.93,
-        "max": 11.93,
-        "average": 11.93,
+        "min": 9.9,
+        "max": 9.9,
+        "average": 9.9,
         "sampleCount": 1
       },
       "recommendedSetup": null
@@ -426,8 +426,101 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_476a0ac3c42c46ab9b42b2bf71b08658/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_e428f03e53384cd4906501f12e5ad1c7",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-03T12:07:23.952555Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Sony",
+        "model": "SOG03",
+        "socId": "sm8350",
+        "socName": "Snapdragon 888",
+        "gpu": "Adreno 660",
+        "androidVersion": "13",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.vblank_frequency": 30,
+          "gpu.internal_screen_width": 960,
+          "gpu.internal_screen_height": 540
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "resolution-patch-1280x720",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 9.9,
+        "nativeOnePercentLowFps": 6.41,
+        "outputAverageFps": null,
+        "testDurationSeconds": 380,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed boots during this test session. Measured native FPS: 9.9. Recorded duration: 380s.",
+        "notes": "This Game is very lag problem and slow and my device Snapdragon 888 to solved my problem",
+        "issues": [
+          "lag-problem-and-colour-and-slow-problem"
+        ]
+      },
+      "contributor": {
+        "publicId": "tester-4617389f7255",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-03T12:07:23.615Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-10-03T12:08:26.599Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_e428f03e53384cd4906501f12e5ad1c7/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-10-03T12:09:37.699Z"
+        }
+      ]
+    },
     {
       "reportId": "s_476a0ac3c42c46ab9b42b2bf71b08658",
       "schemaVersion": 2,
