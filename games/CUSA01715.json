@@ -8,12 +8,12 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 56,
+    "score": 52,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 9,
-    "testerCount": 9,
-    "deviceCount": 8,
+    "reportCount": 10,
+    "testerCount": 10,
+    "deviceCount": 9,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
@@ -42,12 +42,12 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 62,
-      "status": "ingame",
+      "score": 50,
+      "status": "menus",
       "confidence": "medium",
-      "reportCount": 2,
-      "testerCount": 2,
-      "deviceCount": 2,
+      "reportCount": 3,
+      "testerCount": 3,
+      "deviceCount": 3,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
@@ -388,8 +388,74 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_93406187c09b4231b175d86513bbdf61/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_63bae8e0bbf04c9e8a0652e81789cf5c/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_63bae8e0bbf04c9e8a0652e81789cf5c",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-02T07:17:25.054915Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2311DRK48I",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-23d8e3c2b984",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_63bae8e0bbf04c9e8a0652e81789cf5c/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-02T07:17:24.738Z"
+        }
+      ]
+    },
     {
       "reportId": "s_93406187c09b4231b175d86513bbdf61",
       "schemaVersion": 2,
