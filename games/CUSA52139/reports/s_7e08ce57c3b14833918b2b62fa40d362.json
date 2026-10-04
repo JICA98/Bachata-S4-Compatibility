@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7e08ce57c3b14833918b2b62fa40d362",
+  "cusaId": "CUSA52139",
+  "testedAt": "2026-10-03T05:05:50.085972Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-092fc29be51c9088",
+    "type": "turnip",
+    "name": "Turnip vauzi-7xx v1",
+    "version": "vauzi-7xx-v1",
+    "build": "26.0.99",
+    "source": "JICA98/bachata-s4-drivers vauzi-7xx-v1"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-092fc29be51c9088",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Islets: observed playable during this test session. Measured native FPS: 59.6. Recorded duration: 207s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-455693e72f39"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.55,
+    "testDurationSeconds": 207,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 25
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/01.webp",
+        "sha256": "55ff88034ce081146397b9d9728d4bb726a5082370b957da6724d8232ae7430c",
+        "caption": "Islets — capture 1"
+      },
+      {
+        "path": "assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/02.webp",
+        "sha256": "e4a3a4796aae9158bd699d60347d7b456ea2f82a7830d6034e076b815194f18a",
+        "caption": "Islets"
+      },
+      {
+        "path": "assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/screenshots/03.webp",
+        "sha256": "536f9b7b064c55ce2eefca9f58c928d5e6868a0939450007cdac92399a4204e1",
+        "caption": "Islets — capture 3"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/logs/01-application.log.gz",
+        "sha256": "4e9ae503f02eaebdd72f503023f740e2f48b2b977e0e4863dc69fb8eaa451d1c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA52139/s_7e08ce57c3b14833918b2b62fa40d362/logs/02-shadps4.log.gz",
+        "sha256": "0f2c82d2016e25bd0869d58245fd8c79890cc477596f9e99d122e8fd061e02a1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
