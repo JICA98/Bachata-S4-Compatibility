@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "銀魂亂舞: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
+    "summary": "Gintama Rumble: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
     "notes": "",
     "issues": []
   },
@@ -77,17 +77,17 @@
       {
         "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/01.webp",
         "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
-        "caption": "銀魂亂舞 — capture 1 · 2026-09-30T22:19:20.919Z"
+        "caption": "Gintama Rumble — capture 1 · 2026-09-30T22:19:20.919Z"
       },
       {
         "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/02.webp",
         "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
-        "caption": "銀魂亂舞 — capture 2 · 2026-09-30T22:20:25.655Z"
+        "caption": "Gintama Rumble — capture 2 · 2026-09-30T22:20:25.655Z"
       },
       {
         "path": "assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
         "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
-        "caption": "銀魂亂舞 — capture 3 · 2026-09-30T22:21:29.279Z"
+        "caption": "Gintama Rumble — capture 3 · 2026-09-30T22:21:29.279Z"
       }
     ],
     "diagnostics": [

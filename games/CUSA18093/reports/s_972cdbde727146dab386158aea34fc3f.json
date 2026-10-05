@@ -54,7 +54,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "十三機兵防衛圈: observed playable during this test session. Measured native FPS: 24.1. Recorded duration: 204s.",
+    "summary": "13 Sentinels: Aegis Rim: observed playable during this test session. Measured native FPS: 24.1. Recorded duration: 204s.",
     "notes": "",
     "issues": []
   },
@@ -76,17 +76,17 @@
       {
         "path": "assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/01.webp",
         "sha256": "1405c247b0be4d204b9dd62f9a4843e3d4579b5f360c1dd1a79d6aa828dfe3dc",
-        "caption": "十三機兵防衛圈 — capture 1 · 2026-10-01T10:58:58.067Z"
+        "caption": "13 Sentinels: Aegis Rim — capture 1 · 2026-10-01T10:58:58.067Z"
       },
       {
         "path": "assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/02.webp",
         "sha256": "d0426b9bc27efd1c03fb4f30d4d06b40932c04fcbfbaf5287cae5560a993a3ee",
-        "caption": "十三機兵防衛圈 — capture 2 · 2026-10-01T11:00:01.495Z"
+        "caption": "13 Sentinels: Aegis Rim — capture 2 · 2026-10-01T11:00:01.495Z"
       },
       {
         "path": "assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
         "sha256": "7ad5d79ff761615908982d2988c0ccbe0e60f812d96f912548dc21cf332176f2",
-        "caption": "十三機兵防衛圈 — capture 3 · 2026-10-01T11:01:02.667Z"
+        "caption": "13 Sentinels: Aegis Rim — capture 3 · 2026-10-01T11:01:02.667Z"
       }
     ],
     "diagnostics": [
