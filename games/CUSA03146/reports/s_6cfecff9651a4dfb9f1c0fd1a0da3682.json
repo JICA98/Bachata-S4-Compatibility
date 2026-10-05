@@ -9,7 +9,7 @@
     "region": "Europe"
   },
   "release": {
-    "tag": "unreleased",
+    "tag": "v0.2.4",
     "commit": "d249256308c7d92ec4ab721307088ae88a9827a4"
   },
   "device": {
