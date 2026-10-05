@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b8beb961df664092b4fba0fbfe1a646f",
+  "cusaId": "CUSA00470",
+  "testedAt": "2026-10-05T12:48:30.326961Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23117RK66C",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Journey: observed playable during this test session. Measured native FPS: 36.1. Recorded duration: 201s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-54cbb35fe8ad"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 36.34,
+    "testDurationSeconds": 233,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 13.4
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/01.webp",
+        "sha256": "10b7b987e5c1199dc3157feec64fa1519eba2e119899ddad70ad7ef9f23c633d",
+        "caption": "Journey — capture 1 · 2026-10-05T12:48:30.166Z"
+      },
+      {
+        "path": "assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/02.webp",
+        "sha256": "c82cdcc2295dddb69e62c9596c252fdfdeef7ca1a83e6d1102c5b826c3a83536",
+        "caption": "Journey — capture 2 · 2026-10-05T12:49:43.002Z"
+      },
+      {
+        "path": "assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/03.webp",
+        "sha256": "843d2f3ee61cfdce15b770904447706207a691669bef7256e81c0f6961e77852",
+        "caption": "Journey — capture 3 · 2026-10-05T12:50:49.422Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/logs/01-application.log.gz",
+        "sha256": "a85e00394e7f41584c46f2140438e35c2e5a0db0dae8d9d0ff86bd5543f8a699",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/logs/02-shadps4.log.gz",
+        "sha256": "8b90c530585d05998d254b0b690c9a03f64949bfe0d18aa1b0612d8c428acec5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
