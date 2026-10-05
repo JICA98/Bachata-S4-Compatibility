@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_943221a541bc4b1b9fc481907e4d70dd",
+  "cusaId": "CUSA14209",
+  "testedAt": "2026-10-05T07:53:57.737Z",
+  "status": "nothing",
+  "game": {
+    "version": "28.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 30 pro",
+    "socId": "sm8450",
+    "socName": "SM8450",
+    "gpu": "Unknown",
+    "androidVersion": "12",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 270,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 270
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-resolution-480x270-potato-mode-2800",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA14209: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-65b3734a5bc9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA14209/s_943221a541bc4b1b9fc481907e4d70dd/logs/01-application.log.gz",
+        "sha256": "a1ba3eca5f3a197d30a8c9757afe1452442e76b45e629531657f9a416f5a11bd",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA14209/s_943221a541bc4b1b9fc481907e4d70dd/logs/02-shadps4.log.gz",
+        "sha256": "af7573825004b2906b8b60172d06c134d1e114159bce7a0f89837b4f9eff8b61",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
