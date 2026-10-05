@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7383d560c9a24228b20ff88baa6ccd42",
+  "cusaId": "CUSA01113",
+  "testedAt": "2026-10-05T00:41:18.180360Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AG",
+    "socId": "mt6899",
+    "socName": "MT6899",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Gravity Rush™ Remastered: observed boots during this test session. Measured native FPS: 60.0. Recorded duration: 230s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-524b059c8327"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 60,
+    "testDurationSeconds": 230,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 59.91
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/01.webp",
+        "sha256": "90ccd282c9e5276b440add55aa9cad9a9940c669542f37c11b8f8153c40cb1ef",
+        "caption": "Gravity Rush™ Remastered — capture 1 · 2026-10-05T00:41:18.034Z"
+      },
+      {
+        "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/02.webp",
+        "sha256": "6591ca7c99c61d94adcb3c5e3a8291060c45cc5324ae84dd3f8b8f82989f69f6",
+        "caption": "Gravity Rush™ Remastered — capture 2 · 2026-10-05T00:42:36.234Z"
+      },
+      {
+        "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/03.webp",
+        "sha256": "9bc8488473990afd3991c087e1d5ce40e2ad51cca2099c4a08005bcc4786fdb8",
+        "caption": "Gravity Rush™ Remastered — capture 3 · 2026-10-05T00:43:38.830Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/logs/01-application.log.gz",
+        "sha256": "f3fb38eb81fdf85b60cf4740926207d2cf618d7d362844a2f67de59cd072a7f5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/logs/02-shadps4.log.gz",
+        "sha256": "a1854c18eeb8db95c1d4f28165eab34230a992a06a2bbfcdb902270a281828bc",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
