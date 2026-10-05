@@ -3,7 +3,7 @@
   "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA08279",
-    "title": "銀魂亂舞",
+    "title": "Gintama Rumble",
     "region": "Asia",
     "publisher": "Unknown"
   },
@@ -96,7 +96,7 @@
         "framePacing": "smooth"
       },
       "result": {
-        "summary": "銀魂亂舞: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
+        "summary": "Gintama Rumble: observed nothing during this test session. Measured native FPS: 59.4. Recorded duration: 223s.",
         "notes": "",
         "issues": []
       },
@@ -111,15 +111,15 @@
       "screenshots": [
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/01.webp",
-          "caption": "銀魂亂舞 — capture 1 · 2026-09-30T22:19:20.919Z"
+          "caption": "Gintama Rumble — capture 1 · 2026-09-30T22:19:20.919Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/02.webp",
-          "caption": "銀魂亂舞 — capture 2 · 2026-09-30T22:20:25.655Z"
+          "caption": "Gintama Rumble — capture 2 · 2026-09-30T22:20:25.655Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
-          "caption": "銀魂亂舞 — capture 3 · 2026-09-30T22:21:29.279Z"
+          "caption": "Gintama Rumble — capture 3 · 2026-09-30T22:21:29.279Z"
         }
       ]
     }

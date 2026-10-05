@@ -3,7 +3,7 @@
   "generatedForRelease": "v0.2.4",
   "game": {
     "cusaId": "CUSA18093",
-    "title": "十三機兵防衛圈",
+    "title": "13 Sentinels: Aegis Rim",
     "region": "Asia",
     "publisher": "Unknown"
   },
@@ -121,7 +121,7 @@
         "framePacing": "stuttery"
       },
       "result": {
-        "summary": "十三機兵防衛圈: observed playable during this test session. Measured native FPS: 24.1. Recorded duration: 204s.",
+        "summary": "13 Sentinels: Aegis Rim: observed playable during this test session. Measured native FPS: 24.1. Recorded duration: 204s.",
         "notes": "",
         "issues": []
       },
@@ -136,15 +136,15 @@
       "screenshots": [
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/01.webp",
-          "caption": "十三機兵防衛圈 — capture 1 · 2026-10-01T10:58:58.067Z"
+          "caption": "13 Sentinels: Aegis Rim — capture 1 · 2026-10-01T10:58:58.067Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/02.webp",
-          "caption": "十三機兵防衛圈 — capture 2 · 2026-10-01T11:00:01.495Z"
+          "caption": "13 Sentinels: Aegis Rim — capture 2 · 2026-10-01T11:00:01.495Z"
         },
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
-          "caption": "十三機兵防衛圈 — capture 3 · 2026-10-01T11:01:02.667Z"
+          "caption": "13 Sentinels: Aegis Rim — capture 3 · 2026-10-01T11:01:02.667Z"
         }
       ]
     }

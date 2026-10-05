@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T11:18:18Z",
+  "generatedAt": "2026-10-05T11:20:10Z",
   "currentRelease": "v0.2.4",
   "gameCount": 77,
   "games": [
@@ -1056,7 +1056,7 @@
     },
     {
       "cusaId": "CUSA08279",
-      "title": "銀魂亂舞",
+      "title": "Gintama Rumble",
       "general": {
         "score": 0,
         "status": "nothing",
@@ -1506,7 +1506,7 @@
     },
     {
       "cusaId": "CUSA18093",
-      "title": "十三機兵防衛圈",
+      "title": "13 Sentinels: Aegis Rim",
       "general": {
         "score": 100,
         "status": "playable",
