@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T03:29:50Z",
+  "generatedAt": "2026-10-05T03:30:02Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 76,
+  "gameCount": 77,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -203,6 +203,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T15:04:51.638391Z"
+    },
+    {
+      "cusaId": "CUSA00486",
+      "title": "Hotline Miami",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 40.26,
+          "max": 40.26,
+          "average": 40.26,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00486/s_7b46cec0af4240df8c74f9d6e24ec108/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-04T23:44:35.192284Z"
     },
     {
       "cusaId": "CUSA00552",
