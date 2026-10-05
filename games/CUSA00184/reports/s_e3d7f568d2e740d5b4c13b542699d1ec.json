@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e3d7f568d2e740d5b4c13b542699d1ec",
+  "cusaId": "CUSA00184",
+  "testedAt": "2026-10-05T11:41:34.314498Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "M2012K11AG",
+    "socId": "sm8250",
+    "socName": "SM8250",
+    "gpu": "Unknown",
+    "androidVersion": "13",
+    "ramBucketGb": 6
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Angry Birds Star Wars: observed playable during this test session. Measured native FPS: 59.0. Recorded duration: 319s.",
+    "notes": "no music",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e1b581fbe052"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 58.99,
+    "testDurationSeconds": 319,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 39.6
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/01.webp",
+        "sha256": "8d96698ce33b7ce9b93151a892bd30491f56b9fcbd30fe3a2f870ec93e062cb4",
+        "caption": "Angry Birds Star Wars — capture 1 · 2026-10-05T11:41:33.819Z"
+      },
+      {
+        "path": "assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/02.webp",
+        "sha256": "261487ae8c7c92c4111d3b59eba6225cfe914d5e7dbbce339c84342854d76a17",
+        "caption": "Angry Birds Star Wars — capture 2 · 2026-10-05T11:42:46.823Z"
+      },
+      {
+        "path": "assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/03.webp",
+        "sha256": "b98244a31b317cee1bc4d02a7a7a613d835cb56bf223d0589d37b1c8386b245e",
+        "caption": "Angry Birds Star Wars — capture 3 · 2026-10-05T11:43:58.211Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/logs/01-application.log.gz",
+        "sha256": "a0298fe61c7d15353ff6fd3a8e50781cf14d5a67222f13fca2d585f9875073e0",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/logs/02-shadps4.log.gz",
+        "sha256": "c312d87968db16cc7006c87fc6625770459895c19c63cdc1fdf5cb0d23a7833f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
