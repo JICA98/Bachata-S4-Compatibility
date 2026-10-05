@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Gravity Rush™ Remastered: observed boots during this test session. Measured native FPS: 60.0. Recorded duration: 230s.",
+    "summary": "Gravity Rush Remastered: observed boots during this test session. Measured native FPS: 60.0. Recorded duration: 230s.",
     "notes": "",
     "issues": []
   },
@@ -77,17 +77,17 @@
       {
         "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/01.webp",
         "sha256": "90ccd282c9e5276b440add55aa9cad9a9940c669542f37c11b8f8153c40cb1ef",
-        "caption": "Gravity Rush™ Remastered — capture 1 · 2026-10-05T00:41:18.034Z"
+        "caption": "Gravity Rush\u2122 Remastered \u2014 capture 1 \u00b7 2026-10-05T00:41:18.034Z"
       },
       {
         "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/02.webp",
         "sha256": "6591ca7c99c61d94adcb3c5e3a8291060c45cc5324ae84dd3f8b8f82989f69f6",
-        "caption": "Gravity Rush™ Remastered — capture 2 · 2026-10-05T00:42:36.234Z"
+        "caption": "Gravity Rush\u2122 Remastered \u2014 capture 2 \u00b7 2026-10-05T00:42:36.234Z"
       },
       {
         "path": "assets/CUSA01113/s_7383d560c9a24228b20ff88baa6ccd42/screenshots/03.webp",
         "sha256": "9bc8488473990afd3991c087e1d5ce40e2ad51cca2099c4a08005bcc4786fdb8",
-        "caption": "Gravity Rush™ Remastered — capture 3 · 2026-10-05T00:43:38.830Z"
+        "caption": "Gravity Rush\u2122 Remastered \u2014 capture 3 \u00b7 2026-10-05T00:43:38.830Z"
       }
     ],
     "diagnostics": [
