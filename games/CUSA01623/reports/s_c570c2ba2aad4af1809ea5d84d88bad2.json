@@ -92,7 +92,7 @@
     }
   ],
   "result": {
-    "summary": "God of War® III Remastered: observed ingame during this test session. Measured native FPS: 21.2. Recorded duration: 1682s.",
+    "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 21.2. Recorded duration: 1682s.",
     "notes": "hades place from 15 to 30 fps it depends on which area you are in and for hades fight 10 to 20 fps",
     "issues": []
   },
@@ -114,17 +114,17 @@
       {
         "path": "assets/CUSA01623/s_c570c2ba2aad4af1809ea5d84d88bad2/screenshots/01.webp",
         "sha256": "27cccdd80efca8a6707834fb3403147ea78128859acb8fc6a8edce128c64b69f",
-        "caption": "God of War® III Remastered — capture 1 · 2026-10-05T10:42:52.459Z"
+        "caption": "God of War\u00ae III Remastered \u2014 capture 1 \u00b7 2026-10-05T10:42:52.459Z"
       },
       {
         "path": "assets/CUSA01623/s_c570c2ba2aad4af1809ea5d84d88bad2/screenshots/02.webp",
         "sha256": "a3a6b57a3bf92a5eca6fb8e40fd6393b0becf501ba4cd68b27a43e6678f42a51",
-        "caption": "God of War® III Remastered — capture 2 · 2026-10-05T10:45:54.575Z"
+        "caption": "God of War\u00ae III Remastered \u2014 capture 2 \u00b7 2026-10-05T10:45:54.575Z"
       },
       {
         "path": "assets/CUSA01623/s_c570c2ba2aad4af1809ea5d84d88bad2/screenshots/03.webp",
         "sha256": "5908ef5ab0058ac13d4c8ef8ef2d7402863577443c871c8987f8a99c46acb335",
-        "caption": "God of War® III Remastered — capture 3 · 2026-10-05T11:00:33.607Z"
+        "caption": "God of War\u00ae III Remastered \u2014 capture 3 \u00b7 2026-10-05T11:00:33.607Z"
       }
     ],
     "diagnostics": [
