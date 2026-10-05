@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "God of War® III Remastered: observed boots during this test session.",
+    "summary": "God of War III Remastered: observed boots during this test session.",
     "notes": "",
     "issues": []
   },
@@ -71,7 +71,7 @@
       {
         "path": "assets/CUSA01715/s_d4f76cb1a4cb4ff7b9d9cf68c1e4cec5/screenshots/01.webp",
         "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
-        "caption": "God of War® III Remastered — capture 1 · 2026-10-02T07:36:04.350Z"
+        "caption": "God of War III Remastered — capture 1 · 2026-10-02T07:36:04.350Z"
       }
     ],
     "diagnostics": [

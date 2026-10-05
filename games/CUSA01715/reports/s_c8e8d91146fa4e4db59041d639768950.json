@@ -92,7 +92,7 @@
     }
   ],
   "result": {
-    "summary": "God of War® III Remastered: observed playable during this test session. Measured native FPS: 26.0. Recorded duration: 880s.",
+    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 26.0. Recorded duration: 880s.",
     "notes": "",
     "issues": []
   },
@@ -114,17 +114,17 @@
       {
         "path": "assets/CUSA01715/s_c8e8d91146fa4e4db59041d639768950/screenshots/01.webp",
         "sha256": "88eb12fd240187353f23d23229583ce1dacbaa5184a7ab08c4ae74c7e99ffcf4",
-        "caption": "God of War® III Remastered — capture 1 · 2026-10-05T05:20:38.030Z"
+        "caption": "God of War III Remastered — capture 1 · 2026-10-05T05:20:38.030Z"
       },
       {
         "path": "assets/CUSA01715/s_c8e8d91146fa4e4db59041d639768950/screenshots/02.webp",
         "sha256": "8528a8bf0e76e896becd1cee84671ac418804fa962bc014ea899ad680e21f0f0",
-        "caption": "God of War® III Remastered — capture 2 · 2026-10-05T05:23:29.786Z"
+        "caption": "God of War III Remastered — capture 2 · 2026-10-05T05:23:29.786Z"
       },
       {
         "path": "assets/CUSA01715/s_c8e8d91146fa4e4db59041d639768950/screenshots/03.webp",
         "sha256": "e20a8c65e0c0857e632cb3a1bfe29d45fa04e85d162f10368be24927adfc1e51",
-        "caption": "God of War® III Remastered — capture 3 · 2026-10-05T05:32:12.506Z"
+        "caption": "God of War III Remastered — capture 3 · 2026-10-05T05:32:12.506Z"
       }
     ],
     "diagnostics": [

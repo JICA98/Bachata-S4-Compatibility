@@ -94,7 +94,7 @@
     }
   ],
   "result": {
-    "summary": "God of War® III Remastered: observed boots during this test session. Measured native FPS: 13.5. Recorded duration: 552s.",
+    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 13.5. Recorded duration: 552s.",
     "notes": "when I'm about to jump on the other side of cliff it wontt hold go the edge, instead It just gonna keep falling jg",
     "issues": [
       "bug"
