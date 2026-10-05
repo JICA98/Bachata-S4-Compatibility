@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 58,
-    "status": "menus",
+    "score": 62,
+    "status": "ingame",
     "confidence": "medium",
-    "reportCount": 3,
-    "testerCount": 3,
-    "deviceCount": 3,
+    "reportCount": 4,
+    "testerCount": 4,
+    "deviceCount": 4,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 50.94,
-      "max": 59.96,
-      "average": 56.94,
-      "sampleCount": 3
+      "max": 59.98,
+      "average": 57.7,
+      "sampleCount": 4
     }
   },
   "socs": {
@@ -124,6 +124,48 @@
         },
         "patches": []
       }
+    },
+    "sm8735": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.98,
+        "max": 59.98,
+        "average": 59.98,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_69e8d360e30842c897b7beaa839a4e8c",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -133,10 +175,87 @@
     ],
     "adreno7": [
       "sm7550"
+    ],
+    "adreno8": [
+      "sm8735"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_69e8d360e30842c897b7beaa839a4e8c/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_69e8d360e30842c897b7beaa839a4e8c",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-05T15:20:56.750797Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47I",
+        "socId": "sm8735",
+        "socName": "Snapdragon 8s Gen 4",
+        "gpu": "Adreno 825",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.98,
+        "nativeOnePercentLowFps": 59.07,
+        "outputAverageFps": null,
+        "testDurationSeconds": 341,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Sonic Mania Encore DLC: observed ingame during this test session. Measured native FPS: 60.0. Recorded duration: 341s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-3dbc48dcbb8b",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_69e8d360e30842c897b7beaa839a4e8c/screenshots/01.webp",
+          "caption": "Sonic Mania Encore DLC — capture 1 · 2026-10-05T15:20:56.586Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_69e8d360e30842c897b7beaa839a4e8c/screenshots/02.webp",
+          "caption": "Sonic Mania Encore DLC — capture 2 · 2026-10-05T15:22:37.554Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_69e8d360e30842c897b7beaa839a4e8c/screenshots/03.webp",
+          "caption": "Sonic Mania Encore DLC — capture 3 · 2026-10-05T15:23:40.226Z"
+        }
+      ]
+    },
     {
       "reportId": "s_0144acd3a5fe466f827b2252fc15341d",
       "schemaVersion": 2,

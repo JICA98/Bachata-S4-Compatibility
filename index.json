@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T15:30:53Z",
+  "generatedAt": "2026-10-05T15:31:08Z",
   "currentRelease": "v0.2.4",
   "gameCount": 77,
   "games": [
@@ -483,26 +483,26 @@
       "cusaId": "CUSA01715",
       "title": "God of War III Remastered",
       "general": {
-        "score": 28,
+        "score": 30,
         "status": "boots",
         "confidence": "medium",
-        "reportCount": 30,
-        "testerCount": 30,
+        "reportCount": 31,
+        "testerCount": 31,
         "deviceCount": 23,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 9.9,
           "max": 44.31,
-          "average": 25.55,
-          "sampleCount": 14
+          "average": 26.24,
+          "sampleCount": 15
         }
       },
-      "reportCount": 34,
+      "reportCount": 35,
       "socCount": 15,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_c8e8d91146fa4e4db59041d639768950/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_7b4183e5f0b8487ca9f9330e0ff98ec5/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-05T05:20:38.234509Z"
+      "latestTestedAt": "2026-10-05T11:53:12.779274Z"
     },
     {
       "cusaId": "CUSA01843",
@@ -933,26 +933,26 @@
       "cusaId": "CUSA07010",
       "title": "Sonic Mania Encore DLC",
       "general": {
-        "score": 58,
-        "status": "menus",
+        "score": 62,
+        "status": "ingame",
         "confidence": "medium",
-        "reportCount": 3,
-        "testerCount": 3,
-        "deviceCount": 3,
+        "reportCount": 4,
+        "testerCount": 4,
+        "deviceCount": 4,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 50.94,
-          "max": 59.96,
-          "average": 56.94,
-          "sampleCount": 3
+          "max": 59.98,
+          "average": 57.7,
+          "sampleCount": 4
         }
       },
-      "reportCount": 3,
-      "socCount": 3,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_0144acd3a5fe466f827b2252fc15341d/screenshots/03.webp",
+      "reportCount": 4,
+      "socCount": 4,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_69e8d360e30842c897b7beaa839a4e8c/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-02T06:31:25.321532Z"
+      "latestTestedAt": "2026-10-05T15:20:56.750797Z"
     },
     {
       "cusaId": "CUSA07023",
