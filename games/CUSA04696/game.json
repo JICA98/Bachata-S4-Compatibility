@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA04696",
+  "title": "South Park™: The Stick of Truth™",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 276
+  },
+  "legacyIssues": []
+}
