@@ -8,7 +8,7 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 27,
+    "score": 31,
     "status": "boots",
     "confidence": "medium",
     "reportCount": 13,
@@ -18,9 +18,9 @@
     "hasCurrentReports": true,
     "performance": {
       "min": 6.78,
-      "max": 40.28,
-      "average": 27.05,
-      "sampleCount": 8
+      "max": 46.98,
+      "average": 29.26,
+      "sampleCount": 9
     }
   },
   "socs": {
@@ -59,8 +59,8 @@
       "recommendedSetup": null
     },
     "mt6985": {
-      "score": 25,
-      "status": "boots",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
@@ -68,12 +68,79 @@
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 46.98,
+        "max": 46.98,
+        "average": 46.98,
+        "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_f7c3d23cb7934d489388950da47e91ca",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.copy_gpu_buffers": true,
+            "gpu.dump_shaders": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 960,
+            "gpu.internal_screen_height": 540,
+            "vulkan.vkcrash_diagnostic_enabled": true
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "CUSTOM",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-dynamic-shadows",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-soft-particles",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-ssao",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "resolution-patch-960x540",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "skip-intro",
+            "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
     },
     "mt6991": {
       "score": 0,
@@ -369,8 +436,124 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_f0aca83cabc443f083ec5cc6fd12b3cd/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_f7c3d23cb7934d489388950da47e91ca/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_f7c3d23cb7934d489388950da47e91ca",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-05T07:47:34.572387Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2218",
+        "socId": "mt6985",
+        "socName": "Dimensity 9200",
+        "gpu": "Immortalis-G715",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.copy_gpu_buffers": true,
+          "gpu.dump_shaders": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 960,
+          "gpu.internal_screen_height": 540,
+          "vulkan.vkcrash_diagnostic_enabled": true
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 46.98,
+        "nativeOnePercentLowFps": 9.47,
+        "outputAverageFps": null,
+        "testDurationSeconds": 506,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War® III Remastered: observed playable during this test session. Measured native FPS: 47.0. Recorded duration: 506s.",
+        "notes": "all dimensity processor upper than 9200 can achieve 45 plus fps and I'm using vivo x90 and it's playable just use pan v2 driver..",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-0ba5526cad80",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_f7c3d23cb7934d489388950da47e91ca/screenshots/01.webp",
+          "caption": "God of War® III Remastered — capture 1 · 2026-10-05T07:47:34.379Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_f7c3d23cb7934d489388950da47e91ca/screenshots/02.webp",
+          "caption": "God of War® III Remastered — capture 2 · 2026-10-05T07:48:48.675Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_f7c3d23cb7934d489388950da47e91ca/screenshots/03.webp",
+          "caption": "God of War® III Remastered — capture 3 · 2026-10-05T07:51:13.243Z"
+        }
+      ]
+    },
     {
       "reportId": "s_c195aeaa6f3842b49501e3f562ffe92f",
       "schemaVersion": 2,
