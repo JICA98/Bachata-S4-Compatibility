@@ -3,7 +3,7 @@
   "reportId": "s_39be17fab7c14f1ea39933643ed3a12e",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-05T09:24:12.063356Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.02",
     "region": "Europe"
@@ -89,7 +89,7 @@
     }
   ],
   "result": {
-    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 8.3. Recorded duration: 190s.",
     "notes": "",
     "issues": []
   },
