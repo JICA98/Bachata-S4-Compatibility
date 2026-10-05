@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA00470",
+    "title": "Journey",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 36.34,
+      "max": 36.34,
+      "average": 36.34,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 36.34,
+        "max": 36.34,
+        "average": 36.34,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_b8beb961df664092b4fba0fbfe1a646f",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_b8beb961df664092b4fba0fbfe1a646f",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-05T12:48:30.326961Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23117RK66C",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 36.34,
+        "nativeOnePercentLowFps": 13.4,
+        "outputAverageFps": null,
+        "testDurationSeconds": 233,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Journey: observed playable during this test session. Measured native FPS: 36.1. Recorded duration: 201s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-54cbb35fe8ad",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/01.webp",
+          "caption": "Journey — capture 1 · 2026-10-05T12:48:30.166Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/02.webp",
+          "caption": "Journey — capture 2 · 2026-10-05T12:49:43.002Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/03.webp",
+          "caption": "Journey — capture 3 · 2026-10-05T12:50:49.422Z"
+        }
+      ]
+    }
+  ]
+}

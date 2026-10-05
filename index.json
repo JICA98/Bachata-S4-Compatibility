@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T15:32:27Z",
+  "generatedAt": "2026-10-05T15:32:41Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 78,
+  "gameCount": 79,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -228,6 +228,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T15:04:51.638391Z"
+    },
+    {
+      "cusaId": "CUSA00470",
+      "title": "Journey",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 36.34,
+          "max": 36.34,
+          "average": 36.34,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00470/s_b8beb961df664092b4fba0fbfe1a646f/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-05T12:48:30.326961Z"
     },
     {
       "cusaId": "CUSA00486",
