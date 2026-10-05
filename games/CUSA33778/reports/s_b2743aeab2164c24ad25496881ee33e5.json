@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b2743aeab2164c24ad25496881ee33e5",
+  "cusaId": "CUSA33778",
+  "testedAt": "2026-10-05T03:20:16.890954Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23117RK66C",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA33778: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e9ada61553f4"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA33778/s_b2743aeab2164c24ad25496881ee33e5/screenshots/01.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "STAR WARS Jedi: Survivor™ — capture 1 · 2026-10-05T03:20:15.265Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA33778/s_b2743aeab2164c24ad25496881ee33e5/logs/01-application.log.gz",
+        "sha256": "4bcec54252207a0deac9d43b84e216d4dd71fb496cf81db98d96b19b97112646",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA33778/s_b2743aeab2164c24ad25496881ee33e5/logs/02-shadps4.log.gz",
+        "sha256": "10555c000647c8c4760e62d055a04ed762261ee2d5c8cc121ffad80901a4310b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
