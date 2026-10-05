@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA00184",
+    "title": "Angry Birds Star Wars",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 58.99,
+      "max": 58.99,
+      "average": 58.99,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8250": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 58.99,
+        "max": 58.99,
+        "average": 58.99,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_e3d7f568d2e740d5b4c13b542699d1ec",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno6": [
+      "sm8250"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_e3d7f568d2e740d5b4c13b542699d1ec",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-05T11:41:34.314498Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "M2012K11AG",
+        "socId": "sm8250",
+        "socName": "SM8250",
+        "gpu": "Unknown",
+        "androidVersion": "13",
+        "ramBucketGb": 6
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.99,
+        "nativeOnePercentLowFps": 39.6,
+        "outputAverageFps": null,
+        "testDurationSeconds": 319,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Angry Birds Star Wars: observed playable during this test session. Measured native FPS: 59.0. Recorded duration: 319s.",
+        "notes": "no music",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e1b581fbe052",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/01.webp",
+          "caption": "Angry Birds Star Wars — capture 1 · 2026-10-05T11:41:33.819Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/02.webp",
+          "caption": "Angry Birds Star Wars — capture 2 · 2026-10-05T11:42:46.823Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/03.webp",
+          "caption": "Angry Birds Star Wars — capture 3 · 2026-10-05T11:43:58.211Z"
+        }
+      ]
+    }
+  ]
+}

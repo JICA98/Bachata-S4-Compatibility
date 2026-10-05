@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T15:31:08Z",
+  "generatedAt": "2026-10-05T15:32:27Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 77,
+  "gameCount": 78,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -103,6 +103,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00076/s_fe231d3e5da9456d9974d426b7532a71/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-03T19:34:54.084547Z"
+    },
+    {
+      "cusaId": "CUSA00184",
+      "title": "Angry Birds Star Wars",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.99,
+          "max": 58.99,
+          "average": 58.99,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00184/s_e3d7f568d2e740d5b4c13b542699d1ec/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-05T11:41:34.314498Z"
     },
     {
       "cusaId": "CUSA00223",
