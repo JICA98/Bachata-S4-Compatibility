@@ -3,7 +3,7 @@
   "reportId": "s_5c0d5da02b31438e9dd05916faa32d1c",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-04T18:01:36.040377Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.02",
     "region": "Europe"
