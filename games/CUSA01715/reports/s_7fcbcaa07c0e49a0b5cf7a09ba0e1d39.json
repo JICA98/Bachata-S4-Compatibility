@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7fcbcaa07c0e49a0b5cf7a09ba0e1d39",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-05T00:52:05.256891Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6878",
+    "socId": "sm7635",
+    "socName": "Snapdragon 7s Gen 3",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "v36",
+    "build": "26.2.99",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6df2224988d4"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_7fcbcaa07c0e49a0b5cf7a09ba0e1d39/logs/01-application.log.gz",
+        "sha256": "407fb632ba89d7e553505a5328a833e883fb3caffdda4ab05d6a76ed8ddc57fb",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_7fcbcaa07c0e49a0b5cf7a09ba0e1d39/logs/02-shadps4.log.gz",
+        "sha256": "360c641cd83dda10d0ee67cc2de65ea3be943a3c3702b1c0db643e12acda8981",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
