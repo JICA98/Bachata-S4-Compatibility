@@ -174,6 +174,18 @@
         "Snapdragon 855+"
       ]
     },
+    "sm7150": {
+      "name": "Snapdragon 730G",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 618",
+      "family": "adreno6",
+      "aliases": [
+        "SM7150",
+        "Snapdragon 730",
+        "Snapdragon 730G",
+        "Snapdragon 732G"
+      ]
+    },
     "sm4635": {
       "name": "Snapdragon 4s Gen 2",
       "vendor": "Qualcomm",
