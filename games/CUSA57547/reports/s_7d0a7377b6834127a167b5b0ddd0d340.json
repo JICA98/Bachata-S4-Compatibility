@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7d0a7377b6834127a167b5b0ddd0d340",
+  "cusaId": "CUSA57547",
+  "testedAt": "2026-10-06T23:50:20.020587Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AG",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Call of Duty®: Black Ops: observed nothing during this test session. Measured native FPS: 60.0. Recorded duration: 56s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-29fa62f953b6"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.98,
+    "testDurationSeconds": 56,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 58.61
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA57547/s_7d0a7377b6834127a167b5b0ddd0d340/screenshots/01.webp",
+        "sha256": "489fc0918f7e24e719b09fc9c4ac0aecdd361982c2fdf7b7e0319311141de791",
+        "caption": "Call of Duty®: Black Ops — capture 1 · 2026-10-06T23:50:19.784Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA57547/s_7d0a7377b6834127a167b5b0ddd0d340/logs/01-application.log.gz",
+        "sha256": "e9d462a253aba6b768a62962ecf21998303b4d61bf2c6bd260cc3b9e8e6ee154",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA57547/s_7d0a7377b6834127a167b5b0ddd0d340/logs/02-shadps4.log.gz",
+        "sha256": "e3448320e95b40bdd574814d091147cbd8be5cf94ccf284f7b8f201a8c938008",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
