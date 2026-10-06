@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 32,
+    "score": 34,
     "status": "boots",
     "confidence": "medium",
-    "reportCount": 34,
-    "testerCount": 34,
-    "deviceCount": 25,
+    "reportCount": 35,
+    "testerCount": 35,
+    "deviceCount": 26,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 8.35,
       "max": 44.31,
-      "average": 24.88,
-      "sampleCount": 18
+      "average": 25.2,
+      "sampleCount": 19
     }
   },
   "socs": {
@@ -141,21 +141,79 @@
       }
     },
     "mt6899": {
-      "score": 6,
-      "status": "nothing",
+      "score": 20,
+      "status": "boots",
       "confidence": "medium",
-      "reportCount": 4,
-      "testerCount": 4,
-      "deviceCount": 2,
+      "reportCount": 5,
+      "testerCount": 5,
+      "deviceCount": 3,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
         "min": 25.78,
-        "max": 25.78,
-        "average": 25.78,
-        "sampleCount": 1
+        "max": 30.91,
+        "average": 28.34,
+        "sampleCount": 2
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_81cf8840281c4ff3abc4859c1274ffc8",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-depth-of-field",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-dynamic-shadows",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-soft-particles",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-ssao",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "resolution-patch-960x540",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "skip-intro",
+            "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
     },
     "mt6991": {
       "score": 38,
@@ -745,8 +803,115 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_138155c381ea421d9ec88d7e58a810ae/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_81cf8840281c4ff3abc4859c1274ffc8",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T03:02:57.308801Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2761",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 30.91,
+        "nativeOnePercentLowFps": 1.22,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1224,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 30.9. Recorded duration: 1224s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-f98227685868",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-06T03:02:56.765Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-06T03:10:50.105Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-06T03:15:02.121Z"
+        }
+      ]
+    },
     {
       "reportId": "s_138155c381ea421d9ec88d7e58a810ae",
       "schemaVersion": 2,
