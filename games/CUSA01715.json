@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 36,
+    "score": 37,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 37,
-    "testerCount": 37,
+    "reportCount": 38,
+    "testerCount": 38,
     "deviceCount": 28,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 8.35,
       "max": 53.41,
-      "average": 26.72,
-      "sampleCount": 21
+      "average": 26.41,
+      "sampleCount": 22
     }
   },
   "socs": {
@@ -141,23 +141,23 @@
       }
     },
     "mt6899": {
-      "score": 29,
-      "status": "boots",
+      "score": 36,
+      "status": "menus",
       "confidence": "medium",
-      "reportCount": 6,
-      "testerCount": 6,
+      "reportCount": 7,
+      "testerCount": 7,
       "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": 25.78,
+        "min": 20.03,
         "max": 53.41,
-        "average": 36.7,
-        "sampleCount": 3
+        "average": 32.53,
+        "sampleCount": 4
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_81cf8840281c4ff3abc4859c1274ffc8",
+        "reportId": "s_cbef771436164205bef06b43208b4605",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -174,10 +174,10 @@
           "driverId": "panvk-a1c25dfbc785cde8",
           "guestBackend": "FEX",
           "frameGenerationMode": "OFF",
-          "fexPreset": "PERFORMANCE",
+          "fexPreset": "SAFE",
           "adrenoTurboMode": false,
-          "bigCoreAffinity": true,
-          "maliGpuOptimizations": false
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
         },
         "patches": [
           {
@@ -206,6 +206,10 @@
           },
           {
             "id": "resolution-patch-960x540",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
             "revision": "2026.10.01.13399220021802570842"
           },
           {
@@ -883,8 +887,119 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_cbef771436164205bef06b43208b4605/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_cbef771436164205bef06b43208b4605",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T08:50:19.146986Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AG",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 20.03,
+        "nativeOnePercentLowFps": 3.14,
+        "outputAverageFps": null,
+        "testDurationSeconds": 269,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 20.0. Recorded duration: 269s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-dd719d31829f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_cbef771436164205bef06b43208b4605/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-06T08:50:18.484Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_cbef771436164205bef06b43208b4605/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-06T08:51:22.716Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_cbef771436164205bef06b43208b4605/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-06T08:52:42.292Z"
+        }
+      ]
+    },
     {
       "reportId": "s_81cf8840281c4ff3abc4859c1274ffc8",
       "schemaVersion": 2,
