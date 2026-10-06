@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-06T04:48:33Z",
+  "generatedAt": "2026-10-06T04:49:20Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 79,
+  "gameCount": 80,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -878,6 +878,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03840/s_1e938ce438a24913ba8471b4c01e11bc/screenshots/01.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T16:36:14.299310Z"
+    },
+    {
+      "cusaId": "CUSA04885",
+      "title": "resident evil 4",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 24.19,
+          "max": 24.19,
+          "average": 24.19,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-06T01:11:31.833973Z"
     },
     {
       "cusaId": "CUSA05716",

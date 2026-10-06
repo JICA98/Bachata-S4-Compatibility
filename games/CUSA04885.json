@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA04885",
+    "title": "resident evil 4",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 24.19,
+      "max": 24.19,
+      "average": 24.19,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "mt6899": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 24.19,
+        "max": 24.19,
+        "average": 24.19,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_4c3b80760d894b7bb50c6bb26751bb87",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6899"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_4c3b80760d894b7bb50c6bb26751bb87",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T01:11:31.833973Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AG",
+        "socId": "mt6899",
+        "socName": "MT6899",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 24.19,
+        "nativeOnePercentLowFps": 8,
+        "outputAverageFps": null,
+        "testDurationSeconds": 295,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "resident evil 4: observed ingame during this test session. Measured native FPS: 24.2. Recorded duration: 295s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-c9930811695f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/01.webp",
+          "caption": "resident evil 4 — capture 1 · 2026-10-06T01:11:31.557Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/02.webp",
+          "caption": "resident evil 4 — capture 2 · 2026-10-06T01:13:06.229Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/03.webp",
+          "caption": "resident evil 4 — capture 3 · 2026-10-06T01:14:07.945Z"
+        }
+      ]
+    }
+  ]
+}
