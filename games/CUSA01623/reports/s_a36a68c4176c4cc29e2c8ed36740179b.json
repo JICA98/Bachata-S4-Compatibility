@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a36a68c4176c4cc29e2c8ed36740179b",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-06T21:20:48.886309Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "20251031.222510",
+    "build": "REDMAGICOS10.5.11_NP05J_GB"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-fb116eb5ff10"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_a36a68c4176c4cc29e2c8ed36740179b/logs/01-application.log.gz",
+        "sha256": "483bd895d8731ed598f0113efe0e58c243f515621e7fe5f762c2ab4b84d01635",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_a36a68c4176c4cc29e2c8ed36740179b/logs/02-shadps4.log.gz",
+        "sha256": "afc73b12fc7c570e4e613f6ea67cf50f430796114df14083b5205a7b1dcbb9fd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
