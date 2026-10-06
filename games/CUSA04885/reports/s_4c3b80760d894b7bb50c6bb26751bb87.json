@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4c3b80760d894b7bb50c6bb26751bb87",
+  "cusaId": "CUSA04885",
+  "testedAt": "2026-10-06T01:11:31.833973Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AG",
+    "socId": "mt6899",
+    "socName": "MT6899",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "resident evil 4: observed boots during this test session. Measured native FPS: 24.2. Recorded duration: 295s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c9930811695f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 24.19,
+    "testDurationSeconds": 295,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 8
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/01.webp",
+        "sha256": "4d57ed6045a57edfbfd1877d40cd4aaceec0bba4a1d036f7b6ab2feefea746aa",
+        "caption": "resident evil 4 — capture 1 · 2026-10-06T01:11:31.557Z"
+      },
+      {
+        "path": "assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/02.webp",
+        "sha256": "aa678c9a972972d4865f178f68c96e908b5a0b9db2059078425938c855adf379",
+        "caption": "resident evil 4 — capture 2 · 2026-10-06T01:13:06.229Z"
+      },
+      {
+        "path": "assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/03.webp",
+        "sha256": "668c69c8483c2ab9bb63a4e0babaa1b942e4963f4fdda6162ce6e6b67e3fe6ee",
+        "caption": "resident evil 4 — capture 3 · 2026-10-06T01:14:07.945Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/logs/01-application.log.gz",
+        "sha256": "f25e63412a5716355a1a2bbc4143f7cca5ae51694e7594aabcc91b0559a99c44",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/logs/02-shadps4.log.gz",
+        "sha256": "71067da4cd1d66008c0d405257cc165371d60d2b38918c9d893829856700eb4a",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
