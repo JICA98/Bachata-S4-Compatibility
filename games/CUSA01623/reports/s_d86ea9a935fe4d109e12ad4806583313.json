@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d86ea9a935fe4d109e12ad4806583313",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-06T14:48:12.798031Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX733J",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-93cda63a998e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 29.42,
+    "testDurationSeconds": 272,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 16.84
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_d86ea9a935fe4d109e12ad4806583313/logs/01-application.log.gz",
+        "sha256": "6594e9e56b9d6c1aff76a93bee140b0819bed840f23af39b1b1496ab7aac1305",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_d86ea9a935fe4d109e12ad4806583313/logs/02-shadps4.log.gz",
+        "sha256": "194b01c98436b0fbda26e4d577d4e3d3bb4b873b2352a45e441a543938db2774",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
