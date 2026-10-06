@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f250f8a710274968b9793ab701bdec72",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-06T03:40:36.733801Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2511FPC34G",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1136,
+      "gpu.internal_screen_height": 640,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1136,
+      "gpu.internal_screen_height": 640
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 137. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02ec86557520"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 33.09,
+    "testDurationSeconds": 81,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.17
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_f250f8a710274968b9793ab701bdec72/screenshots/01.webp",
+        "sha256": "deedf9ce8e3564bbdce1e79053ddb9cc38ca86874ca85eb6580ca86ff6431af1",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-06T03:40:36.472Z"
+      },
+      {
+        "path": "assets/CUSA01623/s_f250f8a710274968b9793ab701bdec72/screenshots/02.webp",
+        "sha256": "57ddbf8c8bf3778e54349ca4b7597415b72c24ba9633ee23232e5c1f98fc8714",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-06T03:41:45.352Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_f250f8a710274968b9793ab701bdec72/logs/01-application.log.gz",
+        "sha256": "dae17ae00fe5c2fe4ca731d716ef063cd4fea296c1ef26f0083f9e685d09fc79",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_f250f8a710274968b9793ab701bdec72/logs/02-shadps4.log.gz",
+        "sha256": "3e3c7cc48907baecbf14f81ac1502630211ea04a178854dc02d875bc67a8a192",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
