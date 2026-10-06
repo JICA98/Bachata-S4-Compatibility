@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA04885",
+  "title": "resident evil 4",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 293
+  },
+  "legacyIssues": []
+}
