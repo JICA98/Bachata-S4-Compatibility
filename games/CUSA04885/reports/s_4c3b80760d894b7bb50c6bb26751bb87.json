@@ -3,7 +3,7 @@
   "reportId": "s_4c3b80760d894b7bb50c6bb26751bb87",
   "cusaId": "CUSA04885",
   "testedAt": "2026-10-06T01:11:31.833973Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "North America"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "resident evil 4: observed boots during this test session. Measured native FPS: 24.2. Recorded duration: 295s.",
+    "summary": "resident evil 4: observed ingame during this test session. Measured native FPS: 24.2. Recorded duration: 295s.",
     "notes": "",
     "issues": []
   },
