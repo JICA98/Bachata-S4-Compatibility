@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4929b37f31f149e29c4365096c54353b",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-06T15:36:57.549237Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6870",
+    "socId": "mt6878",
+    "socName": "Dimensity 7300",
+    "gpu": "Mali-G615 MC2",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "God of War III Remastered: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-a4f3b4c5ec51"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_4929b37f31f149e29c4365096c54353b/logs/01-application.log.gz",
+        "sha256": "92fe134b3e9ee578ba3e053200bfd7ee1520392ba4d2ce127142164831ec707d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_4929b37f31f149e29c4365096c54353b/logs/02-shadps4.log.gz",
+        "sha256": "9766927a933926ffa5765b6caed7862d4f698c1118de03e35303f08d780d4627",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
