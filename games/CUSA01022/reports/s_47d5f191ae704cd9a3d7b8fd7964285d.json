@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_47d5f191ae704cd9a3d7b8fd7964285d",
+  "cusaId": "CUSA01022",
+  "testedAt": "2026-10-06T03:50:29.320892Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.03",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2511FPC34G",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 30,
+      "gpu.internal_screen_width": 1136,
+      "gpu.internal_screen_height": 640,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 30,
+      "gpu.internal_screen_width": 1136,
+      "gpu.internal_screen_height": 640
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01022: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02ec86557520"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 25.81,
+    "testDurationSeconds": 38,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01022/s_47d5f191ae704cd9a3d7b8fd7964285d/screenshots/01.webp",
+        "sha256": "2f1793de624c17db6110c38e870707dd81ae7068bb230e2a2fe2ccd27469247a",
+        "caption": "DmC Devil May Cry™: Definitive Edition — capture 1 · 2026-10-06T03:50:29.156Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01022/s_47d5f191ae704cd9a3d7b8fd7964285d/logs/01-application.log.gz",
+        "sha256": "37d52445478ff85a66f6ed47084e48e479a9a6c21e019d93499bfe9eb96955ef",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01022/s_47d5f191ae704cd9a3d7b8fd7964285d/logs/02-shadps4.log.gz",
+        "sha256": "1989078a54396aca4e14bfd9bc9a5884fa324160f52dd61de8f6b01a50c4c0eb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
