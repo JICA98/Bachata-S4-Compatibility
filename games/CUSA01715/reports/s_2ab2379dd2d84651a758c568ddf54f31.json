@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2ab2379dd2d84651a758c568ddf54f31",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-05T18:41:48.841914Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2511FPC34G",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 53.4. Recorded duration: 487s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-4c3f322f966e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 53.41,
+    "testDurationSeconds": 487,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 16.24
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_2ab2379dd2d84651a758c568ddf54f31/screenshots/01.webp",
+        "sha256": "9ef501d0b1d29e0970b3c94ea54c008e960ebbdb2dd0a31366fe75b1b2760754",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-05T18:41:48.173Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_2ab2379dd2d84651a758c568ddf54f31/screenshots/02.webp",
+        "sha256": "3fff60a31de227c93f9f2b8d9e8e92518423d3bdba4e7b63ffdd954689535215",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-05T18:43:06.265Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_2ab2379dd2d84651a758c568ddf54f31/screenshots/03.webp",
+        "sha256": "21a954ee73d57aceefb4b734e6c8e0a5900ed71160b8e241f02f48ff56b301a5",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-05T18:44:09.289Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_2ab2379dd2d84651a758c568ddf54f31/logs/01-application.log.gz",
+        "sha256": "87ccc39d2c61fbe049e1bbc8f61424b29bd2e992134ffda6d3908b4444d3993b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_2ab2379dd2d84651a758c568ddf54f31/logs/02-shadps4.log.gz",
+        "sha256": "af92d823bd5160f903cb7344f391ea56cf2f8e77181432d40b2879c8959a6578",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
