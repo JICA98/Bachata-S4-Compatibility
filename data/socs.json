@@ -18,6 +18,7 @@
     "sm8350": {"name":"Snapdragon 888","vendor":"Qualcomm","gpu":"Adreno 660","family":"adreno6","aliases":["SM8350","Snapdragon 888","Snapdragon 888+"]},
     "sm8250": {"name":"Snapdragon 865","vendor":"Qualcomm","gpu":"Adreno 650","family":"adreno6","aliases":["SM8250","Snapdragon 865","Snapdragon 865+"]},
     "sm8150": {"name":"Snapdragon 855","vendor":"Qualcomm","gpu":"Adreno 640","family":"adreno6","aliases":["SM8150","Snapdragon 855","Snapdragon 855+"]},
+    "sm7150": {"name":"Snapdragon 730G","vendor":"Qualcomm","gpu":"Adreno 618","family":"adreno6","aliases":["SM7150","Snapdragon 730","Snapdragon 730G","Snapdragon 732G"]},
     "sm4635": {"name":"Snapdragon 4s Gen 2","vendor":"Qualcomm","gpu":"Adreno 611","family":"adreno6","aliases":["SM4635","Snapdragon 4s Gen 2"]},
     "mt6991": {"name":"Dimensity 9400","vendor":"MediaTek","gpu":"Immortalis-G925","family":"mali-immortalis","aliases":["MT6991","Dimensity 9400"]},
     "mt6989": {"name":"Dimensity 9300","vendor":"MediaTek","gpu":"Immortalis-G720","family":"mali-immortalis","aliases":["MT6989","Dimensity 9300","Dimensity 9300+"]},
