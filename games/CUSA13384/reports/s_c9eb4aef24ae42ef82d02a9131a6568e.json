@@ -54,7 +54,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "新櫻花大戰: observed ingame during this test session. Measured native FPS: 18.1. Recorded duration: 245s.",
+    "summary": "Sakura Wars: observed ingame during this test session. Measured native FPS: 18.1. Recorded duration: 245s.",
     "notes": "",
     "issues": []
   },
@@ -76,17 +76,17 @@
       {
         "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/01.webp",
         "sha256": "eb2201ca962108bd65aadc03ab8d4302075ead6208e702aab6249a91f3a52fc8",
-        "caption": "新櫻花大戰 — capture 1 · 2026-10-07T07:05:53.765Z"
+        "caption": "Sakura Wars — capture 1 · 2026-10-07T07:05:53.765Z"
       },
       {
         "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/02.webp",
         "sha256": "8f2b88fee8ee12b114104899038a72c5e93b587c6a63bf90d10910a0ac752f99",
-        "caption": "新櫻花大戰 — capture 2 · 2026-10-07T07:06:57.705Z"
+        "caption": "Sakura Wars — capture 2 · 2026-10-07T07:06:57.705Z"
       },
       {
         "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/03.webp",
         "sha256": "14729cc527e10bd860a1fa113c4d7aee750669b680c9b846d8a425407cf75b0d",
-        "caption": "新櫻花大戰 — capture 3 · 2026-10-07T07:08:25.105Z"
+        "caption": "Sakura Wars — capture 3 · 2026-10-07T07:08:25.105Z"
       }
     ],
     "diagnostics": [
