@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T03:24:56Z",
+  "generatedAt": "2026-10-07T03:25:09Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 81,
+  "gameCount": 82,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -519,15 +519,15 @@
         "performance": {
           "min": 6.78,
           "max": 46.98,
-          "average": 28.2,
+          "average": 28.0,
           "sampleCount": 10
         }
       },
-      "reportCount": 18,
+      "reportCount": 19,
       "socCount": 11,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_82b9339acce7479a9a58e13bd81967e6/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_06e7a75abd0247c48c03255d877211eb/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-06T14:46:15.613056Z"
+      "latestTestedAt": "2026-10-06T21:43:59.840603Z"
     },
     {
       "cusaId": "CUSA01715",
@@ -1928,6 +1928,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-09-28T08:12:11.491515Z"
+    },
+    {
+      "cusaId": "CUSA46747",
+      "title": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 24.35,
+          "max": 24.35,
+          "average": 24.35,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-06T22:55:12.789668Z"
     },
     {
       "cusaId": "CUSA52139",

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA46747",
+    "title": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 24.35,
+      "max": 24.35,
+      "average": 24.35,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8450": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 24.35,
+        "max": 24.35,
+        "average": 24.35,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_74a6190b887b4bf585d0e7f765b2d4af",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-2a619419c8c968f5",
+          "type": "turnip",
+          "name": "Turnip v26.3.0-R5",
+          "version": "v26.3.0-R5",
+          "build": "2a619419c8c968f5"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-2a619419c8c968f5",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "SAFE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_74a6190b887b4bf585d0e7f765b2d4af",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T22:55:12.789668Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.04",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX709J",
+        "socId": "sm8450",
+        "socName": "SM8450",
+        "gpu": "Unknown",
+        "androidVersion": "13",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-2a619419c8c968f5",
+        "type": "turnip",
+        "name": "Turnip v26.3.0-R5",
+        "version": "v26.3.0-R5",
+        "build": "2a619419c8c968f5"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-2a619419c8c968f5",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 24.35,
+        "nativeOnePercentLowFps": 20.61,
+        "outputAverageFps": null,
+        "testDurationSeconds": 341,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics: observed ingame during this test session. Measured native FPS: 24.4. Recorded duration: 341s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9661b3b051de",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/01.webp",
+          "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 1 · 2026-10-06T22:55:12.689Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/02.webp",
+          "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 2 · 2026-10-06T22:57:12.909Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/03.webp",
+          "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 3 · 2026-10-06T22:59:00.317Z"
+        }
+      ]
+    }
+  ]
+}
