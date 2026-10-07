@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA47318",
+    "title": "CONSCRIPT",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 56.75,
+      "max": 56.75,
+      "average": 56.75,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 56.75,
+        "max": 56.75,
+        "average": 56.75,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_b40ee3e98f414ecbad66b993681a6145",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_b40ee3e98f414ecbad66b993681a6145",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T08:30:35.031094Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23127PN0CC",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 56.75,
+        "nativeOnePercentLowFps": 6,
+        "outputAverageFps": null,
+        "testDurationSeconds": 420,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CONSCRIPT: observed ingame during this test session. Measured native FPS: 56.8. Recorded duration: 420s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-726fa79a2ada",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/01.webp",
+          "caption": "CONSCRIPT — capture 1 · 2026-10-07T08:30:34.930Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/02.webp",
+          "caption": "CONSCRIPT — capture 2 · 2026-10-07T08:31:52.830Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
+          "caption": "CONSCRIPT — capture 3 · 2026-10-07T08:34:09.310Z"
+        }
+      ]
+    }
+  ]
+}

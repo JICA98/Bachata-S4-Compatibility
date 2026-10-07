@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T09:21:03Z",
+  "generatedAt": "2026-10-07T09:21:17Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 84,
+  "gameCount": 86,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1005,6 +1005,31 @@
       "latestTestedAt": "2026-10-02T01:47:04.077901Z"
     },
     {
+      "cusaId": "CUSA06621",
+      "title": "ACA NEOGEO ALPHA MISSION II",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.91,
+          "max": 59.91,
+          "average": 59.91,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06621/s_537f753167a34d46a2c33cf4391b9599/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-07T07:00:44.928669Z"
+    },
+    {
       "cusaId": "CUSA06638",
       "title": "Persona 5",
       "general": {
@@ -2003,6 +2028,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-06T22:55:12.789668Z"
+    },
+    {
+      "cusaId": "CUSA47318",
+      "title": "CONSCRIPT",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 56.75,
+          "max": 56.75,
+          "average": 56.75,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-07T08:30:35.031094Z"
     },
     {
       "cusaId": "CUSA52139",

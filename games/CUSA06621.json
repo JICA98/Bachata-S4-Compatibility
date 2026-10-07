@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA06621",
+    "title": "ACA NEOGEO ALPHA MISSION II",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.91,
+      "max": 59.91,
+      "average": 59.91,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8250": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.91,
+        "max": 59.91,
+        "average": 59.91,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_537f753167a34d46a2c33cf4391b9599",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "SAFE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno6": [
+      "sm8250"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06621/s_537f753167a34d46a2c33cf4391b9599/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_537f753167a34d46a2c33cf4391b9599",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T07:00:44.928669Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-G781B",
+        "socId": "sm8250",
+        "socName": "SM8250",
+        "gpu": "Unknown",
+        "androidVersion": "13",
+        "ramBucketGb": 6
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.91,
+        "nativeOnePercentLowFps": 58.99,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1851,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "ACA NEOGEO ALPHA MISSION II: observed ingame during this test session. Measured native FPS: 59.9. Recorded duration: 1851s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-43011ec01d91",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06621/s_537f753167a34d46a2c33cf4391b9599/screenshots/01.webp",
+          "caption": "ACA NEOGEO ALPHA MISSION II — capture 1 · 2026-10-07T07:00:44.401Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06621/s_537f753167a34d46a2c33cf4391b9599/screenshots/02.webp",
+          "caption": "ACA NEOGEO ALPHA MISSION II — capture 2 · 2026-10-07T07:05:49.525Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06621/s_537f753167a34d46a2c33cf4391b9599/screenshots/03.webp",
+          "caption": "ACA NEOGEO ALPHA MISSION II — capture 3 · 2026-10-07T07:28:28.613Z"
+        }
+      ]
+    }
+  ]
+}
