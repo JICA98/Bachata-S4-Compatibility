@@ -3,7 +3,7 @@
   "reportId": "s_537f753167a34d46a2c33cf4391b9599",
   "cusaId": "CUSA06621",
   "testedAt": "2026-10-07T07:00:44.928669Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Japan"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "ACA NEOGEO ALPHA MISSION II: observed playable during this test session. Measured native FPS: 59.9. Recorded duration: 1851s.",
+    "summary": "ACA NEOGEO ALPHA MISSION II: observed ingame during this test session. Measured native FPS: 59.9. Recorded duration: 1851s.",
     "notes": "",
     "issues": []
   },
