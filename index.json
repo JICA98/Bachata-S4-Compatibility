@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T03:38:59Z",
+  "generatedAt": "2026-10-07T09:21:03Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 83,
+  "gameCount": 84,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1528,6 +1528,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-02T09:10:45.890518Z"
+    },
+    {
+      "cusaId": "CUSA13384",
+      "title": "Sakura Wars",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 18.14,
+          "max": 18.14,
+          "average": 18.14,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-07T07:05:53.871368Z"
     },
     {
       "cusaId": "CUSA13801",

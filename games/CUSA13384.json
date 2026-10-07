@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA13384",
+    "title": "Sakura Wars",
+    "region": "Asia",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 18.14,
+      "max": 18.14,
+      "average": 18.14,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 18.14,
+        "max": 18.14,
+        "average": 18.14,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c9eb4aef24ae42ef82d02a9131a6568e",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-6112f1820acedff2",
+          "type": "turnip",
+          "name": "Turnip驱动 Gen8 V37",
+          "version": "26.2.99",
+          "build": "26.2.99"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-6112f1820acedff2",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_c9eb4aef24ae42ef82d02a9131a6568e",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T07:05:53.871368Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-6112f1820acedff2",
+        "type": "turnip",
+        "name": "Turnip驱动 Gen8 V37",
+        "version": "26.2.99",
+        "build": "26.2.99"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-6112f1820acedff2",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 18.14,
+        "nativeOnePercentLowFps": 13.06,
+        "outputAverageFps": null,
+        "testDurationSeconds": 245,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Sakura Wars: observed ingame during this test session. Measured native FPS: 18.1. Recorded duration: 245s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9c1af01eba3a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/01.webp",
+          "caption": "Sakura Wars — capture 1 · 2026-10-07T07:05:53.765Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/02.webp",
+          "caption": "Sakura Wars — capture 2 · 2026-10-07T07:06:57.705Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/03.webp",
+          "caption": "Sakura Wars — capture 3 · 2026-10-07T07:08:25.105Z"
+        }
+      ]
+    }
+  ]
+}
