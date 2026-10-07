@@ -19,7 +19,7 @@
     "performance": {
       "min": 8.35,
       "max": 53.41,
-      "average": 25.53,
+      "average": 26.23,
       "sampleCount": 23
     }
   },
@@ -152,26 +152,26 @@
       "performance": {
         "min": 20.03,
         "max": 53.41,
-        "average": 31.64,
+        "average": 35.63,
         "sampleCount": 4
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_49e29476955d43d99739c8838f15d74b",
+        "reportId": "s_da00ae83da52482dbca51f311d59d3b7",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
-          "id": "panvk-a1c25dfbc785cde8",
+          "id": "turnip-fc1d69647c071ca3",
           "type": "turnip",
-          "name": "PanVK V2",
-          "version": "2.2.0",
-          "build": "a1c25dfbc785cde8"
+          "name": "PanVK G720",
+          "version": "PanVK-G720-0.1.0-beta.2.zip",
+          "build": "fc1d69647c071ca3"
         },
         "config": {
           "requiredOverrides": {
             "gpu.readbacks_mode": 0
           },
-          "driverId": "panvk-a1c25dfbc785cde8",
+          "driverId": "turnip-fc1d69647c071ca3",
           "guestBackend": "FEX",
           "frameGenerationMode": "OFF",
           "fexPreset": "PERFORMANCE",
@@ -968,8 +968,119 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_49e29476955d43d99739c8838f15d74b/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_da00ae83da52482dbca51f311d59d3b7/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_da00ae83da52482dbca51f311d59d3b7",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T16:08:05.574100Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2761",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-fc1d69647c071ca3",
+        "type": "turnip",
+        "name": "PanVK G720",
+        "version": "PanVK-G720-0.1.0-beta.2.zip",
+        "build": "fc1d69647c071ca3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-fc1d69647c071ca3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 43.31,
+        "nativeOnePercentLowFps": 1.53,
+        "outputAverageFps": null,
+        "testDurationSeconds": 3019,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 43.3. Recorded duration: 3019s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-f98227685868",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_da00ae83da52482dbca51f311d59d3b7/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-06T16:08:04.243Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_da00ae83da52482dbca51f311d59d3b7/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-06T16:15:58.335Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_da00ae83da52482dbca51f311d59d3b7/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-06T16:25:09.487Z"
+        }
+      ]
+    },
     {
       "reportId": "s_49e29476955d43d99739c8838f15d74b",
       "schemaVersion": 2,
