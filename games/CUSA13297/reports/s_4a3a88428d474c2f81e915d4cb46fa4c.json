@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4a3a88428d474c2f81e915d4cb46fa4c",
+  "cusaId": "CUSA13297",
+  "testedAt": "2026-10-07T05:52:40.974996Z",
+  "status": "boots",
+  "game": {
+    "version": "01.01",
+    "region": "Japan"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-G781B",
+    "socId": "sm8250",
+    "socName": "SM8250",
+    "gpu": "Unknown",
+    "androidVersion": "13",
+    "ramBucketGb": 6
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "ACA NEOGEO 3 COUNT BOUT: observed boots during this test session. Measured native FPS: 59.9. Recorded duration: 3775s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-43011ec01d91"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.92,
+    "testDurationSeconds": 3775,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 59.02
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13297/s_4a3a88428d474c2f81e915d4cb46fa4c/screenshots/01.webp",
+        "sha256": "a250a5ffa2be358fd683444a00f37137e6f53bac17666f159b9ad556dd2d05fc",
+        "caption": "ACA NEOGEO 3 COUNT BOUT — capture 1 · 2026-10-07T05:52:40.493Z"
+      },
+      {
+        "path": "assets/CUSA13297/s_4a3a88428d474c2f81e915d4cb46fa4c/screenshots/02.webp",
+        "sha256": "4ee879220434ee9bec4e80b6889ec11cfbd8457b88be46fcc555fc71c09e45eb",
+        "caption": "ACA NEOGEO 3 COUNT BOUT — capture 2 · 2026-10-07T05:57:48.085Z"
+      },
+      {
+        "path": "assets/CUSA13297/s_4a3a88428d474c2f81e915d4cb46fa4c/screenshots/03.webp",
+        "sha256": "f06c4ded924e9bcb318d098dd370f3315a3802751bac7c9bec57dacfb8685eed",
+        "caption": "ACA NEOGEO 3 COUNT BOUT — capture 3 · 2026-10-07T06:26:31.009Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13297/s_4a3a88428d474c2f81e915d4cb46fa4c/logs/01-application.log.gz",
+        "sha256": "238f6c0f3be720ee730519ddfb9eaafab13309b65b4752c0778393b615bc0f52",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13297/s_4a3a88428d474c2f81e915d4cb46fa4c/logs/02-shadps4.log.gz",
+        "sha256": "e4f8766f069de4626c9be9ab940245666263aa7b65337ce0ebc94c9d7120892f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
