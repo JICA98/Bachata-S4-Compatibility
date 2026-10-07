@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA06621",
+  "title": "ACA NEOGEO ALPHA MISSION II",
+  "region": "Japan",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 340
+  },
+  "legacyIssues": []
+}
