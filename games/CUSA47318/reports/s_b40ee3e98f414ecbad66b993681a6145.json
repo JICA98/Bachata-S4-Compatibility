@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b40ee3e98f414ecbad66b993681a6145",
+  "cusaId": "CUSA47318",
+  "testedAt": "2026-10-07T08:30:35.031094Z",
+  "status": "ingame",
+  "game": {
+    "version": "Unknown",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23127PN0CC",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CONSCRIPT: observed ingame during this test session. Measured native FPS: 56.8. Recorded duration: 420s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-726fa79a2ada"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 56.75,
+    "testDurationSeconds": 420,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/01.webp",
+        "sha256": "e1b4eb7033daa075f17b1765443d3a5a8ad250d76b06f411e99018dd52a6d537",
+        "caption": "CONSCRIPT — capture 1 · 2026-10-07T08:30:34.930Z"
+      },
+      {
+        "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/02.webp",
+        "sha256": "4f778a0673644cfc4f80d41dc189a604de9a6755049b9f8a17b05fbe5af68cf5",
+        "caption": "CONSCRIPT — capture 2 · 2026-10-07T08:31:52.830Z"
+      },
+      {
+        "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
+        "sha256": "5438b02b04490aab3f20c0dca0bd78cf6e9cf97655457749bf4b82cb39af4396",
+        "caption": "CONSCRIPT — capture 3 · 2026-10-07T08:34:09.310Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/logs/01-application.log.gz",
+        "sha256": "e17557295905d517a726079ac68c62527140fd12bf4d6e7a491afdf627f52be9",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/logs/02-shadps4.log.gz",
+        "sha256": "8a68d1177430b6a33fc7f3d64cd892a19a21739b031404a1c385c0173581cbaa",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
