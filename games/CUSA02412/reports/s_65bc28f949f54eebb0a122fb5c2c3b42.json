@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_65bc28f949f54eebb0a122fb5c2c3b42",
+  "cusaId": "CUSA02412",
+  "testedAt": "2026-10-07T05:43:00.586125Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6873",
+    "socId": "mt6897",
+    "socName": "Dimensity 8300",
+    "gpu": "Mali-G615 MC6",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4: observed boots during this test session. Measured native FPS: 19.8. Recorded duration: 79s.",
+    "notes": "stuck on first loading screen",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6564bdbacfa1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 19.77,
+    "testDurationSeconds": 79,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 10.35
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02412/s_65bc28f949f54eebb0a122fb5c2c3b42/screenshots/01.webp",
+        "sha256": "701f76d3efecb50314333f48997f18faab5de1c1f3c932d30f9ffbb0fbf29394",
+        "caption": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4 — capture 1 · 2026-10-07T05:43:00.285Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02412/s_65bc28f949f54eebb0a122fb5c2c3b42/logs/01-application.log.gz",
+        "sha256": "39cfa96418e6d7118895b8d2fe318a4baebd7e7ecc2d0a4abe9cb1c58a42689e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02412/s_65bc28f949f54eebb0a122fb5c2c3b42/logs/02-shadps4.log.gz",
+        "sha256": "8031021c12e6b8160e0ccbce10bbe9bc220fafe1a583e50ed2c65dca3361e76f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
