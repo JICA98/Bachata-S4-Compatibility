@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_aaec9f428c664cf7bdf941085b0f9545",
+  "cusaId": "CUSA01127",
+  "testedAt": "2026-10-07T11:29:10.969128Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AG",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "60-fps",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-camera-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-film-grain",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-lens-flare",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-screen-space-reflections",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "instant-timeout",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01127: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-dc512034b004"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01127/s_aaec9f428c664cf7bdf941085b0f9545/logs/01-application.log.gz",
+        "sha256": "cfc6e676b5d22f33c9db16135e0fbf214dbf480451edf5579da1548dd2e6aef5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01127/s_aaec9f428c664cf7bdf941085b0f9545/logs/02-shadps4.log.gz",
+        "sha256": "a60a10c84a309ac51c3ccd2e1aaafea305a52dc2300d2635685af717e75c0ff2",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
