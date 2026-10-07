@@ -3,7 +3,7 @@
   "reportId": "s_b40ee3e98f414ecbad66b993681a6145",
   "cusaId": "CUSA47318",
   "testedAt": "2026-10-07T08:30:35.031094Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "Unknown",
     "region": "Europe"
@@ -56,7 +56,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "CONSCRIPT - Trench Raider Pack: observed playable during this test session. Measured native FPS: 56.8. Recorded duration: 420s.",
+    "summary": "CONSCRIPT: observed ingame during this test session. Measured native FPS: 56.8. Recorded duration: 420s.",
     "notes": "",
     "issues": []
   },
@@ -78,17 +78,17 @@
       {
         "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/01.webp",
         "sha256": "e1b4eb7033daa075f17b1765443d3a5a8ad250d76b06f411e99018dd52a6d537",
-        "caption": "CONSCRIPT - Trench Raider Pack — capture 1 · 2026-10-07T08:30:34.930Z"
+        "caption": "CONSCRIPT — capture 1 · 2026-10-07T08:30:34.930Z"
       },
       {
         "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/02.webp",
         "sha256": "4f778a0673644cfc4f80d41dc189a604de9a6755049b9f8a17b05fbe5af68cf5",
-        "caption": "CONSCRIPT - Trench Raider Pack — capture 2 · 2026-10-07T08:31:52.830Z"
+        "caption": "CONSCRIPT — capture 2 · 2026-10-07T08:31:52.830Z"
       },
       {
         "path": "assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
         "sha256": "5438b02b04490aab3f20c0dca0bd78cf6e9cf97655457749bf4b82cb39af4396",
-        "caption": "CONSCRIPT - Trench Raider Pack — capture 3 · 2026-10-07T08:34:09.310Z"
+        "caption": "CONSCRIPT — capture 3 · 2026-10-07T08:34:09.310Z"
       }
     ],
     "diagnostics": [
