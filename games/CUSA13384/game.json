@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA13384",
+  "title": "Sakura Wars",
+  "region": "Asia",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 338
+  },
+  "legacyIssues": []
+}
