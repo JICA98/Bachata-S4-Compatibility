@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_74a6190b887b4bf585d0e7f765b2d4af",
+  "cusaId": "CUSA46747",
+  "testedAt": "2026-10-06T22:55:12.789668Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.04",
+    "region": "Japan"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX709J",
+    "socId": "sm8450",
+    "socName": "SM8450",
+    "gpu": "Unknown",
+    "androidVersion": "13",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics: observed ingame during this test session. Measured native FPS: 24.4. Recorded duration: 341s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9661b3b051de"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 24.35,
+    "testDurationSeconds": 341,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 20.61
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/01.webp",
+        "sha256": "fd9f3d8eb8f749f252a7552fdb2a08eaa7c2c62cab3f91cbbd63842fe1e62fc4",
+        "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 1 · 2026-10-06T22:55:12.689Z"
+      },
+      {
+        "path": "assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/02.webp",
+        "sha256": "fa3d79ca26671bb53707ec5dab73171ad586c678ae1b6d31ec7b5a9b9b468273",
+        "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 2 · 2026-10-06T22:57:12.909Z"
+      },
+      {
+        "path": "assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/screenshots/03.webp",
+        "sha256": "e0181625cc99f681f82bb501da6da8215a6936138457523f58a7b3333db4c490",
+        "caption": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics — capture 3 · 2026-10-06T22:59:00.317Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/logs/01-application.log.gz",
+        "sha256": "fee4be7208581552718884cdb29219b506d6011708ddc17120417779bda02c99",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA46747/s_74a6190b887b4bf585d0e7f765b2d4af/logs/02-shadps4.log.gz",
+        "sha256": "cb407b789515dd4ada9c7c3dcd79f5b5767befaf9716fad66130f3ce0b205ad0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
