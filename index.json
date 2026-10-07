@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T03:25:22Z",
+  "generatedAt": "2026-10-07T03:38:46Z",
   "currentRelease": "v0.2.4",
   "gameCount": 83,
   "games": [
@@ -523,7 +523,7 @@
           "sampleCount": 10
         }
       },
-      "reportCount": 19,
+      "reportCount": 20,
       "socCount": 11,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_06e7a75abd0247c48c03255d877211eb/screenshots/03.webp",
       "latestStatus": "ingame",
