@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c9eb4aef24ae42ef82d02a9131a6568e",
+  "cusaId": "CUSA13384",
+  "testedAt": "2026-10-07T07:05:53.871368Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-6112f1820acedff2",
+    "type": "turnip",
+    "name": "Turnip驱动 Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-6112f1820acedff2",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "新櫻花大戰: observed ingame during this test session. Measured native FPS: 18.1. Recorded duration: 245s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 18.14,
+    "testDurationSeconds": 245,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 13.06
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/01.webp",
+        "sha256": "eb2201ca962108bd65aadc03ab8d4302075ead6208e702aab6249a91f3a52fc8",
+        "caption": "新櫻花大戰 — capture 1 · 2026-10-07T07:05:53.765Z"
+      },
+      {
+        "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/02.webp",
+        "sha256": "8f2b88fee8ee12b114104899038a72c5e93b587c6a63bf90d10910a0ac752f99",
+        "caption": "新櫻花大戰 — capture 2 · 2026-10-07T07:06:57.705Z"
+      },
+      {
+        "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/screenshots/03.webp",
+        "sha256": "14729cc527e10bd860a1fa113c4d7aee750669b680c9b846d8a425407cf75b0d",
+        "caption": "新櫻花大戰 — capture 3 · 2026-10-07T07:08:25.105Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/logs/01-application.log.gz",
+        "sha256": "23d353fd682dbb30159442e99a123251f911f5baceada01064150c18a49c195b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13384/s_c9eb4aef24ae42ef82d02a9131a6568e/logs/02-shadps4.log.gz",
+        "sha256": "f9c7a720fc1f8ccc40a51e7937ceb60e44bd113f6905bcadcc08ead4c58d1923",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
