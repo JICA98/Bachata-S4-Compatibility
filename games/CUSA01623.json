@@ -19,7 +19,7 @@
     "performance": {
       "min": 6.78,
       "max": 46.98,
-      "average": 26.79,
+      "average": 27.16,
       "sampleCount": 11
     }
   },
@@ -34,14 +34,14 @@
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": 16.65,
-        "max": 16.65,
-        "average": 16.65,
+        "min": 20.69,
+        "max": 20.69,
+        "average": 20.69,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_06e7a75abd0247c48c03255d877211eb",
+        "reportId": "s_e261b53cf74f463e8a1b7d9ab0aa3dfa",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -562,8 +562,119 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_06e7a75abd0247c48c03255d877211eb/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_e261b53cf74f463e8a1b7d9ab0aa3dfa/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_e261b53cf74f463e8a1b7d9ab0aa3dfa",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T12:53:32.650969Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2311DRK48G",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 20.69,
+        "nativeOnePercentLowFps": 11.16,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1713,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 20.7. Recorded duration: 1713s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-dcec5254c38c",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e261b53cf74f463e8a1b7d9ab0aa3dfa/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-07T12:53:32.062Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e261b53cf74f463e8a1b7d9ab0aa3dfa/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-07T12:57:33.150Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e261b53cf74f463e8a1b7d9ab0aa3dfa/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-07T13:02:25.574Z"
+        }
+      ]
+    },
     {
       "reportId": "s_06e7a75abd0247c48c03255d877211eb",
       "schemaVersion": 2,
