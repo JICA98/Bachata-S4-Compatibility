@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_3a745160f0044bc7bb13916d183d8392",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-07T10:52:16.218191Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-adcc36af273d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 50.28,
+    "testDurationSeconds": 36,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_3a745160f0044bc7bb13916d183d8392/logs/01-application.log.gz",
+        "sha256": "b2974f11f8af160ab759e0054444c869d380d21c3a2dc8ba23e4d086769b71fb",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_3a745160f0044bc7bb13916d183d8392/logs/02-shadps4.log.gz",
+        "sha256": "149cbd8ab429776f99a71953b89eeeabb70cc9cfe1af26d0aaf861612b2dcfb6",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
