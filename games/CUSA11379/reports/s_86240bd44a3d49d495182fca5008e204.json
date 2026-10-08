@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_86240bd44a3d49d495182fca5008e204",
+  "cusaId": "CUSA11379",
+  "testedAt": "2026-10-08T13:30:33.606011Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2691",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.copy_gpu_buffers": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA11379: session ended at SESSION_STOPPING; exit code 0. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-56b6eff6928a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11379/s_86240bd44a3d49d495182fca5008e204/screenshots/01.webp",
+        "sha256": "8d9f8c0649c8027ffd75301422570eaca80f681c991c35f71739228faa824e99",
+        "caption": "Mortal Kombat 11 — capture 1 · 2026-10-08T13:30:33.476Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11379/s_86240bd44a3d49d495182fca5008e204/logs/01-application.log.gz",
+        "sha256": "a399f5748df6b206eeb29748fe0aeeeede5c2ea6d8f1bb1995f1580b6530fb51",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11379/s_86240bd44a3d49d495182fca5008e204/logs/02-shadps4.log.gz",
+        "sha256": "6bbca7766b8d7c0b784bf7d1c10c0efde4a9cdeb5e264b7bb6ea572054275e9e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
