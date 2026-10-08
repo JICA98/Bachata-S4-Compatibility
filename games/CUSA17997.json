@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA17997",
+    "title": "Disgaea 4 Complete+",
+    "region": "Asia",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 59.63,
+      "max": 59.63,
+      "average": 59.63,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 59.63,
+        "max": 59.63,
+        "average": 59.63,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c3469068233e48b886d0e820d38a98f2",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_c3469068233e48b886d0e820d38a98f2",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-08T08:00:24.135382Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.01",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.63,
+        "nativeOnePercentLowFps": 49.59,
+        "outputAverageFps": null,
+        "testDurationSeconds": 269,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Disgaea 4 Complete+: observed ingame during this test session. Measured native FPS: 59.6. Recorded duration: 224s. But no audio.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9c1af01eba3a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/01.webp",
+          "caption": "Disgaea 4 Complete+ — capture 1 · 2026-10-08T08:00:24.071Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/02.webp",
+          "caption": "Disgaea 4 Complete+ — capture 2 · 2026-10-08T08:01:25.531Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
+          "caption": "Disgaea 4 Complete+ — capture 3 · 2026-10-08T08:02:45.891Z"
+        }
+      ]
+    }
+  ]
+}

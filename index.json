@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T03:24:45Z",
+  "generatedAt": "2026-10-08T09:29:04Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 88,
+  "gameCount": 89,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1728,6 +1728,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-14T11:07:35Z"
+    },
+    {
+      "cusaId": "CUSA17997",
+      "title": "Disgaea 4 Complete+",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.63,
+          "max": 59.63,
+          "average": 59.63,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-08T08:00:24.135382Z"
     },
     {
       "cusaId": "CUSA18093",
