@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9a664d2c06f5464f981e1e822939af19",
+  "cusaId": "CUSA12380",
+  "testedAt": "2026-10-07T18:49:39.842621Z",
+  "status": "ingame",
+  "game": {
+    "version": "Unknown",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA12380: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "Game runs flawlessly on my Samsung Galaxy S25 Ultra. Able to boot in and play with no issues. Didn't experience any frame drops, rendering issues or other glitches. Due to game's lack of story, rated it as \"Playable\".",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b9dd2d35ec34"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 58.76,
+    "testDurationSeconds": 170,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 43.71
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/01.webp",
+        "sha256": "f19a48e2f4aaebc04020f5b8071453e91775d29a684de8f84d5b4f7c522900f9",
+        "caption": "P5D: Yakuza Set — capture 1 · 2026-10-07T18:49:39.663Z"
+      },
+      {
+        "path": "assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/02.webp",
+        "sha256": "4748dd174fc0f0a6c1734a36001ab7e34d92e2790c68681b9d1f122406062ecb",
+        "caption": "P5D: Yakuza Set — capture 2 · 2026-10-07T18:50:42.307Z"
+      },
+      {
+        "path": "assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/03.webp",
+        "sha256": "cfd05415ec36a6aaa251c4e3c5fa0354bd81e4a290a8c8ff709f723bc145ba2d",
+        "caption": "P5D: Yakuza Set — capture 3 · 2026-10-07T18:51:58.363Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/logs/01-application.log.gz",
+        "sha256": "6b84b32f4f20033a1de80c2aece2c60328b60b798e8e65107666bdbcce4dd11c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/logs/02-shadps4.log.gz",
+        "sha256": "686324f2855ebe671566ab2f671165a304908dbe84567182326a1fb16e804365",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
