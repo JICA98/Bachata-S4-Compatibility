@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5b27ed8958274a83af27819b92863ee8",
+  "cusaId": "CUSA08992",
+  "testedAt": "2026-10-08T14:12:48.672603Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.38",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 60 pro",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA08992: session ended at SESSION_STOPPING; exit code 135. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f0421be04f4c"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08992/s_5b27ed8958274a83af27819b92863ee8/logs/01-application.log.gz",
+        "sha256": "fcf115fd54a643a8f94193c2da60c9acdf503ae4b168307f54d5c85c8a8670cd",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08992/s_5b27ed8958274a83af27819b92863ee8/logs/02-shadps4.log.gz",
+        "sha256": "75c53d58cd98fd949ccc3fcef99c993e8ee6940adec2fccb1e69673c27d0a1ff",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
