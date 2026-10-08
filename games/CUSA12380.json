@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA12380",
+    "title": "Persona 5: Dancing in Starlight",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 58.76,
+      "max": 58.76,
+      "average": 58.76,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 58.76,
+        "max": 58.76,
+        "average": 58.76,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_9a664d2c06f5464f981e1e822939af19",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_9a664d2c06f5464f981e1e822939af19",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T18:49:39.842621Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S938B",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.76,
+        "nativeOnePercentLowFps": 43.71,
+        "outputAverageFps": null,
+        "testDurationSeconds": 170,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "CUSA12380: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "Game runs flawlessly on my Samsung Galaxy S25 Ultra. Able to boot in and play with no issues. Didn't experience any frame drops, rendering issues or other glitches. Due to game's lack of story, rated it as \"Playable\".",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-b9dd2d35ec34",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/01.webp",
+          "caption": "P5D: Yakuza Set — capture 1 · 2026-10-07T18:49:39.663Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/02.webp",
+          "caption": "P5D: Yakuza Set — capture 2 · 2026-10-07T18:50:42.307Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/03.webp",
+          "caption": "P5D: Yakuza Set — capture 3 · 2026-10-07T18:51:58.363Z"
+        }
+      ]
+    }
+  ]
+}

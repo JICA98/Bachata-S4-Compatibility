@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T03:24:20Z",
+  "generatedAt": "2026-10-08T03:24:32Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 87,
+  "gameCount": 88,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1478,6 +1478,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T12:57:42.303117Z"
+    },
+    {
+      "cusaId": "CUSA12380",
+      "title": "Persona 5: Dancing in Starlight",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.76,
+          "max": 58.76,
+          "average": 58.76,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-07T18:49:39.842621Z"
     },
     {
       "cusaId": "CUSA12779",
