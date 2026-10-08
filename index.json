@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T15:31:50Z",
+  "generatedAt": "2026-10-08T03:24:20Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 86,
+  "gameCount": 87,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -753,6 +753,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03146/20260802T114817Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T06:01:47.051898Z"
+    },
+    {
+      "cusaId": "CUSA03173",
+      "title": "Bloodborne",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 26.04,
+          "max": 26.04,
+          "average": 26.04,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-07T18:50:12.965200Z"
     },
     {
       "cusaId": "CUSA03219",

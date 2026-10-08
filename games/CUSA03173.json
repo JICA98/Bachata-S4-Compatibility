@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA03173",
+    "title": "Bloodborne",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 26.04,
+      "max": 26.04,
+      "average": 26.04,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8635": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 26.04,
+        "max": 26.04,
+        "average": 26.04,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_b8ee99b3cfd545ea84d6deb3893c0fcf",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.copy_gpu_buffers": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "bloodborne-30fps",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-lod-lowest",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-lower-corpse-physics",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-no-chromatic-aberration",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-no-dynamic-shadows",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-no-motion-blur",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-performance",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "bloodborne-resolution-640x360",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-camera-auto-rotation-via-movement",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "disable-facegen",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "lower-specific-renders-perf-increase",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "rgba8f-color-space-perf-increase",
+            "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8635"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_b8ee99b3cfd545ea84d6deb3893c0fcf",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T18:50:12.965200Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.09",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21G",
+        "socId": "sm8635",
+        "socName": "SM8635",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.copy_gpu_buffers": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "bloodborne-30fps",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-lod-lowest",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-lower-corpse-physics",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-no-chromatic-aberration",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-no-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-no-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-performance",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "bloodborne-resolution-640x360",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-camera-auto-rotation-via-movement",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-facegen",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "lower-specific-renders-perf-increase",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "rgba8f-color-space-perf-increase",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 26.04,
+        "nativeOnePercentLowFps": 3.11,
+        "outputAverageFps": null,
+        "testDurationSeconds": 272,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA03173: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-c80480ecdce8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/01.webp",
+          "caption": "Bloodborne™ — capture 1 · 2026-10-07T18:50:12.649Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/02.webp",
+          "caption": "Bloodborne™ — capture 2 · 2026-10-07T18:51:38.257Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/03.webp",
+          "caption": "Bloodborne™ — capture 3 · 2026-10-07T18:52:39.993Z"
+        }
+      ]
+    }
+  ]
+}
