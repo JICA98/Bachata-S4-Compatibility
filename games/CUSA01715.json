@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 38,
+    "score": 39,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 39,
-    "testerCount": 39,
-    "deviceCount": 29,
+    "reportCount": 40,
+    "testerCount": 40,
+    "deviceCount": 30,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 8.35,
       "max": 53.41,
-      "average": 26.23,
-      "sampleCount": 23
+      "average": 26.61,
+      "sampleCount": 24
     }
   },
   "socs": {
@@ -377,6 +377,49 @@
             "revision": "2026.10.01.13399220021802570842"
           }
         ]
+      }
+    },
+    "s5e9945": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 35.54,
+        "max": 35.54,
+        "average": 35.54,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_65fa9c20d1ff4860b9558b9d0eb101a9",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-eee62eb4df256ce9",
+          "type": "turnip",
+          "name": "MdiEx 2400 v3.6",
+          "version": "MdiEx_2400_v3.6.zip",
+          "build": "eee62eb4df256ce9"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-eee62eb4df256ce9",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
       }
     },
     "sm4635": {
@@ -949,6 +992,9 @@
       "mt6989",
       "mt6991"
     ],
+    "xclipse": [
+      "s5e9945"
+    ],
     "adreno6": [
       "sm4635",
       "sm7150",
@@ -968,8 +1014,83 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_da00ae83da52482dbca51f311d59d3b7/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_65fa9c20d1ff4860b9558b9d0eb101a9/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_65fa9c20d1ff4860b9558b9d0eb101a9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-08T01:27:40.359504Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S731B",
+        "socId": "s5e9945",
+        "socName": "Exynos 2400",
+        "gpu": "Xclipse 940",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-eee62eb4df256ce9",
+        "type": "turnip",
+        "name": "MdiEx 2400 v3.6",
+        "version": "MdiEx_2400_v3.6.zip",
+        "build": "eee62eb4df256ce9"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-eee62eb4df256ce9",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 35.54,
+        "nativeOnePercentLowFps": 14.46,
+        "outputAverageFps": null,
+        "testDurationSeconds": 302,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 35.5. Recorded duration: 302s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-44d404c94b8c",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_65fa9c20d1ff4860b9558b9d0eb101a9/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-08T01:27:40.057Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_65fa9c20d1ff4860b9558b9d0eb101a9/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-08T01:30:42.049Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_65fa9c20d1ff4860b9558b9d0eb101a9/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-08T01:31:45.597Z"
+        }
+      ]
+    },
     {
       "reportId": "s_da00ae83da52482dbca51f311d59d3b7",
       "schemaVersion": 2,
