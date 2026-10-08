@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c3469068233e48b886d0e820d38a98f2",
+  "cusaId": "CUSA17997",
+  "testedAt": "2026-10-08T08:00:24.135382Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.01",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "魔界戰記DISGAEA 4 Return: observed ingame during this test session. Measured native FPS: 59.6. Recorded duration: 224s. But no audio.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.63,
+    "testDurationSeconds": 269,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 49.59
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/01.webp",
+        "sha256": "315895444122ed49307b71d1d3ea52c3b0bb00d5290d27041fe6751c9fb1888b",
+        "caption": "魔界戰記DISGAEA 4 Return — capture 1 · 2026-10-08T08:00:24.071Z"
+      },
+      {
+        "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/02.webp",
+        "sha256": "c2e01c2225c09ba693539374f932790c5bc52dc1385214f37ed939f30b289759",
+        "caption": "魔界戰記DISGAEA 4 Return — capture 2 · 2026-10-08T08:01:25.531Z"
+      },
+      {
+        "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
+        "sha256": "fcf852772f7784913cf2e0829a37ba4a4b61953b7b2749305c40faa3b48a6e4f",
+        "caption": "魔界戰記DISGAEA 4 Return — capture 3 · 2026-10-08T08:02:45.891Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/logs/01-application.log.gz",
+        "sha256": "352c4adec7debe2e134b4566b1b70d610749dc5282037182b39270d3d987a547",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/logs/02-shadps4.log.gz",
+        "sha256": "e6566c89dab6a16749dc5fb0cb24904e9c02e1e100c313adcc0ff2b3505cbfb1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
