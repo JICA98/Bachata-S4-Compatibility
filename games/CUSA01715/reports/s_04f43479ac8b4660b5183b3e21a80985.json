@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_04f43479ac8b4660b5183b3e21a80985",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-08T19:02:30.787196Z",
+  "status": "playable",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2311DRK48G",
+    "socId": "mt6897",
+    "socName": "Dimensity 8300",
+    "gpu": "Mali-G615 MC6",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-1600x900",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 15.8. Recorded duration: 549s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-62e350fa9352"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 15.75,
+    "testDurationSeconds": 549,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 9.82
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/screenshots/01.webp",
+        "sha256": "63f2f1c2b082f2deb84b0ee9337f040c519f2acf56da0a990c86df7a7b211e33",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-08T19:02:30.457Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/screenshots/02.webp",
+        "sha256": "fbcf52d7d032cd4165a52b21d885545472c4cabf3e3b1748f3e2ce7ef754e4f4",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-08T19:03:39.341Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/screenshots/03.webp",
+        "sha256": "55ff855600d5b799c323cd5c79b7109b308cde6b59e426de5bd12ab1dec727a9",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-08T19:04:42.117Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/logs/01-application.log.gz",
+        "sha256": "4dd15e2d47c71a37496cbd7cff868dd31b4f435927c320a4af251cef43cc5d31",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/logs/02-shadps4.log.gz",
+        "sha256": "048ae91e3f758051c0d805ed4d542fb21f8457b834076f42a3460420e1f849c5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
