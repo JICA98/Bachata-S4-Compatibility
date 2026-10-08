@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_02d2228177754b9e9cc1b5d53732b0ff",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-08T23:51:56.483773Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX769J",
+    "socId": "sm8650",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-d0335542ec996fe3",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-d0335542ec996fe3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0ba57eeb6fbe"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 30.95,
+    "testDurationSeconds": 180,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 18.49
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_02d2228177754b9e9cc1b5d53732b0ff/screenshots/01.webp",
+        "sha256": "0e40c37f8592e1d4abcddd65dfe2d0bc21705ca706ae8c442d59eaa9d13a5ab5",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-08T23:51:56.373Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_02d2228177754b9e9cc1b5d53732b0ff/screenshots/02.webp",
+        "sha256": "d38c123981faf228cbc5df0846c44e3df796fc05110a4264f91698e4822445c3",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-08T23:52:57.785Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_02d2228177754b9e9cc1b5d53732b0ff/screenshots/03.webp",
+        "sha256": "760d967b5b67d32b3e47f6d9a9a5329d3973444aca9b046fb069861fdda4d4cf",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-08T23:54:25.617Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_02d2228177754b9e9cc1b5d53732b0ff/logs/01-application.log.gz",
+        "sha256": "5b22dc0beab486b3402d099db7aadc243ed28bc95ea2c6099bec6d73c1940718",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_02d2228177754b9e9cc1b5d53732b0ff/logs/02-shadps4.log.gz",
+        "sha256": "cc4125b83686b13ac1ba17f7417778149e3b5dcb2adc4311e5f3c53529fa0e07",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
