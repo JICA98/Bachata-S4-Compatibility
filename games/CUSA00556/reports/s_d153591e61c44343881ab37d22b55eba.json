@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d153591e61c44343881ab37d22b55eba",
+  "cusaId": "CUSA00556",
+  "testedAt": "2026-10-08T14:32:43.656876Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21G",
+    "socId": "sm8635",
+    "socName": "SM8635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "remove-2-second-frame-time-assert-0100",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-subsurface-pass",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "unverified-disable-sunlight-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "The Last of Us™ Remastered: observed ingame during this test session. Measured native FPS: 21.4. Recorded duration: 535s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c80480ecdce8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 21.39,
+    "testDurationSeconds": 535,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 5
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/01.webp",
+        "sha256": "2666a6a74bd348e3b2dacfd3777daa413735aefc55f196727e8a724e6761b0a5",
+        "caption": "The Last of Us™ Remastered — capture 1 · 2026-10-08T14:32:43.341Z"
+      },
+      {
+        "path": "assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/02.webp",
+        "sha256": "d4e242df51f02cf3b9f7bff4092a3a71dd0c175aca0a622fd549a7a6761369e5",
+        "caption": "The Last of Us™ Remastered — capture 2 · 2026-10-08T14:36:31.541Z"
+      },
+      {
+        "path": "assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/03.webp",
+        "sha256": "07770424c3d1ea7958c896e6ccbcac90a1efdb86e999ec047235ac5fdc174aa8",
+        "caption": "The Last of Us™ Remastered — capture 3 · 2026-10-08T14:39:17.157Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/logs/01-application.log.gz",
+        "sha256": "57af5c8cbf3d1e9fc2a48938ca298e9fc04385e8de9a42012f598660d8eefd71",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/logs/02-shadps4.log.gz",
+        "sha256": "1635cc189cd98e91489cc94a06821d6818b944d33eb60870e5db98ac0ee19732",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
