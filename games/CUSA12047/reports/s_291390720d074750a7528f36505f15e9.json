@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_291390720d074750a7528f36505f15e9",
+  "cusaId": "CUSA12047",
+  "testedAt": "2026-10-08T08:21:16.840464Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2606FRT34I",
+    "socId": "mt6899",
+    "socName": "MT6899",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA12047: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-a8665f522e6d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 55.19,
+    "testDurationSeconds": 238,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 18
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12047/s_291390720d074750a7528f36505f15e9/screenshots/01.webp",
+        "sha256": "02e98ee697bdc59f0d5ae0d16304056a87fbd4e29417f7375fbd7f89f3bc661a",
+        "caption": "Sekiro™: Shadows Die Twice — capture 1 · 2026-10-08T08:21:16.726Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12047/s_291390720d074750a7528f36505f15e9/logs/01-application.log.gz",
+        "sha256": "9b703d39eb1b50c3e1f7a88a7a77e9aae50b65ee62fa894d7b1f06d5f3e5d88c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12047/s_291390720d074750a7528f36505f15e9/logs/02-shadps4.log.gz",
+        "sha256": "afb2cfcbf201712b29816b001ecfc416b6103cb020b7147bd97207f252dce794",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
