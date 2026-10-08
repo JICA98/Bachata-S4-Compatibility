@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2cf16ca631204de690ee9eb08503a89c",
+  "cusaId": "CUSA26789",
+  "testedAt": "2026-10-08T11:55:39.658074Z",
+  "status": "boots",
+  "game": {
+    "version": "Unknown",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2403",
+    "socId": "mt6878",
+    "socName": "MT6878",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA26789: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6175897aac00"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/screenshots/01.webp",
+        "sha256": "a16895d3989ed5baec68b1ea4e2bf9df04d8e919379f04cf738f83e554fed1ef",
+        "caption": "Oddball Car Pack — capture 1 · 2026-10-08T11:55:39.410Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/logs/01-application.log.gz",
+        "sha256": "fde0dfee1f7ff7a30ae7d9416bdbc3121a17aa647457cc38356ffc067d6d3202",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/logs/02-shadps4.log.gz",
+        "sha256": "0d07eda7fb678f3d428d7f6f8f7940a21c84777485af7e2741170226dca0adeb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
