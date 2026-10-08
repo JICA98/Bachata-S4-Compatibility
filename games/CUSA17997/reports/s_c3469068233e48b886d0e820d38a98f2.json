@@ -56,7 +56,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "魔界戰記DISGAEA 4 Return: observed ingame during this test session. Measured native FPS: 59.6. Recorded duration: 224s. But no audio.",
+    "summary": "Disgaea 4 Complete+: observed ingame during this test session. Measured native FPS: 59.6. Recorded duration: 224s. But no audio.",
     "notes": "",
     "issues": []
   },
@@ -78,17 +78,17 @@
       {
         "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/01.webp",
         "sha256": "315895444122ed49307b71d1d3ea52c3b0bb00d5290d27041fe6751c9fb1888b",
-        "caption": "魔界戰記DISGAEA 4 Return — capture 1 · 2026-10-08T08:00:24.071Z"
+        "caption": "Disgaea 4 Complete+ — capture 1 · 2026-10-08T08:00:24.071Z"
       },
       {
         "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/02.webp",
         "sha256": "c2e01c2225c09ba693539374f932790c5bc52dc1385214f37ed939f30b289759",
-        "caption": "魔界戰記DISGAEA 4 Return — capture 2 · 2026-10-08T08:01:25.531Z"
+        "caption": "Disgaea 4 Complete+ — capture 2 · 2026-10-08T08:01:25.531Z"
       },
       {
         "path": "assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
         "sha256": "fcf852772f7784913cf2e0829a37ba4a4b61953b7b2749305c40faa3b48a6e4f",
-        "caption": "魔界戰記DISGAEA 4 Return — capture 3 · 2026-10-08T08:02:45.891Z"
+        "caption": "Disgaea 4 Complete+ — capture 3 · 2026-10-08T08:02:45.891Z"
       }
     ],
     "diagnostics": [
