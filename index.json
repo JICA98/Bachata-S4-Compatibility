@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T03:37:16Z",
+  "generatedAt": "2026-10-09T03:37:28Z",
   "currentRelease": "v0.2.4",
   "gameCount": 90,
   "games": [
@@ -558,22 +558,22 @@
       "cusaId": "CUSA01715",
       "title": "God of War III Remastered",
       "general": {
-        "score": 39,
+        "score": 40,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 40,
-        "testerCount": 40,
+        "reportCount": 41,
+        "testerCount": 41,
         "deviceCount": 30,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 8.35,
           "max": 53.41,
-          "average": 25.57,
-          "sampleCount": 24
+          "average": 25.39,
+          "sampleCount": 25
         }
       },
-      "reportCount": 47,
+      "reportCount": 48,
       "socCount": 19,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_04f43479ac8b4660b5183b3e21a80985/screenshots/03.webp",
       "latestStatus": "ingame",
@@ -785,24 +785,24 @@
       "general": {
         "score": 75,
         "status": "ingame",
-        "confidence": "low",
-        "reportCount": 1,
-        "testerCount": 1,
-        "deviceCount": 1,
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 26.04,
-          "max": 26.04,
-          "average": 26.04,
-          "sampleCount": 1
+          "max": 32.85,
+          "average": 29.45,
+          "sampleCount": 2
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_b8ee99b3cfd545ea84d6deb3893c0fcf/screenshots/03.webp",
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-07T18:50:12.965200Z"
+      "latestTestedAt": "2026-10-08T19:57:45.354807Z"
     },
     {
       "cusaId": "CUSA03219",
