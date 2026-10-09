@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e4a77bd2e24d43a28f22b617915d5c35",
+  "cusaId": "CUSA01004",
+  "testedAt": "2026-10-09T00:31:30.666014Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.01",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6873",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 900,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 900,
+      "gpu.internal_screen_width": 480
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01004: session ended at SESSION_STOPPING; exit code 134. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5406d7f2cc89"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 57.91,
+    "testDurationSeconds": 20,
+    "framePacing": "stuttery"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01004/s_e4a77bd2e24d43a28f22b617915d5c35/logs/01-application.log.gz",
+        "sha256": "1b92a4a2c0ef058fbc9d2bf76ea9ac2d41b51581c72b5280577f477dabf1c155",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01004/s_e4a77bd2e24d43a28f22b617915d5c35/logs/02-shadps4.log.gz",
+        "sha256": "25f2c105454f3758615684ee6661293d49461983a1732b570aa15151e4444525",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
