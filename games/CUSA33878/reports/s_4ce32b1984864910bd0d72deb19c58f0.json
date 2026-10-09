@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4ce32b1984864910bd0d72deb19c58f0",
+  "cusaId": "CUSA33878",
+  "testedAt": "2026-10-05T00:57:44.216553Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2311DRK48G",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "OS3.0.8.0.WNLMIXM",
+    "build": "BP2A.250605.031.A3"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA33878: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e2d7713838d6"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA33878/s_4ce32b1984864910bd0d72deb19c58f0/screenshots/01.webp",
+        "sha256": "6165635041e9f095d95978affaff24cc3b6ef0743efbd866ad82398339395ed0",
+        "caption": "Resident Evil 2 — capture 1 · 2026-10-05T00:57:44.079Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA33878/s_4ce32b1984864910bd0d72deb19c58f0/logs/01-application.log.gz",
+        "sha256": "e50b6b6b7659c4e0fb0e7ed211d95e0f9270a3468efb8483234be86d28167f6e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA33878/s_4ce32b1984864910bd0d72deb19c58f0/logs/02-shadps4.log.gz",
+        "sha256": "3163e071e10662472b272aa70811b6a128788008ef8b0d3233da24801a71c713",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
