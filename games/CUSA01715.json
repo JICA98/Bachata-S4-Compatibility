@@ -8,11 +8,11 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 41,
+    "score": 40,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 44,
-    "testerCount": 44,
+    "reportCount": 46,
+    "testerCount": 46,
     "deviceCount": 31,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -59,11 +59,11 @@
       "recommendedSetup": null
     },
     "mt6897": {
-      "score": 38,
+      "score": 35,
       "status": "menus",
       "confidence": "medium",
-      "reportCount": 12,
-      "testerCount": 12,
+      "reportCount": 13,
+      "testerCount": 13,
       "deviceCount": 5,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -145,11 +145,11 @@
       }
     },
     "mt6899": {
-      "score": 34,
+      "score": 33,
       "status": "boots",
       "confidence": "medium",
-      "reportCount": 8,
-      "testerCount": 8,
+      "reportCount": 9,
+      "testerCount": 9,
       "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -1717,6 +1717,67 @@
       ]
     },
     {
+      "reportId": "s_c20c59ecdbf543a29830b26409a8971c",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-07T12:22:52.029225Z",
+      "status": "nothing",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2311DRK48G",
+        "socId": "mt6897",
+        "socName": "Dimensity 8300",
+        "gpu": "Mali-G615 MC6",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-36190a50a636",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": []
+    },
+    {
       "reportId": "s_da00ae83da52482dbca51f311d59d3b7",
       "schemaVersion": 2,
       "testedAt": "2026-10-06T16:08:05.574100Z",
@@ -2158,6 +2219,105 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_cbef771436164205bef06b43208b4605/screenshots/03.webp",
           "caption": "God of War III Remastered — capture 3 · 2026-10-06T08:52:42.292Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_ee3efee50f034491aaa4a871df30c1ef",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-06T07:06:56.258874Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AG",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-2586612ec248c88e",
+        "type": "turnip",
+        "name": "Mesa PanVK Driver for Mali",
+        "version": "Funny._Mesa26.2_PanVK.zip",
+        "build": "2586612ec248c88e"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-2586612ec248c88e",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-dbc3bd54690e",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_ee3efee50f034491aaa4a871df30c1ef/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-06T07:06:56.013Z"
         }
       ]
     },

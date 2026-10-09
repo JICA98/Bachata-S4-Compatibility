@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T18:59:22Z",
+  "generatedAt": "2026-10-09T19:00:31Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 92,
+  "gameCount": 94,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -533,11 +533,11 @@
       "cusaId": "CUSA01623",
       "title": "God of War III Remastered",
       "general": {
-        "score": 39,
+        "score": 38,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 16,
-        "testerCount": 16,
+        "reportCount": 18,
+        "testerCount": 18,
         "deviceCount": 14,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
@@ -548,7 +548,7 @@
           "sampleCount": 12
         }
       },
-      "reportCount": 23,
+      "reportCount": 25,
       "socCount": 11,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_47a14d387f974c50beaa793d4d5aaa27/screenshots/03.webp",
       "latestStatus": "ingame",
@@ -558,11 +558,11 @@
       "cusaId": "CUSA01715",
       "title": "God of War III Remastered",
       "general": {
-        "score": 41,
+        "score": 40,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 44,
-        "testerCount": 44,
+        "reportCount": 46,
+        "testerCount": 46,
         "deviceCount": 31,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
@@ -573,7 +573,7 @@
           "sampleCount": 27
         }
       },
-      "reportCount": 52,
+      "reportCount": 54,
       "socCount": 20,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_816bb72d322042b4b0b4624d27b17566/screenshots/03.webp",
       "latestStatus": "ingame",
@@ -1505,6 +1505,31 @@
       "latestTestedAt": "2026-10-01T12:57:42.303117Z"
     },
     {
+      "cusaId": "CUSA12047",
+      "title": "Sekiro: Shadows Die Twice",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 55.19,
+          "max": 55.19,
+          "average": 55.19,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12047/s_291390720d074750a7528f36505f15e9/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-08T08:21:16.840464Z"
+    },
+    {
       "cusaId": "CUSA12380",
       "title": "Persona 5: Dancing in Starlight",
       "general": {
@@ -1928,6 +1953,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-02T02:30:23.058308Z"
+    },
+    {
+      "cusaId": "CUSA26789",
+      "title": "Beach Buggy Racing 2: Island Adventure",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-08T11:55:39.658074Z"
     },
     {
       "cusaId": "CUSA26813",

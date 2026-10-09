@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA12047",
+    "title": "Sekiro: Shadows Die Twice",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 55.19,
+      "max": 55.19,
+      "average": 55.19,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "mt6899": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 55.19,
+        "max": 55.19,
+        "average": 55.19,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6899"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12047/s_291390720d074750a7528f36505f15e9/screenshots/01.webp",
+  "reports": [
+    {
+      "reportId": "s_291390720d074750a7528f36505f15e9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-08T08:21:16.840464Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2606FRT34I",
+        "socId": "mt6899",
+        "socName": "MT6899",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 960,
+          "gpu.internal_screen_height": 540
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 55.19,
+        "nativeOnePercentLowFps": 18,
+        "outputAverageFps": null,
+        "testDurationSeconds": 238,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA12047: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-a8665f522e6d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12047/s_291390720d074750a7528f36505f15e9/screenshots/01.webp",
+          "caption": "Sekiro: Shadows Die Twice — capture 1 · 2026-10-08T08:21:16.726Z"
+        }
+      ]
+    }
+  ]
+}
