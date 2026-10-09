@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA00556",
+    "title": "The Last of Us Remastered",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 21.39,
+      "max": 21.39,
+      "average": 21.39,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8635": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 21.39,
+        "max": 21.39,
+        "average": 21.39,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_d153591e61c44343881ab37d22b55eba",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "gen8-v5",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.copy_gpu_buffers": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 640,
+            "gpu.internal_screen_height": 360
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "remove-2-second-frame-time-assert-0100",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-depth-of-field",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-motion-blur",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-ssao",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-subsurface-pass",
+            "revision": "2026.10.01.13399220021802570842"
+          },
+          {
+            "id": "unverified-disable-sunlight-shadows",
+            "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8635"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_d153591e61c44343881ab37d22b55eba",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-08T14:32:43.656876Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21G",
+        "socId": "sm8635",
+        "socName": "SM8635",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.copy_gpu_buffers": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 640,
+          "gpu.internal_screen_height": 360
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "remove-2-second-frame-time-assert-0100",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-subsurface-pass",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "unverified-disable-sunlight-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 21.39,
+        "nativeOnePercentLowFps": 5,
+        "outputAverageFps": null,
+        "testDurationSeconds": 535,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "The Last of Us™ Remastered: observed ingame during this test session. Measured native FPS: 21.4. Recorded duration: 535s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-c80480ecdce8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/01.webp",
+          "caption": "The Last of Us™ Remastered — capture 1 · 2026-10-08T14:32:43.341Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/02.webp",
+          "caption": "The Last of Us™ Remastered — capture 2 · 2026-10-08T14:36:31.541Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/03.webp",
+          "caption": "The Last of Us™ Remastered — capture 3 · 2026-10-08T14:39:17.157Z"
+        }
+      ]
+    }
+  ]
+}

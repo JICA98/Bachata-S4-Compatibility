@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T09:29:04Z",
+  "generatedAt": "2026-10-09T03:37:02Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 89,
+  "gameCount": 90,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -303,6 +303,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_95a0054acefc488882d3bc3e2ad41e68/screenshots/01.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T21:06:56.849309Z"
+    },
+    {
+      "cusaId": "CUSA00556",
+      "title": "The Last of Us Remastered",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.39,
+          "max": 21.39,
+          "average": 21.39,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00556/s_d153591e61c44343881ab37d22b55eba/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-08T14:32:43.656876Z"
     },
     {
       "cusaId": "CUSA00897",
