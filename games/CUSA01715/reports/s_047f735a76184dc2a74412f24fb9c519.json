@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_047f735a76184dc2a74412f24fb9c519",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-09T10:33:35.573338Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "TECNO",
+    "model": "TECNO LJ8",
+    "socId": "mt6878",
+    "socName": "Dimensity 7300",
+    "gpu": "Mali-G615 MC2",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "301450006",
+    "build": "LJ8-16.3.0.145(IN001PF001AZ)"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 360,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.neo_mode": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 360
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7e5bd5df0da1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_047f735a76184dc2a74412f24fb9c519/logs/01-application.log.gz",
+        "sha256": "123645be120c4f8c531b4843a30d4e9dd9e4a57af31eb03c0e084866107eca50",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_047f735a76184dc2a74412f24fb9c519/logs/02-shadps4.log.gz",
+        "sha256": "93e1e9a8b07fbb763f7197898c9d3c433c994eac0804b16802a39bbacedccb24",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
