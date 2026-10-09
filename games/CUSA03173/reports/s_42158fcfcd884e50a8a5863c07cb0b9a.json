@@ -3,7 +3,7 @@
   "reportId": "s_42158fcfcd884e50a8a5863c07cb0b9a",
   "cusaId": "CUSA03173",
   "testedAt": "2026-10-08T19:57:45.354807Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.09",
     "region": "Europe"
@@ -120,7 +120,7 @@
     }
   ],
   "result": {
-    "summary": "Bloodborne: observed boots during this test session. Measured native FPS: 32.9. Recorded duration: 271s.",
+    "summary": "Bloodborne: observed ingame during this test session. Measured native FPS: 32.9. Recorded duration: 271s.",
     "notes": "around 30fps. stutters and frame drops when lighting lanterns & transitioning between indoors & outdoors. must run with patch for lowest resolution to achieve this performance. occasional graphic bugs.",
     "issues": [
       "stutter-area-change",
