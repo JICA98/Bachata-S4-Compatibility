@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_88a38238b373486f820844806ab22838",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-06T21:54:16.563549Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2412DPC0AG",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c2fad9be7cb"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_88a38238b373486f820844806ab22838/screenshots/01.webp",
+        "sha256": "89132a41d7c0d8c135a9ff016d98292f26b5aa0032fa23a33612c0da9bf7028b",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-06T21:54:16.323Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_88a38238b373486f820844806ab22838/logs/01-application.log.gz",
+        "sha256": "28c91c45fd5c682c851ddc20349f01e797aa42fc81fa15b788e3cb521fb2ce58",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_88a38238b373486f820844806ab22838/logs/02-shadps4.log.gz",
+        "sha256": "859262a6cfea74f7d1f63a464add8b85016c135b6fe65eaab1c7d0ae4eef519b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
