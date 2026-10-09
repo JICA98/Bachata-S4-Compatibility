@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T09:30:18Z",
+  "generatedAt": "2026-10-09T18:59:10Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 90,
+  "gameCount": 91,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1778,6 +1778,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17997/s_c3469068233e48b886d0e820d38a98f2/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-08T08:00:24.135382Z"
+    },
+    {
+      "cusaId": "CUSA18008",
+      "title": "Resident Evil Village",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.63,
+          "max": 58.63,
+          "average": 58.63,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-04T17:38:46.462884Z"
     },
     {
       "cusaId": "CUSA18093",

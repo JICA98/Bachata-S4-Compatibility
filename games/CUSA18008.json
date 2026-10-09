@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA18008",
+    "title": "Resident Evil Village",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 25,
+    "status": "boots",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 58.63,
+      "max": 58.63,
+      "average": 58.63,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 25,
+      "status": "boots",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 58.63,
+        "max": 58.63,
+        "average": 58.63,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/screenshots/01.webp",
+  "reports": [
+    {
+      "reportId": "s_3bafecefc6644c56b4fb3e7e3b9b6143",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-04T17:38:46.462884Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "Unknown",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S938B",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "gen8-v5",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.63,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 24,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "CUSA18008: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-cd9236f20c91",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA18008/s_3bafecefc6644c56b4fb3e7e3b9b6143/screenshots/01.webp",
+          "caption": "Winters' Expansion — capture 1 · 2026-10-04T17:38:44.716Z"
+        }
+      ]
+    }
+  ]
+}
