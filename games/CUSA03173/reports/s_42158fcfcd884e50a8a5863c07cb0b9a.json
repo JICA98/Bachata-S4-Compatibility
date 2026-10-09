@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_42158fcfcd884e50a8a5863c07cb0b9a",
+  "cusaId": "CUSA03173",
+  "testedAt": "2026-10-08T19:57:45.354807Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.09",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-F976U",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "bloodborne-lod-lowest",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-lower-corpse-physics",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-aa",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-chromatic-aberration",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-dof",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-no-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-performance",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-resolution-640x360",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "bloodborne-skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-facegen",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "lower-specific-renders-perf-increase",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "rgba8f-color-space-perf-increase",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "uncap-fps",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "Bloodborne: observed ingame during this test session. Measured native FPS: 32.9. Recorded duration: 271s.",
+    "notes": "around 30fps. stutters and frame drops when lighting lanterns & transitioning between indoors & outdoors. must run with patch for lowest resolution to achieve this performance. occasional graphic bugs.",
+    "issues": [
+      "stutter-area-change",
+      "stutter-light-lantern"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-1921c2fb16ba"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 32.85,
+    "testDurationSeconds": 271,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.53
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/screenshots/01.webp",
+        "sha256": "750f2b570353f2ada5fcd3c71e24b9359124a36dc912f0c3b70c48df0c80e75a",
+        "caption": "Bloodborne — capture 1 · 2026-10-08T19:57:44.630Z"
+      },
+      {
+        "path": "assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/screenshots/02.webp",
+        "sha256": "2622a644ab9de7c88a143064e5247706cd2c58687071d550a176cfbccff34691",
+        "caption": "Bloodborne — capture 2 · 2026-10-08T19:58:50.466Z"
+      },
+      {
+        "path": "assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/screenshots/03.webp",
+        "sha256": "11d62c9268fe44f46cabdd90fbda603b3f6c8c9e287f823a5a69dc820594fc95",
+        "caption": "Bloodborne — capture 3 · 2026-10-08T20:00:25.906Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/logs/01-application.log.gz",
+        "sha256": "16e78904e47be285ab42e4ee238110db7ed0a81d99b7ed60be58cd62cb565078",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/logs/02-shadps4.log.gz",
+        "sha256": "cdab5608c12603ccc067a892fb67d31b7c1e6981c879f6da77d5e76c20ab810c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
