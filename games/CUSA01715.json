@@ -11,8 +11,8 @@
     "score": 41,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 43,
-    "testerCount": 43,
+    "reportCount": 44,
+    "testerCount": 44,
     "deviceCount": 31,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
@@ -145,11 +145,11 @@
       }
     },
     "mt6899": {
-      "score": 36,
-      "status": "menus",
+      "score": 34,
+      "status": "boots",
       "confidence": "medium",
-      "reportCount": 7,
-      "testerCount": 7,
+      "reportCount": 8,
+      "testerCount": 8,
       "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
@@ -2265,6 +2265,97 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_81cf8840281c4ff3abc4859c1274ffc8/screenshots/03.webp",
           "caption": "God of War III Remastered — capture 3 · 2026-10-06T03:15:02.121Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_84339787b167483caa790d3caf50d02e",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-05T21:09:24.200813Z",
+      "status": "boots",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2412DPC0AG",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.09.30.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.09.30.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": null,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": null,
+        "framePacing": "unknown"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-7e2b26571412",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_84339787b167483caa790d3caf50d02e/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-05T21:09:24.006Z"
         }
       ]
     },

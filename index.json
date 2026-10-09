@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T18:59:10Z",
+  "generatedAt": "2026-10-09T18:59:22Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 91,
+  "gameCount": 92,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -561,8 +561,8 @@
         "score": 41,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 43,
-        "testerCount": 43,
+        "reportCount": 44,
+        "testerCount": 44,
         "deviceCount": 31,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
@@ -573,7 +573,7 @@
           "sampleCount": 27
         }
       },
-      "reportCount": 51,
+      "reportCount": 52,
       "socCount": 20,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_816bb72d322042b4b0b4624d27b17566/screenshots/03.webp",
       "latestStatus": "ingame",
@@ -2003,6 +2003,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-01T11:24:05.339532Z"
+    },
+    {
+      "cusaId": "CUSA33878",
+      "title": "Resident Evil 2",
+      "general": {
+        "score": 25,
+        "status": "boots",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": null,
+          "max": null,
+          "average": null,
+          "sampleCount": 0
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA33878/s_4ce32b1984864910bd0d72deb19c58f0/screenshots/01.webp",
+      "latestStatus": "boots",
+      "latestTestedAt": "2026-10-05T00:57:44.216553Z"
     },
     {
       "cusaId": "CUSA34133",
