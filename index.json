@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T03:31:26Z",
+  "generatedAt": "2026-10-10T03:31:38Z",
   "currentRelease": "v0.2.4",
   "gameCount": 94,
   "games": [
@@ -1958,26 +1958,26 @@
       "cusaId": "CUSA26789",
       "title": "Beach Buggy Racing 2: Island Adventure",
       "general": {
-        "score": 25,
-        "status": "boots",
-        "confidence": "low",
-        "reportCount": 1,
-        "testerCount": 1,
-        "deviceCount": 1,
+        "score": 50,
+        "status": "menus",
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 37.36,
+          "max": 37.36,
+          "average": 37.36,
+          "sampleCount": 1
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/screenshots/01.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-10-08T11:55:39.658074Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-09T23:44:49.676747Z"
     },
     {
       "cusaId": "CUSA26813",

@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
-    "deviceCount": 1,
+    "score": 50,
+    "status": "menus",
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 2,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 37.36,
+      "max": 37.36,
+      "average": 37.36,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -40,15 +40,134 @@
         "sampleCount": 0
       },
       "recommendedSetup": null
+    },
+    "sm8735": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 37.36,
+        "max": 37.36,
+        "average": 37.36,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c466d88cc8dd4817bf2c8319947642df",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
     "mali-g": [
       "mt6878"
+    ],
+    "adreno8": [
+      "sm8735"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26789/s_2cf16ca631204de690ee9eb08503a89c/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_c466d88cc8dd4817bf2c8319947642df",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-09T23:44:49.676747Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47G",
+        "socId": "sm8735",
+        "socName": "Snapdragon 8s Gen 4",
+        "gpu": "Adreno 825",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 37.36,
+        "nativeOnePercentLowFps": 21.83,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1516,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Beach Buggy Racing 2: Island Adventure: observed ingame during this test session. Measured native FPS: 37.4. Recorded duration: 1516s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9dd0891a4157",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/01.webp",
+          "caption": "Beach Buggy Racing 2: Island Adventure — capture 1 · 2026-10-09T23:44:49.287Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/02.webp",
+          "caption": "Beach Buggy Racing 2: Island Adventure — capture 2 · 2026-10-09T23:58:57.523Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/03.webp",
+          "caption": "Beach Buggy Racing 2: Island Adventure — capture 3 · 2026-10-10T00:04:10.119Z"
+        }
+      ]
+    },
     {
       "reportId": "s_2cf16ca631204de690ee9eb08503a89c",
       "schemaVersion": 2,
