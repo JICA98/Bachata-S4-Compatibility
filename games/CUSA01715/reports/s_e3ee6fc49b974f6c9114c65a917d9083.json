@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e3ee6fc49b974f6c9114c65a917d9083",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-10T21:53:26.654568Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB321FU",
+    "socId": "sm8650",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-5d290bc1421af9fb",
+    "type": "turnip",
+    "name": "Turnip Adreno Driver T23 (@Mr_Purple_666)",
+    "version": "turnip_mrpurple_T23-toasted.adpkg.zip",
+    "build": "5d290bc1421af9fb"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-5d290bc1421af9fb",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e59f34b356d5"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 45.51,
+    "testDurationSeconds": 36,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_e3ee6fc49b974f6c9114c65a917d9083/logs/01-application.log.gz",
+        "sha256": "b0cbff2fc8dd81e5fb571905b8eee88cb2792be023c91221009926ef0966449e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_e3ee6fc49b974f6c9114c65a917d9083/logs/02-shadps4.log.gz",
+        "sha256": "862eb1df3d0ab01ecb937ca7da976db778bb4e924b0a6616e7ef90b33a392846",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
