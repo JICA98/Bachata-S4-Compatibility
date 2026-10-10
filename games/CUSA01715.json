@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 40,
+    "score": 41,
     "status": "menus",
     "confidence": "medium",
-    "reportCount": 47,
-    "testerCount": 47,
-    "deviceCount": 31,
+    "reportCount": 48,
+    "testerCount": 48,
+    "deviceCount": 32,
     "releaseTag": "v0.2.4",
     "hasCurrentReports": true,
     "performance": {
       "min": 8.35,
       "max": 53.41,
-      "average": 26.43,
-      "sampleCount": 28
+      "average": 26.1,
+      "sampleCount": 29
     }
   },
   "socs": {
@@ -42,19 +42,19 @@
       "recommendedSetup": null
     },
     "mt6878": {
-      "score": 12,
-      "status": "nothing",
+      "score": 23,
+      "status": "boots",
       "confidence": "medium",
-      "reportCount": 2,
-      "testerCount": 2,
-      "deviceCount": 2,
+      "reportCount": 3,
+      "testerCount": 3,
+      "deviceCount": 3,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 16.86,
+        "max": 16.86,
+        "average": 16.86,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     },
@@ -1104,8 +1104,116 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_ebe45a2428484b68b9c76fa298234216/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_a0b80ff77a8f41958d3537bc21a8fd14/screenshots/02.webp",
   "reports": [
+    {
+      "reportId": "s_a0b80ff77a8f41958d3537bc21a8fd14",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-10T08:12:30.954931Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24095PCADG",
+        "socId": "mt6878",
+        "socName": "Dimensity 7300",
+        "gpu": "Mali-G615 MC2",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0,
+          "vulkan.vkcrash_diagnostic_enabled": true
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 16.86,
+        "nativeOnePercentLowFps": 1.09,
+        "outputAverageFps": null,
+        "testDurationSeconds": 170,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-a742ed2aafe2",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_a0b80ff77a8f41958d3537bc21a8fd14/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-10T08:12:30.278Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_a0b80ff77a8f41958d3537bc21a8fd14/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-10T08:14:35.238Z"
+        }
+      ]
+    },
     {
       "reportId": "s_ebe45a2428484b68b9c76fa298234216",
       "schemaVersion": 2,
