@@ -3,7 +3,7 @@
   "reportId": "s_a0b80ff77a8f41958d3537bc21a8fd14",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-10T08:12:30.954931Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.02",
     "region": "Europe"
@@ -115,12 +115,12 @@
       {
         "path": "assets/CUSA01715/s_a0b80ff77a8f41958d3537bc21a8fd14/screenshots/01.webp",
         "sha256": "86776e95be4ad750c1ef41ad8c298aebf6703d8e49df320f33aba9f0ba3d5a06",
-        "caption": "God of War III Remastered — capture 1 · 2026-10-10T08:12:30.278Z"
+        "caption": "God of War III Remastered \u2014 capture 1 \u00b7 2026-10-10T08:12:30.278Z"
       },
       {
         "path": "assets/CUSA01715/s_a0b80ff77a8f41958d3537bc21a8fd14/screenshots/02.webp",
         "sha256": "2aee3462c79dfb861fe5f87484632b30338ca3c572eb248963ae3c13e415ee9d",
-        "caption": "God of War III Remastered — capture 2 · 2026-10-10T08:14:35.238Z"
+        "caption": "God of War III Remastered \u2014 capture 2 \u00b7 2026-10-10T08:14:35.238Z"
       }
     ],
     "diagnostics": [
