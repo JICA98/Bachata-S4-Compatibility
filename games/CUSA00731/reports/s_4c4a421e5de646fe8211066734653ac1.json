@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4c4a421e5de646fe8211066734653ac1",
+  "cusaId": "CUSA00731",
+  "testedAt": "2026-10-10T21:20:49.813390Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm7435",
+    "socName": "SM7435",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Legend of Korra: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-ecb404ccfa66"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00731/s_4c4a421e5de646fe8211066734653ac1/logs/01-application.log.gz",
+        "sha256": "701a050073cd02304ba3f9ba8f2c69fdea0bfd4e322236aca263d94f610b26d3",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00731/s_4c4a421e5de646fe8211066734653ac1/logs/02-shadps4.log.gz",
+        "sha256": "8fd33f251aabf7653958497f0f81638eea8aec3711b9cdd63deeb0ee444f0dbd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
