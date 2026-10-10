@@ -3,7 +3,7 @@
   "reportId": "s_c466d88cc8dd4817bf2c8319947642df",
   "cusaId": "CUSA26789",
   "testedAt": "2026-10-09T23:44:49.676747Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "North America"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Beach Buggy Racing 2: Island Adventure: observed boots during this test session. Measured native FPS: 37.4. Recorded duration: 1516s.",
+    "summary": "Beach Buggy Racing 2: Island Adventure: observed ingame during this test session. Measured native FPS: 37.4. Recorded duration: 1516s.",
     "notes": "",
     "issues": []
   },
@@ -77,17 +77,17 @@
       {
         "path": "assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/01.webp",
         "sha256": "e78ba89b0881e7af59586de183792469f3c9e57d20e81c4965b6d81b40b5057e",
-        "caption": "Beach Buggy Racing 2: Island Adventure — capture 1 · 2026-10-09T23:44:49.287Z"
+        "caption": "Beach Buggy Racing 2: Island Adventure \u2014 capture 1 \u00b7 2026-10-09T23:44:49.287Z"
       },
       {
         "path": "assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/02.webp",
         "sha256": "6233195be2b574e9439f3e1ca60083ef5d6f72c4ada35406d63d4e0ef8ac5f0a",
-        "caption": "Beach Buggy Racing 2: Island Adventure — capture 2 · 2026-10-09T23:58:57.523Z"
+        "caption": "Beach Buggy Racing 2: Island Adventure \u2014 capture 2 \u00b7 2026-10-09T23:58:57.523Z"
       },
       {
         "path": "assets/CUSA26789/s_c466d88cc8dd4817bf2c8319947642df/screenshots/03.webp",
         "sha256": "9f79bf99fedb876925f608195c59eeb46f282a588943eb9b30590034d1dfe580",
-        "caption": "Beach Buggy Racing 2: Island Adventure — capture 3 · 2026-10-10T00:04:10.119Z"
+        "caption": "Beach Buggy Racing 2: Island Adventure \u2014 capture 3 \u00b7 2026-10-10T00:04:10.119Z"
       }
     ],
     "diagnostics": [
