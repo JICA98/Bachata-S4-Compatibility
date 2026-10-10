@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_1de1d5787f8746a29f4a39bb982ab941",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-10T23:10:53.458437Z",
+  "status": "boots",
+  "game": {
+    "version": "01.01",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 600,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 600,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-576c1f9ee609"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 48.45,
+    "testDurationSeconds": 60,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 28.96
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_1de1d5787f8746a29f4a39bb982ab941/screenshots/01.webp",
+        "sha256": "ba3689421dbc01845d70f7084114217e257e39bfae22585b26626b3346d19243",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-10T23:10:53.359Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_1de1d5787f8746a29f4a39bb982ab941/logs/01-application.log.gz",
+        "sha256": "c1b4c8121d7a0e058b30421ed26b754ae4a7d6699cc1aaab7fa423e2fb1f99a3",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_1de1d5787f8746a29f4a39bb982ab941/logs/02-shadps4.log.gz",
+        "sha256": "4db17fa17178c72baa7903989e6cf024c29b8c9ef8d35167e8db7b3cf185fec9",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
