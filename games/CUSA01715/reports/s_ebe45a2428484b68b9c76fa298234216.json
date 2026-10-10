@@ -3,7 +3,7 @@
   "reportId": "s_ebe45a2428484b68b9c76fa298234216",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-09T17:23:02.550495Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.02",
     "region": "Europe"
@@ -92,7 +92,7 @@
     }
   ],
   "result": {
-    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 38.1. Recorded duration: 155s.",
+    "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 38.1. Recorded duration: 155s.",
     "notes": "",
     "issues": []
   },
@@ -114,17 +114,17 @@
       {
         "path": "assets/CUSA01715/s_ebe45a2428484b68b9c76fa298234216/screenshots/01.webp",
         "sha256": "1e5d3e9ee3a1eb4f457b9bfb2125d937495b9f2b6798ed2a83aa177cabe32445",
-        "caption": "God of War III Remastered — capture 1 · 2026-10-09T17:23:02.490Z"
+        "caption": "God of War III Remastered \u2014 capture 1 \u00b7 2026-10-09T17:23:02.490Z"
       },
       {
         "path": "assets/CUSA01715/s_ebe45a2428484b68b9c76fa298234216/screenshots/02.webp",
         "sha256": "fbf0167be5d752f21812782f697470dcb16de49343cf8194a8ba06308789d05a",
-        "caption": "God of War III Remastered — capture 2 · 2026-10-09T17:24:04.310Z"
+        "caption": "God of War III Remastered \u2014 capture 2 \u00b7 2026-10-09T17:24:04.310Z"
       },
       {
         "path": "assets/CUSA01715/s_ebe45a2428484b68b9c76fa298234216/screenshots/03.webp",
         "sha256": "58ef9b6c0386e79c2b6db2bb528b9f3523b50e518f2f287ce6a2959aa81881c0",
-        "caption": "God of War III Remastered — capture 3 · 2026-10-09T17:25:06.622Z"
+        "caption": "God of War III Remastered \u2014 capture 3 \u00b7 2026-10-09T17:25:06.622Z"
       }
     ],
     "diagnostics": [
