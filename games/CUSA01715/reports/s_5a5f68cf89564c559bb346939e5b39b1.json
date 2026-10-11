@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5a5f68cf89564c559bb346939e5b39b1",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-11T22:47:33.184422Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "HONOR",
+    "model": "HEY3-W00",
+    "socId": "sm7550",
+    "socName": "Snapdragon 7 Gen 3",
+    "gpu": "Adreno 720",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified. Gaia's heart chapter one is broken. That crashed the emulator. Some graphics are become purple and pink.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9bbdb7d48f5a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 24.33,
+    "testDurationSeconds": 236,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 14.24
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_5a5f68cf89564c559bb346939e5b39b1/logs/01-application.log.gz",
+        "sha256": "763bf406209037dde86628e4c3f5f9cc6f5d046d502de6e68ca16510891588dc",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_5a5f68cf89564c559bb346939e5b39b1/logs/02-shadps4.log.gz",
+        "sha256": "ee83918e956ef646ca2c825c7db4aca4ebd87420b4068b141ce930e771a80f5d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
