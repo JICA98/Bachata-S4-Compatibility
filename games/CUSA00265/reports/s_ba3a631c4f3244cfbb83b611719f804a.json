@@ -3,7 +3,7 @@
   "reportId": "s_ba3a631c4f3244cfbb83b611719f804a",
   "cusaId": "CUSA00265",
   "testedAt": "2026-10-11T09:11:02.947307Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -57,7 +57,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Minecraft: PlayStation®4 Edition: observed playable during this test session. Measured native FPS: 36.3. Recorded duration: 212s.",
+    "summary": "Minecraft: PlayStation®4 Edition: observed ingame during this test session. Measured native FPS: 36.3. Recorded duration: 212s.",
     "notes": "",
     "issues": []
   },
