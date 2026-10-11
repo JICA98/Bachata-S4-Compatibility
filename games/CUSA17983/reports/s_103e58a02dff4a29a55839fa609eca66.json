@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_103e58a02dff4a29a55839fa609eca66",
+  "cusaId": "CUSA17983",
+  "testedAt": "2026-10-11T16:26:49.898280Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-X210",
+    "socId": "sm6375",
+    "socName": "SM6375",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Five Nights at Freddy's: Sister Location: observed boots during this test session. Measured native FPS: 28.4. Recorded duration: 277s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e535b0911acb"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 28.37,
+    "testDurationSeconds": 277,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.1
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/01.webp",
+        "sha256": "3efb7f7a7a87c18d6007d04a14f18627feeca6690d3cc511f1b6a1f0baf49580",
+        "caption": "Five Nights at Freddy's: Sister Location — capture 1 · 2026-10-11T16:26:49.614Z"
+      },
+      {
+        "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/02.webp",
+        "sha256": "b7c9ef75bfeba2396e4822b159e93634b3ba564b9dbd7d4c924b4366f93f9c4e",
+        "caption": "Five Nights at Freddy's: Sister Location — capture 2 · 2026-10-11T16:27:56.310Z"
+      },
+      {
+        "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/03.webp",
+        "sha256": "0eb1435dd9f0d1984cdfb3e73931bfb588ba576834b54b6ff1eed796cf6fdbb3",
+        "caption": "Five Nights at Freddy's: Sister Location — capture 3 · 2026-10-11T16:29:27.942Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/logs/01-application.log.gz",
+        "sha256": "5eef18b2e547dbb932a17a0a345eef896da996fad36efd980f80ed0892c95f60",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/logs/02-shadps4.log.gz",
+        "sha256": "101c9dcc2b177e2c8efa932cf8840905a3dcfaa69109f91e90367ab5f7543d06",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
