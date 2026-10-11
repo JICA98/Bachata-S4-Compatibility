@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ba3a631c4f3244cfbb83b611719f804a",
+  "cusaId": "CUSA00265",
+  "testedAt": "2026-10-11T09:11:02.947307Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "SHARP",
+    "model": "A202SH",
+    "socId": "sm8450",
+    "socName": "Snapdragon 8 Gen 1",
+    "gpu": "Adreno 730",
+    "androidVersion": "14",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Minecraft: PlayStation®4 Edition: observed playable during this test session. Measured native FPS: 36.3. Recorded duration: 212s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-19e05f8fb600"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 36.32,
+    "testDurationSeconds": 212,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 14.29
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00265/s_ba3a631c4f3244cfbb83b611719f804a/screenshots/01.webp",
+        "sha256": "ac0edc7e349396f0307035a546d276eb9a84abbb8afffde980a72939d5b65a0d",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 1 · 2026-10-11T09:11:02.707Z"
+      },
+      {
+        "path": "assets/CUSA00265/s_ba3a631c4f3244cfbb83b611719f804a/screenshots/02.webp",
+        "sha256": "2fd98775fb5ec5104de2784394da41acbdbc49a51660973165527d444422e3b5",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 2 · 2026-10-11T09:12:17.695Z"
+      },
+      {
+        "path": "assets/CUSA00265/s_ba3a631c4f3244cfbb83b611719f804a/screenshots/03.webp",
+        "sha256": "6b88a16bcee750715951cc401f140b51b527c179dc1c48fc62d3c86db317058d",
+        "caption": "Minecraft: PlayStation®4 Edition — capture 3 · 2026-10-11T09:13:19.879Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00265/s_ba3a631c4f3244cfbb83b611719f804a/logs/01-application.log.gz",
+        "sha256": "7c9a4aba00d272a98a4ea92cb2fa7045021a19b37975463042c1babf8162b2c9",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00265/s_ba3a631c4f3244cfbb83b611719f804a/logs/02-shadps4.log.gz",
+        "sha256": "cd990bcd7057edab5981a54afec02956ff0eccd3ff39b91e399a41e608531f2b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
