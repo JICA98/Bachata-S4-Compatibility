@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f8c2195c296c47d1a2fd8d593ae9b88a",
+  "cusaId": "CUSA24899",
+  "testedAt": "2026-10-12T19:09:34.998413Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "Snapdragon 6 Gen 1",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Stray: observed boots during this test session. Measured native FPS: 3.7. Recorded duration: 59s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 3.7,
+    "testDurationSeconds": 59,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 2.03
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA24899/s_f8c2195c296c47d1a2fd8d593ae9b88a/screenshots/01.webp",
+        "sha256": "fee1bd3524fe8ee9ac45c39792124cba08abb1f6b4d19460e801e4443e4c66de",
+        "caption": "Stray — capture 1 · 2026-10-12T19:09:15.388Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA24899/s_f8c2195c296c47d1a2fd8d593ae9b88a/logs/01-application.log.gz",
+        "sha256": "f10d25aaaa7aa998c5584505c3b195c7828e4963942f419001064a26ed58d9d2",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA24899/s_f8c2195c296c47d1a2fd8d593ae9b88a/logs/02-shadps4.log.gz",
+        "sha256": "f6363be4795af9ca8d804e239593187fe1581221d023e6b0749cfed940fd1065",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
