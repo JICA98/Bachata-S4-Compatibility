@@ -3,7 +3,7 @@
   "reportId": "s_103e58a02dff4a29a55839fa609eca66",
   "cusaId": "CUSA17983",
   "testedAt": "2026-10-11T16:26:49.898280Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "North America"
@@ -77,17 +77,17 @@
       {
         "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/01.webp",
         "sha256": "3efb7f7a7a87c18d6007d04a14f18627feeca6690d3cc511f1b6a1f0baf49580",
-        "caption": "Five Nights at Freddy's: Sister Location — capture 1 · 2026-10-11T16:26:49.614Z"
+        "caption": "Five Nights at Freddy's: Sister Location \u2014 capture 1 \u00b7 2026-10-11T16:26:49.614Z"
       },
       {
         "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/02.webp",
         "sha256": "b7c9ef75bfeba2396e4822b159e93634b3ba564b9dbd7d4c924b4366f93f9c4e",
-        "caption": "Five Nights at Freddy's: Sister Location — capture 2 · 2026-10-11T16:27:56.310Z"
+        "caption": "Five Nights at Freddy's: Sister Location \u2014 capture 2 \u00b7 2026-10-11T16:27:56.310Z"
       },
       {
         "path": "assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/03.webp",
         "sha256": "0eb1435dd9f0d1984cdfb3e73931bfb588ba576834b54b6ff1eed796cf6fdbb3",
-        "caption": "Five Nights at Freddy's: Sister Location — capture 3 · 2026-10-11T16:29:27.942Z"
+        "caption": "Five Nights at Freddy's: Sister Location \u2014 capture 3 \u00b7 2026-10-11T16:29:27.942Z"
       }
     ],
     "diagnostics": [
