@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.4",
+  "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA18008",
     "title": "Resident Evil Village",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.4",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 58.63,
       "max": 58.63,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 58.63,
         "max": 58.63,

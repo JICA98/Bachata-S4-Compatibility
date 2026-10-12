@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.4",
+  "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA02509",
     "title": "Saint Seiya: Soldiers' Soul",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.4",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 12.06,
       "max": 12.06,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 12.06,
         "max": 12.06,

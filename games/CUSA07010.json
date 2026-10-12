@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.4",
+  "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA07010",
     "title": "Sonic Mania Encore DLC",
@@ -15,7 +15,7 @@
     "testerCount": 4,
     "deviceCount": 4,
     "releaseTag": "v0.2.4",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 50.94,
       "max": 59.98,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 59.91,
         "max": 59.91,
@@ -49,7 +49,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 59.96,
         "max": 59.96,
@@ -91,7 +91,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 50.94,
         "max": 50.94,
@@ -133,7 +133,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 59.98,
         "max": 59.98,

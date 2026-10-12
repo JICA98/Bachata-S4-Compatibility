@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.4",
+  "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA05794",
     "title": "Rise of the Tomb Raider",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.4",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 8.61,
       "max": 8.61,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 8.61,
         "max": 8.61,

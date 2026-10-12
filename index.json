@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T09:22:36Z",
-  "currentRelease": "v0.2.4",
+  "generatedAt": "2026-10-12T15:44:12Z",
+  "currentRelease": "v0.2.5",
   "gameCount": 96,
   "games": [
     {
@@ -15,7 +15,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 10.15,
           "max": 10.15,
@@ -65,7 +65,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -90,7 +90,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 29.44,
           "max": 29.44,
@@ -115,7 +115,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.99,
           "max": 58.99,
@@ -165,7 +165,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -190,7 +190,7 @@
         "testerCount": 2,
         "deviceCount": 2,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 27.44,
           "max": 36.32,
@@ -215,7 +215,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -240,7 +240,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 36.34,
           "max": 36.34,
@@ -265,7 +265,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 40.26,
           "max": 40.26,
@@ -290,7 +290,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 43.78,
           "max": 43.78,
@@ -315,7 +315,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 21.39,
           "max": 21.39,
@@ -340,7 +340,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 44.33,
           "max": 44.33,
@@ -365,7 +365,7 @@
         "testerCount": 3,
         "deviceCount": 2,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 14.19,
           "max": 28.83,
@@ -390,7 +390,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 49.27,
           "max": 49.27,
@@ -415,7 +415,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 29.46,
           "max": 29.46,
@@ -440,7 +440,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 18.46,
           "max": 18.46,
@@ -465,7 +465,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 21.75,
           "max": 21.75,
@@ -515,7 +515,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 50.33,
           "max": 50.33,
@@ -540,7 +540,7 @@
         "testerCount": 20,
         "deviceCount": 16,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 6.78,
           "max": 46.98,
@@ -565,7 +565,7 @@
         "testerCount": 51,
         "deviceCount": 34,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 8.35,
           "max": 56.54,
@@ -590,7 +590,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 16.41,
           "max": 16.41,
@@ -640,7 +640,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 57.22,
           "max": 57.22,
@@ -665,7 +665,7 @@
         "testerCount": 3,
         "deviceCount": 3,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 15.77,
           "max": 31.55,
@@ -690,7 +690,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 14.31,
           "max": 14.31,
@@ -715,7 +715,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 12.06,
           "max": 12.06,
@@ -740,7 +740,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -765,7 +765,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -790,7 +790,7 @@
         "testerCount": 2,
         "deviceCount": 2,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 26.04,
           "max": 32.85,
@@ -815,7 +815,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 41.66,
           "max": 41.66,
@@ -840,7 +840,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 25.78,
           "max": 25.78,
@@ -865,7 +865,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 3.87,
           "max": 3.87,
@@ -890,7 +890,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 21.81,
           "max": 21.81,
@@ -915,7 +915,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 29.9,
           "max": 29.9,
@@ -940,7 +940,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 32.84,
           "max": 32.84,
@@ -965,7 +965,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 24.19,
           "max": 24.19,
@@ -990,7 +990,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1015,7 +1015,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 8.61,
           "max": 8.61,
@@ -1040,7 +1040,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1065,7 +1065,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.91,
           "max": 59.91,
@@ -1090,7 +1090,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 16.52,
           "max": 16.52,
@@ -1115,7 +1115,7 @@
         "testerCount": 4,
         "deviceCount": 4,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 50.94,
           "max": 59.98,
@@ -1165,7 +1165,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 21.27,
           "max": 21.27,
@@ -1215,7 +1215,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1240,7 +1240,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.38,
           "max": 59.38,
@@ -1290,7 +1290,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 3.56,
           "max": 3.56,
@@ -1315,7 +1315,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1340,7 +1340,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1365,7 +1365,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1390,7 +1390,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1440,7 +1440,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.67,
           "max": 58.67,
@@ -1465,7 +1465,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.95,
           "max": 59.95,
@@ -1490,7 +1490,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.43,
           "max": 59.43,
@@ -1515,7 +1515,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 55.19,
           "max": 55.19,
@@ -1540,7 +1540,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.76,
           "max": 58.76,
@@ -1565,7 +1565,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1590,7 +1590,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 33.9,
           "max": 33.9,
@@ -1615,7 +1615,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1640,7 +1640,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1665,7 +1665,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 18.14,
           "max": 18.14,
@@ -1690,7 +1690,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 32.79,
           "max": 32.79,
@@ -1715,7 +1715,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1740,7 +1740,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 29.19,
           "max": 29.19,
@@ -1790,7 +1790,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 28.37,
           "max": 28.37,
@@ -1815,7 +1815,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.63,
           "max": 59.63,
@@ -1840,7 +1840,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.63,
           "max": 58.63,
@@ -1865,7 +1865,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 24.13,
           "max": 24.13,
@@ -1890,7 +1890,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1915,7 +1915,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1940,7 +1940,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1965,7 +1965,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -1990,7 +1990,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 9.58,
           "max": 9.58,
@@ -2015,7 +2015,7 @@
         "testerCount": 2,
         "deviceCount": 2,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 37.36,
           "max": 37.36,
@@ -2040,7 +2040,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 51.95,
           "max": 51.95,
@@ -2065,7 +2065,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2090,7 +2090,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2115,7 +2115,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2140,7 +2140,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2165,7 +2165,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2190,7 +2190,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2215,7 +2215,7 @@
         "testerCount": 2,
         "deviceCount": 2,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2240,7 +2240,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 57.88,
           "max": 57.88,
@@ -2265,7 +2265,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 24.35,
           "max": 24.35,
@@ -2290,7 +2290,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 56.75,
           "max": 56.75,
@@ -2315,7 +2315,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 59.55,
           "max": 59.55,
@@ -2340,7 +2340,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2365,7 +2365,7 @@
         "testerCount": 2,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,
@@ -2390,7 +2390,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.4",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": null,
           "max": null,

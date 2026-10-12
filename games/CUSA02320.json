@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.4",
+  "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA02320",
     "title": "Uncharted: The Nathan Drake Collection™",
@@ -15,7 +15,7 @@
     "testerCount": 3,
     "deviceCount": 3,
     "releaseTag": "v0.2.4",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 15.77,
       "max": 31.55,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 15.77,
         "max": 15.77,
@@ -123,7 +123,7 @@
       "testerCount": 2,
       "deviceCount": 2,
       "releaseTag": "v0.2.4",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 27.51,
         "max": 31.55,
