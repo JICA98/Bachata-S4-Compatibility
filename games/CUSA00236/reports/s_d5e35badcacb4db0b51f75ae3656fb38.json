@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d5e35badcacb4db0b51f75ae3656fb38",
+  "cusaId": "CUSA00236",
+  "testedAt": "2026-10-12T10:13:38.833814Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.03",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23127PN0CC",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Dead Nation™: Apocalypse Edition: observed playable during this test session. Measured native FPS: 27.1. Recorded duration: 335s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-726fa79a2ada"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 27.13,
+    "testDurationSeconds": 335,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 12.42
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/01.webp",
+        "sha256": "18e0948b07d60f785ff6182b8d90cc0a3188b0b9dc2726cdfe332eefdb961bc4",
+        "caption": "Dead Nation™: Apocalypse Edition — capture 1 · 2026-10-12T10:13:38.515Z"
+      },
+      {
+        "path": "assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/02.webp",
+        "sha256": "6cab6c5f46cb98effbb44a24b3a9b686c015f32f413ad5b8baf2128e210c3557",
+        "caption": "Dead Nation™: Apocalypse Edition — capture 2 · 2026-10-12T10:15:01.235Z"
+      },
+      {
+        "path": "assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/03.webp",
+        "sha256": "52d836243bd40c53a626cbcf8fc1319e76a264358d5ae7c3425bad4d09c1f21d",
+        "caption": "Dead Nation™: Apocalypse Edition — capture 3 · 2026-10-12T10:16:34.083Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/logs/01-application.log.gz",
+        "sha256": "fa11ac68a661cf1e9c58106872fe142351b878a3f7ebdae18d5dbef1079d5fdf",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/logs/02-shadps4.log.gz",
+        "sha256": "17fca4ea2bd64d23c196bb8a958b411509d9ba9df0eb780d5bd92ba2813bf5d4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

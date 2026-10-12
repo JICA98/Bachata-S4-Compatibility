@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA00236",
+  "title": "Dead Nation: Apocalypse Edition",
+  "region": "North America",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 465
+  },
+  "legacyIssues": []
+}
