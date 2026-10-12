@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T03:25:48Z",
+  "generatedAt": "2026-10-12T03:25:59Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 95,
+  "gameCount": 96,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1778,6 +1778,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17425/20260814T110735Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-08-14T11:07:35Z"
+    },
+    {
+      "cusaId": "CUSA17983",
+      "title": "Five Nights at Freddy's: Sister Location",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 28.37,
+          "max": 28.37,
+          "average": 28.37,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17983/s_103e58a02dff4a29a55839fa609eca66/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-11T16:26:49.898280Z"
     },
     {
       "cusaId": "CUSA17997",
