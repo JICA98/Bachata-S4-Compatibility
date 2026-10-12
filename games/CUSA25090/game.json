@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA25090",
+  "title": "BLEACH Rebirth of Souls",
+  "region": "Japan",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 456
+  },
+  "legacyIssues": []
+}
