@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T15:44:12Z",
+  "generatedAt": "2026-10-12T15:50:30Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 96,
+  "gameCount": 97,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -153,6 +153,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00223/20260906T111720Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-06T11:17:20Z"
+    },
+    {
+      "cusaId": "CUSA00236",
+      "title": "Dead Nation: Apocalypse Edition",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 27.13,
+          "max": 27.13,
+          "average": 27.13,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-12T10:13:38.833814Z"
     },
     {
       "cusaId": "CUSA00239",

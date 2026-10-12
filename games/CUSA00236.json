@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA00236",
+    "title": "Dead Nation: Apocalypse Edition",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": 27.13,
+      "max": 27.13,
+      "average": 27.13,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 27.13,
+        "max": 27.13,
+        "average": 27.13,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_d5e35badcacb4db0b51f75ae3656fb38",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "SAFE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_d5e35badcacb4db0b51f75ae3656fb38",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-12T10:13:38.833814Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23127PN0CC",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 27.13,
+        "nativeOnePercentLowFps": 12.42,
+        "outputAverageFps": null,
+        "testDurationSeconds": 335,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Dead Nation™: Apocalypse Edition: observed playable during this test session. Measured native FPS: 27.1. Recorded duration: 335s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-726fa79a2ada",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/01.webp",
+          "caption": "Dead Nation™: Apocalypse Edition — capture 1 · 2026-10-12T10:13:38.515Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/02.webp",
+          "caption": "Dead Nation™: Apocalypse Edition — capture 2 · 2026-10-12T10:15:01.235Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00236/s_d5e35badcacb4db0b51f75ae3656fb38/screenshots/03.webp",
+          "caption": "Dead Nation™: Apocalypse Edition — capture 3 · 2026-10-12T10:16:34.083Z"
+        }
+      ]
+    }
+  ]
+}
