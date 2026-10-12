@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.4",
+  "game": {
+    "cusaId": "CUSA25090",
+    "title": "BLEACH Rebirth of Souls",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 9.58,
+      "max": 9.58,
+      "average": 9.58,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "mt6897": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 9.58,
+        "max": 9.58,
+        "average": 9.58,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_acad6ffc801a4c6f82e385b3d7f601cd",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.copy_gpu_buffers": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "mali-g": [
+      "mt6897"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_acad6ffc801a4c6f82e385b3d7f601cd",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-12T00:41:44.283797Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.04",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2406APNFAG",
+        "socId": "mt6897",
+        "socName": "MT6897",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.copy_gpu_buffers": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 9.58,
+        "nativeOnePercentLowFps": 1.07,
+        "outputAverageFps": null,
+        "testDurationSeconds": 243,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA25090: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-aa8f82805bb8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/01.webp",
+          "caption": "BLEACH Rebirth of Souls — capture 1 · 2026-10-12T00:41:43.584Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/02.webp",
+          "caption": "BLEACH Rebirth of Souls — capture 2 · 2026-10-12T00:43:37.624Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/03.webp",
+          "caption": "BLEACH Rebirth of Souls — capture 3 · 2026-10-12T00:44:41.100Z"
+        }
+      ]
+    }
+  ]
+}

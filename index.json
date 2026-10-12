@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T03:25:35Z",
+  "generatedAt": "2026-10-12T03:25:48Z",
   "currentRelease": "v0.2.4",
-  "gameCount": 94,
+  "gameCount": 95,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -558,22 +558,22 @@
       "cusaId": "CUSA01715",
       "title": "God of War III Remastered",
       "general": {
-        "score": 41,
+        "score": 42,
         "status": "menus",
         "confidence": "medium",
-        "reportCount": 50,
-        "testerCount": 50,
+        "reportCount": 51,
+        "testerCount": 51,
         "deviceCount": 34,
         "releaseTag": "v0.2.4",
         "hasCurrentReports": true,
         "performance": {
           "min": 8.35,
           "max": 56.54,
-          "average": 27.93,
-          "sampleCount": 31
+          "average": 27.95,
+          "sampleCount": 32
         }
       },
-      "reportCount": 58,
+      "reportCount": 59,
       "socCount": 20,
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_93ffd3d5f20f4a96b44599fc48b3693e/screenshots/03.webp",
       "latestStatus": "ingame",
@@ -1953,6 +1953,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-02T02:30:23.058308Z"
+    },
+    {
+      "cusaId": "CUSA25090",
+      "title": "BLEACH Rebirth of Souls",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 9.58,
+          "max": 9.58,
+          "average": 9.58,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-12T00:41:44.283797Z"
     },
     {
       "cusaId": "CUSA26789",
