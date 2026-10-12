@@ -3,7 +3,7 @@
   "reportId": "s_acad6ffc801a4c6f82e385b3d7f601cd",
   "cusaId": "CUSA25090",
   "testedAt": "2026-10-12T00:41:44.283797Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.04",
     "region": "Japan"
@@ -79,17 +79,17 @@
       {
         "path": "assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/01.webp",
         "sha256": "bd140443bfb1ff18f95ecfaff44c3bb8a55fd16d7ec8e2df89dd76b080dbc884",
-        "caption": "BLEACH Rebirth of Souls — capture 1 · 2026-10-12T00:41:43.584Z"
+        "caption": "BLEACH Rebirth of Souls \u2014 capture 1 \u00b7 2026-10-12T00:41:43.584Z"
       },
       {
         "path": "assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/02.webp",
         "sha256": "9ca05854748118cbc5ec321a5e36dd520f684d28f503189f92d147c08c16148c",
-        "caption": "BLEACH Rebirth of Souls — capture 2 · 2026-10-12T00:43:37.624Z"
+        "caption": "BLEACH Rebirth of Souls \u2014 capture 2 \u00b7 2026-10-12T00:43:37.624Z"
       },
       {
         "path": "assets/CUSA25090/s_acad6ffc801a4c6f82e385b3d7f601cd/screenshots/03.webp",
         "sha256": "2e2efbc8fd66c9af3f6762a3693079fa5338528cf706c4dd446759b4c204cf84",
-        "caption": "BLEACH Rebirth of Souls — capture 3 · 2026-10-12T00:44:41.100Z"
+        "caption": "BLEACH Rebirth of Souls \u2014 capture 3 \u00b7 2026-10-12T00:44:41.100Z"
       }
     ],
     "diagnostics": [
