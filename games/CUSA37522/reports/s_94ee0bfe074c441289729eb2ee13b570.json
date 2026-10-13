@@ -3,7 +3,7 @@
   "reportId": "s_94ee0bfe074c441289729eb2ee13b570",
   "cusaId": "CUSA37522",
   "testedAt": "2026-10-12T19:04:40.337322Z",
-  "status": "boots",
+  "status": "compat: set status to ingame (matches screenshot evidence)",
   "game": {
     "version": "01.00",
     "region": "Europe"
