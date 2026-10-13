@@ -156,12 +156,12 @@
       "performance": {
         "min": 20.03,
         "max": 53.41,
-        "average": 34.25,
+        "average": 36.53,
         "sampleCount": 5
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_5c76ab5a15bf46898a2d430cabb3b21a",
+        "reportId": "s_c62db3903eb1499ea74e11fd8188b833",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -206,18 +206,6 @@
           },
           {
             "id": "disable-ssao",
-            "revision": "2026.10.01.13399220021802570842"
-          },
-          {
-            "id": "resolution-patch-1280x720",
-            "revision": "2026.10.01.13399220021802570842"
-          },
-          {
-            "id": "resolution-patch-1600x900",
-            "revision": "2026.10.01.13399220021802570842"
-          },
-          {
-            "id": "resolution-patch-1920x1080",
             "revision": "2026.10.01.13399220021802570842"
           },
           {
@@ -1190,6 +1178,117 @@
         {
           "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_5c0048a62d174fd588d866ddb5b4cd36/screenshots/03.webp",
           "caption": "God of War III Remastered — capture 3 · 2026-10-13T02:28:35.146Z"
+        }
+      ]
+    },
+    {
+      "reportId": "s_c62db3903eb1499ea74e11fd8188b833",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-12T19:45:23.508728Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2511FPC34G",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 40.14,
+        "nativeOnePercentLowFps": 17.6,
+        "outputAverageFps": null,
+        "testDurationSeconds": 387,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 40.1. Recorded duration: 387s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-4cfdc94b9156",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_c62db3903eb1499ea74e11fd8188b833/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-12T19:45:23.251Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_c62db3903eb1499ea74e11fd8188b833/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-12T19:48:14.755Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_c62db3903eb1499ea74e11fd8188b833/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-12T19:49:26.883Z"
         }
       ]
     },
