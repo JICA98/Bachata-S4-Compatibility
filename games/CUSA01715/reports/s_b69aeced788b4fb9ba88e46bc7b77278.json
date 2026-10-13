@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b69aeced788b4fb9ba88e46bc7b77278",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-13T14:14:52.548723Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S931B",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-c03b5791610edfc9",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37 patched",
+    "version": "26.2.99",
+    "build": "c03b5791610edfc9"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-c03b5791610edfc9",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.12.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "El juego se puede completar al 100% y es disfrutable, testeado por Christian en Galaxy S25 Snapdragon 8 Elite",
+    "issues": [
+      "problemas-minimos-de-textura"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-d38b4e3c4de1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 43.54,
+    "testDurationSeconds": 879,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 14.78
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_b69aeced788b4fb9ba88e46bc7b77278/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-13T14:14:52.278Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_b69aeced788b4fb9ba88e46bc7b77278/screenshots/02.webp",
+        "sha256": "722d11d37b475aa2f5c1e763db32bcd53aeafaae091c4d1f7c6c18f51bdec308",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-13T14:16:31.638Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_b69aeced788b4fb9ba88e46bc7b77278/screenshots/03.webp",
+        "sha256": "82dce8a2f38bbb14618655c6df00677e4868fd45b99004ca160a99bf61e6f642",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-13T14:17:47.662Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_b69aeced788b4fb9ba88e46bc7b77278/logs/01-application.log.gz",
+        "sha256": "b22e13e96d4283ddf2652666c13e4158612cbf9415b643fc467b1313ebd9e13e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_b69aeced788b4fb9ba88e46bc7b77278/logs/02-shadps4.log.gz",
+        "sha256": "dbd431b4e4c6b521ce27f01c2c1345189519bd439f57a6826082ade4936c94ee",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
