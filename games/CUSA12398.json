@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA12398",
+    "title": "The Forest",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 45,
+    "status": "menus",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": 30.09,
+      "max": 30.09,
+      "average": 30.09,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8635": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 30.09,
+        "max": 30.09,
+        "average": 30.09,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8635"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_f420e70792884a568a458f060af4c0ff",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-13T03:53:04.188268Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21G",
+        "socId": "sm8635",
+        "socName": "SM8635",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 30.09,
+        "nativeOnePercentLowFps": 8.04,
+        "outputAverageFps": null,
+        "testDurationSeconds": 96,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "The Forest: observed menus during this test session. Measured native FPS: 30.1. Recorded duration: 96s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d75150b5a438",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/01.webp",
+          "caption": "The Forest — capture 1 · 2026-10-13T03:53:03.021Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/02.webp",
+          "caption": "The Forest — capture 2 · 2026-10-13T03:54:06.637Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/03.webp",
+          "caption": "The Forest — capture 3 · 2026-10-13T03:55:12.073Z"
+        }
+      ]
+    }
+  ]
+}

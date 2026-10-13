@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:45:07Z",
+  "generatedAt": "2026-10-13T09:33:27Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 98,
+  "gameCount": 99,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1578,6 +1578,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12380/s_9a664d2c06f5464f981e1e822939af19/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-07T18:49:39.842621Z"
+    },
+    {
+      "cusaId": "CUSA12398",
+      "title": "The Forest",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 30.09,
+          "max": 30.09,
+          "average": 30.09,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-13T03:53:04.188268Z"
     },
     {
       "cusaId": "CUSA12779",
