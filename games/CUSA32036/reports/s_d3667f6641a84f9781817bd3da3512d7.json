@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d3667f6641a84f9781817bd3da3512d7",
+  "cusaId": "CUSA32036",
+  "testedAt": "2026-10-13T00:51:32.683576Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23113RKC6G",
+    "socId": "sm8550",
+    "socName": "SM8550",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-092fc29be51c9088",
+    "type": "turnip",
+    "name": "Turnip vauzi-7xx v1",
+    "version": "26.0.99",
+    "build": "092fc29be51c9088",
+    "source": "JICA98/bachata-s4-drivers vauzi-7xx-v1"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-092fc29be51c9088",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Hillbilly Doomsday: observed boots during this test session. Measured native FPS: 60.0. Recorded duration: 208s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-37f42a09f789"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 60,
+    "testDurationSeconds": 208,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 54.4
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/01.webp",
+        "sha256": "3e562405ecb214e7738e44ce32e171a926b7342747ef8108ec61cf3fe091ed1b",
+        "caption": "Hillbilly Doomsday — capture 1 · 2026-10-13T00:51:32.373Z"
+      },
+      {
+        "path": "assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/02.webp",
+        "sha256": "e3557c8a169d30501225593ecf920f35d941078b92b9d85a7dea5143c11c3edb",
+        "caption": "Hillbilly Doomsday — capture 2 · 2026-10-13T00:53:06.865Z"
+      },
+      {
+        "path": "assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/03.webp",
+        "sha256": "36f28dbfa989a36d9d3f06b2489e9b83797067ec5b2b2d7ca93b0323b9740b46",
+        "caption": "Hillbilly Doomsday — capture 3 · 2026-10-13T00:54:13.021Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/logs/01-application.log.gz",
+        "sha256": "0bfec07b16f9eafe184df3d57d53abff272c9ecd6b7413f598fd28525bb5d857",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/logs/02-shadps4.log.gz",
+        "sha256": "d5d6fba19d12a6bcd7232a91258a9bd57f353e000776f5db7f632f16e496a0d2",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
