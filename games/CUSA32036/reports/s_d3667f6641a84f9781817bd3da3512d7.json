@@ -3,7 +3,7 @@
   "reportId": "s_d3667f6641a84f9781817bd3da3512d7",
   "cusaId": "CUSA32036",
   "testedAt": "2026-10-13T00:51:32.683576Z",
-  "status": "compat: set status to ingame (matches screenshot evidence)",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Europe"
