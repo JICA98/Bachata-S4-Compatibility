@@ -3,7 +3,7 @@
   "reportId": "s_4135df1dc584455683a84d1f8e4e6d25",
   "cusaId": "CUSA01623",
   "testedAt": "2026-10-13T09:07:22.198254Z",
-  "status": "boots",
+  "status": "compat(CUSA01623): boots→nothing (0 screenshots)",
   "game": {
     "version": "01.02",
     "region": "North America"
