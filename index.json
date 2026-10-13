@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T03:43:05Z",
+  "generatedAt": "2026-10-13T03:43:48Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 97,
+  "gameCount": 98,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2128,6 +2128,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-01T11:24:05.339532Z"
+    },
+    {
+      "cusaId": "CUSA32036",
+      "title": "Hillbilly Doomsday",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 60.0,
+          "max": 60.0,
+          "average": 60.0,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-13T00:51:32.683576Z"
     },
     {
       "cusaId": "CUSA33878",

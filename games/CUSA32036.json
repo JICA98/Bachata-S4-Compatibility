@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA32036",
+    "title": "Hillbilly Doomsday",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 60.0,
+      "max": 60.0,
+      "average": 60.0,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8550": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 60.0,
+        "max": 60.0,
+        "average": 60.0,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_d3667f6641a84f9781817bd3da3512d7",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-092fc29be51c9088",
+          "type": "turnip",
+          "name": "Turnip vauzi-7xx v1",
+          "version": "26.0.99",
+          "build": "092fc29be51c9088"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-092fc29be51c9088",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8550"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_d3667f6641a84f9781817bd3da3512d7",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-13T00:51:32.683576Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23113RKC6G",
+        "socId": "sm8550",
+        "socName": "SM8550",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-092fc29be51c9088",
+        "type": "turnip",
+        "name": "Turnip vauzi-7xx v1",
+        "version": "26.0.99",
+        "build": "092fc29be51c9088"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-092fc29be51c9088",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 60,
+        "nativeOnePercentLowFps": 54.4,
+        "outputAverageFps": null,
+        "testDurationSeconds": 208,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Hillbilly Doomsday: observed boots during this test session. Measured native FPS: 60.0. Recorded duration: 208s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-37f42a09f789",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/01.webp",
+          "caption": "Hillbilly Doomsday — capture 1 · 2026-10-13T00:51:32.373Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/02.webp",
+          "caption": "Hillbilly Doomsday — capture 2 · 2026-10-13T00:53:06.865Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA32036/s_d3667f6641a84f9781817bd3da3512d7/screenshots/03.webp",
+          "caption": "Hillbilly Doomsday — capture 3 · 2026-10-13T00:54:13.021Z"
+        }
+      ]
+    }
+  ]
+}
