@@ -3,7 +3,7 @@
   "reportId": "s_13a335eb39364be0a8811c92c18b941f",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-13T11:25:20.939284Z",
-  "status": "ingame",
+  "status": "menus",
   "game": {
     "version": "01.02",
     "region": "Europe"
