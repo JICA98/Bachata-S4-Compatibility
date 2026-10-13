@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_94ee0bfe074c441289729eb2ee13b570",
+  "cusaId": "CUSA37522",
+  "testedAt": "2026-10-12T19:04:40.337322Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "Snapdragon 6 Gen 1",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Persona 3 Reload: observed boots during this test session. Measured native FPS: 10.8. Recorded duration: 231s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 10.77,
+    "testDurationSeconds": 231,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/01.webp",
+        "sha256": "a7e8fe61163714f4936715b6b3f56edf29597ad5a99cfabe71a245f88eca58c6",
+        "caption": "Persona 3 Reload — capture 1 · 2026-10-12T19:04:37.512Z"
+      },
+      {
+        "path": "assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/02.webp",
+        "sha256": "259b0ce421920d772c4f695aa023f235f1a5af02013e1d29ab7a3ef08bc6481c",
+        "caption": "Persona 3 Reload — capture 2 · 2026-10-12T19:06:12.072Z"
+      },
+      {
+        "path": "assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/03.webp",
+        "sha256": "29d34a5157ad192e7e9954be55c1fa589e17106dc3c0bf82538b53fc5d8de743",
+        "caption": "Persona 3 Reload — capture 3 · 2026-10-12T19:07:15.660Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/logs/01-application.log.gz",
+        "sha256": "3a51fe6dc5b468eb6b82c4bdc451c005f1e24cae2c58813d2903ddab74d2cdab",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/logs/02-shadps4.log.gz",
+        "sha256": "b53b2ede52805d7b76ea859bcc07629ad7c368c5822e36a07ef1c0730119d9f8",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
