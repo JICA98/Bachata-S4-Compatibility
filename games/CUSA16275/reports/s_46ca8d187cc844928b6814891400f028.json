@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_46ca8d187cc844928b6814891400f028",
+  "cusaId": "CUSA16275",
+  "testedAt": "2026-10-13T00:37:02.911252Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23113RKC6G",
+    "socId": "sm8550",
+    "socName": "SM8550",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-092fc29be51c9088",
+    "type": "turnip",
+    "name": "Turnip vauzi-7xx v1",
+    "version": "26.0.99",
+    "build": "092fc29be51c9088",
+    "source": "JICA98/bachata-s4-drivers vauzi-7xx-v1"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-092fc29be51c9088",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Blasphemous: observed boots during this test session. Measured native FPS: 59.6. Recorded duration: 269s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-37f42a09f789"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 59.62,
+    "testDurationSeconds": 269,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 51.01
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA16275/s_46ca8d187cc844928b6814891400f028/screenshots/01.webp",
+        "sha256": "3f6378f83296307e993411af1f26b2bc7a1756ac44d426c3978a5cd3ed5683a2",
+        "caption": "Blasphemous — capture 1 · 2026-10-13T00:37:02.661Z"
+      },
+      {
+        "path": "assets/CUSA16275/s_46ca8d187cc844928b6814891400f028/screenshots/02.webp",
+        "sha256": "f220b28ebb8773573de2910bfbe76576638eddd28d9ae9ca1874b730feb7bc5c",
+        "caption": "Blasphemous — capture 2 · 2026-10-13T00:38:51.749Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA16275/s_46ca8d187cc844928b6814891400f028/logs/01-application.log.gz",
+        "sha256": "6ed2a5bc11c532102a7357674c3966b2fa5b989cc625d4bfc0a69ba62ec4aabd",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA16275/s_46ca8d187cc844928b6814891400f028/logs/02-shadps4.log.gz",
+        "sha256": "2516ae73a716a6792b157ba91b97a28331794e8e0faed73c1536ea1bead1694e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
