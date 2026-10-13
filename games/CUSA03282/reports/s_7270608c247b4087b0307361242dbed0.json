@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7270608c247b4087b0307361242dbed0",
+  "cusaId": "CUSA03282",
+  "testedAt": "2026-10-13T03:05:40.843978Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2723",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Uncharted 3: Drake's Deception™ Remastered: observed boots during this test session. Measured native FPS: 45.7. Recorded duration: 56s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-2c9e1e6d5d10"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 45.68,
+    "testDurationSeconds": 56,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 37.9
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03282/s_7270608c247b4087b0307361242dbed0/logs/01-application.log.gz",
+        "sha256": "b3565c545c8ee43337bd79d6c2df3d2422eacdfe839115c9c35cdedabb0f6b6a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03282/s_7270608c247b4087b0307361242dbed0/logs/02-shadps4.log.gz",
+        "sha256": "1fc52d919f1368461a40f2df61896a3444eecc4f091fd0bed751d94f266dd27c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
