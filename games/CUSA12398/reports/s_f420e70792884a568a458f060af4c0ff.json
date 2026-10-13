@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f420e70792884a568a458f060af4c0ff",
+  "cusaId": "CUSA12398",
+  "testedAt": "2026-10-13T03:53:04.188268Z",
+  "status": "menus",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21G",
+    "socId": "sm8635",
+    "socName": "SM8635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Forest: observed menus during this test session. Measured native FPS: 30.1. Recorded duration: 96s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d75150b5a438"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 30.09,
+    "testDurationSeconds": 96,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 8.04
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/01.webp",
+        "sha256": "1147b2b30e11a99015724e8e03b909789b008e3697b325393ccc38fd095549f7",
+        "caption": "The Forest — capture 1 · 2026-10-13T03:53:03.021Z"
+      },
+      {
+        "path": "assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/02.webp",
+        "sha256": "48c28029a55dbb7f51e8c9d312c96d3dc85f1c6a62b32ea7335dedd5d4dd7b22",
+        "caption": "The Forest — capture 2 · 2026-10-13T03:54:06.637Z"
+      },
+      {
+        "path": "assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/screenshots/03.webp",
+        "sha256": "4aae14f1e0951f662da3c82e382117eba744ff6674e180bd3ec19146be6a30e8",
+        "caption": "The Forest — capture 3 · 2026-10-13T03:55:12.073Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/logs/01-application.log.gz",
+        "sha256": "80fe61db92466fefede610f749817cf6e0f5e4696640cf95a5dc3ef6163ed109",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12398/s_f420e70792884a568a458f060af4c0ff/logs/02-shadps4.log.gz",
+        "sha256": "48a57de3db7bd80953a370a5551c6bff655dd6c338183993cef7f3805ab7080b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
