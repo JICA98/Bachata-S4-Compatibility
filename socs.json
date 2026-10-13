@@ -91,6 +91,16 @@
         "Snapdragon 8 Elite Gen 5"
       ]
     },
+    "sm8845": {
+      "name": "Snapdragon 8 Gen 5",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 829",
+      "family": "adreno8",
+      "aliases": [
+        "SM8845",
+        "Snapdragon 8 Gen 5"
+      ]
+    },
     "sm8650": {
       "name": "Snapdragon 8 Gen 3",
       "vendor": "Qualcomm",
