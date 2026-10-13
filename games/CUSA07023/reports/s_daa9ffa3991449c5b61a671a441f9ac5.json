@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_daa9ffa3991449c5b61a671a441f9ac5",
+  "cusaId": "CUSA07023",
+  "testedAt": "2026-10-13T03:57:00.635745Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.03",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21G",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Sonic Mania: observed playable during this test session. Measured native FPS: 60.0. Recorded duration: 313s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d75150b5a438"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 59.96,
+    "testDurationSeconds": 313,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 59.01
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/01.webp",
+        "sha256": "bbcf522a008f039dda67f515f734def31ae7da321d5a2cff2ce67c21584b6ffb",
+        "caption": "Sonic Mania — capture 1 · 2026-10-13T03:57:00.137Z"
+      },
+      {
+        "path": "assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/02.webp",
+        "sha256": "2cf8f72bcc39bd1abeea6984afde31d8ea26cfb170e9d3f784d5a03efd12faeb",
+        "caption": "Sonic Mania — capture 2 · 2026-10-13T03:58:09.789Z"
+      },
+      {
+        "path": "assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/03.webp",
+        "sha256": "ff6526af0e031f031ea65a9ccc2115d2574ad97e798b35bfbafc628daa5c81df",
+        "caption": "Sonic Mania — capture 3 · 2026-10-13T04:00:30.245Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/logs/01-application.log.gz",
+        "sha256": "eff63bf03a389c449b16e305c120f9d21499308b04b1ed8e9f1819a03d79a03c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/logs/02-shadps4.log.gz",
+        "sha256": "2e3168b448a6c5142d117b8708edb621706fdc31e48667c563f8d62e8cd437e8",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
