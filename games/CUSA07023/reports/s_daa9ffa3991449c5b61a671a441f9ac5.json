@@ -3,7 +3,7 @@
   "reportId": "s_daa9ffa3991449c5b61a671a441f9ac5",
   "cusaId": "CUSA07023",
   "testedAt": "2026-10-13T03:57:00.635745Z",
-  "status": "compat(CUSA07023): playable→ingame (screenshots show only Green Hill Act 1)",
+  "status": "ingame",
   "game": {
     "version": "01.03",
     "region": "North America"
