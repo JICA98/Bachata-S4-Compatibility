@@ -14,16 +14,58 @@
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.1.6",
+    "releaseTag": "v0.2.4",
     "hasCurrentReports": false,
     "performance": {
-      "min": 59.91,
-      "max": 59.91,
-      "average": 59.91,
+      "min": 59.96,
+      "max": 59.96,
+      "average": 59.96,
       "sampleCount": 1
     }
   },
   "socs": {
+    "sm8635": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 59.96,
+        "max": 59.96,
+        "average": 59.96,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_daa9ffa3991449c5b61a671a441f9ac5",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    },
     "sm8750": {
       "score": 75,
       "status": "ingame",
@@ -67,12 +109,89 @@
     }
   },
   "families": {
+    "adreno7": [
+      "sm8635"
+    ],
     "adreno8": [
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/02.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_daa9ffa3991449c5b61a671a441f9ac5",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-13T03:57:00.635745Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21G",
+        "socId": "sm8635",
+        "socName": "Snapdragon 8s Gen 3",
+        "gpu": "Adreno 735",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 59.96,
+        "nativeOnePercentLowFps": 59.01,
+        "outputAverageFps": null,
+        "testDurationSeconds": 313,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Sonic Mania: observed playable during this test session. Measured native FPS: 60.0. Recorded duration: 313s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d75150b5a438",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/01.webp",
+          "caption": "Sonic Mania — capture 1 · 2026-10-13T03:57:00.137Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/02.webp",
+          "caption": "Sonic Mania — capture 2 · 2026-10-13T03:58:09.789Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/03.webp",
+          "caption": "Sonic Mania — capture 3 · 2026-10-13T04:00:30.245Z"
+        }
+      ]
+    },
     {
       "reportId": "20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74",
       "schemaVersion": 1,

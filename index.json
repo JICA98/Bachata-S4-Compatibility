@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T09:33:27Z",
+  "generatedAt": "2026-10-13T09:33:40Z",
   "currentRelease": "v0.2.5",
   "gameCount": 99,
   "games": [
@@ -1164,20 +1164,20 @@
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.1.6",
+        "releaseTag": "v0.2.4",
         "hasCurrentReports": false,
         "performance": {
-          "min": 59.91,
-          "max": 59.91,
-          "average": 59.91,
+          "min": 59.96,
+          "max": 59.96,
+          "average": 59.96,
           "sampleCount": 1
         }
       },
-      "reportCount": 2,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/20260802T094302Z-v0-1-6-oneplus-13-snapdragon-8-elite-vortek-system-driver-0800-74/screenshots/02.webp",
+      "reportCount": 3,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-08-02T09:43:02Z"
+      "latestTestedAt": "2026-10-13T03:57:00.635745Z"
     },
     {
       "cusaId": "CUSA07340",
