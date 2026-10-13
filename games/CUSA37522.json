@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 0,
-    "status": "nothing",
-    "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 10.77,
+      "max": 10.77,
+      "average": 10.77,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -42,21 +42,49 @@
       "recommendedSetup": null
     },
     "sm6450": {
-      "score": 0,
-      "status": "nothing",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 10.77,
+        "max": 10.77,
+        "average": 10.77,
+        "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_94ee0bfe074c441289729eb2ee13b570",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 720,
+            "gpu.internal_screen_height": 480
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -67,8 +95,85 @@
       "sm6450"
     ]
   },
-  "thumbnail": null,
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_94ee0bfe074c441289729eb2ee13b570",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-12T19:04:40.337322Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "Snapdragon 6 Gen 1",
+        "gpu": "Adreno 710",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 720,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 10.77,
+        "nativeOnePercentLowFps": 1,
+        "outputAverageFps": null,
+        "testDurationSeconds": 231,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Persona 3 Reload: observed boots during this test session. Measured native FPS: 10.8. Recorded duration: 231s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9607d8c1d90f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/01.webp",
+          "caption": "Persona 3 Reload — capture 1 · 2026-10-12T19:04:37.512Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/02.webp",
+          "caption": "Persona 3 Reload — capture 2 · 2026-10-12T19:06:12.072Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA37522/s_94ee0bfe074c441289729eb2ee13b570/screenshots/03.webp",
+          "caption": "Persona 3 Reload — capture 3 · 2026-10-12T19:07:15.660Z"
+        }
+      ]
+    },
     {
       "reportId": "s_74f31098aedb42bc9a599d92482c7872",
       "schemaVersion": 2,
