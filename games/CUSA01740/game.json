@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA01740",
+  "title": "God of War™ III Remastered",
+  "region": "Asia",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 512
+  },
+  "legacyIssues": []
+}
