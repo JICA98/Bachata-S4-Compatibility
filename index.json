@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T03:30:01Z",
+  "generatedAt": "2026-10-14T03:30:13Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 99,
+  "gameCount": 101,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -653,6 +653,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:40:49Z"
+    },
+    {
+      "cusaId": "CUSA01968",
+      "title": "EA SPORTS UFC 2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 14.45,
+          "max": 14.45,
+          "average": 14.45,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01968/s_a16819ffb2e5496189ea33f68f6adac0/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-13T18:18:28.324977Z"
     },
     {
       "cusaId": "CUSA02046",
@@ -1803,6 +1828,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-30T19:47:53.175684Z"
+    },
+    {
+      "cusaId": "CUSA17374",
+      "title": "KAMENRIDER memory of heroez",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 56.86,
+          "max": 56.86,
+          "average": 56.86,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-13T16:46:28.155007Z"
     },
     {
       "cusaId": "CUSA17425",

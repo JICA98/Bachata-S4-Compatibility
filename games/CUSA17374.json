@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA17374",
+    "title": "KAMENRIDER memory of heroez",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 56.86,
+      "max": 56.86,
+      "average": 56.86,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 56.86,
+        "max": 56.86,
+        "average": 56.86,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c72d62b5ba574e1bb9c5dc0a0a99297e",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.vblank_frequency": 120
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_c72d62b5ba574e1bb9c5dc0a0a99297e",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-13T16:46:28.155007Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX809J",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.vblank_frequency": 120
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 56.86,
+        "nativeOnePercentLowFps": 46.39,
+        "outputAverageFps": null,
+        "testDurationSeconds": 304,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "KAMENRIDER memory of heroez: observed playable during this test session. Measured native FPS: 56.9. Recorded duration: 304s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d314d0a207a1",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/01.webp",
+          "caption": "KAMENRIDER memory of heroez — capture 1 · 2026-10-13T16:46:28.070Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/02.webp",
+          "caption": "KAMENRIDER memory of heroez — capture 2 · 2026-10-13T16:47:41.802Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/03.webp",
+          "caption": "KAMENRIDER memory of heroez — capture 3 · 2026-10-13T16:48:50.022Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA01968",
+    "title": "EA SPORTS UFC 2",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 14.45,
+      "max": 14.45,
+      "average": 14.45,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8735": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 14.45,
+        "max": 14.45,
+        "average": 14.45,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_a16819ffb2e5496189ea33f68f6adac0",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 2,
+            "gpu.vblank_frequency": 120,
+            "vulkan.vkcrash_diagnostic_enabled": true
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "unverified-60-fps-0100",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-60-fps-0111",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-60-fps-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-crowd-plus-5-10-fps-0111",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-crowd-plus-5-10-fps-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-fixing-the-floor-in-the-octagon-0111",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-fixing-the-floor-in-the-octagon-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-resolution-1280x720-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-0-force-cpu-0100",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-0-force-cpu-0111",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-0-force-cpu-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0111",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0113",
+            "revision": "2026.10.12.11637158210346386359"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8735"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01968/s_a16819ffb2e5496189ea33f68f6adac0/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_a16819ffb2e5496189ea33f68f6adac0",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-13T18:18:28.324977Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.13",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47I",
+        "socId": "sm8735",
+        "socName": "SM8735",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 2,
+          "gpu.vblank_frequency": 120,
+          "vulkan.vkcrash_diagnostic_enabled": true
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "unverified-60-fps-0100",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-60-fps-0111",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-60-fps-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0111",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-fixing-the-floor-in-the-octagon-0111",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-fixing-the-floor-in-the-octagon-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-resolution-1280x720-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0100",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0111",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0111",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0113",
+          "revision": "2026.10.12.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 14.45,
+        "nativeOnePercentLowFps": 6.81,
+        "outputAverageFps": null,
+        "testDurationSeconds": 933,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "EA SPORTS™ UFC® 2: observed boots during this test session. Measured native FPS: 14.5. Recorded duration: 933s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-ba13bf614081",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01968/s_a16819ffb2e5496189ea33f68f6adac0/screenshots/01.webp",
+          "caption": "EA SPORTS™ UFC® 2 — capture 1 · 2026-10-13T18:18:27.313Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01968/s_a16819ffb2e5496189ea33f68f6adac0/screenshots/02.webp",
+          "caption": "EA SPORTS™ UFC® 2 — capture 2 · 2026-10-13T18:19:32.825Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01968/s_a16819ffb2e5496189ea33f68f6adac0/screenshots/03.webp",
+          "caption": "EA SPORTS™ UFC® 2 — capture 3 · 2026-10-13T18:21:51.521Z"
+        }
+      ]
+    }
+  ]
+}
