@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c4a5ecb162d44dea9076f9fb940ce064",
+  "cusaId": "CUSA01341",
+  "testedAt": "2026-10-14T07:27:56.367801Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01341: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6e00ca745b46"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.38,
+    "testDurationSeconds": 74,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 10.2
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01341/s_c4a5ecb162d44dea9076f9fb940ce064/screenshots/01.webp",
+        "sha256": "35c0fca05a7af510e3258e5115dc3e0c3e98ba34f669c695666d20b4dc142460",
+        "caption": "DRAGON BALL XENOVERSE — capture 1 · 2026-10-14T07:27:56.263Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01341/s_c4a5ecb162d44dea9076f9fb940ce064/logs/01-application.log.gz",
+        "sha256": "99bbd4be61213801816217b11fa9d24b58f0c149daa670557bcb0eeea1e99ec2",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01341/s_c4a5ecb162d44dea9076f9fb940ce064/logs/02-shadps4.log.gz",
+        "sha256": "e1b4f458689bef872cb56fa0fabfc323a772151eaf87ed38adc1a2815837760e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
