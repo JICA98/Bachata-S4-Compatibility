@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a989f13c3ebc41a396776e5624f1a3bf",
+  "cusaId": "CUSA03173",
+  "testedAt": "2026-10-14T12:10:32.046769Z",
+  "status": "boots",
+  "game": {
+    "version": "01.09",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2220",
+    "socId": "sm8650",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "compiler260909163353",
+    "build": "PD2307CF_EX_A_16.2.18.1.W20"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Bloodborne: observed boots during this test session. Measured native FPS: 23.0. Recorded duration: 34s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-43e9178c35e8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 23,
+    "testDurationSeconds": 34,
+    "framePacing": "smooth"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03173/s_a989f13c3ebc41a396776e5624f1a3bf/screenshots/01.webp",
+        "sha256": "5440deff92f7a8ea2c8eb85579d30de5de05dd49bdd18f2ba27d2e6012f8d7a0",
+        "caption": "Bloodborne — capture 1 · 2026-10-14T12:10:31.792Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03173/s_a989f13c3ebc41a396776e5624f1a3bf/logs/01-application.log.gz",
+        "sha256": "6d13d1f2f22f8ab43c18f8ea4e2b35eb1b5ba537153364007052c97902ea41ea",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03173/s_a989f13c3ebc41a396776e5624f1a3bf/logs/02-shadps4.log.gz",
+        "sha256": "9c344e09606304a66efe96e888720ae385177914bd0914c32ce4698cba271f6c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
