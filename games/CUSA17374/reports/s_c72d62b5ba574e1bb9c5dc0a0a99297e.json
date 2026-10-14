@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c72d62b5ba574e1bb9c5dc0a0a99297e",
+  "cusaId": "CUSA17374",
+  "testedAt": "2026-10-13T16:46:28.155007Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Japan"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 120,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 120
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "KAMENRIDER memory of heroez: observed playable during this test session. Measured native FPS: 56.9. Recorded duration: 304s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d314d0a207a1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 56.86,
+    "testDurationSeconds": 304,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 46.39
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/01.webp",
+        "sha256": "f55694db764da2f05603611e71be4971a6e31833ddbf4bba68c0e56454f4a5f8",
+        "caption": "KAMENRIDER memory of heroez — capture 1 · 2026-10-13T16:46:28.070Z"
+      },
+      {
+        "path": "assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/02.webp",
+        "sha256": "e1a10d29b7cc7d6481ae8aa9f7f363bb6da84eab99542da7a760324c1b4827fa",
+        "caption": "KAMENRIDER memory of heroez — capture 2 · 2026-10-13T16:47:41.802Z"
+      },
+      {
+        "path": "assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/screenshots/03.webp",
+        "sha256": "fde394ca52cc87b00b31a5b0c841ba44a16b8c4cd1487d681dc41afa61a9c887",
+        "caption": "KAMENRIDER memory of heroez — capture 3 · 2026-10-13T16:48:50.022Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/logs/01-application.log.gz",
+        "sha256": "5735ea258fd3f5a4f3e712acf0c7f064139bcfd32d29432735800ffb09f704b6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA17374/s_c72d62b5ba574e1bb9c5dc0a0a99297e/logs/02-shadps4.log.gz",
+        "sha256": "3eb3d6bee187cd2330176678eee88d27e76e6ee2fa7752e782070ff10e476252",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
