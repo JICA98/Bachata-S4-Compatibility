@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_116b7ff881fd4aedb65a7110949ead42",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-14T10:31:41.928543Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25099RP13G",
+    "socId": "sm7635",
+    "socName": "Snapdragon 7s Gen 3",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-0f6650b4e552733b",
+    "type": "turnip",
+    "name": "710 720 & 722 v3.8",
+    "version": "3.8",
+    "build": "26.2.99",
+    "source": "Vauzi-17/710 3.8"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-0f6650b4e552733b",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b02ed702b8fc"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_116b7ff881fd4aedb65a7110949ead42/logs/01-application.log.gz",
+        "sha256": "c816f72158d6c7650e864e16d05b2f886d7bf7a69efd78fad136c36366b7a9cc",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_116b7ff881fd4aedb65a7110949ead42/logs/02-shadps4.log.gz",
+        "sha256": "6cb82d9875f7a538ac64148f67696edc33a708dc680a5b19f847e791282a1bbd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
