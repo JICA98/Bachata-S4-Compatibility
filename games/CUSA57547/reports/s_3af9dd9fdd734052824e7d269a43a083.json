@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_3af9dd9fdd734052824e7d269a43a083",
+  "cusaId": "CUSA57547",
+  "testedAt": "2026-10-14T12:14:39.381238Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1000,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1000,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Call of Duty®: Black Ops: observed ingame during this test session. Measured native FPS: 38.3. Recorded duration: 878s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5422edb500e7"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 38.34,
+    "testDurationSeconds": 878,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 9.29
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/01.webp",
+        "sha256": "9b6cf45fc6339322bc31803a4c6b8a20d97684a008074be240ecc60aa74efc94",
+        "caption": "Call of Duty®: Black Ops — capture 1 · 2026-10-14T12:14:38.979Z"
+      },
+      {
+        "path": "assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/02.webp",
+        "sha256": "167a2b9f74161958451f8ee10e78c59a1ebcaaa3796eb04d86f283a23006cd59",
+        "caption": "Call of Duty®: Black Ops — capture 2 · 2026-10-14T12:15:57.063Z"
+      },
+      {
+        "path": "assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/03.webp",
+        "sha256": "40a6f5d5f6652db498b50372e197c77cc50637fa684f77fca3c9f9f331b4c72b",
+        "caption": "Call of Duty®: Black Ops — capture 3 · 2026-10-14T12:18:05.999Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/logs/01-application.log.gz",
+        "sha256": "9edb9ada9d12b53f8705e16200a4f8a456a481c0b18a22efaae89d56b8e6083b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/logs/02-shadps4.log.gz",
+        "sha256": "9c76b57f418c8b9a580a0c6c94eb12abcfceced4eee9d35ee5986efa27325caa",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
