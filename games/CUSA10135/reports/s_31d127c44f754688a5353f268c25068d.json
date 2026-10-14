@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_31d127c44f754688a5353f268c25068d",
+  "cusaId": "CUSA10135",
+  "testedAt": "2026-10-13T16:33:47.387661Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-X810",
+    "socId": "sm8550",
+    "socName": "Snapdragon 8 Gen 2",
+    "gpu": "Adreno 740",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-cb10a5bb2a1f5af9",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R1-OneUI",
+    "version": "26.2.99",
+    "build": "cb10a5bb2a1f5af9"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-cb10a5bb2a1f5af9",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Witch and the Hundred Knight 2: observed ingame during this test session. Measured native FPS: 43.0. Recorded duration: 692s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e77af58fd866"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 42.96,
+    "testDurationSeconds": 692,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 29.73
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA10135/s_31d127c44f754688a5353f268c25068d/screenshots/01.webp",
+        "sha256": "63a3a6a18562f1a4a2b0f93283e3ee852c279e86f1e3498344c211a6748d2bc0",
+        "caption": "The Witch and the Hundred Knight 2 — capture 1 · 2026-10-13T16:33:47.283Z"
+      },
+      {
+        "path": "assets/CUSA10135/s_31d127c44f754688a5353f268c25068d/screenshots/02.webp",
+        "sha256": "4a01f9de5f1d0e7ef7730464a7988134ebe453867b07157be4919311d588bd48",
+        "caption": "The Witch and the Hundred Knight 2 — capture 2 · 2026-10-13T16:40:20.599Z"
+      },
+      {
+        "path": "assets/CUSA10135/s_31d127c44f754688a5353f268c25068d/screenshots/03.webp",
+        "sha256": "12f43bdb10c30380776be60e9954b33b9e13c6fdd2a2081b63bbbeca42880308",
+        "caption": "The Witch and the Hundred Knight 2 — capture 3 · 2026-10-13T16:41:52.867Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA10135/s_31d127c44f754688a5353f268c25068d/logs/01-application.log.gz",
+        "sha256": "7fc130259369cc520ef2a077c241df59388631e5914bb4ee70ff19a6c8287479",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA10135/s_31d127c44f754688a5353f268c25068d/logs/02-shadps4.log.gz",
+        "sha256": "4543e365026ba706dd9f07af78c671086ff4f89938b096c27cd8a65e21881216",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
