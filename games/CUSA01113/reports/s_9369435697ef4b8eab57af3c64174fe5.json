@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9369435697ef4b8eab57af3c64174fe5",
+  "cusaId": "CUSA01113",
+  "testedAt": "2026-10-15T02:26:57.909539Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-c03b5791610edfc9",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37 patched",
+    "version": "26.2.99",
+    "build": "c03b5791610edfc9"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-c03b5791610edfc9",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Gravity Rush™ Remastered: observed boots during this test session. Measured native FPS: 33.4. Recorded duration: 559s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-31ebdcf8cedc"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 33.4,
+    "testDurationSeconds": 559,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 21.1
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/screenshots/01.webp",
+        "sha256": "fa1b91bb463f960e038ff89dc582c35758991284d80c55ea8a28094167ed8aa8",
+        "caption": "Gravity Rush™ Remastered — capture 1 · 2026-10-15T02:26:57.830Z"
+      },
+      {
+        "path": "assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/screenshots/02.webp",
+        "sha256": "1e8d53dfc53ba684e17810ef560e8d8db6b17de9410f7bf4e2c0a3a07cafcf9d",
+        "caption": "Gravity Rush™ Remastered — capture 2 · 2026-10-15T02:28:06.486Z"
+      },
+      {
+        "path": "assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/screenshots/03.webp",
+        "sha256": "97aeebc4c9d1174fbe245bcc058dd381a6df874b7005947709fb63e2b09d7f1e",
+        "caption": "Gravity Rush™ Remastered — capture 3 · 2026-10-15T02:34:40.890Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/logs/01-application.log.gz",
+        "sha256": "c202d542411f5796be14a289dfff24f0bee609e182ad42b66b574daa95c9135a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/logs/02-shadps4.log.gz",
+        "sha256": "e1e9933991fa1c6bd31446cb24ec164928111f89fba591ce99ef7cdd6a6878bd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
