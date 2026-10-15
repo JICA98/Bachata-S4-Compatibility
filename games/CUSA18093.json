@@ -8,54 +8,55 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 100,
-    "status": "playable",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 24.13,
-      "max": 24.13,
-      "average": 24.13,
+      "min": 38.7,
+      "max": 38.7,
+      "average": 38.7,
       "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": 100,
-      "status": "playable",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
       "performance": {
-        "min": 24.13,
-        "max": 24.13,
-        "average": 24.13,
+        "min": 38.7,
+        "max": 38.7,
+        "average": 38.7,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_972cdbde727146dab386158aea34fc3f",
+        "reportId": "s_bcca3b332a954da18b38b307a6f2fdc2",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
-          "id": "turnip-6112f1820acedff2",
+          "id": "turnip-4dcd07f06092baa3",
           "type": "turnip",
-          "name": "Turnip驱动 Gen8 V37",
+          "name": "Turnip驱动 Rutabaga",
           "version": "26.2.99",
-          "build": "26.2.99"
+          "build": "4dcd07f06092baa3"
         },
         "config": {
           "requiredOverrides": {
+            "general.big_core_affinity": true,
             "gpu.readbacks_mode": 0
           },
-          "driverId": "turnip-6112f1820acedff2",
+          "driverId": "turnip-4dcd07f06092baa3",
           "guestBackend": "FEX",
           "frameGenerationMode": "OFF",
           "fexPreset": "DEFAULT",
@@ -72,8 +73,83 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_bcca3b332a954da18b38b307a6f2fdc2",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T14:30:42.269816Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-4dcd07f06092baa3",
+        "type": "turnip",
+        "name": "Turnip驱动 Rutabaga",
+        "version": "26.2.99",
+        "build": "4dcd07f06092baa3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-4dcd07f06092baa3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 38.7,
+        "nativeOnePercentLowFps": 33.7,
+        "outputAverageFps": null,
+        "testDurationSeconds": 223,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "13 Sentinels: Aegis Rim: observed boots during this test session. Measured native FPS: 38.7. Recorded duration: 223s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9c1af01eba3a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/01.webp",
+          "caption": "13 Sentinels: Aegis Rim — capture 1 · 2026-10-15T14:30:42.166Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/02.webp",
+          "caption": "13 Sentinels: Aegis Rim — capture 2 · 2026-10-15T14:31:59.822Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/03.webp",
+          "caption": "13 Sentinels: Aegis Rim — capture 3 · 2026-10-15T14:33:02.474Z"
+        }
+      ]
+    },
     {
       "reportId": "s_972cdbde727146dab386158aea34fc3f",
       "schemaVersion": 2,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T15:28:01Z",
+  "generatedAt": "2026-10-15T15:28:19Z",
   "currentRelease": "v0.2.5",
   "gameCount": 104,
   "games": [
@@ -608,26 +608,26 @@
       "cusaId": "CUSA01715",
       "title": "God of War III Remastered",
       "general": {
-        "score": 75,
+        "score": 71,
         "status": "ingame",
         "confidence": "high",
-        "reportCount": 6,
-        "testerCount": 6,
-        "deviceCount": 6,
+        "reportCount": 7,
+        "testerCount": 7,
+        "deviceCount": 7,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
           "min": 11.91,
           "max": 43.54,
-          "average": 27.22,
-          "sampleCount": 6
+          "average": 29.34,
+          "sampleCount": 7
         }
       },
-      "reportCount": 67,
+      "reportCount": 68,
       "socCount": 24,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_872266aa53244c308a19e5461ed9c5d7/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-15T02:05:43.024401Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_0d84410637a54890b6a76a1b02910560/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-15T12:12:21.020799Z"
     },
     {
       "cusaId": "CUSA01716",
@@ -2008,26 +2008,26 @@
       "cusaId": "CUSA18093",
       "title": "13 Sentinels: Aegis Rim",
       "general": {
-        "score": 100,
-        "status": "playable",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 24.13,
-          "max": 24.13,
-          "average": 24.13,
+          "min": 38.7,
+          "max": 38.7,
+          "average": 38.7,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_972cdbde727146dab386158aea34fc3f/screenshots/03.webp",
-      "latestStatus": "playable",
-      "latestTestedAt": "2026-10-01T10:58:58.150664Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-15T14:30:42.269816Z"
     },
     {
       "cusaId": "CUSA19345",
