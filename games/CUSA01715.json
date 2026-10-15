@@ -10,17 +10,17 @@
   "general": {
     "score": 75,
     "status": "ingame",
-    "confidence": "medium",
-    "reportCount": 4,
-    "testerCount": 4,
-    "deviceCount": 4,
+    "confidence": "high",
+    "reportCount": 5,
+    "testerCount": 5,
+    "deviceCount": 5,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
-      "min": 12.23,
+      "min": 11.91,
       "max": 43.54,
-      "average": 28.54,
-      "sampleCount": 4
+      "average": 25.21,
+      "sampleCount": 5
     }
   },
   "socs": {
@@ -381,6 +381,48 @@
             "revision": "2026.10.01.13399220021802570842"
           }
         ]
+      }
+    },
+    "s5e8855": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 11.91,
+        "max": 11.91,
+        "average": 11.91,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_bc30a38657d04de1ab2349fefa5bdf15",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "system-vortek",
+          "type": "system",
+          "name": "System Vulkan",
+          "version": "A566EXXSECZI2",
+          "build": "BP4A.251205.006.A566EXXSECZI2"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "system-vortek",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
       }
     },
     "s5e9945": {
@@ -1175,6 +1217,7 @@
       "mt6991"
     ],
     "xclipse": [
+      "s5e8855",
       "s5e9945"
     ],
     "adreno6": [
@@ -1200,8 +1243,82 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_66b22db2cabb460ea4559b488b3adffc/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_bc30a38657d04de1ab2349fefa5bdf15",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-14T14:14:07.631308Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-A566E",
+        "socId": "s5e8855",
+        "socName": "s5e8855",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "system-vortek",
+        "type": "system",
+        "name": "System Vulkan",
+        "version": "A566EXXSECZI2",
+        "build": "BP4A.251205.006.A566EXXSECZI2"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "system-vortek",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 11.91,
+        "nativeOnePercentLowFps": 6.9,
+        "outputAverageFps": null,
+        "testDurationSeconds": 330,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 11.9. Recorded duration: 330s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-78b2c69b7170",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-14T14:14:06.991Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-14T14:15:48.679Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-14T14:16:57.431Z"
+        }
+      ]
+    },
     {
       "reportId": "s_66b22db2cabb460ea4559b488b3adffc",
       "schemaVersion": 2,

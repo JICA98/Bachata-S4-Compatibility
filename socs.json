@@ -302,6 +302,16 @@
         "S5E9945",
         "Exynos 2400"
       ]
+    },
+    "s5e8855": {
+      "name": "Exynos 1580",
+      "vendor": "Samsung",
+      "gpu": "Xclipse 540",
+      "family": "xclipse",
+      "aliases": [
+        "S5E8855",
+        "Exynos 1580"
+      ]
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T03:22:23Z",
+  "generatedAt": "2026-10-15T03:22:39Z",
   "currentRelease": "v0.2.5",
   "gameCount": 102,
   "games": [
@@ -558,26 +558,26 @@
       "cusaId": "CUSA01623",
       "title": "God of War III Remastered",
       "general": {
-        "score": 41,
-        "status": "menus",
-        "confidence": "medium",
-        "reportCount": 20,
-        "testerCount": 20,
-        "deviceCount": 16,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 6.78,
-          "max": 46.98,
-          "average": 28.7,
-          "sampleCount": 14
+          "min": 18.83,
+          "max": 18.83,
+          "average": 18.83,
+          "sampleCount": 1
         }
       },
-      "reportCount": 27,
-      "socCount": 11,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_e789843d39cc405d9de0297957b81473/screenshots/03.webp",
+      "reportCount": 28,
+      "socCount": 12,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_677a73d7af19437ab1b733fc4dcb942b/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-12T03:23:45.657777Z"
+      "latestTestedAt": "2026-10-14T23:39:01.160162Z"
     },
     {
       "cusaId": "CUSA01715",
@@ -585,24 +585,24 @@
       "general": {
         "score": 75,
         "status": "ingame",
-        "confidence": "medium",
-        "reportCount": 4,
-        "testerCount": 4,
-        "deviceCount": 4,
+        "confidence": "high",
+        "reportCount": 5,
+        "testerCount": 5,
+        "deviceCount": 5,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
-          "min": 12.23,
+          "min": 11.91,
           "max": 43.54,
-          "average": 28.54,
-          "sampleCount": 4
+          "average": 25.21,
+          "sampleCount": 5
         }
       },
-      "reportCount": 65,
-      "socCount": 23,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_66b22db2cabb460ea4559b488b3adffc/screenshots/03.webp",
+      "reportCount": 66,
+      "socCount": 24,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-13T21:23:14.219384Z"
+      "latestTestedAt": "2026-10-14T14:14:07.631308Z"
     },
     {
       "cusaId": "CUSA01716",
@@ -2506,28 +2506,28 @@
     },
     {
       "cusaId": "CUSA57547",
-      "title": "Call of Duty®: Black Ops",
+      "title": "Call of Duty: Black Ops",
       "general": {
-        "score": 0,
-        "status": "nothing",
-        "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 38.34,
+          "max": 38.34,
+          "average": 38.34,
+          "sampleCount": 1
         }
       },
-      "reportCount": 2,
-      "socCount": 1,
-      "thumbnail": null,
-      "latestStatus": "nothing",
-      "latestTestedAt": "2026-10-01T18:52:20.055778Z"
+      "reportCount": 3,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-14T12:14:39.381238Z"
     },
     {
       "cusaId": "CUSA57548",

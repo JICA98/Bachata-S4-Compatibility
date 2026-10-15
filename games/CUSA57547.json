@@ -3,24 +3,24 @@
   "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA57547",
-    "title": "Call of Duty®: Black Ops",
+    "title": "Call of Duty: Black Ops",
     "region": "North America",
     "publisher": "Unknown"
   },
   "general": {
-    "score": 0,
-    "status": "nothing",
-    "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 38.34,
+      "max": 38.34,
+      "average": 38.34,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -40,15 +40,140 @@
         "sampleCount": 0
       },
       "recommendedSetup": null
+    },
+    "sm8735": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 38.34,
+        "max": 38.34,
+        "average": 38.34,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_3af9dd9fdd734052824e7d269a43a083",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 1000,
+            "gpu.internal_screen_height": 600
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
     "mali-g": [
       "mt6897"
+    ],
+    "adreno8": [
+      "sm8735"
     ]
   },
-  "thumbnail": null,
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_3af9dd9fdd734052824e7d269a43a083",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-14T12:14:39.381238Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47G",
+        "socId": "sm8735",
+        "socName": "Snapdragon 8s Gen 4",
+        "gpu": "Adreno 825",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 1000,
+          "gpu.internal_screen_height": 600
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 38.34,
+        "nativeOnePercentLowFps": 9.29,
+        "outputAverageFps": null,
+        "testDurationSeconds": 878,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Call of Duty®: Black Ops: observed ingame during this test session. Measured native FPS: 38.3. Recorded duration: 878s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-5422edb500e7",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/01.webp",
+          "caption": "Call of Duty®: Black Ops — capture 1 · 2026-10-14T12:14:38.979Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/02.webp",
+          "caption": "Call of Duty®: Black Ops — capture 2 · 2026-10-14T12:15:57.063Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA57547/s_3af9dd9fdd734052824e7d269a43a083/screenshots/03.webp",
+          "caption": "Call of Duty®: Black Ops — capture 3 · 2026-10-14T12:18:05.999Z"
+        }
+      ]
+    },
     {
       "reportId": "s_167c18121acd475398d7e4c03c417c54",
       "schemaVersion": 2,
