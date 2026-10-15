@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T03:22:39Z",
+  "generatedAt": "2026-10-15T03:22:52Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 102,
+  "gameCount": 103,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -480,6 +480,31 @@
       "latestTestedAt": "2026-10-01T12:00:41.372101Z"
     },
     {
+      "cusaId": "CUSA01113",
+      "title": "Gravity Rush Remastered",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 33.4,
+          "max": 33.4,
+          "average": 33.4,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01113/s_9369435697ef4b8eab57af3c64174fe5/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-15T02:26:57.909539Z"
+    },
+    {
       "cusaId": "CUSA01127",
       "title": "P.T.",
       "general": {
@@ -586,23 +611,23 @@
         "score": 75,
         "status": "ingame",
         "confidence": "high",
-        "reportCount": 5,
-        "testerCount": 5,
-        "deviceCount": 5,
+        "reportCount": 6,
+        "testerCount": 6,
+        "deviceCount": 6,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
           "min": 11.91,
           "max": 43.54,
-          "average": 25.21,
-          "sampleCount": 5
+          "average": 27.22,
+          "sampleCount": 6
         }
       },
-      "reportCount": 66,
+      "reportCount": 67,
       "socCount": 24,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_bc30a38657d04de1ab2349fefa5bdf15/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_872266aa53244c308a19e5461ed9c5d7/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-14T14:14:07.631308Z"
+      "latestTestedAt": "2026-10-15T02:05:43.024401Z"
     },
     {
       "cusaId": "CUSA01716",
