@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bcca3b332a954da18b38b307a6f2fdc2",
+  "cusaId": "CUSA18093",
+  "testedAt": "2026-10-15T14:30:42.269816Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-4dcd07f06092baa3",
+    "type": "turnip",
+    "name": "Turnip驱动 Rutabaga",
+    "version": "26.2.99",
+    "build": "4dcd07f06092baa3"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-4dcd07f06092baa3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "13 Sentinels: Aegis Rim: observed boots during this test session. Measured native FPS: 38.7. Recorded duration: 223s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c1af01eba3a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 38.7,
+    "testDurationSeconds": 223,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 33.7
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/01.webp",
+        "sha256": "862093da1c97968551de8fefe8a2b9c7af69c39e70574128b36a02240c1a9690",
+        "caption": "13 Sentinels: Aegis Rim — capture 1 · 2026-10-15T14:30:42.166Z"
+      },
+      {
+        "path": "assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/02.webp",
+        "sha256": "533caf43268ee6af5f7c27619715a4c32ac55a451bca3d0a0f839923de60532b",
+        "caption": "13 Sentinels: Aegis Rim — capture 2 · 2026-10-15T14:31:59.822Z"
+      },
+      {
+        "path": "assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/03.webp",
+        "sha256": "5892c2d55f36c77bdf7f8242a56acbf005f2903ba167a7165917469f64031eed",
+        "caption": "13 Sentinels: Aegis Rim — capture 3 · 2026-10-15T14:33:02.474Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/logs/01-application.log.gz",
+        "sha256": "7464351238ebdeaf69083a4b76da63d18baf2308849465e7bc6f257f7c722d7d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/logs/02-shadps4.log.gz",
+        "sha256": "77e59fbfe85cf6f6ea7893fbde5ff8bf90a278d999ca63b5f381ba4cf0d4a7d9",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
