@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bfbc217e6d634a998c4361785c57b7b1",
+  "cusaId": "CUSA47999",
+  "testedAt": "2026-10-15T23:19:27.411633Z",
+  "status": "playable",
+  "game": {
+    "version": "01.01",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21G",
+    "socId": "sm8635",
+    "socName": "SM8635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "lack of audio in-game. Aside from that, it runs smoothly",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5485d40b8b47"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 58.95,
+    "testDurationSeconds": 286,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 39.65
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/01.webp",
+        "sha256": "21a3e6d291ff7ad868b2a5da4042287b7e6327e43388065a386e2847d976e528",
+        "caption": "."
+      },
+      {
+        "path": "assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/02.webp",
+        "sha256": "2ac28bb2d5b5abd8c4efa48dbb4f2f9067e1f5386a7e22feddb46ae2be0a5412",
+        "caption": "TSUKIHIME A piece of blue glass moon — capture 2 · 2026-10-15T23:21:00.843Z"
+      },
+      {
+        "path": "assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/03.webp",
+        "sha256": "0e7dcf77506f794a67aa09cd98b5b7cd46cb12c9bede36624d81b1e7b7c28b6a",
+        "caption": "TSUKIHIME A piece of blue glass moon — capture 3 · 2026-10-15T23:22:59.587Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/logs/01-application.log.gz",
+        "sha256": "fa5aa8a09c7129a12b31e2ce569daa46f0d88b20aa6e5b7a77a0662499ef6075",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/logs/02-shadps4.log.gz",
+        "sha256": "0d2d66fd0e406b57983dc88db8db1e42ce4e5274a27f1f4b7f869733e54bffee",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
