@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2fc8087aa59b4b668ca987f61ded1761",
+  "cusaId": "CUSA09171",
+  "testedAt": "2026-10-15T16:51:17.981089Z",
+  "status": "boots",
+  "game": {
+    "version": "Unknown",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PJZ110",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA09171: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-78c779f160f1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 6.65,
+    "testDurationSeconds": 61,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 3.11
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA09171/s_2fc8087aa59b4b668ca987f61ded1761/screenshots/01.webp",
+        "sha256": "868a588ea600f8de93dee6411b2a36c8c6e646f8f6d5ffe7339d16b681ef2283",
+        "caption": "\"Original Ver.\" Soundtrack Swap — capture 1 · 2026-10-15T16:51:17.576Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA09171/s_2fc8087aa59b4b668ca987f61ded1761/logs/01-application.log.gz",
+        "sha256": "8ce904d5ff00e8ed07b72921a7ed6018217da9cd6590461fc7147cac88bd54d7",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA09171/s_2fc8087aa59b4b668ca987f61ded1761/logs/02-shadps4.log.gz",
+        "sha256": "bdfde97537dae8f79d5249b9461f3257fdf1f552b714f2237bc9d32b691bb812",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
