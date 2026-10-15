@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_0576a5a22f774c9b811b9b7fcd623f59",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-15T16:24:44.539761Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2415",
+    "socId": "sm8475",
+    "socName": "Snapdragon 8+ Gen 1",
+    "gpu": "Adreno 730",
+    "androidVersion": "15",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-3d143841fb3ddd09",
+    "type": "turnip",
+    "name": "Turnip mojo-25.0 v2",
+    "version": "25.0.7",
+    "build": "3d143841fb3ddd09",
+    "source": "JICA98/bachata-s4-drivers mojo-25.0-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-3d143841fb3ddd09",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed nothing during this test session. Measured native FPS: 11.3. Recorded duration: 196s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f8870983a204"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 11.26,
+    "testDurationSeconds": 196,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.83
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_0576a5a22f774c9b811b9b7fcd623f59/logs/01-application.log.gz",
+        "sha256": "c5d72d2c1b9178239e24be03620dd214db93c2a0b0f37c8bbdc4f93fd5b45a36",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_0576a5a22f774c9b811b9b7fcd623f59/logs/02-shadps4.log.gz",
+        "sha256": "3e2d98917bfe4d3f32fa94018e4720bace5ad29230313e45c2736e8b3b9d8aa1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
