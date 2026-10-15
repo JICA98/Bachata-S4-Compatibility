@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_47b055f8df074638af9dead34530f4c0",
+  "cusaId": "CUSA03509",
+  "testedAt": "2026-10-15T22:56:18.063617Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-d88cc68b232c53a0",
+    "type": "turnip",
+    "name": "Mesa Turnip Driver v25.3.0-R11",
+    "version": "25.2.99",
+    "build": "d88cc68b232c53a0",
+    "source": "K11MCH1/AdrenoToolsDrivers v25.3.0-rc.11"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-d88cc68b232c53a0",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Grand Theft Auto: Vice City®: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-cfe23b17bcac"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03509/s_47b055f8df074638af9dead34530f4c0/logs/01-application.log.gz",
+        "sha256": "339c1e0fc624821d9f7e6518c32bbdc08faa018924f85ce1c8b377d8f2b5e6cd",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03509/s_47b055f8df074638af9dead34530f4c0/logs/02-shadps4.log.gz",
+        "sha256": "0ecfa5b5471a6ce4f51799f67c2ca68411273c97ed7a96de2f8567c413f1701b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
