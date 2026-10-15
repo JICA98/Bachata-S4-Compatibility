@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ed1f7588dad348c686b0f0f376e3ee59",
+  "cusaId": "CUSA17985",
+  "testedAt": "2026-10-15T23:12:45.558863Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-X210",
+    "socId": "sm6375",
+    "socName": "SM6375",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Ultimate Custom Night: observed boots during this test session. Measured native FPS: 18.6. Recorded duration: 309s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e535b0911acb"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 18.58,
+    "testDurationSeconds": 309,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.02
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/01.webp",
+        "sha256": "1d95771ef1dfcb7462a90227f22dca6ef608ffdaab5dfa8b9ff1aa391699676a",
+        "caption": "Ultimate Custom Night — capture 1 · 2026-10-15T23:12:45.159Z"
+      },
+      {
+        "path": "assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/02.webp",
+        "sha256": "7f6a713636fa55460dad1f84a18b24b357e2c65dc69dd4c8353825456111b89e",
+        "caption": "Ultimate Custom Night — capture 2 · 2026-10-15T23:16:19.951Z"
+      },
+      {
+        "path": "assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/03.webp",
+        "sha256": "9762ff1247537d19ff86f02781c2f0c9411a40f56ece7f48e511f307d1616ee6",
+        "caption": "Ultimate Custom Night — capture 3 · 2026-10-15T23:17:22.283Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/logs/01-application.log.gz",
+        "sha256": "286559cf89b1270b1c756885ab06b38cdc96a7784e8ff9566ec012a00546d4af",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/logs/02-shadps4.log.gz",
+        "sha256": "35472fc298420e8b86b071ca8bff889e3640955fcfdfc9a6496abbbc3dccc084",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
