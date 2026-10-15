@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a13b0eb96d4d4f84822923560ae22962",
+  "cusaId": "CUSA45905",
+  "testedAt": "2026-10-15T09:43:25.807536Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "SM8735",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1000,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1000,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "SHINOBI: Art of Vengeance: observed playable during this test session. Measured native FPS: 57.3. Recorded duration: 691s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8d8bbbccef28"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 57.33,
+    "testDurationSeconds": 691,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 33.65
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/01.webp",
+        "sha256": "0396cf81712111c5dc9fd01c1da173bc663a9d405dd9499af75fff53ea71b342",
+        "caption": "SHINOBI: Art of Vengeance — capture 1 · 2026-10-15T09:43:23.698Z"
+      },
+      {
+        "path": "assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/02.webp",
+        "sha256": "f4ff399303a9a6cb5de69455ebb0a0f0f7231f1bdb6bdff3a9b3c168e1a8d578",
+        "caption": "SHINOBI: Art of Vengeance — capture 2 · 2026-10-15T09:49:09.518Z"
+      },
+      {
+        "path": "assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/03.webp",
+        "sha256": "40ac27883442a8d6b2b038fe3838f2fa8c6e35ecb34357ee633ad608da82aa0a",
+        "caption": "SHINOBI: Art of Vengeance — capture 3 · 2026-10-15T09:51:36.362Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/logs/01-application.log.gz",
+        "sha256": "0b0d45ff0acb69f5d3276c8e05c99185c05667bb74d9512f85deac49469f4c34",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/logs/02-shadps4.log.gz",
+        "sha256": "afe3d6a39cd2da27697d24438266f974d6c517f6e4e8daec87cf0271ff8fb459",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
