@@ -10,17 +10,17 @@
   "general": {
     "score": 75,
     "status": "ingame",
-    "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 26.04,
-      "max": 32.85,
-      "average": 29.45,
-      "sampleCount": 2
+      "min": 23.75,
+      "max": 23.75,
+      "average": 23.75,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -113,6 +113,89 @@
           {
             "id": "rgba8f-color-space-perf-increase",
             "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
+    },
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 23.75,
+        "max": 23.75,
+        "average": 23.75,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_3d2eb719b3d941ce8ba3604269c94365",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "CUSTOM",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "bloodborne-disable-http",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-no-chromatic-aberration",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-no-dof",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-no-dynamic-shadows",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-no-motion-blur",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-no-ssao",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "bloodborne-performance",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "model-lod-1-lower",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "resolution-patch-1600x900-16-9",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "skip-intro-warning-message",
+            "revision": "2026.10.14.11637158210346386359"
           }
         ]
       }
@@ -227,14 +310,130 @@
   },
   "families": {
     "adreno7": [
-      "sm8635"
+      "sm8635",
+      "sm8650"
     ],
     "adreno8": [
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_42158fcfcd884e50a8a5863c07cb0b9a/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03173/s_3d2eb719b3d941ce8ba3604269c94365/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_3d2eb719b3d941ce8ba3604269c94365",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T04:15:04.417369Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.09",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23127PN0CG",
+        "socId": "sm8650",
+        "socName": "Snapdragon 8 Gen 3",
+        "gpu": "Adreno 750",
+        "androidVersion": "15",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "CUSTOM",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "bloodborne-disable-http",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-no-chromatic-aberration",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-no-dof",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-no-dynamic-shadows",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-no-motion-blur",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-no-ssao",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "bloodborne-performance",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "model-lod-1-lower",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "resolution-patch-1600x900-16-9",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "skip-intro-warning-message",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 23.75,
+        "nativeOnePercentLowFps": 4.54,
+        "outputAverageFps": null,
+        "testDurationSeconds": 340,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Bloodborne: observed ingame during this test session. Measured native FPS: 23.8. Recorded duration: 340s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-6f105f720a7d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_3d2eb719b3d941ce8ba3604269c94365/screenshots/01.webp",
+          "caption": "Bloodborne — capture 1 · 2026-10-15T04:15:04.163Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_3d2eb719b3d941ce8ba3604269c94365/screenshots/02.webp",
+          "caption": "Bloodborne — capture 2 · 2026-10-15T04:17:31.967Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA03173/s_3d2eb719b3d941ce8ba3604269c94365/screenshots/03.webp",
+          "caption": "Bloodborne — capture 3 · 2026-10-15T04:20:07.059Z"
+        }
+      ]
+    },
     {
       "reportId": "s_42158fcfcd884e50a8a5863c07cb0b9a",
       "schemaVersion": 2,
