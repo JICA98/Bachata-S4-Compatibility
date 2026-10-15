@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T09:26:06Z",
+  "generatedAt": "2026-10-15T15:28:01Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 103,
+  "gameCount": 104,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2428,6 +2428,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-09-28T08:12:11.491515Z"
+    },
+    {
+      "cusaId": "CUSA45905",
+      "title": "SHINOBI: Art of Vengeance",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 57.33,
+          "max": 57.33,
+          "average": 57.33,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-15T09:43:25.807536Z"
     },
     {
       "cusaId": "CUSA46747",

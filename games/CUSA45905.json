@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA45905",
+    "title": "SHINOBI: Art of Vengeance",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 57.33,
+      "max": 57.33,
+      "average": 57.33,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8735": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 57.33,
+        "max": 57.33,
+        "average": 57.33,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_a13b0eb96d4d4f84822923560ae22962",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 1000,
+            "gpu.internal_screen_height": 600
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8735"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_a13b0eb96d4d4f84822923560ae22962",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T09:43:25.807536Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47G",
+        "socId": "sm8735",
+        "socName": "SM8735",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 1000,
+          "gpu.internal_screen_height": 600
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 57.33,
+        "nativeOnePercentLowFps": 33.65,
+        "outputAverageFps": null,
+        "testDurationSeconds": 691,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "SHINOBI: Art of Vengeance: observed playable during this test session. Measured native FPS: 57.3. Recorded duration: 691s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-8d8bbbccef28",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/01.webp",
+          "caption": "SHINOBI: Art of Vengeance — capture 1 · 2026-10-15T09:43:23.698Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/02.webp",
+          "caption": "SHINOBI: Art of Vengeance — capture 2 · 2026-10-15T09:49:09.518Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA45905/s_a13b0eb96d4d4f84822923560ae22962/screenshots/03.webp",
+          "caption": "SHINOBI: Art of Vengeance — capture 3 · 2026-10-15T09:51:36.362Z"
+        }
+      ]
+    }
+  ]
+}
