@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d164eefb538d449c96dcc90ed0fb6bb2",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-15T11:24:10.151040Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 70 fusion",
+    "socId": "sm7635",
+    "socName": "Snapdragon 7s Gen 3",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-dfe28857407e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 17.6,
+    "testDurationSeconds": 120,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 8.76
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_d164eefb538d449c96dcc90ed0fb6bb2/screenshots/01.webp",
+        "sha256": "6ed14d3554ba28b9e0eb4e4beb515284200d1c596c9a5e3ed1db1528eb909274",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-15T11:24:09.755Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_d164eefb538d449c96dcc90ed0fb6bb2/screenshots/02.webp",
+        "sha256": "bcc6bea79e453833ac2eff87e4a144908a3a51a3601638c6daa22a2f24165170",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-15T11:25:12.291Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_d164eefb538d449c96dcc90ed0fb6bb2/logs/01-application.log.gz",
+        "sha256": "10b6c081dbc9552b4b959d671e0f3350232c9e8c46f462d2a0741213a620facb",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_d164eefb538d449c96dcc90ed0fb6bb2/logs/02-shadps4.log.gz",
+        "sha256": "2e3d3ef2e879a2669999deb43d556049093461c6d14dc4e7dd562b60d58ce9d7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
