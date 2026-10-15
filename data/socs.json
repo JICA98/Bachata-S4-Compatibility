@@ -312,6 +312,16 @@
         "S5E8855",
         "Exynos 1580"
       ]
+    },
+    "sm7750": {
+      "name": "Snapdragon 7 Gen 4",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 722",
+      "family": "adreno7",
+      "aliases": [
+        "SM7750",
+        "Snapdragon 7 Gen 4"
+      ]
     }
   }
 }
