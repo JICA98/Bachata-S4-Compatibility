@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_932540ec706145bf8630473c100b8e08",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-12T00:21:26.305844Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "35bd1b05d781aef83193ec1e688893095d8781ea"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2606FRT34I",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-3d143841fb3ddd09",
+    "type": "turnip",
+    "name": "Turnip mojo-25.0 v2",
+    "version": "mojo-25.0-v2",
+    "build": "3d143841fb3ddd09",
+    "source": "JICA98/bachata-s4-drivers mojo-25.0-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-3d143841fb3ddd09",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "LSFG_2X",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "resolution-patch-960x540",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-661465fd20fd"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_932540ec706145bf8630473c100b8e08/logs/01-application.log.gz",
+        "sha256": "7a2d798d8ffcf9222ebf63f2e4e3f5c5d246ba689dfdb75be7746c3b316de694",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_932540ec706145bf8630473c100b8e08/logs/02-shadps4.log.gz",
+        "sha256": "b44a90911c03381e3d631a93dd5f4745f3188199d8ea6ca5d6f622e1f2fa2761",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
