@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b6f2a66bb95346ad921515ff53365af3",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-06T08:22:03.947532Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-F946B",
+    "socId": "sm8550",
+    "socName": "Snapdragon 8 Gen 2",
+    "gpu": "Adreno 740",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-08458564e5c9f118",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R4-Oneui",
+    "version": "msf:26885",
+    "build": "08458564e5c9f118"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-08458564e5c9f118",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e80e2c7ddd1a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 27.9,
+    "testDurationSeconds": 58,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 9.11
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_b6f2a66bb95346ad921515ff53365af3/screenshots/01.webp",
+        "sha256": "9cdd54550891dfc86caaf5a9b726e63c7d87951e49c0a0bcae95b90a17c332f9",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-06T08:22:03.686Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_b6f2a66bb95346ad921515ff53365af3/logs/01-application.log.gz",
+        "sha256": "0a37a74a75a134b78e99cc0e4ba5ddf0dad6e5249769f3c324279693328d5b42",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_b6f2a66bb95346ad921515ff53365af3/logs/02-shadps4.log.gz",
+        "sha256": "31ebd3f6191be80559020dc22fdb2e82c43e9e0700193fe081beccf6089c3c31",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
