@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_3fa4329ec80e41c080882000076f933f",
+  "cusaId": "CUSA14204",
+  "testedAt": "2026-10-16T03:16:29.599372Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "asus",
+    "model": "ASUS_AI2205_C",
+    "socId": "sm8550",
+    "socName": "SM8550",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-4e841c283cc804bc",
+    "type": "turnip",
+    "name": "Mesa Turnip v26.1-eden-fix-latest-crash-fix-402bd37",
+    "version": "26.0.99",
+    "build": "4e841c283cc804bc"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 2,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 2
+    },
+    "driverId": "turnip-4e841c283cc804bc",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-disable-all-shadows-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-all-shadows-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-object-motion-blur-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-object-motion-blur-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-shadows-fighters-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-shadows-fighters-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-shadows-in-octagon-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-shadows-in-octagon-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-extreme-boost-fps-no-octagon-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-extreme-boost-fps-no-octagon-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-mesh-wrap",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-1280x720-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-2800",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA14204: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-4b175d617888"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA14204/s_3fa4329ec80e41c080882000076f933f/logs/01-application.log.gz",
+        "sha256": "32c5f938e074044751298a284030196452989d45e476900bf70f484d39fedd78",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA14204/s_3fa4329ec80e41c080882000076f933f/logs/02-shadps4.log.gz",
+        "sha256": "98fcf8da70521465c11562d955ed33bbfd98685bcc5a38d685d2c94852d5845e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
