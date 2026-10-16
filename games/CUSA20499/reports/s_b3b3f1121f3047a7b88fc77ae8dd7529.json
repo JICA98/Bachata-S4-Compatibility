@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b3b3f1121f3047a7b88fc77ae8dd7529",
+  "cusaId": "CUSA20499",
+  "testedAt": "2026-10-12T19:20:55.900585Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "Snapdragon 6 Gen 1",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Cuphead: observed nothing during this test session. Measured native FPS: 49.9. Recorded duration: 56s.",
+    "notes": "el juego se cierra",
+    "issues": [
+      "al-iniciar-una-batalla-el-juego-se-congela"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 49.87,
+    "testDurationSeconds": 56,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.61
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA20499/s_b3b3f1121f3047a7b88fc77ae8dd7529/screenshots/01.webp",
+        "sha256": "eccf3a466833031873e1d648c4e9d5a71c3c6316ff56a697558413d344af5a85",
+        "caption": "Cuphead — capture 1 · 2026-10-12T19:20:55.591Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA20499/s_b3b3f1121f3047a7b88fc77ae8dd7529/logs/01-application.log.gz",
+        "sha256": "d9dc693a8ba077fc99f665e0355b66499f6e1c3d1ef9d77b124cfe8c204a8948",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA20499/s_b3b3f1121f3047a7b88fc77ae8dd7529/logs/02-shadps4.log.gz",
+        "sha256": "ba84b76bb7d06c6084b3468ee3e48d213affebf9a0e2b5a3c4efee2b22963357",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
