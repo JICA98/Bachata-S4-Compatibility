@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f8abf36ead194a55942c82741a668282",
+  "cusaId": "CUSA03745",
+  "testedAt": "2026-10-06T10:21:03.156845Z",
+  "status": "menus",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "HONOR",
+    "model": "YLP-W00",
+    "socId": "sm8850p",
+    "socName": "SM8850P",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-c03b5791610edfc9",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37 patched",
+    "version": "26.2.99",
+    "build": "26.2.99"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-c03b5791610edfc9",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA03745: session ended at SESSION_STOPPING; exit code unavailable. A frame was rendered; further progress is unverified.\nGPU Stall for 120s after a button is pressed",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f6ddc45a1a1f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 25.08,
+    "testDurationSeconds": 125,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 17.56
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03745/s_f8abf36ead194a55942c82741a668282/screenshots/01.webp",
+        "sha256": "29d6d37869f77c6d082e1d0785f344decaa0de070cd6e44f7b119939c908144a",
+        "caption": "The Last Guardian™ — capture 1 · 2026-10-06T10:21:03.090Z"
+      },
+      {
+        "path": "assets/CUSA03745/s_f8abf36ead194a55942c82741a668282/screenshots/02.webp",
+        "sha256": "2d0540c5488eeb3b011da4a1be1af982475b7bca6e222c07fc7ec955e165305a",
+        "caption": "The Last Guardian™ — capture 2 · 2026-10-06T10:22:10.822Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03745/s_f8abf36ead194a55942c82741a668282/logs/01-application.log.gz",
+        "sha256": "7b26e6a45062e0dcfa4abee0ed921d0f3844e45a3b7fd51927428665d9bfe339",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03745/s_f8abf36ead194a55942c82741a668282/logs/02-shadps4.log.gz",
+        "sha256": "a0cba546e707f3be4b0a1ad3e4c1d641d3b9fd1d72953e15fe6537083277b579",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
