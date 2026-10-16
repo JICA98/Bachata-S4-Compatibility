@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9d9d5e1ddf094b1397821c083c5ea3a0",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-15T16:58:03.267317Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB322FC",
+    "socId": "sm8750p",
+    "socName": "SM8750P",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a5c4e0c7b4332f3f",
+    "type": "turnip",
+    "name": "Turnip Gen8 V37 patched",
+    "version": "26.2.99",
+    "build": "a5c4e0c7b4332f3f"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a5c4e0c7b4332f3f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-1920x1080",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.10.12.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 41.5. Recorded duration: 884s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-fd04655d037d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 41.54,
+    "testDurationSeconds": 884,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 19.97
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/01.webp",
+        "sha256": "6cd4f2895c444267820416fc42d911308114775efabd2cdebb281611922298cc",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-15T16:58:03.055Z"
+      },
+      {
+        "path": "assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/02.webp",
+        "sha256": "84dd57e5ec1b476fb9dc38ecd81d8e3762b6201a32aa6b68bb6015f26fd735e0",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-15T17:01:14.679Z"
+      },
+      {
+        "path": "assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/03.webp",
+        "sha256": "160f5b302363f25568243b6575f3a200079d369bf222df6ef8a4e66b515c95ac",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-15T17:08:28.807Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/logs/01-application.log.gz",
+        "sha256": "9601a4472a75b256c51197111ff30dd58a2625a0c773191cc1ddb6d06ebdb32f",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/logs/02-shadps4.log.gz",
+        "sha256": "22a27e42f8a1e7427720e0820216dff6aedab7073b7b4550a69b340749964298",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
