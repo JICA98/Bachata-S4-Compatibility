@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_644d6414fc244743b292ceb1d650ba75",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-16T20:38:05.875571Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "OPD2514",
+    "socId": "sm8850p",
+    "socName": "SM8850P",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "arkan",
+    "issues": [
+      "mhmd"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-fc80a893d603"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 31.19,
+    "testDurationSeconds": 1246,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 16.38
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_644d6414fc244743b292ceb1d650ba75/logs/01-application.log.gz",
+        "sha256": "661fa07962f39d8dfa88a87467d1565a235cc9587919f849eda164108260aaef",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_644d6414fc244743b292ceb1d650ba75/logs/02-shadps4.log.gz",
+        "sha256": "29b00ac2ca94dee93d85d8067ffe31cc6590a4739746e917b97268368c605a5d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
