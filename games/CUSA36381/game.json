@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA36381",
+  "title": "聖獸之王",
+  "region": "Asia",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 550
+  },
+  "legacyIssues": []
+}
