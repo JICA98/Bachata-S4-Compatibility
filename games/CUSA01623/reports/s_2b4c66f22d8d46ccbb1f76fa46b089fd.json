@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2b4c66f22d8d46ccbb1f76fa46b089fd",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-08T23:27:42.741797Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2511FPC34G",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "OS3.0.307.0.WPJMIXM",
+    "build": "BP2A.250605.031.A3"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "God of War III Remastered: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6d02222b2d57"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_2b4c66f22d8d46ccbb1f76fa46b089fd/screenshots/01.webp",
+        "sha256": "b36db13205f8825fc914ebc8d5b433799940f46b4f231615c23f4dfec2234bba",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-08T23:27:42.309Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_2b4c66f22d8d46ccbb1f76fa46b089fd/logs/01-application.log.gz",
+        "sha256": "812f3fae892c1e70b9d49845d7c0eedec95133fcc77061dd49582a0cb7e0f6c5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_2b4c66f22d8d46ccbb1f76fa46b089fd/logs/02-shadps4.log.gz",
+        "sha256": "f8a4b98220bc49b5e2325e04ae7acb30f478be9fa5ba9eec7c963056bf9d510d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
