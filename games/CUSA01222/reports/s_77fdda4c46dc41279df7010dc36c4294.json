@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_77fdda4c46dc41279df7010dc36c4294",
+  "cusaId": "CUSA01222",
+  "testedAt": "2026-10-11T08:29:12.537857Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "f1228c4db64e33d82c440edf5f2d4e102bf463d3"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB321FU",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01222: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-590bc974f3b3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01222/s_77fdda4c46dc41279df7010dc36c4294/screenshots/01.webp",
+        "sha256": "b83a12a115e6d94a53b7752aba48a8a8091e09f6f901e85cfdc92ade57a0edc4",
+        "caption": "STREET FIGHTER V — capture 1 · 2026-10-11T08:29:12.145Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01222/s_77fdda4c46dc41279df7010dc36c4294/logs/01-application.log.gz",
+        "sha256": "fed87d807fcad01b4a7b99419550e68141c4fa75b175f82559cf6a9d690543f1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01222/s_77fdda4c46dc41279df7010dc36c4294/logs/02-shadps4.log.gz",
+        "sha256": "5b283501215408651b5017769e3a93dc8de1f86deb4d004819a814124a8e1bc1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
