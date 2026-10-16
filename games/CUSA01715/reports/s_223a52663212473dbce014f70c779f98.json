@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_223a52663212473dbce014f70c779f98",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-07T02:23:55.376185Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S918B",
+    "socId": "sm8550",
+    "socName": "Snapdragon 8 Gen 2",
+    "gpu": "Adreno 740",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "26.1.0",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c746175297d3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 21.03,
+    "testDurationSeconds": 207,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6.79
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_223a52663212473dbce014f70c779f98/screenshots/01.webp",
+        "sha256": "5dd0bff54c9fe6c96edff74595652b972d690c3c78c3222eeff52df71b64dc7f",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-07T02:23:55.165Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_223a52663212473dbce014f70c779f98/screenshots/02.webp",
+        "sha256": "2ac12dca4ab2aa487c7a34a975b69757eefb7dc2b34c5bb7350d00a8e00c7586",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-07T02:25:51.093Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_223a52663212473dbce014f70c779f98/logs/01-application.log.gz",
+        "sha256": "f2f0afd2b859dd74087cddeb37c9bef5ed3cc282dcf1add6c8be984339ba0fcf",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_223a52663212473dbce014f70c779f98/logs/02-shadps4.log.gz",
+        "sha256": "33f393e32c6c2b997fca3068722229ae3c867b9e30cfdacb5be5b556f0a779c7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
