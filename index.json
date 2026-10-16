@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T03:26:05Z",
+  "generatedAt": "2026-10-16T03:26:17Z",
   "currentRelease": "v0.2.5",
   "gameCount": 106,
   "games": [
@@ -586,23 +586,23 @@
         "score": 75,
         "status": "ingame",
         "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
-        "deviceCount": 2,
+        "reportCount": 3,
+        "testerCount": 3,
+        "deviceCount": 3,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
           "min": 14.81,
-          "max": 18.83,
-          "average": 16.82,
-          "sampleCount": 2
+          "max": 41.54,
+          "average": 25.06,
+          "sampleCount": 3
         }
       },
-      "reportCount": 29,
-      "socCount": 13,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_01ad5c2cb41a44f4849e2ca1a449e222/screenshots/03.webp",
+      "reportCount": 30,
+      "socCount": 14,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-15T03:41:12.870911Z"
+      "latestTestedAt": "2026-10-15T16:58:03.267317Z"
     },
     {
       "cusaId": "CUSA01715",
@@ -2042,17 +2042,17 @@
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
-          "min": 38.7,
-          "max": 38.7,
-          "average": 38.7,
+          "min": 57.44,
+          "max": 57.44,
+          "average": 57.44,
           "sampleCount": 1
         }
       },
-      "reportCount": 2,
+      "reportCount": 3,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_bcca3b332a954da18b38b307a6f2fdc2/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA18093/s_36564419ad0a4c09be401d7c1976b56e/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-15T14:30:42.269816Z"
+      "latestTestedAt": "2026-10-15T16:36:37.335309Z"
     },
     {
       "cusaId": "CUSA19345",

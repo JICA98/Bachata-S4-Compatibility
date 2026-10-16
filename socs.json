@@ -322,6 +322,16 @@
         "SM7750",
         "Snapdragon 7 Gen 4"
       ]
+    },
+    "sm8750p": {
+      "name": "Snapdragon 8 Elite (SM8750P)",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 830",
+      "family": "adreno8",
+      "aliases": [
+        "SM8750P",
+        "Snapdragon 8 Elite"
+      ]
     }
   }
 }

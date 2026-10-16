@@ -11,16 +11,16 @@
     "score": 75,
     "status": "ingame",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 14.81,
-      "max": 18.83,
-      "average": 16.82,
-      "sampleCount": 2
+      "max": 41.54,
+      "average": 25.06,
+      "sampleCount": 3
     }
   },
   "socs": {
@@ -824,6 +824,70 @@
           }
         ]
       }
+    },
+    "sm8750p": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 41.54,
+        "max": 41.54,
+        "average": 41.54,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_9d9d5e1ddf094b1397821c083c5ea3a0",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-a5c4e0c7b4332f3f",
+          "type": "turnip",
+          "name": "Turnip Gen8 V37 patched",
+          "version": "26.2.99",
+          "build": "a5c4e0c7b4332f3f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-a5c4e0c7b4332f3f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-dynamic-shadows",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "resolution-patch-1920x1080",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "skip-any-video-with-x-button",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "skip-intro",
+            "revision": "2026.10.12.11637158210346386359"
+          },
+          {
+            "id": "unverified-120-fps-correct-delta-time",
+            "revision": "2026.10.12.11637158210346386359"
+          }
+        ]
+      }
     }
   },
   "families": {
@@ -850,11 +914,108 @@
     ],
     "adreno8": [
       "sm8735",
-      "sm8750"
+      "sm8750",
+      "sm8750p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_01ad5c2cb41a44f4849e2ca1a449e222/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_9d9d5e1ddf094b1397821c083c5ea3a0",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T16:58:03.267317Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "LENOVO",
+        "model": "TB322FC",
+        "socId": "sm8750p",
+        "socName": "SM8750P",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-a5c4e0c7b4332f3f",
+        "type": "turnip",
+        "name": "Turnip Gen8 V37 patched",
+        "version": "26.2.99",
+        "build": "a5c4e0c7b4332f3f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-a5c4e0c7b4332f3f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "resolution-patch-1920x1080",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-120-fps-correct-delta-time",
+          "revision": "2026.10.12.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 41.54,
+        "nativeOnePercentLowFps": 19.97,
+        "outputAverageFps": null,
+        "testDurationSeconds": 884,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 41.5. Recorded duration: 884s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-fd04655d037d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-15T16:58:03.055Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-15T17:01:14.679Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_9d9d5e1ddf094b1397821c083c5ea3a0/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-15T17:08:28.807Z"
+        }
+      ]
+    },
     {
       "reportId": "s_01ad5c2cb41a44f4849e2ca1a449e222",
       "schemaVersion": 2,
