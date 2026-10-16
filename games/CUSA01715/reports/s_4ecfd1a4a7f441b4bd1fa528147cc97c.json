@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4ecfd1a4a7f441b4bd1fa528147cc97c",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-09T22:18:45.086492Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "realme",
+    "model": "RMX5033",
+    "socId": "mt6878",
+    "socName": "Dimensity 7300",
+    "gpu": "Mali-G615 MC2",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "V.R4T2.51d84fb-2da4a8b-2dd5502",
+    "build": "RMX5033_16.0.5.1010(EX01)"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5242216c1912"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_4ecfd1a4a7f441b4bd1fa528147cc97c/logs/01-application.log.gz",
+        "sha256": "22aec941e61382fe547e8d0c178c3d4fbc9752edb1f2f5a00fe3d9ec346d6096",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_4ecfd1a4a7f441b4bd1fa528147cc97c/logs/02-shadps4.log.gz",
+        "sha256": "ea0ec0dfbd3306e2857a46b5074e2bb7ac411afc734a252633d4db082fe7399a",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
