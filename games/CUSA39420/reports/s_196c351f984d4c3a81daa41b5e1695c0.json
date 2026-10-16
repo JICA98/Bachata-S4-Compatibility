@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_196c351f984d4c3a81daa41b5e1695c0",
+  "cusaId": "CUSA39420",
+  "testedAt": "2026-10-15T22:18:32.781931Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Hollow Knight: Silksong: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-46c2a97ab8d3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA39420/s_196c351f984d4c3a81daa41b5e1695c0/screenshots/01.webp",
+        "sha256": "13e4e9fb6dde4c6aec7c0877b5ff05f8e230ece465bac41061afe3bc4caf80b0",
+        "caption": "Hollow Knight: Silksong — capture 1 · 2026-10-15T22:18:32.123Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA39420/s_196c351f984d4c3a81daa41b5e1695c0/logs/01-application.log.gz",
+        "sha256": "12aee0a4e87cc295d7eed1668da7a469be3c8bb2b629e056bb052cd1f29c712c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA39420/s_196c351f984d4c3a81daa41b5e1695c0/logs/02-shadps4.log.gz",
+        "sha256": "31b4dd89c90ed2c8b920c351c8bac04af3324c46463bac2aa24e6cfe805ce033",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
