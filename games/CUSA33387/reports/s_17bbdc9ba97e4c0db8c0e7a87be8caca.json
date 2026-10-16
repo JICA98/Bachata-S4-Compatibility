@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_17bbdc9ba97e4c0db8c0e7a87be8caca",
+  "cusaId": "CUSA33387",
+  "testedAt": "2026-10-16T13:26:27.486575Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Resident Evil 4: observed nothing during this test session. Measured native FPS: 27.2. Recorded duration: 152s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e87e06cf6852"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 27.22,
+    "testDurationSeconds": 152,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 11.78
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA33387/s_17bbdc9ba97e4c0db8c0e7a87be8caca/screenshots/01.webp",
+        "sha256": "ed360271075c8bee06e10db994a05de9f65735b8c658a029239ef2819770a6e4",
+        "caption": "Resident Evil 4 — capture 1 · 2026-10-16T13:26:22.821Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA33387/s_17bbdc9ba97e4c0db8c0e7a87be8caca/logs/01-application.log.gz",
+        "sha256": "b2c49ea2e42f91b79efd68c6253652ae2ca5735d8f05ab40f7316838389200ef",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA33387/s_17bbdc9ba97e4c0db8c0e7a87be8caca/logs/02-shadps4.log.gz",
+        "sha256": "419c076ad86250fb590b59fc158dd1943504936f02b6000e8438f87ae71e4535",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
