@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_72bbb8e6ecd24d8b864f3f91a46396fd",
+  "cusaId": "CUSA03173",
+  "testedAt": "2026-10-15T10:47:12.047692Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-0f57b8400bec62fd",
+    "type": "turnip",
+    "name": "Turnip Gen8 V30",
+    "version": "26.1.99",
+    "build": "0f57b8400bec62fd"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-0f57b8400bec62fd",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Bloodborne: observed boots during this test session. Measured native FPS: 15.1. Recorded duration: 147s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0c9182447c4c"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.12,
+    "testDurationSeconds": 147,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.65
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03173/s_72bbb8e6ecd24d8b864f3f91a46396fd/screenshots/01.webp",
+        "sha256": "bb72fb87a4e93dd03468f957a2ecbad5baeb467264b85795c4152dc1abcc8ada",
+        "caption": "Bloodborne — capture 1 · 2026-10-15T10:47:11.777Z"
+      },
+      {
+        "path": "assets/CUSA03173/s_72bbb8e6ecd24d8b864f3f91a46396fd/screenshots/02.webp",
+        "sha256": "665e5f2bd7eac88a6b46b2c2021bb3100ba01d74fdb76752be5f2cdef6b3603d",
+        "caption": "Bloodborne — capture 2 · 2026-10-15T10:49:22.629Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03173/s_72bbb8e6ecd24d8b864f3f91a46396fd/logs/01-application.log.gz",
+        "sha256": "e18ca701b12ef20bc3638715f855b00c2807aa7af064411e22526b6bc9c9db60",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03173/s_72bbb8e6ecd24d8b864f3f91a46396fd/logs/02-shadps4.log.gz",
+        "sha256": "8ac4aa80649d5463a1e6cf95c18188cf7ec1a58ca0b1db32cb3ca760a9a522b6",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
