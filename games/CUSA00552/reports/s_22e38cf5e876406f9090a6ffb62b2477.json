@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_22e38cf5e876406f9090a6ffb62b2477",
+  "cusaId": "CUSA00552",
+  "testedAt": "2026-10-16T17:34:38.054410Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Last of Us™ Remastered: observed ingame during this test session. Measured native FPS: 15.0. Recorded duration: 541s.",
+    "notes": "graphics issues",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7bbcb8f5eaa9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.02,
+    "testDurationSeconds": 541,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.34
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/screenshots/01.webp",
+        "sha256": "1fccec1dd55a8596efb93f1d0593f4429abd7407c30520e94134f295f824f2bf",
+        "caption": "The Last of Us™ Remastered — capture 1 · 2026-10-16T17:34:37.803Z"
+      },
+      {
+        "path": "assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/screenshots/02.webp",
+        "sha256": "4f55dbc2c84b18f32ebef5a9b9f3032ecb9ca3b80f3c29b6f72ac3151b139b53",
+        "caption": "The Last of Us™ Remastered — capture 2 · 2026-10-16T17:38:18.319Z"
+      },
+      {
+        "path": "assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/screenshots/03.webp",
+        "sha256": "4ed6172a1caa01bf4a8520277fdfd4d1abbb6571511d04160abc1b8d9a237927",
+        "caption": "The Last of Us™ Remastered — capture 3 · 2026-10-16T17:41:42.499Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/logs/01-application.log.gz",
+        "sha256": "6cb65fa688e1cccbf2a532cb3da1d7a49078a2c288d840098309f7b52e9da990",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/logs/02-shadps4.log.gz",
+        "sha256": "2b3cad7340da92da38aa975202c0d07d0d7e553a61c88ebeeb12136bfa0248a8",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
