@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5a7f0859d4484650a375ed746cd46af8",
+  "cusaId": "CUSA13285",
+  "testedAt": "2026-10-13T14:49:22.484698Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2221",
+    "socId": "sm8635",
+    "socName": "SM8635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Hollow Knight: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0d47e6fc2b93"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13285/s_5a7f0859d4484650a375ed746cd46af8/screenshots/01.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "Hollow Knight — capture 1 · 2026-10-13T14:49:22.309Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13285/s_5a7f0859d4484650a375ed746cd46af8/logs/01-application.log.gz",
+        "sha256": "928788a81a8e3e5246e0d6f4dfa4a580402506df094a4ec6ce176e97977a8c50",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13285/s_5a7f0859d4484650a375ed746cd46af8/logs/02-shadps4.log.gz",
+        "sha256": "b1b8b5b3258717eb3547bce4a98d1e142a352f67fa205a71da3ab7c10664c12b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
