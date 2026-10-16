@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA17985",
+    "title": "Ultimate Custom Night",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.4",
+    "hasCurrentReports": false,
+    "performance": {
+      "min": 18.58,
+      "max": 18.58,
+      "average": 18.58,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6375": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 18.58,
+        "max": 18.58,
+        "average": 18.58,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_ed1f7588dad348c686b0f0f376e3ee59",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "26.1.0"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno6": [
+      "sm6375"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_ed1f7588dad348c686b0f0f376e3ee59",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T23:12:45.558863Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-X210",
+        "socId": "sm6375",
+        "socName": "SM6375",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 18.58,
+        "nativeOnePercentLowFps": 4.02,
+        "outputAverageFps": null,
+        "testDurationSeconds": 309,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Ultimate Custom Night: observed boots during this test session. Measured native FPS: 18.6. Recorded duration: 309s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e535b0911acb",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/01.webp",
+          "caption": "Ultimate Custom Night — capture 1 · 2026-10-15T23:12:45.159Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/02.webp",
+          "caption": "Ultimate Custom Night — capture 2 · 2026-10-15T23:16:19.951Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/03.webp",
+          "caption": "Ultimate Custom Night — capture 3 · 2026-10-15T23:17:22.283Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T03:25:53Z",
+  "generatedAt": "2026-10-16T03:26:05Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 104,
+  "gameCount": 106,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1955,6 +1955,31 @@
       "latestTestedAt": "2026-10-11T16:26:49.898280Z"
     },
     {
+      "cusaId": "CUSA17985",
+      "title": "Ultimate Custom Night",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 18.58,
+          "max": 18.58,
+          "average": 18.58,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17985/s_ed1f7588dad348c686b0f0f376e3ee59/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-15T23:12:45.558863Z"
+    },
+    {
       "cusaId": "CUSA17997",
       "title": "Disgaea 4 Complete+",
       "general": {
@@ -2503,6 +2528,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47318/s_b40ee3e98f414ecbad66b993681a6145/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-07T08:30:35.031094Z"
+    },
+    {
+      "cusaId": "CUSA47999",
+      "title": "TSUKIHIME A piece of blue glass moon",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.95,
+          "max": 58.95,
+          "average": 58.95,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-15T23:19:27.411633Z"
     },
     {
       "cusaId": "CUSA52139",

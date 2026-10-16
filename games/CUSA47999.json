@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA47999",
+    "title": "TSUKIHIME A piece of blue glass moon",
+    "region": "Asia",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 58.95,
+      "max": 58.95,
+      "average": 58.95,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8635": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 58.95,
+        "max": 58.95,
+        "average": 58.95,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_bfbc217e6d634a998c4361785c57b7b1",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": true
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8635"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_bfbc217e6d634a998c4361785c57b7b1",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-15T23:19:27.411633Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.01",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "24069PC21G",
+        "socId": "sm8635",
+        "socName": "SM8635",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": true
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.95,
+        "nativeOnePercentLowFps": 39.65,
+        "outputAverageFps": null,
+        "testDurationSeconds": 286,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "lack of audio in-game. Aside from that, it runs smoothly",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-5485d40b8b47",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/01.webp",
+          "caption": "."
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/02.webp",
+          "caption": "TSUKIHIME A piece of blue glass moon — capture 2 · 2026-10-15T23:21:00.843Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/03.webp",
+          "caption": "TSUKIHIME A piece of blue glass moon — capture 3 · 2026-10-15T23:22:59.587Z"
+        }
+      ]
+    }
+  ]
+}
