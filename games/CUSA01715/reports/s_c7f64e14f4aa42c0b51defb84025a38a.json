@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c7f64e14f4aa42c0b51defb84025a38a",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-05T10:27:31.328028Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21I",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "gen8-v5",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9acfac3583f6"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_c7f64e14f4aa42c0b51defb84025a38a/screenshots/01.webp",
+        "sha256": "21a3e6d291ff7ad868b2a5da4042287b7e6327e43388065a386e2847d976e528",
+        "caption": "God of War® III Remastered — capture 1 · 2026-10-05T10:27:31.149Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_c7f64e14f4aa42c0b51defb84025a38a/logs/01-application.log.gz",
+        "sha256": "857507c835ad1a6819b35c49135eab31d63007567b727d025f95e826c9ac599f",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_c7f64e14f4aa42c0b51defb84025a38a/logs/02-shadps4.log.gz",
+        "sha256": "ca766b7f2305ee085c7748dacd44a7b34a738b20ab2c09b7ef2a8a3d53987103",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
