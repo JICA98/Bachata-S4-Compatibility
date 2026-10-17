@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T03:26:10Z",
+  "generatedAt": "2026-10-17T03:26:26Z",
   "currentRelease": "v0.2.5",
   "gameCount": 106,
   "games": [
@@ -306,28 +306,28 @@
     },
     {
       "cusaId": "CUSA00552",
-      "title": "The Last of Us™ Remastered",
+      "title": "The Last of Us Remastered",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 43.78,
-          "max": 43.78,
-          "average": 43.78,
+          "min": 15.02,
+          "max": 15.02,
+          "average": 15.02,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_95a0054acefc488882d3bc3e2ad41e68/screenshots/01.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-10-01T21:06:56.849309Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-16T17:34:38.054410Z"
     },
     {
       "cusaId": "CUSA00556",
@@ -981,28 +981,28 @@
     },
     {
       "cusaId": "CUSA03282",
-      "title": "Uncharted 3: Drake's Deception™ Remastered",
+      "title": "Uncharted 3: Drake's Deception Remastered",
       "general": {
-        "score": 0,
-        "status": "nothing",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 21.81,
-          "max": 21.81,
-          "average": 21.81,
+          "min": 17.94,
+          "max": 17.94,
+          "average": 17.94,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": null,
-      "latestStatus": "nothing",
-      "latestTestedAt": "2026-10-02T02:31:59.603602Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03282/s_c8cab7c1e0b54e2e945727a6cfe69183/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-16T22:48:47.187472Z"
     },
     {
       "cusaId": "CUSA03694",
