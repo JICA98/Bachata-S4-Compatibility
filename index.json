@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T03:26:26Z",
+  "generatedAt": "2026-10-17T15:25:56Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 106,
+  "gameCount": 107,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -703,6 +703,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:40:49Z"
+    },
+    {
+      "cusaId": "CUSA01967",
+      "title": "Horizon Zero Dawn",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 51.29,
+          "max": 51.29,
+          "average": 51.29,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/02.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-17T15:14:02.195693Z"
     },
     {
       "cusaId": "CUSA01968",

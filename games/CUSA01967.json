@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA01967",
+    "title": "Horizon Zero Dawn",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 45,
+    "status": "menus",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 51.29,
+      "max": 51.29,
+      "average": 51.29,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 51.29,
+        "max": 51.29,
+        "average": 51.29,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/02.webp",
+  "reports": [
+    {
+      "reportId": "s_8d502bcd086d4c2f93c93595a584c1a4",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-17T15:14:02.195693Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.54",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23127PN0CG",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 51.29,
+        "nativeOnePercentLowFps": 5.25,
+        "outputAverageFps": null,
+        "testDurationSeconds": 88,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA01967: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-db834f5d6ccb",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/01.webp",
+          "caption": "Horizon Zero Dawn™ — capture 1 · 2026-10-17T15:14:02.064Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/02.webp",
+          "caption": "Horizon Zero Dawn™ — capture 2 · 2026-10-17T15:15:23.036Z"
+        }
+      ]
+    }
+  ]
+}
