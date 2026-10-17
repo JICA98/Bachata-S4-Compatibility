@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5d6e0d0a89a748fb84742b2335350b18",
+  "cusaId": "CUSA01936",
+  "testedAt": "2026-10-17T18:52:22.989217Z",
+  "status": "playable",
+  "game": {
+    "version": "01.11",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-60-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-60-fps-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-60-fps-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "EA SPORTS™ UFC® 2: observed playable during this test session. Measured native FPS: 25.0. Recorded duration: 705s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d37541c34cf8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 24.98,
+    "testDurationSeconds": 705,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 20.34
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/screenshots/01.webp",
+        "sha256": "591d7646034772939f9d660a812ae1715656df1d2462b127336e5eb191ee8cb3",
+        "caption": "EA SPORTS™ UFC® 2 — capture 1 · 2026-10-17T18:52:22.364Z"
+      },
+      {
+        "path": "assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/screenshots/02.webp",
+        "sha256": "fea53085c6f04e6b329099e1806bb3e103fd8db320891a137fd80908d224a136",
+        "caption": "EA SPORTS™ UFC® 2 — capture 2 · 2026-10-17T18:53:23.276Z"
+      },
+      {
+        "path": "assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/screenshots/03.webp",
+        "sha256": "7d19e93f3e46a7cc772d0161d176edc7537eabb423987d17f05f007b81a1a0bc",
+        "caption": "EA SPORTS™ UFC® 2 — capture 3 · 2026-10-17T18:55:38.164Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/logs/01-application.log.gz",
+        "sha256": "8be94afc8d9387b8c4f491f1710aac53f79733c689d925ef4e39f071e6d1d012",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/logs/02-shadps4.log.gz",
+        "sha256": "d51564f619ca169cca56b47742ad2ed54a3e3fb50e2891552c8cb7a3eb6b0fdc",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
