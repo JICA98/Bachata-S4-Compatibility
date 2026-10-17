@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_8d502bcd086d4c2f93c93595a584c1a4",
+  "cusaId": "CUSA01967",
+  "testedAt": "2026-10-17T15:14:02.195693Z",
+  "status": "menus",
+  "game": {
+    "version": "01.54",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23127PN0CG",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01967: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-db834f5d6ccb"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 51.29,
+    "testDurationSeconds": 88,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 5.25
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/01.webp",
+        "sha256": "0a6406ae113d0745215247c92413470d03357034bdebc0a65d35479e0e140471",
+        "caption": "Horizon Zero Dawn™ — capture 1 · 2026-10-17T15:14:02.064Z"
+      },
+      {
+        "path": "assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/screenshots/02.webp",
+        "sha256": "6a84c4ba69e0a55808b62a3902b5ab7d265d00264ad563a304d710380f383957",
+        "caption": "Horizon Zero Dawn™ — capture 2 · 2026-10-17T15:15:23.036Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/logs/01-application.log.gz",
+        "sha256": "e9fcbd5e10411fc0f72b322f3ee8da64f2ff78bb1055197db934c518926b6a06",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01967/s_8d502bcd086d4c2f93c93595a584c1a4/logs/02-shadps4.log.gz",
+        "sha256": "946db5da31b51967b7557a5d7adcece9e9b3a0d378ebbf685d5c42d6413fb615",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
