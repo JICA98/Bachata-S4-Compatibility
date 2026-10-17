@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T03:26:17Z",
+  "generatedAt": "2026-10-17T03:25:55Z",
   "currentRelease": "v0.2.5",
   "gameCount": 106,
   "games": [
@@ -623,11 +623,11 @@
           "sampleCount": 8
         }
       },
-      "reportCount": 69,
+      "reportCount": 70,
       "socCount": 24,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_32f4609522d849a584646911348768d6/screenshots/03.webp",
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_debcd8dfe7c74529870160976a0d6154/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-16T02:36:26.607771Z"
+      "latestTestedAt": "2026-10-16T17:06:56.994966Z"
     },
     {
       "cusaId": "CUSA01716",
