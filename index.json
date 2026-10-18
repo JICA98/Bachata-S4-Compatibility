@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T15:25:56Z",
+  "generatedAt": "2026-10-18T03:29:26Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 107,
+  "gameCount": 108,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -703,6 +703,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01843/20260814T104049Z-v0-1-8-oneplus-13-snapdragon-8-elite-turnip-gen8-v3-26-3-0-devel/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-14T10:40:49Z"
+    },
+    {
+      "cusaId": "CUSA01936",
+      "title": "EA SPORTS UFC 2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 12.88,
+          "max": 12.88,
+          "average": 12.88,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01936/s_2f6e9d94c03f45c3a70c0cba012b84e9/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-17T18:29:14.811606Z"
     },
     {
       "cusaId": "CUSA01967",
