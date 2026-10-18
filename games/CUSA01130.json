@@ -3,27 +3,69 @@
   "generatedForRelease": "v0.2.5",
   "game": {
     "cusaId": "CUSA01130",
-    "title": "Gravity Rush™ Remastered",
+    "title": "Gravity Rush Remastered",
     "region": "US",
     "publisher": "Sony Interactive Entertainment"
   },
   "general": {
-    "score": 100,
-    "status": "playable",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.1",
+    "releaseTag": "v0.2.4",
     "hasCurrentReports": false,
     "performance": {
-      "min": 56.4,
-      "max": 56.4,
-      "average": 56.4,
+      "min": 46.23,
+      "max": 46.23,
+      "average": 46.23,
       "sampleCount": 1
     }
   },
   "socs": {
+    "mt6899": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 46.23,
+        "max": 46.23,
+        "average": 46.23,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_efc6b427f26e440f9858fddf7b480ce2",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "panvk-a1c25dfbc785cde8",
+          "type": "turnip",
+          "name": "PanVK V2",
+          "version": "2.2.0",
+          "build": "a1c25dfbc785cde8"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "panvk-a1c25dfbc785cde8",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    },
     "sm8750": {
       "score": 100,
       "status": "playable",
@@ -67,12 +109,89 @@
     }
   },
   "families": {
+    "mali-g": [
+      "mt6899"
+    ],
     "adreno8": [
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_efc6b427f26e440f9858fddf7b480ce2",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T08:47:56.108619Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2761",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 46.23,
+        "nativeOnePercentLowFps": 10.17,
+        "outputAverageFps": null,
+        "testDurationSeconds": 412,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Gravity Rush Remastered: observed ingame during this test session. Measured native FPS: 46.2. Recorded duration: 412s. Characters i think not visible in the gameplay. Not sure it's the game like this or an issue",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-3ed103ff899a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/01.webp",
+          "caption": "Gravity Rush™ Remastered — capture 1 · 2026-10-18T08:47:55.688Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/02.webp",
+          "caption": "Gravity Rush™ Remastered — capture 2 · 2026-10-18T08:50:01.344Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/03.webp",
+          "caption": "Gravity Rush™ Remastered — capture 3 · 2026-10-18T08:53:32.680Z"
+        }
+      ]
+    },
     {
       "reportId": "20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel",
       "schemaVersion": 1,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T09:34:27Z",
+  "generatedAt": "2026-10-18T09:34:38Z",
   "currentRelease": "v0.2.5",
   "gameCount": 108,
   "games": [
@@ -531,28 +531,28 @@
     },
     {
       "cusaId": "CUSA01130",
-      "title": "Gravity Rush™ Remastered",
+      "title": "Gravity Rush Remastered",
       "general": {
-        "score": 100,
-        "status": "playable",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.1",
+        "releaseTag": "v0.2.4",
         "hasCurrentReports": false,
         "performance": {
-          "min": 56.4,
-          "max": 56.4,
-          "average": 56.4,
+          "min": 46.23,
+          "max": 46.23,
+          "average": 46.23,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/20260906T091451Z-v0-2-1-oneplus-13-snapdragon-8-elite-turnip-gen8-v4-26-3-0-devel/screenshots/03.webp",
-      "latestStatus": "playable",
-      "latestTestedAt": "2026-09-06T09:14:51Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-18T08:47:56.108619Z"
     },
     {
       "cusaId": "CUSA01410",
