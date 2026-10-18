@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e25db1385c974a9390ee08f115fc9b62",
+  "cusaId": "CUSA00076",
+  "testedAt": "2026-10-18T04:28:15.714446Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "60-fps-unlock",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-540p-extreme-performance",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "The Order: 1886: observed ingame during this test session. Measured native FPS: 23.0. Recorded duration: 656s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d37541c34cf8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 22.98,
+    "testDurationSeconds": 656,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 10.53
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/01.webp",
+        "sha256": "c164a27e900a31b9e757c348acd91b127f498943c5c8b8d39bd532be81751dc5",
+        "caption": "The Order: 1886 — capture 1 · 2026-10-18T04:28:15.190Z"
+      },
+      {
+        "path": "assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/02.webp",
+        "sha256": "d475e205acb8450af195e6f9d9841626922ad6b7614e5c6b7552e6670f557cad",
+        "caption": "The Order: 1886 — capture 2 · 2026-10-18T04:29:44.246Z"
+      },
+      {
+        "path": "assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/03.webp",
+        "sha256": "99905ad5783baedf1f1032177cca4363d2efe86ab27f1a95314fbfcaf9fbe821",
+        "caption": "The Order: 1886 — capture 3 · 2026-10-18T04:34:34.610Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/logs/01-application.log.gz",
+        "sha256": "5279d9b68527b6a2538a39258e8fb5a0564c395725171429a7918ebbd0e68cb2",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/logs/02-shadps4.log.gz",
+        "sha256": "f19fe2bf0db5201b9ab59e17a9c1a74bba56aadb68a85a74d79780b7d7a7d43a",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
