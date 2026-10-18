@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_15451b3d2d334d72841f5e73ad96f95c",
+  "cusaId": "CUSA09415",
+  "testedAt": "2026-10-18T13:24:06.430759Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 30 pro",
+    "socId": "sm8450",
+    "socName": "SM8450",
+    "gpu": "Unknown",
+    "androidVersion": "14",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Undertale: observed playable during this test session. Measured native FPS: 30.0. Recorded duration: 169s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02e9e1677922"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.98,
+    "testDurationSeconds": 169,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 29.01
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/screenshots/01.webp",
+        "sha256": "2cd8f647d37075657d6a8825d577086c9c1a7ed5fc582e7777b747c4881d1c8b",
+        "caption": "Undertale — capture 1 · 2026-10-18T13:24:06.252Z"
+      },
+      {
+        "path": "assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/screenshots/02.webp",
+        "sha256": "74b5f5b6a73cc7a0d2716133db9f76a73f269839e6ba47afee084101733ca8a1",
+        "caption": "Undertale — capture 2 · 2026-10-18T13:25:07.972Z"
+      },
+      {
+        "path": "assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/screenshots/03.webp",
+        "sha256": "a6241744a46ded6cc5032565b2d86da260493d49124f275a26415ec7e8a9c9bf",
+        "caption": "Undertale — capture 3 · 2026-10-18T13:26:26.708Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/logs/01-application.log.gz",
+        "sha256": "43bf1f5be32e0e72818adaf2ca662468acc000789816ba1ca2674eeae09819d8",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/logs/02-shadps4.log.gz",
+        "sha256": "de854bb597d3c5e9c8960a4ba7fe8ee54a5820c32f25cae937b0f024c455fd12",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
