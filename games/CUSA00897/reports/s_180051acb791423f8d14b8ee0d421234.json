@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_180051acb791423f8d14b8ee0d421234",
+  "cusaId": "CUSA00897",
+  "testedAt": "2026-10-18T10:39:09.836968Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-F976B",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "render-resolution-1280x720",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro-movie",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA00897: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b01d63cbb1b1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.15,
+    "testDurationSeconds": 105,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 25.33
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00897/s_180051acb791423f8d14b8ee0d421234/logs/01-application.log.gz",
+        "sha256": "e9f11d60240f3bc907f6bed636f0448bd5f735e00757d867809c3b682c64b2db",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00897/s_180051acb791423f8d14b8ee0d421234/logs/02-shadps4.log.gz",
+        "sha256": "b20c58c2a17ae821a9c1b8a80a872c2a1871828eb87535d1939a7cd5055098c4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
