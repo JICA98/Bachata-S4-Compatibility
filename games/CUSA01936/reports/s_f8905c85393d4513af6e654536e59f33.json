@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f8905c85393d4513af6e654536e59f33",
+  "cusaId": "CUSA01936",
+  "testedAt": "2026-10-18T09:02:44.083228Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.11",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "EA SPORTS UFC 2: observed ingame during this test session. Measured native FPS: 29.8. Recorded duration: 665s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d37541c34cf8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.83,
+    "testDurationSeconds": 665,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 28
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/01.webp",
+        "sha256": "b5b0cc2d3bf786cca86421ed80b582c6b010d6e29b4e210085e64c46bf8153ec",
+        "caption": "EA SPORTS UFC 2 — capture 1 · 2026-10-18T09:02:43.620Z"
+      },
+      {
+        "path": "assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/02.webp",
+        "sha256": "f683347d11f2793ae018a6ef096310492053cb252fcc297fe32038651b4a989a",
+        "caption": "EA SPORTS UFC 2 — capture 2 · 2026-10-18T09:05:01.672Z"
+      },
+      {
+        "path": "assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/03.webp",
+        "sha256": "f0f62e39e895c9d74cdaab5e0137c1a9a13d69f20b08eda87c6301c27ae7e70c",
+        "caption": "EA SPORTS UFC 2 — capture 3 · 2026-10-18T09:06:36.184Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/logs/01-application.log.gz",
+        "sha256": "c9f8d8b78e89f43fda9445769d764a231d4d2929a20d71b507f6a85f837a1baf",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/logs/02-shadps4.log.gz",
+        "sha256": "23cc6d755ed1685973bf137ca078e61b7d16616f086c749622990e5c53180675",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
