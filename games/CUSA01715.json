@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 71,
+    "score": 68,
     "status": "ingame",
     "confidence": "high",
-    "reportCount": 8,
-    "testerCount": 8,
-    "deviceCount": 8,
+    "reportCount": 9,
+    "testerCount": 9,
+    "deviceCount": 9,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 11.91,
-      "max": 43.54,
-      "average": 29.91,
-      "sampleCount": 8
+      "max": 59.94,
+      "average": 33.25,
+      "sampleCount": 9
     }
   },
   "socs": {
@@ -993,19 +993,19 @@
       }
     },
     "sm8750": {
-      "score": 75,
+      "score": 60,
       "status": "ingame",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.5",
       "hasCurrentReports": true,
       "performance": {
         "min": 43.54,
-        "max": 43.54,
-        "average": 43.54,
-        "sampleCount": 1
+        "max": 59.94,
+        "average": 51.74,
+        "sampleCount": 2
       },
       "recommendedSetup": {
         "label": "known-working",
@@ -1267,8 +1267,119 @@
       "sm8850p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_52221e9592ed479da192efb7d3673c7d/screenshots/01.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_0c66669ae18b427bbf2f5984b4626121/screenshots/02.webp",
   "reports": [
+    {
+      "reportId": "s_0c66669ae18b427bbf2f5984b4626121",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T07:54:18.624325Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2408A",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-120-fps-correct-delta-time",
+          "revision": "2026.10.12.11637158210346386359"
+        },
+        {
+          "id": "unverified-resolution-patch-854x480",
+          "revision": "2026.10.12.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 59.94,
+        "nativeOnePercentLowFps": 57.63,
+        "outputAverageFps": null,
+        "testDurationSeconds": 126,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed menus during this test session. Measured native FPS: 59.9. Recorded duration: 126s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-020ecb9ea647",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_0c66669ae18b427bbf2f5984b4626121/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-18T07:54:18.320Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_0c66669ae18b427bbf2f5984b4626121/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-18T07:55:19.700Z"
+        }
+      ]
+    },
     {
       "reportId": "s_52221e9592ed479da192efb7d3673c7d",
       "schemaVersion": 2,
