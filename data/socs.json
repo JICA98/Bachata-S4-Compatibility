@@ -332,6 +332,16 @@
         "SM8750P",
         "Snapdragon 8 Elite"
       ]
+    },
+    "sm8850p": {
+      "name": "Snapdragon 8 Elite Gen 5 (SM8850P)",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 840",
+      "family": "adreno8",
+      "aliases": [
+        "SM8850P",
+        "Snapdragon 8 Elite Gen 5"
+      ]
     }
   }
 }
