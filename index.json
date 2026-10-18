@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T03:29:39Z",
+  "generatedAt": "2026-10-18T03:29:52Z",
   "currentRelease": "v0.2.5",
   "gameCount": 108,
   "games": [
@@ -708,26 +708,26 @@
       "cusaId": "CUSA01936",
       "title": "EA SPORTS UFC 2",
       "general": {
-        "score": 75,
-        "status": "ingame",
-        "confidence": "low",
-        "reportCount": 1,
-        "testerCount": 1,
-        "deviceCount": 1,
+        "score": 88,
+        "status": "playable",
+        "confidence": "medium",
+        "reportCount": 2,
+        "testerCount": 2,
+        "deviceCount": 2,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
           "min": 12.88,
-          "max": 12.88,
-          "average": 12.88,
-          "sampleCount": 1
+          "max": 24.98,
+          "average": 18.93,
+          "sampleCount": 2
         }
       },
-      "reportCount": 1,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01936/s_2f6e9d94c03f45c3a70c0cba012b84e9/screenshots/03.webp",
-      "latestStatus": "ingame",
-      "latestTestedAt": "2026-10-17T18:29:14.811606Z"
+      "reportCount": 2,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/screenshots/03.webp",
+      "latestStatus": "playable",
+      "latestTestedAt": "2026-10-17T18:52:22.989217Z"
     },
     {
       "cusaId": "CUSA01967",
