@@ -8,8 +8,8 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 88,
-    "status": "playable",
+    "score": 75,
+    "status": "ingame",
     "confidence": "medium",
     "reportCount": 2,
     "testerCount": 2,
@@ -18,8 +18,8 @@
     "hasCurrentReports": true,
     "performance": {
       "min": 12.88,
-      "max": 24.98,
-      "average": 18.93,
+      "max": 29.83,
+      "average": 21.36,
       "sampleCount": 2
     }
   },
@@ -76,8 +76,8 @@
       }
     },
     "sm8850": {
-      "score": 100,
-      "status": "playable",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
@@ -85,14 +85,14 @@
       "releaseTag": "v0.2.5",
       "hasCurrentReports": true,
       "performance": {
-        "min": 24.98,
-        "max": 24.98,
-        "average": 24.98,
+        "min": 29.83,
+        "max": 29.83,
+        "average": 29.83,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_5d6e0d0a89a748fb84742b2335350b18",
+        "reportId": "s_f8905c85393d4513af6e654536e59f33",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -112,20 +112,24 @@
           "frameGenerationMode": "OFF",
           "fexPreset": "PERFORMANCE",
           "adrenoTurboMode": true,
-          "bigCoreAffinity": true,
+          "bigCoreAffinity": false,
           "maliGpuOptimizations": false
         },
         "patches": [
           {
-            "id": "unverified-60-fps-0100",
+            "id": "unverified-disable-crowd-plus-5-10-fps-0100",
             "revision": "2026.10.14.11637158210346386359"
           },
           {
-            "id": "unverified-60-fps-0111",
+            "id": "unverified-resolution-800x450-ultra-performance-0111",
             "revision": "2026.10.14.11637158210346386359"
           },
           {
-            "id": "unverified-60-fps-0113",
+            "id": "unverified-skinning-method-0-force-cpu-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0100",
             "revision": "2026.10.14.11637158210346386359"
           }
         ]
@@ -140,8 +144,100 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01936/s_5d6e0d0a89a748fb84742b2335350b18/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_f8905c85393d4513af6e654536e59f33",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T09:02:44.083228Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.11",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "Snapdragon 8 Elite Gen 5",
+        "gpu": "Adreno 840",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-resolution-800x450-ultra-performance-0111",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 29.83,
+        "nativeOnePercentLowFps": 28,
+        "outputAverageFps": null,
+        "testDurationSeconds": 665,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "EA SPORTS UFC 2: observed ingame during this test session. Measured native FPS: 29.8. Recorded duration: 665s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d37541c34cf8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/01.webp",
+          "caption": "EA SPORTS UFC 2 — capture 1 · 2026-10-18T09:02:43.620Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/02.webp",
+          "caption": "EA SPORTS UFC 2 — capture 2 · 2026-10-18T09:05:01.672Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01936/s_f8905c85393d4513af6e654536e59f33/screenshots/03.webp",
+          "caption": "EA SPORTS UFC 2 — capture 3 · 2026-10-18T09:06:36.184Z"
+        }
+      ]
+    },
     {
       "reportId": "s_5d6e0d0a89a748fb84742b2335350b18",
       "schemaVersion": 2,
