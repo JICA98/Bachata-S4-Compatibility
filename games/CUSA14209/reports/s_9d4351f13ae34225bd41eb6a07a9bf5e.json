@@ -3,7 +3,7 @@
   "reportId": "s_9d4351f13ae34225bd41eb6a07a9bf5e",
   "cusaId": "CUSA14209",
   "testedAt": "2026-10-18T09:15:32.000002Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "28.00",
     "region": "Europe"
@@ -77,7 +77,7 @@
     }
   ],
   "result": {
-    "summary": "EA SPORTS™ UFC® 4: observed playable during this test session. Measured native FPS: 28.6. Recorded duration: 728s.",
+    "summary": "EA SPORTS UFC 4: observed ingame during this test session. Measured native FPS: 28.6. Recorded duration: 728s.",
     "notes": "",
     "issues": []
   },
