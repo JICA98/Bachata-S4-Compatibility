@@ -1209,6 +1209,23 @@
         },
         "patches": []
       }
+    },
+    "sm8850p": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.4",
+      "hasCurrentReports": false,
+      "performance": {
+        "min": 42.62,
+        "max": 42.62,
+        "average": 42.62,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
     }
   },
   "families": {
@@ -1246,11 +1263,78 @@
       "sm8735",
       "sm8750",
       "sm8845",
-      "sm8850"
+      "sm8850",
+      "sm8850p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_debcd8dfe7c74529870160976a0d6154/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_52221e9592ed479da192efb7d3673c7d/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_52221e9592ed479da192efb7d3673c7d",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T05:49:11.475863Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "OPD2514",
+        "socId": "sm8850p",
+        "socName": "SM8850P",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "26.1.0"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 42.62,
+        "nativeOnePercentLowFps": 22.37,
+        "outputAverageFps": null,
+        "testDurationSeconds": 138,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 139. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-fc80a893d603",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_52221e9592ed479da192efb7d3673c7d/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-18T05:49:11.226Z"
+        }
+      ]
+    },
     {
       "reportId": "s_debcd8dfe7c74529870160976a0d6154",
       "schemaVersion": 2,
