@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T09:35:00Z",
+  "generatedAt": "2026-10-18T09:35:13Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 108,
+  "gameCount": 109,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1878,6 +1878,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13801/20260802T100912Z-v0-1-6-oneplus-13-snapdragon-8-elite-turnip-gen8-v2-26-2-0-devel/screenshots/02.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-01T18:54:03.129550Z"
+    },
+    {
+      "cusaId": "CUSA14209",
+      "title": "EA SPORTS UFC 4",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 28.62,
+          "max": 28.62,
+          "average": 28.62,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA14209/s_9d4351f13ae34225bd41eb6a07a9bf5e/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-18T09:15:32.000002Z"
     },
     {
       "cusaId": "CUSA15001",
