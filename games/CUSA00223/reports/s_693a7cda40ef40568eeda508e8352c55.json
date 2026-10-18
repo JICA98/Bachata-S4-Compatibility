@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_693a7cda40ef40568eeda508e8352c55",
+  "cusaId": "CUSA00223",
+  "testedAt": "2026-10-18T21:28:04.666431Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S918U1",
+    "socId": "sm8550",
+    "socName": "Snapdragon 8 Gen 2",
+    "gpu": "Adreno 740",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "v26.3.0-R5",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-depth-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.01.13399220021802570842"
+    },
+    {
+      "id": "render-resolution-1280x720",
+      "revision": "2026.10.01.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "inFAMOUS Second Son™: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7e890141fc46"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00223/s_693a7cda40ef40568eeda508e8352c55/logs/01-application.log.gz",
+        "sha256": "e4629ff6c424d4a31e651281ea522826daed92866eec3542198dff36ff24c5df",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00223/s_693a7cda40ef40568eeda508e8352c55/logs/02-shadps4.log.gz",
+        "sha256": "7b2685b3dfe7908b404e5e530f6b522f687dddd81c870edd9b7dee6f64651375",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
