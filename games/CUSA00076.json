@@ -8,38 +8,73 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 29.44,
-      "max": 29.44,
-      "average": 29.44,
+      "min": 22.98,
+      "max": 22.98,
+      "average": 22.98,
       "sampleCount": 1
     }
   },
   "socs": {
     "sm8850": {
-      "score": 25,
-      "status": "boots",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
       "performance": {
-        "min": 29.44,
-        "max": 29.44,
-        "average": 29.44,
+        "min": 22.98,
+        "max": 22.98,
+        "average": 22.98,
         "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_e25db1385c974a9390ee08f115fc9b62",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "60-fps-unlock",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "resolution-540p-extreme-performance",
+            "revision": "2026.10.14.11637158210346386359"
+          }
+        ]
+      }
     }
   },
   "families": {
@@ -47,8 +82,92 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00076/s_fe231d3e5da9456d9974d426b7532a71/screenshots/02.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_e25db1385c974a9390ee08f115fc9b62",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T04:28:15.714446Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "Snapdragon 8 Elite Gen 5",
+        "gpu": "Adreno 840",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "60-fps-unlock",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "resolution-540p-extreme-performance",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 22.98,
+        "nativeOnePercentLowFps": 10.53,
+        "outputAverageFps": null,
+        "testDurationSeconds": 656,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "The Order: 1886: observed ingame during this test session. Measured native FPS: 23.0. Recorded duration: 656s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d37541c34cf8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/01.webp",
+          "caption": "The Order: 1886 — capture 1 · 2026-10-18T04:28:15.190Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/02.webp",
+          "caption": "The Order: 1886 — capture 2 · 2026-10-18T04:29:44.246Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/03.webp",
+          "caption": "The Order: 1886 — capture 3 · 2026-10-18T04:34:34.610Z"
+        }
+      ]
+    },
     {
       "reportId": "s_fe231d3e5da9456d9974d426b7532a71",
       "schemaVersion": 2,
