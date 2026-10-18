@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_efc6b427f26e440f9858fddf7b480ce2",
+  "cusaId": "CUSA01130",
+  "testedAt": "2026-10-18T08:47:56.108619Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OPPO",
+    "model": "CPH2761",
+    "socId": "mt6899",
+    "socName": "Dimensity 8400",
+    "gpu": "Mali-G720 MC7",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Gravity Rush™ Remastered: observed ingame during this test session. Measured native FPS: 46.2. Recorded duration: 412s. Characters i think not visible in the gameplay. Not sure it's the game like this or an issue",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-3ed103ff899a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 46.23,
+    "testDurationSeconds": 412,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 10.17
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/01.webp",
+        "sha256": "2cc9b0007852d546ac8788128f1808deed7317e9b26271d2a0bf12888edbbd16",
+        "caption": "Gravity Rush™ Remastered — capture 1 · 2026-10-18T08:47:55.688Z"
+      },
+      {
+        "path": "assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/02.webp",
+        "sha256": "c7f711df1c1b662d51a27e538d8446fe6299fe95cf673face52467456f656daf",
+        "caption": "Gravity Rush™ Remastered — capture 2 · 2026-10-18T08:50:01.344Z"
+      },
+      {
+        "path": "assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/screenshots/03.webp",
+        "sha256": "87ee221f3d197695cf821f6e9e3979354ee9dce78ed7b66e6740b3777f934740",
+        "caption": "Gravity Rush™ Remastered — capture 3 · 2026-10-18T08:53:32.680Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/logs/01-application.log.gz",
+        "sha256": "c9cf8904cc234c96702682dee6d0cdf78f749270455bc52b8ff1d57dab5a7853",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01130/s_efc6b427f26e440f9858fddf7b480ce2/logs/02-shadps4.log.gz",
+        "sha256": "521ab5787d174a415329e83a85efa37267a8e9245cc149c7b676cc55b8693d73",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
