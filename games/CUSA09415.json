@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA09415",
+    "title": "Undertale",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.95,
+      "max": 29.95,
+      "average": 29.95,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8450": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.95,
+        "max": 29.95,
+        "average": 29.95,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_671e5545be55409fae94016b5985b3cb",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA09415/s_671e5545be55409fae94016b5985b3cb/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_671e5545be55409fae94016b5985b3cb",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-18T13:06:56.971896Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 30 pro",
+        "socId": "sm8450",
+        "socName": "SM8450",
+        "gpu": "Unknown",
+        "androidVersion": "14",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.95,
+        "nativeOnePercentLowFps": 28.95,
+        "outputAverageFps": null,
+        "testDurationSeconds": 278,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "Undertale: observed playable during this test session. Measured native FPS: 30.0. Recorded duration: 278s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-02e9e1677922",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA09415/s_671e5545be55409fae94016b5985b3cb/screenshots/01.webp",
+          "caption": "Undertale — capture 1 · 2026-10-18T13:06:56.652Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA09415/s_671e5545be55409fae94016b5985b3cb/screenshots/02.webp",
+          "caption": "Undertale — capture 2 · 2026-10-18T13:08:18.320Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA09415/s_671e5545be55409fae94016b5985b3cb/screenshots/03.webp",
+          "caption": "Undertale — capture 3 · 2026-10-18T13:09:20.064Z"
+        }
+      ]
+    }
+  ]
+}

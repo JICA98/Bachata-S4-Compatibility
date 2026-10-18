@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T09:35:13Z",
+  "generatedAt": "2026-10-18T15:28:39Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 109,
+  "gameCount": 110,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1478,6 +1478,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T13:03:19.147889Z"
+    },
+    {
+      "cusaId": "CUSA09415",
+      "title": "Undertale",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.95,
+          "max": 29.95,
+          "average": 29.95,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA09415/s_671e5545be55409fae94016b5985b3cb/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-18T13:06:56.971896Z"
     },
     {
       "cusaId": "CUSA09919",
