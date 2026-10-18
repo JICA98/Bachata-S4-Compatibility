@@ -3,7 +3,7 @@
   "reportId": "s_9b89f5ec8dec4eaf975033b9a7adebeb",
   "cusaId": "CUSA07010",
   "testedAt": "2026-10-18T06:33:13.029289Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.04",
     "region": "Europe"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Sonic Mania Encore DLC: observed playable during this test session. Measured native FPS: 60.0. Recorded duration: 286s.",
+    "summary": "Sonic Mania: observed ingame during this test session. Measured native FPS: 60.0. Recorded duration: 286s.",
     "notes": "",
     "issues": []
   },
