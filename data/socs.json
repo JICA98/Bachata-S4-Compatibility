@@ -81,6 +81,16 @@
         "Snapdragon 8s Gen 4"
       ]
     },
+    "sm8735p": {
+      "name": "Snapdragon 8s Gen 4 (SM8735P)",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 825",
+      "family": "adreno8",
+      "aliases": [
+        "SM8735P",
+        "Snapdragon 8s Gen 4"
+      ]
+    },
     "sm8850": {
       "name": "Snapdragon 8 Elite Gen 5",
       "vendor": "Qualcomm",
