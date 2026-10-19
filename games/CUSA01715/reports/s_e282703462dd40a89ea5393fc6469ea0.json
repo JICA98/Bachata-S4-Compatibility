@@ -3,7 +3,7 @@
   "reportId": "s_e282703462dd40a89ea5393fc6469ea0",
   "cusaId": "CUSA01715",
   "testedAt": "2026-10-19T11:03:54.798336Z",
-  "status": "nothing",
+  "status": "menus",
   "game": {
     "version": "01.02",
     "region": "Europe"
@@ -96,7 +96,7 @@
     }
   ],
   "result": {
-    "summary": "God of War III Remastered: observed nothing during this test session.",
+    "summary": "God of War III Remastered: observed menus during this test session.",
     "notes": "",
     "issues": []
   },
