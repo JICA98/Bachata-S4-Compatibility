@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA52463",
+  "title": "DELTARUNE SuperPSX.com",
+  "region": "Japan",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 604
+  },
+  "legacyIssues": []
+}
