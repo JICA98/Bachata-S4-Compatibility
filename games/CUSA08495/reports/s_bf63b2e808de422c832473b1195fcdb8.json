@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bf63b2e808de422c832473b1195fcdb8",
+  "cusaId": "CUSA08495",
+  "testedAt": "2026-10-19T00:08:38.441031Z",
+  "status": "boots",
+  "game": {
+    "version": "01.03",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "OPPO",
+    "model": "CPH2761",
+    "socId": "mt6899",
+    "socName": "MT6899",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "DARK SOULS™: REMASTERED: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-cfcbebcd9940"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08495/s_bf63b2e808de422c832473b1195fcdb8/screenshots/01.webp",
+        "sha256": "f6df8f042f4ca830ef0152e8e866b4115e4fd06321cb8816d490362713b5d4dc",
+        "caption": "DARK SOULS™: REMASTERED — capture 1 · 2026-10-19T00:08:38.327Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08495/s_bf63b2e808de422c832473b1195fcdb8/logs/01-application.log.gz",
+        "sha256": "7ca5dc476fe280cbd5cc45311149a0beef7bdf5e00ef998e46a5d46b3c10b95a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08495/s_bf63b2e808de422c832473b1195fcdb8/logs/02-shadps4.log.gz",
+        "sha256": "65dbfd49fd550050d28f823d1fe1a9153b91d46ac92e9ddd26c341e4a6cf1567",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
