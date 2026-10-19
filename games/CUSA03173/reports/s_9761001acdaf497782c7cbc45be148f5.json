@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9761001acdaf497782c7cbc45be148f5",
+  "cusaId": "CUSA03173",
+  "testedAt": "2026-10-19T22:51:06.914804Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "Snapdragon 8 Gen 3",
+    "gpu": "Adreno 750",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA03173: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-395001d68794"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 21.98,
+    "testDurationSeconds": 35,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03173/s_9761001acdaf497782c7cbc45be148f5/screenshots/01.webp",
+        "sha256": "aa72fd25525f8d88f32fdd89f41a8ac9eb80394dcdff8658573745426d0f8d15",
+        "caption": "Bloodborne — capture 1 · 2026-10-19T22:51:06.720Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03173/s_9761001acdaf497782c7cbc45be148f5/logs/01-application.log.gz",
+        "sha256": "867665c3ea6c66332be61331a30fc757eca14c974835a90a548531f70e8298ab",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03173/s_9761001acdaf497782c7cbc45be148f5/logs/02-shadps4.log.gz",
+        "sha256": "4bc5adb5f88bac0f3ac9a686d793a1d05503f2d94b398c818f657d91c1f8c94c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
