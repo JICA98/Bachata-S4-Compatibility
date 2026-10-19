@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e282703462dd40a89ea5393fc6469ea0",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-19T11:03:54.798336Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "moto g45 5G",
+    "socId": "sm6375",
+    "socName": "Snapdragon 695",
+    "gpu": "Adreno 619",
+    "androidVersion": "15",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-patch-854x480",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-bfcfc0a04971"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_e282703462dd40a89ea5393fc6469ea0/screenshots/01.webp",
+        "sha256": "f3d62411f3693ba9e333f9d7b2de6fc69eeb9a74886ee038130a78504811b7a1",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-19T11:03:53.509Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_e282703462dd40a89ea5393fc6469ea0/logs/01-application.log.gz",
+        "sha256": "02777303a5e9d9e3f5e659d1be0be805617b9e11415324e72d644501b37b2b75",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_e282703462dd40a89ea5393fc6469ea0/logs/02-shadps4.log.gz",
+        "sha256": "68509aad0c376369e2a85396ea19ab4c87e1e3fa4d7c7c0c7ea103039be23332",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
