@@ -145,23 +145,23 @@
       }
     },
     "mt6899": {
-      "score": 38,
+      "score": 41,
       "status": "menus",
       "confidence": "medium",
-      "reportCount": 10,
-      "testerCount": 10,
+      "reportCount": 11,
+      "testerCount": 11,
       "deviceCount": 4,
       "releaseTag": "v0.2.4",
       "hasCurrentReports": false,
       "performance": {
         "min": 20.02,
         "max": 53.41,
-        "average": 32.51,
-        "sampleCount": 5
+        "average": 32.02,
+        "sampleCount": 6
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_debcd8dfe7c74529870160976a0d6154",
+        "reportId": "s_6ddf911a295d423994c14f29dc466660",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -181,8 +181,8 @@
           "frameGenerationMode": "OFF",
           "fexPreset": "PERFORMANCE",
           "adrenoTurboMode": false,
-          "bigCoreAffinity": true,
-          "maliGpuOptimizations": true
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
         },
         "patches": [
           {
@@ -210,7 +210,7 @@
             "revision": "2026.10.01.13399220021802570842"
           },
           {
-            "id": "resolution-patch-960x540",
+            "id": "resolution-patch-1600x900",
             "revision": "2026.10.01.13399220021802570842"
           },
           {
@@ -1217,8 +1217,120 @@
       "sm8850p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_6a29fb1e55a54ce2addd0642d9c78463/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_6ddf911a295d423994c14f29dc466660/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_6ddf911a295d423994c14f29dc466660",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-19T00:13:37.371660Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.4",
+        "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "OPPO",
+        "model": "CPH2761",
+        "socId": "mt6899",
+        "socName": "Dimensity 8400",
+        "gpu": "Mali-G720 MC7",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "panvk-a1c25dfbc785cde8",
+        "type": "turnip",
+        "name": "PanVK V2",
+        "version": "2.2.0",
+        "build": "a1c25dfbc785cde8"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "panvk-a1c25dfbc785cde8",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "resolution-patch-1600x900",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.01.13399220021802570842"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.01.13399220021802570842"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 29.57,
+        "nativeOnePercentLowFps": 2.25,
+        "outputAverageFps": null,
+        "testDurationSeconds": 816,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 29.2. Recorded duration: 755s. Works well with 900p resolution.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-cfcbebcd9940",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.4"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_6ddf911a295d423994c14f29dc466660/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-19T00:13:37.027Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_6ddf911a295d423994c14f29dc466660/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-19T00:15:07.883Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_6ddf911a295d423994c14f29dc466660/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-19T00:19:19.751Z"
+        }
+      ]
+    },
     {
       "reportId": "s_6a29fb1e55a54ce2addd0642d9c78463",
       "schemaVersion": 2,
