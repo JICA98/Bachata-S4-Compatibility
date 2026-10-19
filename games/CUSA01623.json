@@ -11,16 +11,16 @@
     "score": 75,
     "status": "ingame",
     "confidence": "high",
-    "reportCount": 6,
-    "testerCount": 6,
-    "deviceCount": 6,
+    "reportCount": 7,
+    "testerCount": 7,
+    "deviceCount": 7,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 14.81,
       "max": 56.47,
-      "average": 32.82,
-      "sampleCount": 6
+      "average": 31.88,
+      "sampleCount": 7
     }
   },
   "socs": {
@@ -735,6 +735,48 @@
         ]
       }
     },
+    "sm8550": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 26.22,
+        "max": 26.22,
+        "average": 26.22,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_df6a4324ce284d3b9d7e13839bc2de01",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    },
     "sm8635": {
       "score": 58,
       "status": "menus",
@@ -1044,6 +1086,7 @@
       "sm7635",
       "sm7675",
       "sm7750",
+      "sm8550",
       "sm8635"
     ],
     "adreno6": [
@@ -1057,8 +1100,82 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_464658046e544c0187bc9ab140b69724/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_df6a4324ce284d3b9d7e13839bc2de01/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_df6a4324ce284d3b9d7e13839bc2de01",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-19T06:06:42.238831Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "23113RKC6G",
+        "socId": "sm8550",
+        "socName": "Snapdragon 8 Gen 2",
+        "gpu": "Adreno 740",
+        "androidVersion": "15",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 26.22,
+        "nativeOnePercentLowFps": 10.53,
+        "outputAverageFps": null,
+        "testDurationSeconds": 413,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 26.2. Recorded duration: 413s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-8590594c72ad",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_df6a4324ce284d3b9d7e13839bc2de01/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-19T06:06:41.971Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_df6a4324ce284d3b9d7e13839bc2de01/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-19T06:07:45.779Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_df6a4324ce284d3b9d7e13839bc2de01/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-19T06:08:50.871Z"
+        }
+      ]
+    },
     {
       "reportId": "s_464658046e544c0187bc9ab140b69724",
       "schemaVersion": 2,
