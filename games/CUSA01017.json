@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA01017",
+    "title": "The Walking Dead: Season 2",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 15.59,
+      "max": 15.59,
+      "average": 15.59,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6450": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 15.59,
+        "max": 15.59,
+        "average": 15.59,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_ff3a1b503c4d469989ecf5ab45645c59",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 720,
+            "gpu.internal_screen_height": 480
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm6450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_ff3a1b503c4d469989ecf5ab45645c59",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-19T22:25:36.176337Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "SM6450",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 720,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 15.59,
+        "nativeOnePercentLowFps": 9.06,
+        "outputAverageFps": null,
+        "testDurationSeconds": 513,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "The Walking Dead: Season 2: observed ingame during this test session. Measured native FPS: 15.6. Recorded duration: 513s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9607d8c1d90f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/01.webp",
+          "caption": "The Walking Dead: Season 2 — capture 1 · 2026-10-19T22:25:35.922Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/02.webp",
+          "caption": "The Walking Dead: Season 2 — capture 2 · 2026-10-19T22:29:07.982Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/03.webp",
+          "caption": "The Walking Dead: Season 2 — capture 3 · 2026-10-19T22:33:35.718Z"
+        }
+      ]
+    }
+  ]
+}

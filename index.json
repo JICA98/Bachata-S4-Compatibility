@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T16:15:14Z",
+  "generatedAt": "2026-10-20T03:22:05Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 110,
+  "gameCount": 111,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -403,6 +403,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00900/s_5a1f156efb4e416fb0229a4d2ad5a436/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-13T05:27:48.072527Z"
+    },
+    {
+      "cusaId": "CUSA01017",
+      "title": "The Walking Dead: Season 2",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 15.59,
+          "max": 15.59,
+          "average": 15.59,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-19T22:25:36.176337Z"
     },
     {
       "cusaId": "CUSA01022",
