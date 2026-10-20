@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c3b10500941d4609b1c4b564b05811e1",
+  "cusaId": "CUSA14209",
+  "testedAt": "2026-10-20T00:24:24.268894Z",
+  "status": "ingame",
+  "game": {
+    "version": "28.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 2,
+      "gpu.vblank_frequency": 120,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 2,
+      "gpu.vblank_frequency": 120,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "EA SPORTS UFC 4: observed ingame during this test session. Measured native FPS: 29.9. Recorded duration: 369s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d9887b4ec5af"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.86,
+    "testDurationSeconds": 369,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 19.67
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/01.webp",
+        "sha256": "402633e61683fd8cd9293e378832980beb8925673bf10fca5bdaaa9af9a13281",
+        "caption": "EA SPORTS UFC 4 — capture 1 · 2026-10-20T00:24:23.859Z"
+      },
+      {
+        "path": "assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/02.webp",
+        "sha256": "e866d419926a02bc550cedff8b2d035acdc9c6380ec2ad51ad44286b927fdd09",
+        "caption": "EA SPORTS UFC 4 — capture 2 · 2026-10-20T00:25:27.831Z"
+      },
+      {
+        "path": "assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/03.webp",
+        "sha256": "7b8c38d4c2dbaf67c324a1971b6f86884c19b9f2ce6322af2a56408756a7dfeb",
+        "caption": "EA SPORTS UFC 4 — capture 3 · 2026-10-20T00:26:53.691Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/logs/01-application.log.gz",
+        "sha256": "92ed699ddf996df756bf4c21f2017f8fd4d965f31f4afc2ce5056c0fb0e70ac3",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/logs/02-shadps4.log.gz",
+        "sha256": "6d852ef6f1f94dcde487fa76c68486572927c44b212e5d0cf0e91555afd74576",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
