@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 69,
+    "score": 67,
     "status": "ingame",
     "confidence": "high",
-    "reportCount": 14,
-    "testerCount": 14,
-    "deviceCount": 12,
+    "reportCount": 15,
+    "testerCount": 15,
+    "deviceCount": 13,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 11.91,
-      "max": 59.94,
-      "average": 35.75,
-      "sampleCount": 13
+      "max": 78.56,
+      "average": 38.81,
+      "sampleCount": 14
     }
   },
   "socs": {
@@ -943,19 +943,19 @@
       }
     },
     "sm8735": {
-      "score": 75,
+      "score": 60,
       "status": "ingame",
-      "confidence": "low",
-      "reportCount": 1,
-      "testerCount": 1,
-      "deviceCount": 1,
+      "confidence": "medium",
+      "reportCount": 2,
+      "testerCount": 2,
+      "deviceCount": 2,
       "releaseTag": "v0.2.5",
       "hasCurrentReports": true,
       "performance": {
         "min": 33.93,
-        "max": 33.93,
-        "average": 33.93,
-        "sampleCount": 1
+        "max": 78.56,
+        "average": 56.25,
+        "sampleCount": 2
       },
       "recommendedSetup": {
         "label": "known-working",
@@ -1335,8 +1335,130 @@
       "sm8850p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_3220184581dd4765ac9015d76b821310/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_a1b41192a9b54202a6e00b2750fc3f60",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-20T12:22:31.240114Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "25053PC47G",
+        "socId": "sm8735",
+        "socName": "Snapdragon 8s Gen 4",
+        "gpu": "Adreno 825",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0,
+          "gpu.vblank_frequency": 80,
+          "gpu.internal_screen_width": 1100,
+          "gpu.internal_screen_height": 600
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-120-fps-correct-delta-time",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-resolution-patch-854x480",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 78.56,
+        "nativeOnePercentLowFps": 61.76,
+        "outputAverageFps": null,
+        "testDurationSeconds": 282,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 78.6. Recorded duration: 282s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-c71b499cbf7a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-10-20T12:22:30.926Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-10-20T12:23:44.942Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-10-20T12:24:47.950Z"
+        }
+      ]
+    },
     {
       "reportId": "s_3220184581dd4765ac9015d76b821310",
       "schemaVersion": 2,
