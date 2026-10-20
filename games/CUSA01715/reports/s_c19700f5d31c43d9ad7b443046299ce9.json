@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c19700f5d31c43d9ad7b443046299ce9",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-19T20:23:41.746454Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2405CPCFBG",
+    "socId": "sm7435",
+    "socName": "Snapdragon 7s Gen 2",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-092fc29be51c9088",
+    "type": "turnip",
+    "name": "Turnip vauzi-7xx v1",
+    "version": "26.0.99",
+    "build": "092fc29be51c9088",
+    "source": "JICA98/bachata-s4-drivers vauzi-7xx-v1"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-092fc29be51c9088",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-d2db209d9568"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 33.99,
+    "testDurationSeconds": 22,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_c19700f5d31c43d9ad7b443046299ce9/logs/01-application.log.gz",
+        "sha256": "b38b6f32e2125b6e871c776c7713d654667d3566d004dcf043f9f0f204ad1088",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_c19700f5d31c43d9ad7b443046299ce9/logs/02-shadps4.log.gz",
+        "sha256": "97160683757ee90d679215082a4050193e19f620e83b23d2e2cf1c665f285237",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
