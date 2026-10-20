@@ -10,20 +10,65 @@
   "general": {
     "score": 75,
     "status": "ingame",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
-    "deviceCount": 1,
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 2,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 28.62,
-      "max": 28.62,
-      "average": 28.62,
-      "sampleCount": 1
+      "max": 29.86,
+      "average": 29.24,
+      "sampleCount": 2
     }
   },
   "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.86,
+        "max": 29.86,
+        "average": 29.86,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_c3b10500941d4609b1c4b564b05811e1",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-a7b1209e9cd4e87a",
+          "type": "turnip",
+          "name": "Turnip Gen8 V36",
+          "version": "26.2.99",
+          "build": "a7b1209e9cd4e87a"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 2,
+            "gpu.vblank_frequency": 120,
+            "vulkan.vkcrash_diagnostic_enabled": true
+          },
+          "driverId": "turnip-a7b1209e9cd4e87a",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    },
     "sm8850": {
       "score": 75,
       "status": "ingame",
@@ -91,11 +136,89 @@
   },
   "families": {
     "adreno8": [
+      "sm8750",
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA14209/s_9d4351f13ae34225bd41eb6a07a9bf5e/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_c3b10500941d4609b1c4b564b05811e1",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-20T00:24:24.268894Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "28.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NP05J",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-a7b1209e9cd4e87a",
+        "type": "turnip",
+        "name": "Turnip Gen8 V36",
+        "version": "26.2.99",
+        "build": "a7b1209e9cd4e87a"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 2,
+          "gpu.vblank_frequency": 120,
+          "vulkan.vkcrash_diagnostic_enabled": true
+        },
+        "driverId": "turnip-a7b1209e9cd4e87a",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.86,
+        "nativeOnePercentLowFps": 19.67,
+        "outputAverageFps": null,
+        "testDurationSeconds": 369,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "EA SPORTS UFC 4: observed ingame during this test session. Measured native FPS: 29.9. Recorded duration: 369s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-d9887b4ec5af",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/01.webp",
+          "caption": "EA SPORTS UFC 4 — capture 1 · 2026-10-20T00:24:23.859Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/02.webp",
+          "caption": "EA SPORTS UFC 4 — capture 2 · 2026-10-20T00:25:27.831Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA14209/s_c3b10500941d4609b1c4b564b05811e1/screenshots/03.webp",
+          "caption": "EA SPORTS UFC 4 — capture 3 · 2026-10-20T00:26:53.691Z"
+        }
+      ]
+    },
     {
       "reportId": "s_9d4351f13ae34225bd41eb6a07a9bf5e",
       "schemaVersion": 2,
