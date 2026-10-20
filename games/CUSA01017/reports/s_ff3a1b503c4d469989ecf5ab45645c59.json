@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ff3a1b503c4d469989ecf5ab45645c59",
+  "cusaId": "CUSA01017",
+  "testedAt": "2026-10-19T22:25:36.176337Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Walking Dead: Season 2: observed ingame during this test session. Measured native FPS: 15.6. Recorded duration: 513s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.59,
+    "testDurationSeconds": 513,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 9.06
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/01.webp",
+        "sha256": "7992388b755e06790e8538b975c8c3f3354376974b7181c6d83cb2d082e1923f",
+        "caption": "The Walking Dead: Season 2 — capture 1 · 2026-10-19T22:25:35.922Z"
+      },
+      {
+        "path": "assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/02.webp",
+        "sha256": "0627faed6190053da8e00761521b2966f644486a0afd6ebd775aac2935bde2e9",
+        "caption": "The Walking Dead: Season 2 — capture 2 · 2026-10-19T22:29:07.982Z"
+      },
+      {
+        "path": "assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/screenshots/03.webp",
+        "sha256": "75511efbb5c223e10e30398da2c69953d98605e6ebd5d52e57c4b98715115a4b",
+        "caption": "The Walking Dead: Season 2 — capture 3 · 2026-10-19T22:33:35.718Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/logs/01-application.log.gz",
+        "sha256": "913042c90e1e8754ccb772d20f4c058f29774324ef5567dd3baf6a340056407b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01017/s_ff3a1b503c4d469989ecf5ab45645c59/logs/02-shadps4.log.gz",
+        "sha256": "bfae1c655c7d056aa31737e0ba48a4997ba1fad5437e1c4b8e7a1f16a2f3d970",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
