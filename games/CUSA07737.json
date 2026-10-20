@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA07737",
+    "title": "Uncharted: The Lost Legacy",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 45,
+    "status": "menus",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 2.21,
+      "max": 2.21,
+      "average": 2.21,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm7435": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 2.21,
+        "max": 2.21,
+        "average": 2.21,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm7435"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_2fa90979c5f7485697c4148aed3f837c",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-19T18:56:59.317888Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.09",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "moto g67 power 5G",
+        "socId": "sm7435",
+        "socName": "SM7435",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.dump_shaders": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 480,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 2.21,
+        "nativeOnePercentLowFps": 1.02,
+        "outputAverageFps": null,
+        "testDurationSeconds": 408,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Uncharted: The Lost Legacy™: observed boots during this test session. Measured native FPS: 2.2. Recorded duration: 408s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-33f76eaddd5b",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/01.webp",
+          "caption": "Uncharted: The Lost Legacy™ — capture 1 · 2026-10-19T18:56:58.148Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/02.webp",
+          "caption": "Uncharted: The Lost Legacy™ — capture 2 · 2026-10-19T18:58:13.344Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
+          "caption": "Uncharted: The Lost Legacy™ — capture 3 · 2026-10-19T19:02:06.488Z"
+        }
+      ]
+    }
+  ]
+}

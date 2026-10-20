@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T03:22:19Z",
+  "generatedAt": "2026-10-20T03:23:41Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 111,
+  "gameCount": 112,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1378,6 +1378,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07399/20260802T103831Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-2-0-devel/screenshots/03.webp",
       "latestStatus": "menus",
       "latestTestedAt": "2026-08-02T10:38:31Z"
+    },
+    {
+      "cusaId": "CUSA07737",
+      "title": "Uncharted: The Lost Legacy",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 2.21,
+          "max": 2.21,
+          "average": 2.21,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-19T18:56:59.317888Z"
     },
     {
       "cusaId": "CUSA08252",
