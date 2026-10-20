@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9a744739221a40ff9b6862b514ccb076",
+  "cusaId": "CUSA02299",
+  "testedAt": "2026-10-20T05:07:25.122414Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB322FC",
+    "socId": "sm8750p",
+    "socName": "SM8750P",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Marvel's Spider-Man: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-4633e3065bce"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02299/s_9a744739221a40ff9b6862b514ccb076/screenshots/01.webp",
+        "sha256": "2733009522151a67e53fb72c2f18655e95911059fd75210f6e1e343ab6fe0f82",
+        "caption": "Marvel's Spider-Man — capture 1 · 2026-10-20T05:07:17.658Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02299/s_9a744739221a40ff9b6862b514ccb076/logs/01-application.log.gz",
+        "sha256": "fb5aa196735b4e12a0936e5e53229ee438ba257a3c2183dab1431895150ce37e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02299/s_9a744739221a40ff9b6862b514ccb076/logs/02-shadps4.log.gz",
+        "sha256": "796269c7e9f97af1bef341bc422e4a744b280f60f0b78a910246686e3d7231fe",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
