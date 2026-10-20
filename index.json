@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T03:23:41Z",
+  "generatedAt": "2026-10-20T03:23:54Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 112,
+  "gameCount": 113,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1453,6 +1453,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08279/s_fe1a9fbd40104fbd9c0883228f84f068/screenshots/03.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-09-30T22:19:20.983743Z"
+    },
+    {
+      "cusaId": "CUSA08418",
+      "title": "ŌKAMI HD",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.4",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 38.91,
+          "max": 38.91,
+          "average": 38.91,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08418/s_e963efe4ee5a4db9bcd095a86d29bb0b/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-20T00:56:07.048026Z"
     },
     {
       "cusaId": "CUSA08692",
