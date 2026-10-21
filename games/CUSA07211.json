@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA07211",
+    "title": "FINAL FANTASY VII REMAKE",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 15.76,
+      "max": 15.76,
+      "average": 15.76,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 15.76,
+        "max": 15.76,
+        "average": 15.76,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_52ec30c3a2a1445fa1c04f39fbf9c6cf",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8750"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_52ec30c3a2a1445fa1c04f39fbf9c6cf",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-21T11:49:18.001803Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Sony",
+        "model": "XQ-FS72",
+        "socId": "sm8750",
+        "socName": "SM8750",
+        "gpu": "Unknown",
+        "androidVersion": "15",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 15.76,
+        "nativeOnePercentLowFps": 6.32,
+        "outputAverageFps": null,
+        "testDurationSeconds": 151,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA07211: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-8b5f1c283f44",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/01.webp",
+          "caption": "FINAL FANTASY VII REMAKE — capture 1 · 2026-10-21T11:49:17.183Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/02.webp",
+          "caption": "FINAL FANTASY VII REMAKE — capture 2 · 2026-10-21T11:50:21.287Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/03.webp",
+          "caption": "FINAL FANTASY VII REMAKE — capture 3 · 2026-10-21T11:51:36.391Z"
+        }
+      ]
+    }
+  ]
+}

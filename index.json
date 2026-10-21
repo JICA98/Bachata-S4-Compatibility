@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T07:20:23Z",
+  "generatedAt": "2026-10-21T15:21:56Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 115,
+  "gameCount": 116,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1353,6 +1353,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07023/s_daa9ffa3991449c5b61a671a441f9ac5/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-13T03:57:00.635745Z"
+    },
+    {
+      "cusaId": "CUSA07211",
+      "title": "FINAL FANTASY VII REMAKE",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 15.76,
+          "max": 15.76,
+          "average": 15.76,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-21T11:49:18.001803Z"
     },
     {
       "cusaId": "CUSA07340",
