@@ -17,9 +17,9 @@
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
-      "min": 21.27,
-      "max": 21.27,
-      "average": 21.27,
+      "min": 29.37,
+      "max": 29.37,
+      "average": 29.37,
       "sampleCount": 1
     }
   },
@@ -34,14 +34,14 @@
       "releaseTag": "v0.2.5",
       "hasCurrentReports": true,
       "performance": {
-        "min": 21.27,
-        "max": 21.27,
-        "average": 21.27,
+        "min": 29.37,
+        "max": 29.37,
+        "average": 29.37,
         "sampleCount": 1
       },
       "recommendedSetup": {
         "label": "known-working",
-        "reportId": "s_69a4870d78094a03a0adc35fc6107932",
+        "reportId": "s_257b609fea0643df90406d0e385ac0b9",
         "supportingReports": 1,
         "supportingTesters": 1,
         "driver": {
@@ -58,8 +58,8 @@
           "driverId": "turnip-ee5dda7a5c67966f",
           "guestBackend": "FEX",
           "frameGenerationMode": "OFF",
-          "fexPreset": "DEFAULT",
-          "adrenoTurboMode": false,
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
           "bigCoreAffinity": false,
           "maliGpuOptimizations": false
         },
@@ -72,8 +72,82 @@
       "sm8450"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52463/s_69a4870d78094a03a0adc35fc6107932/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_257b609fea0643df90406d0e385ac0b9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-19T18:24:14.401467Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 30 pro",
+        "socId": "sm8450",
+        "socName": "SM8450",
+        "gpu": "Unknown",
+        "androidVersion": "14",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.37,
+        "nativeOnePercentLowFps": 18.84,
+        "outputAverageFps": null,
+        "testDurationSeconds": 139,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "DELTARUNE SuperPSX.com: observed playable during this test session. Measured native FPS: 29.4. Recorded duration: 139s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-02e9e1677922",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/01.webp",
+          "caption": "DELTARUNE SuperPSX.com — capture 1 · 2026-10-19T18:23:08.477Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/02.webp",
+          "caption": "DELTARUNE SuperPSX.com — capture 2 · 2026-10-19T18:24:13.669Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/03.webp",
+          "caption": "DELTARUNE SuperPSX.com — capture 3 · 2026-10-19T18:25:23.501Z"
+        }
+      ]
+    },
     {
       "reportId": "s_69a4870d78094a03a0adc35fc6107932",
       "schemaVersion": 2,
