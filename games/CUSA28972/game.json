@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA28972",
+  "title": "JoJo's Bizarre Adventure: All-Star Battle R",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 648
+  },
+  "legacyIssues": []
+}
