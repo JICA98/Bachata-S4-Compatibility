@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_83580038ebaf40a8bed6ed67a4200994",
+  "cusaId": "CUSA41375",
+  "testedAt": "2026-10-21T08:03:01.882092Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Lenovo",
+    "model": "TB320FC",
+    "socId": "sm8475",
+    "socName": "SM8475",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Disney's Atlantis: The Lost Empire: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-56dad19ab3e1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA41375/s_83580038ebaf40a8bed6ed67a4200994/screenshots/01.webp",
+        "sha256": "8d35abb56feaa88f46e02bec7f95aef4a734c82d3743935343f90a7f4b2bb0d0",
+        "caption": "Disney's Atlantis: The Lost Empire — capture 1 · 2026-10-21T08:03:01.580Z"
+      },
+      {
+        "path": "assets/CUSA41375/s_83580038ebaf40a8bed6ed67a4200994/screenshots/02.webp",
+        "sha256": "b83a12a115e6d94a53b7752aba48a8a8091e09f6f901e85cfdc92ade57a0edc4",
+        "caption": "Disney's Atlantis: The Lost Empire — capture 2 · 2026-10-21T08:04:12.308Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA41375/s_83580038ebaf40a8bed6ed67a4200994/logs/01-application.log.gz",
+        "sha256": "ce86a305d7d0f43410e7b39b1d1b7417a3c23a111fbf3340ec5fca864d799e59",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA41375/s_83580038ebaf40a8bed6ed67a4200994/logs/02-shadps4.log.gz",
+        "sha256": "0343468d0aa6b817d657df7aa3770c61c1104133f6b70e843aa64485a620c5a4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
