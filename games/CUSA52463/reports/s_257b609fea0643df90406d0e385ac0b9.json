@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_257b609fea0643df90406d0e385ac0b9",
+  "cusaId": "CUSA52463",
+  "testedAt": "2026-10-19T18:24:14.401467Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Japan"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 30 pro",
+    "socId": "sm8450",
+    "socName": "SM8450",
+    "gpu": "Unknown",
+    "androidVersion": "14",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "DELTARUNE SuperPSX.com: observed playable during this test session. Measured native FPS: 29.4. Recorded duration: 139s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02e9e1677922"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.37,
+    "testDurationSeconds": 139,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 18.84
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/01.webp",
+        "sha256": "fc491a1563f72f15d3c68414acdc355bbddd96ed425767312a538381af1378a3",
+        "caption": "DELTARUNE SuperPSX.com — capture 1 · 2026-10-19T18:23:08.477Z"
+      },
+      {
+        "path": "assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/02.webp",
+        "sha256": "cfbf671789f4e2fa37898a94363ddf26185ba8cab6e59fcc2406c2aa6c12f191",
+        "caption": "DELTARUNE SuperPSX.com — capture 2 · 2026-10-19T18:24:13.669Z"
+      },
+      {
+        "path": "assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/screenshots/03.webp",
+        "sha256": "2712d31465920875e1314dda931f951215d2adfee30996ac1378041d93453ee4",
+        "caption": "DELTARUNE SuperPSX.com — capture 3 · 2026-10-19T18:25:23.501Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/logs/01-application.log.gz",
+        "sha256": "c4949ea0c48e9b7a1a52484fc58e4a55414a893cb317c3c625e0a61aa63ef5bf",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA52463/s_257b609fea0643df90406d0e385ac0b9/logs/02-shadps4.log.gz",
+        "sha256": "3c444f6ceb952f62f42d5aaaf044517bd6d9f2e62e9ac290328491b0232ed269",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
