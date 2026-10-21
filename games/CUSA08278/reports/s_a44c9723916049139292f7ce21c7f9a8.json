@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a44c9723916049139292f7ce21c7f9a8",
+  "cusaId": "CUSA08278",
+  "testedAt": "2026-10-18T08:54:07.440804Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Gintama Rumble: observed nothing during this test session. Measured native FPS: 52.0. Recorded duration: 128s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0542b8eaea80"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 52.01,
+    "testDurationSeconds": 128,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 31.47
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08278/s_a44c9723916049139292f7ce21c7f9a8/screenshots/01.webp",
+        "sha256": "fbaa8d359385fdd100c3f07ec18636f196196a3a7579b41001b463aa580b8155",
+        "caption": "Gintama Rumble — capture 1 · 2026-10-18T08:54:07.239Z"
+      },
+      {
+        "path": "assets/CUSA08278/s_a44c9723916049139292f7ce21c7f9a8/screenshots/02.webp",
+        "sha256": "fbaa8d359385fdd100c3f07ec18636f196196a3a7579b41001b463aa580b8155",
+        "caption": "Gintama Rumble — capture 2 · 2026-10-18T08:55:10.127Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08278/s_a44c9723916049139292f7ce21c7f9a8/logs/01-application.log.gz",
+        "sha256": "9ca142c08942d45023eeb4d5ac7081381a79dac814a29be88d9f0054359489ec",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08278/s_a44c9723916049139292f7ce21c7f9a8/logs/02-shadps4.log.gz",
+        "sha256": "c4ad3252b03158e8c9e9f017db325a385bdb0efa10a29039198b11fbd507fdfb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
