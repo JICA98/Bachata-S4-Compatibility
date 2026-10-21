@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_52ec30c3a2a1445fa1c04f39fbf9c6cf",
+  "cusaId": "CUSA07211",
+  "testedAt": "2026-10-21T11:49:18.001803Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Sony",
+    "model": "XQ-FS72",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA07211: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8b5f1c283f44"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.76,
+    "testDurationSeconds": 151,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6.32
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/01.webp",
+        "sha256": "bc970bd4185bcbc3bd54fb07b7477ed702de24eb11f447b0dbf3ef4f51391745",
+        "caption": "FINAL FANTASY VII REMAKE — capture 1 · 2026-10-21T11:49:17.183Z"
+      },
+      {
+        "path": "assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/02.webp",
+        "sha256": "ddf0d5adac57bbd232af9cafd69ba7b19650200bf72a9d73d305a5c79cd2cfb6",
+        "caption": "FINAL FANTASY VII REMAKE — capture 2 · 2026-10-21T11:50:21.287Z"
+      },
+      {
+        "path": "assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/screenshots/03.webp",
+        "sha256": "447495d3e68e23b3e936237585b31c5ed8182ae6c9726849719df4a68ae85eec",
+        "caption": "FINAL FANTASY VII REMAKE — capture 3 · 2026-10-21T11:51:36.391Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/logs/01-application.log.gz",
+        "sha256": "05850b9f637cd635f7488c6343aa8bfb29f7779dcf2a777a36c43c5e8c04951a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07211/s_52ec30c3a2a1445fa1c04f39fbf9c6cf/logs/02-shadps4.log.gz",
+        "sha256": "02ee5b0dd73d90d21c48fb258bafdff0b527b404ef5ad44a30a7e628f69d3486",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
