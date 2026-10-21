@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_14a61d17ef80435ba26d54bf62bee2eb",
+  "cusaId": "CUSA08279",
+  "testedAt": "2026-10-18T08:46:00.777124Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA08279: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0542b8eaea80"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 55.63,
+    "testDurationSeconds": 74,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 40.88
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08279/s_14a61d17ef80435ba26d54bf62bee2eb/screenshots/01.webp",
+        "sha256": "fbaa8d359385fdd100c3f07ec18636f196196a3a7579b41001b463aa580b8155",
+        "caption": "Gintama Rumble — capture 1 · 2026-10-18T08:46:00.631Z"
+      },
+      {
+        "path": "assets/CUSA08279/s_14a61d17ef80435ba26d54bf62bee2eb/screenshots/02.webp",
+        "sha256": "fbaa8d359385fdd100c3f07ec18636f196196a3a7579b41001b463aa580b8155",
+        "caption": "Gintama Rumble — capture 2 · 2026-10-18T08:47:02.315Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08279/s_14a61d17ef80435ba26d54bf62bee2eb/logs/01-application.log.gz",
+        "sha256": "444725bce3554d94e9f4d5d81da285125df1651114d81934b409af4be7da8ded",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08279/s_14a61d17ef80435ba26d54bf62bee2eb/logs/02-shadps4.log.gz",
+        "sha256": "1227418d3afa58113f5c332744ebffa0ba30a395160c6c7f06aae147c8e4d191",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
