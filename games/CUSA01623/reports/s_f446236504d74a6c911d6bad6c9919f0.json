@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f446236504d74a6c911d6bad6c9919f0",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-10-17T12:31:07.165116Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6873",
+    "socId": "mt6897",
+    "socName": "Dimensity 8300",
+    "gpu": "Mali-G615 MC6",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e6a7a5677a6d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_f446236504d74a6c911d6bad6c9919f0/screenshots/01.webp",
+        "sha256": "e1d884c0f7ebde69769760790c31c89ebf6db758b4dc9977cb6cf3aab5023582",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-17T12:31:07.016Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_f446236504d74a6c911d6bad6c9919f0/logs/01-application.log.gz",
+        "sha256": "c4ccb0dd4d6e17798feb8a086d03971c100c1358ce5e9b8605eaa41d8abd40bc",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_f446236504d74a6c911d6bad6c9919f0/logs/02-shadps4.log.gz",
+        "sha256": "bcb742965ea3cef3c1e24e66dc5888c1991876d73a5be555c23b77b088589ccb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
