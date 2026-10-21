@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2fa90979c5f7485697c4148aed3f837c",
+  "cusaId": "CUSA07737",
+  "testedAt": "2026-10-19T18:56:59.317888Z",
+  "status": "menus",
+  "game": {
+    "version": "01.09",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "moto g67 power 5G",
+    "socId": "sm7435",
+    "socName": "SM7435",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 480,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Uncharted: The Lost Legacy™: observed boots during this test session. Measured native FPS: 2.2. Recorded duration: 408s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-33f76eaddd5b"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 2.21,
+    "testDurationSeconds": 408,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.02
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/01.webp",
+        "sha256": "39a59f0fd1519f9f0ab0c99e6739430be3e05a54fd6d5aa7778662ad23f1481e",
+        "caption": "Uncharted: The Lost Legacy™ — capture 1 · 2026-10-19T18:56:58.148Z"
+      },
+      {
+        "path": "assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/02.webp",
+        "sha256": "88004b1d9dc8a0b732f2b23e753839a47feca6f65dba59a0c03cf8fe694b84d1",
+        "caption": "Uncharted: The Lost Legacy™ — capture 2 · 2026-10-19T18:58:13.344Z"
+      },
+      {
+        "path": "assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
+        "sha256": "fa96f1b74d2eeacad7ca4fb787dd0b22725268956de9b863ebdb5b768f710b16",
+        "caption": "Uncharted: The Lost Legacy™ — capture 3 · 2026-10-19T19:02:06.488Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/logs/01-application.log.gz",
+        "sha256": "5384195ab0d4da8e8f7b0e3a1cd23a7c61c173b1cdc0058703694efd61ed28c1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/logs/02-shadps4.log.gz",
+        "sha256": "3278d9da5f48cd34fff791dc62b0ea711e567eaba1ffa6538cca6cafe19e46d7",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

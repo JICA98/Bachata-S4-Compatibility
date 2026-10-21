@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a1b41192a9b54202a6e00b2750fc3f60",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-20T12:22:31.240114Z",
+  "status": "menus",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 80,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 80,
+      "gpu.internal_screen_width": 1100,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-patch-854x480",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 78.6. Recorded duration: 282s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c71b499cbf7a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 78.56,
+    "testDurationSeconds": 282,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 61.76
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/01.webp",
+        "sha256": "32446264c7a67be3027b0ee4b2560b9273fbd722b0df3481f65230c52de516e1",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-20T12:22:30.926Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/02.webp",
+        "sha256": "0ca371433b96b9fdfa94f5c0251d94d2a6feafe5635d6c3d669d105ccf437192",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-20T12:23:44.942Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/screenshots/03.webp",
+        "sha256": "d0dc7843c759a35621890e893c5b037e5539d9fea235846b8e18e0e267dfe27e",
+        "caption": "God of War III Remastered — capture 3 · 2026-10-20T12:24:47.950Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/logs/01-application.log.gz",
+        "sha256": "3a1b4b2c32fe9c1d4167a21ae46030bf6f68088227a45a350ba2140c2f745d59",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_a1b41192a9b54202a6e00b2750fc3f60/logs/02-shadps4.log.gz",
+        "sha256": "040757b45d7a827d7e723607e216b4eaf2d37619287e5a314e43085cbcfb9423",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
