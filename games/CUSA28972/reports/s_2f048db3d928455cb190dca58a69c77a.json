@@ -3,7 +3,7 @@
   "reportId": "s_2f048db3d928455cb190dca58a69c77a",
   "cusaId": "CUSA28972",
   "testedAt": "2026-10-21T16:55:14.900172Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "JoJo's Bizarre Adventure: All-Star Battle R: observed playable during this test session. Measured native FPS: 49.2. Recorded duration: 282s.",
+    "summary": "JoJo's Bizarre Adventure: All-Star Battle R: observed ingame during this test session. Measured native FPS: 49.2. Recorded duration: 282s.",
     "notes": "",
     "issues": []
   },
