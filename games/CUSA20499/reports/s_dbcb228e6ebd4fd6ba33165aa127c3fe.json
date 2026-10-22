@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_dbcb228e6ebd4fd6ba33165aa127c3fe",
+  "cusaId": "CUSA20499",
+  "testedAt": "2026-10-22T02:26:13.972814Z",
+  "status": "menus",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "Snapdragon 6 Gen 1",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 720,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Cuphead: observed menus during this test session. Measured native FPS: 51.9. Recorded duration: 40s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9607d8c1d90f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 51.86,
+    "testDurationSeconds": 40,
+    "framePacing": "stuttery"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/screenshots/01.webp",
+        "sha256": "6ec2e444cefab112ea3096867693f46da801d3a2455690702b90bb05225a51fa",
+        "caption": "Cuphead — capture 1 · 2026-10-22T02:26:13.662Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/logs/01-application.log.gz",
+        "sha256": "288a97d382487f71bc11b2ac2c87a22663700ad10d4972ecab59b7a4514aed49",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/logs/02-shadps4.log.gz",
+        "sha256": "1b3f5b92f47e12defabfb8ca65e42898eabfe53f8d85b9ea6281535169f181cc",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
