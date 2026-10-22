@@ -8,36 +8,36 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 0,
-    "status": "nothing",
+    "score": 45,
+    "status": "menus",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 51.86,
+      "max": 51.86,
+      "average": 51.86,
+      "sampleCount": 1
     }
   },
   "socs": {
     "sm6450": {
-      "score": 0,
-      "status": "nothing",
+      "score": 45,
+      "status": "menus",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
       "performance": {
-        "min": null,
-        "max": null,
-        "average": null,
-        "sampleCount": 0
+        "min": 51.86,
+        "max": 51.86,
+        "average": 51.86,
+        "sampleCount": 1
       },
       "recommendedSetup": null
     }
@@ -47,8 +47,77 @@
       "sm6450"
     ]
   },
-  "thumbnail": null,
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/screenshots/01.webp",
   "reports": [
+    {
+      "reportId": "s_dbcb228e6ebd4fd6ba33165aa127c3fe",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-22T02:26:13.972814Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "Snapdragon 6 Gen 1",
+        "gpu": "Adreno 710",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 720,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 51.86,
+        "nativeOnePercentLowFps": null,
+        "outputAverageFps": null,
+        "testDurationSeconds": 40,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Cuphead: observed menus during this test session. Measured native FPS: 51.9. Recorded duration: 40s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-9607d8c1d90f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/screenshots/01.webp",
+          "caption": "Cuphead — capture 1 · 2026-10-22T02:26:13.662Z"
+        }
+      ]
+    },
     {
       "reportId": "s_af1730e1c5c74366b46eb772fe13db68",
       "schemaVersion": 2,

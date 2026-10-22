@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T15:22:59Z",
+  "generatedAt": "2026-10-22T03:24:24Z",
   "currentRelease": "v0.2.5",
   "gameCount": 116,
   "games": [
@@ -2308,26 +2308,26 @@
       "cusaId": "CUSA20499",
       "title": "Cuphead",
       "general": {
-        "score": 0,
-        "status": "nothing",
+        "score": 45,
+        "status": "menus",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": null,
-          "max": null,
-          "average": null,
-          "sampleCount": 0
+          "min": 51.86,
+          "max": 51.86,
+          "average": 51.86,
+          "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": null,
-      "latestStatus": "nothing",
-      "latestTestedAt": "2026-09-30T19:46:44.284512Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/screenshots/01.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-22T02:26:13.972814Z"
     },
     {
       "cusaId": "CUSA24100",
