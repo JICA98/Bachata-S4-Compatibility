@@ -3,7 +3,7 @@
   "reportId": "s_ba2490800dc841379d65768b71d9122c",
   "cusaId": "CUSA01623",
   "testedAt": "2026-10-22T05:24:27.481539Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.02",
     "region": "North America"
@@ -90,7 +90,7 @@
     }
   ],
   "result": {
-    "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 24.0. Recorded duration: 1263s.",
+    "summary": "God of War III Remastered: observed ingame during this test session. Measured native FPS: 24.0. Recorded duration: 1263s.",
     "notes": "",
     "issues": []
   },
