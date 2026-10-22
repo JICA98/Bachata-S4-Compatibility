@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-22T03:24:24Z",
+  "generatedAt": "2026-10-22T03:24:45Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 116,
+  "gameCount": 117,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2478,6 +2478,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26967/s_eabac7ed0894484d900aa4cdd23e8709/screenshots/01.webp",
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-03T08:40:24.351402Z"
+    },
+    {
+      "cusaId": "CUSA28972",
+      "title": "JoJo's Bizarre Adventure: All-Star Battle R",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 47.92,
+          "max": 47.92,
+          "average": 47.92,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA28972/s_2f048db3d928455cb190dca58a69c77a/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-21T16:55:14.900172Z"
     },
     {
       "cusaId": "CUSA29952",

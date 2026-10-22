@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA28972",
+    "title": "JoJo's Bizarre Adventure: All-Star Battle R",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 47.92,
+      "max": 47.92,
+      "average": 47.92,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 47.92,
+        "max": 47.92,
+        "average": 47.92,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_2f048db3d928455cb190dca58a69c77a",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA28972/s_2f048db3d928455cb190dca58a69c77a/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_2f048db3d928455cb190dca58a69c77a",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-21T16:55:14.900172Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S928B",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 47.92,
+        "nativeOnePercentLowFps": 38.53,
+        "outputAverageFps": null,
+        "testDurationSeconds": 349,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "JoJo's Bizarre Adventure: All-Star Battle R: observed ingame during this test session. Measured native FPS: 49.2. Recorded duration: 282s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-20bbaefd5bc1",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA28972/s_2f048db3d928455cb190dca58a69c77a/screenshots/01.webp",
+          "caption": "JoJo's Bizarre Adventure: All-Star Battle R — capture 1 · 2026-10-21T16:55:14.718Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA28972/s_2f048db3d928455cb190dca58a69c77a/screenshots/02.webp",
+          "caption": "JoJo's Bizarre Adventure: All-Star Battle R — capture 2 · 2026-10-21T16:56:22.022Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA28972/s_2f048db3d928455cb190dca58a69c77a/screenshots/03.webp",
+          "caption": "JoJo's Bizarre Adventure: All-Star Battle R — capture 3 · 2026-10-21T16:58:05.386Z"
+        }
+      ]
+    }
+  ]
+}
