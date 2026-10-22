@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9f41705128924ca98a6c263000b97331",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-22T22:04:39.755440Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "OPD2514",
+    "socId": "sm8850p",
+    "socName": "Snapdragon 8 Elite Gen 5 (SM8850P)",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 960,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.12.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.12.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed nothing during this test session. Measured native FPS: 60.0. Recorded duration: 110s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-57596add986b"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 60,
+    "testDurationSeconds": 110,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 59.98
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_9f41705128924ca98a6c263000b97331/screenshots/01.webp",
+        "sha256": "e5defdb348b81e999c2fcf24c8b0043da5ca4a82ddfba93648cf8c790af66abe",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-22T22:04:39.468Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_9f41705128924ca98a6c263000b97331/logs/01-application.log.gz",
+        "sha256": "eb2f8e0281b86ef00f7d4af63ebd1762c2882ea8b17a73c2ef410d144beabfd0",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_9f41705128924ca98a6c263000b97331/logs/02-shadps4.log.gz",
+        "sha256": "e66b7a7bab18248defce067b9010fa2b306589133d5e64b8c5fe7ff83522da94",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
