@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_dcdc4bc71e6e48ae89e896d1192cf7fd",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-22T17:10:19.714917Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "unreleased",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "TECNO",
+    "model": "TECNO LJ9",
+    "socId": "mt6897",
+    "socName": "Dimensity 8300",
+    "gpu": "Mali-G615 MC6",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1866a5f65245"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_dcdc4bc71e6e48ae89e896d1192cf7fd/logs/01-application.log.gz",
+        "sha256": "f8e634b78e61b39604a492ff956635ed780d30822ca843654adbd0c130130893",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_dcdc4bc71e6e48ae89e896d1192cf7fd/logs/02-shadps4.log.gz",
+        "sha256": "bbb76bffe5145549fc8386833282cd12cafecb580aeaf13d9d6d41cc2673b18c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
