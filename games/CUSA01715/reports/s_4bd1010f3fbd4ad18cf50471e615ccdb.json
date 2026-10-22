@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4bd1010f3fbd4ad18cf50471e615ccdb",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-22T00:54:45.675645Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23122PCD1G",
+    "socId": "sm7435",
+    "socName": "Snapdragon 7s Gen 2",
+    "gpu": "Adreno 710",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-325a10f251e2e1fa",
+    "type": "turnip",
+    "name": "710 720 & 722 v4.3-exp-fix",
+    "version": "26.99.99",
+    "build": "325a10f251e2e1fa"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.neo_mode": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360
+    },
+    "driverId": "turnip-325a10f251e2e1fa",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 13.9. Recorded duration: 108s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-93df7d372836"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 13.88,
+    "testDurationSeconds": 108,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 8.31
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_4bd1010f3fbd4ad18cf50471e615ccdb/screenshots/01.webp",
+        "sha256": "3729160e6149e5a939c7f10b7c71d72bc1c30793fb3ef4450301ac22309e30c4",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-22T00:54:44.853Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_4bd1010f3fbd4ad18cf50471e615ccdb/logs/01-application.log.gz",
+        "sha256": "3c18287319fe2add0dad93e16e19e649b47e41ac6776a5495c39182b99a491e4",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_4bd1010f3fbd4ad18cf50471e615ccdb/logs/02-shadps4.log.gz",
+        "sha256": "7088750fb56355ce5ed35d5190b8ef7c50da14572689df3868969bb5a69ae0a3",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
