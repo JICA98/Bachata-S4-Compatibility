@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b708847ad9074dc395fa09b68cb011c9",
+  "cusaId": "CUSA08026",
+  "testedAt": "2026-10-23T10:07:40.505449Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Japan"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "初音ミク Project DIVA Future Tone DX: observed playable during this test session. Measured native FPS: 52.8. Recorded duration: 349s.",
+    "notes": "Sometimes visual bugs on menus, but not during gameplay, non-obstructive",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-12ad9e11854a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 52.76,
+    "testDurationSeconds": 349,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 26.9
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/01.webp",
+        "sha256": "cbbf1eb9f5158f46dc17ad66a7f828a11ab4734846eba12a371727b07578ab9a",
+        "caption": "初音ミク Project DIVA Future Tone DX — capture 1 · 2026-10-23T10:07:40.312Z"
+      },
+      {
+        "path": "assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/02.webp",
+        "sha256": "32bc0a14cd6dc246d4913c2ebcd55d011fcd5be3ab9a1b2873cd79a0a23ec8c1",
+        "caption": "初音ミク Project DIVA Future Tone DX — capture 2 · 2026-10-23T10:08:51.312Z"
+      },
+      {
+        "path": "assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/03.webp",
+        "sha256": "3a5fd1721d8715610e00e0d56875422f5551eec583ed90e2c583b289f83f0b7b",
+        "caption": "初音ミク Project DIVA Future Tone DX — capture 3 · 2026-10-23T10:11:21.168Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/logs/01-application.log.gz",
+        "sha256": "4eae5631a878c2dd61321a34dba6ec9fefd487b0e4797085729af0613927cb9f",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/logs/02-shadps4.log.gz",
+        "sha256": "51aeae8232930439c51afd7ec7cc1d48129d7f7bb721754e041cb26144282cbb",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

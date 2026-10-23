@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA08026",
+  "title": "初音ミク Project DIVA Future Tone DX",
+  "region": "Japan",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 666
+  },
+  "legacyIssues": []
+}
