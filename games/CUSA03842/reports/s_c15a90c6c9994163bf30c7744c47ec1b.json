@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c15a90c6c9994163bf30c7744c47ec1b",
+  "cusaId": "CUSA03842",
+  "testedAt": "2026-10-23T11:37:00.487634Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "OPD2514",
+    "socId": "sm8850p",
+    "socName": "SM8850P",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "RESIDENT EVIL 7 biohazard: observed boots during this test session. Measured native FPS: 55.6. Recorded duration: 104s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-08b41b19055e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 55.55,
+    "testDurationSeconds": 104,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 33.58
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA03842/s_c15a90c6c9994163bf30c7744c47ec1b/screenshots/01.webp",
+        "sha256": "c49f16d1e13c7e3eedddf54c3cec4965c809e5c12e8041c1f943299f141f50b2",
+        "caption": "RESIDENT EVIL 7 biohazard — capture 1 · 2026-10-23T11:37:00.071Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA03842/s_c15a90c6c9994163bf30c7744c47ec1b/logs/01-application.log.gz",
+        "sha256": "7b800dd516bdd4093ebb8071f8c64d129917b669ef5343e0387c3c7801dcf5f2",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA03842/s_c15a90c6c9994163bf30c7744c47ec1b/logs/02-shadps4.log.gz",
+        "sha256": "80efea9c12319521b0266f41c00aad3164788d93f72af65145f8024263950c2f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
