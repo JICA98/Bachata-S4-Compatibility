@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_dd46f64e9795425788cb4c24a654bab7",
+  "cusaId": "CUSA48310",
+  "testedAt": "2026-10-23T02:35:05.415134Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-A366E",
+    "socId": "sm6475",
+    "socName": "SM6475",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 6
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "A366EXXSCCZH3",
+    "build": "BP4A.251205.006.A366EXXSCCZH3"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 540,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_height": 540
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA48310: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7c3946c0a3e3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA48310/s_dd46f64e9795425788cb4c24a654bab7/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "Poppy Playtime: Chapter 3 By Haider Kiara — capture 1 · 2026-10-23T02:35:04.950Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA48310/s_dd46f64e9795425788cb4c24a654bab7/logs/01-application.log.gz",
+        "sha256": "238b352e5058f38d547de695c9324852ad91c5b482af4181b68a7e601e8cfdb1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA48310/s_dd46f64e9795425788cb4c24a654bab7/logs/02-shadps4.log.gz",
+        "sha256": "b262c6d65ea79398faf736db9acc02cd318d480d9c2ea5cfd46164ad2fe15b8b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
