@@ -3,7 +3,7 @@
   "reportId": "s_804c262551ae41568b89548907a8c326",
   "cusaId": "CUSA08801",
   "testedAt": "2026-10-24T06:24:06.767006Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.08",
     "region": "North America"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Undertale: observed playable during this test session. Measured native FPS: 29.9. Recorded duration: 169s.",
+    "summary": "Undertale: observed ingame during this test session. Measured native FPS: 29.9. Recorded duration: 169s.",
     "notes": "",
     "issues": []
   },
