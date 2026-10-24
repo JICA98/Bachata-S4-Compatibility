@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4468b4bb11ad4b418ffd09c860217973",
+  "cusaId": "CUSA00093",
+  "testedAt": "2026-10-24T23:22:38.900386Z",
+  "status": "playable",
+  "game": {
+    "version": "01.28",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24122RKC7G",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "60-fps-with-deltatime",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "60-fps-with-fixed-tickrate",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "DRIVECLUB™: observed playable during this test session. Measured native FPS: 15.8. Recorded duration: 227s.",
+    "notes": "",
+    "issues": [
+      "camera-bugs.-need-v1.68"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-8ae31f3b7e56"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.23,
+    "testDurationSeconds": 294,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 4.59
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/screenshots/01.webp",
+        "sha256": "e1ebfd5ac2f95400c512a8928d5ceae430c578e60ee8ae732f823bd3f9375c3b",
+        "caption": "DRIVECLUB™ — capture 1 · 2026-10-24T23:22:38.404Z"
+      },
+      {
+        "path": "assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/screenshots/02.webp",
+        "sha256": "cebd191b3ff6c4c1884c056c388ea919b3d0687f1f05395584e6ed6bf3d1052b",
+        "caption": "DRIVECLUB™ — capture 2 · 2026-10-24T23:23:40.552Z"
+      },
+      {
+        "path": "assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/screenshots/03.webp",
+        "sha256": "51d07fd9d99f41fd93800d73c0dead64f11acf3addd5c0603b5c9be264280be9",
+        "caption": "DRIVECLUB™ — capture 3 · 2026-10-24T23:25:03.056Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/logs/01-application.log.gz",
+        "sha256": "50e32240fb4c1efd6e85126a45c6b0d1c9bcb5e314a90ed6a518c279c775278e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/logs/02-shadps4.log.gz",
+        "sha256": "d4413b9c4e125f0b380de20973a6c68d38a877422510164bdb5631eb7c8cf8a4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
