@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-24T03:39:38Z",
+  "generatedAt": "2026-10-24T09:21:55Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 118,
+  "gameCount": 119,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1578,6 +1578,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08692/20260802T043608Z-v0-1-6-oneplus-13-snapdragon-8-elite-mesa-turnip-26-3-0-devel/screenshots/02.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-08-02T04:36:08Z"
+    },
+    {
+      "cusaId": "CUSA08801",
+      "title": "Undertale",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.93,
+          "max": 29.93,
+          "average": 29.93,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08801/s_804c262551ae41568b89548907a8c326/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-24T06:24:06.767006Z"
     },
     {
       "cusaId": "CUSA08809",
