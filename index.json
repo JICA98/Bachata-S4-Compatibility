@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-24T09:21:55Z",
+  "generatedAt": "2026-10-24T15:20:46Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 119,
+  "gameCount": 120,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2853,6 +2853,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA47999/s_bfbc217e6d634a998c4361785c57b7b1/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-15T23:19:27.411633Z"
+    },
+    {
+      "cusaId": "CUSA50828",
+      "title": "Teenage Mutant Ninja Turtles: Splintered Fate",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 42.05,
+          "max": 42.05,
+          "average": 42.05,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-24T11:51:33.584247Z"
     },
     {
       "cusaId": "CUSA52139",
