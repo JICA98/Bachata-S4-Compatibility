@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_72f3ee92b54042b2ab77dded09422a35",
+  "cusaId": "CUSA50828",
+  "testedAt": "2026-10-24T11:51:33.584247Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.08",
+    "region": "Unknown"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA50828: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-4d1b3c0d50b0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 42.05,
+    "testDurationSeconds": 316,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 27.46
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/screenshots/01.webp",
+        "sha256": "05fc3b236ab388e47406035b259091ce6e7a36c142caf7965156493be4f4c772",
+        "caption": "Teenage Mutant Ninja Turtles: Splintered Fate — capture 1 · 2026-10-24T11:51:33.496Z"
+      },
+      {
+        "path": "assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/screenshots/02.webp",
+        "sha256": "781a192bf356c628baa481054d6971d514f2242d1711c94e4d4ef9d300b40202",
+        "caption": "Teenage Mutant Ninja Turtles: Splintered Fate — capture 2 · 2026-10-24T11:52:52.260Z"
+      },
+      {
+        "path": "assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/screenshots/03.webp",
+        "sha256": "8f755f4b5e8b1d6dbbf415092176e5d1338b41615161b972ca7f2ae3c4dacfc8",
+        "caption": "Teenage Mutant Ninja Turtles: Splintered Fate — capture 3 · 2026-10-24T11:54:51.228Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/logs/01-application.log.gz",
+        "sha256": "7c40fb08b37137bb0e3e9fb9ce14312e57ba98c0c986c8a8ef44cc94d9854273",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA50828/s_72f3ee92b54042b2ab77dded09422a35/logs/02-shadps4.log.gz",
+        "sha256": "2a28fa9d963c48c8991cffc59488e5238de7719e2cf48016051168f617cefc76",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
