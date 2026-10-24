@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA08026",
+    "title": "Hatsune Miku: Project DIVA Future Tone DX",
+    "region": "Japan",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 52.76,
+      "max": 52.76,
+      "average": 52.76,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 52.76,
+        "max": 52.76,
+        "average": 52.76,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_b708847ad9074dc395fa09b68cb011c9",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_b708847ad9074dc395fa09b68cb011c9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-23T10:07:40.505449Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S928B",
+        "socId": "sm8650",
+        "socName": "SM8650",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 52.76,
+        "nativeOnePercentLowFps": 26.9,
+        "outputAverageFps": null,
+        "testDurationSeconds": 349,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "初音ミク Project DIVA Future Tone DX: observed playable during this test session. Measured native FPS: 52.8. Recorded duration: 349s.",
+        "notes": "Sometimes visual bugs on menus, but not during gameplay, non-obstructive",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-12ad9e11854a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/01.webp",
+          "caption": "初音ミク Project DIVA Future Tone DX — capture 1 · 2026-10-23T10:07:40.312Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/02.webp",
+          "caption": "初音ミク Project DIVA Future Tone DX — capture 2 · 2026-10-23T10:08:51.312Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/03.webp",
+          "caption": "初音ミク Project DIVA Future Tone DX — capture 3 · 2026-10-23T10:11:21.168Z"
+        }
+      ]
+    }
+  ]
+}

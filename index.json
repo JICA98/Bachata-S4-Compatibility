@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-23T15:23:12Z",
+  "generatedAt": "2026-10-24T03:39:38Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 117,
+  "gameCount": 118,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1453,6 +1453,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
       "latestStatus": "menus",
       "latestTestedAt": "2026-10-19T18:56:59.317888Z"
+    },
+    {
+      "cusaId": "CUSA08026",
+      "title": "Hatsune Miku: Project DIVA Future Tone DX",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 52.76,
+          "max": 52.76,
+          "average": 52.76,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA08026/s_b708847ad9074dc395fa09b68cb011c9/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-23T10:07:40.505449Z"
     },
     {
       "cusaId": "CUSA08252",
