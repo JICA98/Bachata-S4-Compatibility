@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_780fbc9f4ab94de1a5ab8d6b95b7dd87",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-24T21:44:32.443807Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
+  },
+  "device": {
+    "manufacturer": "TECNO",
+    "model": "TECNO CM8",
+    "socId": "mt6897",
+    "socName": "Dimensity 8300",
+    "gpu": "Mali-G615 MC6",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ca0223fadf20b983",
+    "type": "turnip",
+    "name": "PanVK G615_787d324",
+    "version": "msf:36861",
+    "build": "ca0223fadf20b983"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ca0223fadf20b983",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.09.30.13399220021802570842"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.09.30.13399220021802570842"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 13.5. Recorded duration: 105s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-86a7bdd1f25e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "performance": {
+    "nativeAverageFps": 13.52,
+    "testDurationSeconds": 105,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 7.09
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_780fbc9f4ab94de1a5ab8d6b95b7dd87/screenshots/01.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-24T21:44:32.100Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_780fbc9f4ab94de1a5ab8d6b95b7dd87/screenshots/02.webp",
+        "sha256": "915c6326f3aba7d7397fcee1c8e9ba0cecd63c9d028d40a69881c8741b94bf86",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-24T21:45:36.868Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_780fbc9f4ab94de1a5ab8d6b95b7dd87/logs/01-application.log.gz",
+        "sha256": "980f5945090f4da7c5595677ae7b629cd9e4cbb1099899c7f6e3ddb02be992ae",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_780fbc9f4ab94de1a5ab8d6b95b7dd87/logs/02-shadps4.log.gz",
+        "sha256": "5c77a8a45632dc35952b4f60dcd045a8e72dcb6842a771b275d1160842516782",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
