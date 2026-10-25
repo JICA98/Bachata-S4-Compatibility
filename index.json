@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-24T15:20:46Z",
+  "generatedAt": "2026-10-25T03:31:05Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 120,
+  "gameCount": 121,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -103,6 +103,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00076/s_e25db1385c974a9390ee08f115fc9b62/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-18T04:28:15.714446Z"
+    },
+    {
+      "cusaId": "CUSA00093",
+      "title": "DRIVECLUB",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 15.23,
+          "max": 15.23,
+          "average": 15.23,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00093/s_4468b4bb11ad4b418ffd09c860217973/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-24T23:22:38.900386Z"
     },
     {
       "cusaId": "CUSA00184",
