@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T03:31:05Z",
+  "generatedAt": "2026-10-26T03:22:57Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 121,
+  "gameCount": 122,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1178,6 +1178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04885/s_4c3b80760d894b7bb50c6bb26751bb87/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-06T01:11:31.833973Z"
+    },
+    {
+      "cusaId": "CUSA04909",
+      "title": "JoJo's Bizarre Adventure: Eyes of Heaven",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 22.4,
+          "max": 22.4,
+          "average": 22.4,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-25T21:02:44.496994Z"
     },
     {
       "cusaId": "CUSA05010",
