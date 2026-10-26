@@ -3,7 +3,7 @@
   "reportId": "s_bd37c6edd66c4206b587c9528da7b65b",
   "cusaId": "CUSA04909",
   "testedAt": "2026-10-25T21:02:44.496994Z",
-  "status": "boots",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -57,7 +57,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "JoJo's Bizarre Adventure: Eyes of Heaven: observed boots during this test session. Measured native FPS: 22.4. Recorded duration: 321s.",
+    "summary": "JoJo's Bizarre Adventure: Eyes of Heaven: observed ingame during this test session. Measured native FPS: 22.4. Recorded duration: 321s.",
     "notes": "",
     "issues": []
   },
