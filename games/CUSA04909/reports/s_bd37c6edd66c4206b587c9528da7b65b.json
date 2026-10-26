@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bd37c6edd66c4206b587c9528da7b65b",
+  "cusaId": "CUSA04909",
+  "testedAt": "2026-10-25T21:02:44.496994Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "8eb03d9e95484a44836e775cd3894bc7ab740325"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23049PCD8G",
+    "socId": "sm7475",
+    "socName": "SM7475",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1200,
+      "gpu.internal_screen_height": 544,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 1200,
+      "gpu.internal_screen_height": 544
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "JoJo's Bizarre Adventure: Eyes of Heaven: observed ingame during this test session. Measured native FPS: 22.4. Recorded duration: 321s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-74c6f382e948"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 22.4,
+    "testDurationSeconds": 321,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 11.05
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/screenshots/01.webp",
+        "sha256": "53df31c795931c96013be7eaf6f9b17711574fe25abb82680bb4e17b0e3067ff",
+        "caption": "JoJo's Bizarre Adventure: Eyes of Heaven — capture 1 · 2026-10-25T21:02:44.150Z"
+      },
+      {
+        "path": "assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/screenshots/02.webp",
+        "sha256": "e41c4aebbcd9a0479bc000e6383a00b44cb7c57bf2421d148ade7692b5813627",
+        "caption": "JoJo's Bizarre Adventure: Eyes of Heaven — capture 2 · 2026-10-25T21:03:49.418Z"
+      },
+      {
+        "path": "assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/screenshots/03.webp",
+        "sha256": "4682aec74b61d06f812241c8199f5d9ea776b61f3dcc473cf5cdf15d22cdf254",
+        "caption": "JoJo's Bizarre Adventure: Eyes of Heaven — capture 3 · 2026-10-25T21:05:06.966Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/logs/01-application.log.gz",
+        "sha256": "b862f9484f3ad50a05fef8b2728544ad9838855c075eb41c18bb2ff58e202936",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA04909/s_bd37c6edd66c4206b587c9528da7b65b/logs/02-shadps4.log.gz",
+        "sha256": "594f7df0ad9ff3d1c687071f97574cfe1b0f9144b5ffefeea8441d4cac1af399",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}

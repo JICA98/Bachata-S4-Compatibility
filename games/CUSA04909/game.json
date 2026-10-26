@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA04909",
+  "title": "JoJo's Bizarre Adventure: Eyes of Heaven",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 694
+  },
+  "legacyIssues": []
+}
