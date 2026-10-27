@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e012ed74b6074567a67d2720832ea2f2",
+  "cusaId": "CUSA36847",
+  "testedAt": "2026-10-27T17:16:38.101915Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX799J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA36847: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-ed708345b842"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 32.76,
+    "testDurationSeconds": 53,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 25.88
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA36847/s_e012ed74b6074567a67d2720832ea2f2/screenshots/01.webp",
+        "sha256": "2ca78e967aeb39dfc84b4ee6bedd5535f7ed06d905a4897d588c33330979a94c",
+        "caption": "Lies of P — capture 1 · 2026-10-27T17:16:36.666Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA36847/s_e012ed74b6074567a67d2720832ea2f2/logs/01-application.log.gz",
+        "sha256": "6859f724e05e74490ccc69e252234656d5d8f6e3ccf826927c597e2faf187f67",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA36847/s_e012ed74b6074567a67d2720832ea2f2/logs/02-shadps4.log.gz",
+        "sha256": "2ffd3258f359c3cb96fcd68d0544dc737725a37eb3fa6df028d30513e0736fc0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
