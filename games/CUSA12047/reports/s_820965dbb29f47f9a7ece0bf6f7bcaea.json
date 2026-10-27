@@ -3,7 +3,7 @@
   "reportId": "s_820965dbb29f47f9a7ece0bf6f7bcaea",
   "cusaId": "CUSA12047",
   "testedAt": "2026-10-26T16:43:37.139567Z",
-  "status": "ingame",
+  "status": "boots",
   "game": {
     "version": "01.00",
     "region": "North America"
@@ -54,7 +54,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Sekiro: Shadows Die Twice: observed ingame during this test session. Measured native FPS: 29.3. Recorded duration: 166s.",
+    "summary": "Sekiro: Shadows Die Twice: observed boots during this test session. Measured native FPS: 29.3. Recorded duration: 166s.",
     "notes": "",
     "issues": []
   },
