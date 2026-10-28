@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7323c9c3dad24219bdc3d65eb2329c2c",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-28T07:32:31.877578Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2410CRP4CG",
+    "socId": "sm7675",
+    "socName": "Snapdragon 7+ Gen 3",
+    "gpu": "Adreno 732",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "OS3.0.304.0.WOZMIXM",
+    "build": "BP2A.250605.031.A3"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: Incomplete game dump: sce_module/libc.prx is missing (the game requires it), or an add-on folder was launched as a game. Session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7abe73caa5c1"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_7323c9c3dad24219bdc3d65eb2329c2c/logs/01-application.log.gz",
+        "sha256": "4220437470f8b1ea8537f8d28008ac8676c112acde0d11cb9632ff4862591a73",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_7323c9c3dad24219bdc3d65eb2329c2c/logs/02-shadps4.log.gz",
+        "sha256": "9aa9b95d103d6fd08b2f276b17447c1f021bb4a900956e051f4e33a8d540acd6",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
