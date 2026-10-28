@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_21ffed48dfd14a1e99e66ac1b42ddecb",
+  "cusaId": "CUSA11550",
+  "testedAt": "2026-10-28T21:42:23.523789Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA11550: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-44e2ca9b65d3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 27.7,
+    "testDurationSeconds": 258,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 23.25
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11550/s_21ffed48dfd14a1e99e66ac1b42ddecb/screenshots/01.webp",
+        "sha256": "8bb95fac0cc929ba5aedb3aea2937b8142fd49f06fd6d15cdc698065f3fff83d",
+        "caption": "LEGO® DC Super-Villains — capture 1 · 2026-10-28T21:42:23.400Z"
+      },
+      {
+        "path": "assets/CUSA11550/s_21ffed48dfd14a1e99e66ac1b42ddecb/screenshots/02.webp",
+        "sha256": "02a47be5cb8630a2ce7a9a7d13b7d167aeea77f6ff9f25c2816250ff5e1e36b5",
+        "caption": "LEGO® DC Super-Villains — capture 2 · 2026-10-28T21:43:26.492Z"
+      },
+      {
+        "path": "assets/CUSA11550/s_21ffed48dfd14a1e99e66ac1b42ddecb/screenshots/03.webp",
+        "sha256": "407761e830f4285df6a03b8896942f0edca331d4a90f93897e360fcd2b5c72ef",
+        "caption": "LEGO® DC Super-Villains — capture 3 · 2026-10-28T21:45:05.296Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11550/s_21ffed48dfd14a1e99e66ac1b42ddecb/logs/01-application.log.gz",
+        "sha256": "6804b12fb233fbb5c111f4743627ec60391ec185178efc2a46856db0dac103fb",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11550/s_21ffed48dfd14a1e99e66ac1b42ddecb/logs/02-shadps4.log.gz",
+        "sha256": "237f44305de6d7176a882c59799fc6cfab593e006e77d249396f316011496db6",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
