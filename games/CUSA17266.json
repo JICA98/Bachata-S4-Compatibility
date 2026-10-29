@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA17266",
+    "title": "Assetto Corsa Competizione",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 21.55,
+      "max": 21.55,
+      "average": 21.55,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 21.55,
+        "max": 21.55,
+        "average": 21.55,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_7579bf5b5ac949c39cb0ff5a814f8c8b",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-2bbb279a3da76805",
+          "type": "turnip",
+          "name": "Turnip Gen8 V38-patched",
+          "version": "Turnip_Gen8_V38_Patched.zip",
+          "build": "2bbb279a3da76805"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-2bbb279a3da76805",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_7579bf5b5ac949c39cb0ff5a814f8c8b",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-29T04:14:14.187029Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.12",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-2bbb279a3da76805",
+        "type": "turnip",
+        "name": "Turnip Gen8 V38-patched",
+        "version": "Turnip_Gen8_V38_Patched.zip",
+        "build": "2bbb279a3da76805"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-2bbb279a3da76805",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 21.55,
+        "nativeOnePercentLowFps": 8.92,
+        "outputAverageFps": null,
+        "testDurationSeconds": 612,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Assetto Corsa Competizione: observed ingame during this test session. Measured native FPS: 21.6. Recorded duration: 612s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-1483727f9626",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/01.webp",
+          "caption": "Assetto Corsa Competizione — capture 1 · 2026-10-29T04:14:14.030Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/02.webp",
+          "caption": "Assetto Corsa Competizione — capture 2 · 2026-10-29T04:15:50.986Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/03.webp",
+          "caption": "Assetto Corsa Competizione — capture 3 · 2026-10-29T04:17:54.774Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T03:21:45Z",
+  "generatedAt": "2026-10-29T09:21:42Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 123,
+  "gameCount": 124,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2228,6 +2228,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-30T19:47:53.175684Z"
+    },
+    {
+      "cusaId": "CUSA17266",
+      "title": "Assetto Corsa Competizione",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 21.55,
+          "max": 21.55,
+          "average": 21.55,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-29T04:14:14.187029Z"
     },
     {
       "cusaId": "CUSA17374",
