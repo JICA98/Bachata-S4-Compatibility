@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7579bf5b5ac949c39cb0ff5a814f8c8b",
+  "cusaId": "CUSA17266",
+  "testedAt": "2026-10-29T04:14:14.187029Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.12",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-2bbb279a3da76805",
+    "type": "turnip",
+    "name": "Turnip Gen8 V38-patched",
+    "version": "Turnip_Gen8_V38_Patched.zip",
+    "build": "2bbb279a3da76805"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2bbb279a3da76805",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Assetto Corsa Competizione: observed ingame during this test session. Measured native FPS: 21.6. Recorded duration: 612s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 21.55,
+    "testDurationSeconds": 612,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 8.92
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/01.webp",
+        "sha256": "68fde96d8be642b0aee43d5c46942e3bb10fa89bfb5a55e05aafced69de70fb2",
+        "caption": "Assetto Corsa Competizione — capture 1 · 2026-10-29T04:14:14.030Z"
+      },
+      {
+        "path": "assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/02.webp",
+        "sha256": "cd9a61e2bb0e8fd620bd7b0fb8c19bf860d6a6def45fc024a7f9c652816e59e4",
+        "caption": "Assetto Corsa Competizione — capture 2 · 2026-10-29T04:15:50.986Z"
+      },
+      {
+        "path": "assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/screenshots/03.webp",
+        "sha256": "2b4e40a5190094140cfe3a99b233ef4f949fc68a41ce40d1f32159e340a4f58a",
+        "caption": "Assetto Corsa Competizione — capture 3 · 2026-10-29T04:17:54.774Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/logs/01-application.log.gz",
+        "sha256": "45ae6da3abb18ade38c76b94eebaaf3cc74dbcc63a841af5df012e40b54bca66",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA17266/s_7579bf5b5ac949c39cb0ff5a814f8c8b/logs/02-shadps4.log.gz",
+        "sha256": "b02da18d0cc13c8d8b663be4a4a4b78a84ac9d052bf8f7c30d9847ada23f29a1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
