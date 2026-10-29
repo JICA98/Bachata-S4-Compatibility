@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_75427bef3bc24b95ab458d742ce6fc54",
+  "cusaId": "CUSA06884",
+  "testedAt": "2026-10-29T05:58:33.176538Z",
+  "status": "menus",
+  "game": {
+    "version": "01.04",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 50 fusion",
+    "socId": "sm6450",
+    "socName": "SM6450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA06884: session ended at SESSION_STOPPING; exit code unavailable. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8e3b90395d46"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 12.43,
+    "testDurationSeconds": 86,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 2.74
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/screenshots/01.webp",
+        "sha256": "688e75280c0f22b29526a66f5048b4ad86a1982c0dd3a8ac46cb34ed9c2b3b7b",
+        "caption": "The Walking Dead: A New Frontier — capture 1 · 2026-10-29T05:58:31.631Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/logs/01-application.log.gz",
+        "sha256": "d31516b109b5f8bcd8620a50afb08da8f354003a41542e0880fa935b6d566127",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/logs/02-shadps4.log.gz",
+        "sha256": "0ffb26b327cfd11f557988cdab6e39fb8f2e52e288d908cd72cb72e9ac9795ba",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
