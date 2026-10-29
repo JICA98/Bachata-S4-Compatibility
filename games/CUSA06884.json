@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA06884",
+    "title": "The Walking Dead: A New Frontier",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 45,
+    "status": "menus",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 12.43,
+      "max": 12.43,
+      "average": 12.43,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm6450": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 12.43,
+        "max": 12.43,
+        "average": 12.43,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm6450"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/screenshots/01.webp",
+  "reports": [
+    {
+      "reportId": "s_75427bef3bc24b95ab458d742ce6fc54",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-29T05:58:33.176538Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.04",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola edge 50 fusion",
+        "socId": "sm6450",
+        "socName": "SM6450",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 12.43,
+        "nativeOnePercentLowFps": 2.74,
+        "outputAverageFps": null,
+        "testDurationSeconds": 86,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA06884: session ended at SESSION_STOPPING; exit code unavailable. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-8e3b90395d46",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/screenshots/01.webp",
+          "caption": "The Walking Dead: A New Frontier — capture 1 · 2026-10-29T05:58:31.631Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-29T09:21:42Z",
+  "generatedAt": "2026-10-29T09:21:56Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 124,
+  "gameCount": 125,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -1353,6 +1353,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-01T11:49:24.599451Z"
+    },
+    {
+      "cusaId": "CUSA06884",
+      "title": "The Walking Dead: A New Frontier",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 12.43,
+          "max": 12.43,
+          "average": 12.43,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06884/s_75427bef3bc24b95ab458d742ce6fc54/screenshots/01.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-29T05:58:33.176538Z"
     },
     {
       "cusaId": "CUSA07010",
