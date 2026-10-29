@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e05a19547fe54392a7db3c41b5251322",
+  "cusaId": "CUSA13801",
+  "testedAt": "2026-10-29T22:49:02.750754Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB710FU",
+    "socId": "sm8650q",
+    "socName": "SM8650Q",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-27e400a39cae06ac",
+    "type": "turnip",
+    "name": "Turnip A8XX Draft",
+    "version": "25.99.99",
+    "build": "27e400a39cae06ac"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-27e400a39cae06ac",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Sekiro: Shadows Die Twice: observed boots during this test session. Measured native FPS: 27.6. Recorded duration: 48s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-81c6e4794ace"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 27.6,
+    "testDurationSeconds": 48,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13801/s_e05a19547fe54392a7db3c41b5251322/logs/01-application.log.gz",
+        "sha256": "37c549a19f4e96dae8d88e54319d71d6d1c8318f154df4c7c818a77ee026218b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13801/s_e05a19547fe54392a7db3c41b5251322/logs/02-shadps4.log.gz",
+        "sha256": "305db42bf8d341c73b169904594eee5f483fe8155855b517894205d27e2a45f4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
