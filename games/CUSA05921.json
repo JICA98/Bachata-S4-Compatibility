@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA05921",
+    "title": "Ride 2",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 30.58,
+      "max": 30.58,
+      "average": 30.58,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 30.58,
+        "max": 30.58,
+        "average": 30.58,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_5ad8bb60b9d340328d1be121e898a195",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_5ad8bb60b9d340328d1be121e898a195",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-30T06:54:03.312511Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.06",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 30.58,
+        "nativeOnePercentLowFps": 26.43,
+        "outputAverageFps": null,
+        "testDurationSeconds": 867,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Ride 2: observed playable during this test session. Measured native FPS: 30.6. Recorded duration: 867s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-1483727f9626",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/01.webp",
+          "caption": "Ride 2 — capture 1 · 2026-10-30T06:54:03.071Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/02.webp",
+          "caption": "Ride 2 — capture 2 · 2026-10-30T07:00:34.827Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/03.webp",
+          "caption": "Ride 2 — capture 3 · 2026-10-30T07:03:47.867Z"
+        }
+      ]
+    }
+  ]
+}
