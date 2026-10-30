@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T09:30:22Z",
+  "generatedAt": "2026-10-30T09:30:38Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 128,
+  "gameCount": 129,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1353,6 +1353,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-02T01:47:04.077901Z"
+    },
+    {
+      "cusaId": "CUSA06534",
+      "title": "EA SPORTS UFC 3",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 28.81,
+          "max": 28.81,
+          "average": 28.81,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-30T08:38:09.686733Z"
     },
     {
       "cusaId": "CUSA06621",

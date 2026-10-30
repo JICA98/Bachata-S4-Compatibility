@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA06534",
+    "title": "EA SPORTS UFC 3",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 28.81,
+      "max": 28.81,
+      "average": 28.81,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 28.81,
+        "max": 28.81,
+        "average": 28.81,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_fa2d972bf9414304af481334f2761cc9",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "SAFE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-crowd-plus-5-10-fps-0114",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-motion-blur-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-motion-blur-0114",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-fixing-the-floor-in-the-octagon-0114",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-0-force-cpu-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-0-force-cpu-0114",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-skinning-method-2-force-gpu-compute-0114",
+            "revision": "2026.10.14.11637158210346386359"
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_fa2d972bf9414304af481334f2761cc9",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-30T08:38:09.686733Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.14",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-crowd-plus-5-10-fps-0114",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-motion-blur-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-motion-blur-0114",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-fixing-the-floor-in-the-octagon-0114",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-0-force-cpu-0114",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-skinning-method-2-force-gpu-compute-0114",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 28.81,
+        "nativeOnePercentLowFps": 24.39,
+        "outputAverageFps": null,
+        "testDurationSeconds": 278,
+        "framePacing": "smooth"
+      },
+      "result": {
+        "summary": "EA SPORTS™ UFC® 3: observed playable during this test session. Measured native FPS: 28.8. Recorded duration: 278s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-1483727f9626",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/01.webp",
+          "caption": "EA SPORTS™ UFC® 3 — capture 1 · 2026-10-30T08:38:09.395Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/02.webp",
+          "caption": "EA SPORTS™ UFC® 3 — capture 2 · 2026-10-30T08:39:28.687Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/03.webp",
+          "caption": "EA SPORTS™ UFC® 3 — capture 3 · 2026-10-30T08:41:20.707Z"
+        }
+      ]
+    }
+  ]
+}
