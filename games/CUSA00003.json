@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA00003",
+    "title": "DRIVECLUB",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 17.83,
+      "max": 17.83,
+      "average": 17.83,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 17.83,
+        "max": 17.83,
+        "average": 17.83,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_2809b2f4da3e4eb88046bdb34a92e309",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "mojo-26.1-v2",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_2809b2f4da3e4eb88046bdb34a92e309",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-30T07:39:08.934170Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.28",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "mojo-26.1-v2",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 17.83,
+        "nativeOnePercentLowFps": 11.19,
+        "outputAverageFps": null,
+        "testDurationSeconds": 524,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "DRIVECLUB™: observed playable during this test session. Measured native FPS: 17.8. Recorded duration: 524s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-1483727f9626",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/01.webp",
+          "caption": "DRIVECLUB™ — capture 1 · 2026-10-30T07:39:08.735Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/02.webp",
+          "caption": "DRIVECLUB™ — capture 2 · 2026-10-30T07:42:07.423Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/03.webp",
+          "caption": "DRIVECLUB™ — capture 3 · 2026-10-30T07:44:35.919Z"
+        }
+      ]
+    }
+  ]
+}

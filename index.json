@@ -1,9 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T09:30:07Z",
+  "generatedAt": "2026-10-30T09:30:22Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 127,
+  "gameCount": 128,
   "games": [
+    {
+      "cusaId": "CUSA00003",
+      "title": "DRIVECLUB",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 17.83,
+          "max": 17.83,
+          "average": 17.83,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-10-30T07:39:08.934170Z"
+    },
     {
       "cusaId": "CUSA00004",
       "title": "inFAMOUS™ Second Son",
