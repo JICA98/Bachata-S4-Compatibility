@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5ad8bb60b9d340328d1be121e898a195",
+  "cusaId": "CUSA05921",
+  "testedAt": "2026-10-30T06:54:03.312511Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.06",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Ride 2: observed playable during this test session. Measured native FPS: 30.6. Recorded duration: 867s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 30.58,
+    "testDurationSeconds": 867,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 26.43
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/01.webp",
+        "sha256": "741bae8ff1e4f34068624fd51b6119feb97734bd7926b4048e80262fb6339298",
+        "caption": "Ride 2 — capture 1 · 2026-10-30T06:54:03.071Z"
+      },
+      {
+        "path": "assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/02.webp",
+        "sha256": "acfe2a829faa3ed711d7269c0a68174c01a6aac0f34c4608dc202647b274e5a8",
+        "caption": "Ride 2 — capture 2 · 2026-10-30T07:00:34.827Z"
+      },
+      {
+        "path": "assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/screenshots/03.webp",
+        "sha256": "18fcc0d2b6f1ac6d351e8a83bc751ee0d1e5402cd724c0328ce556a684d05dfd",
+        "caption": "Ride 2 — capture 3 · 2026-10-30T07:03:47.867Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/logs/01-application.log.gz",
+        "sha256": "e69187bf8a264dd8ea71063eeefad92ef9daac77448e883112587ebad81264ad",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05921/s_5ad8bb60b9d340328d1be121e898a195/logs/02-shadps4.log.gz",
+        "sha256": "25c12e4909422e9460ac00118aae6144d0e60ff2b4e3abbefc50f4dc37c54b48",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
