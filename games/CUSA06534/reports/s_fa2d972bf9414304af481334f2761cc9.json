@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_fa2d972bf9414304af481334f2761cc9",
+  "cusaId": "CUSA06534",
+  "testedAt": "2026-10-30T08:38:09.686733Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.14",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0114",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-motion-blur-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-motion-blur-0114",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0114",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0114",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0114",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "EA SPORTS™ UFC® 3: observed playable during this test session. Measured native FPS: 28.8. Recorded duration: 278s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 28.81,
+    "testDurationSeconds": 278,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 24.39
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/01.webp",
+        "sha256": "ed1b5debf7baf671bfc085d4e7091c3166f8ef4f68d8519c6bc0ea84ee6db2ef",
+        "caption": "EA SPORTS™ UFC® 3 — capture 1 · 2026-10-30T08:38:09.395Z"
+      },
+      {
+        "path": "assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/02.webp",
+        "sha256": "e35a574c9f16a43b757209e333f74c53ede562c3492f8f091f772a8a9dcdc428",
+        "caption": "EA SPORTS™ UFC® 3 — capture 2 · 2026-10-30T08:39:28.687Z"
+      },
+      {
+        "path": "assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/screenshots/03.webp",
+        "sha256": "d72de96c7cc4e12b1ec5a6f6a25879f242483499d9a314ecf0ebfea8a2ee0c03",
+        "caption": "EA SPORTS™ UFC® 3 — capture 3 · 2026-10-30T08:41:20.707Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/logs/01-application.log.gz",
+        "sha256": "b5faf47009850c7ecccd90e9523f07241369b4363c17cd3131ad86032b420d4c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA06534/s_fa2d972bf9414304af481334f2761cc9/logs/02-shadps4.log.gz",
+        "sha256": "3ccb2c5c1dbbb3f4ba517276c1b95037ded34422989faad67cbca15d5f7098ff",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
