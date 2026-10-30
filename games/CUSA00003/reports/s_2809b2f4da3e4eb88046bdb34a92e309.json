@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2809b2f4da3e4eb88046bdb34a92e309",
+  "cusaId": "CUSA00003",
+  "testedAt": "2026-10-30T07:39:08.934170Z",
+  "status": "playable",
+  "game": {
+    "version": "01.28",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "mojo-26.1-v2",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "DRIVECLUB™: observed playable during this test session. Measured native FPS: 17.8. Recorded duration: 524s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 17.83,
+    "testDurationSeconds": 524,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 11.19
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/01.webp",
+        "sha256": "bdf2d5a282bd588a934a7e2b0e62bc7bb80d8debe6231d26fc9a263f472bb249",
+        "caption": "DRIVECLUB™ — capture 1 · 2026-10-30T07:39:08.735Z"
+      },
+      {
+        "path": "assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/02.webp",
+        "sha256": "6da89f87e8dd8ecd058b93d27e83001e1f2c82dc2db3ff77069c51ca469d1f56",
+        "caption": "DRIVECLUB™ — capture 2 · 2026-10-30T07:42:07.423Z"
+      },
+      {
+        "path": "assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/screenshots/03.webp",
+        "sha256": "00c87750ac3aa563af9bff4a3497e8c322056c66d50fc278be80d3efa20d9176",
+        "caption": "DRIVECLUB™ — capture 3 · 2026-10-30T07:44:35.919Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/logs/01-application.log.gz",
+        "sha256": "65e19a812579d4ddad9ab207951ccc9ddfeb9521758a3ec96254b1744fea64ef",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00003/s_2809b2f4da3e4eb88046bdb34a92e309/logs/02-shadps4.log.gz",
+        "sha256": "f0337081fca01c2be71091c05444911b7589c4f3627f144ce492c1123d7611ad",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
