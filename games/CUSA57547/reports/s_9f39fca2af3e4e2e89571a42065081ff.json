@@ -3,13 +3,13 @@
   "reportId": "s_9f39fca2af3e4e2e89571a42065081ff",
   "cusaId": "CUSA57547",
   "testedAt": "2026-10-30T10:25:34.007384Z",
-  "status": "boots",
+  "status": "nothing",
   "game": {
     "version": "01.00",
     "region": "North America"
   },
   "release": {
-    "tag": "unreleased",
+    "tag": "v0.2.4",
     "commit": "6f7e87b6417e651a6bf2a1f9e87aa6f9a3d22562"
   },
   "device": {
