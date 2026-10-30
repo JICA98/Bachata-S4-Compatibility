@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d89d57f181fd4cacba0c9ebb3de5b078",
+  "cusaId": "CUSA16105",
+  "testedAt": "2026-10-29T19:32:56.039058Z",
+  "status": "boots",
+  "game": {
+    "version": "01.07",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA16105: session ended at SESSION_STOPPING; exit code 134. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 30.39,
+    "testDurationSeconds": 95,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 14.11
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA16105/s_d89d57f181fd4cacba0c9ebb3de5b078/screenshots/01.webp",
+        "sha256": "9e82ac51a9a9f743c15afc9af2039f626f47a777312d93ba3eb214d63c731c96",
+        "caption": "Project CARS 3 — capture 1 · 2026-10-29T19:32:55.128Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA16105/s_d89d57f181fd4cacba0c9ebb3de5b078/logs/01-application.log.gz",
+        "sha256": "fc54dc5b49245299e8300db676c95b9634205d8bd2c58ab33f389bd47514831c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA16105/s_d89d57f181fd4cacba0c9ebb3de5b078/logs/02-shadps4.log.gz",
+        "sha256": "3ba5d0fd3340bab5aecc5fc5b240ab45da0eeb34d22e84f819d48917ea3b9e3b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
