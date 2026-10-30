@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA16105",
+    "title": "Project CARS 3",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 45,
+    "status": "menus",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 30.39,
+      "max": 30.39,
+      "average": 30.39,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 30.39,
+        "max": 30.39,
+        "average": 30.39,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_4e22cd7a775f4f779242c077bcb95c28",
+      "schemaVersion": 2,
+      "testedAt": "2026-10-30T07:16:34.922093Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2749",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 30.39,
+        "nativeOnePercentLowFps": 2.79,
+        "outputAverageFps": null,
+        "testDurationSeconds": 228,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Project CARS 3: observed menus during this test session. Measured native FPS: 30.4. Recorded duration: 228s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-1483727f9626",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/01.webp",
+          "caption": "Project CARS 3 — capture 1 · 2026-10-30T07:16:34.567Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/02.webp",
+          "caption": "Project CARS 3 — capture 2 · 2026-10-30T07:17:37.131Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/03.webp",
+          "caption": "Project CARS 3 — capture 3 · 2026-10-30T07:19:34.267Z"
+        }
+      ]
+    }
+  ]
+}

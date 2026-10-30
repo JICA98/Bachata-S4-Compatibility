@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T09:29:54Z",
+  "generatedAt": "2026-10-30T09:30:07Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 126,
+  "gameCount": 127,
   "games": [
     {
       "cusaId": "CUSA00004",
@@ -2278,6 +2278,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA15250/s_1b99cf99e3d34ff4a06a701a887e46fa/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-09-30T19:47:53.175684Z"
+    },
+    {
+      "cusaId": "CUSA16105",
+      "title": "Project CARS 3",
+      "general": {
+        "score": 45,
+        "status": "menus",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 30.39,
+          "max": 30.39,
+          "average": 30.39,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/03.webp",
+      "latestStatus": "menus",
+      "latestTestedAt": "2026-10-30T07:16:34.922093Z"
     },
     {
       "cusaId": "CUSA17266",
