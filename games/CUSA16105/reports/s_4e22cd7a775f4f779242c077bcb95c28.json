@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4e22cd7a775f4f779242c077bcb95c28",
+  "cusaId": "CUSA16105",
+  "testedAt": "2026-10-30T07:16:34.922093Z",
+  "status": "menus",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Project CARS 3: observed menus during this test session. Measured native FPS: 30.4. Recorded duration: 228s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1483727f9626"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 30.39,
+    "testDurationSeconds": 228,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 2.79
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/01.webp",
+        "sha256": "e00faac6c27f849ea98502c96a357195cbcfdb5d94bbe1c958acef3925e820bc",
+        "caption": "Project CARS 3 — capture 1 · 2026-10-30T07:16:34.567Z"
+      },
+      {
+        "path": "assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/02.webp",
+        "sha256": "7b29446516d7a5171ebaffc7e9fc4fbb6c3a066db91cb3aced443839c93e1abb",
+        "caption": "Project CARS 3 — capture 2 · 2026-10-30T07:17:37.131Z"
+      },
+      {
+        "path": "assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/screenshots/03.webp",
+        "sha256": "1730c2ea35741454e45e0743a457fc96be50ebf3cbbd9af980156049b26508ec",
+        "caption": "Project CARS 3 — capture 3 · 2026-10-30T07:19:34.267Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/logs/01-application.log.gz",
+        "sha256": "c9e38721606d0e3b819c49975409c4d8076295f64b5951d4b4d8b10f0dd6e845",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA16105/s_4e22cd7a775f4f779242c077bcb95c28/logs/02-shadps4.log.gz",
+        "sha256": "b80f6cc3f3db6cc78eb94e84fb0c5363a8e4c8d6928bdf86cd9921327212e305",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
