@@ -3,7 +3,7 @@
   "reportId": "s_c02a207c0a3849ba9b741799199a3ae9",
   "cusaId": "CUSA14123",
   "testedAt": "2026-10-31T08:51:20.972030Z",
-  "status": "boots",
+  "status": "nothing",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -57,7 +57,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "RESIDENT EVIL 3: observed boots during this test session. Measured native FPS: 30.0. Recorded duration: 70s.",
+    "summary": "RESIDENT EVIL 3: observed nothing during this test session. Measured native FPS: 30.0. Recorded duration: 70s.",
     "notes": "",
     "issues": []
   },
