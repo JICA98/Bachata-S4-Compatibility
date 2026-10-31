@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c02a207c0a3849ba9b741799199a3ae9",
+  "cusaId": "CUSA14123",
+  "testedAt": "2026-10-31T08:51:20.972030Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX799J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 30,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 30
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "RESIDENT EVIL 3: observed nothing during this test session. Measured native FPS: 30.0. Recorded duration: 70s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0668c49b13ac"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 30,
+    "testDurationSeconds": 70,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 29.92
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA14123/s_c02a207c0a3849ba9b741799199a3ae9/logs/01-application.log.gz",
+        "sha256": "04efa76188515f63014ee4c2d59c1ac636f9e061c5fc3389a1b112007c859643",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA14123/s_c02a207c0a3849ba9b741799199a3ae9/logs/02-shadps4.log.gz",
+        "sha256": "c439b6f4139faee58c32926722e3b30a548b77d1b88ba2df5a96c92c5ee762f0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
