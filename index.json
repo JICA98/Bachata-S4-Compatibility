@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T15:25:41Z",
+  "generatedAt": "2026-11-01T15:23:51Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 129,
+  "gameCount": 130,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1828,6 +1828,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA09415/s_15451b3d2d334d72841f5e73ad96f95c/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-18T13:24:06.430759Z"
+    },
+    {
+      "cusaId": "CUSA09747",
+      "title": "Minit",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 59.84,
+          "max": 59.84,
+          "average": 59.84,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-01T10:50:58.037382Z"
     },
     {
       "cusaId": "CUSA09919",
