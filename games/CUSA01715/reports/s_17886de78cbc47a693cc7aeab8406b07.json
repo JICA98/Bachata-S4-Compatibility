@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_17886de78cbc47a693cc7aeab8406b07",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-21T20:24:31.962749Z",
+  "status": "nothing",
+  "game": {
+    "version": "Unknown",
+    "region": "Unknown"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25097RP43I",
+    "socId": "sm8735p",
+    "socName": "Snapdragon 8s Gen 4 (SM8735P)",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: Incomplete game dump: sce_module/libc.prx is missing (the game requires it), or an add-on folder was launched as a game. Session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b73057b6bd93"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_17886de78cbc47a693cc7aeab8406b07/logs/01-application.log.gz",
+        "sha256": "51c4c4069e1641950f201dac22744ba47d7ec88c8802d87f8897444cb26e930c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_17886de78cbc47a693cc7aeab8406b07/logs/02-shadps4.log.gz",
+        "sha256": "13e97907b5366147c2a540dc1cacad2da30f4265df3dd7d5ae1e882329bfc0ea",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
