@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a62c6dd27d354527a943f0ffa170cc74",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-23T16:05:24.220775Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 120,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 1280,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 120,
+      "gpu.internal_screen_height": 1280
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b804ea3faf22"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 19.49,
+    "testDurationSeconds": 223,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 13.55
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_a62c6dd27d354527a943f0ffa170cc74/screenshots/01.webp",
+        "sha256": "ea7b990fdec03c28fee8e53e3dc469361e0ad4d44971b51f434ee1884b0dc050",
+        "caption": "God of War III Remastered — capture 1 · 2026-10-23T16:05:24.057Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_a62c6dd27d354527a943f0ffa170cc74/screenshots/02.webp",
+        "sha256": "15db2b9560425a90b3c94a1806b953417c6039e836fe389ffc7268759790ca70",
+        "caption": "God of War III Remastered — capture 2 · 2026-10-23T16:06:27.221Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_a62c6dd27d354527a943f0ffa170cc74/logs/01-application.log.gz",
+        "sha256": "3153f390cd2fbdee424aa4eab151f61bc3bdb69f0499c7585bc7992ccb647a6a",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_a62c6dd27d354527a943f0ffa170cc74/logs/02-shadps4.log.gz",
+        "sha256": "109e9406e98366336bd1c02cf1c36ba635c92925e9c870d47dc461d6c8eac5a8",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
