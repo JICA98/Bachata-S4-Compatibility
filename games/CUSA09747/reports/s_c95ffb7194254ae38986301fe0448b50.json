@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c95ffb7194254ae38986301fe0448b50",
+  "cusaId": "CUSA09747",
+  "testedAt": "2026-11-01T10:50:58.037382Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S928B",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA09747: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e6118e04cad9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 59.84,
+    "testDurationSeconds": 178,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 46.77
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/screenshots/01.webp",
+        "sha256": "0670e53e6fb27bc1dac9924ce66a5a4a98f2512ea4b473d693f5713958bfb6a1",
+        "caption": "Minit — capture 1 · 2026-11-01T10:50:57.937Z"
+      },
+      {
+        "path": "assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/screenshots/02.webp",
+        "sha256": "99e70037a7a919fb08fd61b9cfee8120da9708cb1fdf5c7bce48b04e70d045c6",
+        "caption": "Minit — capture 2 · 2026-11-01T10:51:59.589Z"
+      },
+      {
+        "path": "assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/screenshots/03.webp",
+        "sha256": "316ed5e498c05337284429831f8647f8babb181fb48a0d0006bf2283412d6455",
+        "caption": "Minit — capture 3 · 2026-11-01T10:53:01.829Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/logs/01-application.log.gz",
+        "sha256": "ac181c9fc2171e936403737f81d8629a9916f0b3bb7d58b2e42323852fbe8c71",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA09747/s_c95ffb7194254ae38986301fe0448b50/logs/02-shadps4.log.gz",
+        "sha256": "beeb64fa71fb9d718dd610208a32d3e28c20b48460b34dbac0bfe814c468feba",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
