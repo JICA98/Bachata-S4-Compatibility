@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e96691ffcaaa431982274bc0b1414472",
+  "cusaId": "CUSA01968",
+  "testedAt": "2026-11-01T21:04:12.322117Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.13",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "moto g stylus 5G - 2024",
+    "socId": "sm6450",
+    "socName": "Snapdragon 6 Gen 1",
+    "gpu": "Adreno 710",
+    "androidVersion": "15",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 450,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 450,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "unverified-60-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-60-fps-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-60-fps-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-100x100-square-potato-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-100x100-square-potato-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-100x100-square-potato-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-1280x720-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-1280x720-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-1280x720-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-2560x1440-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-2560x1440-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-2560x1440-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-480x270-potato-mode-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-480x270-potato-mode-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-480x270-potato-mode-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-640x360-extreme-performance-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-640x360-extreme-performance-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-640x360-extreme-performance-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-960x540-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-960x540-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-960x540-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0111",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01968: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": [
+      "i-m-lagging"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-412073344b34"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.94,
+    "testDurationSeconds": 287,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.05
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/screenshots/01.webp",
+        "sha256": "cad45b61571e98b5131b12313e715fd87c9207f84a622fe2810203c308eb5c4f",
+        "caption": "EA SPORTS UFC 2 — capture 1 · 2026-11-01T21:04:11.398Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/screenshots/02.webp",
+        "sha256": "c0ddff9411aa2c673f50ac60978e08001a131c3e5fd127dce994c43463899be3",
+        "caption": "EA SPORTS UFC 2 — capture 2 · 2026-11-01T21:05:31.106Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/screenshots/03.webp",
+        "sha256": "be97a50d2ec6e65a3ab44439b8dc693251ac56205a41ecc02e683a1e98f71ae0",
+        "caption": "EA SPORTS UFC 2 — capture 3 · 2026-11-01T21:07:08.134Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/logs/01-application.log.gz",
+        "sha256": "27585a34f05a20a505a723a8cd9d813079251fb9f51c95233413894ad26ad40b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/logs/02-shadps4.log.gz",
+        "sha256": "85af4075dc85015089b4233b30553b922da8e046934e9e942aad9799a0bbc735",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
