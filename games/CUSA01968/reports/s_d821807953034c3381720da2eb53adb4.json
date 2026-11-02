@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_d821807953034c3381720da2eb53adb4",
+  "cusaId": "CUSA01968",
+  "testedAt": "2026-11-02T23:16:10.439002Z",
+  "status": "boots",
+  "game": {
+    "version": "01.13",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2607APCA5G",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-642cb514534dc6b7",
+    "type": "turnip",
+    "name": "Turnip Gen8 V38",
+    "version": "26.99.99",
+    "build": "642cb514534dc6b7"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-642cb514534dc6b7",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-60-fps-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-1280x720-0113",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "EA SPORTS UFC 2: observed boots during this test session. Measured native FPS: 15.2. Recorded duration: 321s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-de39958cc7b0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 15.18,
+    "testDurationSeconds": 321,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 3.17
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/screenshots/01.webp",
+        "sha256": "bf034d7758bae315b0a0c3a1360ffcc617cc3ef2c761fc93c699c0b0c6a971c3",
+        "caption": "EA SPORTS UFC 2 — capture 1 · 2026-11-02T23:16:09.188Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/screenshots/02.webp",
+        "sha256": "aa098c577ed8b1494cefeff913a5e76c9c4454b62c02ecd329da969d9bf521da",
+        "caption": "EA SPORTS UFC 2 — capture 2 · 2026-11-02T23:17:18.428Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/screenshots/03.webp",
+        "sha256": "3dae6a67bbe75943ac17f004510a786185726d03adf277a60889536b0e749fa9",
+        "caption": "EA SPORTS UFC 2 — capture 3 · 2026-11-02T23:18:30.540Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/logs/01-application.log.gz",
+        "sha256": "9fad46f714bf68aa1418b46643315f8f2d60ac170c73586f00acd97e8ac71532",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/logs/02-shadps4.log.gz",
+        "sha256": "1d5ebcdbf41d4d0ae90f6c39bd904fab9fae1db5b55d0b31642c5e557d6116ad",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
