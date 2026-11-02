@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_de9e9e861c1a46c9a2821b304498adcf",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-11-02T09:45:35.795385Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-F971U",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-fb8a6663db13"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 33.2,
+    "testDurationSeconds": 1054,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 9.39
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/screenshots/01.webp",
+        "sha256": "ab16f955086de76966fe138e2d6156f0abf707108085b847b31dd740287ef081",
+        "caption": "God of War III Remastered — capture 1 · 2026-11-02T09:45:35.270Z"
+      },
+      {
+        "path": "assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/screenshots/02.webp",
+        "sha256": "366d7fbe5ac5e2999810afc10d81bf2c2d74f939c121fd73040d90d114042b43",
+        "caption": "God of War III Remastered — capture 2 · 2026-11-02T09:47:20.750Z"
+      },
+      {
+        "path": "assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/screenshots/03.webp",
+        "sha256": "97b5eef4cd95d2a4f5e81dee854eedee48ce377731ec899c57ae55c45dcaf3ba",
+        "caption": "God of War III Remastered — capture 3 · 2026-11-02T09:49:27.078Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/logs/01-application.log.gz",
+        "sha256": "b41285fe507dcba9a8b7620ac08ad91fe8c5a780f0e09d04ded4f086edfb0500",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/logs/02-shadps4.log.gz",
+        "sha256": "34c9dad608deebd063b69bdb85b455a6a9474cbef86395f00c95317aa13c57b3",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
