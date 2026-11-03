@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T15:21:21Z",
+  "generatedAt": "2026-11-03T03:21:05Z",
   "currentRelease": "v0.2.5",
   "gameCount": 130,
   "games": [
@@ -836,23 +836,23 @@
         "score": 75,
         "status": "ingame",
         "confidence": "medium",
-        "reportCount": 2,
-        "testerCount": 2,
-        "deviceCount": 2,
+        "reportCount": 3,
+        "testerCount": 3,
+        "deviceCount": 3,
         "releaseTag": "v0.2.5",
         "hasCurrentReports": true,
         "performance": {
           "min": 14.45,
           "max": 15.94,
-          "average": 15.2,
-          "sampleCount": 2
+          "average": 15.19,
+          "sampleCount": 3
         }
       },
-      "reportCount": 2,
-      "socCount": 2,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01968/s_e96691ffcaaa431982274bc0b1414472/screenshots/03.webp",
+      "reportCount": 3,
+      "socCount": 3,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01968/s_d821807953034c3381720da2eb53adb4/screenshots/03.webp",
       "latestStatus": "ingame",
-      "latestTestedAt": "2026-11-01T21:04:12.322117Z"
+      "latestTestedAt": "2026-11-02T23:16:10.439002Z"
     },
     {
       "cusaId": "CUSA02046",
