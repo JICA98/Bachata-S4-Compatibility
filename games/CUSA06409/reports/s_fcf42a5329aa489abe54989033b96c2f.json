@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_fcf42a5329aa489abe54989033b96c2f",
+  "cusaId": "CUSA06409",
+  "testedAt": "2026-11-04T23:09:47.499678Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 24
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 1080,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_height": 1080
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Minecraft: Story Mode: observed playable during this test session. Measured native FPS: 57.6. Recorded duration: 259s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e296f4b3ee5f"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 57.63,
+    "testDurationSeconds": 259,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 37.62
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/01.webp",
+        "sha256": "7191341f25af357841d1b6b6d6d41df81e0943947372e70434ee26978bfc29ca",
+        "caption": "Minecraft: Story Mode — capture 1 · 2026-11-04T23:09:47.405Z"
+      },
+      {
+        "path": "assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/02.webp",
+        "sha256": "6b1c48733165d5658e17a59ea00cd55d599cd514ff94197d15c27df90d7cd130",
+        "caption": "Minecraft: Story Mode — capture 2 · 2026-11-04T23:10:49.277Z"
+      },
+      {
+        "path": "assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/03.webp",
+        "sha256": "a79088ceffb686dd397ee53119ee5d2869e7a679e21250ecf3104b9946c75906",
+        "caption": "Minecraft: Story Mode — capture 3 · 2026-11-04T23:12:27.865Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/logs/01-application.log.gz",
+        "sha256": "7cb2e1b2c896abd03b08d6e60d8faebff9692697ba6dfc6776f6aef7339dd803",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/logs/02-shadps4.log.gz",
+        "sha256": "45d55f57ea3cb53659cf7ffb3049d8ec5b77e890c32821e755df9969bcd19115",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
