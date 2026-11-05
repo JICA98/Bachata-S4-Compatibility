@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c064ad5a9fd141cdae151af35e496efd",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-10-30T05:20:28.988989Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2217",
+    "socId": "sm8475",
+    "socName": "Snapdragon 8+ Gen 1",
+    "gpu": "Adreno 730",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-2a619419c8c968f5",
+    "type": "turnip",
+    "name": "Turnip v26.3.0-R5",
+    "version": "26.2.99",
+    "build": "2a619419c8c968f5",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v26.3.0-R5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.copy_gpu_buffers": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-2a619419c8c968f5",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: Incomplete game dump: sce_module/libc.prx is missing (the game requires it), or an add-on folder was launched as a game. Session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0c060683f875"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_c064ad5a9fd141cdae151af35e496efd/logs/01-application.log.gz",
+        "sha256": "95766ddef744d5e2cebbcbcba7be8404dc00acbc18cd5cd23a0d62aba3bed41c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_c064ad5a9fd141cdae151af35e496efd/logs/02-shadps4.log.gz",
+        "sha256": "39004c2d32adde98ab478b87d5d74d66dff222112896e07ce0f205d4b26afce5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
