@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f34f5c9ff56d43d7a576eca5d746e94f",
+  "cusaId": "CUSA11100",
+  "testedAt": "2026-10-28T01:05:11.037338Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX741J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA11100: session ended at SESSION_STOPPING; exit code 134. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7099d308a5da"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11100/s_f34f5c9ff56d43d7a576eca5d746e94f/screenshots/01.webp",
+        "sha256": "69e59334ab1f7c28ac160c51b7bc621d2123dd5e931ec94472d37a1580c7d6f9",
+        "caption": "Call of Duty®: Black Ops 4 — capture 1 · 2026-10-28T01:05:10.331Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11100/s_f34f5c9ff56d43d7a576eca5d746e94f/logs/01-application.log.gz",
+        "sha256": "561b4111116eaa8a3822fdc86342ca05cc2b16bd20286c42f1bb006b14ef524c",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11100/s_f34f5c9ff56d43d7a576eca5d746e94f/logs/02-shadps4.log.gz",
+        "sha256": "20fa3767345c5a351e6336d71032310b0c955778a5cbf9d74c1042692bccba76",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
