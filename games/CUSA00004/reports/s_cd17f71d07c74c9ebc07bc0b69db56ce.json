@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_cd17f71d07c74c9ebc07bc0b69db56ce",
+  "cusaId": "CUSA00004",
+  "testedAt": "2026-10-25T03:54:07.229844Z",
+  "status": "boots",
+  "game": {
+    "version": "01.07",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB376FC",
+    "socId": "sm8735p",
+    "socName": "Snapdragon 8s Gen 4 (SM8735P)",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 40,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 40
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA00004: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c655c483df80"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 35.24,
+    "testDurationSeconds": 37,
+    "framePacing": "stuttery"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00004/s_cd17f71d07c74c9ebc07bc0b69db56ce/screenshots/01.webp",
+        "sha256": "319599fed0aa4d045b315f686d2c087876a18f4ca276a5a5af0b09f62cc96735",
+        "caption": "inFAMOUS™ Second Son — capture 1 · 2026-10-25T03:54:06.868Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00004/s_cd17f71d07c74c9ebc07bc0b69db56ce/logs/01-application.log.gz",
+        "sha256": "2e6d250d023b14bb403208140851f3c5ed6e74f4dafd3fd950403eb62a2e6206",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00004/s_cd17f71d07c74c9ebc07bc0b69db56ce/logs/02-shadps4.log.gz",
+        "sha256": "1b86956a820c2f2c347a54e4bbdbb08df98ae8cab765a539bd779a085cc17f80",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
