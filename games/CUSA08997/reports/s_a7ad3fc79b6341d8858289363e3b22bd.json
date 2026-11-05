@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a7ad3fc79b6341d8858289363e3b22bd",
+  "cusaId": "CUSA08997",
+  "testedAt": "2026-10-31T16:42:51.982397Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24048RN6CG",
+    "socId": "t603",
+    "socName": "T603",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 4
+  },
+  "driver": {
+    "id": "turnip-0f6650b4e552733b",
+    "type": "turnip",
+    "name": "710 720 & 722 v3.8",
+    "version": "3.8",
+    "build": "0f6650b4e552733b",
+    "source": "Vauzi-17/710 3.8"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-0f6650b4e552733b",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA08997: The selected custom Vulkan driver (turnip-0f6650b4e552733b) reported no physical devices; it does not support this GPU. Session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-e713be7722b8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08997/s_a7ad3fc79b6341d8858289363e3b22bd/logs/01-application.log.gz",
+        "sha256": "ad13606ce443270f83d874452daaabf33e9513ddd1686deb3bdd221579aa1fc1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08997/s_a7ad3fc79b6341d8858289363e3b22bd/logs/02-shadps4.log.gz",
+        "sha256": "f032c482e1ef2c19d1571803b401cece0727102ab5f78f3353490795b194f295",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
