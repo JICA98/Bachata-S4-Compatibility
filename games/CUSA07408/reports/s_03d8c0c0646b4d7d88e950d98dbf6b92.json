@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_03d8c0c0646b4d7d88e950d98dbf6b92",
+  "cusaId": "CUSA07408",
+  "testedAt": "2026-11-01T17:15:31.652945Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.35",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "realme",
+    "model": "RMX5116",
+    "socId": "sm7750",
+    "socName": "SM7750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-b8a9884a5e3726f0",
+    "type": "turnip",
+    "name": "710 720 & 722 v4.5",
+    "version": "26.99.99",
+    "build": "b8a9884a5e3726f0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-b8a9884a5e3726f0",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA07408: session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-bb54b85a38b6"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07408/s_03d8c0c0646b4d7d88e950d98dbf6b92/logs/01-application.log.gz",
+        "sha256": "93cec85b85af0518789b8f69e4efb66cb787095747dead2217d3cdfc4efa3fbd",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07408/s_03d8c0c0646b4d7d88e950d98dbf6b92/logs/02-shadps4.log.gz",
+        "sha256": "290b4f9e6fd2e7dafe45ce8a006c5af2a3e2b02a4ae6acbb4f96f2c54f39b92b",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
