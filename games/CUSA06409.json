@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA06409",
+    "title": "Minecraft: Story Mode",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 57.63,
+      "max": 57.63,
+      "average": 57.63,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 57.63,
+        "max": 57.63,
+        "average": 57.63,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_fcf42a5329aa489abe54989033b96c2f",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_height": 1080
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_fcf42a5329aa489abe54989033b96c2f",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-04T23:09:47.499678Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX809J",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 24
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_height": 1080
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 57.63,
+        "nativeOnePercentLowFps": 37.62,
+        "outputAverageFps": null,
+        "testDurationSeconds": 259,
+        "framePacing": "minor-stutter"
+      },
+      "result": {
+        "summary": "Minecraft: Story Mode: observed ingame during this test session. Measured native FPS: 57.6. Recorded duration: 259s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-e296f4b3ee5f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/01.webp",
+          "caption": "Minecraft: Story Mode — capture 1 · 2026-11-04T23:09:47.405Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/02.webp",
+          "caption": "Minecraft: Story Mode — capture 2 · 2026-11-04T23:10:49.277Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/03.webp",
+          "caption": "Minecraft: Story Mode — capture 3 · 2026-11-04T23:12:27.865Z"
+        }
+      ]
+    }
+  ]
+}

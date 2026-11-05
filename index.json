@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-03T03:21:05Z",
+  "generatedAt": "2026-11-05T03:25:44Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 130,
+  "gameCount": 131,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1353,6 +1353,31 @@
       "thumbnail": null,
       "latestStatus": "nothing",
       "latestTestedAt": "2026-10-02T01:47:04.077901Z"
+    },
+    {
+      "cusaId": "CUSA06409",
+      "title": "Minecraft: Story Mode",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 57.63,
+          "max": 57.63,
+          "average": 57.63,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06409/s_fcf42a5329aa489abe54989033b96c2f/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-04T23:09:47.499678Z"
     },
     {
       "cusaId": "CUSA06534",
