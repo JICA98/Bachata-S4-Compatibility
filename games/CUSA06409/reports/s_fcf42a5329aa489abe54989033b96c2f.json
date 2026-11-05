@@ -3,7 +3,7 @@
   "reportId": "s_fcf42a5329aa489abe54989033b96c2f",
   "cusaId": "CUSA06409",
   "testedAt": "2026-11-04T23:09:47.499678Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -57,7 +57,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "Minecraft: Story Mode: observed playable during this test session. Measured native FPS: 57.6. Recorded duration: 259s.",
+    "summary": "Minecraft: Story Mode: observed ingame during this test session. Measured native FPS: 57.6. Recorded duration: 259s.",
     "notes": "",
     "issues": []
   },
