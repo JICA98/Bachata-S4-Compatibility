@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_247abc2dba6d483294a68f9babe56849",
+  "cusaId": "CUSA09929",
+  "testedAt": "2026-10-26T19:10:13.232402Z",
+  "status": "menus",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-A556E",
+    "socId": "s5e8845",
+    "socName": "s5e8845",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-0545b1b24817cc0e",
+    "type": "turnip",
+    "name": "RADV Xclipse (Mesa 27.0.0-devel-269238e)",
+    "version": "26.99.99",
+    "build": "0545b1b24817cc0e"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 640,
+      "gpu.internal_screen_height": 360
+    },
+    "driverId": "turnip-0545b1b24817cc0e",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Outer Wilds: observed menus during this test session. Measured native FPS: 11.7. Recorded duration: 89s.",
+    "notes": "Freezes on loading/menu screen, app crashes later",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-2cc64cc7a17c"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 11.69,
+    "testDurationSeconds": 89,
+    "framePacing": "stuttery"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA09929/s_247abc2dba6d483294a68f9babe56849/screenshots/01.webp",
+        "sha256": "30c52a5c10bc0e4a35b7e1d5f2b6f4356b146def8d597806379e82513e4d15ab",
+        "caption": "Outer Wilds — capture 1 · 2026-10-26T19:10:11.768Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA09929/s_247abc2dba6d483294a68f9babe56849/logs/01-application.log.gz",
+        "sha256": "5a444e11f21019ea179dc61c233211685e6beae142274fc9de9e1464aa22e665",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA09929/s_247abc2dba6d483294a68f9babe56849/logs/02-shadps4.log.gz",
+        "sha256": "129ed50dc9c539adc33ab64d7b4e9f5097f74fd6c565de81726ff92711b090c2",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
