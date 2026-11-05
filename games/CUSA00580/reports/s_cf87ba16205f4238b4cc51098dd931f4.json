@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_cf87ba16205f4238b4cc51098dd931f4",
+  "cusaId": "CUSA00580",
+  "testedAt": "2026-10-28T06:16:31.758174Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.4",
+    "commit": "cca3d2dd730509f50b85676ed4f1164280cd1484"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2311DRK48G",
+    "socId": "mt6897",
+    "socName": "MT6897",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "panvk-a1c25dfbc785cde8",
+    "type": "turnip",
+    "name": "PanVK V2",
+    "version": "2.2.0",
+    "build": "a1c25dfbc785cde8",
+    "source": "Bachata-local/panvk-v2-g615-composed 2.2.0"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "panvk-a1c25dfbc785cde8",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA00580: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c8155bed217d"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.4"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00580/s_cf87ba16205f4238b4cc51098dd931f4/screenshots/01.webp",
+        "sha256": "10062a74fb0bc91a351d9f45b05d03c655141660ee67661ca5289fc298321108",
+        "caption": "LEGO® Batman™ 3: Beyond Gotham — capture 1 · 2026-10-28T06:16:31.608Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00580/s_cf87ba16205f4238b4cc51098dd931f4/logs/01-application.log.gz",
+        "sha256": "3e72b8cb9b526a1097009c5a43984414671672b171080dcf79af1f123b85393e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00580/s_cf87ba16205f4238b4cc51098dd931f4/logs/02-shadps4.log.gz",
+        "sha256": "f0e5e32641f0d7686a71a3ecbe11bca64b8e4795e803a354e6afeee64c4dbc7c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
