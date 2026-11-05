@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_783829f73d8944d38c6a6e51a0f6fac2",
+  "cusaId": "CUSA08216",
+  "testedAt": "2026-10-30T08:31:02.900513Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.10",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2723",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Devil May Cry 5: observed nothing during this test session. Measured native FPS: 60.0. Recorded duration: 50s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f59640e8cfb9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 60,
+    "testDurationSeconds": 50,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 59.96
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08216/s_783829f73d8944d38c6a6e51a0f6fac2/screenshots/01.webp",
+        "sha256": "ab56cdab462941435deb12ce799f604622f552e65bcf33d82824987468bb1fd2",
+        "caption": "Devil May Cry 5 — capture 1 · 2026-10-30T08:31:02.787Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08216/s_783829f73d8944d38c6a6e51a0f6fac2/logs/01-application.log.gz",
+        "sha256": "76e5895d543e9588b6263ec25c415fe3e407bf93222026dd5e98ef66dc380fd7",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08216/s_783829f73d8944d38c6a6e51a0f6fac2/logs/02-shadps4.log.gz",
+        "sha256": "ca887881cbd48e6a30c5e4511b88489cd1efcd59da4944ed52df96bf2f8555fd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
