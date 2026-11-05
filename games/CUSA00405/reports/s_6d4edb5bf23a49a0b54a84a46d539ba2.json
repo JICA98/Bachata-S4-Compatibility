@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_6d4edb5bf23a49a0b54a84a46d539ba2",
+  "cusaId": "CUSA00405",
+  "testedAt": "2026-10-25T00:02:02.959704Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948U",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "LSFG_2X",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Tetris® Ultimate: observed boots during this test session. Measured native FPS: 47.3. Recorded duration: 85s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-9c5d88982f21"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 47.32,
+    "testDurationSeconds": 85,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 41.45,
+    "outputAverageFps": 93.74
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00405/s_6d4edb5bf23a49a0b54a84a46d539ba2/logs/01-application.log.gz",
+        "sha256": "e8431fc33a65ebb57bc8ed75cd5880c2860856405e2cd1aadbaab50b820c7ae4",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00405/s_6d4edb5bf23a49a0b54a84a46d539ba2/logs/02-shadps4.log.gz",
+        "sha256": "5a970dd7bdab4dea9e7c8266199f833476468fe514e46dde0a97a25acd247413",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
