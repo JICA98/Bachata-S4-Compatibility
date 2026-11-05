@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_1f6b930b82384cbbaeda12bde759c233",
+  "cusaId": "CUSA11198",
+  "testedAt": "2026-11-05T11:00:10.874457Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2447",
+    "socId": "sm8550",
+    "socName": "SM8550",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 6
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": true,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.present_rb_swap": true
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "SKYHILL: observed boots during this test session. Measured native FPS: 58.4. Recorded duration: 21s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-af25913b69d4"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 58.35,
+    "testDurationSeconds": 21,
+    "framePacing": "smooth"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11198/s_1f6b930b82384cbbaeda12bde759c233/logs/01-application.log.gz",
+        "sha256": "8d7b96ff7030b960b23dedaccd59336fa3be06f13a338180e4bbf7975c194aae",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11198/s_1f6b930b82384cbbaeda12bde759c233/logs/02-shadps4.log.gz",
+        "sha256": "dd4fefd38d04b8f7659997063ffefe59313620d8cc2d25eb74365015015e6dbd",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
