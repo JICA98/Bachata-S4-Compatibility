@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_820965dbb29f47f9a7ece0bf6f7bcaea",
+  "cusaId": "CUSA12047",
+  "testedAt": "2026-10-26T16:43:37.139567Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S721B",
+    "socId": "s5e9945",
+    "socName": "Exynos 2400",
+    "gpu": "Xclipse 940",
+    "androidVersion": "17",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "system-vortek",
+    "type": "system",
+    "name": "System Vulkan",
+    "version": "S721BXXUEEZIF",
+    "build": "CP2A.260605.016.S721BXXUEEZIF"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "system-vortek",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Sekiro: Shadows Die Twice: observed boots during this test session. Measured native FPS: 29.3. Recorded duration: 166s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-5b85f5a4b884"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.31,
+    "testDurationSeconds": 166,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 15.2
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12047/s_820965dbb29f47f9a7ece0bf6f7bcaea/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "Sekiro: Shadows Die Twice — capture 1 · 2026-10-26T16:43:37.042Z"
+      },
+      {
+        "path": "assets/CUSA12047/s_820965dbb29f47f9a7ece0bf6f7bcaea/screenshots/02.webp",
+        "sha256": "7ca00b0a9b6598090d525282de03822352745bd537d58a09a606c98fa9b8884d",
+        "caption": "Sekiro: Shadows Die Twice — capture 2 · 2026-10-26T16:44:39.842Z"
+      },
+      {
+        "path": "assets/CUSA12047/s_820965dbb29f47f9a7ece0bf6f7bcaea/screenshots/03.webp",
+        "sha256": "7e4a304e6da3299111542cf48b3217ed70af6de591d0d845d74217bd2eea93c8",
+        "caption": "Sekiro: Shadows Die Twice — capture 3 · 2026-10-26T16:45:41.746Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12047/s_820965dbb29f47f9a7ece0bf6f7bcaea/logs/01-application.log.gz",
+        "sha256": "9593683e363f38fda201ab22df7d5766dd967e7a356fd4d840bf023d33f573d3",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12047/s_820965dbb29f47f9a7ece0bf6f7bcaea/logs/02-shadps4.log.gz",
+        "sha256": "2336748d01e3201d483856ba0d3a099eb6f878a51f719b7be6b05f1817592065",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
