@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA11071",
+    "title": "Adventure Time: Pirates of the Enchiridion",
+    "region": "North America",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.41,
+      "max": 29.41,
+      "average": 29.41,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.41,
+        "max": 29.41,
+        "average": 29.41,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_83d6d5f32932482fab83d7449e39539a",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_83d6d5f32932482fab83d7449e39539a",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-06T01:18:00.670334Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.05",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S948U1",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "17",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.41,
+        "nativeOnePercentLowFps": 6.1,
+        "outputAverageFps": null,
+        "testDurationSeconds": 203,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Adventure Time: Pirates of the Enchiridion: observed playable during this test session. Measured native FPS: 29.3. Recorded duration: 177s. no hitches or lag",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-6327b229e24e",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/01.webp",
+          "caption": "Adventure Time: Pirates of the Enchiridion — capture 1 · 2026-11-06T01:18:00.414Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/02.webp",
+          "caption": "Adventure Time: Pirates of the Enchiridion — capture 2 · 2026-11-06T01:19:23.354Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/03.webp",
+          "caption": "Adventure Time: Pirates of the Enchiridion — capture 3 · 2026-11-06T01:20:34.074Z"
+        }
+      ]
+    }
+  ]
+}
