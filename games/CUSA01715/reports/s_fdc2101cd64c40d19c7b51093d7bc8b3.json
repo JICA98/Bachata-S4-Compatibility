@@ -3,7 +3,7 @@
   "reportId": "s_fdc2101cd64c40d19c7b51093d7bc8b3",
   "cusaId": "CUSA01715",
   "testedAt": "2026-11-06T15:04:56.955348Z",
-  "status": "boots",
+  "status": "nothing",
   "game": {
     "version": "01.00",
     "region": "Europe"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. Status corrected from boots to nothing (0 screenshots). FIRST_FRAME_PRESENTED briefly ~60 FPS then crash (D32 depth robust-image assertion).",
     "notes": "",
     "issues": []
   },
