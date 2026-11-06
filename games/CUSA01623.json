@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 75,
+    "score": 73,
     "status": "ingame",
     "confidence": "high",
-    "reportCount": 12,
-    "testerCount": 12,
-    "deviceCount": 10,
+    "reportCount": 13,
+    "testerCount": 13,
+    "deviceCount": 11,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
       "min": 14.81,
       "max": 56.47,
-      "average": 31.45,
-      "sampleCount": 12
+      "average": 33.17,
+      "sampleCount": 13
     }
   },
   "socs": {
@@ -1128,6 +1128,23 @@
         ]
       }
     },
+    "sm8845": {
+      "score": 45,
+      "status": "menus",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 53.83,
+        "max": 53.83,
+        "average": 53.83,
+        "sampleCount": 1
+      },
+      "recommendedSetup": null
+    },
     "sm8850": {
       "score": 75,
       "status": "ingame",
@@ -1200,11 +1217,120 @@
       "sm8735",
       "sm8750",
       "sm8750p",
+      "sm8845",
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_de9e9e861c1a46c9a2821b304498adcf/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_9c195428315c4659b54ae34b9c87c0bc/screenshots/02.webp",
   "reports": [
+    {
+      "reportId": "s_9c195428315c4659b54ae34b9c87c0bc",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-05T18:04:31.524340Z",
+      "status": "menus",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "motorola",
+        "model": "motorola signature",
+        "socId": "sm8845",
+        "socName": "Snapdragon 8 Gen 5",
+        "gpu": "Adreno 829",
+        "androidVersion": "17",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-depth-of-field",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-dynamic-shadows",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-soft-particles",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-ssao",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "skip-intro",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 53.83,
+        "nativeOnePercentLowFps": 37.62,
+        "outputAverageFps": null,
+        "testDurationSeconds": 68,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-257132ac200f",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_9c195428315c4659b54ae34b9c87c0bc/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-11-05T18:04:31.385Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_9c195428315c4659b54ae34b9c87c0bc/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-11-05T18:05:35.641Z"
+        }
+      ]
+    },
     {
       "reportId": "s_de9e9e861c1a46c9a2821b304498adcf",
       "schemaVersion": 2,
