@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_83d6d5f32932482fab83d7449e39539a",
+  "cusaId": "CUSA11071",
+  "testedAt": "2026-11-06T01:18:00.670334Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.05",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948U1",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Adventure Time: Pirates of the Enchiridion: observed playable during this test session. Measured native FPS: 29.3. Recorded duration: 177s. no hitches or lag",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-6327b229e24e"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.41,
+    "testDurationSeconds": 203,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6.1
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/01.webp",
+        "sha256": "fafbd7bfeaf77ceef8f18fed6b717d6718daac13242926ea078c0933f9f3f516",
+        "caption": "Adventure Time: Pirates of the Enchiridion — capture 1 · 2026-11-06T01:18:00.414Z"
+      },
+      {
+        "path": "assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/02.webp",
+        "sha256": "1a46e8753e0bee1776a5039612e20aa2ee71cd3530d1d996f35587d134f7ba25",
+        "caption": "Adventure Time: Pirates of the Enchiridion — capture 2 · 2026-11-06T01:19:23.354Z"
+      },
+      {
+        "path": "assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/screenshots/03.webp",
+        "sha256": "5b9be882d448e907adb8b78e989f2cde7526b4809e54439648c48ded66bc4540",
+        "caption": "Adventure Time: Pirates of the Enchiridion — capture 3 · 2026-11-06T01:20:34.074Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/logs/01-application.log.gz",
+        "sha256": "a5d8aebbbdf010028f25108203b391da72c1d1b56df891ef5b8b1065a4174484",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11071/s_83d6d5f32932482fab83d7449e39539a/logs/02-shadps4.log.gz",
+        "sha256": "3a0837e2e09d2592857e0634d7e15f26cdada0e9f33340fb480222b8ab08148c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
