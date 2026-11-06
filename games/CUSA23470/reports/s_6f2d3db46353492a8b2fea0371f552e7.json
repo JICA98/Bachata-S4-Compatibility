@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_6f2d3db46353492a8b2fea0371f552e7",
+  "cusaId": "CUSA23470",
+  "testedAt": "2026-11-06T16:12:54.397228Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.05",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S948B",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Crash Bandicoot™ 4: It's About Time: observed ingame during this test session. Measured native FPS: 34.3. Recorded duration: 379s. Jugable, pero presenta errores gráficos",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-2a6a8729a171"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.8,
+    "testDurationSeconds": 513,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 10.71
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/01.webp",
+        "sha256": "562276088ec9c9554c488777a572347212a1f6d6833b8560452c38cb64ac4527",
+        "caption": "Crash Bandicoot™ 4: It's About Time — capture 1 · 2026-11-06T16:12:53.283Z"
+      },
+      {
+        "path": "assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/02.webp",
+        "sha256": "0d6f96bd25c05a04aa6eab27002ce63e0ce98d3bc8276675c7400a900d7e033f",
+        "caption": "Crash Bandicoot™ 4: It's About Time — capture 2 · 2026-11-06T16:14:00.339Z"
+      },
+      {
+        "path": "assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/03.webp",
+        "sha256": "cd8213803da6db01049f35a2c92cb1f23dcaa9fb85c2e1629a7e3e9e59d3f292",
+        "caption": "Crash Bandicoot™ 4: It's About Time — capture 3 · 2026-11-06T16:16:50.327Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/logs/01-application.log.gz",
+        "sha256": "a7b897b96dd40e7e3ebc5973b9fd89cb443dc679bc8e1058fd3653ef759ab074",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/logs/02-shadps4.log.gz",
+        "sha256": "ee901e585af0996f433eb64f8667bbb549998fafc224bb0d6c01ab1d982106c2",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
