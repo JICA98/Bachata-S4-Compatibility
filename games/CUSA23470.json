@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA23470",
+    "title": "Crash Bandicoot 4: It's About Time",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.8,
+      "max": 29.8,
+      "average": 29.8,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8850": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.8,
+        "max": 29.8,
+        "average": 29.8,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_6f2d3db46353492a8b2fea0371f552e7",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno8": [
+      "sm8850"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_6f2d3db46353492a8b2fea0371f552e7",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-06T16:12:54.397228Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.05",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-S948B",
+        "socId": "sm8850",
+        "socName": "SM8850",
+        "gpu": "Unknown",
+        "androidVersion": "17",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.8,
+        "nativeOnePercentLowFps": 10.71,
+        "outputAverageFps": null,
+        "testDurationSeconds": 513,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Crash Bandicoot™ 4: It's About Time: observed ingame during this test session. Measured native FPS: 34.3. Recorded duration: 379s. Jugable, pero presenta errores gráficos",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-2a6a8729a171",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/01.webp",
+          "caption": "Crash Bandicoot™ 4: It's About Time — capture 1 · 2026-11-06T16:12:53.283Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/02.webp",
+          "caption": "Crash Bandicoot™ 4: It's About Time — capture 2 · 2026-11-06T16:14:00.339Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/03.webp",
+          "caption": "Crash Bandicoot™ 4: It's About Time — capture 3 · 2026-11-06T16:16:50.327Z"
+        }
+      ]
+    }
+  ]
+}

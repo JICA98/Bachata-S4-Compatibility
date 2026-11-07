@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-06T03:29:02Z",
+  "generatedAt": "2026-11-07T03:21:57Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 132,
+  "gameCount": 133,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -2678,6 +2678,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA20499/s_dbcb228e6ebd4fd6ba33165aa127c3fe/screenshots/01.webp",
       "latestStatus": "menus",
       "latestTestedAt": "2026-10-22T02:26:13.972814Z"
+    },
+    {
+      "cusaId": "CUSA23470",
+      "title": "Crash Bandicoot 4: It's About Time",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.8,
+          "max": 29.8,
+          "average": 29.8,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA23470/s_6f2d3db46353492a8b2fea0371f552e7/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-06T16:12:54.397228Z"
     },
     {
       "cusaId": "CUSA24100",
