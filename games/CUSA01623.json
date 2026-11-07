@@ -11,16 +11,16 @@
     "score": 73,
     "status": "ingame",
     "confidence": "high",
-    "reportCount": 13,
-    "testerCount": 13,
-    "deviceCount": 11,
+    "reportCount": 14,
+    "testerCount": 14,
+    "deviceCount": 12,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
-      "min": 14.81,
+      "min": 13.93,
       "max": 56.47,
-      "average": 33.17,
-      "sampleCount": 13
+      "average": 31.79,
+      "sampleCount": 14
     }
   },
   "socs": {
@@ -348,6 +348,57 @@
           {
             "id": "skip-intro",
             "revision": "2026.10.01.13399220021802570842"
+          }
+        ]
+      }
+    },
+    "s5e8855": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 13.93,
+        "max": 13.93,
+        "average": 13.93,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_e7d28931304f493688ae3294530817ee",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-e0df0d7c8e84fdcc",
+          "type": "turnip",
+          "name": "MdiEx 2600 Vortek v3.2",
+          "version": "25.3.21",
+          "build": "e0df0d7c8e84fdcc"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.copy_gpu_buffers": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 854,
+            "gpu.internal_screen_height": 480
+          },
+          "driverId": "turnip-e0df0d7c8e84fdcc",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "skip-any-video-with-x-button",
+            "revision": "2026.10.14.11637158210346386359"
           }
         ]
       }
@@ -1198,6 +1249,7 @@
       "mt6991"
     ],
     "xclipse": [
+      "s5e8855",
       "s5e9945"
     ],
     "adreno7": [
@@ -1221,8 +1273,91 @@
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_9c195428315c4659b54ae34b9c87c0bc/screenshots/02.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA01623/s_e7d28931304f493688ae3294530817ee/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_e7d28931304f493688ae3294530817ee",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-06T17:42:34.759953Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "samsung",
+        "model": "SM-A566B",
+        "socId": "s5e8855",
+        "socName": "Exynos 1580",
+        "gpu": "Xclipse 540",
+        "androidVersion": "17",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-e0df0d7c8e84fdcc",
+        "type": "turnip",
+        "name": "MdiEx 2600 Vortek v3.2",
+        "version": "25.3.21",
+        "build": "e0df0d7c8e84fdcc"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.copy_gpu_buffers": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 854,
+          "gpu.internal_screen_height": 480
+        },
+        "driverId": "turnip-e0df0d7c8e84fdcc",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "skip-any-video-with-x-button",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 13.93,
+        "nativeOnePercentLowFps": 8.34,
+        "outputAverageFps": null,
+        "testDurationSeconds": 792,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "God of War III Remastered: observed playable during this test session. Measured native FPS: 13.9. Recorded duration: 792s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-5552ea61ed5a",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e7d28931304f493688ae3294530817ee/screenshots/01.webp",
+          "caption": "God of War III Remastered — capture 1 · 2026-11-06T17:42:34.188Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e7d28931304f493688ae3294530817ee/screenshots/02.webp",
+          "caption": "God of War III Remastered — capture 2 · 2026-11-06T17:43:40.644Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA01623/s_e7d28931304f493688ae3294530817ee/screenshots/03.webp",
+          "caption": "God of War III Remastered — capture 3 · 2026-11-06T17:46:14.392Z"
+        }
+      ]
+    },
     {
       "reportId": "s_9c195428315c4659b54ae34b9c87c0bc",
       "schemaVersion": 2,
