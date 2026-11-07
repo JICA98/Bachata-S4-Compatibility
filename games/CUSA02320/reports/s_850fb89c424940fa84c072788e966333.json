@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_850fb89c424940fa84c072788e966333",
+  "cusaId": "CUSA02320",
+  "testedAt": "2026-11-07T06:58:41.935383Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2221",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "uncharted-1-launcher-bypass-low-frame-rate-assert-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "uncharted-1-launcher-macos-memory-workaround-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "uncharted-2-bypass-low-frame-rate-assert-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "uncharted-2-macos-memory-workaround-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "uncharted-3-bypass-low-frame-rate-assert-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "uncharted-3-macos-memory-workaround-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-anisotropic-filtering",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-anti-aliasing",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-dynamic-lights",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-fog",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-sunlight-ambient-occlusion",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-volumetric-lights",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-disable-water-reflections",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-draw-distance-40-m-extreme",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-resolution-360p-maximum-performance-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-shadows-1-cascade-extreme-performance",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-shadows-2-cascades-performance",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-1-skip-startup-logos",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-anisotropic-filtering-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-anti-aliasing-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-bloom-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-depth-of-field-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-dynamic-lights-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-fog-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-motion-blur-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-ssao-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-sunlight-ambient-occlusion-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-uncharted-2-disable-volumetric-lights-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA02320: session ended at SESSION_STOPPING; exit code 134. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-1ef2585a0299"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02320/s_850fb89c424940fa84c072788e966333/logs/01-application.log.gz",
+        "sha256": "eafb100eeb7319b67661bf481b4daddd5a1ff0a2a98325560ce84c9f612cd7d7",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02320/s_850fb89c424940fa84c072788e966333/logs/02-shadps4.log.gz",
+        "sha256": "ede388aa942a2530ab3da761d5d35e9ce5d8f8de4b9ce55d76491b5b8340441f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
