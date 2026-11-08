@@ -11,16 +11,16 @@
     "score": 75,
     "status": "ingame",
     "confidence": "medium",
-    "reportCount": 2,
-    "testerCount": 2,
-    "deviceCount": 2,
+    "reportCount": 3,
+    "testerCount": 3,
+    "deviceCount": 3,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
-      "min": 59.96,
+      "min": 24.27,
       "max": 60.0,
-      "average": 59.98,
-      "sampleCount": 2
+      "average": 48.08,
+      "sampleCount": 3
     }
   },
   "socs": {
@@ -79,6 +79,48 @@
           "adrenoTurboMode": false,
           "bigCoreAffinity": false,
           "maliGpuOptimizations": true
+        },
+        "patches": []
+      }
+    },
+    "sm7150": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 24.27,
+        "max": 24.27,
+        "average": 24.27,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_cc962fa9f76248ea80806202a4b1b3e5",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
         },
         "patches": []
       }
@@ -257,6 +299,9 @@
       "mt6878",
       "mt6897"
     ],
+    "adreno6": [
+      "sm7150"
+    ],
     "adreno7": [
       "sm7550",
       "sm8450"
@@ -266,8 +311,82 @@
       "sm8750p"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_19243a3a727b4578bab73ba3225f07c9/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_cc962fa9f76248ea80806202a4b1b3e5",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-08T13:01:02.720018Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "Xiaomi",
+        "model": "2209116AG",
+        "socId": "sm7150",
+        "socName": "Snapdragon 730G",
+        "gpu": "Adreno 618",
+        "androidVersion": "13",
+        "ramBucketGb": 8
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 24.27,
+        "nativeOnePercentLowFps": 16.02,
+        "outputAverageFps": null,
+        "testDurationSeconds": 461,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "CUSA07010: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-04e7a06529ca",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/01.webp",
+          "caption": "Sonic Mania — capture 1 · 2026-11-08T13:01:02.385Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/02.webp",
+          "caption": "Sonic Mania — capture 2 · 2026-11-08T13:02:03.535Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/03.webp",
+          "caption": "Sonic Mania — capture 3 · 2026-11-08T13:05:53.995Z"
+        }
+      ]
+    },
     {
       "reportId": "s_19243a3a727b4578bab73ba3225f07c9",
       "schemaVersion": 2,
