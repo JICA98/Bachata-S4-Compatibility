@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_cc962fa9f76248ea80806202a4b1b3e5",
+  "cusaId": "CUSA07010",
+  "testedAt": "2026-11-08T13:01:02.720018Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2209116AG",
+    "socId": "sm7150",
+    "socName": "Snapdragon 730G",
+    "gpu": "Adreno 618",
+    "androidVersion": "13",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA07010: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-04e7a06529ca"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 24.27,
+    "testDurationSeconds": 461,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 16.02
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/01.webp",
+        "sha256": "8b55b9b62eb6e202ebf3c2914b0a90a3cd6ed1c391f4c3eb0c74e477e3aaed89",
+        "caption": "Sonic Mania — capture 1 · 2026-11-08T13:01:02.385Z"
+      },
+      {
+        "path": "assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/02.webp",
+        "sha256": "a72f5ea7f2d9abb930c5f1cbcb3fc2ed72e59a4901e7a4fcc3951757cfd018eb",
+        "caption": "Sonic Mania — capture 2 · 2026-11-08T13:02:03.535Z"
+      },
+      {
+        "path": "assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/screenshots/03.webp",
+        "sha256": "535f656f58785101920132ea85581b2e42e8bb43a368f20e5037cbc3d554a092",
+        "caption": "Sonic Mania — capture 3 · 2026-11-08T13:05:53.995Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/logs/01-application.log.gz",
+        "sha256": "123138aae0058db12b273ff7e717294999c711473fda45357b474a73e15d5897",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07010/s_cc962fa9f76248ea80806202a4b1b3e5/logs/02-shadps4.log.gz",
+        "sha256": "8772517cd145396dff75b44bc6b72c2269a8e3d4479483df4fa0ed419bec72a2",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
