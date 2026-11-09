@@ -352,6 +352,28 @@
         "SM8850P",
         "Snapdragon 8 Elite Gen 5"
       ]
+    },
+    "sm8650q": {
+      "name": "Snapdragon 8 Gen 3 (SM8650Q)",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 750",
+      "family": "adreno7",
+      "aliases": [
+        "SM8650Q",
+        "Snapdragon 8 Gen 3"
+      ]
+    },
+    "sm7325": {
+      "name": "Snapdragon 778G",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 642L",
+      "family": "adreno6",
+      "aliases": [
+        "SM7325",
+        "Snapdragon 778G",
+        "Snapdragon 778G+",
+        "Snapdragon 780G"
+      ]
     }
   }
 }
