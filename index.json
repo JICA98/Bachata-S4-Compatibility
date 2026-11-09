@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-09T09:21:55Z",
+  "generatedAt": "2026-11-09T09:23:54Z",
   "currentRelease": "v0.2.5",
-  "gameCount": 133,
+  "gameCount": 134,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1178,6 +1178,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA03840/s_1e938ce438a24913ba8471b4c01e11bc/screenshots/01.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-10-01T16:36:14.299310Z"
+    },
+    {
+      "cusaId": "CUSA04548",
+      "title": "WORLD OF FINAL FANTASY",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 29.07,
+          "max": 29.07,
+          "average": 29.07,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-08T19:25:30.187428Z"
     },
     {
       "cusaId": "CUSA04885",

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "generatedForRelease": "v0.2.5",
+  "game": {
+    "cusaId": "CUSA04548",
+    "title": "WORLD OF FINAL FANTASY",
+    "region": "Europe",
+    "publisher": "Unknown"
+  },
+  "general": {
+    "score": 75,
+    "status": "ingame",
+    "confidence": "low",
+    "reportCount": 1,
+    "testerCount": 1,
+    "deviceCount": 1,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
+    "performance": {
+      "min": 29.07,
+      "max": 29.07,
+      "average": 29.07,
+      "sampleCount": 1
+    }
+  },
+  "socs": {
+    "sm8650q": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 29.07,
+        "max": 29.07,
+        "average": 29.07,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_2de5aa95f93a4fe18d2f3e4cd0878356",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-77f4435ceb1944c3",
+          "type": "turnip",
+          "name": "Turnip gen8 v5",
+          "version": "26.2.99",
+          "build": "77f4435ceb1944c3"
+        },
+        "config": {
+          "requiredOverrides": {
+            "general.big_core_affinity": true,
+            "gpu.readbacks_mode": 0,
+            "gpu.internal_screen_width": 540,
+            "gpu.internal_screen_height": 1080
+          },
+          "driverId": "turnip-77f4435ceb1944c3",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
+    }
+  },
+  "families": {
+    "adreno7": [
+      "sm8650q"
+    ]
+  },
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/03.webp",
+  "reports": [
+    {
+      "reportId": "s_2de5aa95f93a4fe18d2f3e4cd0878356",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-08T19:25:30.187428Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.03",
+      "device": {
+        "manufacturer": "LENOVO",
+        "model": "TB710FU",
+        "socId": "sm8650q",
+        "socName": "SM8650Q",
+        "gpu": "Unknown",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-77f4435ceb1944c3",
+        "type": "turnip",
+        "name": "Turnip gen8 v5",
+        "version": "26.2.99",
+        "build": "77f4435ceb1944c3"
+      },
+      "config": {
+        "requiredOverrides": {
+          "general.big_core_affinity": true,
+          "gpu.readbacks_mode": 0,
+          "gpu.internal_screen_width": 540,
+          "gpu.internal_screen_height": 1080
+        },
+        "driverId": "turnip-77f4435ceb1944c3",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 29.07,
+        "nativeOnePercentLowFps": 6.05,
+        "outputAverageFps": null,
+        "testDurationSeconds": 542,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "CUSA04548: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-0ccb6b829bce",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/01.webp",
+          "caption": "WORLD OF FINAL FANTASY — capture 1 · 2026-11-08T19:25:29.615Z das ist schneller erhitzen und stürzte ab"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/02.webp",
+          "caption": "WORLD OF FINAL FANTASY — capture 2 · 2026-11-08T19:27:03.263Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/03.webp",
+          "caption": "WORLD OF FINAL FANTASY — capture 3 · 2026-11-08T19:28:45.587Z"
+        }
+      ]
+    }
+  ]
+}
