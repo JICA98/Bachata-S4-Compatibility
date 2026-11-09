@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2de5aa95f93a4fe18d2f3e4cd0878356",
+  "cusaId": "CUSA04548",
+  "testedAt": "2026-11-08T19:25:30.187428Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.03",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB710FU",
+    "socId": "sm8650q",
+    "socName": "SM8650Q",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 540,
+      "gpu.internal_screen_height": 1080,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 540,
+      "gpu.internal_screen_height": 1080
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA04548: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0ccb6b829bce"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.07,
+    "testDurationSeconds": 542,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6.05
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/01.webp",
+        "sha256": "939d1ae4da36db0b03eba0ce85ad94a3f9a8118c9048b9d491a676177bae16c0",
+        "caption": "WORLD OF FINAL FANTASY — capture 1 · 2026-11-08T19:25:29.615Z das ist schneller erhitzen und stürzte ab"
+      },
+      {
+        "path": "assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/02.webp",
+        "sha256": "a8e3177903a481f700e67ffce3e62dd73f4d1352241eb2ab05b8750a4488eb3f",
+        "caption": "WORLD OF FINAL FANTASY — capture 2 · 2026-11-08T19:27:03.263Z"
+      },
+      {
+        "path": "assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/screenshots/03.webp",
+        "sha256": "462e496009157d82ab7461a2016552bd018d96bf64baa8596436dac62ffae3f1",
+        "caption": "WORLD OF FINAL FANTASY — capture 3 · 2026-11-08T19:28:45.587Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/logs/01-application.log.gz",
+        "sha256": "e758324597ca979aa7ab6250d000484c9472e8d138b2d7e429ff7604c7af12c6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA04548/s_2de5aa95f93a4fe18d2f3e4cd0878356/logs/02-shadps4.log.gz",
+        "sha256": "f72260da8c09b1d923aa9f6b40d598631ebb6319db7784464438444810011a4e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
