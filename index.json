@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-08T15:24:01Z",
+  "generatedAt": "2026-11-09T03:23:17Z",
   "currentRelease": "v0.2.5",
   "gameCount": 133,
   "games": [
@@ -3058,26 +3058,26 @@
       "cusaId": "CUSA40582",
       "title": "Brotato",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 57.88,
-          "max": 57.88,
-          "average": 57.88,
+          "min": 46.99,
+          "max": 46.99,
+          "average": 46.99,
           "sampleCount": 1
         }
       },
-      "reportCount": 2,
-      "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-09-28T08:12:11.491515Z"
+      "reportCount": 3,
+      "socCount": 2,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7caef34b247844de88a2ee99672eb41f/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-08T17:12:56.681886Z"
     },
     {
       "cusaId": "CUSA45905",

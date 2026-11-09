@@ -8,18 +8,18 @@
     "publisher": "Seaven Studio"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 57.88,
-      "max": 57.88,
-      "average": 57.88,
+      "min": 46.99,
+      "max": 46.99,
+      "average": 46.99,
       "sampleCount": 1
     }
   },
@@ -40,15 +40,132 @@
         "sampleCount": 1
       },
       "recommendedSetup": null
+    },
+    "sm8845": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 46.99,
+        "max": 46.99,
+        "average": 46.99,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_7caef34b247844de88a2ee99672eb41f",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "system-vortek",
+          "type": "system",
+          "name": "System Vulkan",
+          "version": "compiler260828202223",
+          "build": "PD2527C_A_16.0.19.3.W10"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "system-vortek",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
     "adreno8": [
-      "sm8750"
+      "sm8750",
+      "sm8845"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7ed6fadd4ebe4920b373848d9a11e032/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA40582/s_7caef34b247844de88a2ee99672eb41f/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_7caef34b247844de88a2ee99672eb41f",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-08T17:12:56.681886Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.02",
+      "device": {
+        "manufacturer": "vivo",
+        "model": "V2527A",
+        "socId": "sm8845",
+        "socName": "Snapdragon 8 Gen 5",
+        "gpu": "Adreno 829",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "system-vortek",
+        "type": "system",
+        "name": "System Vulkan",
+        "version": "compiler260828202223",
+        "build": "PD2527C_A_16.0.19.3.W10"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "system-vortek",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 46.99,
+        "nativeOnePercentLowFps": 3.04,
+        "outputAverageFps": null,
+        "testDurationSeconds": 174,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Brotato: observed ingame during this test session. Measured native FPS: 47.0. Recorded duration: 174s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-a8e14858e13d",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7caef34b247844de88a2ee99672eb41f/screenshots/01.webp",
+          "caption": "Brotato — capture 1 · 2026-11-08T17:12:56.623Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7caef34b247844de88a2ee99672eb41f/screenshots/02.webp",
+          "caption": "Brotato — capture 2 · 2026-11-08T17:14:17.239Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA40582/s_7caef34b247844de88a2ee99672eb41f/screenshots/03.webp",
+          "caption": "Brotato — capture 3 · 2026-11-08T17:15:19.195Z"
+        }
+      ]
+    },
     {
       "reportId": "s_7ed6fadd4ebe4920b373848d9a11e032",
       "schemaVersion": 2,
