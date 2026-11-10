@@ -374,6 +374,67 @@
         "Snapdragon 778G+",
         "Snapdragon 780G"
       ]
+    },
+    "sm6475": {
+      "name": "Snapdragon 6 Gen 3",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 710",
+      "family": "adreno7",
+      "aliases": [
+        "SM6475",
+        "Snapdragon 6 Gen 3"
+      ]
+    },
+    "t606": {
+      "name": "Unisoc T606",
+      "vendor": "Unisoc",
+      "gpu": "Mali-G57 MP1",
+      "family": "mali-g",
+      "aliases": [
+        "T606",
+        "Unisoc T606"
+      ]
+    },
+    "s5e8845": {
+      "name": "Exynos 1480",
+      "vendor": "Samsung",
+      "gpu": "Xclipse 530",
+      "family": "xclipse",
+      "aliases": [
+        "S5E8845",
+        "Exynos 1480"
+      ]
+    },
+    "sm6225": {
+      "name": "Snapdragon 680",
+      "vendor": "Qualcomm",
+      "gpu": "Adreno 610",
+      "family": "adreno6",
+      "aliases": [
+        "SM6225",
+        "Snapdragon 680"
+      ]
+    },
+    "t603": {
+      "name": "Unisoc T603",
+      "vendor": "Unisoc",
+      "gpu": "PowerVR GE8322",
+      "family": "powervr",
+      "aliases": [
+        "T603",
+        "Unisoc T603"
+      ]
+    },
+    "mt8768wt": {
+      "name": "Helio P22T",
+      "vendor": "MediaTek",
+      "gpu": "PowerVR GE8320",
+      "family": "powervr",
+      "aliases": [
+        "MT8768WT",
+        "Helio P22T",
+        "MT8768T"
+      ]
     }
   }
 }
