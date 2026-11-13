@@ -8,19 +8,19 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 0,
-    "status": "nothing",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.5",
+    "hasCurrentReports": true,
     "performance": {
-      "min": null,
-      "max": null,
-      "average": null,
-      "sampleCount": 0
+      "min": 21.53,
+      "max": 21.53,
+      "average": 21.53,
+      "sampleCount": 1
     }
   },
   "socs": {
@@ -40,15 +40,134 @@
         "sampleCount": 0
       },
       "recommendedSetup": null
+    },
+    "sm8750": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 21.53,
+        "max": 21.53,
+        "average": 21.53,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_ae3e91fcf8f5418285376f767d381ca5",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-bd457b30f195cf93",
+          "type": "turnip",
+          "name": "Turnip Gen8 V39-patched",
+          "version": "26.99.99",
+          "build": "bd457b30f195cf93"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-bd457b30f195cf93",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
     "adreno6": [
       "sm6375"
+    ],
+    "adreno8": [
+      "sm8750"
     ]
   },
-  "thumbnail": null,
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_ae3e91fcf8f5418285376f767d381ca5",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-13T11:49:04.193029Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "nubia",
+        "model": "NX733J",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-bd457b30f195cf93",
+        "type": "turnip",
+        "name": "Turnip Gen8 V39-patched",
+        "version": "26.99.99",
+        "build": "bd457b30f195cf93"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-bd457b30f195cf93",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 21.53,
+        "nativeOnePercentLowFps": 16.35,
+        "outputAverageFps": null,
+        "testDurationSeconds": 239,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "Little Nightmares II: observed ingame during this test session. Measured native FPS: 21.5. Recorded duration: 239s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-3b1de79172d8",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/01.webp",
+          "caption": "Little Nightmares II — capture 1 · 2026-11-13T11:49:03.906Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/02.webp",
+          "caption": "Little Nightmares II — capture 2 · 2026-11-13T11:50:08.798Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/03.webp",
+          "caption": "Little Nightmares II — capture 3 · 2026-11-13T11:51:12.194Z"
+        }
+      ]
+    },
     {
       "reportId": "s_7b16b62077dd4f48bfe74d071bd7fa68",
       "schemaVersion": 2,
