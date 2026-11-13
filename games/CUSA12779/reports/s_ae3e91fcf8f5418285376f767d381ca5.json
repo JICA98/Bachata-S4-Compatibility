@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ae3e91fcf8f5418285376f767d381ca5",
+  "cusaId": "CUSA12779",
+  "testedAt": "2026-11-13T11:49:04.193029Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX733J",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-bd457b30f195cf93",
+    "type": "turnip",
+    "name": "Turnip Gen8 V39-patched",
+    "version": "26.99.99",
+    "build": "bd457b30f195cf93"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-bd457b30f195cf93",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Little Nightmares II: observed ingame during this test session. Measured native FPS: 21.5. Recorded duration: 239s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-3b1de79172d8"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 21.53,
+    "testDurationSeconds": 239,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 16.35
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/01.webp",
+        "sha256": "7303a5b195e45ddeeb8834325189259c03f0f47ad6c317b01b72c61a2b550301",
+        "caption": "Little Nightmares II — capture 1 · 2026-11-13T11:49:03.906Z"
+      },
+      {
+        "path": "assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/02.webp",
+        "sha256": "d9b61add273e15719c0bdacf3ee2d4ef95cd04d62bc2a9354ecc65dd7d749d44",
+        "caption": "Little Nightmares II — capture 2 · 2026-11-13T11:50:08.798Z"
+      },
+      {
+        "path": "assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/screenshots/03.webp",
+        "sha256": "42ca8fb7f649ac56e43b44cedeac017f486037999d69ef6f68e41609ea2740c8",
+        "caption": "Little Nightmares II — capture 3 · 2026-11-13T11:51:12.194Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/logs/01-application.log.gz",
+        "sha256": "ee51d6d4c74cf588cfe0fb8b5a695a5508b9d93b2f1205539fdfe3bd8620e23d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA12779/s_ae3e91fcf8f5418285376f767d381ca5/logs/02-shadps4.log.gz",
+        "sha256": "575071920b4c449c1c1fa303c3257ef314223d045fac7012851734f165ec9854",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
