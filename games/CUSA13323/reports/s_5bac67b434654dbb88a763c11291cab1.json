@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5bac67b434654dbb88a763c11291cab1",
+  "cusaId": "CUSA13323",
+  "testedAt": "2026-11-13T15:03:05.573088Z",
+  "status": "nothing",
+  "game": {
+    "version": "02.24",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2707",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA13323: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-99e955e6abd0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13323/s_5bac67b434654dbb88a763c11291cab1/screenshots/01.webp",
+        "sha256": "067d24966011e4440d190d8fba80128c4ab3049310a19aa21ba51b1e21079cf7",
+        "caption": "Ghost of Tsushima - Special Armor — capture 1 · 2026-11-13T15:03:05.294Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13323/s_5bac67b434654dbb88a763c11291cab1/logs/01-application.log.gz",
+        "sha256": "786c4f3b0da29cf03cf0fe15679a4e8f6a0c1b201bd26c1582ccffacd4cf3905",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13323/s_5bac67b434654dbb88a763c11291cab1/logs/02-shadps4.log.gz",
+        "sha256": "b17c0ad5095048f5574600b0466d6e0b9949e89bb637c7a0bf969fc34ded9717",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
