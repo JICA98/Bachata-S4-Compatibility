@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b652b2d7066e4c52a37ba88b841d2277",
+  "cusaId": "CUSA05794",
+  "testedAt": "2026-11-14T11:43:01.755942Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.06",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "M2012K11AC",
+    "socId": "sm8250",
+    "socName": "Snapdragon 865",
+    "gpu": "Adreno 650",
+    "androidVersion": "13",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Rise of the Tomb Raider: observed nothing during this test session.",
+    "notes": "help",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-eec85bb696f7"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05794/s_b652b2d7066e4c52a37ba88b841d2277/logs/01-application.log.gz",
+        "sha256": "c56c2c9c75f4cdc74bdfedb4ae00d8805d96ec1a835266136f30d8ac8227277d",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05794/s_b652b2d7066e4c52a37ba88b841d2277/logs/02-shadps4.log.gz",
+        "sha256": "f5808ebe0c48370f9afb54023e0dee96427ccae4241054a2b56afd0e4807b676",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
