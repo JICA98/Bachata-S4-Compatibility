@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_ade799b029e24abda28bc677afe6620f",
+  "cusaId": "CUSA00552",
+  "testedAt": "2026-11-14T15:50:00.683160Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2707",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-3d143841fb3ddd09",
+    "type": "turnip",
+    "name": "Turnip mojo-25.0 v2",
+    "version": "25.0.7",
+    "build": "3d143841fb3ddd09",
+    "source": "JICA98/bachata-s4-drivers mojo-25.0-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-3d143841fb3ddd09",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "remove-2-second-frame-time-assert-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-subsurface-pass",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "The Last of Us Remastered: observed ingame during this test session. Measured native FPS: 8.7. Recorded duration: 1153s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-99e955e6abd0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 8.67,
+    "testDurationSeconds": 1153,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.54
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/01.webp",
+        "sha256": "82f5949ff0a5f31c4988998cd5c626087dc76c93bbd735c2274316d55260679b",
+        "caption": "The Last of Us Remastered — capture 1 · 2026-11-14T15:50:00.378Z"
+      },
+      {
+        "path": "assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/02.webp",
+        "sha256": "764d6cedc8c710598ff8d5e3aae38bf12a50e00336ce4c32f0801ad854b1f3d5",
+        "caption": "The Last of Us Remastered — capture 2 · 2026-11-14T15:51:06.698Z"
+      },
+      {
+        "path": "assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/03.webp",
+        "sha256": "fcc797074b5895b3ba7578be9e85a3d903530c4af40e7f5d93f1e557a77e5589",
+        "caption": "The Last of Us Remastered — capture 3 · 2026-11-14T15:52:48.114Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/logs/01-application.log.gz",
+        "sha256": "6992719fc8478b5d602aa28dada0d0d6a50e165843d9195e49359dd8c86d9af5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/logs/02-shadps4.log.gz",
+        "sha256": "436a9bfacb6b3fb9844972c5e11e95a0773e3adc199cc0d6777378b72561bfac",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
