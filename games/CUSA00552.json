@@ -10,20 +10,95 @@
   "general": {
     "score": 75,
     "status": "ingame",
-    "confidence": "low",
-    "reportCount": 1,
-    "testerCount": 1,
-    "deviceCount": 1,
+    "confidence": "medium",
+    "reportCount": 2,
+    "testerCount": 2,
+    "deviceCount": 2,
     "releaseTag": "v0.2.5",
     "hasCurrentReports": true,
     "performance": {
-      "min": 15.02,
+      "min": 8.67,
       "max": 15.02,
-      "average": 15.02,
-      "sampleCount": 1
+      "average": 11.84,
+      "sampleCount": 2
     }
   },
   "socs": {
+    "sm8635": {
+      "score": 75,
+      "status": "ingame",
+      "confidence": "low",
+      "reportCount": 1,
+      "testerCount": 1,
+      "deviceCount": 1,
+      "releaseTag": "v0.2.5",
+      "hasCurrentReports": true,
+      "performance": {
+        "min": 8.67,
+        "max": 8.67,
+        "average": 8.67,
+        "sampleCount": 1
+      },
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_ade799b029e24abda28bc677afe6620f",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-3d143841fb3ddd09",
+          "type": "turnip",
+          "name": "Turnip mojo-25.0 v2",
+          "version": "25.0.7",
+          "build": "3d143841fb3ddd09"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-3d143841fb3ddd09",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "SAFE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": [
+          {
+            "id": "disable-bloom",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "disable-motion-blur",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "remove-2-second-frame-time-assert-0100",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "resolution-patch-960x540",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-depth-of-field",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-motion-blur",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-ssao",
+            "revision": "2026.10.14.11637158210346386359"
+          },
+          {
+            "id": "unverified-disable-subsurface-pass",
+            "revision": "2026.10.14.11637158210346386359"
+          }
+        ]
+      }
+    },
     "sm8735": {
       "score": 25,
       "status": "boots",
@@ -85,13 +160,123 @@
     }
   },
   "families": {
+    "adreno7": [
+      "sm8635"
+    ],
     "adreno8": [
       "sm8735",
       "sm8850"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_22e38cf5e876406f9090a6ffb62b2477/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_ade799b029e24abda28bc677afe6620f",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-14T15:50:00.683160Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2707",
+        "socId": "sm8635",
+        "socName": "Snapdragon 8s Gen 3",
+        "gpu": "Adreno 735",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-3d143841fb3ddd09",
+        "type": "turnip",
+        "name": "Turnip mojo-25.0 v2",
+        "version": "25.0.7",
+        "build": "3d143841fb3ddd09"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-3d143841fb3ddd09",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "SAFE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [
+        {
+          "id": "disable-bloom",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "disable-motion-blur",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "remove-2-second-frame-time-assert-0100",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "resolution-patch-960x540",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-depth-of-field",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-motion-blur",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-ssao",
+          "revision": "2026.10.14.11637158210346386359"
+        },
+        {
+          "id": "unverified-disable-subsurface-pass",
+          "revision": "2026.10.14.11637158210346386359"
+        }
+      ],
+      "performance": {
+        "nativeAverageFps": 8.67,
+        "nativeOnePercentLowFps": 1.54,
+        "outputAverageFps": null,
+        "testDurationSeconds": 1153,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "The Last of Us Remastered: observed ingame during this test session. Measured native FPS: 8.7. Recorded duration: 1153s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-99e955e6abd0",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/01.webp",
+          "caption": "The Last of Us Remastered — capture 1 · 2026-11-14T15:50:00.378Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/02.webp",
+          "caption": "The Last of Us Remastered — capture 2 · 2026-11-14T15:51:06.698Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA00552/s_ade799b029e24abda28bc677afe6620f/screenshots/03.webp",
+          "caption": "The Last of Us Remastered — capture 3 · 2026-11-14T15:52:48.114Z"
+        }
+      ]
+    },
     {
       "reportId": "s_22e38cf5e876406f9090a6ffb62b2477",
       "schemaVersion": 2,
