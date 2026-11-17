@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_758a45312246409fbea8fb96ada4da1f",
+  "cusaId": "CUSA13323",
+  "testedAt": "2026-11-17T15:03:30.062389Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB323FU",
+    "socId": "sm8850p",
+    "socName": "Snapdragon 8 Elite Gen 5 (SM8850P)",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-d88cc68b232c53a0",
+    "type": "turnip",
+    "name": "Mesa Turnip Driver v25.3.0-R11",
+    "version": "v25.3.0-rc.11",
+    "build": "d88cc68b232c53a0",
+    "source": "K11MCH1/AdrenoToolsDrivers v25.3.0-rc.11"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-d88cc68b232c53a0",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA13323: The selected custom Vulkan driver (turnip-d88cc68b232c53a0) reported no physical devices; it does not support this GPU. Session ended at SESSION_STOPPING; exit code -1. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8db68a268306"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13323/s_758a45312246409fbea8fb96ada4da1f/logs/01-application.log.gz",
+        "sha256": "0353e38febd1a2c79a3d12e3dd8ef2778d4a97cc509b12c9dbb5392a21789f87",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13323/s_758a45312246409fbea8fb96ada4da1f/logs/02-shadps4.log.gz",
+        "sha256": "82bfa4a3b06d9834b7980e760336efc6cdb8733e2b391038e94fade17546f528",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
