@@ -1,15 +1,23 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T15:44:01Z",
+  "generatedAt": "2026-11-17T08:07:31Z",
   "repository": "JICA98/Bachata-S4",
   "releases": [
+    {
+      "tag": "jit-v1.1.0-2",
+      "name": "BachataS4 IOS 1.1.0 ",
+      "url": "https://github.com/JICA98/Bachata-S4/releases/tag/jit-v1.1.0-2",
+      "publishedAt": "2026-11-17T06:07:05Z",
+      "prerelease": false,
+      "latest": true
+    },
     {
       "tag": "v0.2.5",
       "name": "Bachata S4 v0.2.5",
       "url": "https://github.com/JICA98/Bachata-S4/releases/tag/v0.2.5",
       "publishedAt": "2026-10-12T15:12:34Z",
       "prerelease": false,
-      "latest": true
+      "latest": false
     },
     {
       "tag": "v0.2.4",
