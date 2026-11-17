@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.5",
+  "generatedForRelease": "jit-v1.1.0-2",
   "game": {
     "cusaId": "CUSA57547",
     "title": "Call of Duty: Black Ops",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.5",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 38.34,
       "max": 38.34,
@@ -49,7 +49,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 38.34,
         "max": 38.34,

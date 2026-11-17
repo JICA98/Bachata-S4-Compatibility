@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.5",
+  "generatedForRelease": "jit-v1.1.0-2",
   "game": {
     "cusaId": "CUSA01967",
     "title": "Horizon Zero Dawn",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.5",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 51.29,
       "max": 51.29,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 51.29,
         "max": 51.29,

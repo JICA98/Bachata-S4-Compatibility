@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.5",
+  "generatedForRelease": "jit-v1.1.0-2",
   "game": {
     "cusaId": "CUSA01968",
     "title": "EA SPORTS UFC 2",
@@ -15,7 +15,7 @@
     "testerCount": 3,
     "deviceCount": 3,
     "releaseTag": "v0.2.5",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 14.45,
       "max": 15.94,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 15.94,
         "max": 15.94,
@@ -207,7 +207,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 14.45,
         "max": 14.45,
@@ -316,7 +316,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 15.18,
         "max": 15.18,

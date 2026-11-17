@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.5",
+  "generatedForRelease": "jit-v1.1.0-2",
   "game": {
     "cusaId": "CUSA10135",
     "title": "The Witch and the Hundred Knight 2",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.5",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 42.96,
       "max": 42.96,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 42.96,
         "max": 42.96,

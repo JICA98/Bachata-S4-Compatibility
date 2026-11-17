@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.5",
+  "generatedForRelease": "jit-v1.1.0-2",
   "game": {
     "cusaId": "CUSA00900",
     "title": "Bloodborne",
@@ -15,7 +15,7 @@
     "testerCount": 2,
     "deviceCount": 2,
     "releaseTag": "v0.2.5",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 29.38,
       "max": 43.28,
@@ -186,7 +186,7 @@
       "testerCount": 2,
       "deviceCount": 2,
       "releaseTag": "v0.2.5",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 29.38,
         "max": 43.28,
