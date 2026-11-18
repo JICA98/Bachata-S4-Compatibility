@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7551f16cf8504a15979ebf5317f3e0f9",
+  "cusaId": "CUSA07744",
+  "testedAt": "2026-11-18T02:47:36.876142Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA07744: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-a20a84fbcd77"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.34,
+    "testDurationSeconds": 178,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 8.12
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/screenshots/01.webp",
+        "sha256": "af7fa1dbe0b1fd085052967b02cf127b65e8269185279cc7ebfa2cd5932c7d5f",
+        "caption": "The LEGO® NINJAGO® Movie Video Game — capture 1 · 2026-11-18T02:47:36.721Z"
+      },
+      {
+        "path": "assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/screenshots/02.webp",
+        "sha256": "482546b1c73c2e72bedc3ab6b47f12402d9b155edfe755d08a182f17f52a5f4d",
+        "caption": "The LEGO® NINJAGO® Movie Video Game — capture 2 · 2026-11-18T02:48:55.721Z"
+      },
+      {
+        "path": "assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/screenshots/03.webp",
+        "sha256": "d294d5bf72c6a5c372bd249bb6d78a60cd33275855f44101209021c63d8615fe",
+        "caption": "The LEGO® NINJAGO® Movie Video Game — capture 3 · 2026-11-18T02:50:10.897Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/logs/01-application.log.gz",
+        "sha256": "772097b6ffa37a5e07a57e02dc9cb31c8b445bf38cb3567a69dcbc223ee4f361",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/logs/02-shadps4.log.gz",
+        "sha256": "39088d768b1860c0a7f18d1a1de555f0c7072165e0036fdb6b682a12b24fad5f",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
