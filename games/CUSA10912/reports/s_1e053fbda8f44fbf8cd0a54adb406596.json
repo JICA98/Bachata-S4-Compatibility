@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_1e053fbda8f44fbf8cd0a54adb406596",
+  "cusaId": "CUSA10912",
+  "testedAt": "2026-11-18T13:25:04.513773Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NT01",
+    "socId": "sm8650",
+    "socName": "SM8650",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Call of Duty®: Modern Warfare® 2 Campaign Remastered By Haider Kiara: observed nothing during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-0fb9277d3eb3"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA10912/s_1e053fbda8f44fbf8cd0a54adb406596/logs/01-application.log.gz",
+        "sha256": "3bb058bf4acb1a46dd3a54686d66321ab6db2821ff0a4bba3396f63ade8b87db",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA10912/s_1e053fbda8f44fbf8cd0a54adb406596/logs/02-shadps4.log.gz",
+        "sha256": "aa0c81d5e969e2eb573edbcb2bc97c8b893b2f8a8f01672c3a5d51b076e7af35",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
