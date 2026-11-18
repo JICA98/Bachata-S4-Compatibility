@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-17T08:07:45Z",
+  "generatedAt": "2026-11-18T03:28:39Z",
   "currentRelease": "jit-v1.1.0-2",
-  "gameCount": 135,
+  "gameCount": 136,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1653,6 +1653,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07737/s_2fa90979c5f7485697c4148aed3f837c/screenshots/03.webp",
       "latestStatus": "menus",
       "latestTestedAt": "2026-10-19T18:56:59.317888Z"
+    },
+    {
+      "cusaId": "CUSA07744",
+      "title": "The LEGO NINJAGO Movie Video Game",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.5",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 29.34,
+          "max": 29.34,
+          "average": 29.34,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA07744/s_7551f16cf8504a15979ebf5317f3e0f9/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-18T02:47:36.876142Z"
     },
     {
       "cusaId": "CUSA08026",
