@@ -8,8 +8,8 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 45,
-    "status": "menus",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
@@ -17,16 +17,16 @@
     "releaseTag": "v0.2.5",
     "hasCurrentReports": false,
     "performance": {
-      "min": 39.46,
-      "max": 39.46,
-      "average": 39.46,
+      "min": 24.91,
+      "max": 24.91,
+      "average": 24.91,
       "sampleCount": 1
     }
   },
   "socs": {
     "sm8635": {
-      "score": 45,
-      "status": "menus",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
@@ -34,12 +34,37 @@
       "releaseTag": "v0.2.5",
       "hasCurrentReports": false,
       "performance": {
-        "min": 39.46,
-        "max": 39.46,
-        "average": 39.46,
+        "min": 24.91,
+        "max": 24.91,
+        "average": 24.91,
         "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_f401aa2b891b498faa766761a538cfb9",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-3d143841fb3ddd09",
+          "type": "turnip",
+          "name": "Turnip mojo-25.0 v2",
+          "version": "25.0.7",
+          "build": "3d143841fb3ddd09"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-3d143841fb3ddd09",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "PERFORMANCE",
+          "adrenoTurboMode": true,
+          "bigCoreAffinity": true,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,8 +72,84 @@
       "sm8635"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13248/s_c65dcc49c5164609a65aea555678c16c/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_f401aa2b891b498faa766761a538cfb9",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-18T16:57:59.162078Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.5",
+        "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "CPH2707",
+        "socId": "sm8635",
+        "socName": "Snapdragon 8s Gen 3",
+        "gpu": "Adreno 735",
+        "androidVersion": "16",
+        "ramBucketGb": 12
+      },
+      "driver": {
+        "id": "turnip-3d143841fb3ddd09",
+        "type": "turnip",
+        "name": "Turnip mojo-25.0 v2",
+        "version": "25.0.7",
+        "build": "3d143841fb3ddd09"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-3d143841fb3ddd09",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "PERFORMANCE",
+        "adrenoTurboMode": true,
+        "bigCoreAffinity": true,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 24.91,
+        "nativeOnePercentLowFps": 6.67,
+        "outputAverageFps": null,
+        "testDurationSeconds": 393,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Ancestors: The Humankind Odyssey: observed ingame during this test session. Measured native FPS: 24.9. Recorded duration: 393s.",
+        "notes": "Don't know why its show inverted vlour only in this game, similar setting other title eork and biggest concer why GPU render nit working.",
+        "issues": [
+          "gpu"
+        ]
+      },
+      "contributor": {
+        "publicId": "tester-99e955e6abd0",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.5"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/01.webp",
+          "caption": "Ancestors: The Humankind Odyssey — capture 1 · 2026-11-18T16:57:58.204Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/02.webp",
+          "caption": "Ancestors: The Humankind Odyssey — capture 2 · 2026-11-18T16:59:12.724Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/03.webp",
+          "caption": "Ancestors: The Humankind Odyssey — capture 3 · 2026-11-18T17:01:54.940Z"
+        }
+      ]
+    },
     {
       "reportId": "s_c65dcc49c5164609a65aea555678c16c",
       "schemaVersion": 2,

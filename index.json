@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T03:28:39Z",
+  "generatedAt": "2026-11-19T03:26:30Z",
   "currentRelease": "jit-v1.1.0-2",
   "gameCount": 136,
   "games": [
@@ -2308,8 +2308,8 @@
       "cusaId": "CUSA13248",
       "title": "Ancestors: The Humankind Odyssey",
       "general": {
-        "score": 45,
-        "status": "menus",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
@@ -2317,17 +2317,17 @@
         "releaseTag": "v0.2.5",
         "hasCurrentReports": false,
         "performance": {
-          "min": 39.46,
-          "max": 39.46,
-          "average": 39.46,
+          "min": 24.91,
+          "max": 24.91,
+          "average": 24.91,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13248/s_c65dcc49c5164609a65aea555678c16c/screenshots/03.webp",
-      "latestStatus": "menus",
-      "latestTestedAt": "2026-11-17T02:36:01.901555Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-18T16:57:59.162078Z"
     },
     {
       "cusaId": "CUSA13323",
