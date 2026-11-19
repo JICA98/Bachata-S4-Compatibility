@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_f401aa2b891b498faa766761a538cfb9",
+  "cusaId": "CUSA13248",
+  "testedAt": "2026-11-18T16:57:59.162078Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2707",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-3d143841fb3ddd09",
+    "type": "turnip",
+    "name": "Turnip mojo-25.0 v2",
+    "version": "25.0.7",
+    "build": "3d143841fb3ddd09",
+    "source": "JICA98/bachata-s4-drivers mojo-25.0-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-3d143841fb3ddd09",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Ancestors: The Humankind Odyssey: observed ingame during this test session. Measured native FPS: 24.9. Recorded duration: 393s.",
+    "notes": "Don't know why its show inverted vlour only in this game, similar setting other title eork and biggest concer why GPU render nit working.",
+    "issues": [
+      "gpu"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-99e955e6abd0"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 24.91,
+    "testDurationSeconds": 393,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 6.67
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/01.webp",
+        "sha256": "ff4f7fcabb173ce3e51cdfcf7980ddb702b875da429946ca30c43fd48254e8c6",
+        "caption": "Ancestors: The Humankind Odyssey — capture 1 · 2026-11-18T16:57:58.204Z"
+      },
+      {
+        "path": "assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/02.webp",
+        "sha256": "578146ed9257a7624b6b18bd3e6c848601ddd3982b3b483529d8fd5ee1ea11b7",
+        "caption": "Ancestors: The Humankind Odyssey — capture 2 · 2026-11-18T16:59:12.724Z"
+      },
+      {
+        "path": "assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/screenshots/03.webp",
+        "sha256": "8c3bb258ec3007634819aa0f26fae397c2bbde72abbae25bb7010d465339c28e",
+        "caption": "Ancestors: The Humankind Odyssey — capture 3 · 2026-11-18T17:01:54.940Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/logs/01-application.log.gz",
+        "sha256": "69456a0d3c8f67848a54e2355f24f9c02a4a30c121e5664a92ef42af48a30dac",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13248/s_f401aa2b891b498faa766761a538cfb9/logs/02-shadps4.log.gz",
+        "sha256": "d80ae853fa9438a8ee645b5e0eedf652d367e379bf96833b9fe7b30c6a3d8134",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
