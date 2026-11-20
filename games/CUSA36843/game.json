@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA36843",
+  "title": "Red Dead Redemption",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 728
+  },
+  "legacyIssues": []
+}
