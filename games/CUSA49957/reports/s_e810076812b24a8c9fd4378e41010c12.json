@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e810076812b24a8c9fd4378e41010c12",
+  "cusaId": "CUSA49957",
+  "testedAt": "2026-11-18T06:47:22.498314Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-X216B",
+    "socId": "sm6375",
+    "socName": "SM6375",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 900,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 900
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA49957: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-46454ca8fcdb"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA49957/s_e810076812b24a8c9fd4378e41010c12/logs/01-application.log.gz",
+        "sha256": "15cc81d80928cc5a113b8b849b2323991ef9c7bbb4ccae4ee61cc71ecb3c9d2e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA49957/s_e810076812b24a8c9fd4378e41010c12/logs/02-shadps4.log.gz",
+        "sha256": "6a8697bc38270dea02033455ca267773dddae322d61633b372524ae934cf93ca",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
