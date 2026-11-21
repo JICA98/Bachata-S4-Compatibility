@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7778fd2da0be4ef18dc01ac4a969ebb4",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-11-02T01:59:31.871959Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "24069PC21G",
+    "socId": "sm8635",
+    "socName": "Snapdragon 8s Gen 3",
+    "gpu": "Adreno 735",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-1280x720",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-1600x900",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-1920x1080",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-patch-2560x1440",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-patch-3840x2160",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-resolution-patch-854x480",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: Incomplete game dump: sce_module/libc.prx is missing (the game requires it), or an add-on folder was launched as a game. Session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7875a5da2eae"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_7778fd2da0be4ef18dc01ac4a969ebb4/logs/01-application.log.gz",
+        "sha256": "188684b396cede083b258a6ae3e5d86ccd9c764490d256bc9794ec36ece61999",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_7778fd2da0be4ef18dc01ac4a969ebb4/logs/02-shadps4.log.gz",
+        "sha256": "5e874d32fb6c593262900a1515a62350aff63f15670c25bc9cc1ae4aff44505c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
