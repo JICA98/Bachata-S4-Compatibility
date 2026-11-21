@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c0758425d6a0458980cc06daaf77bbc0",
+  "cusaId": "CUSA05952",
+  "testedAt": "2026-11-10T11:29:49.497495Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25053PC47G",
+    "socId": "sm8735",
+    "socName": "SM8735",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA05952: session ended at SESSION_STOPPING; exit code 0. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-09188bfd10b9"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA05952/s_c0758425d6a0458980cc06daaf77bbc0/screenshots/01.webp",
+        "sha256": "dbf4d96a2061191d91658adb1f34aec339a9ce70e5245e454836c80801870fd3",
+        "caption": "Little Nightmares — capture 1 · 2026-11-10T11:29:49.137Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05952/s_c0758425d6a0458980cc06daaf77bbc0/logs/01-application.log.gz",
+        "sha256": "04d64dea84709e9cdf4729edc1e15d22c32f7cdecf865c8d50a9e667b3c9b1c7",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05952/s_c0758425d6a0458980cc06daaf77bbc0/logs/02-shadps4.log.gz",
+        "sha256": "d5fc18f59da22979a8bb60437c2c7788cfd139489676dc46e3f9c46c83b90c8a",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
