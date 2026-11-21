@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_dfdd78b0284b4892aacc99f02d1c154d",
+  "cusaId": "CUSA53163",
+  "testedAt": "2026-11-04T13:22:35.223842Z",
+  "status": "boots",
+  "game": {
+    "version": "01.19",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Cricket 26: observed boots during this test session. Measured native FPS: 29.9. Recorded duration: 240s.",
+    "notes": "enable to login massage is coming and game is not going ahead",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-2c905a4a121b"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.86,
+    "testDurationSeconds": 240,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 29.94
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA53163/s_dfdd78b0284b4892aacc99f02d1c154d/screenshots/01.webp",
+        "sha256": "e5f5147648d0b2e499f418330d7a0bc126bcdf3b6c931cfaa5bcb3355f1eb5b0",
+        "caption": "Cricket 26 — capture 1 · 2026-11-04T13:22:35.047Z"
+      },
+      {
+        "path": "assets/CUSA53163/s_dfdd78b0284b4892aacc99f02d1c154d/screenshots/02.webp",
+        "sha256": "b43215c7a7a054f802144e4884a260a9413239bf319fb7d10e6420c44a8677c7",
+        "caption": "Cricket 26 — capture 2 · 2026-11-04T13:23:36.855Z"
+      },
+      {
+        "path": "assets/CUSA53163/s_dfdd78b0284b4892aacc99f02d1c154d/screenshots/03.webp",
+        "sha256": "d90ca0ac78d31a5aba089ca604c257fb4ea2bb66494e5ce228e2b86012989b8e",
+        "caption": "Cricket 26 — capture 3 · 2026-11-04T13:25:47.655Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA53163/s_dfdd78b0284b4892aacc99f02d1c154d/logs/01-application.log.gz",
+        "sha256": "0e868378ca3a2ed5060490a4a4380c955d2855115dc41d9d0ad094aabd3c2dab",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA53163/s_dfdd78b0284b4892aacc99f02d1c154d/logs/02-shadps4.log.gz",
+        "sha256": "bcd474d7ada2bd10916c78a5dfa10ef12f795416665bd1005012ed76e075151d",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
