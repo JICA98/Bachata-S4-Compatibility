@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_5dbb7c99ce7348318202dc5ece297294",
+  "cusaId": "CUSA08344",
+  "testedAt": "2026-11-03T15:08:53.128617Z",
+  "status": "boots",
+  "game": {
+    "version": "03.50",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S918U",
+    "socId": "sm8550",
+    "socName": "SM8550",
+    "gpu": "Unknown",
+    "androidVersion": "15",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA08344: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-88a3fa5cc506"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA08344/s_5dbb7c99ce7348318202dc5ece297294/screenshots/01.webp",
+        "sha256": "8ef92c6a883d9323425d642735ffe9b5297209168bcd81e18d92b4546d10f252",
+        "caption": "Detroit: Become Human™ — capture 1 · 2026-11-03T15:08:52.002Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA08344/s_5dbb7c99ce7348318202dc5ece297294/logs/01-application.log.gz",
+        "sha256": "626e7b9b5999c42d1b280c0d2f98b9b96a8760c775292119ffdd8098f33052b5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA08344/s_5dbb7c99ce7348318202dc5ece297294/logs/02-shadps4.log.gz",
+        "sha256": "47967c9b8fd46553b8de811d2a57cb9122dd96113b8e66af0d0f32af7d597f81",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
