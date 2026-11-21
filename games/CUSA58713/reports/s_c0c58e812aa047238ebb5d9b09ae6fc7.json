@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_c0c58e812aa047238ebb5d9b09ae6fc7",
+  "cusaId": "CUSA58713",
+  "testedAt": "2026-11-07T19:40:11.230697Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "motorola",
+    "model": "motorola edge 30 pro",
+    "socId": "sm8450",
+    "socName": "SM8450",
+    "gpu": "Unknown",
+    "androidVersion": "14",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA58713: session ended at SESSION_STOPPING; exit code 135. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-02e9e1677922"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA58713/s_c0c58e812aa047238ebb5d9b09ae6fc7/screenshots/01.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "Poppy Playtime: Chapter 5 — capture 1 · 2026-11-07T19:40:10.930Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA58713/s_c0c58e812aa047238ebb5d9b09ae6fc7/logs/01-application.log.gz",
+        "sha256": "a8b5af87195046e6b31ab7a0c864bd9345f6eb90e1079fab2adba4a77fd2b9b6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA58713/s_c0c58e812aa047238ebb5d9b09ae6fc7/logs/02-shadps4.log.gz",
+        "sha256": "166ab386a980d8c0e60085a401c199bab8d3a8d2350e6d552ea5e43a55aa31d1",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
