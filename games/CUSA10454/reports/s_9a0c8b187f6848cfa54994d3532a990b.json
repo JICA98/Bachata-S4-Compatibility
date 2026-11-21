@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9a0c8b187f6848cfa54994d3532a990b",
+  "cusaId": "CUSA10454",
+  "testedAt": "2026-11-21T15:41:07.576822Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2410CRP4CG",
+    "socId": "sm7675",
+    "socName": "Snapdragon 7+ Gen 3",
+    "gpu": "Adreno 732",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-274321435c2c634f",
+    "type": "turnip",
+    "name": "Turnip main 27.0-devel Bionic (f2ccbe6)",
+    "version": "26.99.99",
+    "build": "274321435c2c634f",
+    "source": "local/mesa-main-27 main-27.0-f2ccbe6"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-274321435c2c634f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA10454: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b81a81714e24"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 54.75,
+    "testDurationSeconds": 609,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 30.5
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA10454/s_9a0c8b187f6848cfa54994d3532a990b/screenshots/01.webp",
+        "sha256": "a3acf93cd3387a8f3ac6c5bfb144c48cca3535e533ad6a779fcdd71b175368ea",
+        "caption": "Dragon's Crown Pro — capture 1 · 2026-11-21T15:41:06.440Z"
+      },
+      {
+        "path": "assets/CUSA10454/s_9a0c8b187f6848cfa54994d3532a990b/screenshots/02.webp",
+        "sha256": "80288cdb960723efbc17f89a4afaa84322a2e1b8afd7294a1cf188c93bcd4229",
+        "caption": "Dragon's Crown Pro — capture 2 · 2026-11-21T15:43:39.200Z"
+      },
+      {
+        "path": "assets/CUSA10454/s_9a0c8b187f6848cfa54994d3532a990b/screenshots/03.webp",
+        "sha256": "aa5c781116ef1aed498f358230f38836188e20c36ec5a30426df5729d2f23469",
+        "caption": "Dragon's Crown Pro — capture 3 · 2026-11-21T15:45:41.284Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA10454/s_9a0c8b187f6848cfa54994d3532a990b/logs/01-application.log.gz",
+        "sha256": "700f1faafe248cdd993b4d97bf86212b56c905dd1354554e7c14785cb06a6a40",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA10454/s_9a0c8b187f6848cfa54994d3532a990b/logs/02-shadps4.log.gz",
+        "sha256": "dfa92997bf2d6c3389d17796f5ace5ab1313c9836056b99db7b17eafd7e36bf4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
