@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_df449642d1d94ddf90a83de5760f3216",
+  "cusaId": "CUSA01968",
+  "testedAt": "2026-11-15T09:01:03.551515Z",
+  "status": "boots",
+  "game": {
+    "version": "01.13",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OPPO",
+    "model": "CPH2343",
+    "socId": "sm6375",
+    "socName": "Snapdragon 695",
+    "gpu": "Adreno 619",
+    "androidVersion": "13",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 480,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.copy_gpu_buffers": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_height": 480
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "EA SPORTS UFC 2: observed boots during this test session. Measured native FPS: 7.3. Recorded duration: 267s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-404678321be2"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 7.29,
+    "testDurationSeconds": 267,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 1.33
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01968/s_df449642d1d94ddf90a83de5760f3216/screenshots/01.webp",
+        "sha256": "99b31ef297f35d1a62da17338b00d2bd351fc0d4c377ca33da0af8812cec902f",
+        "caption": "EA SPORTS UFC 2 — capture 1 · 2026-11-15T09:01:02.445Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_df449642d1d94ddf90a83de5760f3216/screenshots/02.webp",
+        "sha256": "dc64377f7f8a36a4cebd6423cfda6e2af02a8f051ed4a4d6556781ed1d1e3a27",
+        "caption": "EA SPORTS UFC 2 — capture 2 · 2026-11-15T09:03:15.037Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_df449642d1d94ddf90a83de5760f3216/screenshots/03.webp",
+        "sha256": "2e40d84e02dbb521c8201334e6ce502328c3ddc0857c6f412bfbe6be1c124b21",
+        "caption": "EA SPORTS UFC 2 — capture 3 · 2026-11-15T09:04:21.297Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01968/s_df449642d1d94ddf90a83de5760f3216/logs/01-application.log.gz",
+        "sha256": "b425119a3e98a7892f83ffc474ab4f796471a77bfe80f7bb1da516966055f889",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01968/s_df449642d1d94ddf90a83de5760f3216/logs/02-shadps4.log.gz",
+        "sha256": "8dba0323e09456cd05eddd6db694acab4310ccf05356a4ce968b5014e12842c5",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
