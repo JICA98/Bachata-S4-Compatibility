@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_b952f9c188bb430b9c2857e1a317f5c8",
+  "cusaId": "CUSA13323",
+  "testedAt": "2026-11-17T15:24:23.038321Z",
+  "status": "nothing",
+  "game": {
+    "version": "02.24",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "LENOVO",
+    "model": "TB323FU",
+    "socId": "sm8850p",
+    "socName": "Snapdragon 8 Elite Gen 5 (SM8850P)",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA13323: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8db68a268306"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA13323/s_b952f9c188bb430b9c2857e1a317f5c8/logs/01-application.log.gz",
+        "sha256": "44e1e40baa9034fba8035634ca7048b153a16ba2a5b858e9a5680bd9b76e39f5",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA13323/s_b952f9c188bb430b9c2857e1a317f5c8/logs/02-shadps4.log.gz",
+        "sha256": "99a0f18514e2be2adc0d6c3312c8542c724aed56aaeb4c7a3722891c5dde329e",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
