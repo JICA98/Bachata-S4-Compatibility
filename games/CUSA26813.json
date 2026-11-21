@@ -8,38 +8,63 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.6",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 51.95,
-      "max": 51.95,
-      "average": 51.95,
+      "min": 58.88,
+      "max": 58.88,
+      "average": 58.88,
       "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": 25,
-      "status": "boots",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.6",
+      "hasCurrentReports": true,
       "performance": {
-        "min": 51.95,
-        "max": 51.95,
-        "average": 51.95,
+        "min": 58.88,
+        "max": 58.88,
+        "average": 58.88,
         "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_4ca7dccadb084f07ba01dfcc5185be24",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-ee5dda7a5c67966f",
+          "type": "turnip",
+          "name": "Turnip mojo-26.1 v2",
+          "version": "26.1.0",
+          "build": "ee5dda7a5c67966f"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-ee5dda7a5c67966f",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,8 +72,84 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_4ca7dccadb084f07ba01dfcc5185be24",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-21T10:00:09.858758Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.6",
+        "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-ee5dda7a5c67966f",
+        "type": "turnip",
+        "name": "Turnip mojo-26.1 v2",
+        "version": "26.1.0",
+        "build": "ee5dda7a5c67966f"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-ee5dda7a5c67966f",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.88,
+        "nativeOnePercentLowFps": 31.46,
+        "outputAverageFps": null,
+        "testDurationSeconds": 359,
+        "framePacing": "severe-stutter"
+      },
+      "result": {
+        "summary": "Disgaea 6: observed ingame during this test session. Measured native FPS: 58.6.but no sound and image have some issue",
+        "notes": "",
+        "issues": [
+          "no-sound-and-image-have-some-issue"
+        ]
+      },
+      "contributor": {
+        "publicId": "tester-b9cf6eea7b52",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.6"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/01.webp",
+          "caption": "Disgaea 6 — capture 1 · 2026-11-21T10:00:09.553Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/02.webp",
+          "caption": "Disgaea 6 — capture 2 · 2026-11-21T10:01:16.621Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/03.webp",
+          "caption": "Disgaea 6 — capture 3 · 2026-11-21T10:02:50.409Z"
+        }
+      ]
+    },
     {
       "reportId": "s_5443af1fe38c45eb843053fce2125b18",
       "schemaVersion": 2,

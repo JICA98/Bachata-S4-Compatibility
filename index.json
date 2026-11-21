@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T07:24:54Z",
+  "generatedAt": "2026-11-21T15:19:48Z",
   "currentRelease": "v0.2.6",
   "gameCount": 136,
   "games": [
@@ -2883,26 +2883,26 @@
       "cusaId": "CUSA26813",
       "title": "Disgaea 6",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.6",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 51.95,
-          "max": 51.95,
-          "average": 51.95,
+          "min": 58.88,
+          "max": 58.88,
+          "average": 58.88,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_5443af1fe38c45eb843053fce2125b18/screenshots/03.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-10-01T11:19:41.708890Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-21T10:00:09.858758Z"
     },
     {
       "cusaId": "CUSA26967",
