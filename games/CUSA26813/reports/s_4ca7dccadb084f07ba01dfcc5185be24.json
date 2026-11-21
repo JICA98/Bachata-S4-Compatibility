@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4ca7dccadb084f07ba01dfcc5185be24",
+  "cusaId": "CUSA26813",
+  "testedAt": "2026-11-21T10:00:09.858758Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "Disgaea 6: observed ingame during this test session. Measured native FPS: 58.6.but no sound and image have some issue",
+    "notes": "",
+    "issues": [
+      "no-sound-and-image-have-some-issue"
+    ]
+  },
+  "contributor": {
+    "publicId": "tester-b9cf6eea7b52"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 58.88,
+    "testDurationSeconds": 359,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 31.46
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/01.webp",
+        "sha256": "0368f8d720ad3da38101e77f95840eb6bc66dc216fd92527065f38a97bbcdc73",
+        "caption": "Disgaea 6 — capture 1 · 2026-11-21T10:00:09.553Z"
+      },
+      {
+        "path": "assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/02.webp",
+        "sha256": "2ce71031d08097d3bf369ad58d3554d4c8ecfed85c634c53a8fb439f3937d474",
+        "caption": "Disgaea 6 — capture 2 · 2026-11-21T10:01:16.621Z"
+      },
+      {
+        "path": "assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/screenshots/03.webp",
+        "sha256": "aab724555d2a828502beb479449c0714eba626265f69bda90fbb4ed361d15ef8",
+        "caption": "Disgaea 6 — capture 3 · 2026-11-21T10:02:50.409Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/logs/01-application.log.gz",
+        "sha256": "a8d1f45e1ac61e1ca0a622af6c4ab3644a14f53fa4e602afb0a800cb1e4954d1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA26813/s_4ca7dccadb084f07ba01dfcc5185be24/logs/02-shadps4.log.gz",
+        "sha256": "e116ac2a18fa4788eecde77eec8b85737debf53eb9e0a3fa3094ffaca8828891",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
