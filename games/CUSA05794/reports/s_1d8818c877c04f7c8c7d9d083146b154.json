@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_1d8818c877c04f7c8c7d9d083146b154",
+  "cusaId": "CUSA05794",
+  "testedAt": "2026-11-14T11:31:36.547376Z",
+  "status": "boots",
+  "game": {
+    "version": "01.06",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "M2012K11AC",
+    "socId": "sm8250",
+    "socName": "Snapdragon 865",
+    "gpu": "Adreno 650",
+    "androidVersion": "13",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Rise of the Tomb Raider: observed boots during this test session.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-eec85bb696f7"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA05794/s_1d8818c877c04f7c8c7d9d083146b154/screenshots/01.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "Rise of the Tomb Raider — capture 1 · 2026-11-14T11:31:36Z"
+      },
+      {
+        "path": "assets/CUSA05794/s_1d8818c877c04f7c8c7d9d083146b154/screenshots/02.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "Rise of the Tomb Raider — capture 2 · 2026-11-14T11:33:40Z"
+      },
+      {
+        "path": "assets/CUSA05794/s_1d8818c877c04f7c8c7d9d083146b154/screenshots/03.webp",
+        "sha256": "2e3186894c46dc6abd74f663291ed1b17b4fa99ef4c229f5d3ec0d99fe2d9632",
+        "caption": "Rise of the Tomb Raider — capture 3 · 2026-11-14T11:35:34Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA05794/s_1d8818c877c04f7c8c7d9d083146b154/logs/01-application.log.gz",
+        "sha256": "632b296a30a396eb826fd5a976be0c986a214220e585d6fc85418114cd6b1caa",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA05794/s_1d8818c877c04f7c8c7d9d083146b154/logs/02-shadps4.log.gz",
+        "sha256": "85497fa047d7c94e78a1571e134ddcb8af2a5368981bc3e918dc30832920cb26",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
