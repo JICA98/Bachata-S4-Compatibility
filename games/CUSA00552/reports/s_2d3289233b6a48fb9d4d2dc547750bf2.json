@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2d3289233b6a48fb9d4d2dc547750bf2",
+  "cusaId": "CUSA00552",
+  "testedAt": "2026-11-22T12:21:06.610171Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "EB2101",
+    "socId": "sm7250",
+    "socName": "SM7250",
+    "gpu": "Unknown",
+    "androidVersion": "13",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": true,
+      "gpu.readbacks_mode": 0,
+      "vulkan.vkcrash_diagnostic_enabled": true
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": true
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "macos-memory-workaround-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "remove-2-second-frame-time-assert-0100",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-1280x720",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-depth-of-field",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-motion-blur",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-ssao",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-subsurface-pass",
+      "revision": "2026.10.14.11637158210346386359"
+    },
+    {
+      "id": "unverified-disable-sunlight-shadows",
+      "revision": "2026.10.14.11637158210346386359"
+    }
+  ],
+  "result": {
+    "summary": "CUSA00552: session ended at SESSION_STOPPING; exit code 134. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-c61f3acaf8f4"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00552/s_2d3289233b6a48fb9d4d2dc547750bf2/logs/01-application.log.gz",
+        "sha256": "1828a035a8bc783f26e52f9fe00bd65c635ff440c9f09d88d999ca1e4a39d917",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00552/s_2d3289233b6a48fb9d4d2dc547750bf2/logs/02-shadps4.log.gz",
+        "sha256": "b516a4e275054b5594b617bc78dd0454ed9ae398061099d9d673c852e4d0c677",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
