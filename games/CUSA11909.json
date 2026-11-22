@@ -8,38 +8,63 @@
     "publisher": "Unknown"
   },
   "general": {
-    "score": 25,
-    "status": "boots",
+    "score": 75,
+    "status": "ingame",
     "confidence": "low",
     "reportCount": 1,
     "testerCount": 1,
     "deviceCount": 1,
-    "releaseTag": "v0.2.4",
-    "hasCurrentReports": false,
+    "releaseTag": "v0.2.6",
+    "hasCurrentReports": true,
     "performance": {
-      "min": 59.43,
-      "max": 59.43,
-      "average": 59.43,
+      "min": 58.26,
+      "max": 58.26,
+      "average": 58.26,
       "sampleCount": 1
     }
   },
   "socs": {
     "sm8750": {
-      "score": 25,
-      "status": "boots",
+      "score": 75,
+      "status": "ingame",
       "confidence": "low",
       "reportCount": 1,
       "testerCount": 1,
       "deviceCount": 1,
-      "releaseTag": "v0.2.4",
-      "hasCurrentReports": false,
+      "releaseTag": "v0.2.6",
+      "hasCurrentReports": true,
       "performance": {
-        "min": 59.43,
-        "max": 59.43,
-        "average": 59.43,
+        "min": 58.26,
+        "max": 58.26,
+        "average": 58.26,
         "sampleCount": 1
       },
-      "recommendedSetup": null
+      "recommendedSetup": {
+        "label": "known-working",
+        "reportId": "s_e631445c1e3d4be6b6f3623181ff2dea",
+        "supportingReports": 1,
+        "supportingTesters": 1,
+        "driver": {
+          "id": "turnip-1b594cbce6b01618",
+          "type": "turnip",
+          "name": "Turnip main 27.0-devel glibc (f2ccbe6)",
+          "version": "26.99.99",
+          "build": "1b594cbce6b01618"
+        },
+        "config": {
+          "requiredOverrides": {
+            "gpu.readbacks_mode": 0
+          },
+          "driverId": "turnip-1b594cbce6b01618",
+          "guestBackend": "FEX",
+          "frameGenerationMode": "OFF",
+          "fexPreset": "DEFAULT",
+          "adrenoTurboMode": false,
+          "bigCoreAffinity": false,
+          "maliGpuOptimizations": false
+        },
+        "patches": []
+      }
     }
   },
   "families": {
@@ -47,8 +72,82 @@
       "sm8750"
     ]
   },
-  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
+  "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/03.webp",
   "reports": [
+    {
+      "reportId": "s_e631445c1e3d4be6b6f3623181ff2dea",
+      "schemaVersion": 2,
+      "testedAt": "2026-11-22T09:53:17.971983Z",
+      "status": "ingame",
+      "release": {
+        "tag": "v0.2.6",
+        "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+      },
+      "gameVersion": "01.00",
+      "device": {
+        "manufacturer": "OnePlus",
+        "model": "PKR110",
+        "socId": "sm8750",
+        "socName": "Snapdragon 8 Elite",
+        "gpu": "Adreno 830",
+        "androidVersion": "16",
+        "ramBucketGb": 16
+      },
+      "driver": {
+        "id": "turnip-1b594cbce6b01618",
+        "type": "turnip",
+        "name": "Turnip main 27.0-devel glibc (f2ccbe6)",
+        "version": "26.99.99",
+        "build": "1b594cbce6b01618"
+      },
+      "config": {
+        "requiredOverrides": {
+          "gpu.readbacks_mode": 0
+        },
+        "driverId": "turnip-1b594cbce6b01618",
+        "guestBackend": "FEX",
+        "frameGenerationMode": "OFF",
+        "fexPreset": "DEFAULT",
+        "adrenoTurboMode": false,
+        "bigCoreAffinity": false,
+        "maliGpuOptimizations": false
+      },
+      "patches": [],
+      "performance": {
+        "nativeAverageFps": 58.26,
+        "nativeOnePercentLowFps": 34,
+        "outputAverageFps": null,
+        "testDurationSeconds": 223,
+        "framePacing": "stuttery"
+      },
+      "result": {
+        "summary": "The Legend of Heroes: Trails of Cold Steel III: observed ingame during this test session. Measured native FPS: 58.3. Recorded duration: 223s.",
+        "notes": "",
+        "issues": []
+      },
+      "contributor": {
+        "publicId": "tester-b9cf6eea7b52",
+        "displayName": null
+      },
+      "provenance": {
+        "captureType": "app-captured",
+        "appBuild": "0.2.6"
+      },
+      "screenshots": [
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/01.webp",
+          "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 1 · 2026-11-22T09:53:17.799Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/02.webp",
+          "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 2 · 2026-11-22T09:54:22.891Z"
+        },
+        {
+          "url": "https://bachatas4.games/evidence/assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/03.webp",
+          "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 3 · 2026-11-22T09:55:25.447Z"
+        }
+      ]
+    },
     {
       "reportId": "s_d48c9e8fcf024959b8b54edb02eb0c54",
       "schemaVersion": 2,

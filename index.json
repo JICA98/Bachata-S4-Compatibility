@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T15:19:48Z",
+  "generatedAt": "2026-11-22T15:20:16Z",
   "currentRelease": "v0.2.6",
   "gameCount": 136,
   "games": [
@@ -2133,26 +2133,26 @@
       "cusaId": "CUSA11909",
       "title": "The Legend of Heroes: Trails of Cold Steel III",
       "general": {
-        "score": 25,
-        "status": "boots",
+        "score": 75,
+        "status": "ingame",
         "confidence": "low",
         "reportCount": 1,
         "testerCount": 1,
         "deviceCount": 1,
-        "releaseTag": "v0.2.4",
-        "hasCurrentReports": false,
+        "releaseTag": "v0.2.6",
+        "hasCurrentReports": true,
         "performance": {
-          "min": 59.43,
-          "max": 59.43,
-          "average": 59.43,
+          "min": 58.26,
+          "max": 58.26,
+          "average": 58.26,
           "sampleCount": 1
         }
       },
-      "reportCount": 1,
+      "reportCount": 2,
       "socCount": 1,
-      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_d48c9e8fcf024959b8b54edb02eb0c54/screenshots/02.webp",
-      "latestStatus": "boots",
-      "latestTestedAt": "2026-10-01T12:57:42.303117Z"
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-22T09:53:17.971983Z"
     },
     {
       "cusaId": "CUSA12047",
