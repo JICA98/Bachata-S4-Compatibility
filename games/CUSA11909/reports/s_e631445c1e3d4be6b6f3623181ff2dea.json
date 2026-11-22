@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_e631445c1e3d4be6b6f3623181ff2dea",
+  "cusaId": "CUSA11909",
+  "testedAt": "2026-11-22T09:53:17.971983Z",
+  "status": "playable",
+  "game": {
+    "version": "01.00",
+    "region": "Asia"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "PKR110",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-1b594cbce6b01618",
+    "type": "turnip",
+    "name": "Turnip main 27.0-devel glibc (f2ccbe6)",
+    "version": "26.99.99",
+    "build": "1b594cbce6b01618",
+    "source": "local/mesa-main-27 main-27.0-f2ccbe6"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-1b594cbce6b01618",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "The Legend of Heroes: Trails of Cold Steel III: observed playable during this test session. Measured native FPS: 58.3. Recorded duration: 223s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-b9cf6eea7b52"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 58.26,
+    "testDurationSeconds": 223,
+    "framePacing": "stuttery",
+    "nativeOnePercentLowFps": 34
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/01.webp",
+        "sha256": "b9a7a13542bc1332909b7f3f85a1c73359be8839385f550d140260bba0fb56e9",
+        "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 1 · 2026-11-22T09:53:17.799Z"
+      },
+      {
+        "path": "assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/02.webp",
+        "sha256": "32283c55ccdee0c2e57dbc179f95871d82e9f725c643b3da4d1d472bad9aa017",
+        "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 2 · 2026-11-22T09:54:22.891Z"
+      },
+      {
+        "path": "assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/screenshots/03.webp",
+        "sha256": "fdbb948f1822ebc4067d51b99ff0134ef56cbab284845c2c6c91dfa2d1d4390e",
+        "caption": "The Legend of Heroes: Trails of Cold Steel III — capture 3 · 2026-11-22T09:55:25.447Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/logs/01-application.log.gz",
+        "sha256": "94319fe6f3901c87078a0ffbd1b23e6253f28b5671e754b1e01212813f65ddf6",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA11909/s_e631445c1e3d4be6b6f3623181ff2dea/logs/02-shadps4.log.gz",
+        "sha256": "f6ce829472a86bd7ce33221334f50cbf5341e7726106e251c30b7229dcefb701",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
