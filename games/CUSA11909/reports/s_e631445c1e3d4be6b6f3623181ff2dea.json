@@ -3,7 +3,7 @@
   "reportId": "s_e631445c1e3d4be6b6f3623181ff2dea",
   "cusaId": "CUSA11909",
   "testedAt": "2026-11-22T09:53:17.971983Z",
-  "status": "playable",
+  "status": "ingame",
   "game": {
     "version": "01.00",
     "region": "Asia"
@@ -55,7 +55,7 @@
   },
   "patches": [],
   "result": {
-    "summary": "The Legend of Heroes: Trails of Cold Steel III: observed playable during this test session. Measured native FPS: 58.3. Recorded duration: 223s.",
+    "summary": "The Legend of Heroes: Trails of Cold Steel III: observed ingame during this test session. Measured native FPS: 58.3. Recorded duration: 223s.",
     "notes": "",
     "issues": []
   },
