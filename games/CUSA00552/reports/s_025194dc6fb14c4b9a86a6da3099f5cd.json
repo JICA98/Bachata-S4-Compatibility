@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_025194dc6fb14c4b9a86a6da3099f5cd",
+  "cusaId": "CUSA00552",
+  "testedAt": "2026-11-22T00:29:34.086071Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2405",
+    "socId": "sm8735",
+    "socName": "Snapdragon 8s Gen 4",
+    "gpu": "Adreno 825",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA00552: session ended at SESSION_STOPPING; exit code 134. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-f543bb8c976b"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 51.86,
+    "testDurationSeconds": 332,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 16.29
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA00552/s_025194dc6fb14c4b9a86a6da3099f5cd/screenshots/01.webp",
+        "sha256": "47ba097895cb95f5e2d1b02a7f3ebff9370b6714262d2c6e11587e63f1c263ec",
+        "caption": "The Last of Us Remastered — capture 1 · 2026-11-22T00:29:33.903Z"
+      },
+      {
+        "path": "assets/CUSA00552/s_025194dc6fb14c4b9a86a6da3099f5cd/screenshots/02.webp",
+        "sha256": "518428f83288b97255203c6d3bd83ec6fbc6303a6d8e2502663b47c1be1084b3",
+        "caption": "The Last of Us Remastered — capture 2 · 2026-11-22T00:30:37.683Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00552/s_025194dc6fb14c4b9a86a6da3099f5cd/logs/01-application.log.gz",
+        "sha256": "92e18688dce8f8f1d4b3e6ea9708b60901bd4a28380a6ac479890a926397a30e",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00552/s_025194dc6fb14c4b9a86a6da3099f5cd/logs/02-shadps4.log.gz",
+        "sha256": "df3ee5baa85a6360cd1c356896cfca923b48eeec02ef8daefe0163e2e1f1bbe9",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
