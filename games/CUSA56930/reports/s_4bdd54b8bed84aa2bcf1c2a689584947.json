@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4bdd54b8bed84aa2bcf1c2a689584947",
+  "cusaId": "CUSA56930",
+  "testedAt": "2026-11-22T15:19:07.552456Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.5",
+    "commit": "433c7f30a66c205dff5c3261431e550957f5d447"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NP05J",
+    "socId": "sm8750",
+    "socName": "SM8750",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "DEFAULT",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA56930: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-a20a84fbcd77"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.5"
+  },
+  "performance": {
+    "nativeAverageFps": 29.5,
+    "testDurationSeconds": 164,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 15.26
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA56930/s_4bdd54b8bed84aa2bcf1c2a689584947/screenshots/01.webp",
+        "sha256": "48479fb55c0b5dbb9dfe99f7a98940ebcc1b4f8d69f7c7c5e9805a54fb011f91",
+        "caption": "Toy Story 3 Complete Edition — capture 1 · 2026-11-22T15:19:07.372Z"
+      },
+      {
+        "path": "assets/CUSA56930/s_4bdd54b8bed84aa2bcf1c2a689584947/screenshots/02.webp",
+        "sha256": "124b6a92527a385da7d356a0e36be5db97e1c9a70cd711469047c3d1734ea304",
+        "caption": "Toy Story 3 Complete Edition — capture 2 · 2026-11-22T15:20:11.196Z"
+      },
+      {
+        "path": "assets/CUSA56930/s_4bdd54b8bed84aa2bcf1c2a689584947/screenshots/03.webp",
+        "sha256": "b53812a5b6441fd4a139d8af409a2e2e550e3d0e2d0afa649ce532d8c4a0c955",
+        "caption": "Toy Story 3 Complete Edition — capture 3 · 2026-11-22T15:21:14.756Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA56930/s_4bdd54b8bed84aa2bcf1c2a689584947/logs/01-application.log.gz",
+        "sha256": "14109d2fe045496dc7bdd838e53e522ac9f579cf153b38550b7912a190993da1",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA56930/s_4bdd54b8bed84aa2bcf1c2a689584947/logs/02-shadps4.log.gz",
+        "sha256": "9e666625df2298ce8499522dbf016572051d9971ac2a72a33e4eea910912bc22",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
