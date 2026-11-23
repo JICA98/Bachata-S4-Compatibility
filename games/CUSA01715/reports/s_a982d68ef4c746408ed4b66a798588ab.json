@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_a982d68ef4c746408ed4b66a798588ab",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-11-23T10:32:24.934569Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "samsung",
+    "model": "SM-S938B",
+    "socId": "sm8750",
+    "socName": "Snapdragon 8 Elite",
+    "gpu": "Adreno 830",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-soft-particles",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-ssao",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-120-fps-correct-delta-time",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-resolution-patch-854x480",
+      "revision": "2026.11.13.1938318988723706926"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. No game frame was reached.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-763d2f14bc8a"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_a982d68ef4c746408ed4b66a798588ab/logs/01-application.log.gz",
+        "sha256": "c33df7520858fbf29fe59b962e0f3420b7129084b5bbbf2aa18a9d3fc2b78792",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_a982d68ef4c746408ed4b66a798588ab/logs/02-shadps4.log.gz",
+        "sha256": "a3e30f95e5009a042c71e4f9aa1172a2e0ef0e4e1b3513a57c1bb04835eb1bbc",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
