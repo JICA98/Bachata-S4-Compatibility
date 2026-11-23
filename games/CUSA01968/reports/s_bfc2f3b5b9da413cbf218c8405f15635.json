@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_bfc2f3b5b9da413cbf218c8405f15635",
+  "cusaId": "CUSA01968",
+  "testedAt": "2026-11-22T16:48:18.283620Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.13",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "25091RP04G",
+    "socId": "sm8750p",
+    "socName": "Snapdragon 8 Elite (SM8750P)",
+    "gpu": "Adreno 830",
+    "androidVersion": "16",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 768,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_height": 768
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "unverified-60-fps-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-60-fps-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-60-fps-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-disable-crowd-plus-5-10-fps-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-fixing-the-floor-in-the-octagon-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-resolution-800x450-ultra-performance-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-0-force-cpu-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0100",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0111",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "unverified-skinning-method-2-force-gpu-compute-0113",
+      "preset": "mobile-performance",
+      "revision": "2026.11.13.1938318988723706926"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01968: session ended at SESSION_STOPPING; exit code 0. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-cb35f463c40b"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 27.55,
+    "testDurationSeconds": 448,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 19.62
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01968/s_bfc2f3b5b9da413cbf218c8405f15635/screenshots/01.webp",
+        "sha256": "93c5ff2f260cdaede97971fff2ee7653327f8257d701248451096b5dd2d044c0",
+        "caption": "EA SPORTS UFC 2 — capture 1 · 2026-11-22T16:48:18.118Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_bfc2f3b5b9da413cbf218c8405f15635/screenshots/02.webp",
+        "sha256": "d67e421f8ed4716a20b25fe031000d490692832379f0030e226bc57d20b9d670",
+        "caption": "EA SPORTS UFC 2 — capture 2 · 2026-11-22T16:50:29.034Z"
+      },
+      {
+        "path": "assets/CUSA01968/s_bfc2f3b5b9da413cbf218c8405f15635/screenshots/03.webp",
+        "sha256": "a2d6eab02fbfce4e0b477ed4c4096acad1ba47d3fb6c1fb982bedd1146dd098f",
+        "caption": "EA SPORTS UFC 2 — capture 3 · 2026-11-22T16:51:32.722Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01968/s_bfc2f3b5b9da413cbf218c8405f15635/logs/01-application.log.gz",
+        "sha256": "b073acf6beac7caa4971f9ae87c0403c0065ca2ae83e206704d02996df1bcfad",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01968/s_bfc2f3b5b9da413cbf218c8405f15635/logs/02-shadps4.log.gz",
+        "sha256": "8e8a5f9296496ac6299ddde0da605356c08d931772618016dcfcecc5fb4597d0",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
