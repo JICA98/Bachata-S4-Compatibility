@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_aedad0b640b94c53920ae37dcc27ab4f",
+  "cusaId": "CUSA49379",
+  "testedAt": "2026-11-23T20:37:18.486413Z",
+  "status": "ingame",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2749",
+    "socId": "sm8850",
+    "socName": "SM8850",
+    "gpu": "Unknown",
+    "androidVersion": "17",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-a7b1209e9cd4e87a",
+    "type": "turnip",
+    "name": "Turnip Gen8 V36",
+    "version": "26.2.99",
+    "build": "a7b1209e9cd4e87a",
+    "source": "StevenMXZ/Adreno-Tools-Drivers v36"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-a7b1209e9cd4e87a",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": false,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "LEGO® Voyagers: observed ingame during this test session. Measured native FPS: 33.7. Recorded duration: 195s. 2 controllers connected dualshock 4 but the emulator still shows only 1",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-8049a9b70c57"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 34.3,
+    "testDurationSeconds": 289,
+    "framePacing": "smooth",
+    "nativeOnePercentLowFps": 30.07
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA49379/s_aedad0b640b94c53920ae37dcc27ab4f/screenshots/01.webp",
+        "sha256": "d27ac54c96b0cb9b679cf9a50e52247d521e447ec344e085d51950085b46c6a8",
+        "caption": "LEGO® Voyagers — capture 1 · 2026-11-23T20:37:17.817Z"
+      },
+      {
+        "path": "assets/CUSA49379/s_aedad0b640b94c53920ae37dcc27ab4f/screenshots/02.webp",
+        "sha256": "45f85c2c72422366be0d682f2570be7b95d488241bf7c2350f737ca3562a00fb",
+        "caption": "LEGO® Voyagers — capture 2 · 2026-11-23T20:38:56.521Z"
+      },
+      {
+        "path": "assets/CUSA49379/s_aedad0b640b94c53920ae37dcc27ab4f/screenshots/03.webp",
+        "sha256": "2bec95394b6db446b67962e5c98e3f739840a9ac5db9585f4db59cc2f2fca30d",
+        "caption": "LEGO® Voyagers — capture 3 · 2026-11-23T20:39:59.313Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA49379/s_aedad0b640b94c53920ae37dcc27ab4f/logs/01-application.log.gz",
+        "sha256": "795486d01a781e248201ca6e33c52afc9ef46414d78e0f9493c1bc2a5ec72879",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA49379/s_aedad0b640b94c53920ae37dcc27ab4f/logs/02-shadps4.log.gz",
+        "sha256": "f066f19d7019b81e1a3ff47598d40f5e0c65fbefa993ad2e2d5f158269739759",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
