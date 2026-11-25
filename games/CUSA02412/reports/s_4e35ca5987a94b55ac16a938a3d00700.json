@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_4e35ca5987a94b55ac16a938a3d00700",
+  "cusaId": "CUSA02412",
+  "testedAt": "2026-11-25T06:44:23.445946Z",
+  "status": "boots",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "nubia",
+    "model": "NX809J",
+    "socId": "sm8850",
+    "socName": "Snapdragon 8 Elite Gen 5",
+    "gpu": "Adreno 840",
+    "androidVersion": "16",
+    "ramBucketGb": 16
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4: observed boots during this test session. Measured native FPS: 19.2. Recorded duration: 192s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-7b3039ca92ac"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 19.17,
+    "testDurationSeconds": 192,
+    "framePacing": "minor-stutter",
+    "nativeOnePercentLowFps": 17.29
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA02412/s_4e35ca5987a94b55ac16a938a3d00700/screenshots/01.webp",
+        "sha256": "d7703cca314b647d95cbd93cdc5784d50b392fa4eacc4854c4fdbccec3c36723",
+        "caption": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4 — capture 1 · 2026-11-25T06:44:23.281Z"
+      },
+      {
+        "path": "assets/CUSA02412/s_4e35ca5987a94b55ac16a938a3d00700/screenshots/02.webp",
+        "sha256": "d8b7168c5cd7b8dbccd7251c72b29155902aa8bcb3dfdf66803da2f100cca356",
+        "caption": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4 — capture 2 · 2026-11-25T06:45:28.761Z"
+      },
+      {
+        "path": "assets/CUSA02412/s_4e35ca5987a94b55ac16a938a3d00700/screenshots/03.webp",
+        "sha256": "f66719ff0a5e11b3ae29c75821c2bbb266783d828fbfc26cb7b87ec67880a3b4",
+        "caption": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4 — capture 3 · 2026-11-25T06:46:30.169Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA02412/s_4e35ca5987a94b55ac16a938a3d00700/logs/01-application.log.gz",
+        "sha256": "c15c95d98c3776369320431da007f26e5cd40a668a955d1b629292666f27bf66",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA02412/s_4e35ca5987a94b55ac16a938a3d00700/logs/02-shadps4.log.gz",
+        "sha256": "0634e04ea9cbfbb3b2976b5dce71360e016764a1eb7352d2f815f1940a7fbed4",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
