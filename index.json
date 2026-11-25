@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T09:23:52Z",
+  "generatedAt": "2026-11-25T15:21:26Z",
   "currentRelease": "v0.2.6",
-  "gameCount": 137,
+  "gameCount": 138,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -1478,6 +1478,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06638/s_2a859d6c1bf14544a504aaf49643e6ab/screenshots/03.webp",
       "latestStatus": "ingame",
       "latestTestedAt": "2026-10-01T11:49:24.599451Z"
+    },
+    {
+      "cusaId": "CUSA06840",
+      "title": "Stardew Valley",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.6",
+        "hasCurrentReports": true,
+        "performance": {
+          "min": 58.85,
+          "max": 58.85,
+          "average": 58.85,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA06840/s_c3f937d2a5534e5eb02d7ab39a9e0d63/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-25T12:58:16.385151Z"
     },
     {
       "cusaId": "CUSA06884",
