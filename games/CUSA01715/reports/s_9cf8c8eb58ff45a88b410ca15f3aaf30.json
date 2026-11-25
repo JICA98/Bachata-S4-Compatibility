@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_9cf8c8eb58ff45a88b410ca15f3aaf30",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-11-25T08:12:43.243740Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2508",
+    "socId": "sm8845",
+    "socName": "Snapdragon 8 Gen 5",
+    "gpu": "Adreno 829",
+    "androidVersion": "16",
+    "ramBucketGb": 6
+  },
+  "driver": {
+    "id": "turnip-1b594cbce6b01618",
+    "type": "turnip",
+    "name": "Turnip main 27.0-devel glibc (f2ccbe6)",
+    "version": "26.99.99",
+    "build": "1b594cbce6b01618",
+    "source": "local/mesa-main-27 main-27.0-f2ccbe6"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.copy_gpu_buffers": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-1b594cbce6b01618",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-motion-blur",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "resolution-patch-1280x720",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.11.13.1938318988723706926"
+    }
+  ],
+  "result": {
+    "summary": "God of War III Remastered: observed boots during this test session. Measured native FPS: 31.7. Recorded duration: 464s.Hello Bachata S4 Developers,\n\nI am facing a black screen/graphics rendering issue in God of War III Remastered at Hera Garden.\n\nDevice: iQOO 15R\nRAM: 8GB\nEmulator: Bachata S4 v2.6\nIssue: Black screen still occurs in Hera Garden, even after testing multiple GPU drivers and emulator versions.\n\nPlease investigate and fix this issue.\n\nThank you.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-13e6578402f2"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 32.01,
+    "testDurationSeconds": 559,
+    "framePacing": "severe-stutter",
+    "nativeOnePercentLowFps": 7.12
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01715/s_9cf8c8eb58ff45a88b410ca15f3aaf30/screenshots/01.webp",
+        "sha256": "9af31e314dfe51dc711923d3f82ea13c5d5aad59a5366395f9001b4f2e2ea4ea",
+        "caption": "God of War III Remastered — capture 1 · 2026-11-25T08:12:42.580Z"
+      },
+      {
+        "path": "assets/CUSA01715/s_9cf8c8eb58ff45a88b410ca15f3aaf30/screenshots/02.webp",
+        "sha256": "f2b2c0fa143550027857cdcf017740d8c587dee300e0f4413aaf42c2816ed6b6",
+        "caption": "God of War III Remastered — capture 2 · 2026-11-25T08:13:45.676Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_9cf8c8eb58ff45a88b410ca15f3aaf30/logs/01-application.log.gz",
+        "sha256": "23d989ffc15111a631ef289187876225d221f129d660ef12ad25d79e6cac7195",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_9cf8c8eb58ff45a88b410ca15f3aaf30/logs/02-shadps4.log.gz",
+        "sha256": "1fa4a3ba61df93fab166a4e24efa80141732bae33adc4c3793bba744766c6b62",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
