@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "cusaId": "CUSA27043",
+  "title": "Dead Island 2",
+  "region": "Europe",
+  "publisher": "Unknown",
+  "canonicalIssue": {
+    "repository": "JICA98/Bachata-S4-Compatibility",
+    "number": 882
+  },
+  "legacyIssues": []
+}
