@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T15:21:26Z",
-  "currentRelease": "v0.2.6",
+  "generatedAt": "2026-11-26T21:43:36Z",
+  "currentRelease": "jit-v1.2.0-3",
   "gameCount": 138,
   "games": [
     {
@@ -840,7 +840,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.6",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 27.55,
           "max": 27.55,
@@ -1490,7 +1490,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.6",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.85,
           "max": 58.85,
@@ -2165,7 +2165,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.6",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.26,
           "max": 58.26,
@@ -2915,7 +2915,7 @@
         "testerCount": 1,
         "deviceCount": 1,
         "releaseTag": "v0.2.6",
-        "hasCurrentReports": true,
+        "hasCurrentReports": false,
         "performance": {
           "min": 58.88,
           "max": 58.88,

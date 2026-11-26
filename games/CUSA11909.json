@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedForRelease": "v0.2.6",
+  "generatedForRelease": "jit-v1.2.0-3",
   "game": {
     "cusaId": "CUSA11909",
     "title": "The Legend of Heroes: Trails of Cold Steel III",
@@ -15,7 +15,7 @@
     "testerCount": 1,
     "deviceCount": 1,
     "releaseTag": "v0.2.6",
-    "hasCurrentReports": true,
+    "hasCurrentReports": false,
     "performance": {
       "min": 58.26,
       "max": 58.26,
@@ -32,7 +32,7 @@
       "testerCount": 1,
       "deviceCount": 1,
       "releaseTag": "v0.2.6",
-      "hasCurrentReports": true,
+      "hasCurrentReports": false,
       "performance": {
         "min": 58.26,
         "max": 58.26,
