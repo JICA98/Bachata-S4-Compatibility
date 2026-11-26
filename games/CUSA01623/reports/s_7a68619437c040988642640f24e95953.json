@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_7a68619437c040988642640f24e95953",
+  "cusaId": "CUSA01623",
+  "testedAt": "2026-11-26T05:50:41.734080Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2767",
+    "socId": "sm8845",
+    "socName": "Snapdragon 8 Gen 5",
+    "gpu": "Adreno 829",
+    "androidVersion": "17",
+    "ramBucketGb": 12
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": false,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "disable-bloom",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-depth-of-field",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-dynamic-shadows",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-motion-blur",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-soft-particles",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "disable-ssao",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "resolution-patch-960x540",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-intro",
+      "preset": "mobile-performance-540p",
+      "revision": "2026.11.13.1938318988723706926"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01623: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-75387ea0d438"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 60,
+    "testDurationSeconds": 20,
+    "framePacing": "smooth"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA01623/s_7a68619437c040988642640f24e95953/screenshots/01.webp",
+        "sha256": "cd8ec003f34ef2d099d9852c1a0c47737c4e52b3faec18540d24faa8c8e25674",
+        "caption": "God of War III Remastered — capture 1 · 2026-11-26T05:50:41.559Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01623/s_7a68619437c040988642640f24e95953/logs/01-application.log.gz",
+        "sha256": "90e7a5a0907395461b8793e0da0e49f99a469d997815fca2995a75a042e28882",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01623/s_7a68619437c040988642640f24e95953/logs/02-shadps4.log.gz",
+        "sha256": "4b478efe98b12ae8c41afe5ace49b10df93a8a3e518aeac35a768b17f4e1ad5c",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
