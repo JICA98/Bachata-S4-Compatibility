@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T21:43:36Z",
+  "generatedAt": "2026-11-27T15:27:31Z",
   "currentRelease": "jit-v1.2.0-3",
-  "gameCount": 138,
+  "gameCount": 139,
   "games": [
     {
       "cusaId": "CUSA00003",
@@ -953,6 +953,31 @@
       "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02509/s_9a7469ee0f4740c982743484cba1e468/screenshots/03.webp",
       "latestStatus": "boots",
       "latestTestedAt": "2026-09-30T21:29:54.895630Z"
+    },
+    {
+      "cusaId": "CUSA02532",
+      "title": "Unravel",
+      "general": {
+        "score": 75,
+        "status": "ingame",
+        "confidence": "low",
+        "reportCount": 1,
+        "testerCount": 1,
+        "deviceCount": 1,
+        "releaseTag": "v0.2.6",
+        "hasCurrentReports": false,
+        "performance": {
+          "min": 55.32,
+          "max": 55.32,
+          "average": 55.32,
+          "sampleCount": 1
+        }
+      },
+      "reportCount": 1,
+      "socCount": 1,
+      "thumbnail": "https://bachatas4.games/evidence/assets/CUSA02532/s_79eebbac4ef14be882a60fe8ffad55d5/screenshots/03.webp",
+      "latestStatus": "ingame",
+      "latestTestedAt": "2026-11-27T10:05:59.074626Z"
     },
     {
       "cusaId": "CUSA02762",
