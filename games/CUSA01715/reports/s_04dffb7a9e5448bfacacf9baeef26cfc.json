@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_04dffb7a9e5448bfacacf9baeef26cfc",
+  "cusaId": "CUSA01715",
+  "testedAt": "2026-11-27T09:57:18.581528Z",
+  "status": "boots",
+  "game": {
+    "version": "01.02",
+    "region": "Europe"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "OnePlus",
+    "model": "CPH2569",
+    "socId": "sm7325",
+    "socName": "Snapdragon 778G",
+    "gpu": "Adreno 642L",
+    "androidVersion": "15",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-ee5dda7a5c67966f",
+    "type": "turnip",
+    "name": "Turnip mojo-26.1 v2",
+    "version": "26.1.0",
+    "build": "ee5dda7a5c67966f",
+    "source": "JICA98/bachata-s4-drivers mojo-26.1-v2"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-ee5dda7a5c67966f",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "SAFE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [
+    {
+      "id": "resolution-patch-960x540",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-any-video-with-x-button",
+      "revision": "2026.11.13.1938318988723706926"
+    },
+    {
+      "id": "skip-intro",
+      "revision": "2026.11.13.1938318988723706926"
+    }
+  ],
+  "result": {
+    "summary": "CUSA01715: session ended at SESSION_STOPPING; exit code 133. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-53a27ca3b094"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 33.36,
+    "testDurationSeconds": 28,
+    "framePacing": "stuttery"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA01715/s_04dffb7a9e5448bfacacf9baeef26cfc/logs/01-application.log.gz",
+        "sha256": "be52fdc0aec79ee22e20c64670ea4aad164b82ecf592e3aee575e85096030083",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA01715/s_04dffb7a9e5448bfacacf9baeef26cfc/logs/02-shadps4.log.gz",
+        "sha256": "e118fd3a69fedcbcd44263fcab23acf269ced6ed92bdb6270e63a63bb7d7c989",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
