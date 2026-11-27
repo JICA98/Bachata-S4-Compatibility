@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_2bdbad9c343346d2bd3677ef12b62720",
+  "cusaId": "CUSA00416",
+  "testedAt": "2026-11-27T15:54:50.545280Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "I2221",
+    "socId": "sm8635",
+    "socName": "SM8635",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-b60bffe2844a271c",
+    "type": "turnip",
+    "name": "Mesa Turnip driver v26.0.0 - R8 GMEM",
+    "version": "25.99.99",
+    "build": "b60bffe2844a271c"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 1280,
+      "gpu.internal_screen_height": 720,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0
+    },
+    "driverId": "turnip-b60bffe2844a271c",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "CUSTOM",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": true,
+    "maliGpuOptimizations": false
+  },
+  "patches": [],
+  "result": {
+    "summary": "CUSA00416: session ended at SESSION_STOPPING; exit code -1. A frame was rendered; further progress is unverified.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-08c2377c5caa"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "evidence": {
+    "screenshots": [],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA00416/s_2bdbad9c343346d2bd3677ef12b62720/logs/01-application.log.gz",
+        "sha256": "553deac3489d2dcafdef0573fa7b9392ad0ebc9f8ae28be3a68682c080bc023b",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA00416/s_2bdbad9c343346d2bd3677ef12b62720/logs/02-shadps4.log.gz",
+        "sha256": "cc19be84eb8a149a553de9812840730812efe3af602d2ced8e61bbbebd42f3ba",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
