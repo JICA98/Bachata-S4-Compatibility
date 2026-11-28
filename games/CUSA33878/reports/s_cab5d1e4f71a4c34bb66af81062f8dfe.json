@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "reportId": "s_cab5d1e4f71a4c34bb66af81062f8dfe",
+  "cusaId": "CUSA33878",
+  "testedAt": "2026-11-28T12:13:29.129517Z",
+  "status": "nothing",
+  "game": {
+    "version": "01.00",
+    "region": "North America"
+  },
+  "release": {
+    "tag": "v0.2.6",
+    "commit": "99ceb85ebe0e43bda5e265c4cb0d236652a2a384"
+  },
+  "device": {
+    "manufacturer": "vivo",
+    "model": "V2521",
+    "socId": "sm4450",
+    "socName": "SM4450",
+    "gpu": "Unknown",
+    "androidVersion": "16",
+    "ramBucketGb": 8
+  },
+  "driver": {
+    "id": "turnip-77f4435ceb1944c3",
+    "type": "turnip",
+    "name": "Turnip gen8 v5",
+    "version": "26.2.99",
+    "build": "77f4435ceb1944c3",
+    "source": "JICA98/bachata-s4-drivers gen8-v5"
+  },
+  "config": {
+    "settings": {
+      "general.big_core_affinity": true,
+      "general.neo_mode": false,
+      "gpu.copy_gpu_buffers": false,
+      "gpu.dump_shaders": false,
+      "gpu.readbacks_mode": 0,
+      "gpu.vblank_frequency": 60,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600,
+      "gpu.present_rb_swap": false,
+      "vulkan.vkcrash_diagnostic_enabled": false
+    },
+    "requiredOverrides": {
+      "general.big_core_affinity": true,
+      "gpu.readbacks_mode": 0,
+      "gpu.internal_screen_width": 800,
+      "gpu.internal_screen_height": 600
+    },
+    "driverId": "turnip-77f4435ceb1944c3",
+    "guestBackend": "FEX",
+    "frameGenerationMode": "OFF",
+    "fexPreset": "PERFORMANCE",
+    "adrenoTurboMode": true,
+    "bigCoreAffinity": false,
+    "maliGpuOptimizations": true
+  },
+  "patches": [],
+  "result": {
+    "summary": "Resident Evil 2: observed nothing during this test session. Measured native FPS: 24.2. Recorded duration: 38s.",
+    "notes": "",
+    "issues": []
+  },
+  "contributor": {
+    "publicId": "tester-bf0a5173e8c2"
+  },
+  "provenance": {
+    "captureType": "app-captured",
+    "appBuild": "0.2.6"
+  },
+  "performance": {
+    "nativeAverageFps": 24.21,
+    "testDurationSeconds": 38,
+    "framePacing": "severe-stutter"
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "path": "assets/CUSA33878/s_cab5d1e4f71a4c34bb66af81062f8dfe/screenshots/01.webp",
+        "sha256": "db65c27bcfb7e28398ee5387acf2ca44648c4490c106826caab86b931680b8bd",
+        "caption": "Resident Evil 2 — capture 1 · 2026-11-28T12:13:28.489Z"
+      }
+    ],
+    "diagnostics": [
+      {
+        "path": "assets/CUSA33878/s_cab5d1e4f71a4c34bb66af81062f8dfe/logs/01-application.log.gz",
+        "sha256": "50e9c752fc97f78991ae12ed2511e615e90ccc103eacbb4efc72c9dc121b2021",
+        "label": "Bachata application log"
+      },
+      {
+        "path": "assets/CUSA33878/s_cab5d1e4f71a4c34bb66af81062f8dfe/logs/02-shadps4.log.gz",
+        "sha256": "e34c985cf3b5a1d97b60c6d590ce292669a22c792d7d2a447d72ce2be19cbd56",
+        "label": "shadPS4 session log"
+      }
+    ]
+  }
+}
